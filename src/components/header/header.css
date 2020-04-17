@@ -1,0 +1,25 @@
+.header {
+	background-color: rgba(255,255,255,.80);
+	/*position: fixed;*/
+	width: 100%;
+	padding: .5rem 0;
+	/*z-index: 2;*/
+}
+
+.header-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.header p {
+	margin-right: auto;
+}
+
+.header a {
+	margin-left: 1.5rem;
+	border-bottom: 1px solid;
+	border-color: #DCDEE1;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
