@@ -49,7 +49,7 @@ p {
   color: #8B8F9B;
 }
 
-.tertiary-text {
+.tertiary-text, footer {
   font-size: 14px;
   color: #DCDEE1;
 }

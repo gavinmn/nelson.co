@@ -1,0 +1,37 @@
+.hero-container {
+	margin-top: 8rem;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: [1] auto [2] auto [3] auto;
+	align-items: start;
+}
+
+.hero-container p {
+	margin-top: 2rem;
+	max-width: 506px;
+}
+
+.contact-links {
+	margin-top: 1rem;
+	margin-bottom: 8rem;
+	grid-row: 3;
+}
+
+.email {
+	margin-left: 0;
+}
+
+.email:hover {
+	color: #007aff;
+	border-color: #007aff;
+}
+
+.dribbble:hover {
+	color: #EA4C89;
+	border-color: #EA4C89;
+}
+
+.linkedin:hover {
+	color: #0A66C2;
+	border-color: #0A66C2;
+}
