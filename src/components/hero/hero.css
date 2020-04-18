@@ -6,6 +6,12 @@
 	align-items: start;
 }
 
+#logo {
+	justify-self: start;
+	width: 96px;
+	height: 96px;
+}
+
 .hero-container p {
 	margin-top: 2rem;
 	max-width: 506px;
@@ -15,10 +21,6 @@
 	margin-top: 1rem;
 	margin-bottom: 8rem;
 	grid-row: 3;
-}
-
-.email {
-	margin-left: 0;
 }
 
 .email:hover {
@@ -34,4 +36,48 @@
 .linkedin:hover {
 	color: #0A66C2;
 	border-color: #0A66C2;
+}
+
+.dribbble, .linkedin {
+	margin-left: 1.5rem;
+}
+
+.email:hover {
+	color: #007aff;
+	border-color: #007aff;
+}
+
+.dribbble:hover {
+	color: #EA4C89;
+	border-color: #EA4C89;
+}
+
+.linkedin:hover {
+	color: #0A66C2;
+	border-color: #0A66C2;
+}
+
+@media only screen and (min-width: 722px) {
+	.hero-container {
+		grid-template-columns: [left] 38% [right] auto;
+		grid-template-rows: [1] auto [2] auto;
+		max-width: 816px;
+	}
+
+	#logo {
+		width: 224px;
+		height: 224px;
+		margin-right: 32px;
+	}
+
+	.hero-container p {
+		margin-top: 0;
+		justify-self: end;
+	}
+
+	.contact-links {
+		margin-top: .75rem;
+		grid-row: 2;
+		grid-column: right;
+	}
 }

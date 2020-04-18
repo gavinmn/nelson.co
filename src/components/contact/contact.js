@@ -1,8 +1,7 @@
 import React from "react"
-import "./contact.css"
 
-const Contact = () => (
-	<a></a>
+const Contact = props => (
+	<a href={props.href} className={props.class}>{props.link}</a>
 )
 
 export default Contact

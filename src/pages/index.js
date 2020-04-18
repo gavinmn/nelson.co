@@ -6,10 +6,10 @@ import Hero from "../components/hero/hero"
 
 const IndexPage = () => (
   <Layout>
-      
     <SEO title="Home" />
 
     <Hero />
+
     
 
   </Layout>
