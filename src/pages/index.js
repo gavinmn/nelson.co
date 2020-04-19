@@ -7,10 +7,10 @@ import SEO from "../components/seo"
 import Hero from "../components/hero/hero"
 import CSGroup from "../components/csgroup/csgroup"
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-
+    <Img fluid={props.data.file.childImageSharp.fluid} />
     <Hero />
     <CSGroup />
 
