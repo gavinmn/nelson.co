@@ -11,17 +11,17 @@ const Hero = () => (
 		<p>Gavin Nelson is a <strong>product & visual designer</strong> in the San Francisco Bay Area. He creates intuitive and clean user-centered design solutions with great attention to detail.<br></br><br></br>He is currently working as a Product Designer at wikiHow as well as on freelance projects.</p>
 		<div className = "contact-links">
 			<Contact
-				class="email secondary-text"
+				class="email secondary-text link-text"
 				href="mailto:gnelsondesign@gmail.com"
 				link="Email"
 			/>
 			<Contact className = "dribbble"
-				class="dribbble secondary-text"
+				class="dribbble secondary-text link-text"
 				href="https://dribbble.com/Gavin/"
 				link="Dribbble"
 			/>
 			<Contact
-				class="linkedin secondary-text"
+				class="linkedin secondary-text link-text"
 				href="https://www.linkedin.com/in/gavin-nelson/"
 				link="LinkedIn"
 			/>

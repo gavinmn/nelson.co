@@ -8,8 +8,8 @@ const Header = ({ siteTitle }) => (
   	<div className = "width-container">
   		<div className = "header-flex"> 
   			<p className="secondary-text">Gavin Nelson</p>
-  			<Link to="/" className="secondary-text">About</Link>
-  			<Link to="/" className="secondary-text">Work</Link>
+  			<Link to="/" className="secondary-text link-text">About</Link>
+  			<Link to="/" className="secondary-text link-text">Work</Link>
 		</div>
 	 </div>
   </div>

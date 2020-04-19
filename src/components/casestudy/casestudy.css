@@ -1,0 +1,19 @@
+.cs-info-container {
+	margin-left: .5rem;
+}
+
+.cs-logo {
+	height: 4rem;
+	margin-bottom: .5rem;
+}
+
+.cs-title, .cs-description, .cs-date {
+	margin-left: .5rem;
+}
+
+.cs-img {
+	width: 100%;
+	max-width: 400px;
+	margin-top: 8px;
+	align-self: center;
+}

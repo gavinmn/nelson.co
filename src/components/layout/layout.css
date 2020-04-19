@@ -31,14 +31,6 @@ img {
 a {
   text-decoration: none;
   color: #8B8F9B;
-  border-bottom: 1px solid;
-  border-color: #DCDEE1;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-a:hover {
-  border-color:#1D1D1F;
 }
 
 p {
@@ -60,6 +52,17 @@ p {
 .tertiary-text, footer {
   font-size: 14px;
   color: #DCDEE1;
+}
+
+.link-text {
+  border-bottom: 1px solid;
+  border-color: #DCDEE1;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.link-text:hover {
+  border-color:#1D1D1F;
 }
 
 .width-container {

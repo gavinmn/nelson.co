@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>chalklogo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Piece-V3-Chalk" transform="translate(-32.000000, -194.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(32.000000, 192.000000)">
+                <g id="chalklogo" transform="translate(0.000000, 2.000000)">
+                    <circle id="Oval" fill="#4098FF" cx="64" cy="64" r="64"></circle>
+                    <circle id="Oval" fill-opacity="0.603682" fill="#000000" cx="64" cy="64" r="48"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="64" cy="40" r="8"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(80.970563, 47.029437) rotate(45.000000) translate(-80.970563, -47.029437) " cx="80.9705627" cy="47.0294373" r="8"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(80.970563, 80.970563) rotate(135.000000) translate(-80.970563, -80.970563) " cx="80.9705627" cy="80.9705627" r="8"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(64.000000, 88.000000) rotate(180.000000) translate(-64.000000, -88.000000) " cx="64" cy="88" r="8"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(47.029437, 80.970563) rotate(225.000000) translate(-47.029437, -80.970563) " cx="47.0294373" cy="80.9705627" r="8"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(40.000000, 64.000000) rotate(270.000000) translate(-40.000000, -64.000000) " cx="40" cy="64" r="8"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(47.029437, 47.029437) rotate(315.000000) translate(-47.029437, -47.029437) " cx="47.0294373" cy="47.0294373" r="8"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
