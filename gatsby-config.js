@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Gavin Nelson Design`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Gavin Nelson's Product Design Portfolio`,
+    author: `@gavmn`,
   },
   plugins: [
-  
      {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -35,6 +34,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
       },
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -64
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

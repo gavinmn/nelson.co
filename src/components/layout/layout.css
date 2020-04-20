@@ -42,9 +42,12 @@ html, body {
 html {
   font-size: 16px;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+}
+
+footer {
+  margin-bottom:2rem;
 }
 
 img {
@@ -94,7 +97,6 @@ p {
   margin: 0 auto;
   padding: 0 5% 0 5%;
   overflow: hidden;
-  padding-bottom:2rem;
 }
 
 @media only screen and (min-width: 722px) {

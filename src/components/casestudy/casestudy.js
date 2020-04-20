@@ -3,8 +3,6 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 import "./casestudy.css"
 
-
-
 const CaseStudy = props => (
 	<Link to={props.link} id={props.linkid}>
 		<div className="cs-container">

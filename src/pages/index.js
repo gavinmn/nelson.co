@@ -8,11 +8,13 @@ import "./index.css"
 
 const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" />
+
+    <SEO title="About" />
 
     <Hero />
+    <a id="work"></a>
     <CaseStudy 
-		link=""
+		link="/chalk"
 		logo={props.data.chalkLogo.childImageSharp.fluid}
 		title="Chalk"
 		subtitle="Interaction and Visual Design"
