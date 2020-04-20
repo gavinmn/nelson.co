@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <div className = "width-container">
         <main>{children}</main>
         <footer>
-          <p className = "tertiary-text">Designed and Developed by Gavin Nelson</p>
+          <p className = "tertiary-text"><i>Designed and Developed by Gavin Nelson</i></p>
           © {new Date().getFullYear()} Gavin Nelson
         </footer>
       </div>

@@ -1,7 +1,0 @@
-.csgroup-container {
-	margin-bottom: 4rem;
-	display: grid;
-	grid-template-columns: auto;
-	align-items: start;
-	transition: .2s ease-in-out;
-}

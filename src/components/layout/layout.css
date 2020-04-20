@@ -70,6 +70,7 @@ p {
   margin: 0 auto;
   padding: 0 5% 0 5%;
   overflow: hidden;
+  padding-bottom:2rem;
 }
 
 @media only screen and (min-width: 722px) {

@@ -1,8 +1,22 @@
+a:hover > .cs-container {
+	transform: scale(1.05);
+	cursor:pointer;
+}
+
+.cs-container {
+	margin-bottom: 4rem;
+	display: grid;
+	grid-template-columns: auto;
+	align-items: start;
+	transition: .2s ease-in-out;
+}
+
 .cs-info-container {
 	margin-left: .5rem;
 }
 
 .cs-logo {
+	width: 4rem;
 	height: 4rem;
 	margin-bottom: .5rem;
 }
@@ -16,4 +30,14 @@
 	max-width: 400px;
 	margin-top: 8px;
 	align-self: center;
+}
+
+@media only screen and (min-width: 445px) {
+	.cs-container {
+		grid-template-columns: 50% 50%;
+	}
+
+	.cs-info-container {
+		align-self: center;
+	}
 }

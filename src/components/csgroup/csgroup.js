@@ -1,22 +1,40 @@
-import React from "react"
-import "./csgroup.css"
+// import React from "react"
+// import { useStaticQuery, graphql } from "gatsby"
+// import { Link } from "gatsby"
 
-import CaseStudy from "../casestudy/CaseStudy"
-// import chalkImage from "../../images/chalk/chalkintro.png"
-// import chalkLogo from "../../images/chalk/chalklogo.svg"
+// import CaseStudy from "../casestudy/CaseStudy"
 
-const CSGroup = props => (
-	<div className = "csgroup-container">
-		<CaseStudy 
-			link=""
-			logosrc=""
-			title="Chalk"
-			subtitle="Interaction and Visual Design"
-			date="Summer 2019"
-			image=""
-		/>
+// const CSGroup = props => {
+// 	const data =useStaticQuery(graphql`
+// 		query ChalkImgQuery {
+// 		  chalkIntro: file(relativePath: {eq: "chalk/chalkintro.png"}) {
+// 		    childImageSharp {
+// 		      fluid (maxWidth:800) {
+// 		        ...GatsbyImageSharpFluid
+// 		      }
+// 		    }
+// 		  },
+// 		  chalkLogo: file(relativePath: {eq: "chalk/chalklogo.png"}) {
+// 		    childImageSharp {
+// 		      fluid (maxWidth:256) {
+// 		        ...GatsbyImageSharpFluid
+// 		      }
+// 		    }
+// 		  }
+// 		}
+// 	`)
 
-	</div>
-)
+// 	return (
+// 		<CaseStudy 
+// 			link=""
+// 			logo={data.chalkLogo.childImageSharp.fluid}
+// 			title="Chalk"
+// 			subtitle="Interaction and Visual Design"
+// 			date="Summer 2019"
+// 			image={data.chalkIntro.childImageSharp.fluid}
+// 		/>
+// 	)
 
-export default CSGroup
+// }
+
+// export default CSGroup
