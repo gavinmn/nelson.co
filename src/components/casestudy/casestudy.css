@@ -41,3 +41,10 @@ a:hover > .cs-container {
 		align-self: center;
 	}
 }
+
+
+@media only screen and (min-width: 722px) {
+	.cs-title, .cs-description, .cs-date {
+		margin-left: 0;
+	}
+}

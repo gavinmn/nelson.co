@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
     "prop-types": "^15.7.2",
