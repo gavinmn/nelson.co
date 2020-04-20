@@ -99,6 +99,13 @@ p {
   overflow: hidden;
 }
 
+.small-width-container {
+  max-width: 630px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: blue;
+}
+
 @media only screen and (min-width: 722px) {
   html {
     font-size: 32px;

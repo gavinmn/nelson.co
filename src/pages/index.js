@@ -4,7 +4,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero/hero"
 import CaseStudy from "../components/casestudy/CaseStudy"
-import "./index.css"
+
 
 const IndexPage = (props) => (
   <Layout>
