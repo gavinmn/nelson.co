@@ -22,6 +22,17 @@
     font-style: normal;
 }
 
+@keyframes come-in {
+    from {
+      transform: translateY(-.15%) scale(.999); 
+      opacity: 0;
+    }
+    to   {
+      transform: translateY(0) scale(1); 
+      opacity: 1;
+    }
+}
+
 * {
   margin:0;
   padding:0;
@@ -62,12 +73,12 @@ a {
 
 p {
   font-size: 16px;
-  color: #1D1D1F;
+  color: #031830;
 }
 
 .headline-text {
   font-size: 16px;
-  color: #1D1D1F;
+  color: #031830;
   font-weight: bold;
 }
 
@@ -89,7 +100,7 @@ p {
 }
 
 .link-text:hover {
-  border-color:#1D1D1F;
+  border-color:#031830;
 }
 
 .width-container {
@@ -106,6 +117,10 @@ p {
   background-color: blue;
 }
 
+.animation {
+  animation: come-in .5s ease-out; 
+}
+
 @media only screen and (min-width: 722px) {
   html {
     font-size: 32px;
@@ -113,13 +128,13 @@ p {
 
   p {
     font-size: 22px;
-    color: #1D1D1F;
+    color: #031830;
   }
 
 
   .headline-text {
     font-size: 22px;
-    color: #1D1D1F;
+    color: #031830;
     font-weight: bold;
   }
 
