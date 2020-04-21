@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'national 2';
+    font-family: 'National 2';
     src: url('../../fonts/national-2-web-regular.woff') format('woff'), url('../../fonts/national-2-web-regular.woff2') format('woff2');
 
     font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'national 2';
+    font-family: 'National 2';
     src: url('../../fonts/national-2-web-regular-italic.woff') format('woff'), url('../../fonts/national-2-web-regular-italic.woff2') format('woff2');
 
     font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'national 2';
+    font-family: 'National 2';
     src: url('../../fonts/national-2-web-bold.woff') format('woff'), url('../../fonts/national-2-web-bold.woff2') format('woff2');
 
     font-weight: bold;
@@ -29,7 +29,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'national 2', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+  font-family: 'National 2', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }

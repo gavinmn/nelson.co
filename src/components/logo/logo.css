@@ -3,7 +3,14 @@
     to   {transform: rotate(359deg);}
 }
 
+@keyframes colorChange {
+	0%{fill:#021428}
+	50%{fill:#1d1d1d}
+    100%{fill:#021428}
+}
+
 #logo-bg {
 	transform-origin: 50% 50%;
 	animation: rotation 12s infinite linear;
+	animation: colorChange 12s infinite;
 }
