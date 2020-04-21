@@ -24,7 +24,7 @@
 
 @keyframes come-in {
     from {
-      transform: translateY(-.15%) scale(.999); 
+      transform: translateY(-.15%) scale(.98); 
       opacity: 0;
     }
     to   {
@@ -117,7 +117,7 @@ p {
   background-color: blue;
 }
 
-.animation {
+.animation-container {
   animation: come-in .5s ease-out; 
 }
 

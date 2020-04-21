@@ -13,42 +13,43 @@ const IndexPage = (props) => (
 
     <Hero />
     <a id="work"></a>
-    <CaseStudy 
-		link="/chalk"
-		logo={props.data.chalkLogo.childImageSharp.fluid}
-		title="Chalk"
-		subtitle="Interaction and Visual Design"
-		date="Summer 2019"
-		image={props.data.chalkIntro.childImageSharp.fluid}
-	/>
+    <div className="animation-container">
+	    <CaseStudy 
+			link="/chalk"
+			logo={props.data.chalkLogo.childImageSharp.fluid}
+			title="Chalk"
+			subtitle="Interaction and Visual Design"
+			date="Summer 2019"
+			image={props.data.chalkIntro.childImageSharp.fluid}
+		/>
 
-	<CaseStudy 
-		link=""
-		logo={props.data.expertsLogo.childImageSharp.fluid}
-		title="wikiHow Expert Profiles"
-		subtitle="Product and Visual Design"
-		date="Summer 2018"
-		image={props.data.expertsIntro.childImageSharp.fluid}
-	/>
+		<CaseStudy 
+			link=""
+			logo={props.data.expertsLogo.childImageSharp.fluid}
+			title="wikiHow Expert Profiles"
+			subtitle="Product and Visual Design"
+			date="Summer 2018"
+			image={props.data.expertsIntro.childImageSharp.fluid}
+		/>
 
-	<CaseStudy 
-		link=""
-		logo={props.data.slapdashLogo.childImageSharp.fluid}
-		title="Slapdash"
-		subtitle="Brand Design"
-		date="Fall 2019"
-		image={props.data.slapdashIntro.childImageSharp.fluid}
-	/>
+		<CaseStudy 
+			link=""
+			logo={props.data.slapdashLogo.childImageSharp.fluid}
+			title="Slapdash"
+			subtitle="Brand Design"
+			date="Fall 2019"
+			image={props.data.slapdashIntro.childImageSharp.fluid}
+		/>
 
-	<CaseStudy 
-		link=""
-		logo={props.data.carabinerLogo.childImageSharp.fluid}
-		title="Spring Gate Carabiner"
-		subtitle="Industrial Design and Prototyping"
-		date="Spring 2016"
-		image={props.data.carabinerIntro.childImageSharp.fluid}
-	/>
-
+		<CaseStudy 
+			link=""
+			logo={props.data.carabinerLogo.childImageSharp.fluid}
+			title="Spring Gate Carabiner"
+			subtitle="Industrial Design and Prototyping"
+			date="Spring 2016"
+			image={props.data.carabinerIntro.childImageSharp.fluid}
+		/>
+	</div>
   </Layout>
 )
 

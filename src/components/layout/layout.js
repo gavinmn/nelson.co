@@ -18,8 +18,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="animation">
+    <div className="animation-container">
         <Header siteTitle={data.site.siteMetadata.title} />
+    </div>
         <div className = "width-container">
           <main>{children}</main>
           <footer>
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
             © {new Date().getFullYear()} Gavin Nelson
           </footer>
         </div>
-      </div>
+     
     </>
   )
 }
