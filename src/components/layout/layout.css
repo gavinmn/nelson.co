@@ -78,7 +78,7 @@ p {
 
 ::selection {
   color:#ffffff;
-  background:#0024C7;
+  background:#2950FF;
 }
 
 .headline-text {
@@ -105,7 +105,7 @@ p {
 }
 
 .link-text:hover {
-  border-color:#0024C7;
+  border-color:#2950FF;
 }
 
 .width-container {
