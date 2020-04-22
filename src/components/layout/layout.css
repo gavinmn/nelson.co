@@ -73,12 +73,12 @@ a {
 
 p {
   font-size: 16px;
-  color: #031830;
+  color: #1D1D1F;
 }
 
 .headline-text {
   font-size: 16px;
-  color: #031830;
+  color: #1D1D1F;
   font-weight: bold;
 }
 
@@ -100,7 +100,7 @@ p {
 }
 
 .link-text:hover {
-  border-color:#031830;
+  border-color:#1D1D1F;
 }
 
 .width-container {
@@ -128,13 +128,13 @@ p {
 
   p {
     font-size: 22px;
-    color: #031830;
+    color: #1D1D1F;
   }
 
 
   .headline-text {
     font-size: 22px;
-    color: #031830;
+    color: #1D1D1F;
     font-weight: bold;
   }
 

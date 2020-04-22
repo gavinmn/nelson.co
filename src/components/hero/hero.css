@@ -24,8 +24,8 @@
 }
 
 .email:hover {
-	color: #007aff;
-	border-color: #007aff;
+	color: #0024C7;
+	border-color: #0024C7;
 }
 
 .dribbble:hover {
@@ -40,21 +40,6 @@
 
 .dribbble, .linkedin {
 	margin-left: 1.5rem;
-}
-
-.email:hover {
-	color: #007aff;
-	border-color: #007aff;
-}
-
-.dribbble:hover {
-	color: #EA4C89;
-	border-color: #EA4C89;
-}
-
-.linkedin:hover {
-	color: #0A66C2;
-	border-color: #0A66C2;
 }
 
 @media only screen and (min-width: 722px) {
