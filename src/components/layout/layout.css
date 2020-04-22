@@ -76,6 +76,11 @@ p {
   color: #1D1D1F;
 }
 
+::selection {
+  color:#ffffff;
+  background:#0024C7;
+}
+
 .headline-text {
   font-size: 16px;
   color: #1D1D1F;
@@ -100,7 +105,7 @@ p {
 }
 
 .link-text:hover {
-  border-color:#1D1D1F;
+  border-color:#0024C7;
 }
 
 .width-container {
