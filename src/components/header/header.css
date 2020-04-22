@@ -9,10 +9,11 @@
 	justify-content: flex-end;
 }
 
-.header p {
+.name {
 	margin-right: auto;
+	margin-left: 0;
 }
 
-.header a {
+.link{
 	margin-left: 1.5rem;
 }

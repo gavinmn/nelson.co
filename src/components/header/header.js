@@ -9,9 +9,9 @@ const Header = ({ siteTitle }) => (
   <div className = "header">
   	<div className = "width-container">
   		<div className = "header-flex"> 
-  			<p className="secondary-text">Gavin Nelson</p>
-  			<Link to="/" className="secondary-text link-text">About</Link>
-  			<AnchorLink to="/#work" stripHash className="secondary-text link-text">Work</AnchorLink>
+  			<Link to="/" className="secondary-text name">Gavin Nelson</Link>
+  			<Link to="/" className="secondary-text link-text link">About</Link>
+  			<AnchorLink to="/#work" stripHash className="secondary-text link-text link">Work</AnchorLink>
 		</div>
 	 </div>
   </div>

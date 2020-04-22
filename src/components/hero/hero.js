@@ -9,7 +9,7 @@ const Hero = () => (
 			<Logo 
 				id="logo"
 			/>
-			<p>Gavin Nelson is a <strong>product & visual designer</strong> in the San Francisco Bay Area. He creates intuitive and clean user-centered design solutions with great attention to detail.<br></br><br></br>He is currently working as a Product Designer at wikiHow as well as on freelance projects.</p>
+			<p>Gavin Nelson is a <span className="blue-text"><strong>product </strong></span><span className="ampersand">&</span> <span className="blue-text"><strong>visual designer</strong></span> in the San Francisco Bay Area. He creates intuitive and clean user-centered design solutions with great attention to detail.<br></br><br></br>He is currently working as a Product Designer at wikiHow as well as on freelance projects.</p>
 			<div className = "contact-links">
 				<Contact
 					class="email secondary-text link-text"
