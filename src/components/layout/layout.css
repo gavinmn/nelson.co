@@ -54,6 +54,7 @@ html {
   font-size: 16px;
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   line-height: 1.5;
 }
 

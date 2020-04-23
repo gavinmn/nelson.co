@@ -11,25 +11,12 @@ a:hover > .cs-container {
 	transition: .2s ease-in-out;
 }
 
-.cs-info-container {
-	margin-left: .5rem;
-}
-
-.cs-logo {
-	width: 4rem;
-	height: 4rem;
-	margin-bottom: .5rem;
-}
-
-.cs-title, .cs-description, .cs-date {
-	margin-left: .5rem;
-}
-
 .cs-img {
 	width: 100%;
 	max-width: 400px;
 	margin-top: 8px;
 	align-self: center;
+	justify-self: end;
 }
 
 @media only screen and (min-width: 445px) {
@@ -37,14 +24,7 @@ a:hover > .cs-container {
 		grid-template-columns: 50% 50%;
 	}
 
-	.cs-info-container {
-		align-self: center;
-	}
-}
-
-
-@media only screen and (min-width: 722px) {
-	.cs-title, .cs-description, .cs-date {
-		margin-left: 0;
+	.cs-img {
+		margin-top: 0;
 	}
 }

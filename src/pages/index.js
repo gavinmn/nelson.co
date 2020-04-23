@@ -4,7 +4,9 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero/hero"
 import CaseStudy from "../components/casestudy/CaseStudy"
-
+import ProjectInfo from "../components/projectinfo/projectinfo"
+import Shot from "../components/shot/shot"
+import "../styles/index.css"
 
 const IndexPage = (props) => (
   <Layout>
@@ -50,6 +52,40 @@ const IndexPage = (props) => (
 			image={props.data.carabinerIntro.childImageSharp.fluid}
 		/>
 	</div>
+
+	<div className="animation-container">
+		<div className="sample-grid">
+			<ProjectInfo 
+				logo={props.data.visualLogo.childImageSharp.fluid}
+				title="Visual Design Sample"
+				subtitle="Client and Personal Work"
+				date="2014 - 2020"
+			/>
+
+			<Shot 
+				image={props.data.designIcons.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.devIcons.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.mailIcons.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.Swatches.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.finderWindows.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.wh1.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.wh2.childImageSharp.fluid}
+			/>
+		</div>
+	</div>
+
   </Layout>
 )
 
@@ -113,5 +149,63 @@ export const ImageQuery = graphql`
 	      }
 	    }
 	  },
+	  visualLogo: file(relativePath: {eq: "visual/visuallogo.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  designIcons: file(relativePath: {eq: "visual/designicons.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  devIcons: file(relativePath: {eq: "visual/devicons.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  mailIcons: file(relativePath: {eq: "visual/mailicons.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  Swatches: file(relativePath: {eq: "visual/swatches.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  finderWindows: file(relativePath: {eq: "visual/finderwindows.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  wh1: file(relativePath: {eq: "visual/whicons.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  wh2: file(relativePath: {eq: "visual/whicons2.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+
+
 	}
 `

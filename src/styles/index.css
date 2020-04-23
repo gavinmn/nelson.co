@@ -1,0 +1,13 @@
+.sample-grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap:16px;
+	margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 445px) {
+	.sample-grid {
+			grid-template-columns: 49.01960784% 49.01960784%;
+			
+		}	
+}
