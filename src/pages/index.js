@@ -86,6 +86,30 @@ const IndexPage = (props) => (
 		</div>
 	</div>
 
+	<div className="animation-container">
+		<div className="sample-grid">
+			<ProjectInfo 
+				logo={props.data.illusLogo.childImageSharp.fluid}
+				title="Illustration Design Sample"
+				subtitle="Client and Personal Work"
+				date="2018 - 2020"
+			/>
+
+			<Shot 
+				image={props.data.avatar.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.peace.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.shaka.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.draw.childImageSharp.fluid}
+			/>
+		</div>
+	</div>
+
   </Layout>
 )
 
@@ -158,49 +182,84 @@ export const ImageQuery = graphql`
 	  },
 	  designIcons: file(relativePath: {eq: "visual/designicons.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:256) {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
 	  },
 	  devIcons: file(relativePath: {eq: "visual/devicons.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:256) {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
 	  },
 	  mailIcons: file(relativePath: {eq: "visual/mailicons.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:256) {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
 	  },
 	  Swatches: file(relativePath: {eq: "visual/swatches.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:256) {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
 	  },
 	  finderWindows: file(relativePath: {eq: "visual/finderwindows.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:256) {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
 	  },
 	  wh1: file(relativePath: {eq: "visual/whicons.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:256) {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
 	  },
 	  wh2: file(relativePath: {eq: "visual/whicons2.png"}) {
 	    childImageSharp {
+	      fluid (maxWidth:800) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  illusLogo: file(relativePath: {eq: "illus/illuslogo.png"}) {
+	    childImageSharp {
 	      fluid (maxWidth:256) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  avatar: file(relativePath: {eq: "illus/avatar.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:800) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  peace: file(relativePath: {eq: "illus/peace.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:800) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  shaka: file(relativePath: {eq: "illus/shaka.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:800) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  draw: file(relativePath: {eq: "illus/draw.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:800) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
