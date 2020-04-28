@@ -7,13 +7,13 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <div className = "header">
-  	<div className = "width-container">
-  		<div className = "header-flex"> 
-  			<Link to="/" className="secondary-text name">Gavin Nelson</Link>
-  			<Link to="/" className="secondary-text link-text link">About</Link>
-  			<AnchorLink to="/#work" stripHash className="secondary-text link-text link">Work</AnchorLink>
-		</div>
-	 </div>
+    <div className = "width-container">
+      <div className = "header-flex"> 
+        <Link to="/" className="secondary-text name">Gavin Nelson</Link>
+        <Link to="/" className="secondary-text link-text link" activeClassName="active">About</Link>
+        <AnchorLink to="/#work" stripHash className="secondary-text link-text link">Work</AnchorLink>
+    </div>
+   </div>
   </div>
 )
 

@@ -17,3 +17,7 @@
 .link{
 	margin-left: 1.5rem;
 }
+
+a.active {
+	border-color:#2950FF;
+}
