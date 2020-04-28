@@ -10,17 +10,27 @@
 	max-width: 444px;
 }
 
-.chalkflow-container {
-	width: 100%;
-	margin-top: .5rem;
-	border-radius: 4px;
-	display: flex;
-	justify-content: center;
+.video-container {
+	margin: 1rem 0;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	justify-items: center;
 	align-items: center;
-	background-color: #F2F5F8;
-	padding: 16px 0;	
 }
 
-.chalkflow {
-	width: 281px;
+.bezel {
+	width: 100%;
+	max-width: 432px;
+	z-index: 2;
+}
+
+.video {
+	width: 86.80555556%;
+	max-width: 375px;
+}
+
+.video, .bezel {
+	grid-column: 1;
+	grid-row: 1;
 }

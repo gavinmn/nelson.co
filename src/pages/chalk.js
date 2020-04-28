@@ -58,12 +58,14 @@ const chalkPage = (props) => (
 			<CSText 
 				text="There are three core modes to Chalk's group chat functionality. A text mode where the app functions as any regular messaging service, a voice mode that can be entered to connect with your friends with direct voice communication, and a listen mode where you can hear your friends talking but your microphone is not turned on. "
 			/>
-
-			<div className="full-width-img">
-				<video controls preload>
+			<div className="video-container">
+				<Img fluid={props.data.iphonebezel.childImageSharp.fluid} className="bezel" alt="" />
+				<video className="video" width="375" autoPlay muted loop>
 	    			<source src={chalkflow} type="video/mp4" />
 	  			</video>
   			</div>
+
+
 	    </div>
     </div>
 
@@ -91,6 +93,13 @@ export const ImageQuery = graphql`
 	  roleimage: file(relativePath: {eq: "chalk/roleimage.png"}) {
 	    childImageSharp {
 	      fluid (maxWidth:888) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	   iphonebezel: file(relativePath: {eq: "chalk/iphonebezel.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:750) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
