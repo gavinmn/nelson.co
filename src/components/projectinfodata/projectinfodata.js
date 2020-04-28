@@ -1,6 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
 import "./projectinfodata.css"
 
 const ProjectInfoData = props => (

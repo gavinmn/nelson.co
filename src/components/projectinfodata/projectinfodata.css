@@ -2,12 +2,6 @@
 	margin-left: .5rem;
 }
 
-@media only screen and (min-width: 445px) {
-	.project-info-container {
-		align-self: center;
-	}
-}
-
 
 @media only screen and (min-width: 722px) {
 	.project-title, .project-description, .project-date {

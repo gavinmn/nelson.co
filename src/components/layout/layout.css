@@ -121,6 +121,10 @@ p {
   overflow: hidden;
 }
 
+.portfolio-content-container {
+  margin: 3rem 0 4rem 0;
+}
+
 .animation-container {
   animation: come-in .5s ease-out; 
 }

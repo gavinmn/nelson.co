@@ -16,7 +16,7 @@ const Hero = () => (
 					href="mailto:gnelsondesign@gmail.com"
 					link="Email"
 				/>
-				<Contact className = "dribbble"
+				<Contact
 					class="dribbble secondary-text link-text"
 					href="https://dribbble.com/Gavin/"
 					link="Dribbble"
