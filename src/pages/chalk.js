@@ -65,6 +65,48 @@ const chalkPage = (props) => (
 	  			</video>
   			</div>
 
+  			<CSText 
+				text="I worked with Chalk to design a method to make navigating these modes easy for the user, centering all mode switching around one action button in the bottom left corner of the screen. By default the user starts in text mode, and can tap the action button to reveal options to switch into voice mode, or listen mode."
+			/>
+
+			<Img fluid={props.data.devicesimage.childImageSharp.fluid} className="full-width-img" alt="" />
+
+			<CSText 
+				text="Once in a new mode, the UI is updated to reflect their mode, and provide contextual options such as muting the microphone in voice mode, or adjusting the amount of time left to idle in listen mode."
+			/>
+			<br></br>
+			<CSHeader 
+				text="User Research"
+			/>
+			<CSText 
+				text="User research conducted on the initial UX of the app showed that users were having trouble figuring out how to use the core features of Chalk, and that once they learned, were struggling to use it efficiently. This was discoverd both by Chalk's prior testing and by my own testing on new users with developer builds of the app."
+			/>
+
+			<Img fluid={props.data.researchimage.childImageSharp.fluid} className="half-width-img" alt="" />
+
+			<CSText 
+				text="These findings shaped how I thought about the solution. My goal was to make Chalk's primary features discoverable, intuitive, and efficient for the end user."
+			/>
+			<br></br>
+			<CSHeader 
+				text="Early Sketches"
+			/>
+			<CSText 
+				text="I started working on this design challenge by taking a step back from the initial UX and sketching out wireframes of completely new ideas. "
+			/>
+
+			<Img fluid={props.data.sketchesimage.childImageSharp.fluid} className="full-width-img" alt="" />
+			<CSText 
+				text="These rough sketches helped us hone in on a high level user flow while worrying about the small details later."
+			/>
+			<br></br>
+			<CSHeader 
+				text="Medium and High Fidelity Prototypes"
+			/>
+			<CSText 
+				text="After reviewing these early ideas with Chalk and discussing what worked and what didn't work, I moved onto creating medium fidelity mockups and prototypes to investigate how some details of the UX might look and feel and to validate initial assumptions about the interaction model."
+			/>
+			
 
 	    </div>
     </div>
@@ -100,6 +142,27 @@ export const ImageQuery = graphql`
 	   iphonebezel: file(relativePath: {eq: "chalk/iphonebezel.png"}) {
 	    childImageSharp {
 	      fluid (maxWidth:750) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  devicesimage: file(relativePath: {eq: "chalk/devicesimage.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:1632) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  researchimage: file(relativePath: {eq: "chalk/researchimage.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:888) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  sketchesimage: file(relativePath: {eq: "chalk/sketchesimage.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:1632) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
