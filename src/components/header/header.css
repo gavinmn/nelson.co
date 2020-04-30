@@ -3,8 +3,12 @@
 	top:0;
 	width: 100%;
 	padding: 1rem 0;
+	background-color: rgba(255, 255, 255, .8);	
+}
+
+.header-scrolled {
+	backdrop-filter: blur(2px);
 	z-index: 10;
-	background-color: rgba(255, 255, 255, .9);
 }
 
 .header-flex {
@@ -24,4 +28,10 @@
 
 a.active {
 	border-color:#2950FF;
+}
+
+@media only screen and (min-width: 722px) {
+	.header {
+		padding: .5rem 0;
+	}
 }

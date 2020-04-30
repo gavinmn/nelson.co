@@ -1,7 +1,5 @@
-
-
 .hero-container {
-	margin-top: 8rem;
+	margin-top: 10rem;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: [1] auto [2] auto [3] auto;

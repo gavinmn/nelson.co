@@ -5,24 +5,44 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "./header.css"
 
-const Header = ({ siteTitle }) => (
-  <div className = "header">
-    <div className = "width-container">
-      <div className = "header-flex"> 
-        <Link to="/" className="secondary-text name">Gavin Nelson</Link>
-        <Link to="/" className="secondary-text link-text link" activeClassName="active">About</Link>
-        <AnchorLink to="/#work" stripHash className="secondary-text link-text link">Work</AnchorLink>
-    </div>
-   </div>
-  </div>
-)
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+    this.state = {
+      hasScrolled: false
+    }
+  }
 
-Header.defaultProps = {
-  siteTitle: ``,
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = (event) => {
+    const scrollTop = window.pageYOffset
+
+    if (scrollTop > 48) {
+      this.setState({ hasScrolled: true })
+    } else {
+      this.setState({ hasScrolled: false })
+    }
+  }
+
+  render() {
+    return (
+      <div className={this.state.hasScrolled ? 'header header-scrolled' : 'header'}>
+        <div className = "header-container">
+           <div className = "width-container">
+             <div className = "header-flex"> 
+                <Link to="/" className="secondary-text name">Gavin Nelson</Link>
+                <Link to="/" className="secondary-text link-text link" activeClassName="active"> About</Link>
+                <AnchorLink to="/#work" stripHash className="secondary-text link-text link">Work</AnchorLink>
+              </div>
+            </div>
+         </div>
+      </div>
+    )
+  }
 }
 
 export default Header
