@@ -17,7 +17,7 @@ const IndexPage = (props) => (
     <a id="work"></a>
     <div className="animation-container">
 	    <CaseStudy 
-			link="/chalk"
+			link="chalk"
 			logo={props.data.chalkLogo.childImageSharp.fluid}
 			title="Chalk"
 			subtitle="Interaction and Visual Design"
@@ -26,7 +26,7 @@ const IndexPage = (props) => (
 		/>
 
 		<CaseStudy 
-			link=""
+			link="experts"
 			logo={props.data.expertsLogo.childImageSharp.fluid}
 			title="wikiHow Expert Profiles"
 			subtitle="Product and Visual Design"

@@ -22,9 +22,18 @@
     font-style: normal;
 }
 
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to   {
+      opacity: 1;
+    }
+}
+
 @keyframes come-in {
     from {
-      transform: translateY(-.15%) scale(.98); 
+      transform: translateY(0) scale(.98); 
       opacity: 0;
     }
     to   {
@@ -126,7 +135,11 @@ p {
 }
 
 .animation-container {
-  animation: come-in .5s ease-out; 
+  animation: come-in 1s ease-out; 
+}
+
+.animation-fade{
+  animation: fade-in .6s ease-out;
 }
 
 @media only screen and (min-width: 722px) {
@@ -138,7 +151,6 @@ p {
     font-size: 22px;
     color: #1D1D1F;
   }
-
 
   .headline-text {
     font-size: 22px;

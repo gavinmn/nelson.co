@@ -20,7 +20,7 @@ import actionbutton from "../images/chalk/actionbutton.mp4"
 const chalkPage = (props) => (
   <Layout>
     <SEO title="Chalk" />
-    <div className="animation-container">
+    <div className="animation-fade">
 	    <div className="portfolio-content-container">
 		    <div className="small-width-container">
 			    <ProjectInfoData

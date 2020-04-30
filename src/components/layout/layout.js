@@ -18,16 +18,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="animation-container">
-        <Header siteTitle={data.site.siteMetadata.title} />
-    </div>
-        <div className = "width-container">
-          <main>{children}</main>
-          <footer>
-            <p className = "tertiary-text"><i>Designed and Developed by Gavin Nelson</i></p>
-            © {new Date().getFullYear()} Gavin Nelson
-          </footer>
-        </div>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className = "width-container">
+        <main>{children}</main>
+        <footer>
+          <p className = "tertiary-text"><i>Designed and Developed by Gavin Nelson</i></p>
+          © {new Date().getFullYear()} Gavin Nelson
+        </footer>
+      </div>
      
     </>
   )
