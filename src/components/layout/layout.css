@@ -51,6 +51,7 @@ body {
   background-color: #ffffff;
   font-family: 'National 2', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   overflow-y: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -114,6 +115,7 @@ p {
 }
 
 .link-text:hover {
+  color: #2950ff;
   border-color:#2950FF;
 }
 
@@ -131,7 +133,7 @@ p {
 }
 
 .portfolio-content-container {
-  margin: 6rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
 }
 
 .animation-container {

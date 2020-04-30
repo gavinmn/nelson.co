@@ -15,99 +15,93 @@ const IndexPage = (props) => (
 
     <Hero />
     <a id="work"></a>
-    <div className="animation-container">
-	    <CaseStudy 
-			link="chalk"
-			logo={props.data.chalkLogo.childImageSharp.fluid}
-			title="Chalk"
-			subtitle="Interaction and Visual Design"
-			date="Summer 2019"
-			image={props.data.chalkIntro.childImageSharp.fluid}
+    <CaseStudy 
+		link="chalk"
+		logo={props.data.chalkLogo.childImageSharp.fluid}
+		title="Chalk"
+		subtitle="Interaction and Visual Design"
+		date="Summer 2019"
+		image={props.data.chalkIntro.childImageSharp.fluid}
+	/>
+
+	<CaseStudy 
+		link="experts"
+		logo={props.data.expertsLogo.childImageSharp.fluid}
+		title="wikiHow Expert Profiles"
+		subtitle="Product and Visual Design"
+		date="Summer 2018"
+		image={props.data.expertsIntro.childImageSharp.fluid}
+	/>
+
+	<CaseStudy 
+		link=""
+		logo={props.data.slapdashLogo.childImageSharp.fluid}
+		title="Slapdash"
+		subtitle="Brand Design"
+		date="Fall 2019"
+		image={props.data.slapdashIntro.childImageSharp.fluid}
+	/>
+
+	<CaseStudy 
+		link=""
+		logo={props.data.carabinerLogo.childImageSharp.fluid}
+		title="Spring Gate Carabiner"
+		subtitle="Industrial Design and Prototyping"
+		date="Spring 2016"
+		image={props.data.carabinerIntro.childImageSharp.fluid}
+	/>
+
+	<div className="sample-grid">
+		<ProjectInfo 
+			logo={props.data.visualLogo.childImageSharp.fluid}
+			title="Visual Design Sample"
+			subtitle="Client and Personal Work"
+			date="2014 - 2020"
 		/>
 
-		<CaseStudy 
-			link="experts"
-			logo={props.data.expertsLogo.childImageSharp.fluid}
-			title="wikiHow Expert Profiles"
-			subtitle="Product and Visual Design"
-			date="Summer 2018"
-			image={props.data.expertsIntro.childImageSharp.fluid}
+		<Shot 
+			image={props.data.designIcons.childImageSharp.fluid}
 		/>
-
-		<CaseStudy 
-			link=""
-			logo={props.data.slapdashLogo.childImageSharp.fluid}
-			title="Slapdash"
-			subtitle="Brand Design"
-			date="Fall 2019"
-			image={props.data.slapdashIntro.childImageSharp.fluid}
+		<Shot 
+			image={props.data.devIcons.childImageSharp.fluid}
 		/>
-
-		<CaseStudy 
-			link=""
-			logo={props.data.carabinerLogo.childImageSharp.fluid}
-			title="Spring Gate Carabiner"
-			subtitle="Industrial Design and Prototyping"
-			date="Spring 2016"
-			image={props.data.carabinerIntro.childImageSharp.fluid}
+		<Shot 
+			image={props.data.mailIcons.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.Swatches.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.finderWindows.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.wh1.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.wh2.childImageSharp.fluid}
 		/>
 	</div>
 
-	<div className="animation-container">
-		<div className="sample-grid">
-			<ProjectInfo 
-				logo={props.data.visualLogo.childImageSharp.fluid}
-				title="Visual Design Sample"
-				subtitle="Client and Personal Work"
-				date="2014 - 2020"
-			/>
+	<div className="sample-grid">
+		<ProjectInfo 
+			logo={props.data.illusLogo.childImageSharp.fluid}
+			title="Illustration Design Sample"
+			subtitle="Client and Personal Work"
+			date="2018 - 2020"
+		/>
 
-			<Shot 
-				image={props.data.designIcons.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.devIcons.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.mailIcons.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.Swatches.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.finderWindows.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.wh1.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.wh2.childImageSharp.fluid}
-			/>
-		</div>
-	</div>
-
-	<div className="animation-container">
-		<div className="sample-grid">
-			<ProjectInfo 
-				logo={props.data.illusLogo.childImageSharp.fluid}
-				title="Illustration Design Sample"
-				subtitle="Client and Personal Work"
-				date="2018 - 2020"
-			/>
-
-			<Shot 
-				image={props.data.avatar.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.peace.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.shaka.childImageSharp.fluid}
-			/>
-			<Shot 
-				image={props.data.draw.childImageSharp.fluid}
-			/>
-		</div>
+		<Shot 
+			image={props.data.avatar.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.peace.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.shaka.childImageSharp.fluid}
+		/>
+		<Shot 
+			image={props.data.draw.childImageSharp.fluid}
+		/>
 	</div>
 
   </Layout>

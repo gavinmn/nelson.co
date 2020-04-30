@@ -88,7 +88,7 @@ const chalkPage = (props) => (
 
 			<div className="video-container">
 				<Img fluid={props.data.iphonebezel.childImageSharp.fluid} className="bezel" alt="" />
-				<video className="video" width="375" autoPlay muted loop>
+				<video className="video" width="375" playsInline autoPlay muted loop>
 	    			<source src={chalkflow} type="video/mp4" />
 	  			</video>
   			</div>
@@ -103,10 +103,10 @@ const chalkPage = (props) => (
 			/>
 
 			<div className="multivideo-container">
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={listenmode} type="video/mp4" />
 	  			</video>
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={talkmode} type="video/mp4" />
 	  			</video>
   			</div>
@@ -116,10 +116,10 @@ const chalkPage = (props) => (
 			/>
 
 			<div className="multivideo-container">
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={avatarswipe} type="video/mp4" />
 	  			</video>
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={colorchange} type="video/mp4" />
 	  			</video>
   			</div>
@@ -154,16 +154,16 @@ const chalkPage = (props) => (
 				text="From these sketches I quickly jumped into some higher fidelity interactive prototypes to gather qualitative user testing data and better communicate ideas to stakeholders."
 			/>
 			<div className="quadvideo-container">
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={swipe1} type="video/mp4" />
 	  			</video>
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={swipe2} type="video/mp4" />
 	  			</video>
-	  			<video className="multivideo" autoPlay muted loop>
+	  			<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={volumeslider} type="video/mp4" />
 	  			</video>
-				<video className="multivideo" autoPlay muted loop>
+				<video className="multivideo" playsInline autoPlay muted loop>
 	    			<source src={actionbutton} type="video/mp4" />
 	  			</video>
   			</div>

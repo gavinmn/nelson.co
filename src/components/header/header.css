@@ -8,6 +8,7 @@
 
 .header-scrolled {
 	backdrop-filter: blur(2px);
+	border-bottom: 1px solid rgba(0, 0, 0, .05);
 	z-index: 10;
 }
 
@@ -20,6 +21,10 @@
 .name {
 	margin-right: auto;
 	margin-left: 0;
+}
+
+.name:hover {
+	color: #2950ff;
 }
 
 .link{
