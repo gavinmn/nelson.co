@@ -94,7 +94,7 @@ const chalkPage = (props) => (
   			</div>
   			<div className="small-width-container">
 	  			<div className="caption-container">
-		  			<a className="secondary-text link-text prototype-link" href="https://sketch.cloud/s/z5pO4/a/DOVAlW/play">View Interactive Prototype</a>
+		  			<a className="secondary-text link-text prototype-link" href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">View Interactive Prototype</a>
 	  			</div>
   			</div>
 
