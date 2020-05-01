@@ -38,8 +38,38 @@ const HeroText = styled.p`
 	}
 `
 
+const LinkContainer = styled.div`
+	margin-top: 1rem;
+	margin-bottom: 8rem;
+	grid-row: 3;
 
+	@media ${device.mobile} {
+		margin-top: .75rem;
+		grid-row: 2;
+		grid-column: right;
+	}
+`
 
+const Email = styled(StyledLink)`
+	&:hover {
+		color: #2950FF;
+		border-color: #2950FF;
+	}
+`
+const Dribbble = styled(StyledLink)`
+	margin-left: 1.5rem;
+	&:hover {
+		color: #EA4C89;
+		border-color: #EA4C89;
+	}
+`
+const LinkedIn = styled(StyledLink)`
+	margin-left: 1.5rem;
+	&:hover {
+		color: #0A66C2;
+		border-color: #0A66C2;
+	}
+`
 
 const Hero = () => (
 	<Fade>
@@ -47,14 +77,13 @@ const Hero = () => (
 			<StyledLogo/>
 				<HeroText>Gavin Nelson is a <Highlight><strong>product & visual designer</strong></Highlight> in the San Francisco Bay Area. He creates intuitive and clean user-centered design solutions with great attention to detail.<br></br><br></br>He is currently working as a Product Designer at wikiHow as well as on freelance projects.
 				</HeroText>
-				<div className = "contact-links">
-					<StyledLink href="mailto:gnelsondesign@gmail.com">Email</StyledLink>
-					<StyledLink href="https://dribbble.com/Gavin/">Dribbble</StyledLink>
-					<StyledLink href="https://www.linkedin.com/in/gavin-nelson/">LinkedIn</StyledLink>
-				</div>
+				<LinkContainer>
+					<Email href="mailto:gnelsondesign@gmail.com">Email</Email>
+					<Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
+					<LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">LinkedIn</LinkedIn>
+				</LinkContainer>
 		</HeroContainer>
 	</Fade>
-		
 )
 
 export default Hero
