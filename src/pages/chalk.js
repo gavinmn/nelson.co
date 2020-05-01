@@ -68,7 +68,8 @@ const chalkPage = (props) => (
 			<CSText 
 				text="The goal of this project was to simplify and make this core user experience component more intuitive to learn and more efficient to control."
 			/>
-			<br></br>
+			<Img fluid={props.data.goalimage.childImageSharp.fluid} className="half-width-img" alt="" />
+
 			<CSHeader 
 				text="Solution"
 			/>
@@ -284,6 +285,13 @@ export const ImageQuery = graphql`
 	  finaliconsimage: file(relativePath: {eq: "chalk/finaliconsimage.png"}) {
 	    childImageSharp {
 	      fluid (maxWidth:1632) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  goalimage: file(relativePath: {eq: "chalk/goalimage.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:888) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
