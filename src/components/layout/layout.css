@@ -1,102 +1,3 @@
-@font-face {
-    font-family: 'National 2';
-    src: url('../../fonts/national-2-web-regular.woff') format('woff'), url('../../fonts/national-2-web-regular.woff2') format('woff2');
-
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'National 2';
-    src: url('../../fonts/national-2-web-regular-italic.woff') format('woff'), url('../../fonts/national-2-web-regular-italic.woff2') format('woff2');
-
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'National 2';
-    src: url('../../fonts/national-2-web-bold.woff') format('woff'), url('../../fonts/national-2-web-bold.woff2') format('woff2');
-
-    font-weight: bold;
-    font-style: normal;
-}
-
-@keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to   {
-      opacity: 1;
-    }
-}
-
-@keyframes come-in {
-    from {
-      transform: translateY(0) scale(.98); 
-      opacity: 0;
-    }
-    to   {
-      transform: translateY(0) scale(1); 
-      opacity: 1;
-    }
-}
-
-* {
-  margin:0;
-  padding:0;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: 'National 2', -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
-  overflow-y: scroll;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-html, body {
-  width: 100%;
-  height: 100%
-}
-
-html {
-  font-size: 16px;
-  -webkit-overflow-scrolling: touch;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  line-height: 1.5;
-}
-
-footer {
-  margin-bottom:2rem;
-}
-
-img {
-  max-width: 100%;
-  height:auto;
-}
-
-a {
-  text-decoration: none;
-  color: #8B8F9B;
-}
-
-p {
-  font-size: 16px;
-  color: #1D1D1F;
-}
-
-::selection {
-  background:#ffc0f7;
-}
-
-.headline-text {
-  font-size: 16px;
-  color: #1D1D1F;
-  font-weight: bold;
-}
-
 .secondary-text {
   font-size: 14px;
   color: #8B8F9B;
@@ -105,25 +6,6 @@ p {
 .tertiary-text, footer {
   font-size: 14px;
   color: #DCDEE1;
-}
-
-.link-text {
-  border-bottom: 1px solid;
-  border-color: #DCDEE1;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.link-text:hover {
-  color: #2950ff;
-  border-color:#2950FF;
-}
-
-.width-container {
-  max-width: 816px;
-  margin: 0 auto;
-  padding: 0 5% 0 5%;
-  overflow: hidden;
 }
 
 .small-width-container {
@@ -136,29 +18,7 @@ p {
   margin: 4rem 0 4rem 0;
 }
 
-.animation-container {
-  animation: come-in 1s ease-out; 
-}
-
-.animation-fade{
-  animation: fade-in .6s ease-out;
-}
-
 @media only screen and (min-width: 722px) {
-  html {
-    font-size: 32px;
-  }
-
-  p {
-    font-size: 22px;
-    color: #1D1D1F;
-  }
-
-  .headline-text {
-    font-size: 22px;
-    color: #1D1D1F;
-    font-weight: bold;
-  }
 
   .secondary-text {
     font-size: 18px;
