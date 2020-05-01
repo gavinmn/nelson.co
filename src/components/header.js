@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import styled from "styled-components"
 import Wrapper from "./wrapper"
+import StyledLink from "./styledlink"
+import { device } from "./device"
 
 
 const StyledHeader = styled.div` 
@@ -16,8 +18,8 @@ const StyledHeader = styled.div`
   border-bottom: ${props => props.scrolled ? " 1px solid rgba(0, 0, 0, .05)" : "0"};
   z-index: ${props => props.scrolled ? "10" : "1"};
 
-  @media only screen and (min-width: 722px) {
-    padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
+  @media ${device.mobile} {
+    padding: .5rem 0;
   }
 `
 const HeaderContainer = styled.div` 
@@ -26,25 +28,24 @@ const HeaderContainer = styled.div`
   justify-content: flex-end;
 `
 
-const NavLink = styled(Link)`
+const AboutLink = styled(StyledLink)`
+  margin-left: 1.5rem;
+
+  &.active {
+    border-color: #2950FF;
+  }
+`
+const WorkLink = styled(AnchorLink)`
   margin-left: 1.5rem;
   border-bottom: 1px solid;
   border-color: #DCDEE1;
   padding-bottom: 0;
   margin-bottom: 0;
 
-  &.active {
-    border-color: #2950FF;
-  }
-
   &:hover {
     color: #2950ff;
     border-color: #2950FF;
   }
-
-`
-const StyledAnchorLink = styled(AnchorLink)`
-  margin-left: 1.5rem;
 `
 const Name = styled(Link)`
   margin-right: auto;
@@ -85,8 +86,8 @@ class Header extends React.Component {
         <Wrapper>
           <HeaderContainer>
             <Name to="/">Gavin Nelson</Name>
-            <NavLink to="/" activeStyle={{"border-color": "#2950FF"}}>About</NavLink>
-            <StyledAnchorLink to="/#work" stripHash>Work</StyledAnchorLink>
+            <AboutLink to="/" activeStyle={{"border-color": "#2950FF"}}>About</AboutLink>
+            <WorkLink to="/#work" stripHash>Work</WorkLink>
           </HeaderContainer>
         </Wrapper> 
       </StyledHeader>

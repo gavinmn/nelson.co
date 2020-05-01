@@ -43,6 +43,7 @@ export const GlobalStyle = createGlobalStyle `
 	body {
 	  	background-color: #ffffff;
 	  	font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif;
+	  	color: #1D1D1F;
 	  	overflow-y: scroll;
 	  	overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
@@ -63,6 +64,8 @@ export const GlobalStyle = createGlobalStyle `
 
 	footer {
 	  	margin-bottom:2rem;
+	  	font-size: 14px;
+  		color: #DCDEE1;
 	}
 
 	img {
@@ -77,11 +80,12 @@ export const GlobalStyle = createGlobalStyle `
 
 	p {
 	 	font-size: 16px;
-	  	color: #1D1D1F;
+	 	
 	}
 
 	::selection {
-	  	background:#ffc0f7;
+		color: white;
+	  	background:#2950ff;
 	}
 
 	@media only screen and (min-width: 722px) {
@@ -91,7 +95,12 @@ export const GlobalStyle = createGlobalStyle `
 
 		p {
 		   font-size: 22px;
-		   color: #1D1D1F;
+		}
+
+		a {
+			font-size: 18px;
+	  		text-decoration: none;
+	  		color: #8B8F9B;
 		}
 	}
 

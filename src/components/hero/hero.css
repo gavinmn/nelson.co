@@ -17,18 +17,6 @@
 	max-width: 506px;
 }
 
-.blue-text {
-	color:#2950FF;
-}
-
-.ampersand {
-	color:#2950FF;
-	/*background: linear-gradient(0deg, rgba(41,80,255,0.00) 0%, #2950FF 60%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;*/
-	font-weight: bold;
-}
-
 .contact-links {
 	margin-top: 1rem;
 	margin-bottom: 8rem;
