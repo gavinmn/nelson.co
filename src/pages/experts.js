@@ -3,10 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import "../styles/experts.css"
 import ProjectInfoText from "../components/projectinfotext"
-import CSText from "../components/cstext"
-import CSHeader from "../components/csheader"
 
 const expertsPage = (props) => (
   <Layout>

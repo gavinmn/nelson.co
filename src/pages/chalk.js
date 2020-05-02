@@ -3,11 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import "../styles/chalk.css"
 import styled from "styled-components"
 import ProjectInfoText from "../components/projectinfotext"
-import CSText from "../components/cstext"
-import CSHeader from "../components/csheader"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"
 import Fade from '../components/Fade'
@@ -68,7 +65,7 @@ const DualVideoContainer = styled.div`
 	padding: 16px;
 `
 
-const DualVideo = styled.video`
+const MultiVideo = styled.video`
 	width: 100%;
   	height: auto;
   	border-radius: 8px;
@@ -151,12 +148,12 @@ const chalkPage = (props) => (
 			</SmallWrapper>
 
 			<DualVideoContainer>
-				<DualVideo playsInline autoPlay muted loop>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={listenmode} type="video/mp4" />
-	  			</DualVideo>
-				<DualVideo playsInline autoPlay muted loop>
+	  			</MultiVideo>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={talkmode} type="video/mp4" />
-	  			</DualVideo>
+	  			</MultiVideo>
   			</DualVideoContainer>
 
   			<SmallWrapper>
@@ -164,12 +161,12 @@ const chalkPage = (props) => (
 			</SmallWrapper>
 
 			<DualVideoContainer>
-				<DualVideo playsInline autoPlay muted loop>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={avatarswipe} type="video/mp4" />
-	  			</DualVideo>
-				<DualVideo playsInline autoPlay muted loop>
+	  			</MultiVideo>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={colorchange} type="video/mp4" />
-	  			</DualVideo>
+	  			</MultiVideo>
   			</DualVideoContainer>
 
   			<SmallWrapper>
@@ -185,59 +182,54 @@ const chalkPage = (props) => (
 
 			</SmallWrapper>
 
+			<FullWidthImage fluid={props.data.sketchesimage.childImageSharp.fluid} alt="" />
 
-			<Img fluid={props.data.sketchesimage.childImageSharp.fluid} className="full-width-img" alt="" />
-			<CSText 
-				text="The primary interaction models I would focus on from here were the action button model, full screen swipe model, and volume slider model that you can see above."
-			/>
-			<br></br>
-			<CSHeader 
-				text="Prototypes"
-			/>
-			<CSText 
-				text="From these sketches I quickly jumped into some higher fidelity interactive prototypes to gather qualitative user testing data and better communicate ideas to stakeholders."
-			/>
-			<div className="quadvideo-container">
-				<video className="multivideo" playsInline autoPlay muted loop>
+			<SmallWrapper>
+				<p>The primary interaction models I would focus on from here were the action button model, full screen swipe model, and volume slider model that you can see above.</p>
+				<br></br>
+				<h3>Prototypes</h3>
+				<p>From these sketches I quickly jumped into some higher fidelity interactive prototypes to gather qualitative user testing data and better communicate ideas to stakeholders.</p>
+			</SmallWrapper>
+
+			<QuadVideoContainer>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={swipe1} type="video/mp4" />
-	  			</video>
-				<video className="multivideo" playsInline autoPlay muted loop>
+	  			</MultiVideo>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={swipe2} type="video/mp4" />
-	  			</video>
-	  			<video className="multivideo" playsInline autoPlay muted loop>
+	  			</MultiVideo>
+	  			<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={volumeslider} type="video/mp4" />
-	  			</video>
-				<video className="multivideo" playsInline autoPlay muted loop>
+	  			</MultiVideo>
+				<MultiVideo playsInline autoPlay muted loop>
 	    			<source src={actionbutton} type="video/mp4" />
-	  			</video>
-  			</div>
+	  			</MultiVideo>
+  			</QuadVideoContainer>
 
-  			<CSText 
-				text="User testing these prototypes brought some important learnings to the forefront. The volume slider model was discoverable, but was initially a bit confusing to users. The full screen swipe was not highly discoverable and conflicted with many common iOS gestures already ingrained in users. Finally the action button model had decent discoverability, but would require some tweaking to have better usability."
-			/>
-			<br></br>
-			<CSHeader 
-				text="Decision Making"
-			/>
-			<CSText 
-				text="From these prototypes I lead the team in a decision making graph."
-			/>
-			<Img fluid={props.data.graphimage.childImageSharp.fluid} className="half-width-img" alt="" />
-			<CSText 
-				text="This graph plotted each idea in terms of how easy it would be for users to adopt against how well it would fit in Chalk’s development timeline. From my user testing and the teams best estimates, the action button model was show to be the winner."
-			/>
-			<br></br>
-			<CSHeader 
-				text="High Fidelity Details"
-			/>
-			<CSText 
-				text="From here I began developing some high fidelity mockups and working on details such as the icons for the modes."
-			/>
-			<Img fluid={props.data.finaliconsimage.childImageSharp.fluid} className="full-width-img" alt="" />
-			<Img fluid={props.data.finalimage.childImageSharp.fluid} className="full-width-img" alt="" />
-			<CSText 
-				text="Through a handful of iterations these details came together to form the final product discussed in detail above."
-			/>
+  			<SmallWrapper>
+	  			<p>User testing these prototypes brought some important learnings to the forefront. The volume slider model was discoverable, but was initially a bit confusing to users. The full screen swipe was not highly discoverable and conflicted with many common iOS gestures already ingrained in users. Finally the action button model had decent discoverability, but would require some tweaking to have better usability.</p>
+
+				<br></br>
+				<h3>Decision Making</h3>
+
+				<p>From these prototypes I lead the team in a decision making graph.</p>
+
+				<HalfWidthImage fluid={props.data.graphimage.childImageSharp.fluid} alt="" />
+
+				<p>This graph plotted each idea in terms of how easy it would be for users to adopt against how well it would fit in Chalk’s development timeline. From my user testing and the teams best estimates, the action button model was show to be the winner.</p>
+
+				<br></br>
+				<h3>High Fidelity Detailss</h3>
+				<p>From here I began developing some high fidelity mockups and working on details such as the icons for the modes.</p>
+
+			</SmallWrapper>
+
+			<FullWidthImage fluid={props.data.finaliconsimage.childImageSharp.fluid} alt="" />
+			<FullWidthImage fluid={props.data.finalimage.childImageSharp.fluid} alt="" />
+
+			<SmallWrapper>
+				<p>Through a handful of iterations these details came together to form the final product discussed in detail above.</p>
+			</SmallWrapper>
 	    </PortfolioContainer>
     </Fade>
 
