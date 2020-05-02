@@ -1,12 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
-import CaseStudy from "../components/casestudy/CaseStudy"
-import ProjectInfo from "../components/projectinfo/projectinfo"
-import Shot from "../components/shot/shot"
-import "../styles/index.css"
+import CaseStudy from "../components/casestudy"
+import ProjectInfo from "../components/projectinfo"
+import Shot from "../components/shot"
+
+const SampleGrid = styled.div`
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap:16px;
+	margin-bottom: 4rem;
+
+	@media only screen and (min-width: 445px) {
+		grid-template-columns: 49.01960784% 49.01960784%;
+	}
+`
 
 const IndexPage = (props) => (
   <Layout>
@@ -51,7 +62,7 @@ const IndexPage = (props) => (
 		image={props.data.carabinerIntro.childImageSharp.fluid}
 	/>
 
-	<div className="sample-grid">
+	<SampleGrid>
 		<ProjectInfo 
 			logo={props.data.visualLogo.childImageSharp.fluid}
 			title="Visual Design Sample"
@@ -80,9 +91,9 @@ const IndexPage = (props) => (
 		<Shot 
 			image={props.data.wh2.childImageSharp.fluid}
 		/>
-	</div>
+	</SampleGrid>
 
-	<div className="sample-grid">
+	<SampleGrid>
 		<ProjectInfo 
 			logo={props.data.illusLogo.childImageSharp.fluid}
 			title="Illustration Design Sample"
@@ -102,7 +113,7 @@ const IndexPage = (props) => (
 		<Shot 
 			image={props.data.draw.childImageSharp.fluid}
 		/>
-	</div>
+	</SampleGrid>
 
   </Layout>
 )

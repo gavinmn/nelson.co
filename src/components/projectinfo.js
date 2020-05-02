@@ -1,12 +1,12 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import styled from "styled-component"
+import styled from "styled-components"
 import ProjectInfoText from "./projectinfotext"
 import { device } from "./device"
 
 const Container = styled.p`
-	@media ${device.mobile} {
+	@media only screen and (min-width: 445px) {
 		align-self: center;
 	}
 `

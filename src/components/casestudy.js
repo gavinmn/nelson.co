@@ -20,10 +20,8 @@ const Container = styled.div`
 	align-items: start;
 	transition: .2s ease-in-out;
 
-	@media ${device.mobile} {
-		.cs-container {
-			grid-template-columns: 50% 50%;
-		}
+	@media only screen and (min-width: 445px) {
+		grid-template-columns: 50% 50%;
 	}
 `
 
@@ -34,7 +32,7 @@ const ProjectImage = styled(Img)`
 	align-self: center;
 	justify-self: end;
 
-	@media ${device.mobile} {
+	@media only screen and (min-width: 445px) {
 		margin-top: 0;
 	}
 `

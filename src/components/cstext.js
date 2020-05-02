@@ -1,9 +1,10 @@
 import React from "react"
+import SmallWrapper from "./SmallWrapper"
 
 const CSText = props => (
-	<div className="small-width-container">
+	<SmallWrapper>
 		<p>{props.text}</p>
-	</div>
+	</SmallWrapper>
 )
 
 export default CSText

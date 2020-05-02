@@ -83,6 +83,11 @@ export const GlobalStyle = createGlobalStyle `
 	 	
 	}
 
+	h3 {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
 	::selection {
 		color: white;
 	  	background:#2950ff;
@@ -95,6 +100,11 @@ export const GlobalStyle = createGlobalStyle `
 
 		p {
 		   font-size: 22px;
+		}
+
+		h3 {
+			font-size: 22px;
+			font-weight: bold;
 		}
 
 		a {

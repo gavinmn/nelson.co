@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../styles/experts.css"
-import ProjectInfoData from "../components/projectinfodata/projectinfodata"
-import CSText from "../components/cstext/cstext"
-import CSHeader from "../components/csheader/csheader"
+import ProjectInfoText from "../components/projectinfotext"
+import CSText from "../components/cstext"
+import CSHeader from "../components/csheader"
 
 const expertsPage = (props) => (
   <Layout>
@@ -14,7 +14,7 @@ const expertsPage = (props) => (
     <div className="animation-fade">
 	    <div className="portfolio-content-container">
 		    <div className="small-width-container">
-			    <ProjectInfoData
+			    <ProjectInfoText
 			    	title="wikiHow Expert Profiles"
 					subtitle="Product and Visual Design"
 					date="Summer 2018" 

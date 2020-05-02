@@ -5,6 +5,9 @@ import { device } from "./device"
 
 const Info = styled.p`
 	margin-left: .5rem;
+	color: #1d1d1f;
+	line-height: 1.25;
+
 
 	@media ${device.mobile} {
 		margin-left: 0;

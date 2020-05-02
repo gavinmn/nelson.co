@@ -22,7 +22,7 @@ const StyledHeader = styled.div`
     padding: .5rem 0;
   }
 `
-const HeaderContainer = styled.div` 
+const Container = styled.div` 
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -84,11 +84,11 @@ class Header extends React.Component {
     return (
       <StyledHeader scrolled={this.state.hasScrolled}>
         <Wrapper>
-          <HeaderContainer>
+          <Container>
             <Name to="/">Gavin Nelson</Name>
             <AboutLink to="/" activeStyle={{"border-color": "#2950FF"}}>About</AboutLink>
             <WorkLink to="/#work" stripHash>Work</WorkLink>
-          </HeaderContainer>
+          </Container>
         </Wrapper> 
       </StyledHeader>
     )
