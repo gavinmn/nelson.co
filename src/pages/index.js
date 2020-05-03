@@ -19,7 +19,6 @@ const SampleGrid = styled.div`
 		grid-template-columns: 49.01960784% 49.01960784%;
 	}
 `
-console.log(location)
 const IndexPage = (props) => (
   <Layout >
 

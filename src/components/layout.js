@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import {GlobalStyle} from './typography'
 import Wrapper from "./wrapper"
-import Header from "./header"
+import HeaderTwo from "./header2"
 
 const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const Layout = ({ location, children }) => {
       <>
 
         <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata.title}/>
+        <HeaderTwo siteTitle={data.site.siteMetadata.title}/>
         <Wrapper>
           <main>{children}</main>
           <footer>
