@@ -76,6 +76,7 @@ export const GlobalStyle = createGlobalStyle `
 	a {
 	  	text-decoration: none;
 	  	color: #8B8F9B;
+	  	transition: .2s ease-out;
 	}
 
 	p {

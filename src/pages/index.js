@@ -8,6 +8,7 @@ import CaseStudy from "../components/casestudy"
 import ProjectInfo from "../components/projectinfo"
 import Shot from "../components/shot"
 
+
 const SampleGrid = styled.div`
 	display: grid;
 	grid-template-columns: auto;
@@ -18,9 +19,9 @@ const SampleGrid = styled.div`
 		grid-template-columns: 49.01960784% 49.01960784%;
 	}
 `
-
+console.log(location)
 const IndexPage = (props) => (
-  <Layout>
+  <Layout >
 
     <SEO title="About" />
 

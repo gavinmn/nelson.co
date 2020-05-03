@@ -3,10 +3,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import {GlobalStyle} from './typography'
 import Wrapper from "./wrapper"
-
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -16,12 +15,13 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+    
   return (
       <>
+
         <GlobalStyle />
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <Wrapper>
+        <Header siteTitle={data.site.siteMetadata.title}/>
+        <Wrapper>
           <main>{children}</main>
           <footer>
             <p><i>Designed and Developed by Gavin Nelson</i></p>

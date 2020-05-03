@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import styled from "styled-components"
 import Wrapper from "./wrapper"
-import StyledLink from "./styledlink"
 import { device } from "./device"
 
 
@@ -15,11 +14,11 @@ const StyledHeader = styled.div`
   padding: ${props => props.scrolled ? ".5rem 0" : "1rem 0"};
   background-color: rgba(255, 255, 255, .8);
   backdrop-filter: ${props => props.scrolled ? "blur(2px)" : ""};  
-  border-bottom: ${props => props.scrolled ? " 1px solid rgba(0, 0, 0, .05)" : "0"};
   z-index: ${props => props.scrolled ? "10" : "1"};
+  transition: .4s ease-in-out;
 
   @media ${device.mobile} {
-    padding: .5rem 0;
+    padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
   }
 `
 const Container = styled.div` 
@@ -28,28 +27,29 @@ const Container = styled.div`
   justify-content: flex-end;
 `
 
-const AboutLink = styled(StyledLink)`
+const AboutLink = styled(Link)`  
   margin-left: 1.5rem;
+  color: #1D1D1F;
 
-  &.active {
-    border-color: #2950FF;
+  &:hover {
+    color: #2950ff;    
   }
 `
 const WorkLink = styled(AnchorLink)`
+  color: ${props => props.selected ? "#2950FF" : ""};
   margin-left: 1.5rem;
-  border-bottom: 1px solid;
-  border-color: #DCDEE1;
   padding-bottom: 0;
   margin-bottom: 0;
+  color: #1D1D1F;
 
   &:hover {
     color: #2950ff;
-    border-color: #2950FF;
   }
 `
 const Name = styled(Link)`
   margin-right: auto;
   margin-left: 0;
+  color: #1D1D1F;
 
   &:hover {
     color: #2950ff;
@@ -61,23 +61,36 @@ class Header extends React.Component {
     super(props)
 
     this.state = {
-      hasScrolled: false
+      hasScrolled: false,
+      isSelected: false
     }
   }
-
+ 
   componentDidMount() {
+    this.checkPage()
     window.addEventListener('scroll', this.handleScroll)
   }
 
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset
 
-    if (scrollTop > 48) {
+    if (scrollTop > 64) {
       this.setState({ hasScrolled: true })
     } else {
       this.setState({ hasScrolled: false })
     }
   }
+
+  checkPage() {
+    // console.log("hey")
+    // alert(this.props.pathname)
+      // if (this.props.pathname !== "http://localhost:8000") {
+      //   alert("worked")
+      //   this.setState({ isSelected: true })
+      //   // alert(this.state.isSelected)
+      // }
+  }
+
 
   render() {
 
@@ -86,8 +99,8 @@ class Header extends React.Component {
         <Wrapper>
           <Container>
             <Name to="/">Gavin Nelson</Name>
-            <AboutLink to="/" activeStyle={{"border-color": "#2950FF"}}>About</AboutLink>
-            <WorkLink to="/#work" stripHash>Work</WorkLink>
+            <AboutLink to="/" activeStyle={{"color": "#2950FF"}}>About</AboutLink>
+            <WorkLink to="/#work" stripHash selected={this.state.isSelected}>Work</WorkLink>
           </Container>
         </Wrapper> 
       </StyledHeader>

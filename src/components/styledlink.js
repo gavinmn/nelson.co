@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   border-bottom: 1px solid;
   border-color: #DCDEE1;
   padding-bottom: 0;
