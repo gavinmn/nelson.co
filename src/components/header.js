@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import styled from "styled-components"
 import Wrapper from "./wrapper"
@@ -16,6 +15,7 @@ const StyledHeader = styled.div`
   backdrop-filter: ${props => props.scrolled ? "blur(2px)" : ""};  
   z-index: ${props => props.scrolled ? "10" : "1"};
   transition: .4s ease-in-out;
+
 
   @media ${device.mobile} {
     padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
@@ -36,11 +36,10 @@ const AboutLink = styled(Link)`
   }
 `
 const WorkLink = styled(AnchorLink)`
-  color: ${props => props.selected ? "#2950FF" : ""};
+  color: ${props => props.shouldHighlight ? "#2950FF" : "#1D1D1F"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
-  color: #1D1D1F;
 
   &:hover {
     color: #2950ff;
@@ -56,56 +55,44 @@ const Name = styled(Link)`
   }
 `
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
+const Header = (props) => {
 
-    this.state = {
-      hasScrolled: false,
-      isSelected: false
-    }
-  }
- 
-  componentDidMount() {
-    this.checkPage()
-    window.addEventListener('scroll', this.handleScroll)
-  }
+  const [hasScrolled, setScroll] = useState(false)
+  const [highlight, setHighlight] = useState(false)
 
-  handleScroll = (event) => {
-    const scrollTop = window.pageYOffset
-
-    if (scrollTop > 64) {
-      this.setState({ hasScrolled: true })
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+        const scrollCheck = window.pageYOffset
+        if (scrollCheck > 64) {
+          setScroll(true)
+        } else {
+          setScroll(false)
+        }
+      })
+    })
+  
+  useEffect(() => {
+    if (props.path !== "/") {
+      setHighlight(true)
     } else {
-      this.setState({ hasScrolled: false })
+      setHighlight(false)
     }
-  }
-
-  checkPage() {
-    // console.log("hey")
-    // alert(this.props.pathname)
-      // if (this.props.pathname !== "http://localhost:8000") {
-      //   alert("worked")
-      //   this.setState({ isSelected: true })
-      //   // alert(this.state.isSelected)
-      // }
-  }
+  })
 
 
-  render() {
 
-    return (
-      <StyledHeader scrolled={this.state.hasScrolled}>
-        <Wrapper>
-          <Container>
-            <Name to="/">Gavin Nelson</Name>
-            <AboutLink to="/" activeStyle={{"color": "#2950FF"}}>About</AboutLink>
-            <WorkLink to="/#work" stripHash selected={this.state.isSelected}>Work</WorkLink>
-          </Container>
-        </Wrapper> 
-      </StyledHeader>
-    )
-  }
+  return (
+
+    <StyledHeader scrolled={hasScrolled}>
+      <Wrapper>
+        <Container>
+          <Name to="/">Gavin Nelson</Name>
+          <AboutLink to="/" activeStyle={{"color": "#2950FF"}}>About</AboutLink>
+          <WorkLink to="/#work" stripHash shouldHighlight={highlight}>Work</WorkLink>
+        </Container>
+      </Wrapper> 
+    </StyledHeader>
+  )
 }
 
 export default Header

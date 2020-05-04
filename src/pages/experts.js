@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import ProjectInfoText from "../components/projectinfotext"
 
 const expertsPage = (props) => (
-  <Layout>
+  <Layout location={props.location}>
     <SEO title="Expert Profiles" />
     <div className="animation-fade">
 	    <div className="portfolio-content-container">
