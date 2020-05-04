@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
-import { device } from "./device"
 import styled from "styled-components"
 import ProjectInfo from "./projectinfo"
 

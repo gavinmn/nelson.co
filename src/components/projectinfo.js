@@ -1,9 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import ProjectInfoText from "./projectinfotext"
-import { device } from "./device"
 
 const Container = styled.p`
 	@media only screen and (min-width: 445px) {

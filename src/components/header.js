@@ -60,29 +60,24 @@ const Header = (props) => {
   const [hasScrolled, setScroll] = useState(false)
   const [highlight, setHighlight] = useState(false)
 
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-        const scrollCheck = window.pageYOffset
-        if (scrollCheck > 64) {
-          setScroll(true)
-        } else {
-          setScroll(false)
-        }
-      })
+  document.addEventListener("scroll", () => {
+      const scrollCheck = window.pageYOffset
+      if (scrollCheck > 64) {
+        setScroll(true)
+      } else {
+        setScroll(false)
+      }
     })
-  
+
   useEffect(() => {
     if (props.path !== "/") {
       setHighlight(true)
     } else {
       setHighlight(false)
     }
-  })
-
-
+  },[props.path])
 
   return (
-
     <StyledHeader scrolled={hasScrolled}>
       <Wrapper>
         <Container>

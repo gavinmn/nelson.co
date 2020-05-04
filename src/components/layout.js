@@ -1,21 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import {GlobalStyle} from './typography'
 import Wrapper from "./wrapper"
 import Header from "./header"
 
 const Layout = ({ children, location }) => {
-
-    const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
     
   return (
       <>
