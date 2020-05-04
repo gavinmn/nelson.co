@@ -36,11 +36,10 @@ const AboutLink = styled(Link)`
   }
 `
 const WorkLink = styled(AnchorLink)`
-  color: ${props => props.selected ? "#2950FF" : ""};
+  color: ${props => props.shouldHighlight ? "#2950FF" : "#1D1D1F"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
-  color: #1D1D1F;
 
   &:hover {
     color: #2950ff;
@@ -56,12 +55,10 @@ const Name = styled(Link)`
   }
 `
 
-
-
-
-const HeaderTwo = props => {
+const HeaderTwo = (props) => {
 
   const [hasScrolled, setScroll] = useState(false)
+  const [highlight, setHighlight] = useState(false)
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -73,6 +70,16 @@ const HeaderTwo = props => {
         }
       })
     })
+  
+  useEffect(() => {
+    if (props.path !== "/") {
+      setHighlight(true)
+    } else {
+      setHighlight(false)
+    }
+  })
+
+
 
   return (
 
@@ -81,7 +88,7 @@ const HeaderTwo = props => {
         <Container>
           <Name to="/">Gavin Nelson</Name>
           <AboutLink to="/" activeStyle={{"color": "#2950FF"}}>About</AboutLink>
-          <WorkLink to="/#work" stripHash>Work</WorkLink>
+          <WorkLink to="/#work" stripHash shouldHighlight={highlight}>Work</WorkLink>
         </Container>
       </Wrapper> 
     </StyledHeader>

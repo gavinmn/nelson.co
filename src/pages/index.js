@@ -19,104 +19,109 @@ const SampleGrid = styled.div`
 		grid-template-columns: 49.01960784% 49.01960784%;
 	}
 `
-const IndexPage = (props) => (
-  <Layout >
 
-    <SEO title="About" />
 
-    <Hero />
-    <a id="work"></a>
-    <CaseStudy 
-		link="chalk"
-		logo={props.data.chalkLogo.childImageSharp.fluid}
-		title="Chalk"
-		subtitle="Interaction and Visual Design"
-		date="Summer 2019"
-		image={props.data.chalkIntro.childImageSharp.fluid}
-	/>
+const IndexPage = props => {
 
-	<CaseStudy 
-		link="experts"
-		logo={props.data.expertsLogo.childImageSharp.fluid}
-		title="wikiHow Expert Profiles"
-		subtitle="Product and Visual Design"
-		date="Summer 2018"
-		image={props.data.expertsIntro.childImageSharp.fluid}
-	/>
+	return (
+		<Layout location={props.location}>
 
-	<CaseStudy 
-		link=""
-		logo={props.data.slapdashLogo.childImageSharp.fluid}
-		title="Slapdash"
-		subtitle="Brand Design"
-		date="Fall 2019"
-		image={props.data.slapdashIntro.childImageSharp.fluid}
-	/>
+	    <SEO title="About" />
 
-	<CaseStudy 
-		link=""
-		logo={props.data.carabinerLogo.childImageSharp.fluid}
-		title="Spring Gate Carabiner"
-		subtitle="Industrial Design and Prototyping"
-		date="Spring 2016"
-		image={props.data.carabinerIntro.childImageSharp.fluid}
-	/>
-
-	<SampleGrid>
-		<ProjectInfo 
-			logo={props.data.visualLogo.childImageSharp.fluid}
-			title="Visual Design Sample"
-			subtitle="Client and Personal Work"
-			date="2014 - 2020"
+	    <Hero />
+	    <a id="work"></a>
+	    <CaseStudy 
+			link="chalk"
+			logo={props.data.chalkLogo.childImageSharp.fluid}
+			title="Chalk"
+			subtitle="Interaction and Visual Design"
+			date="Summer 2019"
+			image={props.data.chalkIntro.childImageSharp.fluid}
 		/>
 
-		<Shot 
-			image={props.data.designIcons.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.devIcons.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.mailIcons.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.Swatches.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.finderWindows.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.wh1.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.wh2.childImageSharp.fluid}
-		/>
-	</SampleGrid>
-
-	<SampleGrid>
-		<ProjectInfo 
-			logo={props.data.illusLogo.childImageSharp.fluid}
-			title="Illustration Design Sample"
-			subtitle="Client and Personal Work"
-			date="2018 - 2020"
+		<CaseStudy 
+			link="experts"
+			logo={props.data.expertsLogo.childImageSharp.fluid}
+			title="wikiHow Expert Profiles"
+			subtitle="Product and Visual Design"
+			date="Summer 2018"
+			image={props.data.expertsIntro.childImageSharp.fluid}
 		/>
 
-		<Shot 
-			image={props.data.avatar.childImageSharp.fluid}
+		<CaseStudy 
+			link=""
+			logo={props.data.slapdashLogo.childImageSharp.fluid}
+			title="Slapdash"
+			subtitle="Brand Design"
+			date="Fall 2019"
+			image={props.data.slapdashIntro.childImageSharp.fluid}
 		/>
-		<Shot 
-			image={props.data.peace.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.shaka.childImageSharp.fluid}
-		/>
-		<Shot 
-			image={props.data.draw.childImageSharp.fluid}
-		/>
-	</SampleGrid>
 
-  </Layout>
-)
+		<CaseStudy 
+			link=""
+			logo={props.data.carabinerLogo.childImageSharp.fluid}
+			title="Spring Gate Carabiner"
+			subtitle="Industrial Design and Prototyping"
+			date="Spring 2016"
+			image={props.data.carabinerIntro.childImageSharp.fluid}
+		/>
+
+		<SampleGrid>
+			<ProjectInfo 
+				logo={props.data.visualLogo.childImageSharp.fluid}
+				title="Visual Design Sample"
+				subtitle="Client and Personal Work"
+				date="2014 - 2020"
+			/>
+
+			<Shot 
+				image={props.data.designIcons.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.devIcons.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.mailIcons.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.Swatches.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.finderWindows.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.wh1.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.wh2.childImageSharp.fluid}
+			/>
+		</SampleGrid>
+
+		<SampleGrid>
+			<ProjectInfo 
+				logo={props.data.illusLogo.childImageSharp.fluid}
+				title="Illustration Design Sample"
+				subtitle="Client and Personal Work"
+				date="2018 - 2020"
+			/>
+
+			<Shot 
+				image={props.data.avatar.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.peace.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.shaka.childImageSharp.fluid}
+			/>
+			<Shot 
+				image={props.data.draw.childImageSharp.fluid}
+			/>
+		</SampleGrid>
+
+	  </Layout>
+	) 
+}
 
 export default IndexPage
 

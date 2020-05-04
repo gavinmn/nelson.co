@@ -90,7 +90,7 @@ const QuadVideoContainer = styled.div`
 
 
 const chalkPage = (props) => (
-  <Layout>
+  <Layout location={props.location}>
     <SEO title="Chalk" />
     <Fade>
 	    <PortfolioContainer>

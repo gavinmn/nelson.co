@@ -5,8 +5,9 @@ import {GlobalStyle} from './typography'
 import Wrapper from "./wrapper"
 import HeaderTwo from "./header2"
 
-const Layout = ({ location, children }) => {
-  const data = useStaticQuery(graphql`
+const Layout = ({ children, location }) => {
+
+    const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -18,9 +19,8 @@ const Layout = ({ location, children }) => {
     
   return (
       <>
-
         <GlobalStyle />
-        <HeaderTwo siteTitle={data.site.siteMetadata.title}/>
+        <HeaderTwo path={location.pathname} />
         <Wrapper>
           <main>{children}</main>
           <footer>
