@@ -31,12 +31,14 @@ const IndexPage = props => {
 	    <Hero />
 	    <a id="work"></a>
 	    <CaseStudy 
-			link="chalk"
+			
 			logo={props.data.chalkLogo.childImageSharp.fluid}
 			title="Chalk"
 			subtitle="Interaction and Visual Design"
 			date="Summer 2019"
 			image={props.data.chalkIntro.childImageSharp.fluid}
+			buttonlink="/chalk"
+			buttontext="Read case study"
 		/>
 
 		<CaseStudy 

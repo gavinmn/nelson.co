@@ -4,7 +4,7 @@ import { device } from "./device"
 const PortfolioContainer = styled.div`
 	margin: 8rem 0 4rem 0;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		margin: 4rem 0 4rem 0;
 	}
 `

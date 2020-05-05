@@ -37,17 +37,19 @@ const ProjectImage = styled(Img)`
 `
 
 const CaseStudy = props => (
-	<ProjectLink to={props.link}>
+	// <ProjectLink to={props.link}>
 		<Container>
 			<ProjectInfo 
 				logo={props.logo}
 				title={props.title}
 				subtitle={props.subtitle}
 				date={props.date}
+				buttonlink={props.buttonlink}
+				buttontext={props.buttontext}
 			/>
 			<ProjectImage fluid={props.image} alt="" />
 		</Container>
-	</ProjectLink>	
+	// </ProjectLink>	
 )
 
 export default CaseStudy

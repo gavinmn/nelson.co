@@ -5,7 +5,7 @@ const Secondary = styled.span`
 	color: #8B8F9B;
 	font-size: 14px;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		font-size: 18px;
 	}
 `

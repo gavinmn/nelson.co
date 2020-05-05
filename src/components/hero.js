@@ -13,7 +13,7 @@ const HeroContainer = styled.div`
 	grid-template-rows: [1] auto [2] auto [3] auto [end];
 	align-items: start;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		grid-template-columns: [left] 38% [right] auto;
 		grid-template-rows: [1] auto [2] auto [end];
 		max-width: 816px;
@@ -23,7 +23,7 @@ const HeroContainer = styled.div`
 const StyledLogo = styled(Logo)` 
 		justify-self: start;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		margin-right: 32px;
 	}
 `
@@ -32,7 +32,7 @@ const HeroText = styled.p`
 	margin-top: 2rem;
 	max-width: 506px;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		margin-top: 0;
 		justify-self: end;
 	}
@@ -43,7 +43,7 @@ const LinkContainer = styled.div`
 	margin-bottom: 8rem;
 	grid-row: 3;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		margin-top: .75rem;
 		grid-row: 2;
 		grid-column: right;

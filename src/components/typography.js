@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle `
 
 	    font-weight: normal;
 	    font-style: normal;
+	    font-display: fallback;
 	}
 
 	@font-face {
@@ -25,6 +26,7 @@ export const GlobalStyle = createGlobalStyle `
 
 	    font-weight: normal;
 	    font-style: italic;
+	    font-display: fallback;
 	}
 
 	@font-face {
@@ -33,6 +35,7 @@ export const GlobalStyle = createGlobalStyle `
 
 	    font-weight: bold;
 	    font-style: normal;
+	    font-display: fallback;
 	}
 
 	* {

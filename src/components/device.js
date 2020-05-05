@@ -1,7 +1,7 @@
 const sizes = {
-	mobile: 722
+	desktop: 722
 }
 
 export const device = {
-	mobile: `(min-width: ${sizes.mobile}px)`,
+	desktop: `(min-width: ${sizes.desktop}px)`,
 }

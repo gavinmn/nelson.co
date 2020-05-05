@@ -17,7 +17,7 @@ const StyledHeader = styled.div`
   transition: .4s ease-in-out;
 
 
-  @media ${device.mobile} {
+  @media ${device.desktop} {
     padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
   }
 `
