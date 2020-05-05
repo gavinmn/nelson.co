@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Gavin Nelson Design",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Gavin Nelson's personal website and product design portfolio.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Gavin Nelson <gnelsondesign@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.12",
@@ -41,6 +41,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "deploy:github": "npm run clean && npm run build && node ./scripts/deploy-github",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
