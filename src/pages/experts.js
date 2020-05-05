@@ -104,7 +104,12 @@ const expertsPage = (props) => (
 				<p>The bio section was the only consistent piece of information that the Experts team had. Displaying this section first and letting the team to toggle the Experiences and Education section allowed us to launch the pages without large gaps of missing information as this would largely defeat our goal. As the experts team acquired experience and education details, this information could be seamlessly added to the pages.</p>
 				<br></br>
 				<p>Below the bio section lives the Experience and Education/Achievements sections mentioned above. My final solution included a toggle so that the experts team could switch this right hand column between Education and Achievements, depending upon the expert. </p>
-				<HalfWidthImage fluid={props.data.solutionimage4.childImageSharp.fluid} alt="" />
+				</SmallWrapper>
+				
+				<FullWidthImage fluid={props.data.solutionimage4.childImageSharp.fluid} alt="" />
+
+				<SmallWrapper>
+
 				<p>Splitting the right hand section into either education or achievements was a data driven design decision - users reported that the sections that made the page most trustworthy to them depended upon the category of the expert. For example, when reading about a Legal Expert, users reported being interested in seeing where the expert went to law school, while when reading about a Guitar Expert, their achievements were reported to be more applicable.</p>
 
 				<br></br>
@@ -207,7 +212,7 @@ export const ImageQuery = graphql`
 	  },
 	  solutionimage4: file(relativePath: {eq: "expert/solutionimage4.png"}) {
 	    childImageSharp {
-	      fluid (maxWidth:888) {
+	      fluid (maxWidth:1632) {
 	        ...GatsbyImageSharpFluid
 	      }
 	    }
