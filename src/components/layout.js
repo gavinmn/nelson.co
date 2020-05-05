@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import {GlobalStyle} from './globalstyle'
 import Wrapper from "./wrapper"
 import Header from "./header"
-import Secondary from "./Secondary"
+import Secondary from "./secondary"
 
 const Layout = ({ children, location }) => {
   

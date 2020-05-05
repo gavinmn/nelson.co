@@ -8,9 +8,9 @@ import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"
 import Fade from '../components/Fade'
-import PortfolioContainer from "../components/PortfolioContainer"
+import PortfolioContainer from "../components/portfoliocontainer"
 import SmallWrapper from '../components/smallwrapper'
-import StyledLink from '../components/StyledLink'
+import StyledLink from '../components/styledlink'
 import { device } from '../components/device'
 
 import chalkflow from "../images/chalk/chalkflow.mp4"
