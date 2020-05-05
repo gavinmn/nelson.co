@@ -24,7 +24,11 @@ const SingleVideoContainer = styled.div `
 	align-items: center;
 `
 const SingleVideo = styled.video`
-	max-width: 816px;
+	max-width: 375px;
+
+	@media ${device.desktop} {
+		max-width: 816px;
+	}
 `
 
 const expertsPage = (props) => (
@@ -105,7 +109,7 @@ const expertsPage = (props) => (
 				<br></br>
 				<p>Below the bio section lives the Experience and Education/Achievements sections mentioned above. My final solution included a toggle so that the experts team could switch this right hand column between Education and Achievements, depending upon the expert. </p>
 				</SmallWrapper>
-				
+
 				<FullWidthImage fluid={props.data.solutionimage4.childImageSharp.fluid} alt="" />
 
 				<SmallWrapper>
