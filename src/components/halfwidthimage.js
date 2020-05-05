@@ -5,7 +5,6 @@ const HalfWidthImage = styled(Img)`
 	width: 100%;
 	margin: 1rem auto;
 	max-width: 444px;
-	border-radius:16px;
 `
 
 export default HalfWidthImage

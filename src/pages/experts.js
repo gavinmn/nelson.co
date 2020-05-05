@@ -13,6 +13,20 @@ import SmallWrapper from '../components/smallwrapper'
 import StyledLink from '../components/StyledLink'
 import { device } from '../components/device'
 
+import togglemovie from "../images/expert/togglemovie.mp4"
+import prototypemovie from "../images/expert/prototypemovie.mp4"
+
+const SingleVideoContainer = styled.div `
+	margin: 1rem 0;
+	display: grid;
+	grid-template-columns: auto;
+	justify-items: center;
+	align-items: center;
+`
+const SingleVideo = styled.video`
+	max-width: 816px;
+`
+
 const expertsPage = (props) => (
   <Layout location={props.location}>
     <SEO title="Expert Profiles" />
@@ -81,8 +95,11 @@ const expertsPage = (props) => (
 				<br></br>
 				<p>To help ease the load the Experts team who would be responsible for compiling the information of 500+ experts, the bio section was placed at the top of the page, and a toggle was added to show or hide the two sections below.</p>
 
-
-
+				<SingleVideoContainer>
+					<SingleVideo width="816" playsInline autoPlay muted loop>
+		    			<source src={togglemovie} type="video/mp4" />
+		  			</SingleVideo>
+				</SingleVideoContainer>
 
 				<p>The bio section was the only consistent piece of information that the Experts team had. Displaying this section first and letting the team to toggle the Experiences and Education section allowed us to launch the pages without large gaps of missing information as this would largely defeat our goal. As the experts team acquired experience and education details, this information could be seamlessly added to the pages.</p>
 				<br></br>
@@ -99,8 +116,23 @@ const expertsPage = (props) => (
 				<br></br>
 				<p>Regardless, I did a small bit of user outreach to gather some outside opinions on authority, trustworthiness, and verification and from there got started high fidelity iteration and prototyping.</p>
 			</SmallWrapper>
-			
 
+			<FullWidthImage fluid={props.data.contextimage1.childImageSharp.fluid} alt="" />
+
+			<SmallWrapper>
+				<p>A stage of my iteration process that I greatly value and find vital in stakeholder communications is the prototyping stage. I made a few prototypes of things like a drop down expansion for the experts information and toggling sections on and off for design critiques to be able to illustrate more fleshed out ideas. </p>
+			</SmallWrapper>
+			<SingleVideoContainer>
+					<SingleVideo width="320" playsInline autoPlay muted loop>
+		    			<source src={prototypemovie} type="video/mp4" />
+		  			</SingleVideo>
+				</SingleVideoContainer>
+			<SmallWrapper>
+				<h3>Development</h3>
+				<p> At the end of this iteration - critique - iteration process, I had a quick  moment to validate design decisions with various company members uninvolved in the project, and from there I began collaborating with the engineering team to have the pages built.</p>
+				<HalfWidthImage fluid={props.data.devimage.childImageSharp.fluid} alt="" />
+				<p>Unfortunately I was unable to gather quantitative data on the pages success before they had to be temporarily removed due to a backend software update. Overall, this project was a great exercise in working within stakeholder constraints and being flexible.</p>
+			</SmallWrapper>
 		</PortfolioContainer>
 	</Fade>
   </Layout>
@@ -174,6 +206,20 @@ export const ImageQuery = graphql`
 	    }
 	  },
 	  solutionimage4: file(relativePath: {eq: "expert/solutionimage4.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:888) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  contextimage1: file(relativePath: {eq: "expert/contextimage1.png"}) {
+	    childImageSharp {
+	      fluid (maxWidth:1632) {
+	        ...GatsbyImageSharpFluid
+	      }
+	    }
+	  },
+	  devimage: file(relativePath: {eq: "expert/devimage.png"}) {
 	    childImageSharp {
 	      fluid (maxWidth:888) {
 	        ...GatsbyImageSharpFluid
