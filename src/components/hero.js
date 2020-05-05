@@ -51,23 +51,20 @@ const LinkContainer = styled.div`
 `
 
 const Email = styled(StyledLink)`
-	&:hover {
-		color: #2950FF;
-		border-color: #2950FF;
-	}
+
 `
 const Dribbble = styled(StyledLink)`
 	margin-left: 1.5rem;
 	&:hover {
 		color: #EA4C89;
-		border-color: #EA4C89;
+		background: rgba(234,76,137,0.10);
 	}
 `
 const LinkedIn = styled(StyledLink)`
 	margin-left: 1.5rem;
 	&:hover {
 		color: #0A66C2;
-		border-color: #0A66C2;
+		background: rgba(10,102,194,0.10);
 	}
 `
 

@@ -44,8 +44,12 @@ const CaseStudy = props => (
 				title={props.title}
 				subtitle={props.subtitle}
 				date={props.date}
-				buttonlink={props.buttonlink}
-				buttontext={props.buttontext}
+				link={props.link}
+				text={props.buttontext}
+				backgroundColor={props.buttonBgColor}
+				hoverBG={props.buttonHoverBg}
+				asA={props.buttonAsA}
+				href={props.buttonHref}
 			/>
 			<ProjectImage fluid={props.image} alt="" />
 		</Container>

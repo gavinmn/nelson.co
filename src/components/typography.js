@@ -87,6 +87,11 @@ export const GlobalStyle = createGlobalStyle `
 	 	
 	}
 
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
 	h3 {
 		font-size: 16px;
 		font-weight: bold;
@@ -104,6 +109,11 @@ export const GlobalStyle = createGlobalStyle `
 
 		p {
 		   font-size: 22px;
+		}
+
+		h1 {
+			font-size: 32px;
+			font-weight:bold;
 		}
 
 		h3 {

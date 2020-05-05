@@ -5,19 +5,13 @@ import { device } from "./device"
 
 
 const Info = styled.p`
-	margin-left: .5rem;
 	color: #1d1d1f;
 	line-height: 1.25;
-
-
-	@media ${device.desktop} {
-		margin-left: 0;
-	}
 `
 
 const ProjectInfoText = props => (
 	<div>
-		<Info><strong>{props.title}</strong></Info>
+		<h1>{props.title}</h1>
 		<Info><Secondary>{props.subtitle}</Secondary></Info>
 		<Info><Secondary><i>{props.date}</i></Secondary></Info>
 	</div>

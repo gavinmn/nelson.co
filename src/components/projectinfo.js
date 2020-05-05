@@ -1,51 +1,52 @@
 import React from "react"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import { device } from "./device"
 import ProjectInfoText from "./projectinfotext"
 import ButtonPrimary from "./buttonprimary"
 
 const Container = styled.div`
-	display: grid;
-	align-items: center;
-	grid-gap: 16px;
-	grid-template-columns: 3rem auto;
-	grid-template-rows: auto auto;
-
 	@media only screen and (min-width: 445px) {
 		align-self: center;
 	}
 `
 
 const Logo = styled(Img)`
-	grid-column: 1;
-	align-self: center;
-	width: 3rem;
-	height: 3rem;
-`
+	margin-bottom: .5rem;
+	width: 4rem;
+	height: 4rem;
 
-const InfoContainer = styled.div`
-	grid-column: 2;
-	align-self: center;
+	@media ${device.desktop} {
+		width: 2rem;
+		height: 2rem;
+	}
+
 `
 
 const ButtonContainer = styled.div`
-	grid-column: span 2;
+	margin: 1rem 0;
+
+	@media ${device.desktop} {
+		margin-bottom: 0;
+	}
 `
 
 const ProjectInfo = props => (
 	<Container>
 		<Logo fluid={props.logo} alt="" />
-		<InfoContainer>
-			<ProjectInfoText
-				title={props.title}
-				subtitle={props.subtitle}
-				date={props.date}
-			/>
-		</InfoContainer>
+		<ProjectInfoText
+			title={props.title}
+			subtitle={props.subtitle}
+			date={props.date}
+		/>
 		<ButtonContainer>
 			<ButtonPrimary 
-				link={props.butotnlink}
-				text={props.buttontext}
+				asA={props.asA}
+				href={props.href}
+				link={props.link}
+				text={props.text}
+				color={props.backgroundColor}
+				hoverBackground={props.hoverBG}
 			/>
 		</ButtonContainer>
 	</Container>

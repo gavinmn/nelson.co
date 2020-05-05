@@ -32,17 +32,17 @@ const AboutLink = styled(Link)`
   color: #1D1D1F;
 
   &:hover {
-    color: #2950ff;    
+    color: #6466FF;    
   }
 `
 const WorkLink = styled(AnchorLink)`
-  color: ${props => props.shouldHighlight ? "#2950FF" : "#1D1D1F"};
+  color: ${props => props.shouldHighlight ? "#6466FF" : "#1D1D1F"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
 
   &:hover {
-    color: #2950ff;
+    color: #6466FF;
   }
 `
 const Name = styled(Link)`
@@ -51,7 +51,7 @@ const Name = styled(Link)`
   color: #1D1D1F;
 
   &:hover {
-    color: #2950ff;
+    color: #6466FF;
   }
 `
 
@@ -82,7 +82,7 @@ const Header = (props) => {
       <Wrapper>
         <Container>
           <Name to="/">Gavin Nelson</Name>
-          <AboutLink to="/" activeStyle={{"color": "#2950FF"}}>About</AboutLink>
+          <AboutLink to="/" activeStyle={{"color": "#6466FF"}}>About</AboutLink>
           <WorkLink to="/#work" stripHash shouldHighlight={highlight}>Work</WorkLink>
         </Container>
       </Wrapper> 

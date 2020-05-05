@@ -37,8 +37,12 @@ const IndexPage = props => {
 			subtitle="Interaction and Visual Design"
 			date="Summer 2019"
 			image={props.data.chalkIntro.childImageSharp.fluid}
-			buttonlink="/chalk"
+			link="/chalk"
 			buttontext="Read case study"
+			buttonBgColor="rgba(64,152,255,0.10)"
+			buttonHoverBg="#4098FF"
+			buttonAsA=""
+			buttonHref=""
 		/>
 
 		<CaseStudy 
@@ -48,24 +52,12 @@ const IndexPage = props => {
 			subtitle="Product and Visual Design"
 			date="Summer 2018"
 			image={props.data.expertsIntro.childImageSharp.fluid}
-		/>
-
-		<CaseStudy 
-			link=""
-			logo={props.data.slapdashLogo.childImageSharp.fluid}
-			title="Slapdash"
-			subtitle="Brand Design"
-			date="Fall 2019"
-			image={props.data.slapdashIntro.childImageSharp.fluid}
-		/>
-
-		<CaseStudy 
-			link=""
-			logo={props.data.carabinerLogo.childImageSharp.fluid}
-			title="Spring Gate Carabiner"
-			subtitle="Industrial Design and Prototyping"
-			date="Spring 2016"
-			image={props.data.carabinerIntro.childImageSharp.fluid}
+			link="/experts"
+			buttontext="Read case study"
+			buttonBgColor="rgba(136,207,77,0.15)"
+			buttonHoverBg="#88CF4D"
+			buttonAsA=""
+			buttonHref=""
 		/>
 
 		<SampleGrid>
@@ -74,6 +66,9 @@ const IndexPage = props => {
 				title="Visual Design Sample"
 				subtitle="Client and Personal Work"
 				date="2014 - 2020"
+				text="View more"
+				asA="a"
+				href="https://dribbble.com/Gavin/"
 			/>
 
 			<Shot 
@@ -105,6 +100,9 @@ const IndexPage = props => {
 				title="Illustration Design Sample"
 				subtitle="Client and Personal Work"
 				date="2018 - 2020"
+				text="View more"
+				asA="a"
+				href="https://dribbble.com/Gavin/"
 			/>
 
 			<Shot 

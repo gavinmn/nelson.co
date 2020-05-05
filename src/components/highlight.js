@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Highlight = styled.span`
-	color: #2950FF;
+	color: #6466FF;
 `
 
 export default Highlight
