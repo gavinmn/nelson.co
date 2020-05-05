@@ -11,7 +11,6 @@ import Fade from '../components/Fade'
 import PortfolioContainer from "../components/PortfolioContainer"
 import SmallWrapper from '../components/smallwrapper'
 import StyledLink from '../components/StyledLink'
-import Highlight from '../components/highlight'
 import { device } from '../components/device'
 
 import chalkflow from "../images/chalk/chalkflow.mp4"

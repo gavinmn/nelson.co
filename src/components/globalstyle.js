@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle `
 	footer {
 	  	margin-bottom:2rem;
 	  	font-size: 14px;
-  		color: #DCDEE1;
+  		color: #8B8F9B;
 	}
 
 	img {
@@ -44,7 +44,7 @@ export const GlobalStyle = createGlobalStyle `
 
 	::selection {
 		color: white;
-	  	background:#2950ff;
+	  	background:#6466FF;
 	}
 
 	@media only screen and (min-width: 722px) {

@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {GlobalStyle} from './typography'
+import {GlobalStyle} from './globalstyle'
 import Wrapper from "./wrapper"
 import Header from "./header"
+import Secondary from "./Secondary"
 
 const Layout = ({ children, location }) => {
-    
+  
   return (
       <>
         <GlobalStyle />
@@ -13,7 +14,7 @@ const Layout = ({ children, location }) => {
         <Wrapper>
           <main>{children}</main>
           <footer>
-            <p><i>Designed and Developed by Gavin Nelson</i></p>
+            Designed and Developed by Gavin Nelson<br></br>
             © {new Date().getFullYear()} Gavin Nelson
           </footer>
         </Wrapper>

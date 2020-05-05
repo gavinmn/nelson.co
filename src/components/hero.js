@@ -100,8 +100,8 @@ const Hero = () => (
 				</HeroText>
 				<LinkContainer>
 					<Email href="mailto:gnelsondesign@gmail.com">Email</Email>
-					<Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
 					<LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">LinkedIn</LinkedIn>
+					<Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
 					<GitHub href="https://github.com/gavinmn">GitHub</GitHub>
 				</LinkContainer>
 		</HeroContainer>
