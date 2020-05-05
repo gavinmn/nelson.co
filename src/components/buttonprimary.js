@@ -8,7 +8,7 @@ const ButtonStyle = styled(Link)`
 	max-width: 100%;
 	background: ${props => props.backgroundColor || "rgba(100,102,255,0.10)"};
 	border-radius: 8px;
-	transition: all .4s ease-in-out;
+	transition: all .2s ease-in-out;
 	display: flex;
   	align-items: center;
   	justify-content: center;
