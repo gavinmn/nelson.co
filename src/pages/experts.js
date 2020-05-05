@@ -7,7 +7,7 @@ import styled from "styled-components"
 import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"
-import Fade from '../components/Fade'
+import Fade from '../components/fade'
 import PortfolioContainer from "../components/portfoliocontainer"
 import SmallWrapper from '../components/smallwrapper'
 import StyledLink from '../components/styledlink'
