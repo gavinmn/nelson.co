@@ -142,7 +142,7 @@ const chalkPage = (props) => (
 	  			</SingleVideoContainer>
 	  			
 	  			<LinkContainer>
-		  			<StyledLink href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play"><Highlight>View Interactive Prototype</Highlight></StyledLink>
+		  			<StyledLink href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">View Interactive Prototype</StyledLink>
 	  			</LinkContainer>
 	  			<p>When a new mode is entered, a contextual button would appear next to the action button to let the user control settings specific to the current mode such as anchoring time in listen mode and muting in talk mode.</p> 
 			</SmallWrapper>

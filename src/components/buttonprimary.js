@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { device } from "./device"
 
 const ButtonStyle = styled(Link)`
-	padding: .5rem;
+	padding: 1rem;
 	max-width: 100%;
 	background: ${props => props.backgroundColor || "rgba(100,102,255,0.10)"};
 	border-radius: 8px;
@@ -27,6 +27,7 @@ const ButtonStyle = styled(Link)`
 	}
 
 	@media ${device.desktop} {
+		padding: .5rem;
 		font-size: 18px;
 		max-width: 6rem;
 	}

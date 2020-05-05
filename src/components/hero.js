@@ -39,9 +39,17 @@ const HeroText = styled.p`
 `
 
 const LinkContainer = styled.div`
+	display: flex;
+	flex-direction:row;
+	max-width:100%;
+	justify-content: space-between;
 	margin-top: 1rem;
 	margin-bottom: 8rem;
 	grid-row: 3;
+
+	@media only screen and (min-width: 445px) {
+		justify-content: start;
+	}
 
 	@media ${device.desktop} {
 		margin-top: .75rem;
@@ -54,17 +62,33 @@ const Email = styled(StyledLink)`
 
 `
 const Dribbble = styled(StyledLink)`
-	margin-left: 1.5rem;
 	&:hover {
 		color: #EA4C89;
 		background: rgba(234,76,137,0.10);
 	}
+
+	@media only screen and (min-width: 445px) {
+		margin-left: 1.5rem;
+	}
 `
 const LinkedIn = styled(StyledLink)`
-	margin-left: 1.5rem;
 	&:hover {
 		color: #0A66C2;
 		background: rgba(10,102,194,0.10);
+	}
+
+	@media only screen and (min-width: 445px) {
+		margin-left: 1.5rem;
+	}
+`
+const GitHub = styled(StyledLink)`
+	&:hover {
+		color: #24292E;
+		background: rgba(36,41,46,0.10);
+	}
+
+	@media only screen and (min-width: 445px) {
+		margin-left: 1.5rem;
 	}
 `
 
@@ -78,6 +102,7 @@ const Hero = () => (
 					<Email href="mailto:gnelsondesign@gmail.com">Email</Email>
 					<Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
 					<LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">LinkedIn</LinkedIn>
+					<GitHub href="https://github.com/gavinmn">GitHub</GitHub>
 				</LinkContainer>
 		</HeroContainer>
 	</Fade>

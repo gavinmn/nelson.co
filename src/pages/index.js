@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import CaseStudy from "../components/casestudy"
 import ProjectInfo from "../components/projectinfo"
 import Shot from "../components/shot"
+import "./fonts.css"
 
 
 const SampleGrid = styled.div`
