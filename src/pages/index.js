@@ -156,34 +156,6 @@ export const ImageQuery = graphql`
 	      }
 	    }
 	  },
-	  slapdashLogo: file(relativePath: {eq: "slapdash/slapdashlogo.png"}) {
-	    childImageSharp {
-	      fluid (maxWidth:256) {
-	        ...GatsbyImageSharpFluid
-	      }
-	    }
-	  },
-	  slapdashIntro: file(relativePath: {eq: "slapdash/slapdashintro.png"}) {
-	    childImageSharp {
-	      fluid (maxWidth:800) {
-	        ...GatsbyImageSharpFluid
-	      }
-	    }
-	  },
-	  carabinerLogo: file(relativePath: {eq: "carabiner/carabinerlogo.png"}) {
-	    childImageSharp {
-	      fluid (maxWidth:256) {
-	        ...GatsbyImageSharpFluid
-	      }
-	    }
-	  },
-	  carabinerIntro: file(relativePath: {eq: "carabiner/carabinerintro.png"}) {
-	    childImageSharp {
-	      fluid (maxWidth:800) {
-	        ...GatsbyImageSharpFluid
-	      }
-	    }
-	  },
 	  visualLogo: file(relativePath: {eq: "visual/visuallogo.png"}) {
 	    childImageSharp {
 	      fluid (maxWidth:256) {
