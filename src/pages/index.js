@@ -11,6 +11,7 @@ import "./fonts.css"
 
 
 const HeroContainer = styled.div`
+	margin-top: 2rem;
 	display: grid;
 	background-color:yellow;
 	height: 100vh;
