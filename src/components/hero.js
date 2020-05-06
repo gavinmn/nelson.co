@@ -7,7 +7,7 @@ import Highlight from "./highlight"
 import StyledLink from "./styledlink"
 
 const HeroContainer = styled.div`
-	margin-top: 12rem;
+	/*margin-top: 12rem;*/
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: [1] auto [2] auto [3] auto [end];
@@ -44,7 +44,7 @@ const LinkContainer = styled.div`
 	max-width:100%;
 	justify-content: space-between;
 	margin-top: 1rem;
-	margin-bottom: 8rem;
+	/*margin-bottom: 8rem;*/
 	grid-row: 3;
 
 	@media only screen and (min-width: 445px) {

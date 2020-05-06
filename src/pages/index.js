@@ -10,6 +10,14 @@ import Shot from "../components/shot"
 import "./fonts.css"
 
 
+const HeroContainer = styled.div`
+	display: grid;
+	background-color:yellow;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+`
+
 const SampleGrid = styled.div`
 	display: grid;
 	grid-template-columns: auto;
@@ -28,8 +36,9 @@ const IndexPage = props => {
 		<Layout location={props.location}>
 
 	    <SEO title="About" />
-
-	    <Hero />
+	    <HeroContainer>
+	    	<Hero />
+    	</HeroContainer>
 	    <a id="work"></a>
 	    <CaseStudy 
 			
