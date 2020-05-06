@@ -34,6 +34,7 @@ const HeroText = styled.p`
 	@media ${device.desktop} {
 		margin-top: 0;
 		justify-self: end;
+		max-width: 816px;
 	}
 `
 
