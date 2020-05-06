@@ -37,17 +37,17 @@ module.exports = {
         icon: `src/images/favicon.png`
         icons: [
           {
-            src: `/favicons/favicon-16x16.png`,
+            src: `/favicons/favicon-16.png`,
             sizes: `16x16`,
             type: `image/png`,
           },
           {
-            src: `/favicons/favicon-32x32.png`,
+            src: `/favicons/favicon-32.png`,
             sizes: `32x32`,
             type: `image/png`,
           },
           {
-            src: `/favicons/favicon-48x48.png`,
+            src: `/favicons/favicon-48.png`,
             sizes: `48x48`,
             type: `image/png`,
           },
