@@ -105,7 +105,7 @@ const chalkPage = (props) => (
 
 			<SmallWrapper>
 				<h3>Project</h3>
-				<p>I worked with Chalk during the spring and summer of 2019 to design the core user experience for their upcoming iOS application over the course of roughly three months.</p>
+				<p>I worked with Chalk for approximately three months during the spring and summer of 2019 to design the core user experience for their upcoming iOS application.</p>
 
 				<HalfWidthImage fluid={props.data.projectimage.childImageSharp.fluid} alt="" />
 				<h3>Role</h3>
