@@ -36,32 +36,32 @@ module.exports = {
         display: `minimal-ui`,
         icons: [
           {
-            src: `/favicons/favicon-16x16`,
+            src: `/static/favicons/favicon-16x16`,
             sizes: `16x16`,
             type: `image/png`,
           },
           {
-            src: `/favicons/favicon-32x32.png`,
+            src: `/static/favicons/favicon-32x32.png`,
             sizes: `32x32`,
             type: `image/png`,
           },
           {
-            src: `/favicons/favicon-48x48.png`,
+            src: `/static/favicons/favicon-48x48.png`,
             sizes: `48x48`,
             type: `image/png`,
           },
           {
-            src: `/favicons/apple-touch-icon-180x180.png`,
+            src: `/static/favicons/apple-touch-icon-180x180.png`,
             sizes: `180x180`,
             type: `image/png`,
           },
            {
-            src: `/favicons/android-chrome-192x192`,
+            src: `/static/favicons/android-chrome-192x192`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/favicons/android-chrome-512x512`,
+            src: `/static/favicons/android-chrome-512x512`,
             sizes: `512x512`,
             type: `image/png`,
           },
