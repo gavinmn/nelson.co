@@ -65,6 +65,11 @@ module.exports = {
             sizes: `512x512`,
             type: `image/png`,
           },
+          {
+            src: `/favicons/favicon.ico`,
+            sizes: `256x256`,
+            type: `image/ico`,
+          },
         ],
       },
     },
