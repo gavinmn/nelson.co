@@ -12,7 +12,7 @@ const StyledHeader = styled.div`
   width: 100%;
   padding: ${props => props.scrolled ? ".5rem 0" : "1rem 0"};
   background-color: rgba(255, 255, 255, .8);
-  backdrop-filter: ${props => props.scrolled ? "blur(2px)" : ""};  
+  backdrop-filter: ${props => props.scrolled ? "blur(6px)" : ""};  
   z-index: ${props => props.scrolled ? "10" : "1"};
   transition: .4s ease-in-out;
 
