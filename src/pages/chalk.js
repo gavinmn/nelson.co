@@ -64,7 +64,7 @@ const DualVideoContainer = styled.div`
 	max-width: 816px;
 	grid-gap:16px;
 	background-color: var(--chalk-button);
-	border-radius: 16px;
+	border-radius: .5rem;
 	padding: 16px;
 
 	@media ${device.desktop} {
@@ -86,7 +86,7 @@ const QuadVideoContainer = styled.div`
 	max-width: 816px;
 	grid-gap:16px;
 	background-color: var(--chalk-button);
-	border-radius: 16px;
+	border-radius: .5rem;
 	padding: 16px;
 
 	@media ${device.desktop} {
