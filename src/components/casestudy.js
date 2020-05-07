@@ -25,7 +25,7 @@ const Container = styled.div`
 `
 
 const ProjectImage = styled(Img)`
-	width: 100%;
+	width: 88%;
 	max-width: 285px;
 	align-self: center;
 	justify-self: center;
@@ -34,6 +34,7 @@ const ProjectImage = styled(Img)`
 		margin-top: 0;
 	}
 `
+
 
 const ProjectBG = styled.div`
 	width: 100%;
