@@ -58,7 +58,7 @@ const LinkContainer = styled.div`
 `
 
 const Email = styled(StyledLink)`
-
+	
 `
 const Dribbble = styled(StyledLink)`
 	&:hover {

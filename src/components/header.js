@@ -19,10 +19,6 @@ const StyledHeader = styled.div`
   @media ${device.desktop} {
     padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
   }
-
-  &.dark {
-    background-color: var(--bg-rgba);
-  }
 `
 const Container = styled.div` 
   display: flex;
@@ -35,25 +31,17 @@ const AboutLink = styled(Link)`
   color: var(--color);
 
   &:hover {
-    color: #6466FF;    
-  }
-
-  &.dark {
-    color: var(--color);
+    color: var(--primary-color);    
   }
 `
 const WorkLink = styled(AnchorLink)`
-  color: ${props => props.shouldHighlight ? "#6466FF" : "var(--color)"};
+  color: ${props => props.shouldHighlight ? "var(--primary-color)" : "var(--color)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
 
   &:hover {
-    color: #6466FF;
-  }
-
-  &.dark {
-    color: var(--color);
+    color: var(--primary-color);
   }
 `
 const Name = styled(Link)`
@@ -62,11 +50,7 @@ const Name = styled(Link)`
   color: var(--color);
 
   &:hover {
-    color: #6466FF;
-  }
-
-  &.dark {
-    color: var(--color);
+    color: var(--primary-color);
   }
 `
 
@@ -100,7 +84,7 @@ const Header = (props) => {
       <Wrapper>
         <Container>
           <Name to="/">Gavin Nelson</Name>
-          <AboutLink to="/" activeStyle={{"color": "#6466FF"}}>About</AboutLink>
+          <AboutLink to="/" activeStyle={{"color": "var(--primary-color)"}}>About</AboutLink>
           <WorkLink to="/#work" stripHash shouldHighlight={highlight}>Work</WorkLink>
         </Container>
       </Wrapper> 

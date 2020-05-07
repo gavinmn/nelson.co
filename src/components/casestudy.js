@@ -52,7 +52,6 @@ const ProjectBG = styled.div`
 `
 
 const CaseStudy = props => (
-	// <ProjectLink to={props.link}>
 		<Container>
 			<ProjectInfo 
 				logo={props.logo}
@@ -70,7 +69,6 @@ const CaseStudy = props => (
 				<ProjectImage fluid={props.image} alt="" />
 			</ProjectBG>
 		</Container>
-	// </ProjectLink>	
 )
 
 export default CaseStudy

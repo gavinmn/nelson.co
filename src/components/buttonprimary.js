@@ -14,11 +14,11 @@ const ButtonStyle = styled(Link)`
   	justify-content: center;
   	font-size:16px;
 	font-weight: bold;
-	color: ${props => props.hoverBackground || "#6466FF"};
+	color: ${props => props.hoverBackground || "var(--primary-color)"};
 
 	&:hover {
-		background: ${props => props.hoverBackground || "#6466FF"};
-		color:white;
+		background: ${props => props.hoverBackground || "var(--primary-color)"};
+		color:#ffffff;
 		cursor:pointer;
 	}
 

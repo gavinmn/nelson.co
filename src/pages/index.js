@@ -55,7 +55,6 @@ const IndexPage = props => {
 			buttonAsA=""
 			buttonHref=""
 		/>
-
 		<CaseStudy 
 			link="experts"
 			logo={props.data.expertsLogo.childImageSharp.fluid}

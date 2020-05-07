@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle `
 		--bg-hex: #ffffff;
 		--bg-rgba: rgba(255, 255, 255, .8);
 		--color: #1d1d1f;
+		--secondary-color: #8B8F9B;
+		--primary-color: #6466FF;
 
 		--button-bg: rgba(100,102,255,0.10);
 
@@ -24,6 +26,8 @@ export const GlobalStyle = createGlobalStyle `
 			--bg-hex: #1d1d1f;
 			--bg-rgba: rgba(29,29,31,0.8);
 			--color: #ffffff;
+			--secondary-color: #8B8F9B; 
+			--primary-color: #6A74FF;
 
 			--button-bg: rgba(100,102,255,0.20);
 
@@ -65,7 +69,7 @@ export const GlobalStyle = createGlobalStyle `
 	footer {
 	  	margin-bottom:2rem;
 	  	font-size: 14px;
-  		color: #8B8F9B;
+  		color: var(--secondary-color);
 	}
 
 	img {
@@ -76,7 +80,7 @@ export const GlobalStyle = createGlobalStyle `
 
 	::selection {
 		color: white;
-	  	background:#6466FF;
+	  	background: var(--primary-color);
 	}
 
 	@media only screen and (min-width: 722px) {
