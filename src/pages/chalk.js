@@ -59,7 +59,8 @@ const DualVideoContainer = styled.div`
 	display: grid;
 	max-width: 816px;
 	grid-gap:16px;
-	background-color: #F7FAFC;
+	/*background-color: #F7FAFC;*/
+	background-color: var(--chalk-button);
 	border-radius: 16px;
 	padding: 16px;
 `
@@ -77,7 +78,7 @@ const QuadVideoContainer = styled.div`
 	display: grid;
 	max-width: 816px;
 	grid-gap:16px;
-	background-color: #F7FAFC;
+	background-color: var(--chalk-button);
 	border-radius: 16px;
 	padding: 16px;
 

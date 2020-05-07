@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle `
 		--button-bg: rgba(100,102,255,0.10);
 
 		--chalk-button: rgba(64,152,255,0.10);
+		--experts-button: rgba(136,207,77,0.15);
 
 		--github-text: #24292E;
 		--github-bg: rgba(36,41,46,0.10);
@@ -27,6 +28,7 @@ export const GlobalStyle = createGlobalStyle `
 			--button-bg: rgba(100,102,255,0.20);
 
 			--chalk-button: rgba(64,152,255,0.20);
+			--experts-button: rgba(136,207,77,0.15);
 
 			--github-text: #ffffff;
 			--github-bg: rgba(0,0,0,0.10);

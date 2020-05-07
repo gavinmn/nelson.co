@@ -47,6 +47,7 @@ const IndexPage = props => {
 			subtitle="Interaction and Visual Design"
 			date="Summer 2019"
 			image={props.data.chalkIntro.childImageSharp.fluid}
+			projectBg={"var(--chalk-button)"}
 			link="/chalk"
 			buttontext="Read case study"
 			buttonBgColor="var(--chalk-button)"
@@ -62,9 +63,10 @@ const IndexPage = props => {
 			subtitle="Product and Visual Design"
 			date="Summer 2018"
 			image={props.data.expertsIntro.childImageSharp.fluid}
+			projectBg={"var(--experts-button)"}
 			link="/experts"
 			buttontext="Read case study"
-			buttonBgColor="rgba(136,207,77,0.15)"
+			buttonBgColor="var(--experts-button)"
 			buttonHoverBg="#88CF4D"
 			buttonAsA=""
 			buttonHref=""

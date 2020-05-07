@@ -26,10 +26,25 @@ const Container = styled.div`
 
 const ProjectImage = styled(Img)`
 	width: 100%;
-	max-width: 400px;
+	max-width: 285px;
+	align-self: center;
+	justify-self: center;
+
+	@media only screen and (min-width: 445px) {
+		margin-top: 0;
+	}
+`
+
+const ProjectBG = styled.div`
+	width: 100%;
+	display: grid;
+	max-width: 400;
 	margin-top: 8px;
 	align-self: center;
 	justify-self: end;
+	background-color: ${props => props.projectBg};
+	border-radius: 16px;
+	padding: 1rem 0;
 
 	@media only screen and (min-width: 445px) {
 		margin-top: 0;
@@ -51,7 +66,9 @@ const CaseStudy = props => (
 				asA={props.buttonAsA}
 				href={props.buttonHref}
 			/>
-			<ProjectImage fluid={props.image} alt="" />
+			<ProjectBG projectBg={props.projectBg}>
+				<ProjectImage fluid={props.image} alt="" />
+			</ProjectBG>
 		</Container>
 	// </ProjectLink>	
 )
