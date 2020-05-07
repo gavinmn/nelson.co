@@ -40,35 +40,7 @@ const IndexPage = props => {
 	    	<Hero />
     	</HeroContainer>
 	    <a id="work"></a>
-	    <CaseStudy 
-			
-			logo={props.data.chalkLogo.childImageSharp.fluid}
-			title="Chalk"
-			subtitle="Interaction and Visual Design"
-			date="Summer 2019"
-			image={props.data.chalkIntro.childImageSharp.fluid}
-			link="/chalk"
-			buttontext="Read case study"
-			buttonBgColor="rgba(64,152,255,0.10)"
-			buttonHoverBg="#4098FF"
-			buttonAsA=""
-			buttonHref=""
-		/>
-
-		<CaseStudy 
-			link="experts"
-			logo={props.data.expertsLogo.childImageSharp.fluid}
-			title="wikiHow Expert Profiles"
-			subtitle="Product and Visual Design"
-			date="Summer 2018"
-			image={props.data.expertsIntro.childImageSharp.fluid}
-			link="/experts"
-			buttontext="Read case study"
-			buttonBgColor="rgba(136,207,77,0.15)"
-			buttonHoverBg="#88CF4D"
-			buttonAsA=""
-			buttonHref=""
-		/>
+	    <CaseStudy />
 
 		<SampleGrid>
 			<ProjectInfo 

@@ -5,7 +5,7 @@ import { device } from "./device"
 
 
 const Info = styled.p`
-	color: #1d1d1f;
+	color: var(--color);
 	line-height: 1.25;
 `
 

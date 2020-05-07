@@ -24,12 +24,16 @@ import volumeslider from "../images/chalk/volumeslider.mp4"
 import actionbutton from "../images/chalk/actionbutton.mp4"
 
 const SingleVideoContainer = styled.div `
-	margin: 1rem 0;
+	margin: 2rem 0;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	justify-items: center;
 	align-items: center;
+
+	@media ${device.desktop} {
+		margin: 1rem auto;
+	}
 `
 
 const PhoneBezel = styled(Img)`
@@ -55,13 +59,17 @@ const LinkContainer = styled.div`
 
 const DualVideoContainer = styled.div`
 	grid-template-columns: auto auto;
-	margin: 1rem 0;
+	margin: 2rem 0;
 	display: grid;
 	max-width: 816px;
 	grid-gap:16px;
-	background-color: #F7FAFC;
+	background-color: var(--chalk-button);
 	border-radius: 16px;
 	padding: 16px;
+
+	@media ${device.desktop} {
+		margin: 1rem auto;
+	}
 `
 
 const MultiVideo = styled.video`
@@ -73,17 +81,18 @@ const MultiVideo = styled.video`
 const QuadVideoContainer = styled.div`
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
-	margin: 1rem 0;
+	margin: 2rem 0;
 	display: grid;
 	max-width: 816px;
 	grid-gap:16px;
-	background-color: #F7FAFC;
+	background-color: var(--chalk-button);
 	border-radius: 16px;
 	padding: 16px;
 
-	@media ${device.mobile} {
+	@media ${device.desktop} {
 		grid-template-columns: auto auto auto auto;
 		grid-template-rows: auto;
+		margin: 1rem auto;
 	}
 `
 
@@ -218,7 +227,7 @@ const chalkPage = (props) => (
 				<p>This graph plotted each idea in terms of how easy it would be for users to adopt against how well it would fit in Chalk’s development timeline. From my user testing and the teams best estimates, the action button model was show to be the winner.</p>
 
 				<br></br>
-				<h3>High Fidelity Detailss</h3>
+				<h3>High Fidelity Details</h3>
 				<p>From here I began developing some high fidelity mockups and working on details such as the icons for the modes.</p>
 
 			</SmallWrapper>

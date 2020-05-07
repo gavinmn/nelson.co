@@ -11,10 +11,10 @@ const StyledHeader = styled.div`
   top:0;
   width: 100%;
   padding: ${props => props.scrolled ? ".5rem 0" : "1rem 0"};
-  background-color: rgba(255, 255, 255, .8);
+  background-color: var(--bg-rgba);
   backdrop-filter: ${props => props.scrolled ? "blur(6px)" : ""};  
   z-index: ${props => props.scrolled ? "10" : "1"};
-  transition: .4s ease-in-out;
+  transition: padding .4s ease-in-out;
 
   @media ${device.desktop} {
     padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
@@ -28,29 +28,29 @@ const Container = styled.div`
 
 const AboutLink = styled(Link)`  
   margin-left: 1.5rem;
-  color: #1D1D1F;
+  color: var(--color);
 
   &:hover {
-    color: #6466FF;    
+    color: var(--primary-color);    
   }
 `
 const WorkLink = styled(AnchorLink)`
-  color: ${props => props.shouldHighlight ? "#6466FF" : "#1D1D1F"};
+  color: ${props => props.shouldHighlight ? "var(--primary-color)" : "var(--color)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
 
   &:hover {
-    color: #6466FF;
+    color: var(--primary-color);
   }
 `
 const Name = styled(Link)`
   margin-right: auto;
   margin-left: 0;
-  color: #1D1D1F;
+  color: var(--color);
 
   &:hover {
-    color: #6466FF;
+    color: var(--primary-color);
   }
 `
 
@@ -84,7 +84,7 @@ const Header = (props) => {
       <Wrapper>
         <Container>
           <Name to="/">Gavin Nelson</Name>
-          <AboutLink to="/" activeStyle={{"color": "#6466FF"}}>About</AboutLink>
+          <AboutLink to="/" activeStyle={{"color": "var(--primary-color)"}}>About</AboutLink>
           <WorkLink to="/#work" stripHash shouldHighlight={highlight}>Work</WorkLink>
         </Container>
       </Wrapper> 
