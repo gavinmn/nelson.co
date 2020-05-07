@@ -7,19 +7,30 @@ export const GlobalStyle = createGlobalStyle `
   		padding:0;
 	}
 
+	:root {
+		--bg-hex: #ffffff;
+		--bg-rgba: rgba(255, 255, 255, .8);
+		--color: #1d1d1f;
+
+		@media(prefers-color-scheme: dark) {
+			--bg-hex: #1d1d1f;
+			--bg-rgba: rgba(29,29,31,0.8);
+			--color: #ffffff;
+		}
+	}
+
 	body {
-	  	background-color: #ffffff;
+	  	background-color: var(--bg-hex);
 	  	font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif;
-	  	color: #1D1D1F;
+	  	color: var(--color);
 	  	overflow-y: scroll;
 	  	overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
-		transition: all .4s ease-in-out;
+	}
 
-		@media (prefers-color-scheme: dark) {
-			background-color: #1d1d1f;
-			color: #ffffff;
-		}
+	body.dark {
+		background-color: var(--bg-hex);
+		color: var(--color);
 	}
 
 	html, body {
