@@ -7,15 +7,21 @@ import Hero from "../components/hero"
 import CaseStudy from "../components/casestudy"
 import ProjectInfo from "../components/projectinfo"
 import Shot from "../components/shot"
+import { device } from "../components/device"
 import "./fonts.css"
 
 
 const HeroContainer = styled.div`
-	margin-top: 2rem;
+	margin-top: 1rem;
 	display: grid;
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
+
+	@media ${device.desktop} {
+		margin-top: 2rem;
+	}
+
 `
 
 const SampleGrid = styled.div`
