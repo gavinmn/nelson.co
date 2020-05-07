@@ -227,7 +227,7 @@ const chalkPage = (props) => (
 				<p>This graph plotted each idea in terms of how easy it would be for users to adopt against how well it would fit in Chalk’s development timeline. From my user testing and the teams best estimates, the action button model was show to be the winner.</p>
 
 				<br></br>
-				<h3>High Fidelity Detailss</h3>
+				<h3>High Fidelity Details</h3>
 				<p>From here I began developing some high fidelity mockups and working on details such as the icons for the modes.</p>
 
 			</SmallWrapper>

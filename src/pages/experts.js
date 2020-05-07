@@ -17,11 +17,15 @@ import togglemovie from "../images/expert/togglemovie.mp4"
 import prototypemovie from "../images/expert/prototypemovie.mp4"
 
 const SingleVideoContainer = styled.div `
-	margin: 1rem 0;
+	margin: 2rem 0;
 	display: grid;
 	grid-template-columns: auto;
 	justify-items: center;
 	align-items: center;
+
+	@media ${device.desktop} {
+		margin: 1rem auto;
+	}
 `
 const SingleVideo = styled.video`
 	max-width: 375px;

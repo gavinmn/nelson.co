@@ -10,11 +10,11 @@ const StyledLink = styled.a`
   	padding: 4px 8px;
  	background: rgba(193,193,198,0.10);
 	border-radius: 4px;
-  	color: #8B8F9B;
+  	color: var(--secondary-color);
   	font-size: 14px;
 
 	&:hover {
-		color: #6466FF;
+		color: var(--primary-color);
 		background: rgba(100,102,255,0.10);
 		cursor: pointer;
 	}
