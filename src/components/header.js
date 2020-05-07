@@ -16,7 +16,6 @@ const StyledHeader = styled.div`
   z-index: ${props => props.scrolled ? "10" : "1"};
   transition: .4s ease-in-out;
 
-
   @media ${device.desktop} {
     padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
   }
