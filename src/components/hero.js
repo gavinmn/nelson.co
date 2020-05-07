@@ -85,6 +85,12 @@ const GitHub = styled(StyledLink)`
 		color: #24292E;
 		background: rgba(36,41,46,0.10);
 	}
+	 @media (prefers-color-scheme: dark) {
+	 	&:hover {
+	 		color: #ffffff;	
+	 		background: rgba(0,0,0,0.10);
+	 	}
+  	}
 
 	@media only screen and (min-width: 445px) {
 		margin-left: 1.5rem;

@@ -14,6 +14,12 @@ export const GlobalStyle = createGlobalStyle `
 	  	overflow-y: scroll;
 	  	overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+		transition: all .4s ease-in-out;
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #1d1d1f;
+			color: #ffffff;
+		}
 	}
 
 	html, body {
@@ -39,7 +45,6 @@ export const GlobalStyle = createGlobalStyle `
 	  	max-width: 100%;
 	  	height:auto;
 	}
-
 	
 
 	::selection {

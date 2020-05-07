@@ -17,6 +17,10 @@ const StyledHeader = styled.div`
   transition: .4s ease-in-out;
 
 
+  @media (prefers-color-scheme: dark) {
+    background: rgba(29,29,31,0.8);
+  }
+
   @media ${device.desktop} {
     padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
   }
@@ -34,6 +38,10 @@ const AboutLink = styled(Link)`
   &:hover {
     color: #6466FF;    
   }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
+  }
 `
 const WorkLink = styled(AnchorLink)`
   color: ${props => props.shouldHighlight ? "#6466FF" : "#1D1D1F"};
@@ -44,6 +52,10 @@ const WorkLink = styled(AnchorLink)`
   &:hover {
     color: #6466FF;
   }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
+  }
 `
 const Name = styled(Link)`
   margin-right: auto;
@@ -52,6 +64,10 @@ const Name = styled(Link)`
 
   &:hover {
     color: #6466FF;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
   }
 `
 
