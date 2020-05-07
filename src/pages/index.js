@@ -49,7 +49,7 @@ const IndexPage = props => {
 			image={props.data.chalkIntro.childImageSharp.fluid}
 			link="/chalk"
 			buttontext="Read case study"
-			buttonBgColor="rgba(64,152,255,0.10)"
+			buttonBgColor="var(--chalk-button)"
 			buttonHoverBg="#4098FF"
 			buttonAsA=""
 			buttonHref=""

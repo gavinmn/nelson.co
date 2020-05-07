@@ -12,10 +12,24 @@ export const GlobalStyle = createGlobalStyle `
 		--bg-rgba: rgba(255, 255, 255, .8);
 		--color: #1d1d1f;
 
+		--button-bg: rgba(100,102,255,0.10);
+
+		--chalk-button: rgba(64,152,255,0.10);
+
+		--github-text: #24292E;
+		--github-bg: rgba(36,41,46,0.10);
+
 		@media(prefers-color-scheme: dark) {
 			--bg-hex: #1d1d1f;
 			--bg-rgba: rgba(29,29,31,0.8);
 			--color: #ffffff;
+
+			--button-bg: rgba(100,102,255,0.20);
+
+			--chalk-button: rgba(64,152,255,0.20);
+
+			--github-text: #ffffff;
+			--github-bg: rgba(0,0,0,0.10);
 		}
 	}
 

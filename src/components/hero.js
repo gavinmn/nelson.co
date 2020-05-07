@@ -82,19 +82,20 @@ const LinkedIn = styled(StyledLink)`
 `
 const GitHub = styled(StyledLink)`
 	&:hover {
-		color: #24292E;
-		background: rgba(36,41,46,0.10);
+		color: var(--github-text);
+		background: var(--github-bg);
 	}
-	 @media (prefers-color-scheme: dark) {
-	 	&:hover {
-	 		color: #ffffff;	
-	 		background: rgba(0,0,0,0.10);
-	 	}
-  	}
 
 	@media only screen and (min-width: 445px) {
 		margin-left: 1.5rem;
 	}
+
+	&.dark {
+	 	&:hover {
+	 		color: var(--github-text);
+	 		background: var(--github-bg);
+	 	}
+	 }
 `
 
 const Hero = () => (
