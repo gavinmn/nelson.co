@@ -102,7 +102,7 @@ const Hero = () => (
 	<Fade>
 		<HeroContainer>
 			<StyledLogo/>
-				<HeroText>Gavin Nelson is a <Highlight><strong>product & visual designer</strong></Highlight> in the San Francisco Bay Area. He creates intuitive and clean human-centered design solutions with great attention to detail.<br></br><br></br>He is currently working as a Product Designer at wikiHow as well as on freelance projects.
+				<HeroText>Gavin Nelson is a <Highlight><strong>product & visual designer</strong></Highlight> in the San Francisco Bay Area. He creates intuitive and clean human-centered design solutions with great attention to detail.<br></br><br></br>He is currently working as a full time Product Designer as well as on freelance projects.
 				</HeroText>
 				<LinkContainer>
 					<Email href="mailto:gnelsondesign@gmail.com">Email</Email>
