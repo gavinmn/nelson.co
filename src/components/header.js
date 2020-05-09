@@ -5,37 +5,37 @@ import styled from "styled-components"
 import Wrapper from "./wrapper"
 import { device } from "./device"
 
-
-const StyledHeader = styled.div` 
-  position:fixed;
-  top:0;
+const StyledHeader = styled.div`
+  position: fixed;
+  top: 0;
   width: 100%;
-  padding: ${props => props.scrolled ? ".5rem 0" : "1rem 0"};
+  padding: ${props => (props.scrolled ? ".5rem 0" : "1rem 0")};
   background-color: var(--bg-rgba);
-  backdrop-filter: ${props => props.scrolled ? "blur(6px)" : ""};  
-  z-index: ${props => props.scrolled ? "10" : "1"};
-  transition: padding .4s ease-in-out;
+  backdrop-filter: ${props => (props.scrolled ? "blur(6px)" : "")};
+  z-index: ${props => (props.scrolled ? "10" : "1")};
+  transition: padding 0.4s ease-in-out;
 
   @media ${device.desktop} {
-    padding: ${props => props.scrolled ? ".25rem 0" : ".5rem 0"};
+    padding: ${props => (props.scrolled ? ".25rem 0" : ".5rem 0")};
   }
 `
-const Container = styled.div` 
+const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 `
 
-const AboutLink = styled(Link)`  
+const AboutLink = styled(Link)`
   margin-left: 1.5rem;
   color: var(--color);
 
   &:hover {
-    color: var(--primary-color);    
+    color: var(--primary-color);
   }
 `
 const WorkLink = styled(AnchorLink)`
-  color: ${props => props.shouldHighlight ? "var(--primary-color)" : "var(--color)"};
+  color: ${props =>
+    props.shouldHighlight ? "var(--primary-color)" : "var(--color)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -54,22 +54,20 @@ const Name = styled(Link)`
   }
 `
 
-const Header = (props) => {
-
+const Header = props => {
   const [hasScrolled, setScroll] = useState(false)
   const [highlight, setHighlight] = useState(false)
 
   if (typeof window !== `undefined`) {
-     window.addEventListener("scroll", () => {
-        const scrollCheck = window.pageYOffset
-        if (scrollCheck > 64) {
-          setScroll(true)
-        } else {
-          setScroll(false)
-        }
-      })
+    window.addEventListener("scroll", () => {
+      const scrollCheck = window.pageYOffset
+      if (scrollCheck > 64) {
+        setScroll(true)
+      } else {
+        setScroll(false)
+      }
+    })
   }
- 
 
   useEffect(() => {
     if (props.path !== "/") {
@@ -77,17 +75,21 @@ const Header = (props) => {
     } else {
       setHighlight(false)
     }
-  },[props.path])
+  }, [props.path])
 
   return (
     <StyledHeader scrolled={hasScrolled}>
       <Wrapper>
         <Container>
           <Name to="/">Gavin Nelson</Name>
-          <AboutLink to="/" activeStyle={{"color": "var(--primary-color)"}}>About</AboutLink>
-          <WorkLink to="/#work" stripHash shouldHighlight={highlight}>Work</WorkLink>
+          <AboutLink to="/" activeStyle={{ color: "var(--primary-color)" }}>
+            About
+          </AboutLink>
+          <WorkLink to="/#work" stripHash shouldHighlight={highlight}>
+            Work
+          </WorkLink>
         </Container>
-      </Wrapper> 
+      </Wrapper>
     </StyledHeader>
   )
 }

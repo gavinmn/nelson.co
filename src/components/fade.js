@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { keyframes } from 'styled-components'
+import { keyframes } from "styled-components"
 
 const fadeIn = keyframes`
   	from {
@@ -10,8 +10,8 @@ const fadeIn = keyframes`
   	}
 `
 
-const Fade = styled.div `
-	animation: ${fadeIn} .6s ease-out;
+const Fade = styled.div`
+  animation: ${fadeIn} 0.6s ease-out;
 `
 
 export default Fade
