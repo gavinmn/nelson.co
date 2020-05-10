@@ -9,6 +9,7 @@ import ProjectInfo from "../components/projectinfo"
 import Shot from "../components/shot"
 import { device } from "../components/device"
 import "./fonts.css"
+import ogimage from "../../static/images/og.png"
 
 const HeroContainer = styled.div`
   margin-top: 1rem;
@@ -34,8 +35,8 @@ const SampleGrid = styled.div`
 `
 
 const IndexPage = props => {
-  const ogimage = props.data.ogimage.childImageSharp.resize
-  console.log(ogimage)
+  // const ogimage = props.data.ogimage.childImageSharp.resize
+  // console.log(ogimage)
   return (
     <Layout location={props.location}>
       <SEO image={ogimage} />
@@ -89,15 +90,6 @@ export default IndexPage
 
 export const PageQuery = graphql`
   query {
-    ogimage: file(relativePath: { eq: "og.png" }) {
-      childImageSharp {
-        resize(width: 1200) {
-          src
-          height
-          width
-        }
-      }
-    }
     chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
