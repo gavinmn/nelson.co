@@ -33,10 +33,12 @@ const SampleGrid = styled.div`
   }
 `
 
+// const ogimage = this.props.data.ogimage.childImageSharp.resize
+
 const IndexPage = props => {
   return (
     <Layout location={props.location}>
-      <SEO title="About" />
+      <SEO title="About" image={props.data.ogimage.childImageSharp.resize} />
       <HeroContainer>
         <Hero />
       </HeroContainer>
@@ -85,8 +87,17 @@ const IndexPage = props => {
 
 export default IndexPage
 
-export const ImageQuery = graphql`
+export const PageQuery = graphql`
   query {
+    ogimage: file(relativePath: { eq: "og.png" }) {
+      childImageSharp {
+        resize(width: 1200) {
+          src
+          height
+          width
+        }
+      }
+    }
     chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
