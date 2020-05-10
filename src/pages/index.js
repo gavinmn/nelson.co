@@ -35,6 +35,7 @@ const SampleGrid = styled.div`
 
 const IndexPage = props => {
   const ogimage = props.data.ogimage.childImageSharp.resize
+  console.log(ogimage)
   return (
     <Layout location={props.location}>
       <SEO title="About" image={ogimage} />
