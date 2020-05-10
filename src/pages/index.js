@@ -38,7 +38,7 @@ const IndexPage = props => {
   console.log(ogimage)
   return (
     <Layout location={props.location}>
-      <SEO title="About" image={ogimage} />
+      <SEO image={ogimage} />
       <HeroContainer>
         <Hero />
       </HeroContainer>
