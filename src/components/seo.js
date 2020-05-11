@@ -28,17 +28,12 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  // const image =
-  //   metaImage && metaImage.src
-  //     ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-  //     : null
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      // image={`{site.siteMetadata.siteUrl}{metaImage.src}`}
       title={title}
       titleTemplate={`%s - ${site.siteMetadata.title}`}
       meta={[
