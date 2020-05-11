@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title, image: metaImage }) {
             description
             author
             siteUrl
+            image
           }
         }
       }
