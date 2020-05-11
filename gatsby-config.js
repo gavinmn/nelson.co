@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gavin Nelson Design`,
-    description: `Gavin Nelson is a product designer who creates human centered design solutions.`,
+    description: `Gavin Nelson is a product designer who creates human-centered design solutions.`,
     author: `@gavmn`,
     siteUrl: "https://gnelsondesign.com",
     image: "/images/og.png",
