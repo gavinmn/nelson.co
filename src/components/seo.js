@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, image: metaImage }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,16 +28,17 @@ function SEO({ description, lang, meta, title, image: metaImage }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const image =
-    metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`
-      : null
+  // const image =
+  //   metaImage && metaImage.src
+  //     ? `${site.siteMetadata.siteUrl}${metaImage.src}`
+  //     : null
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
+      // image={`{site.siteMetadata.siteUrl}{metaImage.src}`}
       title={title}
       titleTemplate={`%s - ${site.siteMetadata.title}`}
       meta={[
@@ -63,7 +64,7 @@ function SEO({ description, lang, meta, title, image: metaImage }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.author}`,
         },
         {
           name: `twitter:title`,
@@ -73,35 +74,23 @@ function SEO({ description, lang, meta, title, image: metaImage }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          metaImage
-            ? [
-                {
-                  property: "og:image",
-                  content: image,
-                },
-                {
-                  property: "og:image:width",
-                  content: metaImage.width,
-                },
-                {
-                  property: "og:image:height",
-                  content: metaImage.height,
-                },
-                {
-                  name: "twitter:card",
-                  content: "summary_large_image",
-                },
-              ]
-            : [
-                {
-                  name: "twitter:card",
-                  content: "summary",
-                },
-              ]
-        )
-        .concat(meta)}
+        {
+          property: "og:image",
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
+        },
+        {
+          property: "og:image:width",
+          content: `1200`,
+        },
+        {
+          property: "og:image:height",
+          content: `630`,
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+      ]}
     />
   )
 }
