@@ -3,20 +3,21 @@ module.exports = {
     title: `Gavin Nelson Design`,
     description: `Gavin Nelson is a product designer who creates human centered design solutions.`,
     author: `@gavmn`,
-    siteURL: 'https://gnelsondesign.com', 
+    siteUrl: "https://gnelsondesign.com",
+    image: "/images/og.png",
   },
   plugins: [
-     {
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /svg/
+          include: /svg/,
         },
       },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-dark-mode",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,12 +42,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -96
-      }
+        offset: -96,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-     
   ],
 }
