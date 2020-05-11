@@ -63,7 +63,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:title`,
-          content: `${site.siteMetadata.author}`,
+          content: `Gavin Nelson Design`,
         },
         {
           name: `twitter:description`,
