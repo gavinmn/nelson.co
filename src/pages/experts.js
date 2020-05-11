@@ -37,7 +37,7 @@ const SingleVideo = styled.video`
 
 const expertsPage = props => (
   <Layout location={props.location}>
-    <SEO title="Expert Profiles" />
+    <SEO title="Expert Profiles - " />
     <Fade>
       <PortfolioContainer>
         <SmallWrapper>

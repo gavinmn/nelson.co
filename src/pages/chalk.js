@@ -98,7 +98,7 @@ const QuadVideoContainer = styled.div`
 
 const chalkPage = props => (
   <Layout location={props.location}>
-    <SEO title="Chalk" />
+    <SEO title="Chalk - " />
     <Fade>
       <PortfolioContainer>
         <SmallWrapper>
