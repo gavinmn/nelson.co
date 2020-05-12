@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-hex: #ffffff;
 		--bg-rgba: rgba(255, 255, 255, .8);
 		--color: #1d1d1f;
-		--secondary-color: #8B8F9B;
-		--primary-color: #6466FF;
+		--secondary-color: #737387;
+		--primary-color: #6161FF;
 
 		--button-bg: rgba(100,102,255,0.10);
 
