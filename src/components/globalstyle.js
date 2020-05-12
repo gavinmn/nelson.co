@@ -13,10 +13,10 @@ export const GlobalStyle = createGlobalStyle`
 		--secondary-color: #737387;
 		--primary-color: #6161FF;
 
-		--button-bg: rgba(100,102,255,0.10);
+		--button-bg: #DFE4FF;
 
-		--chalk-button: rgba(64,152,255,0.10);
-		--experts-button: rgba(136,207,77,0.15);
+		--chalk-button: #D7EAFF;
+		--experts-button: #DBF1CA;
 
 		--github-text: #24292E;
 		--github-bg: rgba(36,41,46,0.10);
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 			--bg-hex: #1d1d1f;
 			--bg-rgba: rgba(29,29,31,0.8);
 			--color: #ffffff;
-			--secondary-color: #8B8F9B; 
+			--secondary-color: #737387; 
 			--primary-color: #6A74FF;
 
 			--button-bg: rgba(100,102,255,0.20);
