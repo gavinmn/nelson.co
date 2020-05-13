@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Logo from "./logo/logo"
 import Fade from "./fade"
+import Scale from "./scale"
 import { device } from "./device"
 import Highlight from "./highlight"
 import StyledLink from "./styledlink"
@@ -100,24 +101,27 @@ const GitHub = styled(StyledLink)`
 
 const Hero = () => (
   <Fade>
-    <HeroContainer>
-      <StyledLogo />
-      <HeroText>
-        Gavin Nelson is a <strong>product & visual designer </strong>
-        in the San Francisco Bay Area. He creates intuitive and clean
-        human-centered design solutions with great attention to detail.<br></br>
-        <br></br>He is currently working at Fitbod, and previously worked at
-        wikiHow.
-      </HeroText>
-      <LinkContainer>
-        <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
-        <LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">
-          LinkedIn
-        </LinkedIn>
-        <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
-        <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
-      </LinkContainer>
-    </HeroContainer>
+    <Scale>
+      <HeroContainer>
+        <StyledLogo />
+        <HeroText>
+          Gavin Nelson is a <strong>product & visual designer </strong>
+          in the San Francisco Bay Area. He creates intuitive and clean
+          human-centered design solutions with great attention to detail.
+          <br></br>
+          <br></br>He is currently working at Fitbod, and previously worked at
+          wikiHow.
+        </HeroText>
+        <LinkContainer>
+          <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
+          <LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">
+            LinkedIn
+          </LinkedIn>
+          <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
+          <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
+        </LinkContainer>
+      </HeroContainer>
+    </Scale>
   </Fade>
 )
 

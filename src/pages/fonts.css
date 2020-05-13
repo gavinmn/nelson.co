@@ -30,8 +30,7 @@
 
 a {
   text-decoration: none;
-  color: #8b8f9b;
-  transition: 0.2s ease-out;
+  color: var(--wash-secondary);
 }
 
 p {
