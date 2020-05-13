@@ -105,10 +105,9 @@ const Hero = () => (
     <HeroContainer>
       <StyledLogo />
       <HeroText>
-        Gavin Nelson is a{" "}
-        <Highlight>
-          <strong>product & visual designer</strong>
-        </Highlight>{" "}
+        Gavin Nelson is a {/* <Highlight> */}
+        <strong>product & visual designer </strong>
+        {/* </Highlight>{" "} */}
         in the San Francisco Bay Area. He creates intuitive and clean
         human-centered design solutions with great attention to detail.<br></br>
         <br></br>He is currently working as a full time Product Designer as well
