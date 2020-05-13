@@ -107,7 +107,7 @@ const CaseStudy = props => {
           link="/chalk"
           text="Read case study"
           backgroundColor="var(--chalk-color)"
-          hoverBG="var(--chalk-color)"
+          hoverBG="var(--chalk-button)"
           asA=""
           href=""
         />
@@ -124,7 +124,7 @@ const CaseStudy = props => {
           link="/experts"
           text="Read case study"
           backgroundColor="var(--experts-color)"
-          hoverBG="var(--experts-color)"
+          hoverBG="var(--experts-button)"
           asA=""
           href=""
         />
