@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "./device"
 
-const ButtonStyle = styled(Link)`
+const ButtonStyle = styled.div`
   padding: 1rem;
   max-width: 100%;
   background: ${props => props.backgroundColor || "var(--button-bg)"};
@@ -34,14 +34,15 @@ const ButtonStyle = styled(Link)`
 `
 
 const ButtonPrimary = props => (
-  <ButtonStyle
-    as={props.asA}
-    href={props.href}
-    to={props.link}
-    backgroundColor={props.color}
-    hoverBackground={props.hoverBackground}
-  >
-    {props.text}
-  </ButtonStyle>
+  <Link to={props.link}>
+    <ButtonStyle
+      as={props.asA}
+      href={props.href}
+      backgroundColor={props.color}
+      hoverBackground={props.hoverBackground}
+    >
+      {props.text}
+    </ButtonStyle>
+  </Link>
 )
 export default ButtonPrimary
