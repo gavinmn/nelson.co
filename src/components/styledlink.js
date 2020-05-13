@@ -2,14 +2,15 @@ import styled from "styled-components"
 import device from "./device"
 
 const StyledLink = styled.a`
-  border-bottom: 1px solid;
-  border-color: #dcdee1;
-  color: var(--secondary-color);
+  /* border-bottom: 1px solid;
+  border-color: #dcdee1; */
+  color: var(--primary-color);
   font-size: 14px;
 
   &:hover {
     color: var(--primary-color);
-    border-color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
     cursor: pointer;
   }
 
