@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import device from "./device"
 
 const StyledLink = styled.a`
   /* border-bottom: 1px solid;

@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Secondary from "./secondary"
-import { device } from "./device"
 
 const Info = styled.p`
   color: var(--wash-primary);

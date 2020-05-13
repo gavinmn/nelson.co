@@ -4,7 +4,6 @@ import Logo from "./logo/logo"
 import Fade from "./fade"
 import Scale from "./scale"
 import { device } from "./device"
-import Highlight from "./highlight"
 import StyledLink from "./styledlink"
 
 const HeroContainer = styled.div`

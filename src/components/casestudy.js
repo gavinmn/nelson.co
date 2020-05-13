@@ -1,16 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import ProjectInfo from "./projectinfo"
 import { useStaticQuery, graphql } from "gatsby"
-
-const ProjectLink = styled(Link)`
-  &:hover > div {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-`
 
 const Container = styled.div`
   margin-bottom: 4rem;
