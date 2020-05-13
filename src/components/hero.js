@@ -57,11 +57,15 @@ const LinkContainer = styled.div`
   }
 `
 
-const Email = styled(StyledLink)``
+const Email = styled(StyledLink)`
+  &:hover {
+    border-color: var(--primary-color);
+  }
+`
 const Dribbble = styled(StyledLink)`
   &:hover {
     color: #ea4c89;
-    /* background: rgba(234, 76, 137, 0.1); */
+    border-color: #ea4c89;
   }
 
   @media only screen and (min-width: 445px) {
@@ -71,7 +75,7 @@ const Dribbble = styled(StyledLink)`
 const LinkedIn = styled(StyledLink)`
   &:hover {
     color: #0a66c2;
-    /* background: rgba(10, 102, 194, 0.1); */
+    border-color: #0a66c2;
   }
 
   @media only screen and (min-width: 445px) {
@@ -81,7 +85,7 @@ const LinkedIn = styled(StyledLink)`
 const GitHub = styled(StyledLink)`
   &:hover {
     color: var(--github-text);
-    /* background: var(--github-bg); */
+    border-color: var(--github-text);
   }
 
   @media only screen and (min-width: 445px) {
