@@ -106,7 +106,7 @@ const CaseStudy = props => {
           date="Summer 2019"
           link="/chalk"
           text="Read case study"
-          backgroundColor="var(--chalk-button)"
+          backgroundColor="var(--chalk-color)"
           hoverBG="var(--chalk-color)"
           asA=""
           href=""
