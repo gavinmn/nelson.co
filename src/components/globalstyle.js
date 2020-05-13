@@ -9,8 +9,10 @@ export const GlobalStyle = createGlobalStyle`
 	:root {
 		--bg-hex: #ffffff;
 		--bg-rgba: rgba(255, 255, 255, .8);
+
 		--color: #1d1d1f;
 		--secondary-color: #737387;
+		
 		--primary-color: #6161FF;
 		--chalk-color: #0F7EFF;
 		--experts-color: #21A30A;

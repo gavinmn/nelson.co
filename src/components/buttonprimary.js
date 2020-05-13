@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { device } from "./device"
 
-const ButtonStyle = styled.div`
+const ButtonStyle = styled(Link)`
   padding: 1rem;
   max-width: 100%;
-  background: ${props => props.backgroundColor || "var(--button-bg)"};
+  background: ${props => props.backgroundColor || "var(--primary-color)"};
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   display: flex;
@@ -14,12 +14,12 @@ const ButtonStyle = styled.div`
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  color: ${props => props.hoverBackground || "var(--primary-color)"};
+  color: #ffffff;
 
   &:hover {
-    background: ${props => props.hoverBackground || "var(--primary-color)"};
-    color: #ffffff;
     cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
   }
 
   @media only screen and (min-width: 445px) {
@@ -34,15 +34,14 @@ const ButtonStyle = styled.div`
 `
 
 const ButtonPrimary = props => (
-  <Link to={props.link}>
-    <ButtonStyle
-      as={props.asA}
-      href={props.href}
-      backgroundColor={props.color}
-      hoverBackground={props.hoverBackground}
-    >
-      {props.text}
-    </ButtonStyle>
-  </Link>
+  <ButtonStyle
+    as={props.asA}
+    href={props.href}
+    to={props.link}
+    backgroundColor={props.color}
+    hoverBackground={props.hoverBackground}
+  >
+    {props.text}
+  </ButtonStyle>
 )
 export default ButtonPrimary
