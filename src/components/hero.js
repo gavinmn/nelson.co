@@ -105,12 +105,11 @@ const Hero = () => (
     <HeroContainer>
       <StyledLogo />
       <HeroText>
-        Gavin Nelson is a {/* <Highlight> */}
-        <strong>product & visual designer </strong>
-        {/* </Highlight>{" "} */}
+        Gavin Nelson is a <strong>product & visual designer </strong>
         in the San Francisco Bay Area. He creates intuitive and clean
         human-centered design solutions with great attention to detail.<br></br>
-        <br></br>He is currently working as a Product Designer at Fitbod.
+        <br></br>He is currently working at Fitbod, and previously worked at
+        wikiHow.
       </HeroText>
       <LinkContainer>
         <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
