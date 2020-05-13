@@ -12,11 +12,13 @@ export const GlobalStyle = createGlobalStyle`
 		--color: #1d1d1f;
 		--secondary-color: #737387;
 		--primary-color: #6161FF;
+		--chalk-color: #0F7EFF;
+		--experts-color: #21A30A;
 
-		--button-bg: #DFE4FF;
+		--button-bg: #F2F2FF;
 
-		--chalk-button: #D7EAFF;
-		--experts-button: #DBF1CA;
+		--chalk-button: #ECF5FF;
+		--experts-button: #EDF8EB;
 
 		--github-text: #24292E;
 		--github-bg: rgba(36,41,46,0.10);
