@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--primary-color: #6161FF;
 		--chalk-color: #006EF0;
-		--experts-color: #148500;
+		--experts-color: #22722D;
 
 		--button-bg: #F2F2FF;
 

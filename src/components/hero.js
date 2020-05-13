@@ -110,8 +110,7 @@ const Hero = () => (
         {/* </Highlight>{" "} */}
         in the San Francisco Bay Area. He creates intuitive and clean
         human-centered design solutions with great attention to detail.<br></br>
-        <br></br>He is currently working as a full time Product Designer as well
-        as on freelance projects.
+        <br></br>He is currently working as a Product Designer at Fitbod.
       </HeroText>
       <LinkContainer>
         <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
