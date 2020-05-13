@@ -18,8 +18,9 @@ const ButtonStyle = styled(Link)`
 
   &:hover {
     cursor: pointer;
-    color: ${props => props.backgroundColor || "var(--primary-color)"};
-    background: ${props => props.hoverBackground || "var(--button-bg)"};
+    /* transform: translateY(-1px);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14); */
+    opacity: 80%;
   }
 
   @media only screen and (min-width: 445px) {

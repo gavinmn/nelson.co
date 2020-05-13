@@ -61,7 +61,7 @@ const Email = styled(StyledLink)``
 const Dribbble = styled(StyledLink)`
   &:hover {
     color: #ea4c89;
-    background: rgba(234, 76, 137, 0.1);
+    /* background: rgba(234, 76, 137, 0.1); */
   }
 
   @media only screen and (min-width: 445px) {
@@ -71,7 +71,7 @@ const Dribbble = styled(StyledLink)`
 const LinkedIn = styled(StyledLink)`
   &:hover {
     color: #0a66c2;
-    background: rgba(10, 102, 194, 0.1);
+    /* background: rgba(10, 102, 194, 0.1); */
   }
 
   @media only screen and (min-width: 445px) {
@@ -81,7 +81,7 @@ const LinkedIn = styled(StyledLink)`
 const GitHub = styled(StyledLink)`
   &:hover {
     color: var(--github-text);
-    background: var(--github-bg);
+    /* background: var(--github-bg); */
   }
 
   @media only screen and (min-width: 445px) {
@@ -91,7 +91,7 @@ const GitHub = styled(StyledLink)`
   &.dark {
     &:hover {
       color: var(--github-text);
-      background: var(--github-bg);
+      /* background: var(--github-bg); */
     }
   }
 `
