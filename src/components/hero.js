@@ -59,7 +59,7 @@ const LinkContainer = styled.div`
 
 const Email = styled(StyledLink)`
   &:hover {
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: var(--color-primary);
   }
 `
 const Dribbble = styled(StyledLink)`
@@ -92,11 +92,9 @@ const GitHub = styled(StyledLink)`
     margin-left: 1.5rem;
   }
 
-  &.dark {
-    &:hover {
-      color: var(--github-text);
-      /* background: var(--github-bg); */
-    }
+  &:hover {
+    color: var(--github-text);
+    /* background: var(--github-bg); */
   }
 `
 

@@ -4,13 +4,13 @@ import device from "./device"
 const StyledLink = styled.a`
   /* border-bottom: 1px solid;
   border-color: #dcdee1; */
-  color: var(--primary-color);
+  color: var(--color-primary);
   font-size: 14px;
 
   &:hover {
-    color: var(--primary-color);
+    color: var(--color-primary);
     text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: var(--color-primary);
     cursor: pointer;
   }
 

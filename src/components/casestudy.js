@@ -106,12 +106,12 @@ const CaseStudy = props => {
           date="Summer 2019"
           link="/chalk"
           text="Read case study"
-          backgroundColor="var(--chalk-color)"
-          hoverBG="var(--chalk-button)"
+          backgroundColor="var(--color-chalk)"
+          hoverBG="var(--color-chalk-secondary)"
           asA=""
           href=""
         />
-        <ProjectBG projectBg="var(--chalk-button)">
+        <ProjectBG projectBg="var(--color-chalk-secondary)">
           <ChalkImage fluid={images.chalkIntro.childImageSharp.fluid} alt="" />
         </ProjectBG>
       </Container>
@@ -123,12 +123,12 @@ const CaseStudy = props => {
           date="Summer 2018"
           link="/experts"
           text="Read case study"
-          backgroundColor="var(--experts-color)"
-          hoverBG="var(--experts-button)"
+          backgroundColor="var(--color-experts)"
+          hoverBG="var(--color-experts-secondary)"
           asA=""
           href=""
         />
-        <ProjectBG projectBg="var(--experts-button)">
+        <ProjectBG projectBg="var(--color-experts-secondary)">
           <ExpertsImage
             fluid={images.expertsIntro.childImageSharp.fluid}
             alt=""

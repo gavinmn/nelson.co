@@ -4,7 +4,7 @@ import Secondary from "./secondary"
 import { device } from "./device"
 
 const Info = styled.p`
-  color: var(--color);
+  color: var(--wash-primary);
   line-height: 1.25;
 `
 

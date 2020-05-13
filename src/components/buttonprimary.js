@@ -6,7 +6,7 @@ import { device } from "./device"
 const ButtonStyle = styled(Link)`
   padding: 1rem;
   max-width: 100%;
-  background: ${props => props.backgroundColor || "var(--primary-color)"};
+  background: ${props => props.backgroundColor || "var(--color-primary)"};
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   display: flex;

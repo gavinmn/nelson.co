@@ -10,42 +10,44 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-hex: #ffffff;
 		--bg-rgba: rgba(255, 255, 255, .8);
 
-		--color: #1d1d1f;
-		--secondary-color: #737387;
+		--wash-primary: #1d1d1f;
+		--wash-secondary: #737387;
 		
-		--primary-color: #6161FF;
-		--chalk-color: #006EF0;
-		--experts-color: #22722D;
+		--color-primary: #6161FF;
 
-		--button-bg: #F2F2FF;
+		--color-chalk: #006EF0;
+		--color-chalk-secondary: #F1F8FF;
 
-		--chalk-button: #F1F8FF;
-		--experts-button: #F1FBF3;
+		--color-experts: #22722D;
+		--color-experts-secondary: #F1FBF3;
+		
+		
 
 		--github-text: #24292E;
-		--github-bg: rgba(36,41,46,0.10);
 
 		@media(prefers-color-scheme: dark) {
 			--bg-hex: #1d1d1f;
 			--bg-rgba: rgba(29,29,31,0.8);
-			--color: #ffffff;
-			--secondary-color: #737387; 
-			--primary-color: #6A74FF;
 
-			--button-bg: rgba(100,102,255,0.20);
+			--wash-primary: #ffffff;
+			--wash-secondary: #838395; 
 
-			--chalk-button: rgba(64,152,255,0.20);
-			--experts-button: rgba(136,207,77,0.15);
+			--color-primary: #6A74FF;
+
+			--color-chalk: #1A83FF;
+			--color-chalk-secondary: #1A212D;
+
+			--color-experts: #1E992F;
+			--color-experts-secondary: #1A2620;
 
 			--github-text: #ffffff;
-			--github-bg: rgba(0,0,0,0.10);
 		}
 	}
 
 	body {
 	  	background-color: var(--bg-hex);
 	  	font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif;
-	  	color: var(--color);
+	  	color: var(--wash-primary);
 	  	overflow-y: scroll;
 	  	overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
@@ -53,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	body.dark {
 		background-color: var(--bg-hex);
-		color: var(--color);
+		color: var(--wash-primary);
 	}
 
 	html, body {
@@ -72,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
 	footer {
 	  	margin-bottom:2rem;
 	  	font-size: 14px;
-  		color: var(--secondary-color);
+  		color: var(--wash-secondary);
 	}
 
 	img {
@@ -83,7 +85,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	::selection {
 		color: white;
-	  	background: var(--primary-color);
+	  	background: var(--color-primary);
 	}
 
 	@media only screen and (min-width: 722px) {
