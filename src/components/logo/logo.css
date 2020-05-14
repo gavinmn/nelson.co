@@ -1,4 +1,4 @@
-@keyframes rotation {
+/* @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
@@ -10,4 +10,4 @@
 #logo-bg {
   transform-origin: 50% 50%;
   animation: rotation 12s infinite linear;
-}
+} */
