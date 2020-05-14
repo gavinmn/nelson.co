@@ -11,14 +11,14 @@ import { device } from "../components/device"
 import "./fonts.css"
 
 const HeroContainer = styled.div`
-  margin-top: 1rem;
+  margin-top: -1rem;
   display: grid;
   height: 100vh;
   align-items: center;
   justify-content: center;
 
   @media ${device.desktop} {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 `
 
