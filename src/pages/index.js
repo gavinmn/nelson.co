@@ -89,7 +89,7 @@ export const PageQuery = graphql`
   query {
     chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 256) {
+        fluid(maxWidth: 128) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -103,7 +103,7 @@ export const PageQuery = graphql`
     }
     expertsLogo: file(relativePath: { eq: "expert/expertslogo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 256) {
+        fluid(maxWidth: 128) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -117,7 +117,7 @@ export const PageQuery = graphql`
     }
     visualLogo: file(relativePath: { eq: "visual/visuallogo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 256) {
+        fluid(maxWidth: 128) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -173,7 +173,7 @@ export const PageQuery = graphql`
     }
     illusLogo: file(relativePath: { eq: "illus/illuslogo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 256) {
+        fluid(maxWidth: 128) {
           ...GatsbyImageSharpFluid
         }
       }
