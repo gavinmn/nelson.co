@@ -6,7 +6,7 @@ import { device } from "./device"
 const ButtonStyle = styled(Link)`
   padding: 1rem;
   max-width: 100%;
-  background: ${props => props.backgroundColor || "var(--button-bg)"};
+  background: ${props => props.backgroundColor || "var(--color-primary)"};
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   display: flex;
@@ -14,12 +14,13 @@ const ButtonStyle = styled(Link)`
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  color: ${props => props.hoverBackground || "var(--primary-color)"};
+  color: #ffffff;
 
   &:hover {
-    background: ${props => props.hoverBackground || "var(--primary-color)"};
-    color: #ffffff;
     cursor: pointer;
+    /* transform: translateY(-1px);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14); */
+    opacity: 80%;
   }
 
   @media only screen and (min-width: 445px) {

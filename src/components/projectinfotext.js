@@ -1,10 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import Secondary from "./secondary"
-import { device } from "./device"
 
 const Info = styled.p`
-  color: var(--color);
+  color: var(--wash-primary);
   line-height: 1.25;
 `
 

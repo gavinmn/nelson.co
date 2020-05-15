@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { device } from "./device"
 
 const Secondary = styled.span`
-  color: var(--secondary-color);
+  color: var(--wash-secondary);
   font-size: 14px;
 
   @media ${device.desktop} {

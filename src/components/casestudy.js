@@ -1,16 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import ProjectInfo from "./projectinfo"
 import { useStaticQuery, graphql } from "gatsby"
-
-const ProjectLink = styled(Link)`
-  &:hover > div {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-`
 
 const Container = styled.div`
   margin-bottom: 4rem;
@@ -106,12 +98,12 @@ const CaseStudy = props => {
           date="Summer 2019"
           link="/chalk"
           text="Read case study"
-          backgroundColor="var(--chalk-button)"
-          hoverBG="#4098FF"
+          backgroundColor="var(--color-chalk)"
+          hoverBG="var(--color-chalk-secondary)"
           asA=""
           href=""
         />
-        <ProjectBG projectBg="var(--chalk-button)">
+        <ProjectBG projectBg="var(--color-chalk-secondary)">
           <ChalkImage fluid={images.chalkIntro.childImageSharp.fluid} alt="" />
         </ProjectBG>
       </Container>
@@ -123,12 +115,12 @@ const CaseStudy = props => {
           date="Summer 2018"
           link="/experts"
           text="Read case study"
-          backgroundColor="var(--experts-button)"
-          hoverBG="#88CF4D"
+          backgroundColor="var(--color-experts)"
+          hoverBG="var(--color-experts-secondary)"
           asA=""
           href=""
         />
-        <ProjectBG projectBg="var(--experts-button)">
+        <ProjectBG projectBg="var(--color-experts-secondary)">
           <ExpertsImage
             fluid={images.expertsIntro.childImageSharp.fluid}
             alt=""

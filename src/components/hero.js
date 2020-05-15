@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Logo from "./logo/logo"
 import Fade from "./fade"
+import Scale from "./scale"
 import { device } from "./device"
-import Highlight from "./highlight"
 import StyledLink from "./styledlink"
 
 const HeroContainer = styled.div`
@@ -57,11 +57,15 @@ const LinkContainer = styled.div`
   }
 `
 
-const Email = styled(StyledLink)``
+const Email = styled(StyledLink)`
+  &:hover {
+    text-decoration-color: var(--color-primary);
+  }
+`
 const Dribbble = styled(StyledLink)`
   &:hover {
     color: #ea4c89;
-    background: rgba(234, 76, 137, 0.1);
+    text-decoration-color: #ea4c89;
   }
 
   @media only screen and (min-width: 445px) {
@@ -71,7 +75,7 @@ const Dribbble = styled(StyledLink)`
 const LinkedIn = styled(StyledLink)`
   &:hover {
     color: #0a66c2;
-    background: rgba(10, 102, 194, 0.1);
+    text-decoration-color: #0a66c2;
   }
 
   @media only screen and (min-width: 445px) {
@@ -81,44 +85,42 @@ const LinkedIn = styled(StyledLink)`
 const GitHub = styled(StyledLink)`
   &:hover {
     color: var(--github-text);
-    background: var(--github-bg);
+    text-decoration-color: var(--github-text);
   }
 
   @media only screen and (min-width: 445px) {
     margin-left: 1.5rem;
   }
 
-  &.dark {
-    &:hover {
-      color: var(--github-text);
-      background: var(--github-bg);
-    }
+  &:hover {
+    color: var(--github-text);
+    /* background: var(--github-bg); */
   }
 `
 
 const Hero = () => (
   <Fade>
-    <HeroContainer>
-      <StyledLogo />
-      <HeroText>
-        Gavin Nelson is a{" "}
-        <Highlight>
-          <strong>product & visual designer</strong>
-        </Highlight>{" "}
-        in the San Francisco Bay Area. He creates intuitive and clean
-        human-centered design solutions with great attention to detail.<br></br>
-        <br></br>He is currently working as a full time Product Designer as well
-        as on freelance projects.
-      </HeroText>
-      <LinkContainer>
-        <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
-        <LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">
-          LinkedIn
-        </LinkedIn>
-        <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
-        <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
-      </LinkContainer>
-    </HeroContainer>
+    <Scale>
+      <HeroContainer>
+        <StyledLogo />
+        <HeroText>
+          Gavin Nelson is a <strong>product & visual designer </strong>
+          in the San Francisco Bay Area. He creates intuitive and clean
+          human-centered design solutions with great attention to detail.
+          <br></br>
+          <br></br>He is currently working at Fitbod, and previously worked at
+          wikiHow.
+        </HeroText>
+        <LinkContainer>
+          <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
+          <LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">
+            LinkedIn
+          </LinkedIn>
+          <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
+          <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
+        </LinkContainer>
+      </HeroContainer>
+    </Scale>
   </Fade>
 )
 
