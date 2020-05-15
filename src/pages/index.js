@@ -90,119 +90,119 @@ export const PageQuery = graphql`
     chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     chalkIntro: file(relativePath: { eq: "chalk/chalkintro.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     expertsLogo: file(relativePath: { eq: "expert/expertslogo.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     expertsIntro: file(relativePath: { eq: "expert/expertsintro.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     visualLogo: file(relativePath: { eq: "visual/visuallogo.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     designIcons: file(relativePath: { eq: "visual/designicons.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     devIcons: file(relativePath: { eq: "visual/devicons.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     mailIcons: file(relativePath: { eq: "visual/mailicons.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     Swatches: file(relativePath: { eq: "visual/swatches.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     finderWindows: file(relativePath: { eq: "visual/finderwindows.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     wh1: file(relativePath: { eq: "visual/whicons.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     wh2: file(relativePath: { eq: "visual/whicons2.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     illusLogo: file(relativePath: { eq: "illus/illuslogo.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     avatar: file(relativePath: { eq: "illus/avatar.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     peace: file(relativePath: { eq: "illus/peace.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     shaka: file(relativePath: { eq: "illus/shaka.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     draw: file(relativePath: { eq: "illus/draw.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
