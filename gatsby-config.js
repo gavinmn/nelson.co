@@ -33,12 +33,13 @@ module.exports = {
         name: `Gavin Nelson Design`,
         short_name: `GNd`,
         start_url: `/`,
-        background_color: `#6466FF`,
-        theme_color: `#6466FF`,
+        background_color: `##7575FF`,
+        theme_color: `##7575FF`,
         display: `minimal-ui`,
         icon: `src/images/favicon/favicon.png`,
       },
     },
+    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
