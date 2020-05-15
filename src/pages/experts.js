@@ -300,35 +300,35 @@ export const ImageQuery = graphql`
     headerimage: file(relativePath: { eq: "expert/headerimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     projectimage: file(relativePath: { eq: "expert/projectimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     teamimage: file(relativePath: { eq: "expert/teamimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     problemimage: file(relativePath: { eq: "expert/problemimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     goalimage: file(relativePath: { eq: "expert/goalimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -337,49 +337,49 @@ export const ImageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     solutionimage1: file(relativePath: { eq: "expert/solutionimage1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     solutionimage2: file(relativePath: { eq: "expert/solutionimage2.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     solutionimage3: file(relativePath: { eq: "expert/solutionimage3.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     solutionimage4: file(relativePath: { eq: "expert/solutionimage4.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     contextimage1: file(relativePath: { eq: "expert/contextimage1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     devimage: file(relativePath: { eq: "expert/devimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }

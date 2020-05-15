@@ -377,91 +377,91 @@ export const ImageQuery = graphql`
     headerimage: file(relativePath: { eq: "chalk/headerimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     projectimage: file(relativePath: { eq: "chalk/projectimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     roleimage: file(relativePath: { eq: "chalk/roleimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     iphonebezel: file(relativePath: { eq: "chalk/iphonebezel.png" }) {
       childImageSharp {
         fluid(maxWidth: 750) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     devicesimage: file(relativePath: { eq: "chalk/devicesimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     problemimage: file(relativePath: { eq: "chalk/problemimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     sketchesimage: file(relativePath: { eq: "chalk/sketchesimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     solutionimage: file(relativePath: { eq: "chalk/solutionimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     personaimage: file(relativePath: { eq: "chalk/personaimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     graphimage: file(relativePath: { eq: "chalk/graphimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     finalimage: file(relativePath: { eq: "chalk/finalimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     finaliconsimage: file(relativePath: { eq: "chalk/finaliconsimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
     goalimage: file(relativePath: { eq: "chalk/goalimage.png" }) {
       childImageSharp {
         fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
