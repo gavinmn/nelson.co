@@ -60,28 +60,28 @@ const CaseStudy = props => {
       chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
         childImageSharp {
           fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       chalkIntro: file(relativePath: { eq: "chalk/chalkintro.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       expertsLogo: file(relativePath: { eq: "expert/expertslogo.png" }) {
         childImageSharp {
           fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       expertsIntro: file(relativePath: { eq: "expert/expertsintro.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
