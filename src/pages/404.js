@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 import { device } from "../components/device"
+import "./fonts.css"
 
 const Container = styled.div`
   display: grid;
