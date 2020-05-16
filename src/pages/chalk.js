@@ -4,6 +4,8 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import "./fonts.css"
+
 import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"

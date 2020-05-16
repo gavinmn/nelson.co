@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
 const StyledLink = styled.a`
-  /* border-bottom: 1px solid;
-  border-color: #dcdee1; */
   color: var(--color-primary);
   font-size: 14px;
 
