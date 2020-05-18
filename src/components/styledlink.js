@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledLink = styled.a`
-  color: var(--color-primary);
+  color: var(--wash-secondary);
   font-size: 14px;
 
   &:hover {

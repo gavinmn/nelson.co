@@ -8,7 +8,7 @@ const ButtonStyle = styled(Link)`
   max-width: 100%;
   background: ${props => props.backgroundColor || "var(--color-primary)"};
   border-radius: 8px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,9 +18,10 @@ const ButtonStyle = styled(Link)`
 
   &:hover {
     cursor: pointer;
-    /* transform: translateY(-1px);
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14); */
-    opacity: 80%;
+    background: var(--bg-hex);
+    color: ${props => props.backgroundColor || "var(--color-primary)"};
+    box-shadow: 0 0 0 1px
+      ${props => props.backgroundColor || "var(--color-primary)"} inset;
   }
 
   @media only screen and (min-width: 445px) {

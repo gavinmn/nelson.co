@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-rgba: rgba(255, 255, 255, .8);
 
 		--wash-primary: #1d1d1f;
-		--wash-secondary: #737387;
+		--wash-secondary: #76767E;
 		
 		--color-primary: #1d1d1f;
 
@@ -30,9 +30,9 @@ export const GlobalStyle = createGlobalStyle`
 			--bg-rgba: rgba(29,29,31,0.8);
 
 			--wash-primary: #ffffff;
-			--wash-secondary: #838395; 
+			--wash-secondary: #84848B; 
 
-			--color-primary: #7575FF;
+			--color-primary: #ffffff;
 
 			--color-chalk: #1A83FF;
 			--color-chalk-secondary: #1A212D;
