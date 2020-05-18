@@ -108,7 +108,7 @@ const Hero = () => (
           in the San Francisco Bay Area. He creates intuitive and clean
           human-centered design solutions with great attention to detail.
           <br></br>
-          <br></br>He is currently working at Fitbod, and previously worked at
+          <br></br>He currently works at Fitbod, and previously worked at
           wikiHow.
         </HeroText>
         <LinkContainer>
