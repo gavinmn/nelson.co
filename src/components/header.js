@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const AboutLink = styled(Link)`
   margin-left: 1.5rem;
-  color: var(--wash-primary);
+  color: var(--wash-secondary);
 
   &:hover {
     color: var(--color-primary);
@@ -35,7 +35,7 @@ const AboutLink = styled(Link)`
 `
 const WorkLink = styled(AnchorLink)`
   color: ${props =>
-    props.shouldHighlight ? "var(--color-primary)" : "var(--wash-primary)"};
+    props.shouldHighlight ? "var(--color-primary)" : "var(--wash-secondary)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
