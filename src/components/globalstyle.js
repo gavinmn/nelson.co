@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 		--wash-primary: #1d1d1f;
 		--wash-secondary: #737387;
 		
-		--color-primary: #6161FF;
+		--color-primary: #1d1d1f;
 
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
