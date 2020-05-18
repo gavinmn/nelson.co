@@ -14,7 +14,7 @@ const ButtonStyle = styled(Link)`
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--bg-hex);
 
   &:hover {
     cursor: pointer;
