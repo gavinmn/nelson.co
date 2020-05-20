@@ -5778,13 +5778,13 @@ gatsby-plugin-dark-mode@^1.1.2:
   dependencies:
     prop-types "^15.5.7"
 
-gatsby-plugin-manifest@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.6.tgz#eadb7ebae4dc7ba87d1a0fad15f2ba3bb83249ba"
-  integrity sha512-dq/cWTrTbz2e5haMUKYyMpuG1HTkii3kfIsE4oqCO9B9W+e9SEeLBrP2fsYXmStjhanDL0WLTSvTGB7YWuosYQ==
+gatsby-plugin-manifest@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.8.tgz#c6834829a983ba423e7f8befce181bc0348703ff"
+  integrity sha512-7422d9K+27Iiq9wRw67S7Dldua0/TyMIeOOyPw5tqN8q9Ksm+p1yVse/35BvhGA3gjxIBoX7YczoVwXEdsGUEQ==
   dependencies:
     "@babel/runtime" "^7.9.6"
-    gatsby-core-utils "^1.3.0"
+    gatsby-core-utils "^1.3.2"
     semver "^5.7.1"
     sharp "^0.25.1"
 
