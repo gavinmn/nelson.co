@@ -5713,10 +5713,10 @@ gatsby-cli@^2.12.25:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.2.3, gatsby-core-utils@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.0.tgz#a3dfc85f705c23e0b19a8cf9ccb97580eb0e2612"
-  integrity sha512-7rgNCsqvChp00rL2rJrYNqXf47qP1G0K9Pm6iWuIYrZAdzT0q6rB9csNS5dZ8gzY9CnLT4cTcHVYbr5BjuT/Rg==
+gatsby-core-utils@^1.2.3, gatsby-core-utils@^1.3.0, gatsby-core-utils@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.3.2.tgz#b76489df19a5a0952701db073235827df627244a"
+  integrity sha512-aNecB7D9KFGITArBoEu7Y4g2ZN2zVY+BB2uF9Ql8mp1fcRZFXZdkNvyXqiKsyDFRl/UdBT4u6Zrym1bXk0SWig==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -5828,16 +5828,16 @@ gatsby-plugin-react-svg@^3.0.0:
   dependencies:
     svg-react-loader "^0.4.4"
 
-gatsby-plugin-sharp@^2.6.6:
-  version "2.6.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.6.tgz#6ec0d9c45bb687c1338304aee5eee9d821f02352"
-  integrity sha512-jf3rv1huON0x5IKm6Vi6cVHo9pI4CRGOF6vaOVZY2fI7MVzEihOB1qg8Otqfg2DjoWzX6aWvvcspsS98U6pRqA==
+gatsby-plugin-sharp@^2.6.8:
+  version "2.6.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.8.tgz#035cd43e441d351f2ff5212e7c12cf0b962aeb25"
+  integrity sha512-tsSQ8EFOpw+FLudon/h6YipHRVZ62Z/l5aYR2oBbPI0/AObrry1nvwmF6ovVLPFzI+D3GvPml7bvkGWLThKaZg==
   dependencies:
     "@babel/runtime" "^7.9.6"
     async "^2.6.3"
     bluebird "^3.7.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.0"
+    gatsby-core-utils "^1.3.2"
     got "^8.3.2"
     imagemin "^6.1.0"
     imagemin-mozjpeg "^8.0.0"
