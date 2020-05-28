@@ -6,7 +6,7 @@
   "author": "Gavin Nelson <gnelsondesign@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.22.11",
+    "gatsby": "^2.22.12",
     "gatsby-image": "^2.4.5",
     "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-dark-mode": "^1.1.2",
