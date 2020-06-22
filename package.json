@@ -15,7 +15,7 @@
     "gatsby-plugin-offline": "^3.2.10",
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-plugin-sharp": "^2.6.12",
     "gatsby-plugin-smoothscroll": "^1.1.0",
     "gatsby-plugin-styled-components": "^3.3.4",
     "gatsby-plugin-web-font-loader": "^1.0.4",
