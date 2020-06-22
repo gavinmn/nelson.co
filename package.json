@@ -17,7 +17,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.6.12",
     "gatsby-plugin-smoothscroll": "^1.1.0",
-    "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-plugin-styled-components": "^3.3.5",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.13",
     "gatsby-transformer-sharp": "^2.5.6",
