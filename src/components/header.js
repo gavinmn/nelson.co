@@ -10,7 +10,7 @@ const StyledHeader = styled.div`
   top: 0;
   width: 100%;
   padding: ${props => (props.scrolled ? ".5rem 0" : "1rem 0")};
-  background-color: var(--bg-rgba);
+  background-color: ${props => (props.darkBackground ? "" : "var(--bg-rgba)")};
   backdrop-filter: ${props => (props.scrolled ? "blur(6px)" : "")};
   z-index: ${props => (props.scrolled ? "10" : "1")};
   transition: padding 0.4s ease-in-out;
@@ -27,7 +27,8 @@ const Container = styled.div`
 
 const AboutLink = styled(Link)`
   margin-left: 1.5rem;
-  color: var(--wash-secondary);
+  color: ${props =>
+    props.darkBackground ? "var(--wash-primary)" : "var(--wash-secondary)"};
 
   &:hover {
     color: var(--color-primary);
@@ -48,20 +49,21 @@ const Name = styled(Link)`
   margin-right: auto;
   margin-left: 0;
   color: var(--wash-primary);
-
   &:hover {
     color: var(--color-primary);
   }
 `
 
 const Header = props => {
+  const [shouldBlur, setShouldBlur] = useState(true)
   const [hasScrolled, setScroll] = useState(false)
   const [highlight, setHighlight] = useState(false)
+  const [bgColor, setBgColor] = useState(false)
 
   if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
       const scrollCheck = window.pageYOffset
-      if (scrollCheck > 64) {
+      if (scrollCheck > 64 && shouldBlur == true) {
         setScroll(true)
       } else {
         setScroll(false)
@@ -75,14 +77,24 @@ const Header = props => {
     } else {
       setHighlight(false)
     }
+    if (props.path === "/monterey") {
+      setBgColor(true)
+      setShouldBlur(false)
+    } else {
+      setBgColor(false)
+    }
   }, [props.path])
 
   return (
-    <StyledHeader scrolled={hasScrolled}>
+    <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
       <Wrapper>
         <Container>
           <Name to="/">Gavin Nelson</Name>
-          <AboutLink to="/" activeStyle={{ color: "var(--color-primary)" }}>
+          <AboutLink
+            to="/"
+            darkBackground={bgColor}
+            activeStyle={{ color: "var(--color-primary)" }}
+          >
             About
           </AboutLink>
           <WorkLink to="/#work" stripHash shouldHighlight={highlight}>
