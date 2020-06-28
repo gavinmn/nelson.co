@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { device } from "../components/device"
+import Wrapper from "../components/wrapper"
 import "./fonts.css"
 
 const HeroContainer = styled.div`
@@ -12,8 +13,10 @@ const HeroContainer = styled.div`
   height: 100vh;
   width: 100vw;
   justify-content: center;
+  margin-bottom: 4rem;
 
   @media ${device.desktop} {
+    margin-bottom: 2rem;
   }
 `
 const Grid = styled.div`
@@ -49,6 +52,20 @@ const DescriptionText = styled.p`
   justify-self: center;
   z-index: 2;
 `
+const DetailHeader = styled.p`
+  margin: 0 auto;
+  text-align: center;
+  max-width: 630px;
+  font-size: 2rem;
+  font-weight: bold;
+`
+
+const DetailText = styled.p`
+  margin: 0 auto;
+  text-align: center;
+  max-width: 630px;
+  margin-bottom: 4rem;
+`
 
 const MontereyPage = props => {
   return (
@@ -66,6 +83,10 @@ const MontereyPage = props => {
           />
         </Grid>
       </HeroContainer>
+      <DetailHeader>Coming Soon</DetailHeader>
+      <DetailText>
+        Follow Gavin on Twitter to be notified of release.
+      </DetailText>
     </Layout>
   )
 }
