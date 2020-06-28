@@ -28,7 +28,11 @@ const Container = styled.div`
 const AboutLink = styled(Link)`
   margin-left: 1.5rem;
   color: ${props =>
-    props.darkBackground ? "var(--wash-primary)" : "var(--wash-secondary)"};
+    props.darkBackground
+      ? props.isWhite
+        ? "#ffffff"
+        : "var(--wash-primary)"
+      : "var(--wash-secondary)"};
 
   &:hover {
     color: var(--color-primary);
@@ -36,7 +40,11 @@ const AboutLink = styled(Link)`
 `
 const WorkLink = styled(AnchorLink)`
   color: ${props =>
-    props.shouldHighlight ? "var(--color-primary)" : "var(--wash-secondary)"};
+    props.shouldHighlight
+      ? props.darkBackground
+        ? "#ffffff"
+        : "var(--wash-primary)"
+      : "var(--wash-secondary)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -48,14 +56,14 @@ const WorkLink = styled(AnchorLink)`
 const Name = styled(Link)`
   margin-right: auto;
   margin-left: 0;
-  color: var(--wash-primary);
+  color: ${props => (props.darkBackground ? "#ffffff" : "var(--wash-primary)")};
   &:hover {
     color: var(--color-primary);
   }
 `
 
 const Header = props => {
-  const [shouldBlur, setShouldBlur] = useState(true)
+  const [shouldBeWhite, setShouldBeWhite] = useState(false)
   const [hasScrolled, setScroll] = useState(false)
   const [highlight, setHighlight] = useState(false)
   const [bgColor, setBgColor] = useState(false)
@@ -63,7 +71,7 @@ const Header = props => {
   if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
       const scrollCheck = window.pageYOffset
-      if (scrollCheck > 64 && shouldBlur == true) {
+      if (scrollCheck > 64) {
         setScroll(true)
       } else {
         setScroll(false)
@@ -78,10 +86,11 @@ const Header = props => {
       setHighlight(false)
     }
     if (props.path === "/monterey") {
+      setShouldBeWhite(true)
       setBgColor(true)
-      setShouldBlur(false)
     } else {
       setBgColor(false)
+      setShouldBeWhite(false)
     }
   }, [props.path])
 
@@ -89,15 +98,23 @@ const Header = props => {
     <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
       <Wrapper>
         <Container>
-          <Name to="/">Gavin Nelson</Name>
+          <Name to="/" darkBackground={bgColor}>
+            Gavin Nelson
+          </Name>
           <AboutLink
             to="/"
             darkBackground={bgColor}
+            isWhite={shouldBeWhite}
             activeStyle={{ color: "var(--color-primary)" }}
           >
             About
           </AboutLink>
-          <WorkLink to="/#work" stripHash shouldHighlight={highlight}>
+          <WorkLink
+            to="/#work"
+            darkBackground={bgColor}
+            stripHash
+            shouldHighlight={highlight}
+          >
             Work
           </WorkLink>
         </Container>

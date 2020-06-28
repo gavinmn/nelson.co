@@ -41,6 +41,17 @@ const MontereyText = styled.p`
   justify-self: center;
   z-index: 2;
 `
+const Twitter = styled.a`
+  ${"" /* color: var(--wash-primary); */}
+  font-size: 1rem;
+  &:hover {
+    color: #1da1f2;
+    text-decoration-color: #0a66c2;
+  }
+  @media ${device.desktop} {
+    font-size: 22px;
+  }
+`
 
 const DescriptionText = styled.p`
   font-size: 1rem;
@@ -58,6 +69,7 @@ const DetailHeader = styled.p`
   max-width: 630px;
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 `
 
 const DetailText = styled.p`
@@ -85,7 +97,9 @@ const MontereyPage = props => {
       </HeroContainer>
       <DetailHeader>Coming Soon</DetailHeader>
       <DetailText>
-        Follow Gavin on Twitter to be notified of release.
+        Follow Gavin on{" "}
+        <Twitter href="https://twitter.com/Gavmn">Twitter </Twitter>to be
+        notified of release.
       </DetailText>
     </Layout>
   )
