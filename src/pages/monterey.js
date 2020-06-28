@@ -10,20 +10,29 @@ import "./fonts.css"
 const HeroContainer = styled.div`
   display: flex;
   height: 100vh;
+  width: 100vw;
   justify-content: center;
-  background-color: yellow;
 
   @media ${device.desktop} {
-    margin-top: 1rem;
   }
+`
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 `
 
 const BackgroundImage = styled(Img)`
-  width: 100vh;
+  width: 100vw;
+  grid-column: 1;
+  grid-row: 1;
 `
 
 const MontereyText = styled.p`
   font-size: 16rem;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
 `
 
 const MontereyPage = props => {
@@ -31,6 +40,7 @@ const MontereyPage = props => {
     <Layout location={props.location}>
       <SEO title="Monterey Big Sur Theme - " />
       <HeroContainer>
+        <MontereyText>Monterey</MontereyText>
         <BackgroundImage
           fluid={props.data.montereyBackground.childImageSharp.fluid}
           alt=""

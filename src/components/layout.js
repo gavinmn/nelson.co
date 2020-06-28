@@ -5,24 +5,25 @@ import styled from "styled-components"
 
 import Header from "./header"
 
-
 const Wrapper = styled.div`
-  max-width: ${props => props.maxWidth || "100%"}
+  max-width: 816px;
   margin: 0 auto;
   padding: 0 5% 0 5%;
   overflow: hidden;
 `
 
-const Layout = ({ children, location } ) => {
+const Layout = ({ children, location }) => {
   return (
     <>
       <GlobalStyle />
       <Header path={location.pathname} />
-        <main>{children}</main>
+      <main>{children}</main>
+      <Wrapper>
         <footer>
           Designed and Developed by Gavin Nelson<br></br>©{" "}
           {new Date().getFullYear()} Gavin Nelson
         </footer>
+      </Wrapper>
     </>
   )
 }

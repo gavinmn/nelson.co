@@ -36,12 +36,13 @@ const SampleGrid = styled.div`
 
 const IndexPage = props => {
   return (
-    <Layout maxWidth={"816px"} location={props.location}>
+    <Layout location={props.location}>
       <SEO title=" " />
-      <HeroContainer>
-        <Hero />
-      </HeroContainer>
       <Wrapper>
+        <HeroContainer>
+          <Hero />
+        </HeroContainer>
+
         <a id="work"></a>
         <CaseStudy />
 
