@@ -29,9 +29,24 @@ const BackgroundImage = styled(Img)`
 `
 
 const MontereyText = styled.p`
-  font-size: 16rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffffff;
   grid-column: 1;
   grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  z-index: 2;
+`
+
+const DescriptionText = styled.p`
+  font-size: 1rem;
+  color: #ffffff;
+  padding-bottom: 2rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  justify-self: center;
   z-index: 2;
 `
 
@@ -40,11 +55,16 @@ const MontereyPage = props => {
     <Layout location={props.location}>
       <SEO title="Monterey Big Sur Theme - " />
       <HeroContainer>
-        <MontereyText>Monterey</MontereyText>
-        <BackgroundImage
-          fluid={props.data.montereyBackground.childImageSharp.fluid}
-          alt=""
-        />
+        <Grid>
+          <MontereyText>Monterey</MontereyText>
+          <DescriptionText>
+            A macOS Big Sur icon theme by Gavin Nelson
+          </DescriptionText>
+          <BackgroundImage
+            fluid={props.data.montereyBackground.childImageSharp.fluid}
+            alt=""
+          />
+        </Grid>
       </HeroContainer>
     </Layout>
   )
