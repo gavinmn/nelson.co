@@ -8,14 +8,7 @@ import { device } from "../components/device"
 import Wrapper from "../components/wrapper"
 import "./fonts.css"
 import bgimage from "../images/monterey/montereybackground.jpg"
-
-const BGImage = styled.div`
-  background-image: url(${bgimage});
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: auto;
-`
+import BackgroundImage from "gatsby-background-image"
 
 const FullView = styled.div`
   display: grid;
@@ -43,12 +36,21 @@ const IconImage = styled(Img)`
   width: 4rem;
   height: 4rem;
   pointer-events: none;
+  @media only screen and (max-height: 662px) {
+    width: 3rem;
+    height: 3rem;
+  }
 `
 
 const MontereyText = styled.p`
+  margin: 1rem 0;
   font-size: 4rem;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
+  @media only screen and (max-height: 662px) {
+    margin: 0;
+  }
 `
 
 const DescriptionText = styled.p`
@@ -60,16 +62,6 @@ const DescriptionText = styled.p`
   grid-column: 1;
   margin-bottom: 1rem;
 `
-// const SecondaryContent = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   grid-column: 1;
-//   grid-row: 2;
-//   display: grid;
-//   grid-template-columns: auto;
-//   grid-template-rows: auto auto;
-// `
-
 const DetailHeader = styled.p`
   font-size: 1.5rem;
   font-weight: bold;
@@ -98,7 +90,9 @@ const Twitter = styled.a`
 
 const MontereyPage = props => {
   return (
-    <BGImage>
+    <BackgroundImage
+      fluid={props.data.montereyBackground.childImageSharp.fluid}
+    >
       <Layout location={props.location}>
         <SEO title="Monterey Big Sur Theme - " />
         <Wrapper>
@@ -106,26 +100,26 @@ const MontereyPage = props => {
             <CenterContainer>
               <IconContainer>
                 <IconImage
-                  fluid={props.data.notes.childImageSharp.fluid}
+                  fluid={props.data.finder.childImageSharp.fluid}
                   alt=""
                 />
                 <IconImage
-                  fluid={props.data.notes.childImageSharp.fluid}
+                  fluid={props.data.safari.childImageSharp.fluid}
                   alt=""
                 />
                 <IconImage
-                  fluid={props.data.notes.childImageSharp.fluid}
+                  fluid={props.data.messages.childImageSharp.fluid}
                   alt=""
                 />
               </IconContainer>
               <MontereyText>Monterey</MontereyText>
               <IconContainer>
                 <IconImage
-                  fluid={props.data.notes.childImageSharp.fluid}
+                  fluid={props.data.xcode.childImageSharp.fluid}
                   alt=""
                 />
                 <IconImage
-                  fluid={props.data.notes.childImageSharp.fluid}
+                  fluid={props.data.music.childImageSharp.fluid}
                   alt=""
                 />
                 <IconImage
@@ -144,7 +138,7 @@ const MontereyPage = props => {
           </DetailText>
         </Wrapper>
       </Layout>
-    </BGImage>
+    </BackgroundImage>
   )
 }
 
@@ -162,6 +156,41 @@ export const PageQuery = graphql`
       }
     }
     notes: file(relativePath: { eq: "monterey/Notes.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 256) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    finder: file(relativePath: { eq: "monterey/Finder.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 256) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    safari: file(relativePath: { eq: "monterey/Safari.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 256) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    messages: file(relativePath: { eq: "monterey/Messages.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 256) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    music: file(relativePath: { eq: "monterey/Music.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 256) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    xcode: file(relativePath: { eq: "monterey/Xcode.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
           ...GatsbyImageSharpFluid_withWebp
