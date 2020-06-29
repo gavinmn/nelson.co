@@ -82,7 +82,17 @@ const Twitter = styled.a`
   font-size: 1rem;
   &:hover {
     color: #1da1f2;
-    text-decoration-color: #0a66c2;
+    text-decoration-color: #1da1f2;
+  }
+  @media ${device.desktop} {
+    font-size: 22px;
+  }
+`
+const Gumroad = styled.a`
+  font-size: 1rem;
+  &:hover {
+    color: #5ba9af;
+    text-decoration-color: #5ba9af;
   }
   @media ${device.desktop} {
     font-size: 22px;
@@ -134,8 +144,9 @@ const MontereyPage = props => {
           <DetailHeader>Coming Soon</DetailHeader>
           <DetailText>
             Follow Gavin on{" "}
-            <Twitter href="https://twitter.com/Gavmn">Twitter </Twitter>to be
-            notified of release.
+            <Twitter href="https://twitter.com/Gavmn">Twitter </Twitter> or{" "}
+            <Gumroad href="https://gumroad.com/gnelsondesign">Gumroad </Gumroad>
+            to be notified of release.
           </DetailText>
         </Wrapper>
       </Layout>
