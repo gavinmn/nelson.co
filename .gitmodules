@@ -1,0 +1,3 @@
+[submodule "montereyicons"]
+	path = src/images/montereyicons
+	url = https://github.com/gavinmn/montereyicons
