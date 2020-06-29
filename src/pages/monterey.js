@@ -162,7 +162,7 @@ export const MontereyQuery = graphql`
       relativePath: { eq: "monterey/montereybackground.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 6010) {
+        fluid(maxWidth: 6016) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
