@@ -85,7 +85,7 @@ const Header = props => {
     } else {
       setHighlight(false)
     }
-    if (props.path === "/monterey") {
+    if (props.path === "/monterey" || props.path === "/monterey/") {
       setShouldBeWhite(true)
       setBgColor(true)
     } else {
