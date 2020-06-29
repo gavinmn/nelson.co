@@ -10,7 +10,7 @@ const StyledHeader = styled.div`
   top: 0;
   width: 100%;
   padding: ${props => (props.scrolled ? ".5rem 0" : "1rem 0")};
-  background-color: var(--bg-rgba);
+  background-color: ${props => (props.darkBackground ? "" : "var(--bg-rgba)")};
   backdrop-filter: ${props => (props.scrolled ? "blur(6px)" : "")};
   z-index: ${props => (props.scrolled ? "10" : "1")};
   transition: padding 0.4s ease-in-out;
@@ -27,7 +27,12 @@ const Container = styled.div`
 
 const AboutLink = styled(Link)`
   margin-left: 1.5rem;
-  color: var(--wash-secondary);
+  color: ${props =>
+    props.darkBackground
+      ? props.isWhite
+        ? "#ffffff"
+        : "var(--wash-primary)"
+      : "var(--wash-secondary)"};
 
   &:hover {
     color: var(--color-primary);
@@ -35,7 +40,11 @@ const AboutLink = styled(Link)`
 `
 const WorkLink = styled(AnchorLink)`
   color: ${props =>
-    props.shouldHighlight ? "var(--color-primary)" : "var(--wash-secondary)"};
+    props.shouldHighlight
+      ? props.darkBackground
+        ? "#ffffff"
+        : "var(--wash-primary)"
+      : "var(--wash-secondary)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -47,16 +56,17 @@ const WorkLink = styled(AnchorLink)`
 const Name = styled(Link)`
   margin-right: auto;
   margin-left: 0;
-  color: var(--wash-primary);
-
+  color: ${props => (props.darkBackground ? "#ffffff" : "var(--wash-primary)")};
   &:hover {
     color: var(--color-primary);
   }
 `
 
 const Header = props => {
+  const [shouldBeWhite, setShouldBeWhite] = useState(false)
   const [hasScrolled, setScroll] = useState(false)
   const [highlight, setHighlight] = useState(false)
+  const [bgColor, setBgColor] = useState(false)
 
   if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
@@ -75,17 +85,36 @@ const Header = props => {
     } else {
       setHighlight(false)
     }
+    if (props.path === "/monterey" || props.path === "/monterey/") {
+      setShouldBeWhite(true)
+      setBgColor(true)
+    } else {
+      setBgColor(false)
+      setShouldBeWhite(false)
+    }
   }, [props.path])
 
   return (
-    <StyledHeader scrolled={hasScrolled}>
+    <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
       <Wrapper>
         <Container>
-          <Name to="/">Gavin Nelson</Name>
-          <AboutLink to="/" activeStyle={{ color: "var(--color-primary)" }}>
+          <Name to="/" darkBackground={bgColor}>
+            Gavin Nelson
+          </Name>
+          <AboutLink
+            to="/"
+            darkBackground={bgColor}
+            isWhite={shouldBeWhite}
+            activeStyle={{ color: "var(--color-primary)" }}
+          >
             About
           </AboutLink>
-          <WorkLink to="/#work" stripHash shouldHighlight={highlight}>
+          <WorkLink
+            to="/#work"
+            darkBackground={bgColor}
+            stripHash
+            shouldHighlight={highlight}
+          >
             Work
           </WorkLink>
         </Container>

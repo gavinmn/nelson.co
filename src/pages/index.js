@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import CaseStudy from "../components/casestudy"
 import ProjectInfo from "../components/projectinfo"
 import Shot from "../components/shot"
+import Wrapper from "../components/wrapper"
 import { device } from "../components/device"
 import "./fonts.css"
 
@@ -37,48 +38,51 @@ const IndexPage = props => {
   return (
     <Layout location={props.location}>
       <SEO title=" " />
-      <HeroContainer>
-        <Hero />
-      </HeroContainer>
-      <a id="work"></a>
-      <CaseStudy />
+      <Wrapper>
+        <HeroContainer>
+          <Hero />
+        </HeroContainer>
 
-      <SampleGrid>
-        <ProjectInfo
-          logo={props.data.visualLogo.childImageSharp.fluid}
-          title="Visual Design Sample"
-          subtitle="Client and Personal Work"
-          date="2014 - 2020"
-          text="View more"
-          asA="a"
-          href="https://dribbble.com/Gavin/"
-        />
+        <a id="work"></a>
+        <CaseStudy />
 
-        <Shot image={props.data.designIcons.childImageSharp.fluid} />
-        <Shot image={props.data.devIcons.childImageSharp.fluid} />
-        <Shot image={props.data.mailIcons.childImageSharp.fluid} />
-        <Shot image={props.data.Swatches.childImageSharp.fluid} />
-        <Shot image={props.data.finderWindows.childImageSharp.fluid} />
-        <Shot image={props.data.wh1.childImageSharp.fluid} />
-        <Shot image={props.data.wh2.childImageSharp.fluid} />
-      </SampleGrid>
+        <SampleGrid>
+          <ProjectInfo
+            logo={props.data.visualLogo.childImageSharp.fluid}
+            title="Visual Design Sample"
+            subtitle="Client and Personal Work"
+            date="2014 - 2020"
+            text="View more"
+            asA="a"
+            href="https://dribbble.com/Gavin/"
+          />
 
-      <SampleGrid>
-        <ProjectInfo
-          logo={props.data.illusLogo.childImageSharp.fluid}
-          title="Illustration Design Sample"
-          subtitle="Client and Personal Work"
-          date="2018 - 2020"
-          text="View more"
-          asA="a"
-          href="https://dribbble.com/Gavin/"
-        />
+          <Shot image={props.data.designIcons.childImageSharp.fluid} />
+          <Shot image={props.data.devIcons.childImageSharp.fluid} />
+          <Shot image={props.data.mailIcons.childImageSharp.fluid} />
+          <Shot image={props.data.Swatches.childImageSharp.fluid} />
+          <Shot image={props.data.finderWindows.childImageSharp.fluid} />
+          <Shot image={props.data.wh1.childImageSharp.fluid} />
+          <Shot image={props.data.wh2.childImageSharp.fluid} />
+        </SampleGrid>
 
-        <Shot image={props.data.avatar.childImageSharp.fluid} />
-        <Shot image={props.data.peace.childImageSharp.fluid} />
-        <Shot image={props.data.shaka.childImageSharp.fluid} />
-        <Shot image={props.data.draw.childImageSharp.fluid} />
-      </SampleGrid>
+        <SampleGrid>
+          <ProjectInfo
+            logo={props.data.illusLogo.childImageSharp.fluid}
+            title="Illustration Design Sample"
+            subtitle="Client and Personal Work"
+            date="2018 - 2020"
+            text="View more"
+            asA="a"
+            href="https://dribbble.com/Gavin/"
+          />
+
+          <Shot image={props.data.avatar.childImageSharp.fluid} />
+          <Shot image={props.data.peace.childImageSharp.fluid} />
+          <Shot image={props.data.shaka.childImageSharp.fluid} />
+          <Shot image={props.data.draw.childImageSharp.fluid} />
+        </SampleGrid>
+      </Wrapper>
     </Layout>
   )
 }
