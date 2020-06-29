@@ -26,19 +26,14 @@ const CenterContainer = styled.div`
 
 const IconContainer = styled.div`
   width: 100%;
-  max-width: 816px;
+  max-width: 564px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 `
 
 const IconImage = styled(Img)`
-  width: 4rem;
-  height: 4rem;
+  width: 100%;
   pointer-events: none;
-  @media only screen and (max-height: 662px) {
-    width: 3rem;
-    height: 3rem;
-  }
 `
 
 const MontereyText = styled.p`
@@ -111,30 +106,14 @@ const MontereyPage = props => {
             <CenterContainer>
               <IconContainer>
                 <IconImage
-                  fluid={props.data.finder.childImageSharp.fluid}
-                  alt=""
-                />
-                <IconImage
-                  fluid={props.data.safari.childImageSharp.fluid}
-                  alt=""
-                />
-                <IconImage
-                  fluid={props.data.messages.childImageSharp.fluid}
+                  fluid={props.data.icons1.childImageSharp.fluid}
                   alt=""
                 />
               </IconContainer>
               <MontereyText>Monterey</MontereyText>
               <IconContainer>
                 <IconImage
-                  fluid={props.data.xcode.childImageSharp.fluid}
-                  alt=""
-                />
-                <IconImage
-                  fluid={props.data.music.childImageSharp.fluid}
-                  alt=""
-                />
-                <IconImage
-                  fluid={props.data.notes.childImageSharp.fluid}
+                  fluid={props.data.icons2.childImageSharp.fluid}
                   alt=""
                 />
               </IconContainer>
@@ -167,44 +146,16 @@ export const ImageQuery = graphql`
         }
       }
     }
-    notes: file(relativePath: { eq: "monterey/Notes.png" }) {
+    icons1: file(relativePath: { eq: "monterey/icons1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 256) {
+        fluid(maxWidth: 1128) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    finder: file(relativePath: { eq: "monterey/Finder.png" }) {
+    icons2: file(relativePath: { eq: "monterey/icons2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    safari: file(relativePath: { eq: "monterey/Safari.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    messages: file(relativePath: { eq: "monterey/Messages.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    music: file(relativePath: { eq: "monterey/Music.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 256) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    xcode: file(relativePath: { eq: "monterey/Xcode.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 256) {
+        fluid(maxWidth: 1128) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
