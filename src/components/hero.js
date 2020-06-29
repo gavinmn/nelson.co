@@ -82,6 +82,17 @@ const LinkedIn = styled(StyledLink)`
     margin-left: 1.5rem;
   }
 `
+
+const Twitter = styled(StyledLink)`
+  &:hover {
+    color: #1da1f2;
+    text-decoration-color: #0a66c2;
+  }
+
+  @media only screen and (min-width: 445px) {
+    margin-left: 1.5rem;
+  }
+`
 const GitHub = styled(StyledLink)`
   &:hover {
     color: var(--github-text);
@@ -113,9 +124,7 @@ const Hero = () => (
         </HeroText>
         <LinkContainer>
           <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
-          <LinkedIn href="https://www.linkedin.com/in/gavin-nelson/">
-            LinkedIn
-          </LinkedIn>
+          <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
           <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
           <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
         </LinkContainer>
