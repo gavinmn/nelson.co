@@ -147,15 +147,6 @@ export default MontereyPage
 
 export const PageQuery = graphql`
   query {
-    montereyBackground: file(
-      relativePath: { eq: "monterey/montereybackground.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 6010) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
     notes: file(relativePath: { eq: "monterey/Notes.png" }) {
       childImageSharp {
         fluid(maxWidth: 256) {
