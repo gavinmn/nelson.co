@@ -156,7 +156,7 @@ const MontereyPage = props => {
 
 export default MontereyPage
 
-export const PageQuery = graphql`
+export const MontereyQuery = graphql`
   query {
     montereyBackground: file(
       relativePath: { eq: "monterey/montereybackground.jpg" }
