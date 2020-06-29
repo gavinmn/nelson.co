@@ -1,11 +1,13 @@
 import React from "react"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 
-const Metadata = () => (
-  <div>
-    <Helmet>
-      meta=
-      {[
+const MontereyData = () => {
+  return (
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+      meta={[
         {
           name: `description`,
           content: `Monterey, a macOS Big Sur icon theme by Gavin Nelson`,
@@ -59,8 +61,8 @@ const Metadata = () => (
           content: "summary_large_image",
         },
       ]}
-    </Helmet>
-  </div>
-)
+    />
+  )
+}
 
-export default Metadata
+export default MontereyData

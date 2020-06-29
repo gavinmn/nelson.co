@@ -3,11 +3,10 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import MontereyData from "../components/montereydata"
 import { device } from "../components/device"
 import Wrapper from "../components/wrapper"
 import "./fonts.css"
-import bgimage from "../images/monterey/montereybackground.jpg"
 import BackgroundImage from "gatsby-background-image"
 
 const FullView = styled.div`
@@ -63,6 +62,7 @@ const DescriptionText = styled.p`
   margin-bottom: 1rem;
 `
 const DetailHeader = styled.p`
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 auto;
@@ -73,6 +73,7 @@ const DetailHeader = styled.p`
 `
 
 const DetailText = styled.p`
+  color: #ffffff;
   margin: 0 auto 4rem auto;
   text-align: center;
   max-width: 630px;
@@ -94,7 +95,7 @@ const MontereyPage = props => {
       fluid={props.data.montereyBackground.childImageSharp.fluid}
     >
       <Layout location={props.location}>
-        <SEO title="Monterey Big Sur Theme - " />
+        <MontereyData title="Monterey Big Sur Theme - " />
         <Wrapper>
           <FullView>
             <CenterContainer>
