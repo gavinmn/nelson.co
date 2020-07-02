@@ -2446,10 +2446,10 @@ babel-plugin-macros@^2.8.0:
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
 
-babel-plugin-remove-graphql-queries@^2.9.9:
-  version "2.9.9"
-  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.9.tgz#5b806f50c2b6accb9c8d39246fbcd8a9ba18031e"
-  integrity sha512-rz8xdEPGsuyujLg5PzecDv0v4qAssyCT/HMu2QIxaSWhqUYcsGhEubkydKv0dyrDhNNsIdkRnu0Inn2xBKRqhA==
+babel-plugin-remove-graphql-queries@^2.9.10:
+  version "2.9.11"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.9.11.tgz#595074df4f79ca1df2a01bb3d71d0234ab5865d5"
+  integrity sha512-iN+ua4GIKM4T4tc89Lh0cDf8E3z6SV3xXcdMgcmDtCIEkvBNKOsxcjLhPqk78aLr7E3UTJ8wUpLu1Ap29dH6Eg==
 
 "babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.7:
   version "1.10.7"
@@ -6012,10 +6012,10 @@ gatsby-plugin-styled-components@^3.3.8:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
-gatsby-plugin-typescript@^2.4.10:
-  version "2.4.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.10.tgz#a7aecb0a7f3fc8043be8a2fd9726f627f79c5731"
-  integrity sha512-6GarHqQcuIXgbLDk71HgrAQ0pTi5IPngQY85T7edFXiZblOE4ZX5OJrjlllTN5RuqYd272QkJj8AvjA7BKPtjA==
+gatsby-plugin-typescript@^2.4.11:
+  version "2.4.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.11.tgz#12774100422e3dc2121fb4b1c8eaeaa384815e08"
+  integrity sha512-LQuaEVXyAtibhqt6XIgvHM3czlfsOoYkfsL3flI+iuaLSqLfwAJhG+u1MYezS1RMXmrR/GSa8BDK8mOlVQSwOw==
   dependencies:
     "@babel/core" "^7.10.3"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.10.1"
@@ -6023,7 +6023,7 @@ gatsby-plugin-typescript@^2.4.10:
     "@babel/plugin-proposal-optional-chaining" "^7.10.3"
     "@babel/preset-typescript" "^7.10.1"
     "@babel/runtime" "^7.10.3"
-    babel-plugin-remove-graphql-queries "^2.9.9"
+    babel-plugin-remove-graphql-queries "^2.9.10"
 
 gatsby-plugin-web-font-loader@^1.0.4:
   version "1.0.4"
@@ -6166,10 +6166,10 @@ gatsby-transformer-sharp@^2.5.9:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby@^2.23.14:
-  version "2.23.14"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.14.tgz#a54f9b8120e1b3e2694e1ae3a3ccd9d3a32572bb"
-  integrity sha512-Q1vqzEiaGnfb9e8FIWNrkSolQzoMFs9XBPLp75dyx0kKzFoUZAHjpveOb2C9oCYTlRFprmN/5ppoIrevud0WUg==
+gatsby@^2.23.15:
+  version "2.23.15"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.23.15.tgz#cbe04e64a68c57467f677dbcc3e2c3fbd60f0e78"
+  integrity sha512-cc9KQTyfvzhDdIyU9If2STx7e2Y5NAm2Pg8HvOcxo3Nf9fLB2AlL1rgEJ8vT0/WkSEwEhEKxlFb9i3ewU8/p0w==
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/core" "^7.10.3"
@@ -6191,7 +6191,7 @@ gatsby@^2.23.14:
     babel-loader "^8.1.0"
     babel-plugin-add-module-exports "^0.3.3"
     babel-plugin-dynamic-import-node "^2.3.3"
-    babel-plugin-remove-graphql-queries "^2.9.9"
+    babel-plugin-remove-graphql-queries "^2.9.10"
     babel-preset-gatsby "^0.5.0"
     better-opn "1.0.0"
     better-queue "^3.8.10"
@@ -6236,7 +6236,7 @@ gatsby@^2.23.14:
     gatsby-graphiql-explorer "^0.4.9"
     gatsby-link "^2.4.10"
     gatsby-plugin-page-creator "^2.3.14"
-    gatsby-plugin-typescript "^2.4.10"
+    gatsby-plugin-typescript "^2.4.11"
     gatsby-react-router-scroll "^3.0.9"
     gatsby-telemetry "^1.3.16"
     glob "^7.1.6"
