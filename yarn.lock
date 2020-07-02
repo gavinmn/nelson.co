@@ -5915,10 +5915,10 @@ gatsby-plugin-dark-mode@^1.1.2:
   dependencies:
     prop-types "^15.5.7"
 
-gatsby-plugin-google-analytics@^2.3.8:
-  version "2.3.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.8.tgz#6002bc865aa026b09f86fb935f18478a60c49bea"
-  integrity sha512-HwyM3B6T+luV3lPcuCVRSaMOB3oeTOo4qIDgsqCNeJ/bC1jw8jmc6Owlpn3hIsT5o570Hv6s4spnE+CHQmtNKg==
+gatsby-plugin-google-analytics@^2.3.9:
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.9.tgz#a2c613166e33aac577185146fff648dc67e7c246"
+  integrity sha512-xg5zggvtnZpsqftSstX9gGTZiHD0azdLnn26e47SYVRuE/m88/dw4h0pVoHVH0knoCeOFMS+LPaxnj5ggLdwJg==
   dependencies:
     "@babel/runtime" "^7.10.3"
     minimatch "3.0.4"
