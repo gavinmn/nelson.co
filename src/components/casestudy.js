@@ -16,6 +16,18 @@ const Container = styled.div`
   }
 `
 
+const MontereyImage = styled(Img)`
+  width: 88%;
+  max-width: 285px;
+  align-self: center;
+  justify-self: center;
+  pointer-events: none;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
 const ChalkImage = styled(Img)`
   width: 88%;
   max-width: 285px;
@@ -45,7 +57,7 @@ const ProjectBG = styled.div`
   margin-top: 8px;
   align-self: center;
   justify-self: end;
-  background-color: ${props => props.projectBg};
+  background: ${props => props.projectBg};
   border-radius: 16px;
   padding: 1rem 0;
 
@@ -57,6 +69,20 @@ const ProjectBG = styled.div`
 const CaseStudy = props => {
   const images = useStaticQuery(graphql`
     query {
+      montereyLogo: file(relativePath: { eq: "monterey/montereylogos.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 256) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      montereyImage: file(relativePath: { eq: "monterey/montereyimage.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
       chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
         childImageSharp {
           fluid(maxWidth: 256) {
@@ -90,6 +116,26 @@ const CaseStudy = props => {
 
   return (
     <>
+      <Container>
+        <ProjectInfo
+          logo={images.chalkLogo.childImageSharp.fluid}
+          title="Monterey"
+          subtitle="Icon Design"
+          date="Summer 2020"
+          link="/monterey"
+          text="Get Icons"
+          backgroundColor="var(--color-primary)"
+          hoverBG="var(--color-monterey-secondary)"
+          asA=""
+          href=""
+        />
+        <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
+          <MontereyImage
+            fluid={images.montereyImage.childImageSharp.fluid}
+            alt=""
+          />
+        </ProjectBG>
+      </Container>
       <Container>
         <ProjectInfo
           logo={images.chalkLogo.childImageSharp.fluid}
