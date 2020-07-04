@@ -69,7 +69,7 @@ const ProjectBG = styled.div`
 const CaseStudy = props => {
   const images = useStaticQuery(graphql`
     query {
-      montereyLogo: file(relativePath: { eq: "monterey/montereylogos.png" }) {
+      montereyLogo: file(relativePath: { eq: "monterey/montereylogo.png" }) {
         childImageSharp {
           fluid(maxWidth: 256) {
             ...GatsbyImageSharpFluid_withWebp
@@ -118,7 +118,7 @@ const CaseStudy = props => {
     <>
       <Container>
         <ProjectInfo
-          logo={images.chalkLogo.childImageSharp.fluid}
+          logo={images.montereyLogo.childImageSharp.fluid}
           title="Monterey"
           subtitle="Icon Design"
           date="Summer 2020"
