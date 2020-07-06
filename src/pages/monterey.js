@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import MontereyData from "../components/montereydata"
 import { device } from "../components/device"
 import Wrapper from "../components/wrapper"
+import MontereyButton from "../components/montereybutton"
 import "./fonts.css"
 import BackgroundImage from "gatsby-background-image"
 
@@ -35,6 +36,11 @@ const IconImage = styled(Img)`
   width: 100%;
   pointer-events: none;
 `
+const AllIcons = styled(Img)`
+  margin-top: 2rem;
+  width: 100%;
+  pointer-events: none;
+`
 
 const MontereyText = styled.p`
   margin: 1rem 0;
@@ -46,7 +52,6 @@ const MontereyText = styled.p`
     margin: 0;
   }
 `
-
 const DescriptionText = styled.p`
   font-size: 1rem;
   color: #ffffff;
@@ -56,6 +61,10 @@ const DescriptionText = styled.p`
   grid-column: 1;
   margin-bottom: 1rem;
 `
+
+const ButtonContainer = styled.div`
+  margin-top: 2rem;
+`
 const DetailHeader = styled.p`
   color: #ffffff;
   font-size: 1.5rem;
@@ -63,13 +72,13 @@ const DetailHeader = styled.p`
   margin: 0 auto;
   text-align: center;
   max-width: 630px;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 `
 
 const DetailText = styled.p`
   color: #ffffff;
-  margin: 0 auto 4rem auto;
+  margin: 2rem auto 4rem auto;
   text-align: center;
   max-width: 630px;
 `
@@ -120,12 +129,21 @@ const MontereyPage = props => {
             </CenterContainer>
             <DescriptionText>A macOS Big Sur icon theme</DescriptionText>
           </FullView>
-          <DetailHeader>Coming Soon</DetailHeader>
+          <AllIcons fluid={props.data.allicons.childImageSharp.fluid} alt="" />
+          <ButtonContainer>
+            <MontereyButton
+              text="Get Icons"
+              href="https://gumroad.com/gnelsondesign"
+              color="#ffffff"
+              hoverBG="var(--color-monterey-secondary)"
+            />
+          </ButtonContainer>
+          {/* <DetailHeader>Coming Soon</DetailHeader> */}
           <DetailText>
             Follow Gavin on{" "}
             <Twitter href="https://twitter.com/Gavmn">Twitter </Twitter> or{" "}
             <Gumroad href="https://gumroad.com/gnelsondesign">Gumroad </Gumroad>
-            to be notified of release.
+            for future updates.
           </DetailText>
         </Wrapper>
       </Layout>
@@ -146,16 +164,23 @@ export const ImageQuery = graphql`
         }
       }
     }
-    icons1: file(relativePath: { eq: "monterey/icons1.png" }) {
+    icons1: file(relativePath: { eq: "monterey/icon1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1128) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    icons2: file(relativePath: { eq: "monterey/icons2.png" }) {
+    icons2: file(relativePath: { eq: "monterey/icon2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1128) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    allicons: file(relativePath: { eq: "monterey/allicons.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2272) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
