@@ -123,7 +123,7 @@ const CaseStudy = props => {
           subtitle="Icon Design"
           date="Summer 2020"
           link="/monterey"
-          text="Get Icons"
+          text="View project"
           backgroundColor="var(--color-primary)"
           hoverBG="var(--color-monterey-secondary)"
           asA=""
