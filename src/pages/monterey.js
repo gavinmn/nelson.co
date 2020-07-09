@@ -133,7 +133,7 @@ const MontereyPage = props => {
           <ButtonContainer>
             <MontereyButton
               text="Get Icons"
-              href="https://gumroad.com/gnelsondesign"
+              href="https://gumroad.com/l/dvctd"
               color="#ffffff"
               hoverBG="var(--color-monterey-secondary)"
             />
