@@ -5942,16 +5942,16 @@ gatsby-plugin-react-svg@^3.0.0:
   dependencies:
     svg-react-loader "^0.4.4"
 
-gatsby-plugin-sharp@^2.6.18:
-  version "2.6.18"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.18.tgz#53000b22ee08e829822b1488141df8ae00017567"
-  integrity sha512-DeSPCdwxCsBeJcPxbNtptvn0ta3y/3ABkZm00EtEOeasIjPWDqLDDXi39Q+xGOJVcxsWPs5zinQurJMTV62b8w==
+gatsby-plugin-sharp@^2.6.19:
+  version "2.6.19"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.19.tgz#027e9a55e44fafff80e1c4c4811242a2fae8d12c"
+  integrity sha512-0SVP2xk8Ml+hml30+oBP/SRm/ztGV6sDOlOUoEHuv6SssxkDcKc9aSScn0qB1HsKGDYDm1gcmDmw48Bq4U78rA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     async "^2.6.3"
     bluebird "^3.7.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.11"
+    gatsby-core-utils "^1.3.12"
     got "^8.3.2"
     imagemin "^6.1.0"
     imagemin-mozjpeg "^8.0.0"
