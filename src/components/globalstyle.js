@@ -15,6 +15,8 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--color-primary: #1d1d1f;
 
+		--color-monterey-secondary: ;
+
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
 
