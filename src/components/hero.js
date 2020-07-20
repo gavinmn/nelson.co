@@ -123,7 +123,7 @@ const Hero = () => (
           wikiHow.
         </HeroText>
         <LinkContainer>
-          <Email href="mailto:gnelsondesign@gmail.com">Email</Email>
+          <Email href="mailto:gavin@hey.com">Email</Email>
           <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
           <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
           <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
