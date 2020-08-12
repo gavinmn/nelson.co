@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "National 2";
-  src: url(../fonts/national-2-web-regular.woff) format("woff"),
-    url(../fonts/national-2-web-regular.woff2) format("woff2");
+  font-family: "Sohne";
+  src: url(../fonts/soehne-web-buch.woff) format("woff"),
+    url(../fonts/soehne-web-buch.woff2) format("woff2");
 
   font-weight: normal;
   font-style: normal;
@@ -9,9 +9,9 @@
 }
 
 @font-face {
-  font-family: "National 2";
-  src: url(../fonts/national-2-web-regular-italic.woff) format("woff"),
-    url(../fonts/national-2-web-regular-italic.woff2) format("woff2");
+  font-family: "Sohne";
+  src: url(../fonts/soehne-web-buch-kursiv.woff) format("woff"),
+    url(../fonts/soehne-web-buch-kursiv.woff2) format("woff2");
 
   font-weight: normal;
   font-style: italic;
@@ -19,9 +19,9 @@
 }
 
 @font-face {
-  font-family: "National 2";
-  src: url(../fonts/national-2-web-bold.woff) format("woff"),
-    url(../fonts/national-2-web-bold.woff2) format("woff2");
+  font-family: "Sohne";
+  src: url(../fonts/soehne-web-dreiviertelfett.woff) format("woff"),
+    url(../fonts/soehne-web-dreiviertelfett.woff2) format("woff2");
 
   font-weight: bold;
   font-style: normal;
