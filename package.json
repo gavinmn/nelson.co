@@ -31,7 +31,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "prettier": "2.1.1"
+    "prettier": "2.1.2"
   },
   "keywords": [
     "gatsby"
