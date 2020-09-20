@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
@@ -10,6 +10,8 @@ import Shot from "../components/shot"
 import Wrapper from "../components/wrapper"
 import { device } from "../components/device"
 import "./fonts.css"
+import ThreeDCanvas from "../components/threedcanvas"
+import useMousePosition from "../components/usemouseposition"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -34,13 +36,14 @@ const SampleGrid = styled.div`
   }
 `
 
+
 const IndexPage = props => {
   return (
     <Layout location={props.location}>
       <SEO title=" " />
       <Wrapper>
         <HeroContainer>
-          <Hero />
+          <Hero/>
         </HeroContainer>
 
         <a id="work"></a>
@@ -83,6 +86,7 @@ const IndexPage = props => {
           <Shot image={props.data.draw.childImageSharp.fluid} />
         </SampleGrid>
       </Wrapper>
+      
     </Layout>
   )
 }

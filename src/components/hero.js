@@ -1,10 +1,13 @@
-import React from "react"
+import React, { useRef } from "react"
 import styled from "styled-components"
 import Logo from "./logo/logo"
 import Fade from "./fade"
 import Scale from "./scale"
 import { device } from "./device"
 import StyledLink from "./styledlink"
+import { useStaticQuery, graphql } from "gatsby"
+import ThreeDCanvas from "./threedcanvas"
+
 
 const HeroContainer = styled.div`
   display: grid;
@@ -109,28 +112,49 @@ const GitHub = styled(StyledLink)`
   }
 `
 
-const Hero = () => (
-  <Fade>
-    <Scale>
-      <HeroContainer>
-        <StyledLogo />
-        <HeroText>
-          Gavin Nelson is a <strong>product & visual designer </strong>
-          in the San Francisco Bay Area. He creates intuitive and clean
-          human-centered design solutions with great attention to detail.
-          <br></br>
-          <br></br>He currently works at Fitbod, and previously worked at
-          wikiHow.
-        </HeroText>
-        <LinkContainer>
-          <Email href="mailto:gavin@hey.com">Email</Email>
-          <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
-          <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
-          <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
-        </LinkContainer>
-      </HeroContainer>
-    </Scale>
-  </Fade>
-)
+
+const Hero = props => {
+  
+  const images = useStaticQuery(graphql`
+    query {
+      montereyLogo: file(relativePath: { eq: "monterey/montereylogo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 256) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  const mouse = useRef([0, 0])
+  return (
+    <Fade>
+      <Scale>
+    
+        <HeroContainer>
+          {/* <StyledLogo /> */}
+
+            <ThreeDCanvas />
+        
+          <HeroText>
+            Gavin Nelson is a <strong>product & visual designer </strong>
+            in the San Francisco Bay Area. He creates intuitive and clean
+            human-centered design solutions with great attention to detail.
+            <br></br>
+            <br></br>He currently works at Fitbod, and previously worked at
+            wikiHow.
+          </HeroText>
+          <LinkContainer>
+            <Email href="mailto:gavin@hey.com">Email</Email>
+            <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
+            <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
+            <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
+          </LinkContainer>
+        </HeroContainer>
+      </Scale>
+    </Fade>
+  )
+}
 
 export default Hero
