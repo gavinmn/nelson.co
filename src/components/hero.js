@@ -8,7 +8,6 @@ import StyledLink from "./styledlink"
 import { useStaticQuery, graphql } from "gatsby"
 import ThreeDCanvas from "./threedcanvas"
 
-
 const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: auto;
@@ -112,9 +111,7 @@ const GitHub = styled(StyledLink)`
   }
 `
 
-
 const Hero = props => {
-  
   const images = useStaticQuery(graphql`
     query {
       montereyLogo: file(relativePath: { eq: "monterey/montereylogo.png" }) {
@@ -131,12 +128,10 @@ const Hero = props => {
   return (
     <Fade>
       <Scale>
-    
         <HeroContainer>
           {/* <StyledLogo /> */}
+          <ThreeDCanvas />
 
-            <ThreeDCanvas />
-        
           <HeroText>
             Gavin Nelson is a <strong>product & visual designer </strong>
             in the San Francisco Bay Area. He creates intuitive and clean
