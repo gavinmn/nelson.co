@@ -8,7 +8,7 @@ export default function ThreeDCanvas() {
   return (
     <Canvas pixelRatio={window.devicePixelRatio}>
       <PerspectiveCamera makeDefault position={[0, 0, 5]} aspect />
-      <OrbitControls enabled={false} />
+      <OrbitControls enableZoom={false} rotateSpeed={0.4} />
       <Suspense fallback={null}>
         <Model />
       </Suspense>

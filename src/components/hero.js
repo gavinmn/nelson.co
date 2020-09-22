@@ -20,6 +20,18 @@ const HeroContainer = styled.div`
     max-width: 816px;
   }
 `
+const NoSelectContainer = styled.div`
+  div {
+    width: 100%;
+    height: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+`
 
 const StyledLogo = styled(Logo)`
   justify-self: start;
@@ -130,8 +142,10 @@ const Hero = props => {
       <Scale>
         <HeroContainer>
           {/* <StyledLogo /> */}
-          <ThreeDCanvas />
 
+          <NoSelectContainer>
+            <ThreeDCanvas />
+          </NoSelectContainer>
           <HeroText>
             Gavin Nelson is a <strong>product & visual designer </strong>
             in the San Francisco Bay Area. He creates intuitive and clean
