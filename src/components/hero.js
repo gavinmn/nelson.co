@@ -22,7 +22,9 @@ const HeroContainer = styled.div`
 `
 const NoSelectContainer = styled.div`
   height: 100%;
+  pointer-events: none;
   div {
+    pointer-events: none;
   }
 `
 

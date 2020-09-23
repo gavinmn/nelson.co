@@ -2,7 +2,7 @@ import * as THREE from "three"
 import React, { useRef } from "react"
 import { useLoader, useFrame } from "react-three-fiber"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-import matcap from "./public/matcap.png"
+import matcap from "./static/matcap.png"
 
 export default function Model(props) {
   const ref = useRef()
