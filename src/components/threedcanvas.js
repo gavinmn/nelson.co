@@ -1,10 +1,10 @@
 import React, { Suspense, useRef, useCallback } from "react"
-import { Canvas } from "react-three-fiber"
+import { Canvas, Dom } from "react-three-fiber"
 import { OrbitControls, PerspectiveCamera } from "drei"
 import "../pages/styles.css"
 import Model from "../../herothreed"
 
-export default function ThreeDCanvas() {
+function ThreeDCanvas() {
   if (typeof window !== `undefined`) {
     var pixelRatio = window.devicePixelRatio
   }
@@ -18,3 +18,5 @@ export default function ThreeDCanvas() {
     </Canvas>
   )
 }
+
+export default ThreeDCanvas
