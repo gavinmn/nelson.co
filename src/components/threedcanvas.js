@@ -6,7 +6,8 @@ import Model from "../../herothreed"
 
 export default function ThreeDCanvas() {
   return (
-    <Canvas pixelRatio={window.devicePixelRatio}>
+    // <Canvas pixelRatio={window.devicePixelRatio}>
+    <Canvas>
       <PerspectiveCamera makeDefault position={[0, 0, 5]} aspect />
       <OrbitControls enableZoom={false} rotateSpeed={0.4} />
       <Suspense fallback={null}>
