@@ -5,9 +5,11 @@ import "../pages/styles.css"
 import Model from "../../herothreed"
 
 export default function ThreeDCanvas() {
+  if (typeof window !== `undefined`) {
+    var pixelRatio = window.devicePixelRatio
+  }
   return (
-    // <Canvas pixelRatio={window.devicePixelRatio}>
-    <Canvas>
+    <Canvas pixelRatio={pixelRatio}>
       <PerspectiveCamera makeDefault position={[0, 0, 5]} aspect />
       <OrbitControls enableZoom={false} rotateSpeed={0.4} />
       <Suspense fallback={null}>

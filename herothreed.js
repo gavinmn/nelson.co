@@ -1,12 +1,16 @@
 import * as THREE from "three"
-import React, { useRef } from "react"
+import React, { useRef, useContext } from "react"
 import { useLoader, useFrame } from "react-three-fiber"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 import matcap from "./static/matcap.png"
+import matcaplight from "./static/matcaplight.png"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
+console.log(window.props)
 export default function Model(props) {
   const ref = useRef()
   const { nodes, materials } = useLoader(GLTFLoader, "/LogoExport.glb")
+
   const [map] = useLoader(THREE.TextureLoader, [matcap])
 
   useFrame(state => {

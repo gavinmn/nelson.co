@@ -20,13 +20,6 @@ const HeroContainer = styled.div`
     max-width: 816px;
   }
 `
-const NoSelectContainer = styled.div`
-  height: 100%;
-  pointer-events: none;
-  div {
-    pointer-events: none;
-  }
-`
 
 const StyledLogo = styled(Logo)`
   justify-self: start;
@@ -137,10 +130,7 @@ const Hero = props => {
       <Scale>
         <HeroContainer>
           {/* <StyledLogo /> */}
-
-          <NoSelectContainer>
-            <ThreeDCanvas />
-          </NoSelectContainer>
+          <ThreeDCanvas />
           <HeroText>
             Gavin Nelson is a <strong>product & visual designer </strong>
             in the San Francisco Bay Area. He creates intuitive and clean
