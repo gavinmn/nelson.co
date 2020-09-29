@@ -4948,6 +4948,13 @@ detab@2.0.3, detab@^2.0.0:
   dependencies:
     repeat-string "^1.5.4"
 
+detect-gpu@^1.3.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-1.5.0.tgz#36a98679be56ab67f49380e00ec34ed53bedc075"
+  integrity sha512-345FxImCa1Ydv0e3rmZn1Qz5xNqPlz1EQLyDhksqFjNqjDuLGqQxlhCHtp6zlU4xUlhZIp6ToNi93YYkmmOxYA==
+  dependencies:
+    detect-ua "^1.0.2"
+
 detect-indent@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.0.0.tgz#0abd0f549f69fc6659a254fe96786186b6f528fd"
@@ -4991,6 +4998,11 @@ detect-port@^1.3.0:
   dependencies:
     address "^1.0.1"
     debug "^2.6.0"
+
+detect-ua@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/detect-ua/-/detect-ua-1.0.2.tgz#4958d12a6af62adf522a26f0d9dec764ab3938c0"
+  integrity sha512-EsqFycxcggrkzRm3IaHr1nP1pSCDVLHW3haUvaSqws70B277a1SKk5hFtuJo3BKuPwTTRGTGsYYiJwS/97ptEg==
 
 devcert@^1.1.3:
   version "1.1.3"
@@ -5196,13 +5208,14 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
-drei@^1.5.6:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/drei/-/drei-1.5.6.tgz#b4b9636a7613aca237cf58496cb1581f2c137b56"
-  integrity sha512-e3ZjCmuzWZ8B8vpMzAUjePEK/ENLtkCvKB2tupR2eRmM8/GmNTKC5uX9WIAxl8tbue2juYAOBeSEOhSCtYF1RA==
+drei@^1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/drei/-/drei-1.5.7.tgz#ec6bf88f01d297eec6e09fb75f326b0cc78b9fa7"
+  integrity sha512-x7PQfvoSI1OqOwghZuZBhrNtaxMHh0bpVBLFYu39qwDghnBYgNIpNhoRtqK5FzRbcS1Rjdq0KWP0leSGKG/rsA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/web" "^9.0.0-rc.3"
+    detect-gpu "^1.3.0"
     glsl-noise "^0.0.0"
     lodash.omit "^4.5.0"
     lodash.pick "^4.4.0"
