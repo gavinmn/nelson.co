@@ -36,14 +36,13 @@ const SampleGrid = styled.div`
   }
 `
 
-
 const IndexPage = props => {
   return (
     <Layout location={props.location}>
       <SEO title=" " />
       <Wrapper>
         <HeroContainer>
-          <Hero/>
+          <Hero />
         </HeroContainer>
 
         <a id="work"></a>
@@ -60,16 +59,16 @@ const IndexPage = props => {
             href="https://dribbble.com/Gavin/"
           />
 
+          <Shot image={props.data.blendergrapher.childImageSharp.fluid} />
+          <Shot image={props.data.fitbodapollo.childImageSharp.fluid} />
           <Shot image={props.data.designIcons.childImageSharp.fluid} />
           <Shot image={props.data.devIcons.childImageSharp.fluid} />
           <Shot image={props.data.mailIcons.childImageSharp.fluid} />
-          <Shot image={props.data.Swatches.childImageSharp.fluid} />
-          <Shot image={props.data.finderWindows.childImageSharp.fluid} />
-          <Shot image={props.data.wh1.childImageSharp.fluid} />
-          <Shot image={props.data.wh2.childImageSharp.fluid} />
+          {/* <Shot image={props.data.Swatches.childImageSharp.fluid} />
+          <Shot image={props.data.finderWindows.childImageSharp.fluid} /> */}
         </SampleGrid>
 
-        <SampleGrid>
+        {/* <SampleGrid>
           <ProjectInfo
             logo={props.data.illusLogo.childImageSharp.fluid}
             title="Illustration Design Sample"
@@ -84,9 +83,8 @@ const IndexPage = props => {
           <Shot image={props.data.peace.childImageSharp.fluid} />
           <Shot image={props.data.shaka.childImageSharp.fluid} />
           <Shot image={props.data.draw.childImageSharp.fluid} />
-        </SampleGrid>
+        </SampleGrid> */}
       </Wrapper>
-      
     </Layout>
   )
 }
@@ -173,6 +171,20 @@ export const PageQuery = graphql`
       }
     }
     wh2: file(relativePath: { eq: "visual/whicons2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    blendergrapher: file(relativePath: { eq: "visual/blendergrapher.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    fitbodapollo: file(relativePath: { eq: "visual/fitbodapollo.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp
