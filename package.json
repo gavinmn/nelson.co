@@ -15,7 +15,7 @@
     "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-google-analytics": "^2.3.15",
-    "gatsby-plugin-manifest": "^2.4.33",
+    "gatsby-plugin-manifest": "^2.4.34",
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-react-helmet": "^3.3.13",
     "gatsby-plugin-react-svg": "^3.0.0",
