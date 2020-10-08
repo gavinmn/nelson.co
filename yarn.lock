@@ -6804,10 +6804,10 @@ gatsby-recipes@^0.2.31:
     yoga-layout-prebuilt "^1.9.6"
     yup "^0.27.0"
 
-gatsby-source-filesystem@^2.3.32:
-  version "2.3.32"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.32.tgz#a343dbb1562a3b812e4ba8149854428143c95a74"
-  integrity sha512-BzXxz27dNg9fcWbF8abKr9bfZ7ODdd7PeoldmDU+E900iBva/erMS+Ul8pUP4O0npzkaM3z0NWS5t9KAMqRhfg==
+gatsby-source-filesystem@^2.3.33:
+  version "2.3.33"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.33.tgz#2a70423c87b42eab528a88c33084da0e16d2907d"
+  integrity sha512-7ikBtroC/X/oe7wJn54E4X588HvIyQmgyoDsS+TBsP64C7yIt/bnra8ssE2dyywtY+bMg8vVJX82F9oQumRbLQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     better-queue "^3.8.10"
@@ -6815,7 +6815,7 @@ gatsby-source-filesystem@^2.3.32:
     chokidar "^3.4.2"
     file-type "^12.4.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.22"
+    gatsby-core-utils "^1.3.23"
     got "^9.6.0"
     md5-file "^3.2.3"
     mime "^2.4.6"
