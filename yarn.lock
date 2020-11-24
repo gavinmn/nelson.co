@@ -1022,7 +1022,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@7.12.5", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@7.12.5", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -6171,7 +6171,7 @@ gatsby-cli@^2.13.1:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.3.24, gatsby-core-utils@^1.4.0:
+gatsby-core-utils@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.4.0.tgz#d42234b8a15b34237921522f9ae303a2bb833c78"
   integrity sha512-wU6huyGZ8aJ/8Izfc7D39ujxaCz/jFtznufmMSXLnEBwLF5MWGsmECx4i2nfTb2kkkTFc+n0i/rx///UnPUURg==
@@ -6335,12 +6335,12 @@ gatsby-plugin-smoothscroll@^1.2.0:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-gatsby-plugin-styled-components@^3.3.14:
-  version "3.3.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.14.tgz#0e71ffb681351d28f127d5ff01f4c509c92e1daa"
-  integrity sha512-Eh1RN8jRfKqvW56dU47LTJxGFOEkpnoTpvtnkaPviwwJCt5nNcHlsLZ/9syLYO/5gtRefbyEHvCCqq18q2FCBw==
+gatsby-plugin-styled-components@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.5.0.tgz#f9e313d622222d5014975845599909902bfb3144"
+  integrity sha512-QOo/dBTJzL6a/UkwlvvwWE1DKsqx7ni8nbwqoFV6lc0NLclHS2TlUoH5D54ook/3XWI4pYMVYxfFvfIbh3VjRA==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-typescript@^2.6.0:
   version "2.6.0"
