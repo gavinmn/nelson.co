@@ -6604,11 +6604,11 @@ gatsby-transformer-sharp@^2.7.0:
     probe-image-size "^5.0.0"
     semver "^7.3.2"
     sharp "^0.26.3"
-
 gatsby@^2.27.2:
   version "2.27.2"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.27.2.tgz#be452820b0de7adf5fa8084c69cd6fbc6f4aafa8"
   integrity sha512-q7d7cyELLAIyfaQ2TyXHvbz1yQmgjznQUX6gsxRoGA+yJbDvPmHYnn53JOD1/4+DAM/cm1RhAhuC/BMO3FbOsA==
+
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/core" "^7.12.3"
