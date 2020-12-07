@@ -140,7 +140,7 @@ const Hero = props => {
             wikiHow.
           </HeroText>
           <LinkContainer>
-            <Email href="mailto:gavin@hey.com">Email</Email>
+            <Email href="mailto:gavin@gnelson.me">Email</Email>
             <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
             <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
             <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
