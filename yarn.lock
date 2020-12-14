@@ -4987,10 +4987,10 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
-drei@^2.2.10:
-  version "2.2.10"
-  resolved "https://registry.yarnpkg.com/drei/-/drei-2.2.10.tgz#7442c3848d6feced17f376fa49410cc72fde24c2"
-  integrity sha512-9+TuPYWzOpXdzwIyz7thnxCBSnU2i6lUhpB27R4i5OeV0J+i3I2vLau0mvcXFy+Z4SQRGj16ETsvZjFcSN73rw==
+drei@^2.2.12:
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/drei/-/drei-2.2.12.tgz#0b0253a0960b894c42bd085096a2bac4400d3d13"
+  integrity sha512-bQ87vVPe2UtGYrGxiDesPWKSkGO7ikprI0v08y4cJeKppsvb8t36GltKZyhoiCLRMLJhtBXWEvwZVoiVoYcKiQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/web" "^9.0.0-rc.3"
