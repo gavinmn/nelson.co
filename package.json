@@ -25,7 +25,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "lerp": "^1.0.3",
     "gatsby-source-filesystem": "^2.8.0",
-    "gatsby-transformer-sharp": "^2.8.0",
+    "gatsby-transformer-sharp": "^2.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
