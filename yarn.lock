@@ -4987,10 +4987,10 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
-drei@^2.2.12:
-  version "2.2.12"
-  resolved "https://registry.yarnpkg.com/drei/-/drei-2.2.12.tgz#0b0253a0960b894c42bd085096a2bac4400d3d13"
-  integrity sha512-bQ87vVPe2UtGYrGxiDesPWKSkGO7ikprI0v08y4cJeKppsvb8t36GltKZyhoiCLRMLJhtBXWEvwZVoiVoYcKiQ==
+drei@^2.2.13:
+  version "2.2.13"
+  resolved "https://registry.yarnpkg.com/drei/-/drei-2.2.13.tgz#eb29e010d3d72b13b6f2764cc9bd4750ee0f0211"
+  integrity sha512-r7q8m2E9uRHN6yaJhLY7ECUzhedt/2s3egPSFP7PkAaOqhp7zWWEPNoijtSVBshtDAHmrhEcYLiwTzgOrmtUrw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/web" "^9.0.0-rc.3"
@@ -6282,7 +6282,7 @@ gatsby-cli@^2.16.2:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.7.0, gatsby-core-utils@^1.7.1:
+gatsby-core-utils@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.7.1.tgz#7e7e6596c228d580ed8ce4a3fc04c56f103cae3f"
   integrity sha512-hnzQCixp2C4opmSgjido/CQwSt4FL3CcmGwq6fK3PVPTT3hLPz7rvuTMQIUlR8BJjGYai6i5f6V3wfkCJ3VTgQ==
