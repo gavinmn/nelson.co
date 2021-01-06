@@ -6612,10 +6612,10 @@ gatsby-transformer-sharp@^2.10.0:
     semver "^7.3.4"
     sharp "^0.27.0"
 
-gatsby@^2.30.0:
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.30.0.tgz#b9d634280ec81ad73d3e4f9556d3d26a8e70cb81"
-  integrity sha512-KLSH2KAxQam2v1YTZz8/LivBBDnoy3DJQwPyI05lAxOBe4Ro6ZyHprjOoX8Fuu4LAz6RzzZSFPExUnHBDBJe0Q==
+gatsby@^2.30.1:
+  version "2.30.1"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.30.1.tgz#251c931caf8f928c6af69656d288d04950f0bb80"
+  integrity sha512-elDugMhCsBHdo46WAiyoWs7AL3uQyO9R+rqf8J0mj3ToNzi4Fl+3cu2fs+EvAahpLJ5pQqRhXL/cPXtW4rNbug==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/core" "^7.12.3"
@@ -6743,7 +6743,7 @@ gatsby@^2.30.0:
     shallow-compare "^1.2.2"
     signal-exit "^3.0.3"
     slugify "^1.4.4"
-    socket.io "^2.3.0"
+    socket.io "2.3.0"
     socket.io-client "2.3.0"
     source-map "^0.7.3"
     source-map-support "^0.5.19"
@@ -12351,7 +12351,7 @@ socket.io-parser@~3.4.0:
     debug "~4.1.0"
     isarray "2.0.1"
 
-socket.io@^2.3.0:
+socket.io@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-2.3.0.tgz#cd762ed6a4faeca59bc1f3e243c0969311eb73fb"
   integrity sha512-2A892lrj0GcgR/9Qk81EaY2gYhCBxurV0PfmmESO6p27QPrUK1J3zdns+5QPqvUYK2q657nSj0guoIil9+7eFg==
