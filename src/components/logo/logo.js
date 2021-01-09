@@ -1,43 +1,51 @@
 import React from "react"
 import styled from "styled-components"
+import Ztext from 'react-ztext'
 import "./logo.css"
 
 const StyledSVG = styled.svg`
-  width: 96px;
-  height: 96px;
+  width: 160px;
+  height: 160px;
 
   @media only screen and (min-width: 722px) {
     width: 224px;
     height: 224px;
   }
 `
+const StyledContainer = styled.div`
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+
+  @media only screen and (min-width: 722px) {
+    justify-content:start;
+  }
+`
 
 const Logo = props => (
-  <StyledSVG viewBox="0 0  210 210" version="1.1">
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M105 210C162.99 210 210 162.99 210 105C210 47.0101 162.99 0 105 0C47.0101 0 0 47.0101 0 105C0 162.99 47.0101 210 105 210ZM149 89C149 75.7452 138.255 65 125 65V145C138.255 145 149 134.255 149 121V89ZM93 65V121C93 134.255 103.745 145 117 145V89C117 75.7452 106.255 65 93 65ZM85 113V65C71.7452 65 61 75.7452 61 89C61 102.255 71.7452 113 85 113Z"
-      fill="var(--color-primary)"
-    />
-    <path
-      d="M61 121H85V145C71.7452 145 61 134.255 61 121Z"
-      fill="url(#paint0_linear)"
-    />
-    <defs>
-      <linearGradient
-        id="paint0_linear"
-        x1="73"
-        y1="145"
-        x2="73"
-        y2="121"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stop-color="var(--bg-hex)" stop-opacity="0" />
-        <stop offset="1" stop-color="var(--bg-hex)" />
-      </linearGradient>
-    </defs>
-  </StyledSVG>
+  <StyledContainer>
+  <Ztext
+    depth='.8rem'
+    direction='both'
+    event='pointer'
+    eventRotation='14deg'
+    eventDirection='default'
+    fade={false}
+    layers={10}
+    perspective='500px'
+  >
+      <StyledSVG viewBox="0 0 210 190" version="1.1">
+        <path d="M154.503 0.034373C153.399 -0.00375831 152.5 0.895252 152.5 1.99982V188C152.5 189.104 153.399 190.003 154.503 189.965C185.056 188.91 209.5 163.809 209.5 133V56.9998C209.5 26.1902 185.056 1.08972 154.503 0.034373Z" fill="var(--logo-primary)"/>
+    <path d="M76.5 1.99983C76.5 0.895256 77.3995 -0.00375828 78.5034 0.0343731C109.056 1.08972 133.5 26.1902 133.5 56.9998V188C133.5 189.104 132.601 190.003 131.497 189.965C100.944 188.91 76.5 163.809 76.5 133V1.99983Z" fill="var(--logo-primary)"/>
+    <path d="M55.4966 0.0343731C56.6005 -0.00375828 57.5 0.895256 57.5 1.99983V112C57.5 113.104 56.6005 114.003 55.4966 113.965C24.9442 112.91 0.5 87.8095 0.5 56.9998C0.5 26.1902 24.9442 1.08972 55.4966 0.0343731Z" fill="var(--logo-primary)"/>
+    <path d="M2.5 133C1.39543 133 0.496417 133.899 0.534548 135.003C1.56692 164.891 25.6091 188.933 55.4966 189.965C56.6005 190.003 57.5 189.104 57.5 188V135C57.5 133.895 56.6046 133 55.5 133H2.5Z" fill="var(--logo-primary)"/>
+      </StyledSVG>
+    </Ztext>
+    </StyledContainer>
 )
+
+
 
 export default Logo

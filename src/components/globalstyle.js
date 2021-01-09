@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 		--wash-secondary: #76767E;
 		
 		--color-primary: #1d1d1f;
+		--logo-primary: #1d1d1f;
 
 		--color-monterey-secondary: ;
 
@@ -35,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
 			--wash-secondary: #84848B; 
 
 			--color-primary: #ffffff;
+			--logo-primary: #ffffff;
 
 			--color-chalk: #1A83FF;
 			--color-chalk-secondary: #1A212D;
