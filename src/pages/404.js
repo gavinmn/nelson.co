@@ -3,47 +3,31 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import { device } from "../components/device"
 import "./fonts.css"
 
 const Container = styled.div`
-  display: grid;
-  height: 100vh;
-  justify-content: end;
+  display: flex;
+  max-width: 816px;
+  margin: 0 auto;
+  padding: 0 5% 0 5%;
+  overflow: hidden;
+  height:100vh;
+  justify-content: start;
   align-content: center;
 `
-
-const FourOhFour = styled.p`
+const StyledText = styled.p`
   font-family: monospace;
-  font-weight: 900;
-  font-size: 2rem;
-  color: var(--wash-primary);
-  text-align: right;
-`
-const NotFound = styled.p`
-  font-family: monospace;
-  font-size: 1rem;
-  color: var(--wash-secondary);
-  text-align: right;
-  margin-bottom: 8px;
-`
-
-const WhyDontYou = styled.p`
-  font-family: monospace;
-  font-size: 1rem;
-  color: var(--wash-secondary);
-  text-align: right;
+  align-self: center;
+  justify-self:start;
+  font-size: 16px;
 `
 
 const HereLink = styled(Link)`
-  font-family: monospace;
-  font-size: 1rem;
-  color: var(--color-primary);
-  text-align: right;
+  color: var(--wash-secondary);
+  font-size:16px;
 
   &:hover {
     text-decoration: underline;
-    text-decoration-color: var(--color-primary);
   }
 `
 
@@ -51,11 +35,7 @@ const NotFoundPage = props => (
   <Layout location={props.location}>
     <SEO title="404: Not found" />
     <Container>
-      <FourOhFour>404.</FourOhFour>
-      <NotFound>page not found.</NotFound>
-      <WhyDontYou>
-        why don't you go <HereLink to="/">here.</HereLink>
-      </WhyDontYou>
+      <StyledText>404.<br></br> Why don't you go <HereLink to="/">here.</HereLink></StyledText>
     </Container>
   </Layout>
 )

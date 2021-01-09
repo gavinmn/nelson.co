@@ -122,12 +122,12 @@ const CaseStudy = props => {
           title="Monterey"
           subtitle="Icon Design"
           date="Summer 2020"
-          link="/monterey"
-          text="View project"
+          link=""
+          text="Get Icons"
           backgroundColor="var(--color-primary)"
           hoverBG="var(--color-monterey-secondary)"
-          asA=""
-          href=""
+          asA="a"
+          href="https://gumroad.com/l/dvctd"
         />
         <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
           <MontereyImage

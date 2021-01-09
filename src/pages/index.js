@@ -57,6 +57,8 @@ const IndexPage = props => {
             text="View more"
             asA="a"
             href="https://dribbble.com/Gavin/"
+            target="blank"
+            rel="noopener noreferrer"
           />
 
           <Shot image={props.data.blendergrapher.childImageSharp.fluid} />
@@ -64,26 +66,8 @@ const IndexPage = props => {
           <Shot image={props.data.designIcons.childImageSharp.fluid} />
           <Shot image={props.data.devIcons.childImageSharp.fluid} />
           <Shot image={props.data.mailIcons.childImageSharp.fluid} />
-          {/* <Shot image={props.data.Swatches.childImageSharp.fluid} />
-          <Shot image={props.data.finderWindows.childImageSharp.fluid} /> */}
         </SampleGrid>
 
-        {/* <SampleGrid>
-          <ProjectInfo
-            logo={props.data.illusLogo.childImageSharp.fluid}
-            title="Illustration Design Sample"
-            subtitle="Client and Personal Work"
-            date="2018 - 2020"
-            text="View more"
-            asA="a"
-            href="https://dribbble.com/Gavin/"
-          />
-
-          <Shot image={props.data.avatar.childImageSharp.fluid} />
-          <Shot image={props.data.peace.childImageSharp.fluid} />
-          <Shot image={props.data.shaka.childImageSharp.fluid} />
-          <Shot image={props.data.draw.childImageSharp.fluid} />
-        </SampleGrid> */}
       </Wrapper>
     </Layout>
   )
