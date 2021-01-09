@@ -5,12 +5,6 @@
       "source": "/monterey",
       "destination": "https://gumroad.com/l/dvctd", 
       "permanent": true
-    },
-    {
-      "source": "/(.*))",
-      "destination": "/404.html", 
-      "permanent": false
-
     }
   ]
 
