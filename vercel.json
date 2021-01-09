@@ -2,13 +2,8 @@
   "version": 2,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
-  ],
-  "redirects": [
-    { 
-      "source": "/monterey/",
-      "destination": "https://gumroad.com/l/dvctd", 
-      "permanent": true
-    }
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" },
+    { "src": "/monterey","status": 308, "dest": "https://gumroad.com/l/dvctd"}
   ]
+
 }
