@@ -27,13 +27,13 @@ const StyledContainer = styled.div`
 const Logo = props => (
   <StyledContainer>
   <Ztext
-    depth='.8rem'
+    depth='.9rem'
     direction='both'
     event='pointer'
-    eventRotation='14deg'
+    eventRotation='18deg'
     eventDirection='default'
     fade={false}
-    layers={10}
+    layers={15}
     perspective='500px'
   >
       <StyledSVG viewBox="0 0 210 190" version="1.1">
