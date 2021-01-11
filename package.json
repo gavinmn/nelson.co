@@ -20,7 +20,7 @@
   "keywords": [],
   "license": "",
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn dev",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
