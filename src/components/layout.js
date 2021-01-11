@@ -17,7 +17,7 @@ const Layout = ({ children, location }) => {
     <>
       <GlobalStyle />
       {/* <Header path={location.pathname} /> */}
-      <Header/>
+      <Header />
       <main>{children}</main>
       <Wrapper>
         <footer>

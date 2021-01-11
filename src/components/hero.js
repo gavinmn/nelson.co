@@ -5,8 +5,7 @@ import Fade from "./fade"
 import Scale from "./scale"
 import { device } from "./device"
 import StyledLink from "./styledlink"
-import Image from 'next/image'
-
+import Image from "next/image"
 
 const HeroContainer = styled.div`
   display: grid;

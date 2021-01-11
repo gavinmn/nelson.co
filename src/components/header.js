@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
-import Link from 'next/link'
+import { useRouter } from "next/router"
+import Link from "next/link"
 import styled from "styled-components"
 import Wrapper from "./wrapper"
 import { device } from "./device"
@@ -78,20 +79,37 @@ const Header = props => {
     })
   }
 
+  const router = useRouter()
+
   useEffect(() => {
-    if (props.path !== "/") {
+    if (router.pathname !== "/") {
       setHighlight(true)
     } else {
       setHighlight(false)
     }
-    if (props.path === "/monterey" || props.path === "/monterey/") {
+    if (router.pathname === "/monterey" || router.pathname === "/monterey/") {
       setShouldBeWhite(true)
       setBgColor(true)
     } else {
       setBgColor(false)
       setShouldBeWhite(false)
     }
-  }, [props.path])
+  }, [router.pathname])
+
+  // useEffect(() => {
+  //   if (props.path !== "/") {
+  //     setHighlight(true)
+  //   } else {
+  //     setHighlight(false)
+  //   }
+  //   if (props.path === "/monterey" || props.path === "/monterey/") {
+  //     setShouldBeWhite(true)
+  //     setBgColor(true)
+  //   } else {
+  //     setBgColor(false)
+  //     setShouldBeWhite(false)
+  //   }
+  // }, [props.path])
 
   return (
     <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>

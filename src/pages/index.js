@@ -37,11 +37,6 @@ const BlankContainer = styled.div`
   height: 100%;
 `
 
-// const ImagePreventStretchContainer = styled.div`
-//   height: 300px;
-//   max-height: 300px;
-// `
-
 const IndexPage = props => {
   return (
     <Layout location={props.location}>

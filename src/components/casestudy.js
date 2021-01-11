@@ -21,8 +21,6 @@ const ImageContainer = styled.div`
   align-self: center;
   justify-self: center;
   pointer-events: none;
-  background-color: red;
-
   @media only screen and (min-width: 445px) {
     margin-top: 0;
   }
