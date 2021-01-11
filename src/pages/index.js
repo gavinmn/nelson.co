@@ -32,6 +32,16 @@ const SampleGrid = styled.div`
   }
 `
 
+const BlankContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
+// const ImagePreventStretchContainer = styled.div`
+//   height: 300px;
+//   max-height: 300px;
+// `
+
 const IndexPage = props => {
   return (
     <Layout location={props.location}>
@@ -46,7 +56,7 @@ const IndexPage = props => {
 
         <SampleGrid>
           <ProjectInfo
-            logo="/../images/visual/visuallogo.png"
+            logo="/images/visual/visuallogo.png"
             title="Visual Design Sample"
             subtitle="Client and Personal Work"
             date="2014 - 2020"
@@ -56,12 +66,12 @@ const IndexPage = props => {
             target="blank"
             rel="noopener noreferrer"
           />
-
-          <Shot image="/../images/visual/blendergrapher.png" />
-          <Shot image="/../images/visual/fitbodapollo.png" />
-          <Shot image="/../images/visual/designicons.png" />
-          <Shot image="/../images/visual/devicons.png" />
-          <Shot image="/../images/visual/mailicons.png" />
+          <BlankContainer />
+          <Shot image="/images/visual/blendergrapher.png" />
+          <Shot image="/images/visual/fitbodapollo.png" />
+          <Shot image="/images/visual/designicons.png" />
+          <Shot image="/images/visual/devicons.png" />
+          <Shot image="/images/visual/mailicons.png" />
         </SampleGrid>
       </Wrapper>
     </Layout>

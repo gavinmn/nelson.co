@@ -15,6 +15,30 @@ const Container = styled.div`
   }
 `
 
+const ImageContainer = styled.div`
+  width: 88%;
+  max-width: 285px;
+  align-self: center;
+  justify-self: center;
+  pointer-events: none;
+  background-color: red;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
+const ExpertImageContainer = styled.div`
+  width: 88%;
+  max-width: 384px;
+  align-self: center;
+  justify-self: end;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
 const MontereyImage = styled(Image)`
   width: 88%;
   max-width: 285px;
@@ -69,7 +93,7 @@ const CaseStudy = props => (
   <>
     <Container>
       <ProjectInfo
-        logo="/../images/monterey/montereylogo.png"
+        logo="/images/monterey/montereylogo.png"
         title="Monterey"
         subtitle="Icon Design"
         date="Summer 2020"
@@ -80,16 +104,19 @@ const CaseStudy = props => (
         href="https://gumroad.com/l/dvctd"
       />
       <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
-        <MontereyImage
-          src="/../images/monterey/montereyimage.png"
-          alt=""
-          layout="fill"
-        />
+        <ImageContainer>
+          <MontereyImage
+            src="/images/monterey/montereyimage.png"
+            alt=""
+            width={285}
+            height={569}
+          />
+        </ImageContainer>
       </ProjectBG>
     </Container>
     <Container>
       <ProjectInfo
-        logo="/../images/chalk/chalklogo.png"
+        logo="/images/chalk/chalklogo.png"
         title="Chalk"
         subtitle="Interaction and Visual Design"
         date="Summer 2019"
@@ -100,16 +127,19 @@ const CaseStudy = props => (
         href="/chalk"
       />
       <ProjectBG projectBg="var(--color-chalk-secondary)">
-        <ChalkImage
-          src="/../images/chalk/chalkintro.png"
-          alt=""
-          layout="fill"
-        />
+        <ImageContainer>
+          <ChalkImage
+            src="/images/chalk/chalkintro.png"
+            alt=""
+            width={285}
+            height={569}
+          />
+        </ImageContainer>
       </ProjectBG>
     </Container>
     <Container>
       <ProjectInfo
-        logo="/../images/experts/expertslogo.png"
+        logo="/images/expert/expertslogo.png"
         title="wikiHow Expert Profiles"
         subtitle="Product and Visual Design"
         date="Summer 2018"
@@ -120,11 +150,14 @@ const CaseStudy = props => (
         href="/experts"
       />
       <ProjectBG projectBg="var(--color-experts-secondary)">
-        <ExpertsImage
-          src="/../images/experts/expertsintro.png"
-          alt=""
-          layout="fill"
-        />
+        <ExpertImageContainer>
+          <ExpertsImage
+            src="/images/expert/expertsintro.png"
+            alt=""
+            width={359}
+            height={490}
+          />
+        </ExpertImageContainer>
       </ProjectBG>
     </Container>
   </>

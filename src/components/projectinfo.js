@@ -3,8 +3,7 @@ import styled from "styled-components"
 import { device } from "./device"
 import ProjectInfoText from "./projectinfotext"
 import ButtonPrimary from "./buttonprimary"
-import Image from 'next/image'
-
+import Image from "next/image"
 
 const Container = styled.div`
   @media only screen and (min-width: 445px) {
@@ -33,7 +32,7 @@ const ButtonContainer = styled.div`
 
 const ProjectInfo = props => (
   <Container>
-    <Logo src={props.logo} alt="" layout="fill"/>
+    <Logo src={props.logo} alt="" width={64} height={64} layout="intrinsic" />
     <ProjectInfoText
       title={props.title}
       subtitle={props.subtitle}
