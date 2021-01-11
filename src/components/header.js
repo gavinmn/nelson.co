@@ -83,11 +83,9 @@ const Header = props => {
 
   useEffect(() => {
     if (router.pathname !== "/") {
-      console.log("should highlight")
       setHighlight(true)
     } else {
       setHighlight(false)
-      console.log("no highlight")
     }
   }, [router.pathname])
 
