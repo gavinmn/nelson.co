@@ -83,33 +83,13 @@ const Header = props => {
 
   useEffect(() => {
     if (router.pathname !== "/") {
+      console.log("should highlight")
       setHighlight(true)
     } else {
       setHighlight(false)
-    }
-    if (router.pathname === "/monterey" || router.pathname === "/monterey/") {
-      setShouldBeWhite(true)
-      setBgColor(true)
-    } else {
-      setBgColor(false)
-      setShouldBeWhite(false)
+      console.log("no highlight")
     }
   }, [router.pathname])
-
-  // useEffect(() => {
-  //   if (props.path !== "/") {
-  //     setHighlight(true)
-  //   } else {
-  //     setHighlight(false)
-  //   }
-  //   if (props.path === "/monterey" || props.path === "/monterey/") {
-  //     setShouldBeWhite(true)
-  //     setBgColor(true)
-  //   } else {
-  //     setBgColor(false)
-  //     setShouldBeWhite(false)
-  //   }
-  // }, [props.path])
 
   return (
     <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
