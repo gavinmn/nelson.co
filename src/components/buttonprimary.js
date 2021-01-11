@@ -3,7 +3,7 @@ import Link from "next/link"
 import styled from "styled-components"
 import { device } from "./device"
 
-const ButtonStyle = styled(Link)`
+const ButtonStyle = styled.a`
   padding: 1rem;
   max-width: 100%;
   background: ${props => props.backgroundColor || "var(--color-primary)"};
@@ -36,13 +36,13 @@ const ButtonStyle = styled(Link)`
 `
 
 const ButtonPrimary = props => (
-  <ButtonStyle
-    as={props.asA}
-    href={props.href}
-    backgroundColor={props.color}
-    hoverBackground={props.hoverBackground}
-  >
-    <a>{props.text}</a>
-  </ButtonStyle>
+  <Link href={props.href} as={props.asA}>
+    <ButtonStyle
+      backgroundColor={props.color}
+      hoverBackground={props.hoverBackground}
+    >
+      {props.text}
+    </ButtonStyle>
+  </Link>
 )
 export default ButtonPrimary
