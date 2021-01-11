@@ -18,7 +18,7 @@
     "prettier": "2.2.1"
   },
   "keywords": [],
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
