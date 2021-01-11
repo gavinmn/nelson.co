@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
 import styled from "styled-components"
+import Image from "next/image"
 
 import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
@@ -12,9 +12,6 @@ import PortfolioContainer from "../components/portfoliocontainer"
 import Wrapper from "../components/wrapper"
 import SmallWrapper from "../components/smallwrapper"
 import { device } from "../components/device"
-
-import togglemovie from "../images/expert/togglemovie.mp4"
-import prototypemovie from "../images/expert/prototypemovie.mp4"
 
 const SingleVideoContainer = styled.div`
   margin: 2rem 0;
@@ -49,10 +46,14 @@ const expertsPage = props => (
             />
           </SmallWrapper>
 
-          <FullWidthImage
-            fluid={props.data.headerimage.childImageSharp.fluid}
-            alt=""
-          />
+          <FullWidthImage>
+            <Image
+              src="/images/expert/headerimage.png"
+              alt=""
+              width={816}
+              height={400}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <h3>Project</h3>
@@ -63,10 +64,14 @@ const expertsPage = props => (
               for our 500+ expert verifiers.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.projectimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/projectimage.png"
+                alt=""
+                width={444}
+                height={222}
+              />
+            </HalfWidthImage>
 
             <h3>Role</h3>
             <p>
@@ -75,10 +80,14 @@ const expertsPage = props => (
               engineer, and myself in the role of Product Designer.{" "}
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.teamimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/teamimage.png"
+                alt=""
+                width={444}
+                height={344}
+              />
+            </HalfWidthImage>
 
             <p>
               I was responsible for design ideation, iteration, prototyping, and
@@ -95,11 +104,14 @@ const expertsPage = props => (
               the badge and trust the verified content.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.problemimage.childImageSharp.fluid}
-              alt=""
-            />
-
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/problemimage.png"
+                alt=""
+                width={444}
+                height={290}
+              />
+            </HalfWidthImage>
             <p>
               The badge only linked the user to an index of experts, with no
               wikiHow page showcasing their credentials.
@@ -114,10 +126,14 @@ const expertsPage = props => (
               verified articles.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.goalimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/goalimage.png"
+                alt=""
+                width={444}
+                height={326}
+              />
+            </HalfWidthImage>
 
             <h3>Stakeholder Constraints</h3>
             <p>
@@ -129,10 +145,14 @@ const expertsPage = props => (
               built wikiHow technologies to build this new custom page.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.stakeholderimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/stakeholderimage.png"
+                alt=""
+                width={444}
+                height={242}
+              />
+            </HalfWidthImage>
 
             <p>
               In addition to engineering constraints, I also had to account for
@@ -149,10 +169,14 @@ const expertsPage = props => (
             </p>
           </SmallWrapper>
 
-          <FullWidthImage
-            fluid={props.data.solutionimage1.childImageSharp.fluid}
-            alt=""
-          />
+          <FullWidthImage>
+            <Image
+              src="/images/expert/solutionimage1.png"
+              alt=""
+              width={816}
+              height={994}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <p>
@@ -160,20 +184,28 @@ const expertsPage = props => (
               job title to create visual consistency with the verification
               badge.
             </p>
-            <HalfWidthImage
-              fluid={props.data.solutionimage2.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/solutionimage2.png"
+                alt=""
+                width={444}
+                height={126}
+              />
+            </HalfWidthImage>
             <p>
               Below this there are three specifically editable sections
               (“wikiText areas”) designed to ease engineering resources. These
               sections were made editable by using the same backend editing that
               the rest of our site uses.
             </p>
-            <HalfWidthImage
-              fluid={props.data.solutionimage3.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/solutionimage3.png"
+                alt=""
+                width={444}
+                height={406}
+              />
+            </HalfWidthImage>
             <p>
               This allowed more flexibility in editing for the Experts team and
               less custom engineering from the developers. A tradeoff of using
@@ -190,7 +222,7 @@ const expertsPage = props => (
 
             <SingleVideoContainer>
               <SingleVideo width="816" playsInline autoPlay muted loop>
-                <source src={togglemovie} type="video/mp4" />
+                <source src="/images/expert/togglemovie.mp4" type="video/mp4" />
               </SingleVideo>
             </SingleVideoContainer>
 
@@ -213,10 +245,14 @@ const expertsPage = props => (
             </p>
           </SmallWrapper>
 
-          <FullWidthImage
-            fluid={props.data.solutionimage4.childImageSharp.fluid}
-            alt=""
-          />
+          <FullWidthImage>
+            <Image
+              src="/images/expert/solutionimage4.png"
+              alt=""
+              width={816}
+              height={384}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <p>
@@ -255,10 +291,14 @@ const expertsPage = props => (
             </p>
           </SmallWrapper>
 
-          <FullWidthImage
-            fluid={props.data.contextimage1.childImageSharp.fluid}
-            alt=""
-          />
+          <FullWidthImage>
+            <Image
+              src="/images/expert/contextimage1.png"
+              alt=""
+              width={816}
+              height={320}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <p>
@@ -271,7 +311,10 @@ const expertsPage = props => (
           </SmallWrapper>
           <SingleVideoContainer>
             <SingleVideo width="320" playsInline autoPlay muted loop>
-              <source src={prototypemovie} type="video/mp4" />
+              <source
+                src="/images/expert/prototypemovie.mp4"
+                type="video/mp4"
+              />
             </SingleVideo>
           </SingleVideoContainer>
           <SmallWrapper>
@@ -283,10 +326,14 @@ const expertsPage = props => (
               members uninvolved in the project, and from there I began
               collaborating with the engineering team to have the pages built.
             </p>
-            <HalfWidthImage
-              fluid={props.data.devimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/expert/devimage.png"
+                alt=""
+                width={444}
+                height={190}
+              />
+            </HalfWidthImage>
             <p>
               Unfortunately I was unable to gather quantitative data on the
               pages success before they had to be temporarily removed due to a
@@ -302,94 +349,3 @@ const expertsPage = props => (
 )
 
 export default expertsPage
-
-export const ImageQuery = graphql`
-  query {
-    headerimage: file(relativePath: { eq: "expert/headerimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    projectimage: file(relativePath: { eq: "expert/projectimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    teamimage: file(relativePath: { eq: "expert/teamimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    problemimage: file(relativePath: { eq: "expert/problemimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    goalimage: file(relativePath: { eq: "expert/goalimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    stakeholderimage: file(
-      relativePath: { eq: "expert/stakeholderimage.png" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    solutionimage1: file(relativePath: { eq: "expert/solutionimage1.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    solutionimage2: file(relativePath: { eq: "expert/solutionimage2.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    solutionimage3: file(relativePath: { eq: "expert/solutionimage3.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    solutionimage4: file(relativePath: { eq: "expert/solutionimage4.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    contextimage1: file(relativePath: { eq: "expert/contextimage1.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    devimage: file(relativePath: { eq: "expert/devimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
