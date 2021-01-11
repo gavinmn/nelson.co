@@ -1,10 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from "next/image"
 import styled from "styled-components"
-import "./fonts.css"
 
 import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
@@ -39,7 +37,7 @@ const SingleVideoContainer = styled.div`
   }
 `
 
-const PhoneBezel = styled(Img)`
+const PhoneBezel = styled(Image)`
   width: 100%;
   max-width: 432px;
   pointer-events: none;
@@ -271,7 +269,7 @@ const chalkPage = props => (
             </p>
 
             <HalfWidthImage
-              fluid={props.data.personaimage.childImageSharp.fluid}
+              src={props.data.personaimage.childImageSharp.fluid}
               className="half-width-img"
               alt=""
             />
@@ -285,7 +283,7 @@ const chalkPage = props => (
           </SmallWrapper>
 
           <FullWidthImage
-            fluid={props.data.sketchesimage.childImageSharp.fluid}
+            src={props.data.sketchesimage.childImageSharp.fluid}
             alt=""
           />
 
@@ -358,11 +356,11 @@ const chalkPage = props => (
           </SmallWrapper>
 
           <FullWidthImage
-            fluid={props.data.finaliconsimage.childImageSharp.fluid}
+            src={props.data.finaliconsimage.childImageSharp.fluid}
             alt=""
           />
           <FullWidthImage
-            fluid={props.data.finalimage.childImageSharp.fluid}
+            src={props.data.finalimage.childImageSharp.fluid}
             alt=""
           />
 

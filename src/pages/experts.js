@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import "./fonts.css"
 
 import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"

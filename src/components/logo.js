@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Ztext from 'react-ztext'
-import "./logo.css"
 
 const StyledSVG = styled.svg`
   width: 160px;

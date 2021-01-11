@@ -2,8 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
-import "./fonts.css"
+import Link from 'next/link'
 
 const Container = styled.div`
   display: flex;

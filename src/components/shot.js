@@ -1,8 +1,8 @@
 import React from "react"
-import Img from "gatsby-image"
+import Image from "next/image"
 import styled from "styled-components"
 
-const ShotImg = styled(Img)`
+const ShotImg = styled(Image)`
   max-width: 400px;
   width: 100%;
 `

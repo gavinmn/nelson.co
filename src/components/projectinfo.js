@@ -1,9 +1,10 @@
 import React from "react"
-import Img from "gatsby-image"
 import styled from "styled-components"
 import { device } from "./device"
 import ProjectInfoText from "./projectinfotext"
 import ButtonPrimary from "./buttonprimary"
+import Image from 'next/image'
+
 
 const Container = styled.div`
   @media only screen and (min-width: 445px) {
@@ -11,7 +12,7 @@ const Container = styled.div`
   }
 `
 
-const Logo = styled(Img)`
+const Logo = styled(Image)`
   margin-bottom: 0.5rem;
   width: 4rem;
   height: 4rem;
@@ -32,7 +33,7 @@ const ButtonContainer = styled.div`
 
 const ProjectInfo = props => (
   <Container>
-    <Logo fluid={props.logo} alt="" />
+    <Logo src={props.logo} alt="" layout="fill"/>
     <ProjectInfoText
       title={props.title}
       subtitle={props.subtitle}
@@ -42,7 +43,6 @@ const ProjectInfo = props => (
       <ButtonPrimary
         asA={props.asA}
         href={props.href}
-        link={props.link}
         text={props.text}
         color={props.backgroundColor}
         hoverBackground={props.hoverBG}

@@ -1,8 +1,7 @@
 import React from "react"
-import Img from "gatsby-image"
+import Image from 'next/image'
 import styled from "styled-components"
 import ProjectInfo from "./projectinfo"
-import { useStaticQuery, graphql } from "gatsby"
 
 const Container = styled.div`
   margin-bottom: 4rem;
@@ -16,7 +15,7 @@ const Container = styled.div`
   }
 `
 
-const MontereyImage = styled(Img)`
+const MontereyImage = styled(Image)`
   width: 88%;
   max-width: 285px;
   align-self: center;
@@ -28,7 +27,7 @@ const MontereyImage = styled(Img)`
   }
 `
 
-const ChalkImage = styled(Img)`
+const ChalkImage = styled(Image)`
   width: 88%;
   max-width: 285px;
   align-self: center;
@@ -39,7 +38,7 @@ const ChalkImage = styled(Img)`
   }
 `
 
-const ExpertsImage = styled(Img)`
+const ExpertsImage = styled(Image)`
   width: 88%;
   max-width: 384px;
   align-self: center;
@@ -122,7 +121,6 @@ const CaseStudy = props => {
           title="Monterey"
           subtitle="Icon Design"
           date="Summer 2020"
-          link=""
           text="Get Icons"
           backgroundColor="var(--color-primary)"
           hoverBG="var(--color-monterey-secondary)"
@@ -142,12 +140,11 @@ const CaseStudy = props => {
           title="Chalk"
           subtitle="Interaction and Visual Design"
           date="Summer 2019"
-          link="/chalk"
           text="Read case study"
           backgroundColor="var(--color-chalk)"
           hoverBG="var(--color-chalk-secondary)"
           asA=""
-          href=""
+          href="/chalk"
         />
         <ProjectBG projectBg="var(--color-chalk-secondary)">
           <ChalkImage fluid={images.chalkIntro.childImageSharp.fluid} alt="" />
@@ -159,12 +156,11 @@ const CaseStudy = props => {
           title="wikiHow Expert Profiles"
           subtitle="Product and Visual Design"
           date="Summer 2018"
-          link="/experts"
           text="Read case study"
           backgroundColor="var(--color-experts)"
           hoverBG="var(--color-experts-secondary)"
           asA=""
-          href=""
+          href="/experts"
         />
         <ProjectBG projectBg="var(--color-experts-secondary)">
           <ExpertsImage

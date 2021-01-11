@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import Link from 'next/link'
 import styled from "styled-components"
 import Wrapper from "./wrapper"
 import { device } from "./device"
@@ -38,7 +37,7 @@ const AboutLink = styled(Link)`
     color: var(--color-primary);
   }
 `
-const WorkLink = styled(AnchorLink)`
+const WorkLink = styled(Link)`
   color: ${props =>
     props.shouldHighlight
       ? props.darkBackground
@@ -98,11 +97,11 @@ const Header = props => {
     <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
       <Wrapper>
         <Container>
-          <Name to="/" darkBackground={bgColor}>
+          <Name href="/" darkBackground={bgColor}>
             Gavin Nelson
           </Name>
           <AboutLink
-            to="/"
+            href="/"
             darkBackground={bgColor}
             isWhite={shouldBeWhite}
             activeStyle={{ color: "var(--color-primary)" }}
@@ -110,7 +109,7 @@ const Header = props => {
             About
           </AboutLink>
           <WorkLink
-            to="/#work"
+            href="/#work"
             darkBackground={bgColor}
             stripHash
             shouldHighlight={highlight}

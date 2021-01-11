@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from 'next/link'
 import styled from "styled-components"
 import { device } from "./device"
 
@@ -39,11 +39,10 @@ const ButtonPrimary = props => (
   <ButtonStyle
     as={props.asA}
     href={props.href}
-    to={props.link}
     backgroundColor={props.color}
     hoverBackground={props.hoverBackground}
   >
-    {props.text}
+    <a>{props.text}</a>
   </ButtonStyle>
 )
 export default ButtonPrimary
