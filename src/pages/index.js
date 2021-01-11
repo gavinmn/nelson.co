@@ -9,7 +9,6 @@ import Shot from "../components/shot"
 import Wrapper from "../components/wrapper"
 import { device } from "../components/device"
 
-
 const HeroContainer = styled.div`
   margin-top: -1rem;
   display: grid;
@@ -47,7 +46,7 @@ const IndexPage = props => {
 
         <SampleGrid>
           <ProjectInfo
-            logo="../images/visual/visuallogo.png"
+            logo="/../images/visual/visuallogo.png"
             title="Visual Design Sample"
             subtitle="Client and Personal Work"
             date="2014 - 2020"
@@ -58,13 +57,12 @@ const IndexPage = props => {
             rel="noopener noreferrer"
           />
 
-          <Shot image="../images/visual/blendergrapher.png" />
-          <Shot image="../images/visual/fitbodapollo.png"  />
-          <Shot image="../images/visual/designicons.png"  />
-          <Shot image="../images/visual/devicons.png"  />
-          <Shot image="../images/visual/mailicons.png"  />
+          <Shot image="/../images/visual/blendergrapher.png" />
+          <Shot image="/../images/visual/fitbodapollo.png" />
+          <Shot image="/../images/visual/designicons.png" />
+          <Shot image="/../images/visual/devicons.png" />
+          <Shot image="/../images/visual/mailicons.png" />
         </SampleGrid>
-
       </Wrapper>
     </Layout>
   )

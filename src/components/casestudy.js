@@ -1,5 +1,5 @@
 import React from "react"
-import Image from 'next/image'
+import Image from "next/image"
 import styled from "styled-components"
 import ProjectInfo from "./projectinfo"
 
@@ -66,58 +66,58 @@ const ProjectBG = styled.div`
 `
 
 const CaseStudy = props => {
-  const images = useStaticQuery(graphql`
-    query {
-      montereyLogo: file(relativePath: { eq: "monterey/montereylogo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      montereyImage: file(relativePath: { eq: "monterey/montereyimage.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      chalkIntro: file(relativePath: { eq: "chalk/chalkintro.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      expertsLogo: file(relativePath: { eq: "expert/expertslogo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      expertsIntro: file(relativePath: { eq: "expert/expertsintro.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+  // const images = useStaticQuery(graphql`
+  //   query {
+  //     montereyLogo: file(relativePath: { eq: "monterey/montereylogo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 256) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //     montereyImage: file(relativePath: { eq: "monterey/montereyimage.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 800) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //     chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 256) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //     chalkIntro: file(relativePath: { eq: "chalk/chalkintro.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 800) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //     expertsLogo: file(relativePath: { eq: "expert/expertslogo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 256) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //     expertsIntro: file(relativePath: { eq: "expert/expertsintro.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 800) {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
       <Container>
         <ProjectInfo
-          logo={images.montereyLogo.childImageSharp.fluid}
+          logo="/../images/monterey/montereylogo.png"
           title="Monterey"
           subtitle="Icon Design"
           date="Summer 2020"
@@ -129,14 +129,15 @@ const CaseStudy = props => {
         />
         <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
           <MontereyImage
-            fluid={images.montereyImage.childImageSharp.fluid}
+            src="/../images/monterey/montereyimage.png"
             alt=""
+            layout="fill"
           />
         </ProjectBG>
       </Container>
       <Container>
         <ProjectInfo
-          logo={images.chalkLogo.childImageSharp.fluid}
+          logo="/../images/chalk/chalklogo.png"
           title="Chalk"
           subtitle="Interaction and Visual Design"
           date="Summer 2019"
@@ -147,12 +148,16 @@ const CaseStudy = props => {
           href="/chalk"
         />
         <ProjectBG projectBg="var(--color-chalk-secondary)">
-          <ChalkImage fluid={images.chalkIntro.childImageSharp.fluid} alt="" />
+          <ChalkImage
+            src="/../images/chalk/chalkintro.png"
+            alt=""
+            layout="fill"
+          />
         </ProjectBG>
       </Container>
       <Container>
         <ProjectInfo
-          logo={images.expertsLogo.childImageSharp.fluid}
+          logo="/../images/experts/expertslogo.png"
           title="wikiHow Expert Profiles"
           subtitle="Product and Visual Design"
           date="Summer 2018"
@@ -164,8 +169,9 @@ const CaseStudy = props => {
         />
         <ProjectBG projectBg="var(--color-experts-secondary)">
           <ExpertsImage
-            fluid={images.expertsIntro.childImageSharp.fluid}
+            src="/../images/experts/expertsintro.png"
             alt=""
+            layout="fill"
           />
         </ProjectBG>
       </Container>

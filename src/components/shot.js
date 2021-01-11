@@ -7,6 +7,6 @@ const ShotImg = styled(Image)`
   width: 100%;
 `
 
-const Shot = props => <ShotImg fluid={props.image} alt="" />
+const Shot = props => <ShotImg src={props.image} alt="" layout="fill" />
 
 export default Shot

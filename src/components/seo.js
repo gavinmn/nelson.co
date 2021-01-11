@@ -1,28 +1,25 @@
-
-
 // import React from "react"
-// import PropTypes from "prop-types"
 // import { Helmet } from "react-helmet"
-
+//
 // function SEO({ description, lang, meta, title, image }) {
-//   const { site } = useStaticQuery(
-//     graphql`
-//       query {
-//         site {
-//           siteMetadata {
-//             title
-//             description
-//             author
-//             siteUrl
-//             image
-//           }
-//         }
-//       }
-//     `
-//   )
-
+//   // const { site } = useStaticQuery(
+//   //   graphql`
+//   //     query {
+//   //       site {
+//   //         siteMetadata {
+//   //           title
+//   //           description
+//   //           author
+//   //           siteUrl
+//   //           image
+//   //         }
+//   //       }
+//   //     }
+//   //   `
+//   // )
+//
 //   const metaDescription = description || site.siteMetadata.description
-
+//
 //   return (
 //     <Helmet
 //       htmlAttributes={{
@@ -87,23 +84,29 @@
 //     />
 //   )
 // }
-
-// SEO.defaultProps = {
-//   lang: `en`,
-//   meta: [],
-//   description: ``,
-// }
-
-// SEO.propTypes = {
-//   description: PropTypes.string,
-//   lang: PropTypes.string,
-//   meta: PropTypes.arrayOf(PropTypes.object),
-//   title: PropTypes.string.isRequired,
-//   image: PropTypes.shape({
-//     src: PropTypes.string.isRequired,
-//     height: PropTypes.number.isRequired,
-//     width: PropTypes.number.isRequired,
-//   }),
-// }
-
+//
 // export default SEO
+
+// src/components/seo.js
+
+import Head from "next/head"
+import config from "../config"
+
+export default function SEO({ description, title }) {
+  const siteTitle = config.title
+
+  return (
+    <Head>
+      <title>{`${title} | ${siteTitle}`}</title>
+      <meta name="description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content={siteTitle} />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:creator" content={config.social.twitter} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
+    </Head>
+  )
+}
