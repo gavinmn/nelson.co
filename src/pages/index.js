@@ -1,17 +1,15 @@
-import React, { useRef } from "react"
-import { graphql } from "gatsby"
+import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
-import CaseStudy from "../components/casestudy"
-import ProjectInfo from "../components/projectinfo"
 import Shot from "../components/shot"
 import Wrapper from "../components/wrapper"
 import { device } from "../components/device"
-import "./fonts.css"
-import ThreeDCanvas from "../components/threedcanvas"
-import useMousePosition from "../components/usemouseposition"
+import Image from "next/image"
+import ProjectInfoText from "../components/projectinfotext"
+import ButtonInternal from "../components/buttoninternal"
+import ButtonExternal from "../components/buttonexternal"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -36,179 +34,267 @@ const SampleGrid = styled.div`
   }
 `
 
+const BlankContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`
+
+const CaseStudyContainer = styled.div`
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: start;
+  transition: 0.2s ease-in-out;
+
+  @media only screen and (min-width: 445px) {
+    grid-template-columns: 50% 50%;
+  }
+`
+
+const ImageContainer = styled.div`
+  width: 88%;
+  max-width: 285px;
+  align-self: center;
+  justify-self: center;
+  pointer-events: none;
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
+const ExpertImageContainer = styled.div`
+  width: 88%;
+  max-width: 384px;
+  align-self: center;
+  justify-self: end;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
+const MontereyImage = styled(Image)`
+  width: 88%;
+  max-width: 285px;
+  align-self: center;
+  justify-self: center;
+  pointer-events: none;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
+const ChalkImage = styled(Image)`
+  width: 88%;
+  max-width: 285px;
+  align-self: center;
+  justify-self: center;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
+const ExpertsImage = styled(Image)`
+  width: 88%;
+  max-width: 384px;
+  align-self: center;
+  justify-self: end;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+
+const ProjectBG = styled.div`
+  width: 100%;
+  display: grid;
+  max-width: 400;
+  margin-top: 8px;
+  align-self: center;
+  justify-self: end;
+  background: ${props => props.projectBg};
+  border-radius: 16px;
+  padding: 1rem 0;
+
+  @media only screen and (min-width: 445px) {
+    margin-top: 0;
+  }
+`
+const ProjectInfoContainer = styled.div`
+  @media only screen and (min-width: 445px) {
+    align-self: center;
+  }
+`
+
+const Logo = styled(Image)`
+margin-bottom: 0.5rem;
+width: 4rem;
+height: 4rem;
+
+@media ${device.desktop} {
+  width: 2rem;
+  height: 2rem;d
+}
+`
+
+const ButtonContainer = styled.div`
+  margin: 1rem 0;
+
+  @media ${device.desktop} {
+    margin-bottom: 0;
+  }
+`
+
 const IndexPage = props => {
   return (
-    <Layout location={props.location}>
+    <Layout>
       <SEO title=" " />
       <Wrapper>
         <HeroContainer>
           <Hero />
         </HeroContainer>
 
-        <a id="work"></a>
-        <CaseStudy />
+        <a name="work" id="work" href=""></a>
+
+        <CaseStudyContainer>
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/monterey/montereylogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="Monterey"
+              subtitle="Icon Design"
+              date="Summer 2020"
+            />
+            <ButtonContainer>
+              <ButtonExternal
+                href="https://gumroad.com/l/dvctd"
+                text="Get Icons"
+                color="var(--color-primary)"
+                hoverBackground="var(--color-monterey-secondary)"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
+          <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
+            <ImageContainer>
+              <MontereyImage
+                src="/images/monterey/montereyimage.png"
+                alt=""
+                width={285}
+                height={569}
+              />
+            </ImageContainer>
+          </ProjectBG>
+        </CaseStudyContainer>
+
+        <CaseStudyContainer>
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/chalk/chalklogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="Chalk"
+              subtitle="Interaction and Visual Design"
+              date="Summer 2019"
+            />
+            <ButtonContainer>
+              <ButtonInternal
+                href="/chalk"
+                text="Read case study"
+                color="var(--color-chalk)"
+                hoverBackground="var(--color-chalk-secondary)"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
+          <ProjectBG projectBg="var(--color-chalk-secondary)">
+            <ImageContainer>
+              <ChalkImage
+                src="/images/chalk/chalkintro.png"
+                alt=""
+                width={285}
+                height={569}
+              />
+            </ImageContainer>
+          </ProjectBG>
+        </CaseStudyContainer>
+
+        <CaseStudyContainer>
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/expert/expertslogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="wikiHow Expert Profiles"
+              subtitle="Product and Visual Design"
+              date="Summer 2018"
+            />
+            <ButtonContainer>
+              <ButtonInternal
+                href="/experts"
+                text="Read case study"
+                color="var(--color-experts)"
+                hoverBackground="var(--color-experts-secondary)"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
+          <ProjectBG projectBg="var(--color-experts-secondary)">
+            <ExpertImageContainer>
+              <ExpertsImage
+                src="/images/expert/expertsintro.png"
+                alt=""
+                width={359}
+                height={490}
+              />
+            </ExpertImageContainer>
+          </ProjectBG>
+        </CaseStudyContainer>
 
         <SampleGrid>
-          <ProjectInfo
-            logo={props.data.visualLogo.childImageSharp.fluid}
-            title="Visual Design Sample"
-            subtitle="Client and Personal Work"
-            date="2014 - 2020"
-            text="View more"
-            asA="a"
-            href="https://dribbble.com/Gavin/"
-            target="blank"
-            rel="noopener noreferrer"
-          />
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/visual/visuallogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="Visual Design Sample"
+              subtitle="Client and Personal Work"
+              date="2014 - 2021"
+            />
+            <ButtonContainer>
+              <ButtonExternal
+                href="https://dribbble.com/Gavin/"
+                text="View more"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
 
-          <Shot image={props.data.blendergrapher.childImageSharp.fluid} />
-          <Shot image={props.data.fitbodapollo.childImageSharp.fluid} />
-          <Shot image={props.data.designIcons.childImageSharp.fluid} />
-          <Shot image={props.data.devIcons.childImageSharp.fluid} />
-          <Shot image={props.data.mailIcons.childImageSharp.fluid} />
+          <BlankContainer />
+          <Shot image="/images/visual/blendergrapher.png" />
+          <Shot image="/images/visual/fitbodapollo.png" />
+          <Shot image="/images/visual/designicons.png" />
+          <Shot image="/images/visual/devicons.png" />
+          <Shot image="/images/visual/mailicons.png" />
         </SampleGrid>
-
       </Wrapper>
     </Layout>
   )
 }
 
 export default IndexPage
-
-export const PageQuery = graphql`
-  query {
-    chalkLogo: file(relativePath: { eq: "chalk/chalklogo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 128) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    chalkIntro: file(relativePath: { eq: "chalk/chalkintro.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    expertsLogo: file(relativePath: { eq: "expert/expertslogo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 128) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    expertsIntro: file(relativePath: { eq: "expert/expertsintro.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    visualLogo: file(relativePath: { eq: "visual/visuallogo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 128) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    designIcons: file(relativePath: { eq: "visual/designicons.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    devIcons: file(relativePath: { eq: "visual/devicons.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    mailIcons: file(relativePath: { eq: "visual/mailicons.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    Swatches: file(relativePath: { eq: "visual/swatches.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    finderWindows: file(relativePath: { eq: "visual/finderwindows.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    wh1: file(relativePath: { eq: "visual/whicons.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    wh2: file(relativePath: { eq: "visual/whicons2.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    blendergrapher: file(relativePath: { eq: "visual/blendergrapher.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    fitbodapollo: file(relativePath: { eq: "visual/fitbodapollo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    illusLogo: file(relativePath: { eq: "illus/illuslogo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 128) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    avatar: file(relativePath: { eq: "illus/avatar.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    peace: file(relativePath: { eq: "illus/peace.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    shaka: file(relativePath: { eq: "illus/shaka.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    draw: file(relativePath: { eq: "illus/draw.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`

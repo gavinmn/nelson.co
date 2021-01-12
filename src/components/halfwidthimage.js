@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import Img from "gatsby-image"
+import Image from "next/image"
 import { device } from "./device"
 
-const HalfWidthImage = styled(Img)`
+const HalfWidthImage = styled.div`
   width: 100%;
   margin: 2rem auto;
   max-width: 444px;

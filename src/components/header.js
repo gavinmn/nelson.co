@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { useRouter } from "next/router"
+import Link from "next/link"
 import styled from "styled-components"
 import Wrapper from "./wrapper"
 import { device } from "./device"
@@ -25,7 +25,7 @@ const Container = styled.div`
   justify-content: flex-end;
 `
 
-const AboutLink = styled(Link)`
+const AboutLink = styled.a`
   margin-left: 1.5rem;
   color: ${props =>
     props.darkBackground
@@ -35,10 +35,11 @@ const AboutLink = styled(Link)`
       : "var(--wash-secondary)"};
 
   &:hover {
+    cursor: pointer;
     color: var(--color-primary);
   }
 `
-const WorkLink = styled(AnchorLink)`
+const WorkLink = styled.a`
   color: ${props =>
     props.shouldHighlight
       ? props.darkBackground
@@ -50,14 +51,16 @@ const WorkLink = styled(AnchorLink)`
   margin-bottom: 0;
 
   &:hover {
+    cursor: pointer;
     color: var(--color-primary);
   }
 `
-const Name = styled(Link)`
+const Name = styled.a`
   margin-right: auto;
   margin-left: 0;
   color: ${props => (props.darkBackground ? "#ffffff" : "var(--wash-primary)")};
   &:hover {
+    cursor: pointer;
     color: var(--color-primary);
   }
 `
@@ -79,44 +82,41 @@ const Header = props => {
     })
   }
 
+  const router = useRouter()
+
   useEffect(() => {
-    if (props.path !== "/") {
+    if (router.pathname !== "/") {
       setHighlight(true)
     } else {
       setHighlight(false)
     }
-    if (props.path === "/monterey" || props.path === "/monterey/") {
-      setShouldBeWhite(true)
-      setBgColor(true)
-    } else {
-      setBgColor(false)
-      setShouldBeWhite(false)
-    }
-  }, [props.path])
+  }, [router.pathname])
 
   return (
     <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
       <Wrapper>
         <Container>
-          <Name to="/" darkBackground={bgColor}>
-            Gavin Nelson
-          </Name>
-          <AboutLink
-            to="/"
-            darkBackground={bgColor}
-            isWhite={shouldBeWhite}
-            activeStyle={{ color: "var(--color-primary)" }}
-          >
-            About
-          </AboutLink>
-          <WorkLink
-            to="/#work"
-            darkBackground={bgColor}
-            stripHash
-            shouldHighlight={highlight}
-          >
-            Work
-          </WorkLink>
+          <Link href="/">
+            <Name darkBackground={bgColor}>Gavin Nelson</Name>
+          </Link>
+          <Link href="/">
+            <AboutLink
+              darkBackground={bgColor}
+              isWhite={shouldBeWhite}
+              activeStyle={{ color: "var(--color-primary)" }}
+            >
+              About
+            </AboutLink>
+          </Link>
+          <Link href="/#work" passhref>
+            <WorkLink
+              darkBackground={bgColor}
+              stripHash
+              shouldHighlight={highlight}
+            >
+              Work
+            </WorkLink>
+          </Link>
         </Container>
       </Wrapper>
     </StyledHeader>

@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	body {
 	  	background-color: var(--bg-hex);
-	  	font-family: 'National 2', -apple-system, BlinkMacSystemFont, sans-serif;
+	  	font-family: 'Sohne', -apple-system, BlinkMacSystemFont, sans-serif;
 	  	color: var(--wash-primary);
 	  	overflow-y: scroll;
 	  	overflow-x: auto;

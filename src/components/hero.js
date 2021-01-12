@@ -1,12 +1,11 @@
 import React, { useRef } from "react"
 import styled from "styled-components"
-import Logo from "./logo/logo"
+import Logo from "./logo"
 import Fade from "./fade"
 import Scale from "./scale"
 import { device } from "./device"
 import StyledLink from "./styledlink"
-import { useStaticQuery, graphql } from "gatsby"
-import ThreeDCanvas from "./threedcanvas"
+import Image from "next/image"
 
 const HeroContainer = styled.div`
   display: grid;
@@ -112,19 +111,6 @@ const GitHub = styled(StyledLink)`
 `
 
 const Hero = props => {
-  const images = useStaticQuery(graphql`
-    query {
-      montereyLogo: file(relativePath: { eq: "monterey/montereylogo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 256) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
-
-  const mouse = useRef([0, 0])
   return (
     <Fade>
       <Scale>
@@ -139,10 +125,34 @@ const Hero = props => {
             wikiHow.
           </HeroText>
           <LinkContainer>
-            <Email href="mailto:gavin@gnelson.me">Email</Email>
-            <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
-            <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
-            <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
+            <Email
+              href="mailto:gavin@gnelson.me"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email
+            </Email>
+            <Twitter
+              href="https://twitter.com/Gavmn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </Twitter>
+            <Dribbble
+              href="https://dribbble.com/Gavin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dribbble
+            </Dribbble>
+            <GitHub
+              href="https://github.com/gavinmn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </GitHub>
           </LinkContainer>
         </HeroContainer>
       </Scale>

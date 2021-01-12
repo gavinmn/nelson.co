@@ -1,10 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from "next/image"
 import styled from "styled-components"
-import "./fonts.css"
 
 import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
@@ -15,16 +13,6 @@ import Wrapper from "../components/wrapper"
 import SmallWrapper from "../components/smallwrapper"
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
-
-import chalkflow from "../images/chalk/chalkflow.mp4"
-import listenmode from "../images/chalk/listenmode.mp4"
-import talkmode from "../images/chalk/talkmode.mp4"
-import avatarswipe from "../images/chalk/avatarswipe.mp4"
-import colorchange from "../images/chalk/colorchange.mp4"
-import swipe1 from "../images/chalk/swipe1.mp4"
-import swipe2 from "../images/chalk/swipe2.mp4"
-import volumeslider from "../images/chalk/volumeslider.mp4"
-import actionbutton from "../images/chalk/actionbutton.mp4"
 
 const SingleVideoContainer = styled.div`
   margin: 2rem 0;
@@ -39,7 +27,7 @@ const SingleVideoContainer = styled.div`
   }
 `
 
-const PhoneBezel = styled(Img)`
+const PhoneBezelContainer = styled.div`
   width: 100%;
   max-width: 432px;
   pointer-events: none;
@@ -101,7 +89,7 @@ const QuadVideoContainer = styled.div`
 
 const chalkPage = props => (
   <Layout location={props.location}>
-    <SEO title="Chalk - " />
+    <SEO title="Chalk | " />
     <Wrapper>
       <Fade>
         <PortfolioContainer>
@@ -114,9 +102,18 @@ const chalkPage = props => (
           </SmallWrapper>
 
           <FullWidthImage
-            fluid={props.data.headerimage.childImageSharp.fluid}
+            src="/images/chalk/headerimage.png"
             alt=""
-          />
+            width="{816}"
+            height="{400}"
+          >
+            <Image
+              src="/images/chalk/headerimage.png"
+              alt=""
+              width={816}
+              height={400}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <h3>Project</h3>
@@ -126,10 +123,14 @@ const chalkPage = props => (
               their upcoming iOS application.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.projectimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/projectimage.png"
+                alt=""
+                width={444}
+                height={174}
+              />
+            </HalfWidthImage>
             <h3>Role</h3>
             <p>
               The team for this project was comprised of Chalk's
@@ -137,10 +138,14 @@ const chalkPage = props => (
               the role of product designer.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.roleimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/roleimage.png"
+                alt=""
+                width={444}
+                height={166}
+              />
+            </HalfWidthImage>
 
             <p>
               I was responsible for design ideation, iteration, prototyping, and
@@ -157,10 +162,14 @@ const chalkPage = props => (
               to understand the app.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.problemimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/problemimage.png"
+                alt=""
+                width={444}
+                height={428}
+              />
+            </HalfWidthImage>
 
             <h3>Goal</h3>
             <p>
@@ -169,10 +178,14 @@ const chalkPage = props => (
               control.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.goalimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/goalimage.png"
+                alt=""
+                width={444}
+                height={210}
+              />
+            </HalfWidthImage>
 
             <h3>Solution</h3>
             <p>
@@ -180,10 +193,14 @@ const chalkPage = props => (
               communication in the app.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.solutionimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/solutionimage.png"
+                alt=""
+                width={444}
+                height={100}
+              />
+            </HalfWidthImage>
 
             <p>
               In <i>Text</i> mode, the app functions similarly to your standard
@@ -207,12 +224,16 @@ const chalkPage = props => (
             </p>
 
             <SingleVideoContainer>
-              <PhoneBezel
-                fluid={props.data.iphonebezel.childImageSharp.fluid}
-                alt=""
-              />
+              <PhoneBezelContainer>
+                <Image
+                  src="/images/chalk/iphonebezel.png"
+                  alt=""
+                  width={432}
+                  height={864}
+                />
+              </PhoneBezelContainer>
               <SingleVideo width="375" playsInline autoPlay muted loop>
-                <source src={chalkflow} type="video/mp4" />
+                <source src="/images/chalk/chalkflow.mp4" type="video/mp4" />
               </SingleVideo>
             </SingleVideoContainer>
 
@@ -231,10 +252,10 @@ const chalkPage = props => (
 
           <DualVideoContainer>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={listenmode} type="video/mp4" />
+              <source src="/images/chalk/listenmode.mp4" type="video/mp4" />
             </MultiVideo>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={talkmode} type="video/mp4" />
+              <source src="/images/chalk/talkmode.mp4" type="video/mp4" />
             </MultiVideo>
           </DualVideoContainer>
 
@@ -250,10 +271,10 @@ const chalkPage = props => (
 
           <DualVideoContainer>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={avatarswipe} type="video/mp4" />
+              <source src="/images/chalk/avatarswipe.mp4" type="video/mp4" />
             </MultiVideo>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={colorchange} type="video/mp4" />
+              <source src="/images/chalk/colorchange.mp4" type="video/mp4" />
             </MultiVideo>
           </DualVideoContainer>
 
@@ -270,11 +291,15 @@ const chalkPage = props => (
               chat user who was always attached to their phone.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.personaimage.childImageSharp.fluid}
-              className="half-width-img"
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/personaimage.png"
+                className="half-width-img"
+                alt=""
+                width={444}
+                height={166}
+              />
+            </HalfWidthImage>
 
             <h3>Ideation</h3>
             <p>
@@ -284,10 +309,14 @@ const chalkPage = props => (
             </p>
           </SmallWrapper>
 
-          <FullWidthImage
-            fluid={props.data.sketchesimage.childImageSharp.fluid}
-            alt=""
-          />
+          <FullWidthImage>
+            <Image
+              src="/images/chalk/sketchesimage.png"
+              alt=""
+              width={816}
+              height={400}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <p>
@@ -306,16 +335,16 @@ const chalkPage = props => (
 
           <QuadVideoContainer>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={swipe1} type="video/mp4" />
+              <source src="/images/chalk/swipe1.mp4" type="video/mp4" />
             </MultiVideo>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={swipe2} type="video/mp4" />
+              <source src="/images/chalk/swipe2.mp4" type="video/mp4" />
             </MultiVideo>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={volumeslider} type="video/mp4" />
+              <source src="/images/chalk/volumeslider.mp4" type="video/mp4" />
             </MultiVideo>
             <MultiVideo playsInline autoPlay muted loop>
-              <source src={actionbutton} type="video/mp4" />
+              <source src="/images/chalk/actionbutton.mp4" type="video/mp4" />
             </MultiVideo>
           </QuadVideoContainer>
 
@@ -337,10 +366,14 @@ const chalkPage = props => (
               From these prototypes I lead the team in a decision making graph.
             </p>
 
-            <HalfWidthImage
-              fluid={props.data.graphimage.childImageSharp.fluid}
-              alt=""
-            />
+            <HalfWidthImage>
+              <Image
+                src="/images/chalk/graphimage.png"
+                alt=""
+                width={444}
+                height={302}
+              />
+            </HalfWidthImage>
 
             <p>
               This graph plotted each idea in terms of how easy it would be for
@@ -357,14 +390,22 @@ const chalkPage = props => (
             </p>
           </SmallWrapper>
 
-          <FullWidthImage
-            fluid={props.data.finaliconsimage.childImageSharp.fluid}
-            alt=""
-          />
-          <FullWidthImage
-            fluid={props.data.finalimage.childImageSharp.fluid}
-            alt=""
-          />
+          <FullWidthImage>
+            <Image
+              src="/images/chalk/finaliconsimage.png"
+              alt=""
+              width={816}
+              height={238}
+            />
+          </FullWidthImage>
+          <FullWidthImage>
+            <Image
+              src="/images/chalk/finalimage.png"
+              alt=""
+              width={816}
+              height={516}
+            />
+          </FullWidthImage>
 
           <SmallWrapper>
             <p>
@@ -379,99 +420,3 @@ const chalkPage = props => (
 )
 
 export default chalkPage
-
-export const ImageQuery = graphql`
-  query {
-    headerimage: file(relativePath: { eq: "chalk/headerimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    projectimage: file(relativePath: { eq: "chalk/projectimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    roleimage: file(relativePath: { eq: "chalk/roleimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    iphonebezel: file(relativePath: { eq: "chalk/iphonebezel.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 750) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    devicesimage: file(relativePath: { eq: "chalk/devicesimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    problemimage: file(relativePath: { eq: "chalk/problemimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    sketchesimage: file(relativePath: { eq: "chalk/sketchesimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    solutionimage: file(relativePath: { eq: "chalk/solutionimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    personaimage: file(relativePath: { eq: "chalk/personaimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    graphimage: file(relativePath: { eq: "chalk/graphimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    finalimage: file(relativePath: { eq: "chalk/finalimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    finaliconsimage: file(relativePath: { eq: "chalk/finaliconsimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1632) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    goalimage: file(relativePath: { eq: "chalk/goalimage.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 888) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
