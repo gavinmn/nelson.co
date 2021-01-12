@@ -40,7 +40,6 @@ const ProjectInfo = props => (
     />
     <ButtonContainer>
       <ButtonPrimary
-        asA={props.asA}
         href={props.href}
         text={props.text}
         color={props.backgroundColor}

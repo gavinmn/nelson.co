@@ -18,9 +18,9 @@
     "prettier": "2.2.1"
   },
   "keywords": [],
-  "license": "",
+  "license": "UNLICENSED",
   "scripts": {
-    "dev": "yarn dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""

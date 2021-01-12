@@ -36,7 +36,7 @@ const ButtonStyle = styled.a`
 `
 
 const ButtonPrimary = props => (
-  <Link href={props.href} as={props.asA}>
+  <Link href={props.href}>
     <ButtonStyle
       backgroundColor={props.color}
       hoverBackground={props.hoverBackground}
