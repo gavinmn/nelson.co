@@ -156,7 +156,7 @@ const IndexPage = props => {
           <Hero />
         </HeroContainer>
 
-        <a aria-label="Work" id="work" href=""></a>
+        <a aria-label="Work" id="work" href="/#work"></a>
 
         <CaseStudyContainer>
           <ProjectInfoContainer>
