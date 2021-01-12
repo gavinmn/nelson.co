@@ -28,12 +28,7 @@ const Container = styled.div`
 const AboutLink = styled.a`
   margin-left: 1.5rem;
   color: ${props =>
-    props.darkBackground
-      ? props.isWhite
-        ? "#ffffff"
-        : "var(--wash-primary)"
-      : "var(--wash-secondary)"};
-
+    props.shouldHighlightAbout ? "#ffffff" : "var(--wash-secondary)"};
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
@@ -41,11 +36,7 @@ const AboutLink = styled.a`
 `
 const WorkLink = styled.a`
   color: ${props =>
-    props.shouldHighlight
-      ? props.darkBackground
-        ? "#ffffff"
-        : "var(--wash-primary)"
-      : "var(--wash-secondary)"};
+    props.shouldHighlightWork ? "#ffffff" : "var(--wash-secondary)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -58,7 +49,7 @@ const WorkLink = styled.a`
 const Name = styled.a`
   margin-right: auto;
   margin-left: 0;
-  color: ${props => (props.darkBackground ? "#ffffff" : "var(--wash-primary)")};
+  color: var(--wash-primary);
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
@@ -66,10 +57,9 @@ const Name = styled.a`
 `
 
 const Header = props => {
-  const [shouldBeWhite, setShouldBeWhite] = useState(false)
   const [hasScrolled, setScroll] = useState(false)
-  const [highlight, setHighlight] = useState(false)
-  const [bgColor, setBgColor] = useState(false)
+  const [highlightWork, setHighlightWork] = useState(false)
+  const [highlightAbout, setHighlightAbout] = useState(true)
 
   if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
@@ -86,34 +76,26 @@ const Header = props => {
 
   useEffect(() => {
     if (router.pathname !== "/") {
-      setHighlight(true)
+      setHighlightAbout(false)
+      setHighlightWork(true)
     } else {
-      setHighlight(false)
+      setHighlightAbout(true)
+      setHighlightWork(false)
     }
   }, [router.pathname])
 
   return (
-    <StyledHeader scrolled={hasScrolled} darkBackground={bgColor}>
+    <StyledHeader scrolled={hasScrolled}>
       <Wrapper>
         <Container>
           <Link href="/">
-            <Name darkBackground={bgColor}>Gavin Nelson</Name>
+            <Name>Gavin Nelson</Name>
           </Link>
           <Link href="/">
-            <AboutLink
-              darkBackground={bgColor}
-              isWhite={shouldBeWhite}
-              activeStyle={{ color: "var(--color-primary)" }}
-            >
-              About
-            </AboutLink>
+            <AboutLink shouldHighlightAbout={highlightAbout}>About</AboutLink>
           </Link>
           <Link href="/#work" passhref>
-            <WorkLink
-              darkBackground={bgColor}
-              stripHash
-              shouldHighlight={highlight}
-            >
+            <WorkLink stripHash shouldHighlightWork={highlightWork}>
               Work
             </WorkLink>
           </Link>
