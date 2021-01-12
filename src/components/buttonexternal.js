@@ -35,14 +35,15 @@ const ButtonStyle = styled.a`
   }
 `
 
-const ButtonPrimary = props => (
-  <Link href={props.href}>
-    <ButtonStyle
-      backgroundColor={props.color}
-      hoverBackground={props.hoverBackground}
-    >
-      {props.text}
-    </ButtonStyle>
-  </Link>
+const ButtonExternal = props => (
+  <ButtonStyle
+    href={props.href}
+    backgroundColor={props.color}
+    hoverBackground={props.hoverBackground}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {props.text}
+  </ButtonStyle>
 )
-export default ButtonPrimary
+export default ButtonExternal

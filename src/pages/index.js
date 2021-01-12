@@ -8,6 +8,9 @@ import Shot from "../components/shot"
 import Wrapper from "../components/wrapper"
 import { device } from "../components/device"
 import Image from "next/image"
+import ProjectInfoText from "../components/projectinfotext"
+import ButtonInternal from "../components/buttoninternal"
+import ButtonExternal from "../components/buttonexternal"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -37,7 +40,7 @@ const BlankContainer = styled.div`
   height: 100%;
 `
 
-const Container = styled.div`
+const CaseStudyContainer = styled.div`
   margin-bottom: 4rem;
   display: grid;
   grid-template-columns: auto;
@@ -120,6 +123,30 @@ const ProjectBG = styled.div`
     margin-top: 0;
   }
 `
+const ProjectInfoContainer = styled.div`
+  @media only screen and (min-width: 445px) {
+    align-self: center;
+  }
+`
+
+const Logo = styled(Image)`
+margin-bottom: 0.5rem;
+width: 4rem;
+height: 4rem;
+
+@media ${device.desktop} {
+  width: 2rem;
+  height: 2rem;d
+}
+`
+
+const ButtonContainer = styled.div`
+  margin: 1rem 0;
+
+  @media ${device.desktop} {
+    margin-bottom: 0;
+  }
+`
 
 const IndexPage = props => {
   return (
@@ -132,17 +159,29 @@ const IndexPage = props => {
 
         <a id="work"></a>
 
-        <Container>
-          <ProjectInfo
-            logo="/images/monterey/montereylogo.png"
-            title="Monterey"
-            subtitle="Icon Design"
-            date="Summer 2020"
-            text="Get Icons"
-            backgroundColor="var(--color-primary)"
-            hoverBG="var(--color-monterey-secondary)"
-            href="https://gumroad.com/l/dvctd"
-          />
+        <CaseStudyContainer>
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/monterey/montereylogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="Monterey"
+              subtitle="Icon Design"
+              date="Summer 2020"
+            />
+            <ButtonContainer>
+              <ButtonExternal
+                href="https://gumroad.com/l/dvctd"
+                text="Get Icons"
+                color="var(--color-primary)"
+                hoverBackground="var(--color-monterey-secondary)"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
           <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
             <ImageContainer>
               <MontereyImage
@@ -153,18 +192,31 @@ const IndexPage = props => {
               />
             </ImageContainer>
           </ProjectBG>
-        </Container>
-        <Container>
-          <ProjectInfo
-            logo="/images/chalk/chalklogo.png"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-            date="Summer 2019"
-            text="Read case study"
-            backgroundColor="var(--color-chalk)"
-            hoverBG="var(--color-chalk-secondary)"
-            href="/chalk"
-          />
+        </CaseStudyContainer>
+
+        <CaseStudyContainer>
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/chalk/chalklogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="Chalk"
+              subtitle="Interaction and Visual Design"
+              date="Summer 2019"
+            />
+            <ButtonContainer>
+              <ButtonInternal
+                href="/chalk"
+                text="Read case study"
+                color="var(--color-chalk)"
+                hoverBackground="var(--color-chalk-secondary)"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
           <ProjectBG projectBg="var(--color-chalk-secondary)">
             <ImageContainer>
               <ChalkImage
@@ -175,19 +227,31 @@ const IndexPage = props => {
               />
             </ImageContainer>
           </ProjectBG>
-        </Container>
-        <Container>
-          <ProjectInfo
-            logo="/images/expert/expertslogo.png"
-            title="wikiHow Expert Profiles"
-            subtitle="Product and Visual Design"
-            date="Summer 2018"
-            text="Read case study"
-            backgroundColor="var(--color-experts)"
-            hoverBG="var(--color-experts-secondary)"
-            asA=""
-            href="/experts"
-          />
+        </CaseStudyContainer>
+
+        <CaseStudyContainer>
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/expert/expertslogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="wikiHow Expert Profiles"
+              subtitle="Product and Visual Design"
+              date="Summer 2018"
+            />
+            <ButtonContainer>
+              <ButtonInternal
+                href="/experts"
+                text="Read case study"
+                color="var(--color-experts)"
+                hoverBackground="var(--color-experts-secondary)"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
           <ProjectBG projectBg="var(--color-experts-secondary)">
             <ExpertImageContainer>
               <ExpertsImage
@@ -198,20 +262,30 @@ const IndexPage = props => {
               />
             </ExpertImageContainer>
           </ProjectBG>
-        </Container>
+        </CaseStudyContainer>
 
         <SampleGrid>
-          <ProjectInfo
-            logo="/images/visual/visuallogo.png"
-            title="Visual Design Sample"
-            subtitle="Client and Personal Work"
-            date="2014 - 2020"
-            text="View more"
-            asA="a"
-            href="https://dribbble.com/Gavin/"
-            target="blank"
-            rel="noopener noreferrer"
-          />
+          <ProjectInfoContainer>
+            <Logo
+              src="/images/visual/visuallogo.png"
+              alt=""
+              width={64}
+              height={64}
+              layout="intrinsic"
+            />
+            <ProjectInfoText
+              title="Visual Design Sample"
+              subtitle="Client and Personal Work"
+              date="2014 - 2021"
+            />
+            <ButtonContainer>
+              <ButtonExternal
+                href="https://dribbble.com/Gavin/"
+                text="View more"
+              />
+            </ButtonContainer>
+          </ProjectInfoContainer>
+
           <BlankContainer />
           <Shot image="/images/visual/blendergrapher.png" />
           <Shot image="/images/visual/fitbodapollo.png" />

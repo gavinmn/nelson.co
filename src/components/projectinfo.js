@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { device } from "./device"
 import ProjectInfoText from "./projectinfotext"
-import ButtonPrimary from "./buttonprimary"
+import ButtonInternal from "./buttoninternal"
 import Image from "next/image"
 
-const Container = styled.div`
+const ProjectInfoContainer = styled.div`
   @media only screen and (min-width: 445px) {
     align-self: center;
   }
@@ -18,7 +18,7 @@ const Logo = styled(Image)`
 
   @media ${device.desktop} {
     width: 2rem;
-    height: 2rem;
+    height: 2rem;d
   }
 `
 
@@ -31,7 +31,7 @@ const ButtonContainer = styled.div`
 `
 
 const ProjectInfo = props => (
-  <Container>
+  <ProjectInfoContainer>
     <Logo src={props.logo} alt="" width={64} height={64} layout="intrinsic" />
     <ProjectInfoText
       title={props.title}
@@ -39,14 +39,14 @@ const ProjectInfo = props => (
       date={props.date}
     />
     <ButtonContainer>
-      <ButtonPrimary
+      <ButtonInternal
         href={props.href}
         text={props.text}
         color={props.backgroundColor}
         hoverBackground={props.hoverBG}
       />
     </ButtonContainer>
-  </Container>
+  </ProjectInfoContainer>
 )
 
 export default ProjectInfo
