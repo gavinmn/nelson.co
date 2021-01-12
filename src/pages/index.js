@@ -156,7 +156,7 @@ const IndexPage = props => {
           <Hero />
         </HeroContainer>
 
-        <a name="work_anchor" id="work" href=""></a>
+        <a aria-label="Work" id="work" href=""></a>
 
         <CaseStudyContainer>
           <ProjectInfoContainer>
