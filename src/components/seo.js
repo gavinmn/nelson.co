@@ -7,11 +7,11 @@ export default function SEO({ description, title }) {
   return (
     <Head>
       <title>{`${title}${siteTitle}`}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={config.description} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:site_name" content={siteTitle} />
+      <meta property="og:title" content={config.title} />
+      <meta property="og:description" content={config.description} />
+      <meta property="og:site_name" content={config.siteTitle} />
       <meta
         property="og:image"
         content="https://gnelson.me/images/meta/og.png"
@@ -25,8 +25,8 @@ export default function SEO({ description, title }) {
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:creator" content={config.social.twitter} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
+      <meta property="twitter:title" content={config.title} />
+      <meta property="twitter:description" content={config.description} />
       <link
         href="https://gnelson.me/images/meta/favicon-180.png"
         rel="apple-touch-icon"
