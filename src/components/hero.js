@@ -125,10 +125,34 @@ const Hero = props => {
             wikiHow.
           </HeroText>
           <LinkContainer>
-            <Email href="mailto:gavin@gnelson.me">Email</Email>
-            <Twitter href="https://twitter.com/Gavmn">Twitter</Twitter>
-            <Dribbble href="https://dribbble.com/Gavin/">Dribbble</Dribbble>
-            <GitHub href="https://github.com/gavinmn">GitHub</GitHub>
+            <Email
+              href="mailto:gavin@gnelson.me"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email
+            </Email>
+            <Twitter
+              href="https://twitter.com/Gavmn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </Twitter>
+            <Dribbble
+              href="https://dribbble.com/Gavin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dribbble
+            </Dribbble>
+            <GitHub
+              href="https://github.com/gavinmn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </GitHub>
           </LinkContainer>
         </HeroContainer>
       </Scale>
