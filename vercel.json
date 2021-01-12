@@ -1,11 +1,10 @@
 {
   "version": 2,
   "redirects": [
-    { 
+    {
       "source": "/monterey",
-      "destination": "https://gumroad.com/l/dvctd", 
+      "destination": "https://gumroad.com/l/dvctd",
       "permanent": true
     }
   ]
-
 }
