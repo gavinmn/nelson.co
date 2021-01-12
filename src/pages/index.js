@@ -228,7 +228,7 @@ const IndexPage = props => {
           </ProjectBG>
         </CaseStudyContainer>
 
-        <CaseStudyContainer>
+        {/* <CaseStudyContainer>
           <ProjectInfoContainer>
             <Logo
               src="/images/expert/expertslogo.png"
@@ -261,7 +261,7 @@ const IndexPage = props => {
               />
             </ExpertImageContainer>
           </ProjectBG>
-        </CaseStudyContainer>
+        </CaseStudyContainer> */}
 
         <SampleGrid>
           <ProjectInfoContainer>
