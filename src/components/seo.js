@@ -44,6 +44,12 @@ export default function SEO({ description, title }) {
         sizes="16x16"
         type="image/png"
       />
+      <link
+        href="https://gnelson.me/images/meta/favicon-48.png"
+        rel="icon"
+        sizes="48x48"
+        type="image/png"
+      />
     </Head>
   )
 }
