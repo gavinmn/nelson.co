@@ -108,7 +108,7 @@ const Header = props => {
               About
             </AboutLink>
           </Link>
-          <Link href="/#work">
+          <Link href="/#work" passhref>
             <WorkLink
               darkBackground={bgColor}
               stripHash
