@@ -49,16 +49,16 @@ h3 {
 
 @media only screen and (min-width: 722px) {
   p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
   }
 
