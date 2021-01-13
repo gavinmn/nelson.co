@@ -80,6 +80,8 @@ const Card = props => {
   useEffect(() => {
     if (props.width == "double") {
       setDoubleWidth(true)
+    } else {
+      setDoubleWidth(false)
     }
   }, [props.width])
 

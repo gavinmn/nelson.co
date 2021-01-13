@@ -24,7 +24,7 @@ const HeroContainer = styled.div`
   }
 `
 
-const SampleGrid = styled.div`
+const CardGrid = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-gap: 16px;
@@ -32,100 +32,6 @@ const SampleGrid = styled.div`
 
   @media only screen and (min-width: 445px) {
     grid-template-columns: 49.01960784% 49.01960784%;
-  }
-`
-
-const BlankContainer = styled.div`
-  width: 100%;
-  height: 100%;
-`
-
-const CaseStudyContainer = styled.div`
-  margin-bottom: 4rem;
-  display: grid;
-  grid-template-columns: auto;
-  align-items: start;
-  transition: 0.2s ease-in-out;
-
-  @media only screen and (min-width: 445px) {
-    grid-template-columns: 50% 50%;
-  }
-`
-
-const ImageContainer = styled.div`
-  width: 88%;
-  max-width: 285px;
-  align-self: center;
-  justify-self: center;
-  pointer-events: none;
-  @media only screen and (min-width: 445px) {
-    margin-top: 0;
-  }
-`
-
-const ExpertImageContainer = styled.div`
-  width: 88%;
-  max-width: 384px;
-  align-self: center;
-  justify-self: end;
-
-  @media only screen and (min-width: 445px) {
-    margin-top: 0;
-  }
-`
-
-const MontereyImage = styled(Image)`
-  width: 88%;
-  max-width: 285px;
-  align-self: center;
-  justify-self: center;
-  pointer-events: none;
-
-  @media only screen and (min-width: 445px) {
-    margin-top: 0;
-  }
-`
-
-const ChalkImage = styled(Image)`
-  width: 88%;
-  max-width: 285px;
-  align-self: center;
-  justify-self: center;
-
-  @media only screen and (min-width: 445px) {
-    margin-top: 0;
-  }
-`
-
-const ExpertsImage = styled(Image)`
-  width: 88%;
-  max-width: 384px;
-  align-self: center;
-  justify-self: end;
-
-  @media only screen and (min-width: 445px) {
-    margin-top: 0;
-  }
-`
-
-const ProjectBG = styled.div`
-  width: 100%;
-  display: grid;
-  max-width: 400;
-  margin-top: 8px;
-  align-self: center;
-  justify-self: end;
-  background: ${props => props.projectBg};
-  border-radius: 16px;
-  padding: 1rem 0;
-
-  @media only screen and (min-width: 445px) {
-    margin-top: 0;
-  }
-`
-const ProjectInfoContainer = styled.div`
-  @media only screen and (min-width: 445px) {
-    align-self: center;
   }
 `
 
@@ -159,44 +65,27 @@ const IndexPage = props => {
 
         <a aria-label="Work" id="work" href="/#work"></a>
 
-        <CaseStudyContainer>
+        <CardGrid>
+          <Card
+            width="single"
+            title="Chalk"
+            subtitle="Interaction and Visual Design"
+            time="Summer 2019"
+          ></Card>
+
+          <Card
+            width="single"
+            title="Chalk"
+            subtitle="Interaction and Visual Design"
+            time="Summer 2019"
+          ></Card>
           <Card
             width="double"
-            title="Title"
-            subtitle="Subtitle"
-            time="Time"
+            title="Chalk"
+            subtitle="Interaction and Visual Design"
+            time="Summer 2019"
           ></Card>
-        </CaseStudyContainer>
-
-        <SampleGrid>
-          <ProjectInfoContainer>
-            <Logo
-              src="/images/visual/visuallogo.png"
-              alt=""
-              width={64}
-              height={64}
-              layout="intrinsic"
-            />
-            <ProjectInfoText
-              title="Visual Design Sample"
-              subtitle="Client and Personal Work"
-              date="2014 - 2021"
-            />
-            <ButtonContainer>
-              <ButtonExternal
-                href="https://dribbble.com/Gavin/"
-                text="View more"
-              />
-            </ButtonContainer>
-          </ProjectInfoContainer>
-
-          <BlankContainer />
-          <Shot image="/images/visual/blendergrapher.png" />
-          <Shot image="/images/visual/fitbodapollo.png" />
-          <Shot image="/images/visual/designicons.png" />
-          <Shot image="/images/visual/devicons.png" />
-          <Shot image="/images/visual/mailicons.png" />
-        </SampleGrid>
+        </CardGrid>
       </Wrapper>
     </Layout>
   )
