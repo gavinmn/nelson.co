@@ -35,7 +35,7 @@ const HeroText = styled.p`
   @media ${device.desktop} {
     margin-top: 0;
     justify-self: end;
-    max-width: 816px;
+    max-width: 506px;
   }
 `
 
@@ -52,7 +52,7 @@ const LinkContainer = styled.div`
   }
 
   @media ${device.desktop} {
-    margin-top: 0.75rem;
+    margin-top: 0;
     grid-row: 2;
     grid-column: right;
   }

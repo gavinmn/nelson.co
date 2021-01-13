@@ -12,7 +12,7 @@ const StyledLink = styled.a`
   }
 
   @media only screen and (min-width: 722px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `
 
