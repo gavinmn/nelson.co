@@ -33,6 +33,11 @@ export default function SEO({ description, title }) {
         sizes="180x180"
       />
       <link
+        href="https://gnelson.me/images/meta/favicon-120.png"
+        rel="apple-touch-icon"
+        sizes="120x120"
+      />
+      <link
         href="https://gnelson.me/images/meta/favicon-32.png"
         rel="icon"
         sizes="32x32"
