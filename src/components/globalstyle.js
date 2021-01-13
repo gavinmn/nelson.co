@@ -14,11 +14,11 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-hex: #ffffff;
 		--bg-rgba: rgba(255, 255, 255, .8);
 
-		--wash-primary: #1d1d1f;
+		--wash-primary: rgba(4,5,6,1);
 		--wash-secondary: #76767E;
 		
-		--color-primary: #1d1d1f;
-		--logo-primary: #1d1d1f;
+		--color-primary: rgba(4,5,6,1);
+		--logo-primary: rgba(4,5,6,1);
 
 		--color-monterey-secondary: ;
 
@@ -33,8 +33,8 @@ export const GlobalStyle = createGlobalStyle`
 		--github-text: #24292E;
 
 		@media(prefers-color-scheme: dark) {
-			--bg-hex: #1d1d1f;
-			--bg-rgba: rgba(29,29,31,0.8);
+			--bg-hex: rgba(4,5,6,1);
+			--bg-rgba: rgba(4,5,6,0.8);
 
 			--wash-primary: #ffffff;
 			--wash-secondary: #84848B; 
