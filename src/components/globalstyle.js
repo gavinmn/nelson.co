@@ -28,11 +28,10 @@ export const GlobalStyle = createGlobalStyle`
 		--color-experts: #22722D;
 		--color-experts-secondary: #F1FBF3;
 		
-		
-
 		--github-text: #24292E;
 
 		@media(prefers-color-scheme: dark) {
+			
 			--bg-hex: rgba(4,5,6,1);
 			--bg-rgba: rgba(4,5,6,0.8);
 
