@@ -14,11 +14,11 @@ const ButtonStyle = styled.a`
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  color: var(--bg-hex);
+  color: var(--bg-primary-hex);
 
   &:hover {
     cursor: pointer;
-    background: var(--bg-hex);
+    background: var(--bg-primary-hex);
     color: ${props => props.backgroundColor || "var(--color-primary)"};
     box-shadow: 0 0 0 1px
       ${props => props.backgroundColor || "var(--color-primary)"} inset;

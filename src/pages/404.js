@@ -22,7 +22,7 @@ const StyledText = styled.p`
 `
 
 const HereLink = styled(Link)`
-  color: var(--wash-secondary);
+  color: var(--text-secondary);
   font-size: 16px;
 
   &:hover {

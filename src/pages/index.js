@@ -10,6 +10,7 @@ import Image from "next/image"
 import ProjectInfoText from "../components/projectinfotext"
 import ButtonInternal from "../components/buttoninternal"
 import ButtonExternal from "../components/buttonexternal"
+import Card from "../components/card"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -159,109 +160,13 @@ const IndexPage = props => {
         <a aria-label="Work" id="work" href="/#work"></a>
 
         <CaseStudyContainer>
-          <ProjectInfoContainer>
-            <Logo
-              src="/images/monterey/montereylogo.png"
-              alt=""
-              width={64}
-              height={64}
-              layout="intrinsic"
-            />
-            <ProjectInfoText
-              title="Monterey"
-              subtitle="Icon Design"
-              date="Summer 2020"
-            />
-            <ButtonContainer>
-              <ButtonExternal
-                href="https://gumroad.com/l/dvctd"
-                text="Get Icons"
-                color="var(--color-primary)"
-                hoverBackground="var(--color-monterey-secondary)"
-              />
-            </ButtonContainer>
-          </ProjectInfoContainer>
-          <ProjectBG projectBg="linear-gradient(180deg, rgba(132, 159, 255, 0.2) 0%, rgba(36, 84, 255, 0) 100%);">
-            <ImageContainer>
-              <MontereyImage
-                src="/images/monterey/montereyimage.png"
-                alt=""
-                width={285}
-                height={569}
-              />
-            </ImageContainer>
-          </ProjectBG>
+          <Card
+            width="double"
+            title="Title"
+            subtitle="Subtitle"
+            time="Time"
+          ></Card>
         </CaseStudyContainer>
-
-        <CaseStudyContainer>
-          <ProjectInfoContainer>
-            <Logo
-              src="/images/chalk/chalklogo.png"
-              alt=""
-              width={64}
-              height={64}
-              layout="intrinsic"
-            />
-            <ProjectInfoText
-              title="Chalk"
-              subtitle="Interaction and Visual Design"
-              date="Summer 2019"
-            />
-            <ButtonContainer>
-              <ButtonInternal
-                href="/chalk"
-                text="Read case study"
-                color="var(--color-chalk)"
-                hoverBackground="var(--color-chalk-secondary)"
-              />
-            </ButtonContainer>
-          </ProjectInfoContainer>
-          <ProjectBG projectBg="var(--color-chalk-secondary)">
-            <ImageContainer>
-              <ChalkImage
-                src="/images/chalk/chalkintro.png"
-                alt=""
-                width={285}
-                height={569}
-              />
-            </ImageContainer>
-          </ProjectBG>
-        </CaseStudyContainer>
-
-        {/* <CaseStudyContainer>
-          <ProjectInfoContainer>
-            <Logo
-              src="/images/expert/expertslogo.png"
-              alt=""
-              width={64}
-              height={64}
-              layout="intrinsic"
-            />
-            <ProjectInfoText
-              title="wikiHow Expert Profiles"
-              subtitle="Product and Visual Design"
-              date="Summer 2018"
-            />
-            <ButtonContainer>
-              <ButtonInternal
-                href="/experts"
-                text="Read case study"
-                color="var(--color-experts)"
-                hoverBackground="var(--color-experts-secondary)"
-              />
-            </ButtonContainer>
-          </ProjectInfoContainer>
-          <ProjectBG projectBg="var(--color-experts-secondary)">
-            <ExpertImageContainer>
-              <ExpertsImage
-                src="/images/expert/expertsintro.png"
-                alt=""
-                width={359}
-                height={490}
-              />
-            </ExpertImageContainer>
-          </ProjectBG>
-        </CaseStudyContainer> */}
 
         <SampleGrid>
           <ProjectInfoContainer>

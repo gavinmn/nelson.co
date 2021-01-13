@@ -30,11 +30,13 @@
 
 a {
   text-decoration: none;
-  color: var(--wash-secondary);
+  color: var(--text-secondary);
+  font-weight: normal;
 }
 
 p {
   font-size: 16px;
+  font-weight: normal;
 }
 
 h1 {
@@ -43,12 +45,14 @@ h1 {
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: normal;
 }
 
 @media only screen and (min-width: 722px) {
@@ -56,9 +60,8 @@ h3 {
     font-size: 20px;
   }
 
-  h3 {
+  h2 {
     font-size: 20px;
-    font-weight: bold;
   }
 
   a {
