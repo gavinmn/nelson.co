@@ -10,6 +10,7 @@ const NextImageContainer = styled.div`
 `
 
 const CardBase = styled.div`
+  grid-column: ${props => (props.doubleWidth ? "1 / span 2" : "")};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -86,31 +87,29 @@ const Card = props => {
   }, [props.width])
 
   return (
-    <div>
-      <CardBase width={props.width} doubleWidth={doubleWidth}>
-        <CardImageContainer>
-          <NextImageContainer>
-            {/* <Image
+    <CardBase width={props.width} doubleWidth={doubleWidth}>
+      <CardImageContainer>
+        <NextImageContainer>
+          {/* <Image
           src={props.image}
           width={props.imageWidth}
           height={props.imageHeight}
         /> */}
-          </NextImageContainer>
-        </CardImageContainer>
-        <BottomSection>
-          <Text>
-            <h1>{props.title}</h1>
-            <h3>{props.subtitle}</h3>
-            <h3>
-              <i>{props.time}</i>
-            </h3>
-          </Text>
-          <Button>
-            <Arrow>􀰑</Arrow>
-          </Button>
-        </BottomSection>
-      </CardBase>
-    </div>
+        </NextImageContainer>
+      </CardImageContainer>
+      <BottomSection>
+        <Text>
+          <h1>{props.title}</h1>
+          <h3>{props.subtitle}</h3>
+          <h3>
+            <i>{props.time}</i>
+          </h3>
+        </Text>
+        <Button>
+          <Arrow>􀰑</Arrow>
+        </Button>
+      </BottomSection>
+    </CardBase>
   )
 }
 
