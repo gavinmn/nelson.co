@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Image from "next/image"
 import { device } from "../components/device"
 
+const ImageStatic = styled.div``
+
 const CardBase = styled.div`
   display: flex;
   flex-direction: column;
@@ -93,6 +95,7 @@ const Card = props => {
           src={props.imageSrc}
           width={`${props.imageWidth}`}
           height={`${props.imageHeight}`}
+          layout="fixed"
         />
       </CardImageContainer>
       <BottomSection>
