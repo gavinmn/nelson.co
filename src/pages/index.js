@@ -48,31 +48,35 @@ const IndexPage = props => {
 
         <CardGrid>
           <Card
-            width="single"
-            imageSrc="/images/index/chalkimage.png"
-            imageWidth="326"
-            imageHeight="294"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-            time="Summer 2019"
-          ></Card>
-          <Card
-            width="single"
-            imageSrc="/images/index/chalkimage.png"
-            imageWidth="326"
-            imageHeight="294"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-            time="Summer 2019"
-          ></Card>
-          <Card
             width="double"
             imageSrc="/images/index/montereyimage.png"
             imageWidth="816"
             imageHeight="294"
+            title="Monterey"
+            subtitle="Icon Design"
+            time="Summer 2020"
+          >
+            <ButtonInternal link="/chalk" />
+          </Card>
+          <Card
+            width="single"
+            imageSrc="/images/index/chalkimage.png"
+            imageWidth="326"
+            imageHeight="294"
             title="Chalk"
             subtitle="Interaction and Visual Design"
             time="Summer 2019"
+            link="/chalk"
+          ></Card>
+          <Card
+            width="single"
+            imageSrc="/images/index/chalkimage.png"
+            imageWidth="326"
+            imageHeight="294"
+            title="Chalk"
+            subtitle="Interaction and Visual Design"
+            time="Summer 2019"
+            link="/chalk"
           ></Card>
         </CardGrid>
       </Wrapper>

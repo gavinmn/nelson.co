@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Image from "next/image"
+import Link from "next/link"
 import { device } from "../components/device"
 
 const ImageStatic = styled.div``
@@ -52,31 +53,6 @@ const Text = styled.div`
   margin-right: 8px;
 `
 
-const Button = styled.div`
-  display: flex;
-  flex-grow: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 16px;
-  background-color: var(--blue-secondary);
-  border-radius: 4px;
-
-  &:hover {
-    cursor: pointer;
-    background-color: var(--blue-primary);
-    & > p {
-      color: var(--bg-primary-hex);
-    }
-  }
-`
-
-const Arrow = styled.p`
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--blue-primary);
-`
-
 const Card = props => {
   const [doubleWidth, setDoubleWidth] = useState(false)
 
@@ -106,9 +82,7 @@ const Card = props => {
             <i>{props.time}</i>
           </h3>
         </Text>
-        <Button>
-          <Arrow>􀰑</Arrow>
-        </Button>
+        {props.children}
       </BottomSection>
     </CardBase>
   )
