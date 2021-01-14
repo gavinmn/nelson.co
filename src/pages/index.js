@@ -83,16 +83,6 @@ const IndexPage = props => {
 
           <Card
             width="single"
-            imageSrc="/images/index/apollo.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Apollo Reddit"
-            subtitle="Icon Design"
-            time="Fall 2020"
-          ></Card>
-
-          <Card
-            width="single"
             imageSrc="/images/index/mosaic.png"
             imageWidth="816"
             imageHeight="294"
@@ -117,12 +107,32 @@ const IndexPage = props => {
 
           <Card
             width="single"
-            imageSrc="/images/index/blender.png"
+            imageSrc="/images/index/apollo.png"
             imageWidth="816"
             imageHeight="294"
-            title="Blender"
+            title="Apollo Reddit"
             subtitle="Icon Design"
-            time="Summer 2020"
+            time="Fall 2020"
+          ></Card>
+
+          <Card
+            width="double"
+            imageSrc="/images/index/slack.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Slack"
+            subtitle="Icon Design"
+            time="Winter 2020"
+          ></Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/instagram.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Instagram"
+            subtitle="Icon Design"
+            time="Winter 2020"
           ></Card>
 
           <Card
@@ -131,6 +141,25 @@ const IndexPage = props => {
             imageWidth="816"
             imageHeight="294"
             title="Xcode"
+            subtitle="Icon Design"
+            time="Summer 2020"
+          ></Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/notes.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Notes"
+            subtitle="Icon Design"
+            time="Summer 2020"
+          ></Card>
+          <Card
+            width="single"
+            imageSrc="/images/index/blender.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Blender"
             subtitle="Icon Design"
             time="Summer 2020"
           ></Card>
