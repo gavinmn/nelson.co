@@ -30,7 +30,7 @@ const CardGrid = styled.div`
   grid-gap: 16px;
   margin-bottom: 4rem;
 
-  @media only screen and (min-width: 445px) {
+  @media ${device.desktop} {
     grid-template-columns: 49.01960784% 49.01960784%;
   }
 `
@@ -47,6 +47,15 @@ const IndexPage = props => {
         <a aria-label="Work" id="work" href="/#work"></a>
 
         <CardGrid>
+          <Card
+            width="single"
+            imageSrc="/images/index/chalkimage.png"
+            imageWidth="326"
+            imageHeight="294"
+            title="Chalk"
+            subtitle="Interaction and Visual Design"
+            time="Summer 2019"
+          ></Card>
           <Card
             width="single"
             imageSrc="/images/index/chalkimage.png"

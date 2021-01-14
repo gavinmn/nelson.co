@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Image from "next/image"
+import { device } from "../components/device"
 
 const CardBase = styled.div`
-  grid-column: ${props => (props.doubleWidth ? "1 / span 2" : "")};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 0px 16px;
   background-color: var(--bg-secondary);
   border-radius: 8px;
-  max-width: ${props => (props.doubleWidth ? "816px" : "408px")};
+  max-width: 100%;
   height: 397px;
   overflow: hidden;
+
+  @media ${device.desktop} {
+    max-width: ${props => (props.doubleWidth ? "816px" : "408px")};
+    grid-column: ${props => (props.doubleWidth ? "1 / span 2" : "")};
+  }
 `
 
 const CardImageContainer = styled.div`
