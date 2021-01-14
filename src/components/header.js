@@ -92,10 +92,10 @@ const Header = props => {
     <StyledHeader scrolled={hasScrolled}>
       <Wrapper>
         <Container>
-          <Link href="/">
+          <Link href="/" passhref>
             <Name>Gavin Nelson</Name>
           </Link>
-          <Link href="/">
+          <Link href="/" passhref>
             <AboutLink shouldHighlightAbout={highlightAbout}>About</AboutLink>
           </Link>
           <Link href="/#work" passhref>
