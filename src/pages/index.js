@@ -35,25 +35,6 @@ const CardGrid = styled.div`
   }
 `
 
-const Logo = styled(Image)`
-margin-bottom: 0.5rem;
-width: 4rem;
-height: 4rem;
-
-@media ${device.desktop} {
-  width: 2rem;
-  height: 2rem;d
-}
-`
-
-const ButtonContainer = styled.div`
-  margin: 1rem 0;
-
-  @media ${device.desktop} {
-    margin-bottom: 0;
-  }
-`
-
 const IndexPage = props => {
   return (
     <Layout>
@@ -68,19 +49,18 @@ const IndexPage = props => {
         <CardGrid>
           <Card
             width="single"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-            time="Summer 2019"
-          ></Card>
-
-          <Card
-            width="single"
+            imageSrc="/images/index/chalkimage.png"
+            imageWidth="326"
+            imageHeight="294"
             title="Chalk"
             subtitle="Interaction and Visual Design"
             time="Summer 2019"
           ></Card>
           <Card
             width="double"
+            imageSrc="/images/index/montereyimage.png"
+            imageWidth="816"
+            imageHeight="294"
             title="Chalk"
             subtitle="Interaction and Visual Design"
             time="Summer 2019"

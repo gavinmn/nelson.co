@@ -2,13 +2,6 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Image from "next/image"
 
-const NextImageContainer = styled.div`
-  width: 392px;
-  height: 294px;
-  background-color: var(--blue-secondary);
-  justify-self: center;
-`
-
 const CardBase = styled.div`
   grid-column: ${props => (props.doubleWidth ? "1 / span 2" : "")};
   display: flex;
@@ -23,6 +16,7 @@ const CardBase = styled.div`
 `
 
 const CardImageContainer = styled.div`
+  height: 294px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,6 +42,7 @@ const Text = styled.div`
   flex-grow: 1;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 8px;
 `
 
 const Button = styled.div`
@@ -89,13 +84,11 @@ const Card = props => {
   return (
     <CardBase width={props.width} doubleWidth={doubleWidth}>
       <CardImageContainer>
-        <NextImageContainer>
-          {/* <Image
-          src={props.image}
-          width={props.imageWidth}
-          height={props.imageHeight}
-        /> */}
-        </NextImageContainer>
+        <Image
+          src={props.imageSrc}
+          width={`${props.imageWidth}`}
+          height={`${props.imageHeight}`}
+        />
       </CardImageContainer>
       <BottomSection>
         <Text>
