@@ -3,14 +3,12 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
-import Shot from "../components/shot"
 import Wrapper from "../components/wrapper"
 import { device } from "../components/device"
 import Image from "next/image"
-import ProjectInfoText from "../components/projectinfotext"
+import Card from "../components/card"
 import ButtonInternal from "../components/buttoninternal"
 import ButtonExternal from "../components/buttonexternal"
-import Card from "../components/card"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -56,6 +54,18 @@ const IndexPage = props => {
             subtitle="Icon Design"
             time="Summer 2020"
           >
+            <ButtonExternal link="https://gumroad.com/l/dvctd" />
+          </Card>
+          <Card
+            width="single"
+            imageSrc="/images/index/chalkimage.png"
+            imageWidth="326"
+            imageHeight="294"
+            title="Chalk"
+            subtitle="Interaction and Visual Design"
+            time="Summer 2019"
+            link="/chalk"
+          >
             <ButtonInternal link="/chalk" />
           </Card>
           <Card
@@ -67,17 +77,9 @@ const IndexPage = props => {
             subtitle="Interaction and Visual Design"
             time="Summer 2019"
             link="/chalk"
-          ></Card>
-          <Card
-            width="single"
-            imageSrc="/images/index/chalkimage.png"
-            imageWidth="326"
-            imageHeight="294"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-            time="Summer 2019"
-            link="/chalk"
-          ></Card>
+          >
+            <ButtonInternal link="/chalk" />
+          </Card>
         </CardGrid>
       </Wrapper>
     </Layout>
