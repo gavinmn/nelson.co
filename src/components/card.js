@@ -4,15 +4,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { device } from "../components/device"
 
-const ImageStatic = styled.div``
-
 const CardBase = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 0px 16px;
   background-color: var(--bg-secondary);
-  border-radius: 8px;
+  border-radius: 12px;
   max-width: 100%;
   height: 397px;
   overflow: hidden;
@@ -41,7 +38,7 @@ const BottomSection = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 0px 16px;
-  margin-top: 20px;
+  margin-top: 12px;
   align-self: stretch;
 `
 
@@ -69,6 +66,7 @@ const Card = props => {
       <CardImageContainer>
         <Image
           src={props.imageSrc}
+          alt=""
           width={`${props.imageWidth}`}
           height={`${props.imageHeight}`}
           layout="fixed"
@@ -77,10 +75,10 @@ const Card = props => {
       <BottomSection>
         <Text>
           <h1>{props.title}</h1>
-          <h3>{props.subtitle}</h3>
-          <h3>
+          <h2>{props.subtitle}</h2>
+          <h2>
             <i>{props.time}</i>
-          </h3>
+          </h2>
         </Text>
         {props.children}
       </BottomSection>
