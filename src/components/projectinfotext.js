@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Secondary from "./secondary"
 
 const Info = styled.p`
-  color: var(--wash-primary);
+  color: var(--text-primary);
   line-height: 1.25;
 `
 

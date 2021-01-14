@@ -11,16 +11,20 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	:root {
-		--bg-hex: #ffffff;
-		--bg-rgba: rgba(255, 255, 255, .8);
-
-		--wash-primary: rgba(4,5,6,1);
-		--wash-secondary: #76767E;
+		--bg-primary-hex: #ffffff;
+		--bg-primary-rgba: rgba(255, 255, 255, .8);
 		
-		--color-primary: rgba(4,5,6,1);
-		--logo-primary: rgba(4,5,6,1);
-
-		--color-monterey-secondary: ;
+		--bg-secondary: #F6F7F9;
+		
+		--text-primary: #212931;
+		--text-secondary: #627184;
+		
+		--blue-primary: #007AFF;
+		--blue-secondary: rgba(10,122,255,.1);
+		
+		// used for button hover states and logo (can remove)
+		--color-primary: #212931;
+		--logo-primary: #212931;
 
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
@@ -32,15 +36,24 @@ export const GlobalStyle = createGlobalStyle`
 
 		@media(prefers-color-scheme: dark) {
 			
-			--bg-hex: rgba(4,5,6,1);
-			--bg-rgba: rgba(4,5,6,0.8);
+			--bg-primary-hex: #040506;
+			--bg-primary-rgba: rgba(4,5,6,0.8);
+			
+			--bg-secondary: #0C0F12;
 
-			--wash-primary: #ffffff;
-			--wash-secondary: #84848B; 
-
+			--text-primary: #ffffff;
+			--text-secondary: #6C7E93; 
+			
+			--blue-primary: #0A84FF;
+			--blue-secondary: rgba(10,132,255,.1);
+			
+			
+			
+			// used for button hover states and logo
 			--color-primary: #ffffff;
 			--logo-primary: #ffffff;
-
+			
+			
 			--color-chalk: #1A83FF;
 			--color-chalk-secondary: #1A212D;
 
@@ -52,17 +65,17 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
-	  	background-color: var(--bg-hex);
+	  	background-color: var(--bg-primary-hex);
 	  	font-family: 'Sohne', -apple-system, BlinkMacSystemFont, sans-serif;
-	  	color: var(--wash-primary);
+	  	color: var(--text-primary);
 	  	overflow-y: scroll;
 	  	overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
 	}
 
 	body.dark {
-		background-color: var(--bg-hex);
-		color: var(--wash-primary);
+		background-color: var(--bg-primary-hex);
+		color: var(--text-primary);
 	}
 
 	html, body {
@@ -81,7 +94,7 @@ export const GlobalStyle = createGlobalStyle`
 	footer {
 	  	margin-bottom:2rem;
 	  	font-size: 14px;
-  		color: var(--wash-secondary);
+  		color: var(--text-secondary);
 	}
 
 	img {

@@ -10,7 +10,8 @@ const StyledHeader = styled.div`
   top: 0;
   width: 100%;
   padding: ${props => (props.scrolled ? ".5rem 0" : "1rem 0")};
-  background-color: ${props => (props.darkBackground ? "" : "var(--bg-rgba)")};
+  background-color: ${props =>
+    props.darkBackground ? "" : "var(--bg-primary-rgba)"};
   backdrop-filter: ${props => (props.scrolled ? "blur(6px)" : "")};
   z-index: ${props => (props.scrolled ? "10" : "1")};
   transition: padding 0.4s ease-in-out;
@@ -30,7 +31,7 @@ const AboutLink = styled.a`
   color: ${props =>
     props.shouldHighlightAbout
       ? "var(--color-primary)"
-      : "var(--wash-secondary)"};
+      : "var(--text-secondary)"};
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
@@ -40,7 +41,7 @@ const WorkLink = styled.a`
   color: ${props =>
     props.shouldHighlightWork
       ? "var(--color-primary)"
-      : "var(--wash-secondary)"};
+      : "var(--text-secondary)"};
   margin-left: 1.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -53,7 +54,7 @@ const WorkLink = styled.a`
 const Name = styled.a`
   margin-right: auto;
   margin-left: 0;
-  color: var(--wash-primary);
+  color: var(--text-primary);
   &:hover {
     cursor: pointer;
     color: var(--color-primary);

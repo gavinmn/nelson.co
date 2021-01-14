@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   overflow: hidden;
 `
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
