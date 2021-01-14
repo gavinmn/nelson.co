@@ -56,7 +56,7 @@ const expertsPage = props => (
           </FullWidthImage>
 
           <SmallWrapper>
-            <h2>Project</h2>
+            <h3>Project</h3>
             <p>
               I was assigned to this project as the sole product designer in the
               summer of 2018 at wikiHow. The project focused on designing an
@@ -73,7 +73,7 @@ const expertsPage = props => (
               />
             </HalfWidthImage>
 
-            <h2>Role</h2>
+            <h3>Role</h3>
             <p>
               The team for this project was comprised wikiHow's CEO acting as
               the primary product manager, the in house Experts Team, an
@@ -96,7 +96,7 @@ const expertsPage = props => (
 
             <br></br>
 
-            <h2>Problem</h2>
+            <h3>Problem</h3>
             <p>
               Through community feedback, the wikiHow team learned that the
               expert verified badges on our articles were not cutting it in
@@ -119,7 +119,7 @@ const expertsPage = props => (
 
             <br></br>
 
-            <h2>Goal</h2>
+            <h3>Goal</h3>
             <p>
               The goal of this project was to increase the authority and
               trustworthiness of the "expert verified" seal of approval on our
@@ -135,7 +135,7 @@ const expertsPage = props => (
               />
             </HalfWidthImage>
 
-            <h2>Stakeholder Constraints</h2>
+            <h3>Stakeholder Constraints</h3>
             <p>
               There were many stakeholder constraints in this project that came
               together to shape many of the final design decisions. Primarily,
@@ -162,7 +162,7 @@ const expertsPage = props => (
 
             <br></br>
 
-            <h2>Solution</h2>
+            <h3>Solution</h3>
             <p>
               My final designs focus on authority by providing details about the
               expert in a resume style format.
@@ -268,7 +268,7 @@ const expertsPage = props => (
 
             <br></br>
 
-            <h2>Context</h2>
+            <h3>Context</h3>
             <p>
               To provide some context for the design process on this project -
               stakeholders at wikiHow generally like to see high fidelity
@@ -318,7 +318,7 @@ const expertsPage = props => (
             </SingleVideo>
           </SingleVideoContainer>
           <SmallWrapper>
-            <h2>Development</h2>
+            <h3>Development</h3>
             <p>
               {" "}
               At the end of this iteration - critique - iteration process, I had
