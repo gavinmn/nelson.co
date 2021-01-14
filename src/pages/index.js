@@ -56,30 +56,84 @@ const IndexPage = props => {
           >
             <ButtonExternal link="https://gumroad.com/l/dvctd" />
           </Card>
+
           <Card
-            width="single"
+            width="double"
             imageSrc="/images/index/chalkimage.png"
-            imageWidth="326"
+            imageWidth="816"
             imageHeight="294"
             title="Chalk"
             subtitle="Interaction and Visual Design"
             time="Summer 2019"
-            link="/chalk"
           >
             <ButtonInternal link="/chalk" />
           </Card>
+
           <Card
             width="single"
-            imageSrc="/images/index/chalkimage.png"
-            imageWidth="326"
+            imageSrc="/images/index/claquette.png"
+            imageWidth="816"
             imageHeight="294"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-            time="Summer 2019"
-            link="/chalk"
+            title="Claquette"
+            subtitle="Icon Design"
+            time="Fall 2020"
           >
-            <ButtonInternal link="/chalk" />
+            <ButtonExternal link="https://www.peakstep.com/claquette/" />
           </Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/apollo.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Apollo Reddit"
+            subtitle="Icon Design"
+            time="Fall 2020"
+          ></Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/mosaic.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Mosaic"
+            subtitle="Icon Design"
+            time="Fall 2020"
+          >
+            <ButtonExternal link="https://mosaic.rcopstein.com" />
+          </Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/autooth.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Autooth"
+            subtitle="Icon Design"
+            time="Fall 2020"
+          >
+            <ButtonExternal link="https://app.airport.community/app/recGP4zZQMV3WB9LZ" />
+          </Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/blender.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Blender"
+            subtitle="Icon Design"
+            time="Summer 2020"
+          ></Card>
+
+          <Card
+            width="single"
+            imageSrc="/images/index/xcode.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Xcode"
+            subtitle="Icon Design"
+            time="Summer 2020"
+          ></Card>
         </CardGrid>
       </Wrapper>
     </Layout>

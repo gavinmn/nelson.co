@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "next/link"
 import styled from "styled-components"
 import { device } from "./device"
 
@@ -29,7 +28,7 @@ const Arrow = styled.p`
 `
 
 const ButtonExternal = props => (
-  <Button href={props.link}>
+  <Button href={props.link} target="_blank" rel="noopener noreferrer">
     <Arrow>→</Arrow>
   </Button>
 )
