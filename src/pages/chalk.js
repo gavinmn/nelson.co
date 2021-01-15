@@ -102,14 +102,13 @@ const chalkPage = props => (
       application.
     </p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/projectimage.png"
-        alt=""
-        width={444}
-        height={174}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/projectimage.png"
+      width="444"
+      height="174"
+    />
+
     <h3>Role</h3>
     <p>
       The team for this project was comprised of Chalk's Co-Founder/product
@@ -117,14 +116,12 @@ const chalkPage = props => (
       designer.
     </p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/roleimage.png"
-        alt=""
-        width={444}
-        height={166}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/roleimage.png"
+      width="444"
+      height="166"
+    />
 
     <p>
       I was responsible for design ideation, iteration, prototyping, and high
@@ -140,14 +137,12 @@ const chalkPage = props => (
       testing, and I was able to confirm as I tried to understand the app.
     </p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/problemimage.png"
-        alt=""
-        width={444}
-        height={428}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/problemimage.png"
+      width="444"
+      height="428"
+    />
 
     <h3>Goal</h3>
     <p>
@@ -156,14 +151,12 @@ const chalkPage = props => (
       control.
     </p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/goalimage.png"
-        alt=""
-        width={444}
-        height={210}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/goalimage.png"
+      width="444"
+      height="210"
+    />
 
     <h3>Solution</h3>
     <p>
@@ -171,14 +164,12 @@ const chalkPage = props => (
       communication in the app.
     </p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/solutionimage.png"
-        alt=""
-        width={444}
-        height={100}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/solutionimage.png"
+      width="444"
+      height="100"
+    />
 
     <p>
       In <i>Text</i> mode, the app functions similarly to your standard
@@ -262,15 +253,12 @@ const chalkPage = props => (
       was always attached to their phone.
     </p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/personaimage.png"
-        className="half-width-img"
-        alt=""
-        width={444}
-        height={166}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/personaimage.png"
+      width="444"
+      height="166"
+    />
 
     <h3>Ideation</h3>
     <p>
@@ -328,14 +316,12 @@ const chalkPage = props => (
 
     <p>From these prototypes I lead the team in a decision making graph.</p>
 
-    <HalfWidthImage>
-      <Image
-        src="/images/chalk/graphimage.png"
-        alt=""
-        width={444}
-        height={302}
-      />
-    </HalfWidthImage>
+    <CustomImage
+      size="half"
+      src="/images/chalk/graphimage.png"
+      width="444"
+      height="302"
+    />
 
     <p>
       This graph plotted each idea in terms of how easy it would be for users to
@@ -358,7 +344,7 @@ const chalkPage = props => (
       height="238"
     />
     <CustomImage
-      size="half"
+      size="full"
       src="/images/chalk/finalimage.png"
       width="816"
       height="516"
