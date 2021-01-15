@@ -53,6 +53,8 @@ export default class MyDocument extends Document {
             href="../fonts/soehne-web-dreiviertelfett.woff2"
             as="font"
           />
+
+          <link rel="dns-prefetch" href="https://gumroad.com/l/dvctd" />
         </Head>
 
         <body>
