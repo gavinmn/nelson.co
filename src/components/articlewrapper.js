@@ -17,10 +17,19 @@ const Container = styled.div`
 
 const ArticleWrapper = props => (
   <Layout>
-    <SEO title={`${props.pagetitle} - `} />
-    <Wrapper size={"large"}>
+    <SEO title={`${props.title} - `} />
+    <Wrapper size="large">
       <Fade>
-        <Container>{props.children}</Container>
+        <Container>
+          <Wrapper size="small">
+            <h1>{props.title}</h1>
+            <h2>{props.subtitle}</h2>
+            <h2>
+              <i>{props.time}</i>
+            </h2>
+            {props.children}
+          </Wrapper>
+        </Container>
       </Fade>
     </Wrapper>
   </Layout>
