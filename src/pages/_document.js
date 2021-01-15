@@ -46,7 +46,7 @@ export default class MyDocument extends Document {
           />
 
           <link rel="dns-prefetch" href="https://gumroad.com/l/dvctd" />
-          <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
+          <link rel="preconnect" href="https://vitals.vercel-insights.com" />
         </Head>
 
         <body>
