@@ -31,7 +31,7 @@ export default function SEO({ description, title }) {
       <link rel="preload" href="../fonts/soehne-web-buch-kursiv.woff" as="font">
       <link rel="preload" href="../fonts/soehne-web-buch-kursiv.woff2" as="font">
       <link rel="preload" href="../fonts/soehne-web-buch.woff" as="font">
-      <link rel="preload" href="..//fonts/soehne-web-buch.woff2" as="font">
+      <link rel="preload" href="../fonts/soehne-web-buch.woff2" as="font">
       <link rel="preload" href="../fonts/soehne-web-dreiviertelfett.woff" as="font">
       <link rel="preload" href="../fonts/soehne-web-dreiviertelfett.woff2" as="font">
       
