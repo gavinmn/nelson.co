@@ -3,7 +3,7 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import ArticleWrapper from "../components/articlewrapper"
-import FullWidthImage from "../components/fullwidthimage"
+import CustomImage from "../components/customimage"
 import HalfWidthImage from "../components/halfwidthimage"
 
 import StyledLink from "../components/styledlink"
@@ -88,7 +88,8 @@ const chalkPage = props => (
     subtitle="Interaction and Visual Design"
     time="Summer 2019"
   >
-    <FullWidthImage
+    <CustomImage
+      size="full"
       src="/images/chalk/headerimage.png"
       width="816"
       height="400"
@@ -278,7 +279,8 @@ const chalkPage = props => (
       more practical set.
     </p>
 
-    <FullWidthImage
+    <CustomImage
+      size="full"
       src="/images/chalk/sketchesimage.png"
       width="816"
       height="400"
@@ -349,12 +351,14 @@ const chalkPage = props => (
       details such as the icons for the modes.
     </p>
 
-    <FullWidthImage
+    <CustomImage
+      size="full"
       src="/images/chalk/finaliconsimage.png"
       width="816"
       height="238"
     />
-    <FullWidthImage
+    <CustomImage
+      size="half"
       src="/images/chalk/finalimage.png"
       width="816"
       height="516"
