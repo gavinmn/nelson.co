@@ -90,16 +90,16 @@ const QuadVideoContainer = styled.div`
 const chalkPage = props => (
   <Layout location={props.location}>
     <SEO title="Chalk | " />
-    <Wrapper>
+    <Wrapper size={"large"}>
       <Fade>
         <PortfolioContainer>
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <ProjectInfoText
               title="Chalk"
               subtitle="Interaction and Visual Design"
               date="Summer 2019"
             />
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage
             src="/images/chalk/headerimage.png"
@@ -115,7 +115,7 @@ const chalkPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <h3>Project</h3>
             <p>
               I worked with Chalk for approximately three months during the
@@ -248,7 +248,7 @@ const chalkPage = props => (
               the current mode such as anchoring time in listen mode and muting
               in talk mode.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <DualVideoContainer>
             <MultiVideo playsInline autoPlay muted loop>
@@ -259,7 +259,7 @@ const chalkPage = props => (
             </MultiVideo>
           </DualVideoContainer>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               Other data driven details of the reworked UI/UX include rings
               around the group avatars to indicate other users’ active modes,
@@ -267,7 +267,7 @@ const chalkPage = props => (
               the user is currently in, as well as a redesigned header to better
               comply with mobile design standards.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <DualVideoContainer>
             <MultiVideo playsInline autoPlay muted loop>
@@ -278,7 +278,7 @@ const chalkPage = props => (
             </MultiVideo>
           </DualVideoContainer>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               My design decisions were arrived at largely through qualitative
               user testing data and you can read more about my process below.
@@ -307,7 +307,7 @@ const chalkPage = props => (
               type mindset and through discussions with Chalk, narrowed the
               ideas down to a more practical set.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage>
             <Image
@@ -318,7 +318,7 @@ const chalkPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               The primary interaction models I would focus on from here were the
               action button model, full screen swipe model, and volume slider
@@ -331,7 +331,7 @@ const chalkPage = props => (
               interactive prototypes to gather qualitative user testing data and
               better communicate ideas to stakeholders.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <QuadVideoContainer>
             <MultiVideo playsInline autoPlay muted loop>
@@ -348,7 +348,7 @@ const chalkPage = props => (
             </MultiVideo>
           </QuadVideoContainer>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               User testing these prototypes brought some important learnings to
               the forefront. The volume slider model was discoverable, but was
@@ -388,7 +388,7 @@ const chalkPage = props => (
               From here I began developing some high fidelity mockups and
               working on details such as the icons for the modes.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage>
             <Image
@@ -407,12 +407,12 @@ const chalkPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               Through a handful of iterations these details came together to
               form the final product discussed in detail above.
             </p>
-          </SmallWrapper>
+          </Wrapper>
         </PortfolioContainer>
       </Fade>
     </Wrapper>

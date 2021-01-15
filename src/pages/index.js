@@ -37,7 +37,7 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title=" " />
-      <Wrapper>
+      <Wrapper size={"large"}>
         <HeroContainer>
           <Hero />
         </HeroContainer>

@@ -35,16 +35,16 @@ const SingleVideo = styled.video`
 const expertsPage = props => (
   <Layout location={props.location}>
     <SEO title="Expert Profiles | " />
-    <Wrapper>
+    <Wrapper size={"large"}>
       <Fade>
         <PortfolioContainer>
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <ProjectInfoText
               title="wikiHow Expert Profiles"
               subtitle="Product and Visual Design"
               date="Summer 2018"
             />
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage>
             <Image
@@ -55,7 +55,7 @@ const expertsPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <h3>Project</h3>
             <p>
               I was assigned to this project as the sole product designer in the
@@ -167,7 +167,7 @@ const expertsPage = props => (
               My final designs focus on authority by providing details about the
               expert in a resume style format.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage>
             <Image
@@ -178,7 +178,7 @@ const expertsPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               At the top, I created a header with the experts name, photo, and
               job title to create visual consistency with the verification
@@ -243,7 +243,7 @@ const expertsPage = props => (
               hand column between Education and Achievements, depending upon the
               expert.{" "}
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage>
             <Image
@@ -254,7 +254,7 @@ const expertsPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               Splitting the right hand section into either education or
               achievements was a data driven design decision - users reported
@@ -289,7 +289,7 @@ const expertsPage = props => (
               and from there got started high fidelity iteration and
               prototyping.
             </p>
-          </SmallWrapper>
+          </Wrapper>
 
           <FullWidthImage>
             <Image
@@ -300,7 +300,7 @@ const expertsPage = props => (
             />
           </FullWidthImage>
 
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <p>
               A stage of my iteration process that I greatly value and find
               vital in stakeholder communications is the prototyping stage. I
@@ -308,7 +308,7 @@ const expertsPage = props => (
               experts information and toggling sections on and off for design
               critiques to be able to illustrate more fleshed out ideas.{" "}
             </p>
-          </SmallWrapper>
+          </Wrapper>
           <SingleVideoContainer>
             <SingleVideo width="320" playsInline autoPlay muted loop>
               <source
@@ -317,7 +317,7 @@ const expertsPage = props => (
               />
             </SingleVideo>
           </SingleVideoContainer>
-          <SmallWrapper>
+          <Wrapper size={"small"}>
             <h3>Development</h3>
             <p>
               {" "}
@@ -341,7 +341,7 @@ const expertsPage = props => (
               exercise in working within stakeholder constraints and being
               flexible.
             </p>
-          </SmallWrapper>
+          </Wrapper>
         </PortfolioContainer>
       </Fade>
     </Wrapper>
