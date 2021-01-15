@@ -8,9 +8,7 @@ import ProjectInfoText from "../components/projectinfotext"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"
 import Fade from "../components/fade"
-import PortfolioContainer from "../components/portfoliocontainer"
 import Wrapper from "../components/wrapper"
-import SmallWrapper from "../components/smallwrapper"
 import { device } from "../components/device"
 
 const SingleVideoContainer = styled.div`
@@ -33,7 +31,7 @@ const SingleVideo = styled.video`
 `
 
 const expertsPage = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO title="Expert Profiles | " />
     <Wrapper size={"large"}>
       <Fade>
