@@ -1,15 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Image from "next/image"
 import styled from "styled-components"
 
 import ArticleWrapper from "../components/articlewrapper"
-import ProjectInfoText from "../components/projectinfotext"
+import Wrapper from "../components/wrapper"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"
-import Fade from "../components/fade"
-import Wrapper from "../components/wrapper"
+
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
 
@@ -95,21 +92,12 @@ const QuadVideoContainer = styled.div`
 `
 
 const chalkPage = props => (
-  <ArticleWrapper pagetitle="Chalk">
-    <Wrapper size={"small"}>
-      <ProjectInfoText
-        title="Chalk"
-        subtitle="Interaction and Visual Design"
-        date="Summer 2019"
-      />
-    </Wrapper>
-
-    <FullWidthImage
-      src="/images/chalk/headerimage.png"
-      alt=""
-      width="{816}"
-      height="{400}"
-    >
+  <ArticleWrapper
+    title="Chalk"
+    subtitle="Interaction and Visual Design"
+    time="Summer 2019"
+  >
+    <FullWidthImage>
       <Image
         src="/images/chalk/headerimage.png"
         alt=""
@@ -118,136 +106,134 @@ const chalkPage = props => (
       />
     </FullWidthImage>
 
-    <Wrapper size={"small"}>
-      <h3>Project</h3>
-      <p>
-        I worked with Chalk for approximately three months during the spring and
-        summer of 2019 to design the core user experience for their upcoming iOS
-        application.
-      </p>
+    <h3>Project</h3>
+    <p>
+      I worked with Chalk for approximately three months during the spring and
+      summer of 2019 to design the core user experience for their upcoming iOS
+      application.
+    </p>
 
-      <HalfWidthImage>
-        <Image
-          src="/images/chalk/projectimage.png"
-          alt=""
-          width={444}
-          height={174}
-        />
-      </HalfWidthImage>
-      <h3>Role</h3>
-      <p>
-        The team for this project was comprised of Chalk's Co-Founder/product
-        manager, an iOS engineer, and myself - assuming the role of product
-        designer.
-      </p>
+    <HalfWidthImage>
+      <Image
+        src="/images/chalk/projectimage.png"
+        alt=""
+        width={444}
+        height={174}
+      />
+    </HalfWidthImage>
+    <h3>Role</h3>
+    <p>
+      The team for this project was comprised of Chalk's Co-Founder/product
+      manager, an iOS engineer, and myself - assuming the role of product
+      designer.
+    </p>
 
-      <HalfWidthImage>
-        <Image
-          src="/images/chalk/roleimage.png"
-          alt=""
-          width={444}
-          height={166}
-        />
-      </HalfWidthImage>
+    <HalfWidthImage>
+      <Image
+        src="/images/chalk/roleimage.png"
+        alt=""
+        width={444}
+        height={166}
+      />
+    </HalfWidthImage>
 
-      <p>
-        I was responsible for design ideation, iteration, prototyping, and high
-        fidelity mockups throughout all stages of the project, and worked both
-        independently and with the team in their SF office.
-      </p>
+    <p>
+      I was responsible for design ideation, iteration, prototyping, and high
+      fidelity mockups throughout all stages of the project, and worked both
+      independently and with the team in their SF office.
+    </p>
+    <br></br>
+    <h3>Problem</h3>
+    <p>
+      The core messaging user experience was powerful but overly complicated,
+      proving difficult for new users to learn and tricky for power users to
+      control. This was something that Chalk found in their initial user
+      testing, and I was able to confirm as I tried to understand the app.
+    </p>
+
+    <HalfWidthImage>
+      <Image
+        src="/images/chalk/problemimage.png"
+        alt=""
+        width={444}
+        height={428}
+      />
+    </HalfWidthImage>
+
+    <h3>Goal</h3>
+    <p>
+      The goal of this project was to simplify and make this core user
+      experience component more intuitive to learn and more efficient to
+      control.
+    </p>
+
+    <HalfWidthImage>
+      <Image
+        src="/images/chalk/goalimage.png"
+        alt=""
+        width={444}
+        height={210}
+      />
+    </HalfWidthImage>
+
+    <h3>Solution</h3>
+    <p>
+      Chalk's value proposition was found in the three core modes of
+      communication in the app.
+    </p>
+
+    <HalfWidthImage>
+      <Image
+        src="/images/chalk/solutionimage.png"
+        alt=""
+        width={444}
+        height={100}
+      />
+    </HalfWidthImage>
+
+    <p>
+      In <i>Text</i> mode, the app functions similarly to your standard
+      messaging application. Users can send and receive text messages.
       <br></br>
-      <h3>Problem</h3>
-      <p>
-        The core messaging user experience was powerful but overly complicated,
-        proving difficult for new users to learn and tricky for power users to
-        control. This was something that Chalk found in their initial user
-        testing, and I was able to confirm as I tried to understand the app.
-      </p>
+      <br></br>In <i>Listen</i> mode the user still sends text messages, but can
+      hear their friends speaking via the phone's speaker or headphones.
+      <br></br>
+      <br></br>In <i>Talk</i> mode the users microphone is on and they can
+      communicate via voice for rapid fire group conversation.
+      <br></br>
+      <br></br>In addition to these three modes, there is an <i>anchoring</i>{" "}
+      setting that allows the user to lock the app in listen mode for a set
+      period of time, even while in the background.
+      <br></br>
+      <br></br>My final solution reworked the interaction model to feature a
+      primary action button in the bottom left corner of the screen that served
+      as a method of accessing the modes of communication.
+    </p>
 
-      <HalfWidthImage>
+    <SingleVideoContainer>
+      <PhoneBezelContainer>
         <Image
-          src="/images/chalk/problemimage.png"
+          src="/images/chalk/iphonebezel.png"
           alt=""
-          width={444}
-          height={428}
+          width={432}
+          height={864}
         />
-      </HalfWidthImage>
+      </PhoneBezelContainer>
+      <SingleVideo width="375" playsInline autoPlay muted loop>
+        <source src="/images/chalk/chalkflow.mp4" type="video/mp4" />
+      </SingleVideo>
+    </SingleVideoContainer>
 
-      <h3>Goal</h3>
-      <p>
-        The goal of this project was to simplify and make this core user
-        experience component more intuitive to learn and more efficient to
-        control.
-      </p>
-
-      <HalfWidthImage>
-        <Image
-          src="/images/chalk/goalimage.png"
-          alt=""
-          width={444}
-          height={210}
-        />
-      </HalfWidthImage>
-
-      <h3>Solution</h3>
-      <p>
-        Chalk's value proposition was found in the three core modes of
-        communication in the app.
-      </p>
-
-      <HalfWidthImage>
-        <Image
-          src="/images/chalk/solutionimage.png"
-          alt=""
-          width={444}
-          height={100}
-        />
-      </HalfWidthImage>
-
-      <p>
-        In <i>Text</i> mode, the app functions similarly to your standard
-        messaging application. Users can send and receive text messages.
-        <br></br>
-        <br></br>In <i>Listen</i> mode the user still sends text messages, but
-        can hear their friends speaking via the phone's speaker or headphones.
-        <br></br>
-        <br></br>In <i>Talk</i> mode the users microphone is on and they can
-        communicate via voice for rapid fire group conversation.
-        <br></br>
-        <br></br>In addition to these three modes, there is an <i>anchoring</i>{" "}
-        setting that allows the user to lock the app in listen mode for a set
-        period of time, even while in the background.
-        <br></br>
-        <br></br>My final solution reworked the interaction model to feature a
-        primary action button in the bottom left corner of the screen that
-        served as a method of accessing the modes of communication.
-      </p>
-
-      <SingleVideoContainer>
-        <PhoneBezelContainer>
-          <Image
-            src="/images/chalk/iphonebezel.png"
-            alt=""
-            width={432}
-            height={864}
-          />
-        </PhoneBezelContainer>
-        <SingleVideo width="375" playsInline autoPlay muted loop>
-          <source src="/images/chalk/chalkflow.mp4" type="video/mp4" />
-        </SingleVideo>
-      </SingleVideoContainer>
-
-      <LinkContainer>
-        <StyledLink href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">
-          View Interactive Prototype
-        </StyledLink>
-      </LinkContainer>
-      <p>
-        When a new mode is entered, a contextual button would appear next to the
-        action button to let the user control settings specific to the current
-        mode such as anchoring time in listen mode and muting in talk mode.
-      </p>
-    </Wrapper>
+    <LinkContainer>
+      <StyledLink href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">
+        View Interactive Prototype
+      </StyledLink>
+    </LinkContainer>
+    <p>
+      When a new mode is entered, a contextual button would appear next to the
+      action button to let the user control settings specific to the current
+      mode such as anchoring time in listen mode and muting in talk mode.
+    </p>
 
     <DualVideoContainer>
       <MultiVideo playsInline autoPlay muted loop>
@@ -258,7 +244,7 @@ const chalkPage = props => (
       </MultiVideo>
     </DualVideoContainer>
 
-    <Wrapper size={"small"}>
+    <Wrapper size="small">
       <p>
         Other data driven details of the reworked UI/UX include rings around the
         group avatars to indicate other users’ active modes, colored message
@@ -277,7 +263,7 @@ const chalkPage = props => (
       </MultiVideo>
     </DualVideoContainer>
 
-    <Wrapper size={"small"}>
+    <Wrapper size="small">
       <p>
         My design decisions were arrived at largely through qualitative user
         testing data and you can read more about my process below.
@@ -317,7 +303,7 @@ const chalkPage = props => (
       />
     </FullWidthImage>
 
-    <Wrapper size={"small"}>
+    <Wrapper size="small">
       <p>
         The primary interaction models I would focus on from here were the
         action button model, full screen swipe model, and volume slider model
@@ -347,7 +333,7 @@ const chalkPage = props => (
       </MultiVideo>
     </QuadVideoContainer>
 
-    <Wrapper size={"small"}>
+    <Wrapper size="small">
       <p>
         User testing these prototypes brought some important learnings to the
         forefront. The volume slider model was discoverable, but was initially a
@@ -404,7 +390,7 @@ const chalkPage = props => (
       />
     </FullWidthImage>
 
-    <Wrapper size={"small"}>
+    <Wrapper size="small">
       <p>
         Through a handful of iterations these details came together to form the
         final product discussed in detail above.
