@@ -3,20 +3,11 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import ArticleWrapper from "../components/articlewrapper"
-import Wrapper from "../components/wrapper"
 import FullWidthImage from "../components/fullwidthimage"
 import HalfWidthImage from "../components/halfwidthimage"
 
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
-
-const PortfolioContainer = styled.div`
-  margin: 8rem 0 4rem 0;
-
-  @media ${device.desktop} {
-    margin: 4rem 0 4rem 0;
-  }
-`
 
 const SingleVideoContainer = styled.div`
   margin: 2rem 0;
@@ -97,14 +88,11 @@ const chalkPage = props => (
     subtitle="Interaction and Visual Design"
     time="Summer 2019"
   >
-    <FullWidthImage>
-      <Image
-        src="/images/chalk/headerimage.png"
-        alt=""
-        width={816}
-        height={400}
-      />
-    </FullWidthImage>
+    <FullWidthImage
+      src="/images/chalk/headerimage.png"
+      width="816"
+      height="400"
+    />
 
     <h3>Project</h3>
     <p>
@@ -244,15 +232,13 @@ const chalkPage = props => (
       </MultiVideo>
     </DualVideoContainer>
 
-    <Wrapper size="small">
-      <p>
-        Other data driven details of the reworked UI/UX include rings around the
-        group avatars to indicate other users’ active modes, colored message
-        bubbles to further provide context on what mode the user is currently
-        in, as well as a redesigned header to better comply with mobile design
-        standards.
-      </p>
-    </Wrapper>
+    <p>
+      Other data driven details of the reworked UI/UX include rings around the
+      group avatars to indicate other users’ active modes, colored message
+      bubbles to further provide context on what mode the user is currently in,
+      as well as a redesigned header to better comply with mobile design
+      standards.
+    </p>
 
     <DualVideoContainer>
       <MultiVideo playsInline autoPlay muted loop>
@@ -263,60 +249,53 @@ const chalkPage = props => (
       </MultiVideo>
     </DualVideoContainer>
 
-    <Wrapper size="small">
-      <p>
-        My design decisions were arrived at largely through qualitative user
-        testing data and you can read more about my process below.
-      </p>
-      <br></br>
-      <h3>Process</h3>
-      <p>
-        Through discussions with Chalk, I learned that the most important user
-        to design for was the late teenager/early 20 something group chat user
-        who was always attached to their phone.
-      </p>
+    <p>
+      My design decisions were arrived at largely through qualitative user
+      testing data and you can read more about my process below.
+    </p>
+    <br></br>
+    <h3>Process</h3>
+    <p>
+      Through discussions with Chalk, I learned that the most important user to
+      design for was the late teenager/early 20 something group chat user who
+      was always attached to their phone.
+    </p>
 
-      <HalfWidthImage>
-        <Image
-          src="/images/chalk/personaimage.png"
-          className="half-width-img"
-          alt=""
-          width={444}
-          height={166}
-        />
-      </HalfWidthImage>
-
-      <h3>Ideation</h3>
-      <p>
-        I began making some quick sketches with a “no idea is too crazy” type
-        mindset and through discussions with Chalk, narrowed the ideas down to a
-        more practical set.
-      </p>
-    </Wrapper>
-
-    <FullWidthImage>
+    <HalfWidthImage>
       <Image
-        src="/images/chalk/sketchesimage.png"
+        src="/images/chalk/personaimage.png"
+        className="half-width-img"
         alt=""
-        width={816}
-        height={400}
+        width={444}
+        height={166}
       />
-    </FullWidthImage>
+    </HalfWidthImage>
 
-    <Wrapper size="small">
-      <p>
-        The primary interaction models I would focus on from here were the
-        action button model, full screen swipe model, and volume slider model
-        that you can see above.
-      </p>
-      <br></br>
-      <h3>Prototypes</h3>
-      <p>
-        From these sketches I quickly jumped into some higher fidelity
-        interactive prototypes to gather qualitative user testing data and
-        better communicate ideas to stakeholders.
-      </p>
-    </Wrapper>
+    <h3>Ideation</h3>
+    <p>
+      I began making some quick sketches with a “no idea is too crazy” type
+      mindset and through discussions with Chalk, narrowed the ideas down to a
+      more practical set.
+    </p>
+
+    <FullWidthImage
+      src="/images/chalk/sketchesimage.png"
+      width="816"
+      height="400"
+    />
+
+    <p>
+      The primary interaction models I would focus on from here were the action
+      button model, full screen swipe model, and volume slider model that you
+      can see above.
+    </p>
+    <br></br>
+    <h3>Prototypes</h3>
+    <p>
+      From these sketches I quickly jumped into some higher fidelity interactive
+      prototypes to gather qualitative user testing data and better communicate
+      ideas to stakeholders.
+    </p>
 
     <QuadVideoContainer>
       <MultiVideo playsInline autoPlay muted loop>
@@ -333,69 +312,57 @@ const chalkPage = props => (
       </MultiVideo>
     </QuadVideoContainer>
 
-    <Wrapper size="small">
-      <p>
-        User testing these prototypes brought some important learnings to the
-        forefront. The volume slider model was discoverable, but was initially a
-        bit confusing to users. The full screen swipe was not highly
-        discoverable and conflicted with many common iOS gestures already
-        ingrained in users. Finally the action button model had decent
-        discoverability, but would require some tweaking to have better
-        usability.
-      </p>
+    <p>
+      User testing these prototypes brought some important learnings to the
+      forefront. The volume slider model was discoverable, but was initially a
+      bit confusing to users. The full screen swipe was not highly discoverable
+      and conflicted with many common iOS gestures already ingrained in users.
+      Finally the action button model had decent discoverability, but would
+      require some tweaking to have better usability.
+    </p>
 
-      <br></br>
-      <h3>Decision Making</h3>
+    <br></br>
+    <h3>Decision Making</h3>
 
-      <p>From these prototypes I lead the team in a decision making graph.</p>
+    <p>From these prototypes I lead the team in a decision making graph.</p>
 
-      <HalfWidthImage>
-        <Image
-          src="/images/chalk/graphimage.png"
-          alt=""
-          width={444}
-          height={302}
-        />
-      </HalfWidthImage>
-
-      <p>
-        This graph plotted each idea in terms of how easy it would be for users
-        to adopt against how well it would fit in Chalk’s development timeline.
-        From my user testing and the teams best estimates, the action button
-        model was show to be the winner.
-      </p>
-
-      <br></br>
-      <h3>High Fidelity Details</h3>
-      <p>
-        From here I began developing some high fidelity mockups and working on
-        details such as the icons for the modes.
-      </p>
-    </Wrapper>
-
-    <FullWidthImage>
+    <HalfWidthImage>
       <Image
-        src="/images/chalk/finaliconsimage.png"
+        src="/images/chalk/graphimage.png"
         alt=""
-        width={816}
-        height={238}
+        width={444}
+        height={302}
       />
-    </FullWidthImage>
-    <FullWidthImage>
-      <Image
-        src="/images/chalk/finalimage.png"
-        alt=""
-        width={816}
-        height={516}
-      />
-    </FullWidthImage>
+    </HalfWidthImage>
 
-    <Wrapper size="small">
-      <p>
-        Through a handful of iterations these details came together to form the
-        final product discussed in detail above.
-      </p>
-    </Wrapper>
+    <p>
+      This graph plotted each idea in terms of how easy it would be for users to
+      adopt against how well it would fit in Chalk’s development timeline. From
+      my user testing and the teams best estimates, the action button model was
+      show to be the winner.
+    </p>
+
+    <br></br>
+    <h3>High Fidelity Details</h3>
+    <p>
+      From here I began developing some high fidelity mockups and working on
+      details such as the icons for the modes.
+    </p>
+
+    <FullWidthImage
+      src="/images/chalk/finaliconsimage.png"
+      width="816"
+      height="238"
+    />
+    <FullWidthImage
+      src="/images/chalk/finalimage.png"
+      width="816"
+      height="516"
+    />
+    <p>
+      Through a handful of iterations these details came together to form the
+      final product discussed in detail above.
+    </p>
   </ArticleWrapper>
 )
 

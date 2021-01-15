@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Image from "next/image"
 import { device } from "./device"
 
-const FullWidthImage = styled.div`
+const FullWidthImageContainer = styled.div`
   width: 100%;
   margin: 2rem auto;
 
@@ -12,5 +12,16 @@ const FullWidthImage = styled.div`
     max-width: 816px;
   }
 `
+
+const FullWidthImage = props => (
+  <FullWidthImageContainer>
+    <Image
+      src={props.src}
+      alt=""
+      width={`${props.width}`}
+      height={`${props.height}`}
+    />
+  </FullWidthImageContainer>
+)
 
 export default FullWidthImage

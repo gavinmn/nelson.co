@@ -3,9 +3,8 @@ import Image from "next/image"
 import styled from "styled-components"
 
 import ArticleWrapper from "../components/articlewrapper"
-import Wrapper from "../components/wrapper"
-
 import FullWidthImage from "../components/fullwidthimage"
+
 import HalfWidthImage from "../components/halfwidthimage"
 import { device } from "../components/device"
 
