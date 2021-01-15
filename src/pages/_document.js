@@ -33,28 +33,20 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="../fonts/soehne-web-buch-kursiv.woff"
+            href="/fonts/soehne-web-buch-kursiv.woff2"
             as="font"
           />
+
+          <link rel="preload" href="/fonts/soehne-web-buch.woff2" as="font" />
+
           <link
             rel="preload"
-            href="../fonts/soehne-web-buch-kursiv.woff2"
-            as="font"
-          />
-          <link rel="preload" href="../fonts/soehne-web-buch.woff" as="font" />
-          <link rel="preload" href="../fonts/soehne-web-buch.woff2" as="font" />
-          <link
-            rel="preload"
-            href="../fonts/soehne-web-dreiviertelfett.woff"
-            as="font"
-          />
-          <link
-            rel="preload"
-            href="../fonts/soehne-web-dreiviertelfett.woff2"
+            href="/fonts/soehne-web-dreiviertelfett.woff2"
             as="font"
           />
 
           <link rel="dns-prefetch" href="https://gumroad.com/l/dvctd" />
+          <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
         </Head>
 
         <body>

@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Sohne";
-  src: url(../fonts/soehne-web-buch.woff) format("woff"),
-    url(../fonts/soehne-web-buch.woff2) format("woff2");
+  src: url(/public/fonts/soehne-web-buch.woff2) format("woff2");
 
   font-weight: normal;
   font-style: normal;
@@ -10,8 +9,7 @@
 
 @font-face {
   font-family: "Sohne";
-  src: url(../fonts/soehne-web-buch-kursiv.woff) format("woff"),
-    url(../fonts/soehne-web-buch-kursiv.woff2) format("woff2");
+  src: url(/public/fonts/soehne-web-buch-kursiv.woff2) format("woff2");
 
   font-weight: normal;
   font-style: italic;
@@ -20,8 +18,7 @@
 
 @font-face {
   font-family: "Sohne";
-  src: url(../fonts/soehne-web-dreiviertelfett.woff) format("woff"),
-    url(../fonts/soehne-web-dreiviertelfett.woff2) format("woff2");
+  src: url(/public/fonts/soehne-web-dreiviertelfett.woff2) format("woff2");
 
   font-weight: bold;
   font-style: normal;
