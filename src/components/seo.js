@@ -27,6 +27,7 @@ export default function SEO({ description, title }) {
       <meta property="twitter:creator" content={config.social.twitter} />
       <meta property="twitter:title" content="gnelson.me" />
       <meta property="twitter:description" content={config.description} />
+
       <link
         href="https://gnelson.me/images/meta/favicon-180.png"
         rel="apple-touch-icon"
