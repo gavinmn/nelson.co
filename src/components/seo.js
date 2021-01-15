@@ -27,14 +27,7 @@ export default function SEO({ description, title }) {
       <meta property="twitter:creator" content={config.social.twitter} />
       <meta property="twitter:title" content="gnelson.me" />
       <meta property="twitter:description" content={config.description} />
-      
-      <link rel="preload" href="../fonts/soehne-web-buch-kursiv.woff" as="font">
-      <link rel="preload" href="../fonts/soehne-web-buch-kursiv.woff2" as="font">
-      <link rel="preload" href="../fonts/soehne-web-buch.woff" as="font">
-      <link rel="preload" href="../fonts/soehne-web-buch.woff2" as="font">
-      <link rel="preload" href="../fonts/soehne-web-dreiviertelfett.woff" as="font">
-      <link rel="preload" href="../fonts/soehne-web-dreiviertelfett.woff2" as="font">
-      
+
       <link
         href="https://gnelson.me/images/meta/favicon-180.png"
         rel="apple-touch-icon"
