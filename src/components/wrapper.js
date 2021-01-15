@@ -3,10 +3,10 @@ import styled from "styled-components"
 import { device } from "./device"
 
 const StyledWrapper = styled.div`
-  max-width: ${props => (props.large ? "816px" : "630px")};
+  max-width: ${props => (props.large ? "816px" : "624px")};
   margin: 0 auto;
-  padding: 0 5% 0 5%;
-  overflow: hidden;
+  padding: ${props => (props.large ? "0 5% 0 5%" : "0")};
+  // overflow: hidden;
 `
 
 const Wrapper = props => {
