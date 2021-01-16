@@ -91,7 +91,7 @@ const Header = props => {
 
   return (
     <StyledHeader scrolled={hasScrolled}>
-      <Wrapper>
+      <Wrapper size={"large"}>
         <Container>
           <Link href="/" passhref>
             <Name>Gavin Nelson</Name>

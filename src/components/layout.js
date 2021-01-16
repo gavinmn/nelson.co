@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header />
       <main>{children}</main>
-      <Wrapper>
+      <Wrapper size={"large"}>
         <footer>
           Designed and Developed by Gavin Nelson<br></br>©{" "}
           {new Date().getFullYear()} Gavin Nelson

@@ -57,6 +57,12 @@ h3 {
     font-size: 20px;
   }
 
+  h2 {
+    font-size: 16px;
+    color: var(--text-secondary);
+    font-weight: normal;
+  }
+
   h3 {
     font-size: 20px;
   }
