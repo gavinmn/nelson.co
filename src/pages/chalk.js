@@ -94,6 +94,7 @@ const chalkPage = props => (
     />
 
     <h3>Project</h3>
+
     <p>
       I worked with Chalk for approximately three months during the spring and
       summer of 2019 to design the core user experience for their upcoming iOS

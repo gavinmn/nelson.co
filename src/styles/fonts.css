@@ -31,7 +31,20 @@ a {
   font-weight: normal;
 }
 
-p {
+ul {
+  list-style-type: disc;
+}
+
+ul > li {
+  margin-left: 0.5rem;
+}
+
+li::marker {
+  color: var(--text-secondary);
+}
+
+p,
+li {
   font-size: 16px;
   font-weight: normal;
 }
@@ -55,7 +68,8 @@ h3 {
 }
 
 @media only screen and (min-width: 722px) {
-  p {
+  p,
+  li {
     font-size: 20px;
   }
 
