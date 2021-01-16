@@ -119,7 +119,6 @@ const GitHub = styled(StyledLink)`
 
   &:hover {
     color: var(--github-text);
-    /* background: var(--github-bg); */
   }
 `
 
