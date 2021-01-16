@@ -1,11 +1,9 @@
 import React from "react"
-import Image from "next/image"
 import styled from "styled-components"
+import Image from "next/image"
 
 import ArticleWrapper from "../components/articlewrapper"
 import CustomImage from "../components/customimage"
-import HalfWidthImage from "../components/halfwidthimage"
-
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
 
