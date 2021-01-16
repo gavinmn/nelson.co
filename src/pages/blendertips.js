@@ -9,8 +9,8 @@ import { device } from "../components/device"
 const BlenderTips = props => (
   <PostWrapper
     title="Blender Tips"
-    subtitle="A collection of Blender tips I wish I knew when getting started."
-    time="January, 2021"
+    subtitle="A list of tips to help shrink the learning curve"
+    time="January xxx, 2021"
   >
     <CustomImage
       size="full"
@@ -23,7 +23,8 @@ const BlenderTips = props => (
       <PostLink link="https://github.com/blender/blender">
         open-source{" "}
       </PostLink>
-      3D creative tool that I often use for design work.
+      3D creative tool. This collection of tips is aimed to help lessen
+      Blender's generally steep learning curve.
     </p>
   </PostWrapper>
 )

@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-secondary: #F5F7FA;
 		
 		--text-primary: #212931;
-		--text-secondary: #5C718A;
+		--text-secondary: #517095;
 		
 		--blue-primary: #007AFF;
 		--blue-secondary: rgba(10,122,255,.1);
