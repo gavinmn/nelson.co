@@ -45,6 +45,7 @@ const HeroText = styled.p`
   max-width: 506px;
 
   @media ${device.desktop} {
+    font-size: 20px;
     margin-top: 0;
     justify-self: end;
     max-width: 506px;
