@@ -8,8 +8,6 @@
     {
       "content" : "import React from \"react\"\nimport styled from \"styled-components\"\n\nconst Component = props => (\n <div><\/div>\n)\n\nexport default Component\n",
       "name" : "Component",
-      "scope" : "editor",
-      "syntax" : "jsx",
       "trigger" : "com"
     }
   ]
