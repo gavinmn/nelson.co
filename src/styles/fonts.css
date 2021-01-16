@@ -31,6 +31,14 @@ a {
   font-weight: normal;
 }
 
+code {
+  font-size: 16px;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
 ul {
   list-style-type: disc;
 }
