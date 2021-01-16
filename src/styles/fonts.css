@@ -31,16 +31,26 @@ a {
   font-weight: normal;
 }
 
+code {
+  font-size: 14px;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 0.15rem 0.2rem;
+  border-radius: 4px;
+}
+
 ul {
   list-style-type: disc;
 }
 
 ul > li {
-  margin-left: 0.5rem;
+  margin-left: 2rem;
+  line-height: 2;
 }
 
 li::marker {
   color: var(--text-secondary);
+  font-size: 14px;
 }
 
 p,
@@ -64,13 +74,29 @@ h3 {
   font-size: 15px;
   font-weight: bold;
   color: var(--text-secondary);
-  margin: 1rem 0 0.5rem 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
 @media only screen and (min-width: 722px) {
+  code {
+    font-size: 16px;
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    padding: 0.15rem 0.2rem;
+    border-radius: 4px;
+  }
+
+  ul > li {
+    margin-left: 1rem;
+  }
+
+  li::marker {
+    font-size: 16px;
+  }
+
   p,
   li {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h2 {
@@ -80,7 +106,8 @@ h3 {
   }
 
   h3 {
-    font-size: 19px;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 17px;
   }
 
   a {
