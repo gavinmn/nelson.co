@@ -23,7 +23,7 @@ const SingleVideo = styled.video`
   max-width: 100%;
 
   @media ${device.desktop} {
-    width: 200%;
+    width: 100%;
     max-width: 816px;
   }
 `
