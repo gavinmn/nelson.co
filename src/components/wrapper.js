@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import { device } from "./device"
 
 const StyledWrapper = styled.div`
   max-width: ${props => (props.large ? "816px" : "624px")};

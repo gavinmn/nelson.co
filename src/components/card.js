@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Image from "next/image"
-import Link from "next/link"
 import { device } from "../components/device"
 
 const CardBase = styled.div`

@@ -1,7 +1,7 @@
 import Head from "next/head"
 import config from "../config"
 
-export default function SEO({ description, title }) {
+export default function SEO({ title }) {
   const siteTitle = config.title
 
   return (

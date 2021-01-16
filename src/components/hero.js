@@ -1,10 +1,9 @@
-import React, { useRef } from "react"
+import React from "react"
 import styled from "styled-components"
 import Logo from "./logo"
 import Fade from "./fade"
 import { device } from "./device"
 import StyledLink from "./styledlink"
-import Image from "next/image"
 import { keyframes } from "styled-components"
 
 const scaleIn = keyframes`
