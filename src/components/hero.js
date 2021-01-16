@@ -2,10 +2,23 @@ import React, { useRef } from "react"
 import styled from "styled-components"
 import Logo from "./logo"
 import Fade from "./fade"
-import Scale from "./scale"
 import { device } from "./device"
 import StyledLink from "./styledlink"
 import Image from "next/image"
+import { keyframes } from "styled-components"
+
+const scaleIn = keyframes`
+    from {
+        transform: scale(.98);
+    }
+    to {
+        transform: scale(1);
+    }
+`
+
+const Scale = styled.div`
+  animation: ${scaleIn} 0.6s ease-out;
+`
 
 const HeroContainer = styled.div`
   display: grid;
