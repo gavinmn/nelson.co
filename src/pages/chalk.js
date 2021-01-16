@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Image from "next/image"
 
-import ArticleWrapper from "../components/articlewrapper"
+import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
@@ -81,7 +81,7 @@ const QuadVideoContainer = styled.div`
 `
 
 const chalkPage = props => (
-  <ArticleWrapper
+  <PostWrapper
     title="Chalk"
     subtitle="Interaction and Visual Design"
     time="Summer 2019"
@@ -352,7 +352,7 @@ const chalkPage = props => (
       Through a handful of iterations these details came together to form the
       final product discussed in detail above.
     </p>
-  </ArticleWrapper>
+  </PostWrapper>
 )
 
 export default chalkPage

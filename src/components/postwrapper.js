@@ -15,7 +15,7 @@ const Container = styled.div`
   }
 `
 
-const ArticleWrapper = props => (
+const PostWrapper = props => (
   <Layout>
     <SEO title={`${props.title} - `} />
     <Wrapper size="large">
@@ -35,4 +35,4 @@ const ArticleWrapper = props => (
   </Layout>
 )
 
-export default ArticleWrapper
+export default PostWrapper

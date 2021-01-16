@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 import styled from "styled-components"
 
-import ArticleWrapper from "../components/articlewrapper"
+import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
@@ -29,7 +29,7 @@ const SingleVideo = styled.video`
 `
 
 const expertsPage = props => (
-  <ArticleWrapper
+  <PostWrapper
     title="Expert Profiles"
     subtitle="Product and Visual Design"
     time="Summer 2018"
@@ -288,7 +288,7 @@ const expertsPage = props => (
       software update. Overall, this project was a great exercise in working
       within stakeholder constraints and being flexible.
     </p>
-  </ArticleWrapper>
+  </PostWrapper>
 )
 
 export default expertsPage
