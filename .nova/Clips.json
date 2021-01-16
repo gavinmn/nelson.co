@@ -1,0 +1,11 @@
+{
+  "clips" : [
+    {
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport Image from \"next\/image\"\nimport ArticleWrapper from \"..\/components\/articlewrapper\"\nimport CustomImage from \"..\/components\/customimage\"\nimport StyledLink from \"..\/components\/styledlink\"\nimport { device } from \"..\/components\/device\"\n\n\nconst ARTICLENAME = props => (\n  <ArticleWrapper\n\ttitle=\"Chalk\"\n\tsubtitle=\"Interaction and Visual Design\"\n\ttime=\"Summer 2019\"\n  >\n\t<CustomImage\n\t  size=\"full\"\n\t  src=\"\/images\/\"\n\t  width=\"816\"\n\t  height=\"400\"\n\t\/>\n\n  <\/ArticleWrapper>\n)\n\nexport default ARTICLENAME\n",
+      "name" : "Article Base",
+      "scope" : "editor",
+      "syntax" : "jsx",
+      "trigger" : "AB"
+    }
+  ]
+}
