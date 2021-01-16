@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-primary-hex: #ffffff;
 		--bg-primary-rgba: rgba(255, 255, 255, .8);
 		
-		--bg-secondary: #F5F6FA;
+		--bg-secondary: #F5F7FA;
 		
 		--text-primary: #212931;
 		--text-secondary: #5C718A;
