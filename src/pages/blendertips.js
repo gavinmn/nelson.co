@@ -23,7 +23,7 @@ const BlenderTips = props => (
       <PostLink link="https://github.com/blender/blender">
         open-source{" "}
       </PostLink>
-      3D creative tool that I often use for icon type design work.
+      3D creative tool that I often use for design work.
     </p>
   </PostWrapper>
 )
