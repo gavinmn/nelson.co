@@ -48,11 +48,10 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: normal;
-  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
   color: var(--text-secondary);
-  line-height: 2;
+  margin: 1rem 0 0.5rem 0;
 }
 
 @media only screen and (min-width: 722px) {
@@ -67,7 +66,7 @@ h3 {
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   a {

@@ -14,10 +14,10 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-primary-hex: #ffffff;
 		--bg-primary-rgba: rgba(255, 255, 255, .8);
 		
-		--bg-secondary: #F6F7F9;
+		--bg-secondary: #F5F6FA;
 		
 		--text-primary: #212931;
-		--text-secondary: #627184;
+		--text-secondary: #5C718A;
 		
 		--blue-primary: #007AFF;
 		--blue-secondary: rgba(10,122,255,.1);
@@ -39,10 +39,10 @@ export const GlobalStyle = createGlobalStyle`
 			--bg-primary-hex: #040506;
 			--bg-primary-rgba: rgba(4,5,6,0.8);
 			
-			--bg-secondary: #0C0F12;
+			--bg-secondary: #090F15;
 
 			--text-primary: #ffffff;
-			--text-secondary: #6C7E93; 
+			--text-secondary: #667D99; 
 			
 			--blue-primary: #0A84FF;
 			--blue-secondary: rgba(10,132,255,.1);
