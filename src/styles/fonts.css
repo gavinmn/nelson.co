@@ -27,20 +27,20 @@
 
 h1 {
   font-size: var(--font-l);
-  line-height: 30px;
+  line-height: var(--lh-l);
   margin-bottom: 0.5rem;
 }
 
 h2 {
   font-size: var(--font-m);
-  line-height: 24px;
+  line-height: var(--lh-m);
   font-weight: bold;
   margin: 1.25rem 0 0.5rem 0;
 }
 
 h3 {
   font-size: var(--font-s);
-  line-height: 24px;
+  line-height: var(--lh-s);
   font-style: italic;
   font-weight: normal;
   margin: 1.25rem 0 0.5rem 0;
@@ -50,7 +50,7 @@ h3 {
 p,
 li {
   font-size: var(--font-s);
-  line-height: 24px;
+  line-height: var(--lh-s);
 }
 
 a {
@@ -73,7 +73,7 @@ a:hover {
   background-color: var(--bg-secondary);
   padding: 0.15rem 0.2rem;
   border-radius: 4px;
-} */
+}
 
 ul {
   list-style-type: disc;
@@ -87,25 +87,25 @@ ul > li {
 li::marker {
   color: var(--text-secondary);
   font-size: 14px;
-}
+} */
 
 @media only screen and (min-width: 722px) {
   h1 {
     font-size: var(--font-l);
-    line-height: 36px;
+    line-height: var(--lh-l);
     margin-bottom: 0.25rem;
   }
 
   h2 {
     font-size: var(--font-m);
-    line-height: 28px;
+    line-height: var(--lh-m);
     font-weight: bold;
     margin: 0.75rem 0 0.25rem 0;
   }
 
   h3 {
     font-size: var(--font-s);
-    line-height: 24px;
+    line-height: var(--lh-s);
     font-style: italic;
     font-weight: normal;
     margin: 0.75rem 0 0.25rem 0;
@@ -115,7 +115,7 @@ li::marker {
   p,
   li {
     font-size: var(--font-s);
-    line-height: 24px;
+    line-height: var(--lh-s);
   }
 
   /* code {
@@ -124,7 +124,7 @@ li::marker {
     background-color: var(--bg-secondary);
     padding: 0.15rem 0.2rem;
     border-radius: 4px;
-  } */
+  }
 
   ul > li {
     margin-left: 1rem;
@@ -132,5 +132,5 @@ li::marker {
 
   li::marker {
     font-size: 16px;
-  }
+  } */
 }

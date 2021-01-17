@@ -10,7 +10,7 @@ const CardBase = styled.div`
   background-color: var(--bg-secondary);
   border-radius: 12px;
   max-width: 100%;
-  height: 397px;
+  height: 398px;
   overflow: hidden;
 
   @media ${device.desktop} {
@@ -49,6 +49,12 @@ const Text = styled.div`
   margin-right: 8px;
 `
 
+const Subtext = styled.p`
+  font-size: var(--font-xs);
+  line-height: 
+  color: var(--font-secondary);
+`
+
 const Card = props => {
   const [doubleWidth, setDoubleWidth] = useState(false)
 
@@ -74,10 +80,10 @@ const Card = props => {
       <BottomSection>
         <Text>
           <h1>{props.title}</h1>
-          <h2>{props.subtitle}</h2>
-          <h2>
+          <Subtext>{props.subtitle}</Subtext>
+          <Subtext>
             <i>{props.time}</i>
-          </h2>
+          </Subtext>
         </Text>
         {props.children}
       </BottomSection>
