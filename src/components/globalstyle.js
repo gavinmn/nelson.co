@@ -88,7 +88,7 @@ export const GlobalStyle = createGlobalStyle`
 	  	-webkit-overflow-scrolling: touch;
 	  	-webkit-font-smoothing: antialiased;
 	  	text-rendering: optimizeLegibility;
-	  	line-height: 1.5;
+	  	line-height: 1.4;
 	}
 
 	footer {

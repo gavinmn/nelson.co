@@ -25,6 +25,43 @@
   font-display: optional;
 }
 
+h1 {
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 1.25rem 0 0.5rem 0;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 1.25rem 0 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 a {
   text-decoration: none;
   color: var(--text-secondary);
@@ -53,32 +90,49 @@ li::marker {
   font-size: 14px;
 }
 
-/* h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 14px;
-  color: var(--text-secondary);
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 15px;
-  font-weight: bold;
-  color: var(--text-secondary);
-  margin: 2rem 0 0.5rem 0;
-} */
-
-p,
-li {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-}
-
 @media only screen and (min-width: 722px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 0.25rem;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 0.75rem 0 0.25rem 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0.75rem 0 0.25rem 0;
+    color: var(--text-secondary);
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+  }
+
+  p,
+  li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #8b8f9b;
+  }
   code {
     font-size: 16px;
     color: var(--text-secondary);
@@ -93,39 +147,5 @@ li {
 
   li::marker {
     font-size: 16px;
-  }
-
-  h1 {
-    font-size: 32px;
-    line-height: 36px;
-    margin-bottom: 1rem;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  /* 
-  h2 {
-    font-size: 16px;
-    color: var(--text-secondary);
-    font-weight: normal;
-  }
-
-  h3 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 17px;
-  } */
-
-  p,
-  li {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #8b8f9b;
   }
 }
