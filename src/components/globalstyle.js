@@ -17,15 +17,15 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--bg-secondary: #F5F7FA;
 		
-		--text-primary: #090F15;
-		--text-secondary: #5C718A;
+		--text-primary: #0F1A24;
+		--text-secondary: #517095;
 		
 		--blue-primary: #007AFF;
 		--blue-secondary: rgba(10,122,255,.1);
 		
 		// used for button hover states and logo
-		--color-primary: #090F15;
-		--logo-primary: #090F15;
+		--color-primary: #0F1A24;
+		--logo-primary: #0F1A24;
 
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
