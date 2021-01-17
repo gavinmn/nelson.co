@@ -47,6 +47,13 @@ export default class MyDocument extends Document {
 
           <link rel="dns-prefetch" href="https://gumroad.com/l/dvctd" />
           <link rel="preconnect" href="https://vitals.vercel-insights.com" />
+
+          <script
+            async
+            defer
+            data-domain="gnelson.me"
+            src="https://plausible.io/js/plausible.js"
+          ></script>
         </Head>
 
         <body>
