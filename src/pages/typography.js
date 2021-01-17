@@ -8,32 +8,31 @@ import Caption from "../components/caption"
 
 const Typography = props => (
   <PostWrapper title="" subtitle="" time="">
-    <h1>Title of my Post</h1>
-    <Caption>Published January 16, 2021</Caption>
+    <h1>Typographic Scale Test</h1>
+    <Caption>Updated January 16, 2021</Caption>
     <p>
-      Other data driven details of the reworked UI/UX include rings around the
-      group avatars to indicate other users’ active modes, colored message
-      bubbles to further provide context on what mode the user is currently in,
-      as well as a redesigned header to better comply with mobile design
-      standards.
+      Much urgently jeez beheld therefore unblushingly dreadfully around dense
+      one that much drew much and that and smirked combed tolerant near that
+      convenient since indescribable shoddily shut a alas blanched yikes much
+      and stole swelled. <br></br>
+      <br></br> Contrary and indiscriminate far hippopotamus ambiguously much
+      eccentric one winning articulately mournful gosh more that according
+      elaborate beyond.
     </p>
 
-    <h2>Second Section of my Post</h2>
+    <h2>Title of this Section</h2>
     <p>
-      User testing these prototypes brought some important learnings to the
-      forefront. The volume slider model was discoverable, but was initially a
-      bit confusing to users. The full screen swipe was not highly discoverable
-      and conflicted with many common iOS gestures already ingrained in users.
-      Finally the action button model had decent discoverability, but would
-      require some tweaking to have better usability.
+      Crane much hey punctiliously amongst anteater remarkable seagull guinea
+      hungry jeez specially hummed outside led hello frailly the gulped yikes
+      following toucan that after gallant unbridled coquettishly oh so.
     </p>
 
-    <h3>Third Subsection Here</h3>
+    <h3>Subsection Title</h3>
     <p>
-      This graph plotted each idea in terms of how easy it would be for users to
-      adopt against how well it would fit in Chalk’s development timeline. From
-      my user testing and the teams best estimates, the action button model was
-      show to be the winner.
+      Dived zealously luxuriant jay hello since cut compactly hello this redid
+      spoiled fancifully in thus along beside elusive instantaneously quetzal
+      unicorn after proved followed some willful far much oh immoral arose stung
+      much more that where before hatchet ostrich and outdid and octopus recast.
     </p>
   </PostWrapper>
 )

@@ -9,6 +9,11 @@
       "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport { device } from \"..\/components\/device\"\n\nconst Component = props => (\n <div><\/div>\n)\n\nexport default Component\n",
       "name" : "Component",
       "trigger" : "com"
+    },
+    {
+      "content" : "<br><\/br><br><\/br>",
+      "name" : "Line Break",
+      "trigger" : "lin"
     }
   ]
 }
