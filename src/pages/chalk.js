@@ -4,6 +4,7 @@ import Image from "next/image"
 
 import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
+import Caption from "../components/caption"
 import { device } from "../components/device"
 
 const SingleVideoContainer = styled.div`
@@ -92,7 +93,7 @@ const chalkPage = props => (
       height="400"
     />
 
-    <h3>Project</h3>
+    <h2>Project</h2>
 
     <p>
       I worked with Chalk for approximately three months during the spring and
@@ -107,7 +108,7 @@ const chalkPage = props => (
       height="174"
     />
 
-    <h3>Role</h3>
+    <h2>Role</h2>
     <p>
       The team for this project was comprised of Chalk's Co-Founder/product
       manager, an iOS engineer, and myself - assuming the role of product
@@ -127,7 +128,7 @@ const chalkPage = props => (
       independently and with the team in their SF office.
     </p>
     <br></br>
-    <h3>Problem</h3>
+    <h2>Problem</h2>
     <p>
       The core messaging user experience was powerful but overly complicated,
       proving difficult for new users to learn and tricky for power users to
@@ -142,7 +143,7 @@ const chalkPage = props => (
       height="428"
     />
 
-    <h3>Goal</h3>
+    <h2>Goal</h2>
     <p>
       The goal of this project was to simplify and make this core user
       experience component more intuitive to learn and more efficient to
@@ -156,7 +157,7 @@ const chalkPage = props => (
       height="210"
     />
 
-    <h3>Solution</h3>
+    <h2>Solution</h2>
     <p>
       Chalk's value proposition was found in the three core modes of
       communication in the app.
@@ -244,7 +245,7 @@ const chalkPage = props => (
       testing data and you can read more about my process below.
     </p>
     <br></br>
-    <h3>Process</h3>
+    <h2>Process</h2>
     <p>
       Through discussions with Chalk, I learned that the most important user to
       design for was the late teenager/early 20 something group chat user who
@@ -258,7 +259,7 @@ const chalkPage = props => (
       height="166"
     />
 
-    <h3>Ideation</h3>
+    <h2>Ideation</h2>
     <p>
       I began making some quick sketches with a “no idea is too crazy” type
       mindset and through discussions with Chalk, narrowed the ideas down to a
@@ -278,7 +279,7 @@ const chalkPage = props => (
       can see above.
     </p>
     <br></br>
-    <h3>Prototypes</h3>
+    <h2>Prototypes</h2>
     <p>
       From these sketches I quickly jumped into some higher fidelity interactive
       prototypes to gather qualitative user testing data and better communicate
@@ -310,7 +311,7 @@ const chalkPage = props => (
     </p>
 
     <br></br>
-    <h3>Decision Making</h3>
+    <h2>Decision Making</h2>
 
     <p>From these prototypes I lead the team in a decision making graph.</p>
 
@@ -329,7 +330,7 @@ const chalkPage = props => (
     </p>
 
     <br></br>
-    <h3>High Fidelity Details</h3>
+    <h2>High Fidelity Details</h2>
     <p>
       From here I began developing some high fidelity mockups and working on
       details such as the icons for the modes.

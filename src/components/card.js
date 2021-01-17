@@ -58,6 +58,10 @@ const Subtext = styled.p`
   color: var(--text-secondary);
 `
 
+const HeaderText = styled.h1`
+  margin: 0;
+`
+
 const Card = props => {
   const [doubleWidth, setDoubleWidth] = useState(false)
 
@@ -82,7 +86,7 @@ const Card = props => {
       </CardImageContainer>
       <BottomSection>
         <Text>
-          <h1>{props.title}</h1>
+          <HeaderText>{props.title}</HeaderText>
           <Subtext>{props.subtitle}</Subtext>
           <Subtext>
             <i>{props.time}</i>

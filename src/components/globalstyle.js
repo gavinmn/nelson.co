@@ -4,7 +4,6 @@ export const GlobalStyle = createGlobalStyle`
 	* {
  		margin:0;
   		padding:0;
-		  font-feature-settings: "kern" 1,"liga" 1,"onum" 1;
 		  -webkit-font-smoothing: antialiased;
 	}
 	
@@ -18,15 +17,15 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--bg-secondary: #F5F7FA;
 		
-		--text-primary: #212931;
+		--text-primary: #090F15;
 		--text-secondary: #5C718A;
 		
 		--blue-primary: #007AFF;
 		--blue-secondary: rgba(10,122,255,.1);
 		
 		// used for button hover states and logo
-		--color-primary: #212931;
-		--logo-primary: #212931;
+		--color-primary: #090F15;
+		--logo-primary: #090F15;
 
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
@@ -66,7 +65,7 @@ export const GlobalStyle = createGlobalStyle`
 			
 			--bg-secondary: #090F15;
 
-			--text-primary: #ffffff;
+			--text-primary: #F5F7FA;
 			--text-secondary: #667D99; 
 			
 			--blue-primary: #0A84FF;
@@ -75,8 +74,8 @@ export const GlobalStyle = createGlobalStyle`
 			
 			
 			// used for button hover states and logo
-			--color-primary: #ffffff;
-			--logo-primary: #ffffff;
+			--color-primary: #F5F7FA;
+			--logo-primary: #F5F7FA;
 			
 			
 			--color-chalk: #1A83FF;
