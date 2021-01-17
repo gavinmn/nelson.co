@@ -29,33 +29,33 @@ export default function SEO({ title }) {
       <meta property="twitter:description" content={config.description} />
 
       <link
-        href="https://gnelson.me/images/meta/favicon-180x180.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-180x180.png"
         rel="apple-touch-icon"
         sizes="180x180"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-152x152.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-152x152.png"
         rel="apple-touch-icon"
         sizes="152x152"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-120x120.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-120x120.png"
         rel="apple-touch-icon"
         sizes="120x120"
       />
 
       <link
-        href="https://gnelson.me/images/meta/favicon-76x76.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-76x76.png"
         rel="apple-touch-icon"
         sizes="76x76"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-60x60.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-60x60.png"
         rel="apple-touch-icon"
         sizes="60x60"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-120.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-120x120.png"
         rel="apple-touch-icon"
         sizes="120x120"
       />
