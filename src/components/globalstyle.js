@@ -4,6 +4,8 @@ export const GlobalStyle = createGlobalStyle`
 	* {
  		margin:0;
   		padding:0;
+		  font-feature-settings: "kern" 1,"liga" 1,"onum" 1;
+		  -webkit-font-smoothing: antialiased;
 	}
 	
 	html {
@@ -22,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 		--blue-primary: #007AFF;
 		--blue-secondary: rgba(10,122,255,.1);
 		
-		// used for button hover states and logo (can remove)
+		// used for button hover states and logo
 		--color-primary: #212931;
 		--logo-primary: #212931;
 
@@ -33,6 +35,19 @@ export const GlobalStyle = createGlobalStyle`
 		--color-experts-secondary: #F1FBF3;
 		
 		--github-text: #24292E;
+		
+		--font-xs: 14px;
+		--font-s: 16px;
+		--font-m: 18px;
+		--font-l: 26px;
+		
+		@media only screen and (min-width: 722px) { 
+			--font-xs: 16px;
+			--font-s: 18px;
+			--font-m: 20px;
+			--font-l: 28px;
+		}
+		
 
 		@media(prefers-color-scheme: dark) {
 			

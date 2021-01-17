@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { device } from "../components/device"
 
 const StyledText = styled.p`
-  font-size: 14px;
+  font-size: var(--font-xs);
   line-height: 20px;
   font-weight: normal;
   font-style: italic;
@@ -11,7 +11,7 @@ const StyledText = styled.p`
   color: var(--text-secondary);
 
   @media ${device.desktop} {
-    font-size: 16px;
+    font-size: var(--font-xs);
     line-height: 24px;
     font-weight: normal;
     font-style: italic;
@@ -20,6 +20,6 @@ const StyledText = styled.p`
   }
 `
 
-const Caption = props => <StyledText>{props.children}</StyledTexts>
+const Caption = props => <StyledText>{props.children}</StyledText>
 
 export default Caption

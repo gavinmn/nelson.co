@@ -5,11 +5,12 @@ import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
 import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
+import Caption from "../components/caption"
 
 const Typography = props => (
   <PostWrapper title="" subtitle="" time="">
     <h1>Title of my Post</h1>
-    <h4>Published January 16, 2021</h4>
+    <Caption>Published January 16, 2021</Caption>
     <p>
       Other data driven details of the reworked UI/UX include rings around the
       group avatars to indicate other users’ active modes, colored message
