@@ -47,15 +47,6 @@ h3 {
   color: var(--text-secondary);
 }
 
-h4 {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: normal;
-  font-style: italic;
-  margin-bottom: 1rem;
-  color: var(--text-secondary);
-}
-
 p,
 li {
   font-size: 16px;
@@ -110,15 +101,6 @@ li::marker {
     font-style: italic;
     font-weight: normal;
     margin: 0.75rem 0 0.25rem 0;
-    color: var(--text-secondary);
-  }
-
-  h4 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    font-style: italic;
-    margin-bottom: 0.5rem;
     color: var(--text-secondary);
   }
 
