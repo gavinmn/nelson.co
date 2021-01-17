@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Image from "next/image"
 import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
-import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
 import Caption from "../components/caption"
 

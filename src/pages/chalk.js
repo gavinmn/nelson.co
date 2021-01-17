@@ -4,7 +4,6 @@ import Image from "next/image"
 
 import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
-import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
 
 const SingleVideoContainer = styled.div`
@@ -204,9 +203,9 @@ const chalkPage = props => (
     </SingleVideoContainer>
 
     <LinkContainer>
-      <StyledLink href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">
+      <a href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">
         View Interactive Prototype
-      </StyledLink>
+      </a>
     </LinkContainer>
     <p>
       When a new mode is entered, a contextual button would appear next to the

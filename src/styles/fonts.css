@@ -54,9 +54,17 @@ li {
 }
 
 a {
+  font-size: var(--font-s);
   text-decoration: none;
   color: var(--text-secondary);
   font-weight: normal;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  cursor: pointer;
 }
 
 /* code {
@@ -108,15 +116,6 @@ li::marker {
   li {
     font-size: var(--font-s);
     line-height: 24px;
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--text-secondary);
-  }
-
-  a:hover {
-    text-decoration: underline;
   }
 
   /* code {
