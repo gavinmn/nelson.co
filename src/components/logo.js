@@ -7,8 +7,8 @@ const StyledSVG = styled.svg`
   height: 160px;
 
   @media only screen and (min-width: 722px) {
-    width: 210px;
-    height: 210px;
+    width: 196px;
+    height: 196px;
   }
 `
 const StyledContainer = styled.div`

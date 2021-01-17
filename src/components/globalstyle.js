@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 	* {
  		margin:0;
   		padding:0;
+		  -webkit-font-smoothing: antialiased;
 	}
 	
 	html {
@@ -16,15 +17,15 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--bg-secondary: #F5F7FA;
 		
-		--text-primary: #212931;
-		--text-secondary: #5C718A;
+		--text-primary: #0F1A24;
+		--text-secondary: #517095;
 		
 		--blue-primary: #007AFF;
 		--blue-secondary: rgba(10,122,255,.1);
 		
-		// used for button hover states and logo (can remove)
-		--color-primary: #212931;
-		--logo-primary: #212931;
+		// used for button hover states and logo
+		--color-primary: #0F1A24;
+		--logo-primary: #0F1A24;
 
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
@@ -33,6 +34,29 @@ export const GlobalStyle = createGlobalStyle`
 		--color-experts-secondary: #F1FBF3;
 		
 		--github-text: #24292E;
+		
+		--font-xs: 14px;
+		--font-s: 16px;
+		--font-m: 18px;
+		--font-l: 26px;
+		
+		--lh-xs: 20px;
+		--lh-s: 24px;
+		--lh-m: 24px;
+		--lh-l: 30px;
+		
+		@media only screen and (min-width: 722px) { 
+			--font-xs: 16px;
+			--font-s: 18px;
+			--font-m: 20px;
+			--font-l: 28px;
+			
+			--lh-xs: 24px;
+			--lh-s: 24px;
+			--lh-m: 28px;
+			--lh-l: 36px;
+		}
+		
 
 		@media(prefers-color-scheme: dark) {
 			
@@ -41,7 +65,7 @@ export const GlobalStyle = createGlobalStyle`
 			
 			--bg-secondary: #090F15;
 
-			--text-primary: #ffffff;
+			--text-primary: #F5F7FA;
 			--text-secondary: #667D99; 
 			
 			--blue-primary: #0A84FF;
@@ -50,8 +74,8 @@ export const GlobalStyle = createGlobalStyle`
 			
 			
 			// used for button hover states and logo
-			--color-primary: #ffffff;
-			--logo-primary: #ffffff;
+			--color-primary: #F5F7FA;
+			--logo-primary: #F5F7FA;
 			
 			
 			--color-chalk: #1A83FF;
@@ -88,7 +112,7 @@ export const GlobalStyle = createGlobalStyle`
 	  	-webkit-overflow-scrolling: touch;
 	  	-webkit-font-smoothing: antialiased;
 	  	text-rendering: optimizeLegibility;
-	  	line-height: 1.5;
+	  	line-height: 1.4;
 	}
 
 	footer {

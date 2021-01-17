@@ -2,7 +2,6 @@ import React from "react"
 import Link from "next/link"
 import styled from "styled-components"
 
-
 const Button = styled.a`
   display: flex;
   flex-grow: 0;
@@ -15,6 +14,7 @@ const Button = styled.a`
 
   &:hover {
     cursor: pointer;
+    text-decoration: none;
     background-color: var(--blue-primary);
     & > p {
       color: var(--bg-primary-hex);

@@ -13,6 +13,7 @@ const Button = styled.a`
 
   &:hover {
     cursor: pointer;
+    text-decoration: none;
     background-color: var(--blue-primary);
     & > p {
       color: var(--bg-primary-hex);

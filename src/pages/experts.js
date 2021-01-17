@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 import PostWrapper from "../components/postwrapper"
 import CustomImage from "../components/customimage"
-import StyledLink from "../components/styledlink"
 import { device } from "../components/device"
 
 const SingleVideoContainer = styled.div`
@@ -41,7 +40,7 @@ const expertsPage = props => (
       height="400"
     />
 
-    <h3>Project</h3>
+    <h2>Project</h2>
     <p>
       I was assigned to this project as the sole product designer in the summer
       of 2018 at wikiHow. The project focused on designing an entirely new suite
@@ -56,7 +55,7 @@ const expertsPage = props => (
       height="222"
     />
 
-    <h3>Role</h3>
+    <h2>Role</h2>
     <p>
       The team for this project was comprised wikiHow's CEO acting as the
       primary product manager, the in house Experts Team, an engineer, and
@@ -77,7 +76,7 @@ const expertsPage = props => (
 
     <br></br>
 
-    <h3>Problem</h3>
+    <h2>Problem</h2>
     <p>
       Through community feedback, the wikiHow team learned that the expert
       verified badges on our articles were not cutting it in terms of providing
@@ -99,7 +98,7 @@ const expertsPage = props => (
 
     <br></br>
 
-    <h3>Goal</h3>
+    <h2>Goal</h2>
     <p>
       The goal of this project was to increase the authority and trustworthiness
       of the "expert verified" seal of approval on our verified articles.
@@ -112,7 +111,7 @@ const expertsPage = props => (
       height="326"
     />
 
-    <h3>Stakeholder Constraints</h3>
+    <h2>Stakeholder Constraints</h2>
     <p>
       There were many stakeholder constraints in this project that came together
       to shape many of the final design decisions. Primarily, my designs had to
@@ -137,7 +136,7 @@ const expertsPage = props => (
 
     <br></br>
 
-    <h3>Solution</h3>
+    <h2>Solution</h2>
     <p>
       My final designs focus on authority by providing details about the expert
       in a resume style format.
@@ -227,7 +226,7 @@ const expertsPage = props => (
 
     <br></br>
 
-    <h3>Context</h3>
+    <h2>Context</h2>
     <p>
       To provide some context for the design process on this project -
       stakeholders at wikiHow generally like to see high fidelity iterations.
@@ -268,7 +267,7 @@ const expertsPage = props => (
       </SingleVideo>
     </SingleVideoContainer>
 
-    <h3>Development</h3>
+    <h2>Development</h2>
     <p>
       At the end of this iteration - critique - iteration process, I had a quick
       moment to validate design decisions with various company members

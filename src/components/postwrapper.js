@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Fade from "../components/fade"
 import Wrapper from "../components/wrapper"
+import Caption from "../components/caption"
 
 const Container = styled.div`
   margin: 8rem 0 4rem 0;
@@ -13,6 +14,12 @@ const Container = styled.div`
   @media ${device.desktop} {
     margin: 4rem 0 4rem 0;
   }
+`
+
+const Subtitle = styled.h3`
+  font-size: var(--font-xs);
+  font-style: normal;
+  margin: 0;
 `
 
 const PostWrapper = props => (
@@ -23,10 +30,10 @@ const PostWrapper = props => (
         <Container>
           <Wrapper size="small">
             <h1>{props.title}</h1>
-            <h2>{props.subtitle}</h2>
-            <h2>
+            <Subtitle>{props.subtitle}</Subtitle>
+            <Caption>
               <i>{props.time}</i>
-            </h2>
+            </Caption>
             {props.children}
           </Wrapper>
         </Container>
