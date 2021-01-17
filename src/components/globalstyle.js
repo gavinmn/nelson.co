@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--bg-secondary: #F5F7FA;
 		
-		--text-primary: #0F1A24;
+		--text-primary: #1A2028;
 		--text-secondary: #517095;
 		
 		--blue-primary: #007AFF;
@@ -60,13 +60,13 @@ export const GlobalStyle = createGlobalStyle`
 
 		@media(prefers-color-scheme: dark) {
 			
-			--bg-primary-hex: #040506;
-			--bg-primary-rgba: rgba(4,5,6,0.8);
+			--bg-primary-hex: #212831;
+			--bg-primary-rgba: rgba(33,40,49,0.8);
 			
-			--bg-secondary: #090F15;
+			--bg-secondary: #1A2028;
 
 			--text-primary: #F5F7FA;
-			--text-secondary: #667D99; 
+			--text-secondary: #7A91AE; 
 			
 			--blue-primary: #0A84FF;
 			--blue-secondary: rgba(10,132,255,.1);
