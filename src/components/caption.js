@@ -4,7 +4,7 @@ import { device } from "../components/device"
 
 const StyledText = styled.p`
   font-size: var(--font-xs);
-  line-height: 20px;
+  line-height: var(--lh-xs);
   font-weight: normal;
   font-style: italic;
   margin-bottom: 1rem;
@@ -12,7 +12,7 @@ const StyledText = styled.p`
 
   @media ${device.desktop} {
     font-size: var(--font-xs);
-    line-height: 24px;
+    line-height: var(--lh-xs);
     font-weight: normal;
     font-style: italic;
     margin-bottom: 0.5rem;

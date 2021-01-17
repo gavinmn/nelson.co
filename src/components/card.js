@@ -10,7 +10,7 @@ const CardBase = styled.div`
   background-color: var(--bg-secondary);
   border-radius: 12px;
   max-width: 100%;
-  height: 398px;
+  padding-bottom: 8px; 
   overflow: hidden;
 
   @media ${device.desktop} {
@@ -36,9 +36,12 @@ const BottomSection = styled.div`
   flex-grow: 0;
   flex-direction: row;
   align-items: center;
-  padding: 0px 16px;
+  padding: 0px 1rem;
   margin-top: 12px;
   align-self: stretch;
+  @media ${device.desktop} {
+    padding: 0px 0.5rem;
+  }
 `
 
 const Text = styled.div`
@@ -51,8 +54,8 @@ const Text = styled.div`
 
 const Subtext = styled.p`
   font-size: var(--font-xs);
-  line-height: 
-  color: var(--font-secondary);
+  line-height: var(--lh-xs);
+  color: var(--text-secondary);
 `
 
 const Card = props => {
