@@ -77,6 +77,12 @@ export default function SEO({ title }) {
         sizes="48x48"
         type="image/png"
       />
+      <script
+        async
+        defer
+        data-domain="gnelson.me"
+        src="https://plausible.io/js/plausible.js"
+      ></script>
     </Head>
   )
 }
