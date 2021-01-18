@@ -93,7 +93,7 @@ const Twitter = styled.a`
   font-size: var(--font-xs);
   &:hover {
     color: #1da1f2;
-    text-decoration-color: #0a66c2;
+    text-decoration-color: #1da1f2;
   }
 
   @media only screen and (min-width: 445px) {

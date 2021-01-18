@@ -22,6 +22,28 @@ const Subtitle = styled.h3`
   margin: 0;
 `
 
+const Feedback = styled.div`
+  margin-top: 4rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+`
+const FeedbackTitle = styled.h3`
+  margin-top: 0;
+`
+const Email = styled.a`
+  &:hover {
+    text-decoration-color: var(--color-primary);
+  }
+`
+
+const Twitter = styled.a`
+  &:hover {
+    color: #1da1f2;
+    text-decoration-color: #1da1f2;
+  }
+`
+
 const PostWrapper = props => (
   <Layout>
     <SEO title={`${props.title} - `} />
@@ -35,6 +57,29 @@ const PostWrapper = props => (
               <i>{props.time}</i>
             </Caption>
             {props.children}
+            <Feedback>
+              <FeedbackTitle>Feedback</FeedbackTitle>
+              <p>
+                Do you have comments or questions about something I wrote? Send
+                it my way on{" "}
+                <Twitter
+                  href="https://twitter.com/Gavmn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </Twitter>{" "}
+                or over{" "}
+                <Email
+                  href="mailto:gavin@gnelson.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  email
+                </Email>
+                .
+              </p>
+            </Feedback>
           </Wrapper>
         </Container>
       </Fade>
