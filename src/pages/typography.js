@@ -9,7 +9,8 @@ import Caption from "../components/caption"
 const Typography = props => (
   <PostWrapper title="" subtitle="" time="">
     <h1>Typographic Scale Test</h1>
-    <Caption>Updated January 16, 2021</Caption>
+    <h4>Updated January 16, 2021</h4>
+
     <p>
       Much urgently jeez beheld therefore unblushingly dreadfully around dense
       one that much drew much and that and smirked combed tolerant near that
@@ -19,7 +20,6 @@ const Typography = props => (
       eccentric one winning articulately mournful gosh more that according
       elaborate beyond.
     </p>
-
     <h2>Title of this Section</h2>
     <p>
       Crane much hey punctiliously amongst anteater remarkable seagull guinea
@@ -48,7 +48,6 @@ const Typography = props => (
       one winning articulately mournful gosh more that according elaborate
       beyond.
     </p>
-
     <h3>Subsection Title</h3>
     <p>
       Dived zealously luxuriant jay hello since cut compactly hello this redid
