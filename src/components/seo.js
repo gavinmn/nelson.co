@@ -81,7 +81,7 @@ export default function SEO({ title }) {
         async
         defer
         data-domain="gnelson.me"
-        src="https://plausible.io/js/plausible.js"
+        src="https://plausible.io/js/plausible.outbound-links.js"
       ></script>
     </Head>
   )
