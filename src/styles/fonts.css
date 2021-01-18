@@ -85,13 +85,16 @@ ul {
   list-style-type: disc;
 }
 
-/* code {
-  font-size: 14px;
+code {
+  font-family: ui-monospace, monospace;
+  font-size: var(--font-s);
+  line-height: var(--lh-s);
+  font-weight: 500;
   color: var(--text-secondary);
   background-color: var(--bg-secondary);
-  padding: 0.15rem 0.2rem;
+  padding: 0.1rem 0.2rem;
   border-radius: 4px;
-} */
+}
 
 @media only screen and (min-width: 722px) {
   h1 {
@@ -128,11 +131,4 @@ ul {
   ul > li {
     margin-left: 0.75rem;
   }
-  /* code {
-    font-size: 16px;
-    color: var(--text-secondary);
-    background-color: var(--bg-secondary);
-    padding: 0.15rem 0.2rem;
-    border-radius: 4px;
-  } */
 }

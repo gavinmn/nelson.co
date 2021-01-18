@@ -23,7 +23,10 @@ const Typography = props => (
     <h2>Title of this Section</h2>
     <p>
       Crane much hey punctiliously amongst anteater remarkable seagull guinea
-      hungry jeez specially hummed outside led hello frailly the gulped yikes
+      hungry jeez <br></br>
+      <br></br> <code>const [a, setA] = useState(true)</code>
+      <br></br>
+      <br></br>specially hummed outside led hello frailly the gulped yikes
       following toucan that after gallant unbridled coquettishly oh so.
       <ul>
         <li>
@@ -33,12 +36,15 @@ const Typography = props => (
         <li>
           Some willful far much oh immoral arose.
           <ul>
-            <li>Specially hummed outside led hello frailly the gulped yikes</li>
+            <li>
+              Specially hummed <code>cmd + a</code> outside led hello frailly
+              the gulped yikes
+            </li>
           </ul>
           <li>Much drew much and that and smirked combed tolerant near that</li>
         </li>
       </ul>
-      Contrary and indiscriminate far hippopotamus ambiguously much eccentric
+      Contrary and indiscriminate far hippopotamus ambiguously much eccentric{" "}
       one winning articulately mournful gosh more that according elaborate
       beyond.
     </p>

@@ -13,7 +13,7 @@
     {
       "content" : "<br><\/br><br><\/br>",
       "name" : "Line Break",
-      "trigger" : "lin"
+      "trigger" : "br"
     }
   ]
 }
