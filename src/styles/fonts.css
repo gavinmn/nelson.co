@@ -47,8 +47,7 @@ h3 {
   color: var(--text-secondary);
 }
 
-p,
-li {
+p {
   font-size: var(--font-s);
   line-height: var(--lh-s);
 }
@@ -67,26 +66,31 @@ a:hover {
   cursor: pointer;
 }
 
-/* code {
-  font-size: 14px;
+li {
+  font-size: var(--font-s);
+  line-height: var(--lh-s);
+  margin: 0.5rem 0;
+}
+
+li::marker {
+  font-size: var(--font-s);
   color: var(--text-secondary);
-  background-color: var(--bg-secondary);
-  padding: 0.15rem 0.2rem;
-  border-radius: 4px;
+}
+
+ul > li {
+  margin-left: 1.5rem;
 }
 
 ul {
   list-style-type: disc;
 }
 
-ul > li {
-  margin-left: 2rem;
-  line-height: 2;
-}
-
-li::marker {
-  color: var(--text-secondary);
+/* code {
   font-size: 14px;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 0.15rem 0.2rem;
+  border-radius: 4px;
 } */
 
 @media only screen and (min-width: 722px) {
@@ -112,25 +116,23 @@ li::marker {
     color: var(--text-secondary);
   }
 
-  p,
-  li {
+  p {
     font-size: var(--font-s);
     line-height: var(--lh-s);
   }
 
+  li {
+    margin: 0.25rem 0;
+  }
+
+  ul > li {
+    margin-left: 0.75rem;
+  }
   /* code {
     font-size: 16px;
     color: var(--text-secondary);
     background-color: var(--bg-secondary);
     padding: 0.15rem 0.2rem;
     border-radius: 4px;
-  }
-
-  ul > li {
-    margin-left: 1rem;
-  }
-
-  li::marker {
-    font-size: 16px;
   } */
 }
