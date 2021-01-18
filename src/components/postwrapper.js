@@ -75,7 +75,7 @@ const PostWrapper = props => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Email
+                  email
                 </Email>
                 .
               </p>
