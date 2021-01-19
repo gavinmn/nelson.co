@@ -44,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
 		// --lh-s: 24px;
 		// --lh-m: 26px;
 		// --lh-l: 32px;
-		// 
+	
 		@media only screen and (min-width: 722px) { 
 			--font-xs: 16px;
 			--font-s: 18px;
@@ -56,6 +56,7 @@ export const GlobalStyle = createGlobalStyle`
 			// --lh-m: 28px;
 			// --lh-l: 36px;
 		}
+	
 		
 
 		@media(prefers-color-scheme: dark) {

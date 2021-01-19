@@ -9,13 +9,13 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
-  background-color: var(--blue-secondary);
+  background-color: var(--bg-primary-hex);
   border-radius: 4px;
 
   &:hover {
     cursor: pointer;
     text-decoration: none;
-    background-color: var(--blue-primary);
+    background-color: var(--text-secondary);
     & > p {
       color: var(--bg-primary-hex);
     }
@@ -25,7 +25,7 @@ const Button = styled.a`
 const Arrow = styled.p`
   font-size: 20px;
   font-weight: bold;
-  color: var(--blue-primary);
+  color: var(--text-secondary);
 `
 
 const ButtonInternal = props => (
