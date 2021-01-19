@@ -8,7 +8,11 @@ const FlexContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 2rem 0 0.5rem 0;
+  margin: 4rem 0 0 1rem 0;
+
+  @media ${device.desktop} {
+    margin: 2rem 0 0.5rem 0;
+  }
 `
 
 const SectionHeader = props => (
