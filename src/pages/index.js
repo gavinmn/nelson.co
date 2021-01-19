@@ -36,7 +36,7 @@ const CardGrid = styled.div`
 const IndexPage = props => {
   return (
     <Layout>
-      <SEO title=" " />
+      <SEO title=" " og="og.png" />
       <Wrapper size={"large"}>
         <HeroContainer>
           <Hero />
@@ -52,7 +52,7 @@ const IndexPage = props => {
             imageHeight="294"
             title="Blender Basics"
             subtitle="A starting point for Blender beginners"
-            time="January 19, 2021"
+            time="January 21, 2021"
           >
             <ButtonInternal link="/posts/blenderbasics" />
           </Card>

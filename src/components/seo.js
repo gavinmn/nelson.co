@@ -1,7 +1,7 @@
 import Head from "next/head"
 import config from "../config"
 
-export default function SEO({ title }) {
+export default function SEO({ title, og }) {
   const siteTitle = config.title
 
   return (
@@ -14,13 +14,13 @@ export default function SEO({ title }) {
       <meta property="og:site_name" content={config.siteTitle} />
       <meta
         property="og:image"
-        content="https://gnelson.me/images/meta/og.png"
+        content={`https://gnelson.me/images/meta/${og}`}
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta
         property="twitter:image"
-        content="https://gnelson.me/images/meta/og.png"
+        content={`https://gnelson.me/images/meta/${og}`}
       />
 
       <meta property="twitter:card" content="summary_large_image" />

@@ -11,7 +11,8 @@ const BlenderBasics = props => (
   <PostWrapper
     title="Blender Basics"
     subtitle=""
-    time="Published January 19, 2021"
+    time="Published January 21, 2021"
+    og="blenderog.png"
   >
     <CustomImage
       size="full"
