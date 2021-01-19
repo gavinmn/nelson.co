@@ -68,7 +68,7 @@ const IndexPage = props => {
         <PostGrid>
           <Post
             title="Blender Basics"
-            subtitle="A starting point for Blender beginners."
+            subtitle="A starting point for Blender beginners from a former beginner."
             time="Published January 21, 2021"
             slug="blenderbasics"
           />

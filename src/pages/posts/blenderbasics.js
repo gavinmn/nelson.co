@@ -23,13 +23,13 @@ const BlenderBasics = props => (
     />
     <p>
       Blender is a powerful,{" "}
-      <a href="https://github.com/blender">open source</a> 3D creation tool with
-      a daunting amount of{" "}
-      <a href="https://docs.blender.org/manual/en/latest/">documentation</a>.
-      While the comprehensive docs are wonderful, there is a <em>lot</em> of
-      noise to sift through if you are new to the software. This page is
-      intended to be an ongoing list of the tips and tricks that I find
-      valuable.
+      <a href="https://github.com/blender">open source</a> 3D creation tool.
+      While the comprehensive{" "}
+      <a href="https://docs.blender.org/manual/en/latest/">docs</a> are
+      wonderful, figuring out where to begin can be a challenge if you are new
+      to the software. This page is intended to be an ongoing list of Blender
+      wrangling tips that I find valuable, written from the perspective of
+      someone who sifted through the noise so you don't have to.
     </p>
 
     <h2>General</h2>
@@ -50,8 +50,8 @@ const BlenderBasics = props => (
       <li>
         Hover over a corner of an editor section and your cursor will display as
         a +. Click and drag to split the section into two and select the
-        dropdown icon in the upper left of any section to chose the editor type.
-        Blender's UI is customizable to your liking.
+        dropdown icon in the upper left of any section to choose the editor
+        type. Blender's UI is customizable to your liking.
       </li>
     </ul>
 
@@ -125,10 +125,6 @@ const BlenderBasics = props => (
         from origin) or smaller (mouse towards origin).
       </li>
       <li>
-        <code>e</code> for extrude - in Edit mode, extrude selected vertices,
-        edges, or faces.
-      </li>
-      <li>
         Holding <code>shift</code> while performing a transform will allow for
         fine adjustments.
       </li>
@@ -198,7 +194,7 @@ const BlenderBasics = props => (
         <ul>
           <li>
             Prevent smoothing over edges above a chosen angle by toggling{" "}
-            <code>auto smooth</code> in Properties panel → Normals tab → Normals
+            <code>Auto Smooth</code> in Properties panel → Normals tab → Normals
             → Auto Smooth. This is helpful when you are working with a shape
             that needs both curves and hard edges.
           </li>
@@ -233,8 +229,8 @@ const BlenderBasics = props => (
     <p>
       All Modifier Properties are found in the Modifier Properties tab of the
       Properties panel. Below are the general modifiers that I find most helpful
-      for modeling. Experiment by applying them to default meshes to learn the
-      ins and outs of each modifier.
+      for basic modeling. Experiment by applying them to default meshes to learn
+      the ins and outs of each modifier.
       <br></br>
       <br></br>
     </p>
@@ -249,11 +245,11 @@ const BlenderBasics = props => (
         <code>Bevel</code> - used to bevel edges of the selected object.
         <ul>
           <li>
-            Bevel Limit Method - a tool to limit what edges are beveled.{" "}
+            Bevel Limit Method - a helpful tool to limit what edges are beveled.{" "}
             <code>Angle</code> is useful to limit beveling to only sharp edges
             (defined by a degree input). <code>Weight</code> will let you bevel
             only selected edges by weight. Weight is assigned to edges in edit
-            mode in Transform panel → Edge Data.
+            mode in the transform panel under &quot;Edge Data.&quot;
           </li>
         </ul>
       </li>
@@ -262,7 +258,8 @@ const BlenderBasics = props => (
         selected object. Great for creating curved surfaces from angled meshes.
         <ul>
           <li>
-            Assign creases to edges in edit mode in Transform panel → Edge Data.
+            Assign creases to edges in edit mode in the transform panel under
+            &quot;Edge Data.&quot;
           </li>
         </ul>
       </li>
@@ -279,7 +276,7 @@ const BlenderBasics = props => (
         <a href="https://www.sketch.com">Sketch</a> and{" "}
         <a href="https://www.figma.com">Figma</a>, you may have used the Boolean
         Operation tool. Blender has a similar <code>Boolean</code> operation
-        modifier but I would recommend trying to avoid it when you are first
+        modifier, but I would recommend trying to avoid it when you are first
         starting. It has a tendency to create messy geometry in your meshes and
         screw things up when used in combo with a Subdivision modifier.
       </li>
@@ -310,10 +307,9 @@ const BlenderBasics = props => (
     <h2>Concluding Thoughts</h2>
 
     <p>
-      Start off small. Don't jump right into creating involved models and
-      complex shading trees. The learning curve for Blender can be steep, but
-      getting these core basics nailed down will help make the experience
-      enjoyable.{" "}
+      Start small. Don't jump right into creating involved models and complex
+      shading trees. The learning curve for Blender can be steep, but getting
+      these core basics nailed down will help make the experience enjoyable.{" "}
     </p>
   </PostWrapper>
 )
