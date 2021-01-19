@@ -9,6 +9,8 @@ import Image from "next/image"
 import Card from "../components/card"
 import ButtonInternal from "../components/buttoninternal"
 import ButtonExternal from "../components/buttonexternal"
+import SectionHeader from "../components/sectionheader"
+import Post from "../components/post"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -22,14 +24,22 @@ const HeroContainer = styled.div`
   }
 `
 
+const PostGrid = styled.div`
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5rem;
+  max-width: 816px;
+`
+
 const CardGrid = styled.div`
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 16px;
+  grid-gap: 1rem;
   margin-bottom: 4rem;
 
   @media ${device.desktop} {
     grid-template-columns: 49.01960784% 49.01960784%;
+    grid-gap: 0.5rem;
   }
 `
 
@@ -44,18 +54,18 @@ const IndexPage = props => {
 
         <a aria-label="Work" id="work" href="/#work"></a>
 
-        <CardGrid>
-          <Card
-            width="double"
-            imageSrc="/images/index/blenderpost.png"
-            imageWidth="816"
-            imageHeight="294"
+        <SectionHeader section="Posts" />
+        <PostGrid>
+          <Post
             title="Blender Basics"
             subtitle="A starting point for Blender beginners"
-            time="January 21, 2021"
-          >
-            <ButtonInternal link="/posts/blenderbasics" />
-          </Card>
+            time="Published January 21, 2021"
+            slug="blenderbasics"
+          />
+        </PostGrid>
+
+        <SectionHeader section="Projects" />
+        <CardGrid>
           <Card
             width="double"
             imageSrc="/images/index/montereyimage.png"
@@ -79,7 +89,10 @@ const IndexPage = props => {
           >
             <ButtonInternal link="/chalk" />
           </Card>
+        </CardGrid>
 
+        <SectionHeader section="Icons" />
+        <CardGrid>
           <Card
             width="single"
             imageSrc="/images/index/claquette.png"

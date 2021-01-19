@@ -16,7 +16,7 @@ const BlenderBasics = props => (
   >
     <CustomImage
       size="full"
-      src="/images/index/blenderpost.png"
+      src="/images/blenderbasics/blenderpost.png"
       width="816"
       height="294"
     />
