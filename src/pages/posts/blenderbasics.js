@@ -22,7 +22,7 @@ const BlenderBasics = props => (
     <p>
       Blender is a powerful,{" "}
       <a href="https://github.com/blender">open source</a> 3D creation tool with
-      a large amount of{" "}
+      a daunting amount of{" "}
       <a href="https://docs.blender.org/manual/en/latest/">documentation</a>.
       While the comprehensive docs are wonderful, there is a <em>lot</em> of
       noise to sift through if you are new to the software. This page is
@@ -45,9 +45,68 @@ const BlenderBasics = props => (
         tab → Color Management → Look dropdown. I find bumping up the contrast
         to <code>Medium High Contrast</code> is a good starting point.
       </li>
+      <li>
+        Hover over a corner of an editor section and your cursor will display as
+        a +. Click and drag to split the section into two and select the
+        dropdown icon in the upper left of any section to chose the editor type.
+        Blender's UI is customizable to your liking.
+      </li>
     </ul>
 
     <h2>Keyboard Shortcuts</h2>
+
+    <h3>General</h3>
+
+    <ul>
+      <li>
+        <code>spacebar</code> brings up a spotlight esq. menu search.
+      </li>
+      <li>
+        <code>shift + a</code> brings up the Add menu at your cursor.
+      </li>
+      <li>
+        <code>option + z</code> toggles x-ray view. I find this useful enough
+        that I mapped it to a button on my mouse.
+      </li>
+      <li>
+        <code>tab</code> toggles between Object mode and Edit mode. Object mode
+        is used for manipulating whole meshes/objects, while edit mode will
+        allow manipulation of individual vertices, edges, and faces.
+        <ul>
+          <li>
+            In Edit mode, <code>1</code> toggles vertex selection mode,{" "}
+            <code>2</code> toggles edge selection mode, and <code>3</code>{" "}
+            toggles face selection mode.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Clicking and dragging (left/right) on a numerical input field will
+        adjust the input.
+        <ul>
+          <li>
+            Holding <code>control</code> while doing this will lock the field to
+            whole numbers (or easy decimals).
+          </li>
+          <li>
+            Holding <code>shift</code> while doing this will allow for fine
+            adjustments.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <code>n</code> toggles the transform panel.
+      </li>
+      <li>
+        <code>right click</code> on a menu option to add it to your{" "}
+        <code>quick favorites</code>.
+        <ul>
+          <li>
+            <code>q</code> brings up a list of your quick favorites.
+          </li>
+        </ul>
+      </li>
+    </ul>
 
     <h3>Transform Keys</h3>
 
@@ -64,8 +123,16 @@ const BlenderBasics = props => (
         from origin) or smaller (mouse towards origin).
       </li>
       <li>
+        <code>e</code> for extrude - in Edit mode, extrude selected vertices,
+        edges, or faces.
+      </li>
+      <li>
         Holding <code>shift</code> while performing a transform will allow for
         fine adjustments.
+      </li>
+      <li>
+        In Edit mode, with vertices selected, double pressing <code>g</code>{" "}
+        will slide vertices along the connected edge.
       </li>
     </ul>
 
@@ -90,27 +157,21 @@ const BlenderBasics = props => (
         allow moving the selected object on only the x and y axes.
       </li>
       <li>
-        <code>double press axis key</code> locks the axis of transform to the
-        objects normal rather than the world axis. Ex. <code>s → x → x</code>{" "}
-        will scale the selected object on <em>the object's</em> x axis, rather
-        than the world's x axis.
+        Double pressing an axis key locks the axis of transform to the objects
+        normal rather than the world axis. Ex. <code>s → x → x</code> will scale
+        the selected object on <em>the object's</em> x axis, rather than the
+        world's x axis.
       </li>
     </ul>
 
     <h3>Pie Menus</h3>
 
     <p>
-      Pie menus are circular UI selection menus that appear on a keypress with
-      the circle's origin at the cursor. Moving the mouse outside the circle and
-      clicking will select the designated menu item.* Getting used to using
-      these and forming muscle memory related to which direction of mouse will
-      speed up your workflow.{" "}
+      Pie menus are circular UI selection menus that appear on a keypress at the
+      cursor. Moving the cursor away from the menu's origin will select the
+      designated menu item. Getting used to using these and forming muscle
+      memory will speed up your workflow significantly.
     </p>
-
-    <Caption>
-      * Holding the modifier key down and releasing after having moved your
-      mouse towards a menu selection will result in an even faster selection.
-    </Caption>
 
     <ul>
       <li>
@@ -124,53 +185,9 @@ const BlenderBasics = props => (
       </li>
     </ul>
 
-    <h3>Misc.</h3>
-
-    <ul>
-      <li>
-        <code>spacebar</code> brings up a spotlight esq. menu search.
-      </li>
-      <li>
-        <code>shift + a</code> brings up the add menu at your cursor.
-      </li>
-      <li>
-        <code>option + z</code> toggles x-ray view. I find this so useful that I
-        mapped it to a button on my mouse.
-      </li>
-      <li>
-        <code>tab</code> toggles between object mode and edit mode.
-      </li>
-      <li>
-        Clicking and dragging (left/right) on a numerical input field will
-        adjust the number.
-        <ul>
-          <li>
-            Holding <code>control</code> while doing this will lock the field to
-            whole numbers (or easy decimals).
-          </li>
-          <li>
-            Holding <code>shift</code> while doing this will allow for fine
-            adjustments.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <code>n</code> will toggle the transform panel.
-      </li>
-      <li>
-        <code>right click</code> on a menu toggle to surface the option to{" "}
-        <code>add to quick favorites</code>.
-        <ul>
-          <li>
-            <code>q</code> brings up a list of your quick favorites.
-          </li>
-        </ul>
-      </li>
-    </ul>
-
     <h2>Modeling</h2>
 
-    <h3>General Tips</h3>
+    <h3>General</h3>
 
     <ul>
       <li>
@@ -178,25 +195,23 @@ const BlenderBasics = props => (
         to achieve smooth shading on a curved surface.
         <ul>
           <li>
-            With the object selected, go into the Normals tab (green triangle
-            with squares at the vertices icon) in the Properties panel and
-            select <code>normals → auto smooth</code> to prevent smoothing over
-            angles above a set degree. This is helpful when you are working with
-            a shape that needs both curves and hard edges.
+            Prevent smoothing over edges above a chosen angle by toggling{" "}
+            <code>auto smooth</code> in Properties panel → Normals tab → Normals
+            → Auto Smooth. This is helpful when you are working with a shape
+            that needs both curves and hard edges.
           </li>
         </ul>
       </li>
       <li>
         When modeling, try to stick to creating and manipulating objects that
-        are made of <code>quads</code> (4 vertices per face) rather than{" "}
-        <code>tris</code> (3 vertices per face) or <code>ngons</code> ( &gt; 4
-        vertices per face). This will make working with modifier properties much
-        easier.
+        are made of Quads (4 vertices per face) rather than Tris (3 vertices per
+        face) or Ngons ( &gt; 4 vertices per face). This will make working with
+        modifier properties easier.
         <ul>
           <li>
-            The default sphere mesh will be made of tris. To create a sphere
-            composed of quads, start with a cube, apply a Subdivision Surface
-            modifier with 4 subdivisions, and then apply a Cast modifier.
+            The default sphere mesh is made of Tris. To create a sphere composed
+            of Quads, start with a cube, apply a Subdivision Surface modifier
+            with 4 subdivisions, and then apply a Cast modifier.
           </li>
         </ul>
       </li>
@@ -213,15 +228,11 @@ const BlenderBasics = props => (
 
     <h3>Modifier Properties</h3>
 
-    <Caption>
-      All Modifier Properties are found in the Modifier Properties tab (blue
-      wrench icon) of the Properties panel.
-    </Caption>
-
     <p>
-      These are the general modifiers that I find most helpful for basic
-      modeling. Experiment by applying them to basic meshes to learn the ins and
-      outs.
+      All Modifier Properties are found in the Modifier Properties tab of the
+      Properties panel. Below are the general modifiers that I find most helpful
+      for modeling. Experiment by applying them to default meshes to learn the
+      ins and outs of each modifier.
       <br></br>
       <br></br>
     </p>
@@ -233,45 +244,74 @@ const BlenderBasics = props => (
 
     <ul>
       <li>
-        Bevel - used to bevel edges of the selected object.
+        <code>Bevel</code> - used to bevel edges of the selected object.
         <ul>
           <li>
-            Bevel Limit Method - a helpful tool to limit what edges are beveled.{" "}
+            Bevel Limit Method - a tool to limit what edges are beveled.{" "}
             <code>Angle</code> is useful to limit beveling to only sharp edges
             (defined by a degree input). <code>Weight</code> will let you bevel
             only selected edges by weight. Weight is assigned to edges in edit
-            mode in the transform panel under &quot;Edge Data.&quot;
+            mode in Transform panel → Edge Data.
           </li>
         </ul>
       </li>
       <li>
-        Subdivision Surface - used to subdivide all faces of the selected
-        object. Great for creating curved surfaces from angled meshes.
+        <code>Subdivision Surface</code> - used to subdivide all faces of the
+        selected object. Great for creating curved surfaces from angled meshes.
         <ul>
           <li>
-            Assign creases to edges in edit mode in the transform panel under
-            &quot;Edge Data.&quot;
+            Assign creases to edges in edit mode in Transform panel → Edge Data.
           </li>
         </ul>
       </li>
       <li>
-        Solidify - used to give a third dimension to two dimensional meshes
-        non-destructively.
+        <code>Solidify</code> - used to give a third dimension to two
+        dimensional meshes non-destructively.
       </li>
       <li>
-        Mirror - used to mirror a copy of a mesh over a selected object and
-        axis. Use this to easily create symmetrical meshes.
+        <code>Mirror</code> - used to mirror a copy of a mesh over a selected
+        object and axis. Use this to easily create symmetrical meshes.
+      </li>
+      <li>
+        If you have previously explored design tools like{" "}
+        <a href="https://www.sketch.com">Sketch</a> and{" "}
+        <a href="https://www.figma.com">Figma</a>, you may have used the Boolean
+        Operation tool. Blender has a similar <code>Boolean</code> operation
+        modifier but I would recommend trying to avoid it when you are first
+        starting. It has a tendency to create messy geometry in your meshes and
+        screw things up when used in combo with a Subdivision modifier.
       </li>
     </ul>
 
+    <h2>Shading</h2>
+
     <p>
-      If you have previously explored design tools like{" "}
-      <a href="https://www.sketch.com">Sketch</a> and{" "}
-      <a href="https://www.figma.com">Figma</a>, you may have used the Boolean
-      Operation tool. Blender has a similar boolean operation modifier, but I
-      would recommend trying to avoid it when you are first starting. It has a
-      tendency to create messy geometry in your meshes and screw things up when
-      used in combo with a Subdivision modifier.{" "}
+      Open up a <code>Shader Editor</code> editor to use Blender's node based
+      shading. Node editors can get complicated fast. To keep it simple, stick
+      with the <code>Principled BDSF</code> shader that is added when you create
+      a new material.
+    </p>
+
+    <ul>
+      <li>
+        The best way to learn shading is to experiment with all the sliders in
+        the <code>Principled BDSF</code> node.
+        <ul>
+          <li>
+            The primary values I find myself editing are Base Color, Metallic,
+            and Roughness.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Concluding Thoughts</h2>
+
+    <p>
+      Start off small. Don't jump right into creating involved models and
+      complex shading trees. The learning curve for Blender can be steep, but
+      getting these core basics nailed down will help make the experience
+      enjoyable.{" "}
     </p>
   </PostWrapper>
 )
