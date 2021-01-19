@@ -29,7 +29,7 @@ const BlenderBasics = props => (
       wonderful, figuring out where to begin can be a challenge if you are new
       to the software. This page is intended to be an ongoing list of Blender
       wrangling tips that I find valuable, written from the perspective of
-      someone who sifted through the noise so you don't have to.
+      someone who already sifted through the noise as a beginner.
     </p>
 
     <h2>General</h2>
