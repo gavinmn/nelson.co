@@ -35,27 +35,28 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--github-text: #24292E;
 		
-		--font-xs: 14px;
-		--font-s: 16px;
-		--font-m: 18px;
-		--font-l: 26px;
+	--font-xs: 14px;
+	--font-s: 16px;
+	--font-m: 18px;
+	--font-l: 26px;
+	
+	--lh-xs: 20px;
+	--lh-s: 24px;
+	--lh-m: 26px;
+	--lh-l: 32px;
+	
+	@media only screen and (min-width: 722px) { 
+		--font-xs: 16px;
+		--font-s: 18px;
+		--font-m: 20px;
+		--font-l: 28px;
 		
-		--lh-xs: 20px;
-		--lh-s: 24px;
-		--lh-m: 24px;
-		--lh-l: 30px;
-		
-		@media only screen and (min-width: 722px) { 
-			--font-xs: 16px;
-			--font-s: 18px;
-			--font-m: 20px;
-			--font-l: 28px;
-			
-			--lh-xs: 24px;
-			--lh-s: 24px;
-			--lh-m: 28px;
-			--lh-l: 36px;
-		}
+		--lh-xs: 24px;
+		--lh-s: 26px;
+		--lh-m: 28px;
+		--lh-l: 36px;
+	}
+	
 		
 
 		@media(prefers-color-scheme: dark) {
