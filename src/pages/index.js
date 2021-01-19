@@ -68,7 +68,19 @@ const IndexPage = props => {
         <PostGrid>
           <Post
             title="Blender Basics"
-            subtitle="A starting point for Blender beginners"
+            subtitle="A starting point for Blender beginners."
+            time="Published January 21, 2021"
+            slug="blenderbasics"
+          />
+          <Post
+            title="Getting Things Done Simply"
+            subtitle="A simplified GTD framework that you might actually be able to stick to."
+            time="Published January 21, 2021"
+            slug="blenderbasics"
+          />
+          <Post
+            title="Email Management Hey Style"
+            subtitle="Bringing the best features of Hey email over to Apple Mail. "
             time="Published January 21, 2021"
             slug="blenderbasics"
           />

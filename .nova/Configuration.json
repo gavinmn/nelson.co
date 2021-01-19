@@ -2,5 +2,5 @@
   "editor.default_syntax" : "jsx",
   "workspace.art_style" : 1,
   "workspace.color" : 0,
-  "workspace.preview_server_port" : 3000
+  "workspace.preview_server_port" : 1001
 }

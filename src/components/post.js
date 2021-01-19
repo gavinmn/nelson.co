@@ -18,19 +18,20 @@ const TitleText = styled.div`
   align-self: stretch;
 `
 const Title = styled.h2`
+  color: var(--text-secondary);
   margin: 0;
   flex: none;
   align-self: stretch;
   flex-grow: 0;
 
   &:hover {
+    color: var(--text-primary);
     cursor: pointer;
     text-decoration: underline;
   }
 `
 
-const Subtitle = styled.h3`
-  font-style: normal;
+const Subtitle = styled.p`
   margin: 0;
   flex: none;
   align-self: stretch;
