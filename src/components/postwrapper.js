@@ -26,7 +26,7 @@ const Feedback = styled.div`
   margin-top: 4rem;
   padding: 0.75rem 1rem;
   background-color: var(--bg-secondary);
-  border-radius: 4px;
+  border-radius: 8px;
 `
 const FeedbackTitle = styled.h3`
   margin-top: 0;
