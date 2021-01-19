@@ -16,7 +16,6 @@ const TitleText = styled.div`
   align-items: flex-start;
   flex: none;
   align-self: stretch;
-  margin-bottom: 4px;
 `
 const Title = styled.h2`
   margin: 0;
