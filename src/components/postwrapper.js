@@ -9,10 +9,10 @@ import Wrapper from "../components/wrapper"
 import Caption from "../components/caption"
 
 const Container = styled.div`
-  margin: 8rem 0 4rem 0;
+  margin: 8rem 0 0rem 0;
 
   @media ${device.desktop} {
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 0 0rem 0;
   }
 `
 

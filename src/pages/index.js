@@ -35,11 +35,19 @@ const CardGrid = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-gap: 1rem;
-  margin-bottom: 4rem;
 
   @media ${device.desktop} {
     grid-template-columns: 49.01960784% 49.01960784%;
     grid-gap: 0.5rem;
+  }
+`
+
+const Anchor = styled.h1`
+  padding-top: 1rem;
+  margin-top: -1rem;
+  @media ${device.desktop} {
+    padding-top: 0.5rem;
+    margin-top: -0.5rem;
   }
 `
 
@@ -52,7 +60,9 @@ const IndexPage = props => {
           <Hero />
         </HeroContainer>
 
-        <a aria-label="Work" id="work" href="/#work"></a>
+        <a aria-label="Work" id="work" href="/#work">
+          <Anchor></Anchor>
+        </a>
 
         <SectionHeader section="Posts" />
         <PostGrid>

@@ -12,6 +12,10 @@ const Wrapper = styled.div`
   overflow: hidden;
 `
 
+const FooterContainer = styled.div`
+  margin-top: 4rem;
+`
+
 const Layout = ({ children }) => {
   return (
     <>
@@ -19,10 +23,12 @@ const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <Wrapper size={"large"}>
-        <footer>
-          Designed and Developed by Gavin Nelson<br></br>©{" "}
-          {new Date().getFullYear()} Gavin Nelson
-        </footer>
+        <FooterContainer>
+          <footer>
+            Designed and Developed by Gavin Nelson<br></br>©{" "}
+            {new Date().getFullYear()} Gavin Nelson
+          </footer>
+        </FooterContainer>
       </Wrapper>
     </>
   )
