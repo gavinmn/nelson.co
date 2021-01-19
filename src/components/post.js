@@ -20,9 +20,6 @@ const TitleText = styled.div`
 const Title = styled.h2`
   color: var(--text-secondary);
   margin: 0;
-  flex: none;
-  align-self: stretch;
-  flex-grow: 0;
 
   &:hover {
     color: var(--text-primary);
