@@ -67,8 +67,8 @@ const BlenderBasics = props => (
         <code>shift + a</code> brings up the Add menu at your cursor.
       </li>
       <li>
-        <code>option + z</code> toggles x-ray view. I find this useful enough
-        that I mapped it to a button on my mouse.
+        <code>option + z</code> toggles x-ray view. I find this so useful when
+        modeling that I mapped the toggle to a button on my mouse.
       </li>
       <li>
         <code>tab</code> toggles between Object mode and Edit mode. Object mode
