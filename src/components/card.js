@@ -8,7 +8,7 @@ const CardBase = styled.div`
   flex-direction: column;
   align-items: flex-start;
   background-color: var(--bg-secondary);
-  border-radius: 12px;
+  border-radius: 8px;
   max-width: 100%;
   padding-bottom: 8px; 
   overflow: hidden;
