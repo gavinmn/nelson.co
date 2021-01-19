@@ -11,14 +11,14 @@ const BlenderBasics = props => (
   <PostWrapper
     title="Blender Basics"
     subtitle=""
-    time="Published January xx, 2021"
+    time="Published January 19, 2021"
   >
-    {/* <CustomImage
+    <CustomImage
       size="full"
-      src="/images/index/blender.png"
+      src="/images/index/blenderpost.png"
       width="816"
       height="294"
-    /> */}
+    />
     <p>
       Blender is a powerful,{" "}
       <a href="https://github.com/blender">open source</a> 3D creation tool with

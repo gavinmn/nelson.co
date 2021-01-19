@@ -47,6 +47,17 @@ const IndexPage = props => {
         <CardGrid>
           <Card
             width="double"
+            imageSrc="/images/index/blenderpost.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Blender Basics"
+            subtitle="A starting point for Blender beginners"
+            time="January 19, 2021"
+          >
+            <ButtonInternal link="/posts/blenderbasics" />
+          </Card>
+          <Card
+            width="double"
             imageSrc="/images/index/montereyimage.png"
             imageWidth="816"
             imageHeight="294"
