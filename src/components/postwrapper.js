@@ -61,7 +61,7 @@ const PostWrapper = props => (
               <FeedbackTitle>Feedback</FeedbackTitle>
               <p>
                 Do you have comments or questions about something I wrote? Send
-                it my way on{" "}
+                them my way on{" "}
                 <Twitter
                   href="https://twitter.com/Gavmn"
                   target="_blank"
