@@ -25,94 +25,110 @@
   font-display: optional;
 }
 
+h1 {
+  font-size: var(--font-l);
+  line-height: var(--lh-l);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: var(--font-m);
+  line-height: var(--lh-m);
+  font-weight: bold;
+  margin: 1.25rem 0 0.5rem 0;
+}
+
+h3 {
+  font-size: var(--font-s);
+  line-height: var(--lh-s);
+  font-style: italic;
+  font-weight: normal;
+  margin: 1.25rem 0 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+p {
+  font-size: var(--font-s);
+  line-height: var(--lh-s);
+}
+
 a {
+  font-size: var(--font-s);
   text-decoration: none;
   color: var(--text-secondary);
   font-weight: normal;
 }
+a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  cursor: pointer;
+}
 
-code {
-  font-size: 14px;
+li {
+  font-size: var(--font-s);
+  line-height: var(--lh-s);
+  margin: 0.5rem 0;
+}
+
+li::marker {
+  font-size: var(--font-s);
   color: var(--text-secondary);
-  background-color: var(--bg-secondary);
-  padding: 0.15rem 0.2rem;
-  border-radius: 4px;
+}
+
+ul > li {
+  margin-left: 1.5rem;
 }
 
 ul {
   list-style-type: disc;
 }
 
-ul > li {
-  margin-left: 2rem;
-  line-height: 2;
-}
-
-li::marker {
+code {
+  font-family: ui-monospace, monospace;
+  font-size: var(--font-s);
+  line-height: var(--lh-s);
+  font-weight: 500;
   color: var(--text-secondary);
-  font-size: 14px;
-}
-
-p,
-li {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 14px;
-  color: var(--text-secondary);
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 15px;
-  font-weight: bold;
-  color: var(--text-secondary);
-  margin: 2rem 0 0.5rem 0;
+  background-color: var(--bg-secondary);
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 722px) {
-  code {
-    font-size: 16px;
-    color: var(--text-secondary);
-    background-color: var(--bg-secondary);
-    padding: 0.15rem 0.2rem;
-    border-radius: 4px;
-  }
-
-  ul > li {
-    margin-left: 1rem;
-  }
-
-  li::marker {
-    font-size: 16px;
-  }
-
-  p,
-  li {
-    font-size: 18px;
+  h1 {
+    font-size: var(--font-l);
+    line-height: var(--lh-l);
+    margin-bottom: 0.25rem;
   }
 
   h2 {
-    font-size: 16px;
-    color: var(--text-secondary);
-    font-weight: normal;
+    font-size: var(--font-m);
+    line-height: var(--lh-m);
+    font-weight: bold;
+    margin: 0.75rem 0 0.25rem 0;
   }
 
   h3 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 17px;
+    font-size: var(--font-s);
+    line-height: var(--lh-s);
+    font-style: italic;
+    font-weight: normal;
+    margin: 0.75rem 0 0.25rem 0;
+    color: var(--text-secondary);
   }
 
-  a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #8b8f9b;
+  p {
+    font-size: var(--font-s);
+    line-height: var(--lh-s);
+  }
+
+  li {
+    margin: 0.25rem 0;
+  }
+
+  ul > li {
+    margin-left: 0.75rem;
   }
 }

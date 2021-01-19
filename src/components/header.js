@@ -35,6 +35,7 @@ const AboutLink = styled.a`
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
+    text-decoration: none;
   }
 `
 const WorkLink = styled.a`
@@ -49,6 +50,7 @@ const WorkLink = styled.a`
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
+    text-decoration: none;
   }
 `
 const Name = styled.a`
@@ -58,6 +60,7 @@ const Name = styled.a`
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
+    text-decoration: none;
   }
 `
 

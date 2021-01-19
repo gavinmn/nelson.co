@@ -3,27 +3,24 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Link from "next/link"
+import Wrapper from "../components/wrapper"
+import { device } from "../components/device"
 
-const Container = styled.div`
+const TextContainer = styled.div`
+  margin-top: -1rem;
   display: flex;
-  max-width: 816px;
-  margin: 0 auto;
-  padding: 0 5% 0 5%;
-  overflow: hidden;
+  flex-direction: column;
   height: 100vh;
-  justify-content: start;
-  align-content: center;
-`
-const StyledText = styled.p`
-  font-family: monospace;
-  align-self: center;
-  justify-self: start;
-  font-size: 16px;
-`
+  align-items: start;
+  justify-content: center;
 
+  @media ${device.desktop} {
+    margin-top: 1rem;
+  }
+`
 const HereLink = styled(Link)`
   color: var(--text-secondary);
-  font-size: 16px;
+  font-size: var(--font-s);
 
   &:hover {
     text-decoration: underline;
@@ -32,12 +29,16 @@ const HereLink = styled(Link)`
 
 const NotFoundPage = props => (
   <Layout location={props.location}>
-    <SEO title="404: Not found" />
-    <Container>
-      <StyledText>
-        404.<br></br> Why don&#8217t you go <HereLink href="/">here.</HereLink>
-      </StyledText>
-    </Container>
+    <SEO title="404: Not found | " />
+    <Wrapper>
+      <TextContainer>
+        <h1>404</h1>
+        <p>
+          This is not the page you are looking for. <br></br>Why don't you go{" "}
+          <HereLink href="/">here.</HereLink>
+        </p>
+      </TextContainer>
+    </Wrapper>
   </Layout>
 )
 

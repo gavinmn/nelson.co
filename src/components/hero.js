@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Logo from "./logo"
 import Fade from "./fade"
 import { device } from "./device"
-import StyledLink from "./styledlink"
 import { keyframes } from "styled-components"
 
 const scaleIn = keyframes`
@@ -45,7 +44,8 @@ const HeroText = styled.p`
   max-width: 506px;
 
   @media ${device.desktop} {
-    font-size: 20px;
+    font-size: var(--font-m);
+    line-height: 28px;
     margin-top: 0;
     justify-self: end;
     max-width: 506px;
@@ -71,12 +71,14 @@ const LinkContainer = styled.div`
   }
 `
 
-const Email = styled(StyledLink)`
+const Email = styled.a`
+  font-size: var(--font-xs);
   &:hover {
     text-decoration-color: var(--color-primary);
   }
 `
-const Dribbble = styled(StyledLink)`
+const Dribbble = styled.a`
+  font-size: var(--font-xs);
   &:hover {
     color: #ea4c89;
     text-decoration-color: #ea4c89;
@@ -86,28 +88,20 @@ const Dribbble = styled(StyledLink)`
     margin-left: 1.5rem;
   }
 `
-const LinkedIn = styled(StyledLink)`
-  &:hover {
-    color: #0a66c2;
-    text-decoration-color: #0a66c2;
-  }
 
-  @media only screen and (min-width: 445px) {
-    margin-left: 1.5rem;
-  }
-`
-
-const Twitter = styled(StyledLink)`
+const Twitter = styled.a`
+  font-size: var(--font-xs);
   &:hover {
     color: #1da1f2;
-    text-decoration-color: #0a66c2;
+    text-decoration-color: #1da1f2;
   }
 
   @media only screen and (min-width: 445px) {
     margin-left: 1.5rem;
   }
 `
-const GitHub = styled(StyledLink)`
+const GitHub = styled.a`
+  font-size: var(--font-xs);
   &:hover {
     color: var(--github-text);
     text-decoration-color: var(--github-text);

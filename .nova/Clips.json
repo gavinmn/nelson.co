@@ -1,14 +1,19 @@
 {
   "clips" : [
     {
-      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport Image from \"next\/image\"\nimport PostWrapper from \"..\/components\/postwrapper\"\nimport CustomImage from \"..\/components\/customimage\"\nimport StyledLink from \"..\/components\/styledlink\"\nimport { device } from \"..\/components\/device\"\n\n\nconst ARTICLENAME = props => (\n  <PostWrapper\n\ttitle=\"Title\"\n\tsubtitle=\"Subtitle\"\n\ttime=\"Time\"\n  >\n\t<CustomImage\n\t  size=\"full\"\n\t  src=\"\/images\/\"\n\t  width=\"816\"\n\t  height=\"294\"\n\t\/>\n\n  <\/PostWrapper>\n)\n\nexport default ARTICLENAME\n",
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport Image from \"next\/image\"\nimport PostWrapper from \"..\/components\/postwrapper\"\nimport Caption from \"..\/components\/caption\"\nimport CustomImage from \"..\/components\/customimage\"\nimport { device } from \"..\/components\/device\"\n\n\nconst ARTICLENAME = props => (\n  <PostWrapper\n\ttitle=\"Title\"\n\tsubtitle=\"Subtitle\"\n\ttime=\"Time\"\n  >\n\t<CustomImage\n\t  size=\"full\"\n\t  src=\"\/images\/\"\n\t  width=\"816\"\n\t  height=\"294\"\n\t\/>\n\n  <\/PostWrapper>\n)\n\nexport default ARTICLENAME\n",
       "name" : "Post Base",
-      "trigger" : "PB"
+      "trigger" : "po"
     },
     {
-      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\n\nconst Component = props => (\n <div><\/div>\n)\n\nexport default Component\n",
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport { device } from \"..\/components\/device\"\n\nconst Component = props => (\n <div><\/div>\n)\n\nexport default Component\n",
       "name" : "Component",
       "trigger" : "com"
+    },
+    {
+      "content" : "<br><\/br><br><\/br>",
+      "name" : "Line Break",
+      "trigger" : "br"
     }
   ]
 }

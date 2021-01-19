@@ -29,33 +29,60 @@ export default function SEO({ title }) {
       <meta property="twitter:description" content={config.description} />
 
       <link
-        href="https://gnelson.me/images/meta/favicon-180.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-180x180.png"
         rel="apple-touch-icon"
         sizes="180x180"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-120.png"
+        href="https://gnelson.me/images/meta/apple-touch-icon-152x152.png"
+        rel="apple-touch-icon"
+        sizes="152x152"
+      />
+      <link
+        href="https://gnelson.me/images/meta/apple-touch-icon-120x120.png"
+        rel="apple-touch-icon"
+        sizes="120x120"
+      />
+
+      <link
+        href="https://gnelson.me/images/meta/apple-touch-icon-76x76.png"
+        rel="apple-touch-icon"
+        sizes="76x76"
+      />
+      <link
+        href="https://gnelson.me/images/meta/apple-touch-icon-60x60.png"
+        rel="apple-touch-icon"
+        sizes="60x60"
+      />
+      <link
+        href="https://gnelson.me/images/meta/apple-touch-icon-120x120.png"
         rel="apple-touch-icon"
         sizes="120x120"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-32.png"
+        href="https://gnelson.me/images/meta/favicon-32x32.png"
         rel="icon"
         sizes="32x32"
         type="image/png"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-16.png"
+        href="https://gnelson.me/images/meta/favicon-16x16.png"
         rel="icon"
         sizes="16x16"
         type="image/png"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-48.png"
+        href="https://gnelson.me/images/meta/favicon-48x48.png"
         rel="icon"
         sizes="48x48"
         type="image/png"
       />
+      <script
+        async
+        defer
+        data-domain="gnelson.me"
+        src="https://plausible.io/js/plausible.outbound-links.js"
+      ></script>
     </Head>
   )
 }

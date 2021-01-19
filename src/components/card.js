@@ -10,7 +10,7 @@ const CardBase = styled.div`
   background-color: var(--bg-secondary);
   border-radius: 12px;
   max-width: 100%;
-  height: 397px;
+  padding-bottom: 8px; 
   overflow: hidden;
 
   @media ${device.desktop} {
@@ -36,9 +36,12 @@ const BottomSection = styled.div`
   flex-grow: 0;
   flex-direction: row;
   align-items: center;
-  padding: 0px 16px;
+  padding: 0px 1rem;
   margin-top: 12px;
   align-self: stretch;
+  @media ${device.desktop} {
+    padding: 0px 0.5rem;
+  }
 `
 
 const Text = styled.div`
@@ -47,6 +50,16 @@ const Text = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin-right: 8px;
+`
+
+const Subtext = styled.p`
+  font-size: var(--font-xs);
+  line-height: var(--lh-xs);
+  color: var(--text-secondary);
+`
+
+const HeaderText = styled.h1`
+  margin: 0;
 `
 
 const Card = props => {
@@ -73,11 +86,11 @@ const Card = props => {
       </CardImageContainer>
       <BottomSection>
         <Text>
-          <h1>{props.title}</h1>
-          <h2>{props.subtitle}</h2>
-          <h2>
+          <HeaderText>{props.title}</HeaderText>
+          <Subtext>{props.subtitle}</Subtext>
+          <Subtext>
             <i>{props.time}</i>
-          </h2>
+          </Subtext>
         </Text>
         {props.children}
       </BottomSection>
