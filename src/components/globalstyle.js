@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--font-xs: 14px;
 		--font-s: 16px;
-		--font-m: 17px;
+		--font-m: 18px;
 		--font-l: 26px;
 		
 		// --lh-xs: 20px;
@@ -48,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
 		@media only screen and (min-width: 722px) { 
 			--font-xs: 16px;
 			--font-s: 18px;
-			--font-m: 19px;
+			--font-m: 20px;
 			--font-l: 28px;
 			
 			// --lh-xs: 24px;
