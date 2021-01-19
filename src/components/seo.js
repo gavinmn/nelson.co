@@ -29,7 +29,7 @@ export default function SEO({
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:creator" content="gavmn" />
-      <meta property="twitter:title" content="gnelson.me" />
+      <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
 
       <link
