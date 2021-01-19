@@ -13,6 +13,7 @@ const BlenderBasics = props => (
     subtitle=""
     time="Published January 21, 2021"
     og="blenderog.png"
+    description="A starting point for Blender beginners."
   >
     <CustomImage
       size="full"

@@ -85,6 +85,8 @@ const chalkPage = props => (
     title="Chalk"
     subtitle="Interaction and Visual Design"
     time="Summer 2019"
+    og="og.png"
+    description="Interaction and Visual Design"
   >
     <CustomImage
       size="full"

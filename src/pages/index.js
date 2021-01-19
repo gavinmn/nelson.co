@@ -54,7 +54,11 @@ const Anchor = styled.h1`
 const IndexPage = props => {
   return (
     <Layout>
-      <SEO title=" " og="og.png" />
+      <SEO
+        title=" "
+        og="og.png"
+        description="Gavin Nelson is a product designer who creates human-centered design solutions."
+      />
       <Wrapper size={"large"}>
         <HeroContainer>
           <Hero />

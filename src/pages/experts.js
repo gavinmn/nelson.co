@@ -32,6 +32,8 @@ const expertsPage = props => (
     title="Expert Profiles"
     subtitle="Product and Visual Design"
     time="Summer 2018"
+    og="og.png"
+    description="Product and Visual Design"
   >
     <CustomImage
       size="full"

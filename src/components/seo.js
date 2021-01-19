@@ -1,17 +1,16 @@
 import Head from "next/head"
-import config from "../config"
 
-export default function SEO({ title, og }) {
-  const siteTitle = config.title
+export default function SEO({ title, og, description }) {
+  const siteTitle = "Gavin Nelson"
 
   return (
     <Head>
       <title>{`${title}${siteTitle}`}</title>
-      <meta name="description" content={config.description} />
+      <meta name="description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={config.title} />
-      <meta property="og:description" content={config.description} />
-      <meta property="og:site_name" content={config.siteTitle} />
+      <meta property="og:title" content="Gavin Nelson" />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content="Gavin Nelson" />
       <meta
         property="og:image"
         content={`https://gnelson.me/images/meta/${og}`}
@@ -24,9 +23,9 @@ export default function SEO({ title, og }) {
       />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:creator" content={config.social.twitter} />
+      <meta property="twitter:creator" content="gavmn" />
       <meta property="twitter:title" content="gnelson.me" />
-      <meta property="twitter:description" content={config.description} />
+      <meta property="twitter:description" content={description} />
 
       <link
         href="https://gnelson.me/images/meta/apple-touch-icon-180x180.png"
