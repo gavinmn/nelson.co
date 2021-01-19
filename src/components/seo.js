@@ -1,11 +1,16 @@
+import React from "react"
 import Head from "next/head"
 
-export default function SEO({ title, og, description }) {
+export default function SEO({
+  title = "Gavin Nelson",
+  og = "og.png",
+  description = "Gavin Nelson is a product designer who creates human-centered design solutions.",
+}) {
   const siteTitle = "Gavin Nelson"
 
   return (
     <Head>
-      <title>{`${title}${siteTitle}`}</title>
+      <title>{`${title}`}</title>
       <meta name="description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Gavin Nelson" />
