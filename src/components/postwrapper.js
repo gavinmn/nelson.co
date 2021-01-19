@@ -46,7 +46,7 @@ const Twitter = styled.a`
 
 const PostWrapper = props => (
   <Layout>
-    <SEO title={`${props.title} - `} ogSrc={props.ogSrc} />
+    <SEO title={`${props.title} - `} og={props.og} />
     <Wrapper size="large">
       <Fade>
         <Container>
