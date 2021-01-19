@@ -16,9 +16,10 @@ const Container = styled.div`
   }
 `
 
-const Subtitle = styled.h3`
+const Subtitle = styled.h2`
   font-size: var(--font-xs);
-  font-style: normal;
+  color: var(--text-secondary);
+  font-weight: normal;
   margin: 0;
 `
 
