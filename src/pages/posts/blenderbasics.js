@@ -55,7 +55,7 @@ const BlenderBasics = props => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect width="192" height="192" fill="var(--bg-secondary)" />
+            <rect width="192" height="192" fill="var(--text-primary)" />
           </Cube>
         </Ztext>
       </CubeContainer>
