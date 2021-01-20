@@ -9,13 +9,13 @@ import { device } from "../../components/device"
 import Ztext from "react-ztext"
 
 const CubeContainer = styled.div`
-  margin: 1rem auto 0.75rem auto;
+  margin: 1.5rem auto 0.25rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media ${device.desktop} {
-    margin: 2rem auto 1.5rem auto;
+    margin: 2rem auto 1.1rem auto;
   }
 `
 
@@ -45,7 +45,7 @@ const BlenderBasics = props => {
           eventRotation="40deg"
           eventDirection="default"
           fade={false}
-          layers={80}
+          layers={120}
           perspective="500px"
         >
           <Cube

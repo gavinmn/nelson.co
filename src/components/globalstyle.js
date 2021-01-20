@@ -129,8 +129,8 @@ export const GlobalStyle = createGlobalStyle`
 	
 
 	::selection {
-		color: white;
-		  background: var(--color-primary);
+		color: var(--bg-primary-hex);
+		  background: var(--text-primary);
 	}
 
 	@media only screen and (min-width: 722px) {
