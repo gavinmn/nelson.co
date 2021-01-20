@@ -9,18 +9,22 @@ import { device } from "../../components/device"
 import Ztext from "react-ztext"
 
 const CubeContainer = styled.div`
-  margin: 2.2rem auto 1.6rem auto;
+  margin: 1rem auto 0.75rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${device.desktop} {
+    margin: 2rem auto 1.5rem auto;
+  }
 `
 
 const Cube = styled.svg`
-  width: 96px;
-  height: 96px;
+  width: 80px;
+  height: 80px;
   @media ${device.desktop} {
-    width: 192px;
-    height: 192px;
+    width: 160px;
+    height: 160px;
   }
 `
 
@@ -35,7 +39,7 @@ const BlenderBasics = props => {
     >
       <CubeContainer>
         <Ztext
-          depth="6rem"
+          depth="5rem"
           direction="both"
           event="pointer"
           eventRotation="40deg"
