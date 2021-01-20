@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-primary-hex: #ffffff;
 		--bg-primary-rgba: rgba(255, 255, 255, .8);
 		
-		--bg-secondary: #F5F7FA;
+		--bg-secondary: #F1F5F8;
 		
 		--text-primary: #1A2028;
 		--text-secondary: #517095;
@@ -66,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
 			
 			--bg-secondary: #1A2028;
 
-			--text-primary: #F5F7FA;
+			--text-primary: #F1F5F8;
 			--text-secondary: #7A91AE; 
 			
 			--blue-primary: #0A84FF;
@@ -75,8 +75,8 @@ export const GlobalStyle = createGlobalStyle`
 			
 			
 			// used for button hover states and logo
-			--color-primary: #F5F7FA;
-			--logo-primary: #F5F7FA;
+			--color-primary: #F1F5F8;
+			--logo-primary: #F1F5F8;
 			
 			
 			--color-chalk: #1A83FF;
