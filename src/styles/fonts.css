@@ -87,12 +87,10 @@ ul {
 
 code {
   font-family: ui-monospace, monospace;
-  font-size: var(--font-s);
-  line-height: var(--lh-s);
-  font-weight: 500;
+  font-size: var(--font-xs);
   color: var(--text-secondary);
   background-color: var(--bg-secondary);
-  padding: 0.1rem 0.2rem;
+  padding: 0.05rem 0.2rem 0.1rem 0.2rem;
   border-radius: 4px;
 }
 

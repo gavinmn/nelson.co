@@ -1,32 +1,36 @@
+import React from "react"
 import Head from "next/head"
-import config from "../config"
 
-export default function SEO({ title }) {
-  const siteTitle = config.title
+export default function SEO({
+  title = "Gavin Nelson",
+  og = "og.png",
+  description = "Gavin Nelson is a product designer who creates human-centered design solutions.",
+}) {
+  const siteTitle = "Gavin Nelson"
 
   return (
     <Head>
-      <title>{`${title}${siteTitle}`}</title>
-      <meta name="description" content={config.description} />
+      <title>{`${title}`}</title>
+      <meta name="description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={config.title} />
-      <meta property="og:description" content={config.description} />
-      <meta property="og:site_name" content={config.siteTitle} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content="Gavin Nelson" />
       <meta
         property="og:image"
-        content="https://gnelson.me/images/meta/og.png"
+        content={`https://gnelson.me/images/meta/${og}`}
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta
         property="twitter:image"
-        content="https://gnelson.me/images/meta/og.png"
+        content={`https://gnelson.me/images/meta/${og}`}
       />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:creator" content={config.social.twitter} />
-      <meta property="twitter:title" content="gnelson.me" />
-      <meta property="twitter:description" content={config.description} />
+      <meta property="twitter:creator" content="gavmn" />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
 
       <link
         href="https://gnelson.me/images/meta/apple-touch-icon-180x180.png"

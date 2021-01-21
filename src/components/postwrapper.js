@@ -9,22 +9,23 @@ import Wrapper from "../components/wrapper"
 import Caption from "../components/caption"
 
 const Container = styled.div`
-  margin: 8rem 0 4rem 0;
+  margin: 8rem 0 0rem 0;
 
   @media ${device.desktop} {
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 0 0rem 0;
   }
 `
 
-const Subtitle = styled.h3`
+const Subtitle = styled.h2`
   font-size: var(--font-xs);
-  font-style: normal;
+  color: var(--text-secondary);
+  font-weight: normal;
   margin: 0;
 `
 
 const Feedback = styled.div`
   margin-top: 4rem;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--bg-secondary);
   border-radius: 8px;
 `
@@ -46,7 +47,7 @@ const Twitter = styled.a`
 
 const PostWrapper = props => (
   <Layout>
-    <SEO title={`${props.title} - `} />
+    <SEO title={props.title} og={props.og} description={props.description} />
     <Wrapper size="large">
       <Fade>
         <Container>

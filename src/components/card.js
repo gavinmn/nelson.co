@@ -58,7 +58,7 @@ const Subtext = styled.p`
   color: var(--text-secondary);
 `
 
-const HeaderText = styled.h1`
+const HeaderText = styled.h2`
   margin: 0;
 `
 

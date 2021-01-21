@@ -1,7 +1,7 @@
 {
   "clips" : [
     {
-      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport Image from \"next\/image\"\nimport PostWrapper from \"..\/components\/postwrapper\"\nimport Caption from \"..\/components\/caption\"\nimport CustomImage from \"..\/components\/customimage\"\nimport { device } from \"..\/components\/device\"\n\n\nconst ARTICLENAME = props => (\n  <PostWrapper\n\ttitle=\"Title\"\n\tsubtitle=\"Subtitle\"\n\ttime=\"Time\"\n  >\n\t<CustomImage\n\t  size=\"full\"\n\t  src=\"\/images\/\"\n\t  width=\"816\"\n\t  height=\"294\"\n\t\/>\n\n  <\/PostWrapper>\n)\n\nexport default ARTICLENAME\n",
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport Image from \"next\/image\"\nimport PostWrapper from \"..\/..\/components\/postwrapper\"\nimport Caption from \"..\/..\/components\/caption\"\nimport CustomImage from \"..\/..\/components\/customimage\"\nimport { device } from \"..\/..\/components\/device\"\n\n\nconst ARTICLENAME = props => (\n  <PostWrapper\n\ttitle=\"Title\"\n\tsubtitle=\"Subtitle\"\n\ttime=\"Time\"\n  >\n\t<CustomImage\n\t  size=\"full\"\n\t  src=\"\/images\/\"\n\t  width=\"816\"\n\t  height=\"294\"\n\t\/>\n\n  <\/PostWrapper>\n)\n\nexport default ARTICLENAME\n",
       "name" : "Post Base",
       "trigger" : "po"
     },

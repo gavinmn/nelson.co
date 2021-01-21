@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 		--bg-primary-hex: #ffffff;
 		--bg-primary-rgba: rgba(255, 255, 255, .8);
 		
-		--bg-secondary: #F5F7FA;
+		--bg-secondary: #F1F5F8;
 		
 		--text-primary: #1A2028;
 		--text-secondary: #517095;
@@ -40,10 +40,10 @@ export const GlobalStyle = createGlobalStyle`
 		--font-m: 18px;
 		--font-l: 26px;
 		
-		--lh-xs: 20px;
-		--lh-s: 24px;
-		--lh-m: 26px;
-		--lh-l: 32px;
+		// --lh-xs: 20px;
+		// --lh-s: 24px;
+		// --lh-m: 26px;
+		// --lh-l: 32px;
 	
 		@media only screen and (min-width: 722px) { 
 			--font-xs: 16px;
@@ -51,10 +51,10 @@ export const GlobalStyle = createGlobalStyle`
 			--font-m: 20px;
 			--font-l: 28px;
 			
-			--lh-xs: 24px;
-			--lh-s: 26px;
-			--lh-m: 28px;
-			--lh-l: 36px;
+			// --lh-xs: 24px;
+			// --lh-s: 26px;
+			// --lh-m: 28px;
+			// --lh-l: 36px;
 		}
 	
 		
@@ -66,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
 			
 			--bg-secondary: #1A2028;
 
-			--text-primary: #F5F7FA;
+			--text-primary: #F1F5F8;
 			--text-secondary: #7A91AE; 
 			
 			--blue-primary: #0A84FF;
@@ -75,8 +75,8 @@ export const GlobalStyle = createGlobalStyle`
 			
 			
 			// used for button hover states and logo
-			--color-primary: #F5F7FA;
-			--logo-primary: #F5F7FA;
+			--color-primary: #F1F5F8;
+			--logo-primary: #F1F5F8;
 			
 			
 			--color-chalk: #1A83FF;
@@ -95,7 +95,7 @@ export const GlobalStyle = createGlobalStyle`
 		  color: var(--text-primary);
 		  overflow-y: scroll;
 		  overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
+		  -webkit-overflow-scrolling: touch;
 	}
 
 	body.dark {
@@ -105,7 +105,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	html, body {
 		width: 100%;
-		 height: 100%
+		height: 100%
 	}
 
 	html {
@@ -113,7 +113,7 @@ export const GlobalStyle = createGlobalStyle`
 		  -webkit-overflow-scrolling: touch;
 		  -webkit-font-smoothing: antialiased;
 		  text-rendering: optimizeLegibility;
-		  line-height: 1.4;
+		  line-height: 1.46;
 	}
 
 	footer {
@@ -129,8 +129,8 @@ export const GlobalStyle = createGlobalStyle`
 	
 
 	::selection {
-		color: white;
-		  background: var(--color-primary);
+		color: var(--bg-primary-hex);
+		  background: var(--text-primary);
 	}
 
 	@media only screen and (min-width: 722px) {

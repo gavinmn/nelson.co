@@ -9,7 +9,7 @@ const CustomImageContainer = styled.div`
   max-width: ${props => (props.full ? "816px" : "444px")};
 
   @media ${device.desktop} {
-    margin: ${props => (props.full ? "2rem auto" : "1rem auto")};
+    margin: ${props => (props.full ? "1rem auto" : "1rem auto")};
   }
 
   @media only screen and (min-width: 848px) {

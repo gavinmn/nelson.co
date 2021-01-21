@@ -9,6 +9,8 @@ import Image from "next/image"
 import Card from "../components/card"
 import ButtonInternal from "../components/buttoninternal"
 import ButtonExternal from "../components/buttonexternal"
+import SectionHeader from "../components/sectionheader"
+import Post from "../components/post"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -22,28 +24,57 @@ const HeroContainer = styled.div`
   }
 `
 
+const PostGrid = styled.div`
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0.5rem;
+  max-width: 816px;
+`
+
 const CardGrid = styled.div`
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 16px;
-  margin-bottom: 4rem;
+  grid-gap: 1rem;
 
   @media ${device.desktop} {
     grid-template-columns: 49.01960784% 49.01960784%;
+    grid-gap: 0.5rem;
+  }
+`
+
+const Anchor = styled.h1`
+  padding-top: 1rem;
+  margin-top: -1rem;
+  @media ${device.desktop} {
+    padding-top: 0.5rem;
+    margin-top: -0.5rem;
   }
 `
 
 const IndexPage = props => {
   return (
     <Layout>
-      <SEO title=" " />
+      <SEO />
       <Wrapper size={"large"}>
         <HeroContainer>
           <Hero />
         </HeroContainer>
 
-        <a aria-label="Work" id="work" href="/#work"></a>
+        <a aria-label="Work" id="work" href="/#work">
+          <Anchor></Anchor>
+        </a>
 
+        <SectionHeader section="Posts" />
+        <PostGrid>
+          <Post
+            title="Blender Basics"
+            subtitle="A starting point for Blender beginners from a former beginner."
+            time="Published January 21, 2021"
+            slug="blenderbasics"
+          />
+        </PostGrid>
+
+        <SectionHeader section="Projects" />
         <CardGrid>
           <Card
             width="double"
@@ -68,7 +99,10 @@ const IndexPage = props => {
           >
             <ButtonInternal link="/chalk" />
           </Card>
+        </CardGrid>
 
+        <SectionHeader section="Icons" />
+        <CardGrid>
           <Card
             width="single"
             imageSrc="/images/index/claquette.png"
