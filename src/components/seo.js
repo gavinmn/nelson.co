@@ -18,13 +18,13 @@ export default function SEO({
       <meta property="og:site_name" content="Gavin Nelson" />
       <meta
         property="og:image"
-        content={`https://gnelson.me/images/meta/${og}`}
+        content={`https://nelson.co/images/meta/${og}`}
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta
         property="twitter:image"
-        content={`https://gnelson.me/images/meta/${og}`}
+        content={`https://nelson.co/images/meta/${og}`}
       />
 
       <meta property="twitter:card" content="summary_large_image" />
@@ -33,50 +33,50 @@ export default function SEO({
       <meta property="twitter:description" content={description} />
 
       <link
-        href="https://gnelson.me/images/meta/apple-touch-icon-180x180.png"
+        href="https://nelson.co/images/meta/apple-touch-icon-180x180.png"
         rel="apple-touch-icon"
         sizes="180x180"
       />
       <link
-        href="https://gnelson.me/images/meta/apple-touch-icon-152x152.png"
+        href="https://nelson.co/images/meta/apple-touch-icon-152x152.png"
         rel="apple-touch-icon"
         sizes="152x152"
       />
       <link
-        href="https://gnelson.me/images/meta/apple-touch-icon-120x120.png"
+        href="https://nelson.co/images/meta/apple-touch-icon-120x120.png"
         rel="apple-touch-icon"
         sizes="120x120"
       />
 
       <link
-        href="https://gnelson.me/images/meta/apple-touch-icon-76x76.png"
+        href="https://nelson.co/images/meta/apple-touch-icon-76x76.png"
         rel="apple-touch-icon"
         sizes="76x76"
       />
       <link
-        href="https://gnelson.me/images/meta/apple-touch-icon-60x60.png"
         rel="apple-touch-icon"
-        sizes="60x60"
+        href="https://nelson.co/images/meta/apple-touch-icon-60x60.png"
       />
       <link
-        href="https://gnelson.me/images/meta/apple-touch-icon-120x120.png"
+        href="https://nelson.co/images/meta/apple-touch-icon-120x120.png"
+        sizes="60x60"
         rel="apple-touch-icon"
         sizes="120x120"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-32x32.png"
+        href="https://nelson.co/images/meta/favicon-32x32.png"
         rel="icon"
         sizes="32x32"
         type="image/png"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-16x16.png"
+        href="https://nelson.co/images/meta/favicon-16x16.png"
         rel="icon"
         sizes="16x16"
         type="image/png"
       />
       <link
-        href="https://gnelson.me/images/meta/favicon-48x48.png"
+        href="https://nelson.co/images/meta/favicon-48x48.png"
         rel="icon"
         sizes="48x48"
         type="image/png"

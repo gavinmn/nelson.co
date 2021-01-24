@@ -132,7 +132,7 @@ const Hero = props => {
           </HeroText>
           <LinkContainer>
             <Email
-              href="mailto:gavin@gnelson.me"
+              href="mailto:gavin@nelson.co"
               target="_blank"
               rel="noopener noreferrer"
             >

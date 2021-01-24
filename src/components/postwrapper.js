@@ -72,7 +72,7 @@ const PostWrapper = props => (
                 </Twitter>{" "}
                 or over{" "}
                 <Email
-                  href="mailto:gavin@gnelson.me"
+                  href="mailto:gavin@nelson.co"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
