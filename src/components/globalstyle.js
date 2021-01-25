@@ -110,7 +110,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	footer {
-		  margin-bottom: 2rem;
+		  margin-bottom: 1rem;
 		  font-size: var(--font-xs);
 		  color: var(--text-secondary);
 	}
