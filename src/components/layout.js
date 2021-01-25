@@ -49,12 +49,30 @@ const LeftFlex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media ${device.desktop} {
+    flex-direction: row;
+  }
 `
 
 const RightFlex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+`
+const ColOne = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media ${device.desktop} {
+    margin-right: 64px;
+  }
+`
+
+const ColTwo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `
 
 const StyledLink = styled.a`
@@ -79,40 +97,43 @@ const Layout = ({ children }) => {
           <LayoutFlex>
             <TopFlex>
               <LeftFlex>
-                <Link href="/" passhref>
-                  <StyledLink>About</StyledLink>
-                </Link>
+                <ColOne>
+                  <Link href="/" passhref>
+                    <StyledLink>About</StyledLink>
+                  </Link>
 
-                <Link href="/#work" passhref>
-                  <StyledLink>Work</StyledLink>
-                </Link>
-
-                <StyledLink
-                  href="mailto:gavin@nelson.co"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Email
-                </StyledLink>
-                <StyledLink
-                  href="https://twitter.com/Gavmn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter
-                </StyledLink>
+                  <Link href="/#work" passhref>
+                    <StyledLink>Work</StyledLink>
+                  </Link>
+                </ColOne>
+                <ColTwo>
+                  <StyledLink
+                    href="mailto:gavin@nelson.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Email
+                  </StyledLink>
+                  <StyledLink
+                    href="https://twitter.com/Gavmn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </StyledLink>
+                </ColTwo>
               </LeftFlex>
               <RightFlex>
-                <Link href="" passhref>
+                {/* <Link href="" passhref>
                   <StyledLink>Music Thread</StyledLink>
                 </Link>
                 <Link href="" passhref>
                   <StyledLink>Photos</StyledLink>
-                </Link>
+                </Link> */}
               </RightFlex>
             </TopFlex>
             <BottomFlex>
-              <Link href="" passhref>
+              <Link href="/colophon" passhref>
                 <StyledLink>Colophon</StyledLink>
               </Link>
               <footer>© {new Date().getFullYear()} Gavin Nelson</footer>
