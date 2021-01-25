@@ -24,7 +24,11 @@ const TextContainer = styled.div`
 
 const Colophon = props => (
   <Layout>
-    <SEO title="Colophon" />
+    <SEO
+      title="Colophon"
+      og="colophonog.png"
+      description="The making of nelson.co"
+    />
 
     <TextContainer>
       <h1>Colophon</h1>
