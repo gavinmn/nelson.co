@@ -57,12 +57,7 @@ const RightFlex = styled.div`
   align-items: flex-end;
 `
 
-const Internal = styled.div`
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
-`
-const External = styled.a`
+const StyledLink = styled.a`
   font-size: var(--font-xs);
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
@@ -80,37 +75,42 @@ const Layout = ({ children }) => {
           <LayoutFlex>
             <TopFlex>
               <LeftFlex>
-                <Internal>
-                  {" "}
-                  <Link href="/">About</Link>
-                </Internal>
-                <Internal>
-                  {" "}
-                  <Link href="/#work">Work</Link>
-                </Internal>
-                <External
+                <Link href="/" passhref>
+                  <StyledLink>About</StyledLink>
+                </Link>
+
+                <Link href="/#work" passhref>
+                  <StyledLink>Work</StyledLink>
+                </Link>
+
+                <StyledLink
                   href="mailto:gavin@nelson.co"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Email
-                </External>
-                <External
+                </StyledLink>
+                <StyledLink
                   href="https://twitter.com/Gavmn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Twitter
-                </External>
+                </StyledLink>
               </LeftFlex>
               <RightFlex>
-                {" "}
-                <Internal href="">Music Thread</Internal>
-                <Internal href="">Photos</Internal>
+                <Link href="" passhref>
+                  <StyledLink>Music Thread</StyledLink>
+                </Link>
+                <Link href="" passhref>
+                  <StyledLink>Photos</StyledLink>
+                </Link>
               </RightFlex>
             </TopFlex>
             <BottomFlex>
-              <Internal href="">Colophon</Internal>
+              <Link href="" passhref>
+                <StyledLink>Colophon</StyledLink>
+              </Link>
               <footer>© {new Date().getFullYear()} Gavin Nelson</footer>
             </BottomFlex>
           </LayoutFlex>
