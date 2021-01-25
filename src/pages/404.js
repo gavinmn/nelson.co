@@ -28,8 +28,8 @@ const HereLink = styled(Link)`
 `
 
 const NotFoundPage = props => (
-  <Layout location={props.location}>
-    <SEO title="404: Not found | " />
+  <Layout>
+    <SEO title="404: Not found " />
     <Wrapper>
       <TextContainer>
         <h1>404</h1>
