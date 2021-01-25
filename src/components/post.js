@@ -24,7 +24,6 @@ const Title = styled.h2`
   &:hover {
     color: var(--text-primary);
     cursor: pointer;
-    text-decoration: underline;
   }
 `
 

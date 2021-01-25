@@ -33,15 +33,18 @@ const FeedbackTitle = styled.h3`
   margin-top: 0;
 `
 const Email = styled.a`
+  background-image: none;
+  color: var(--text-secondary);
   &:hover {
-    text-decoration-color: var(--color-primary);
+    color: var(--text-primary);
   }
 `
 
 const Twitter = styled.a`
+  background-image: none;
+  color: var(--text-secondary);
   &:hover {
     color: #1da1f2;
-    text-decoration-color: #1da1f2;
   }
 `
 

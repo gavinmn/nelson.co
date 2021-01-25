@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const Button = styled.a`
+  background-image: none;
+  text-shadow: none;
   display: flex;
   flex-grow: 0;
   flex-direction: column;

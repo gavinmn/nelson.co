@@ -20,9 +20,6 @@ export const GlobalStyle = createGlobalStyle`
 		--text-primary: #1A2028;
 		--text-secondary: #517095;
 		
-		--blue-primary: #007AFF;
-		--blue-secondary: rgba(10,122,255,.1);
-		
 		// used for button hover states and logo
 		--color-primary: #0F1A24;
 		--logo-primary: #0F1A24;
@@ -67,11 +64,7 @@ export const GlobalStyle = createGlobalStyle`
 			--bg-secondary: #1A2028;
 
 			--text-primary: #F1F5F8;
-			--text-secondary: #7A91AE; 
-			
-			--blue-primary: #0A84FF;
-			--blue-secondary: rgba(10,132,255,.1);
-			
+			--text-secondary: #7A91AE;
 			
 			
 			// used for button hover states and logo
@@ -137,6 +130,7 @@ export const GlobalStyle = createGlobalStyle`
 	::selection {
 		color: var(--bg-primary-hex);
 		  background: var(--text-primary);
+		  text-shadow: none;
 	}
 
 	@media only screen and (min-width: 722px) {

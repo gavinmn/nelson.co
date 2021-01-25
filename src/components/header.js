@@ -27,6 +27,7 @@ const Container = styled.div`
 `
 
 const AboutLink = styled.a`
+  background-image: none;
   margin-left: 1.5rem;
   color: ${props =>
     props.shouldHighlightAbout
@@ -39,6 +40,7 @@ const AboutLink = styled.a`
   }
 `
 const WorkLink = styled.a`
+  background-image: none;
   color: ${props =>
     props.shouldHighlightWork
       ? "var(--color-primary)"
@@ -54,6 +56,7 @@ const WorkLink = styled.a`
   }
 `
 const Name = styled.a`
+  background-image: none;
   margin-right: auto;
   margin-left: 0;
   color: var(--text-primary);
