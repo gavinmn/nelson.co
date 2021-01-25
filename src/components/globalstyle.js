@@ -17,12 +17,13 @@ export const GlobalStyle = createGlobalStyle`
 		
 		--bg-secondary: #F1F5F8;
 		
-		--text-primary: #1A2028;
+		--text-primary: #232E3E;
 		--text-secondary: #517095;
+		--text-underline: rgba(94, 136, 186, 0.6);;
 		
 		// used for button hover states and logo
-		--color-primary: #0F1A24;
-		--logo-primary: #0F1A24;
+		--color-primary: #232E3E;
+		--logo-primary: #232E3E;
 
 		--color-chalk: #006EF0;
 		--color-chalk-secondary: #F1F8FF;
@@ -65,6 +66,7 @@ export const GlobalStyle = createGlobalStyle`
 
 			--text-primary: #F1F5F8;
 			--text-secondary: #7A91AE;
+			--text-underline: #7A91AE;
 			
 			
 			// used for button hover states and logo

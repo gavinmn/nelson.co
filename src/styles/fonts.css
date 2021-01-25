@@ -59,8 +59,8 @@ a {
   font-weight: normal;
 
   background-image: linear-gradient(
-    var(--text-secondary),
-    var(--text-secondary)
+    var(--text-underline),
+    var(--text-underline)
   );
 
   background-size: 100% 1px;
