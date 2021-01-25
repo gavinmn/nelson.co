@@ -117,9 +117,15 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	footer {
-		  margin-bottom:2rem;
-		  font-size: 14px;
+		  margin-bottom: 2rem;
+		  font-size: var(--font-xs);
 		  color: var(--text-secondary);
+	}
+	
+	@media only screen and (min-width: 722px) { 
+	 	footer {
+			 margin-bottom: 1rem;
+		}	
 	}
 
 	img {
