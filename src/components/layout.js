@@ -15,12 +15,12 @@ const Wrapper = styled.div`
 `
 
 const FooterContainer = styled.div`
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding-top: 2rem;
   background-color: var(--bg-secondary);
 
   @media ${device.desktop} {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 `
 
