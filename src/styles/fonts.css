@@ -55,14 +55,23 @@ p {
 a {
   font-size: var(--font-s);
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-weight: normal;
+
+  background-image: linear-gradient(
+    var(--text-secondary),
+    var(--text-secondary)
+  );
+
+  background-size: 100% 1px;
+  background-position: left 1.15em;
+  background-repeat: no-repeat;
+
+  text-shadow: 0.1em 0 var(--bg-primary-hex), -0.1em 0 var(--bg-primary-hex);
 }
 a:hover {
-  text-decoration: underline;
-  color: var(--color-primary);
-  text-decoration: underline;
-  text-decoration-color: var(--color-primary);
+  color: var(--text-secondary);
+  text-decoration: none;
   cursor: pointer;
 }
 

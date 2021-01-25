@@ -72,16 +72,19 @@ const LinkContainer = styled.div`
 `
 
 const Email = styled.a`
+  background-image: none;
+  color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
-    text-decoration-color: var(--color-primary);
+    color: var(--text-primary);
   }
 `
 const Dribbble = styled.a`
+  background-image: none;
+  color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
     color: #ea4c89;
-    text-decoration-color: #ea4c89;
   }
 
   @media only screen and (min-width: 445px) {
@@ -90,10 +93,11 @@ const Dribbble = styled.a`
 `
 
 const Twitter = styled.a`
+  background-image: none;
+  color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
     color: #1da1f2;
-    text-decoration-color: #1da1f2;
   }
 
   @media only screen and (min-width: 445px) {
@@ -101,10 +105,11 @@ const Twitter = styled.a`
   }
 `
 const GitHub = styled.a`
+  background-image: none;
+  color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
     color: var(--github-text);
-    text-decoration-color: var(--github-text);
   }
 
   @media only screen and (min-width: 445px) {
