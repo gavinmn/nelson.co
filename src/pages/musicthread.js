@@ -46,7 +46,6 @@ const MusicContainer = styled.div`
 
 const MusicThread = ({ data }) => {
   console.log({ data })
-  const descending = data.links.map(data => data).reverse()
 
   return (
     <Layout>
@@ -64,16 +63,19 @@ const MusicThread = ({ data }) => {
 
             <MonthContainer>
               <Line />
+
               <MusicContainer>
-                {data.links.reverse().map((data, key) => {
+                {data.links.map(data => {
                   return (
-                    <MusicEntry
-                      key={key}
-                      link={data.page_url}
-                      src={data.thumbnail_url}
-                      title={data.title}
-                      artist={data.artist}
-                    />
+                    <div>
+                      <MusicEntry
+                        key={data.key}
+                        link={data.page_url}
+                        src={data.thumbnail_url}
+                        title={data.title}
+                        artist={data.artist}
+                      />
+                    </div>
                   )
                 })}
               </MusicContainer>

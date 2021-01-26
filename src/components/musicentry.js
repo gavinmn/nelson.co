@@ -52,8 +52,8 @@ const ArtLink = styled.a`
 
 const MusicEntry = props => (
   <Entry>
-    <ArtLink href={props.link} target="_blank" rel="noopener noreferrer">
-      <Art src={props.src} width={256} height={256} />
+    <ArtLink href={props.link} target="_blank" rel="noopener noreferrer" alt="">
+      <Art src={props.src} width={256} height={256} alt="" />
     </ArtLink>
     <Info>
       <Title>{props.title}</Title>
