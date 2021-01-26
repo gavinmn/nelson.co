@@ -35,6 +35,7 @@ const ThreadContainer = styled.div`
 
 const MusicThread = ({ data }) => {
   console.log({ data })
+  const descending = data.links.map(data => data).reverse()
 
   return (
     <Layout>
