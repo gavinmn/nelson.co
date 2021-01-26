@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import Image from "next/image"
 import PostWrapper from "../../components/postwrapper"
-import CustomImage from "../../components/customimage"
-import PostLink from "../../components/postlink"
 import Caption from "../../components/caption"
 import { device } from "../../components/device"
 import Ztext from "react-ztext"
+import TextLink from "../../components/textlink"
 
 const CubeContainer = styled.div`
   margin: 1.5rem auto 0.25rem auto;
@@ -61,9 +59,9 @@ const BlenderBasics = props => {
       </CubeContainer>
       <p>
         Blender is a powerful,{" "}
-        <a href="https://github.com/blender">open source</a> 3D creation tool.
+        <TextLink href="https://github.com/blender">open source</TextLink> 3D creation tool.
         While the comprehensive{" "}
-        <a href="https://docs.blender.org/manual/en/latest/">docs</a> are
+        <TextLink href="https://docs.blender.org/manual/en/latest/">docs</TextLink> are
         wonderful, figuring out where to begin can be a challenge if you are new
         to the software. This page is intended to be an ongoing list of Blender
         wrangling tips that I find valuable, written from the perspective of
@@ -317,8 +315,8 @@ const BlenderBasics = props => {
         </li>
         <li>
           If you have previously explored design tools like{" "}
-          <a href="https://www.sketch.com">Sketch</a> and{" "}
-          <a href="https://www.figma.com">Figma</a>, you may have used the
+          <TextLink href="https://www.sketch.com">Sketch</TextLink> and{" "}
+          <TextLink href="https://www.figma.com">Figma</TextLink>, you may have used the
           Boolean Operation tool. Blender has a similar <code>Boolean</code>{" "}
           operation modifier, but I would recommend trying to avoid it when you
           are first starting. It has a tendency to create messy geometry in your
