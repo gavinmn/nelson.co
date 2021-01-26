@@ -23,7 +23,7 @@ const MusicThread = ({ data }) => {
           <Caption>
             Powered by <a href="https://musicthread.app/">MusicThread</a>
           </Caption>
-          {data.links.map((data, key) => {
+          {data.links.reverse().map((data, key) => {
             return (
               <div key={key}>
                 <p>{data.title}</p>
