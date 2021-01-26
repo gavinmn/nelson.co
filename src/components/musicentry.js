@@ -40,7 +40,7 @@ const Info = styled.div`
 
   @media ${device.desktop} {
     margin: 0 0 -0.17rem 0.5rem;
-
+    max-width: 270px;
   }
 `
 
