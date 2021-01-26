@@ -43,8 +43,7 @@ const Colophon = props => (
         by Panic, statically generated through{" "}
         <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
           Next.js
-        </a>{" "}
-        and deployed using{" "}
+        </a>, and deployed using{" "}
         <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
           Vercel
         </a>
