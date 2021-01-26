@@ -125,10 +125,11 @@ const Layout = ({ children }) => {
                 </ColTwo>
               </LeftFlex>
               <RightFlex>
-                {/* <Link href="" passhref>
+                <Link href="/musicthread" passhref>
                   <StyledLink>Music Thread</StyledLink>
                 </Link>
-                <Link href="" passhref>
+
+                {/* <Link href="" passhref>
                   <StyledLink>Photos</StyledLink>
                 </Link> */}
               </RightFlex>
