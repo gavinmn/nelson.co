@@ -25,12 +25,23 @@ const MusicThreadLink = styled.a`
   }
 `
 
-const ThreadContainer = styled.div`
-  margin: 4rem 0 0 0;
+const MonthContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 4rem;
+`
 
-  @media ${device.desktop} {
-    margin: 2rem 0 0 0;
-  }
+const Line = styled.div`
+  background-color: var(--bg-secondary);
+  width: 4px;
+  align-self: stretch;
+  margin-right: 32px;
+  margin-top: -32px;
+`
+const MusicContainer = styled.div`
+  display: grid;
+  grid-gap: 64px;
 `
 
 const MusicThread = ({ data }) => {
@@ -51,19 +62,22 @@ const MusicThread = ({ data }) => {
               </MusicThreadLink>
             </Caption>
 
-            <ThreadContainer>
-              {data.links.reverse().map((data, key) => {
-                return (
-                  <MusicEntry
-                    key={key}
-                    link={data.page_url}
-                    src={data.thumbnail_url}
-                    title={data.title}
-                    artist={data.artist}
-                  ></MusicEntry>
-                )
-              })}
-            </ThreadContainer>
+            <MonthContainer>
+              <Line />
+              <MusicContainer>
+                {data.links.reverse().map((data, key) => {
+                  return (
+                    <MusicEntry
+                      key={key}
+                      link={data.page_url}
+                      src={data.thumbnail_url}
+                      title={data.title}
+                      artist={data.artist}
+                    />
+                  )
+                })}
+              </MusicContainer>
+            </MonthContainer>
           </Container>
         </Wrapper>
       </Wrapper>
