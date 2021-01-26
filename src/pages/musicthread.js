@@ -9,10 +9,12 @@ import Caption from "../components/caption"
 import MusicEntry from "../components/musicentry"
 
 const Container = styled.div`
-  margin: 8rem 0 0 0;
+  margin: 8rem auto;
+  max-width: 338px;
 
   @media ${device.desktop} {
     margin: 4rem 0 0 0;
+    max-width: 624px;
   }
 `
 const MusicThreadLink = styled.a`
@@ -47,6 +49,7 @@ const MusicThread = ({ data }) => {
                 MusicThread
               </MusicThreadLink>
             </Caption>
+
             <ThreadContainer>
               {data.links.reverse().map((data, key) => {
                 return (
