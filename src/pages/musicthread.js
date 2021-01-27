@@ -29,7 +29,13 @@ const MonthContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+
+  @media ${device.desktop} {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 `
 
 const Line = styled.div`
@@ -37,7 +43,10 @@ const Line = styled.div`
   width: 4px;
   align-self: stretch;
   margin-right: 32px;
-  margin-top: -32px;
+  margin-top: -1.5rem;
+  @media ${device.desktop} {
+    margin-top: -0.75rem;
+  }
 `
 const MusicContainer = styled.div`
   display: grid;
@@ -81,7 +90,6 @@ const MusicThread = ({ data }) => {
   }, {})
 
   const dateKeys = Object.keys(formattedData)
-  const dateValues = Object.values(formattedData)
 
   return (
     <Layout>
