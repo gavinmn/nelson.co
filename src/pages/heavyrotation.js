@@ -103,7 +103,7 @@ const HeavyRotation = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="MusicThread"
+        title="Heavy Rotation"
         og="heavyrotationog.png"
         description="A thread of recent favorite tracks, powered by musicthread.app."
       />
