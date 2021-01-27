@@ -105,10 +105,19 @@ const MusicThread = ({ data }) => {
   )
 }
 
-export async function getServerSideProps() {
+{
+  /* export async function getServerSideProps() {
   const res = await fetch(
     `https://musicthread.app/api/v0/thread/1mhhP6pYnnOic8X8SvzJxPsikRU`
   )
+  const data = await res.json()
+
+  return { props: { data } }
+} */
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(`http://localhost:1001/data/test.json`)
   const data = await res.json()
 
   return { props: { data } }
