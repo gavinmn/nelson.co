@@ -54,10 +54,11 @@ const Line = styled.div`
 `
 const MusicContainer = styled.div`
   display: grid;
-  grid-gap: 64px;
+  grid-gap: 2rem;
   margin: 0 auto;
   @media ${device.desktop} {
     margin: 0 0 0 1rem;
+    grid-gap: 1rem;
   }
 `
 
