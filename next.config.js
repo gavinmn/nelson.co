@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["img.musicthread.app", "bt-camo.herokuapp.com"],
+    domains: ["img.musicthread.app"],
   },
 }
