@@ -7,7 +7,6 @@ const Entry = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   @media ${device.desktop} {
     flex-direction: row;
   }

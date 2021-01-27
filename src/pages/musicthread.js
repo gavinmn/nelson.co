@@ -46,7 +46,7 @@ const Line = styled.div`
   background-color: var(--bg-secondary);
   width: 4px;
   align-self: stretch;
-  margin-right: 32px;
+
   margin-top: -1.5rem;
   @media ${device.desktop} {
     margin-top: -0.75rem;
@@ -55,6 +55,10 @@ const Line = styled.div`
 const MusicContainer = styled.div`
   display: grid;
   grid-gap: 64px;
+  margin: 0 auto;
+  @media ${device.desktop} {
+    margin: 0 0 0 1rem;
+  }
 `
 
 const Month = styled.p`
