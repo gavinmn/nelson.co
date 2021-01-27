@@ -44,8 +44,25 @@ const MusicContainer = styled.div`
   grid-gap: 64px;
 `
 
+const Month = styled.p`
+  font-style: italic;
+`
+
 const MusicThread = ({ data }) => {
-  console.log({ data })
+  const dateArray = data.links.reduce((carry, item) => {
+    const timestamp = new Date(item.submitted_at)
+    const monthYearStamp = `${timestamp.getFullYear()}-${
+      timestamp.getMonth() + 1
+    }`
+    if (monthYearStamp in carry) {
+      carry[monthYearStamp].push(item)
+    } else {
+      carry[monthYearStamp] = [item]
+    }
+    return carry
+  }, {})
+
+  console.log(dateArray)
 
   return (
     <Layout>
@@ -61,21 +78,22 @@ const MusicThread = ({ data }) => {
               </MusicThreadLink>
             </Caption>
 
+            {data.links.map((data, key) => {
+              return <Month key={data.key}>{data.submitted_at}</Month>
+            })}
+
             <MonthContainer>
               <Line />
-
               <MusicContainer>
-                {data.links.map(data => {
+                {data.links.map((data, key) => {
                   return (
-                    <div>
-                      <MusicEntry
-                        key={data.key}
-                        link={data.page_url}
-                        src={data.thumbnail_url}
-                        title={data.title}
-                        artist={data.artist}
-                      />
-                    </div>
+                    <MusicEntry
+                      key={data.key}
+                      link={data.page_url}
+                      src={data.thumbnail_url}
+                      title={data.title}
+                      artist={data.artist}
+                    />
                   )
                 })}
               </MusicContainer>
