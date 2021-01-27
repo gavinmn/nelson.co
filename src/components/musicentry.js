@@ -9,6 +9,7 @@ const Entry = styled.div`
   align-items: flex-start;
 
   @media ${device.desktop} {
+    flex-direction: row;
   }
 `
 
@@ -23,10 +24,7 @@ const Info = styled.div`
   margin-top: 0.5rem;
 
   @media ${device.desktop} {
-     {
-      /* margin: 0 0 -0.17rem 0.5rem;
-    max-width: 270px; */
-    }
+    margin: 0 0 -0.17rem 0.5rem;
   }
 `
 

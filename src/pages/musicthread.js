@@ -25,6 +25,10 @@ const MusicThreadLink = styled.a`
   }
 `
 
+const Timeline = styled.div`
+  margin-top: 2rem;
+`
+
 const MonthContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -104,30 +108,31 @@ const MusicThread = ({ data }) => {
                 MusicThread
               </MusicThreadLink>
             </Caption>
-
-            {dateKeys.map((entry, key) => {
-              return (
-                <>
-                  <Month>{entry}</Month>
-                  <MonthContainer>
-                    <Line />
-                    <MusicContainer>
-                      {formattedData[entry].map((data, key) => {
-                        return (
-                          <MusicEntry
-                            key={data.key}
-                            link={data.page_url}
-                            src={data.thumbnail_url}
-                            title={data.title}
-                            artist={data.artist}
-                          />
-                        )
-                      })}
-                    </MusicContainer>
-                  </MonthContainer>
-                </>
-              )
-            })}
+            <Timeline>
+              {dateKeys.map((entry, key) => {
+                return (
+                  <>
+                    <Month>{entry}</Month>
+                    <MonthContainer>
+                      <Line />
+                      <MusicContainer>
+                        {formattedData[entry].map((data, key) => {
+                          return (
+                            <MusicEntry
+                              key={data.key}
+                              link={data.page_url}
+                              src={data.thumbnail_url}
+                              title={data.title}
+                              artist={data.artist}
+                            />
+                          )
+                        })}
+                      </MusicContainer>
+                    </MonthContainer>
+                  </>
+                )
+              })}
+            </Timeline>
           </Container>
         </Wrapper>
       </Wrapper>
