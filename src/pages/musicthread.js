@@ -49,20 +49,52 @@ const Month = styled.p`
 `
 
 const MusicThread = ({ data }) => {
-  const dateArray = data.links.reduce((carry, item) => {
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+
+  const formattedData = data.links.reduce((carry, item) => {
     const timestamp = new Date(item.submitted_at)
-    const monthYearStamp = `${timestamp.getFullYear()}-${
-      timestamp.getMonth() + 1
-    }`
+
+    {
+      /* console.log(
+      "month_year:" +
+        `${monthNames[timestamp.getMonth()]}, ${timestamp.getFullYear()}`
+    ) */
+    }
+
+    const monthYearStamp = `${
+      monthNames[timestamp.getMonth()]
+    }, ${timestamp.getFullYear()}`
+
     if (monthYearStamp in carry) {
       carry[monthYearStamp].push(item)
     } else {
       carry[monthYearStamp] = [item]
     }
+
     return carry
   }, {})
 
-  console.log(dateArray)
+  {
+    /* console.log(formattedData)
+  console.log(data) */
+  }
+
+  const dateKeys = Object.keys(formattedData)
+
+  console.log(formattedData)
 
   return (
     <Layout>
@@ -78,26 +110,29 @@ const MusicThread = ({ data }) => {
               </MusicThreadLink>
             </Caption>
 
-            {data.links.map((data, key) => {
-              return <Month key={data.key}>{data.submitted_at}</Month>
+            {dateKeys.map((entry, key) => {
+              return (
+                <>
+                  <Month>{entry}</Month>
+                  <MonthContainer>
+                    <Line />
+                    <MusicContainer>
+                      {data.links.map((data, key) => {
+                        return (
+                          <MusicEntry
+                            key={data.key}
+                            link={data.page_url}
+                            src={data.thumbnail_url}
+                            title={data.title}
+                            artist={data.artist}
+                          />
+                        )
+                      })}
+                    </MusicContainer>
+                  </MonthContainer>
+                </>
+              )
             })}
-
-            <MonthContainer>
-              <Line />
-              <MusicContainer>
-                {data.links.map((data, key) => {
-                  return (
-                    <MusicEntry
-                      key={data.key}
-                      link={data.page_url}
-                      src={data.thumbnail_url}
-                      title={data.title}
-                      artist={data.artist}
-                    />
-                  )
-                })}
-              </MusicContainer>
-            </MonthContainer>
           </Container>
         </Wrapper>
       </Wrapper>
