@@ -67,13 +67,6 @@ const MusicThread = ({ data }) => {
   const formattedData = data.links.reduce((carry, item) => {
     const timestamp = new Date(item.submitted_at)
 
-    {
-      /* console.log(
-      "month_year:" +
-        `${monthNames[timestamp.getMonth()]}, ${timestamp.getFullYear()}`
-    ) */
-    }
-
     const monthYearStamp = `${
       monthNames[timestamp.getMonth()]
     }, ${timestamp.getFullYear()}`
@@ -93,8 +86,10 @@ const MusicThread = ({ data }) => {
   }
 
   const dateKeys = Object.keys(formattedData)
+  const dateValues = Object.values(formattedData)
 
   console.log(formattedData)
+  console.log(data)
 
   return (
     <Layout>
@@ -111,13 +106,14 @@ const MusicThread = ({ data }) => {
             </Caption>
 
             {dateKeys.map((entry, key) => {
+              console.log(formattedData[entry])
               return (
                 <>
                   <Month>{entry}</Month>
                   <MonthContainer>
                     <Line />
                     <MusicContainer>
-                      {data.links.map((data, key) => {
+                      {formattedData[entry].map((data, key) => {
                         return (
                           <MusicEntry
                             key={data.key}

@@ -12,7 +12,7 @@
   "links": [
     {
       "key": "1",
-      "title": "Suddenly",
+      "title": "1",
       "artist": "Caribou",
       "thumbnail_url": "https://bt-camo.herokuapp.com/4b579330d99e793b80e9765bc03c4f3bca10145a/68747470733a2f2f66342e6263626974732e636f6d2f696d672f61303039323733383737365f31362e6a7067",
     "submitted_at": "2021-01-26T04:58:54.764335Z",
@@ -20,7 +20,7 @@
     },
     {
       "key": "2",
-      "title": "Suddenly",
+      "title": "2",
       "artist": "Caribou",
       "thumbnail_url": "https://bt-camo.herokuapp.com/4b579330d99e793b80e9765bc03c4f3bca10145a/68747470733a2f2f66342e6263626974732e636f6d2f696d672f61303039323733383737365f31362e6a7067",
     "submitted_at": "2021-01-26T04:58:54.764335Z",
@@ -28,14 +28,14 @@
     },
     {
       "key": "4",
-      "title": "Suddenly",
+      "title": "3",
       "artist": "Caribou",
       "thumbnail_url": "https://bt-camo.herokuapp.com/4b579330d99e793b80e9765bc03c4f3bca10145a/68747470733a2f2f66342e6263626974732e636f6d2f696d672f61303039323733383737365f31362e6a7067",
 	  "submitted_at": "2021-02-26T04:58:54.764335Z",
       "page_url": "https://musicthread.app/link/1n9uJARqCIYE4IaFjD3uvvWHx74"
     },  {
       "key": "5",
-      "title": "Suddenly",
+      "title": "4",
       "artist": "Caribou",
       "thumbnail_url": "https://bt-camo.herokuapp.com/4b579330d99e793b80e9765bc03c4f3bca10145a/68747470733a2f2f66342e6263626974732e636f6d2f696d672f61303039323733383737365f31362e6a7067",
     "submitted_at": "2021-03-26T04:58:54.764335Z",
