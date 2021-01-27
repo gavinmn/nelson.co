@@ -80,16 +80,8 @@ const MusicThread = ({ data }) => {
     return carry
   }, {})
 
-  {
-    /* console.log(formattedData)
-  console.log(data) */
-  }
-
   const dateKeys = Object.keys(formattedData)
   const dateValues = Object.values(formattedData)
-
-  console.log(formattedData)
-  console.log(data)
 
   return (
     <Layout>
@@ -106,7 +98,6 @@ const MusicThread = ({ data }) => {
             </Caption>
 
             {dateKeys.map((entry, key) => {
-              console.log(formattedData[entry])
               return (
                 <>
                   <Month>{entry}</Month>
