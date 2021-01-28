@@ -7,8 +7,16 @@ import MusicThread from "../../components/musicthread"
 
 const TwentyOne = ({ data }) => (
   <Layout>
-    <SEO title="test" og="og.png" description=", powered by musicthread.app." />
-    <MusicThread links={data.links} title="test" subtitle="test"></MusicThread>
+    <SEO
+      title="2021 Favorites"
+      og="twentyoneog.png"
+      description={`${data.thread.description}, powered by musicthread.app.`}
+    />
+    <MusicThread
+      links={data.links}
+      title="2021 Favorites"
+      subtitle={data.thread.description}
+    ></MusicThread>
   </Layout>
 )
 
