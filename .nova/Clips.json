@@ -14,6 +14,11 @@
       "content" : "<br><\/br><br><\/br>",
       "name" : "Line Break",
       "trigger" : "br"
+    },
+    {
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport { device } from \"..\/..\/components\/device\"\nimport Layout from \"..\/..\/components\/layout\"\nimport SEO from \"..\/..\/components\/seo\"\nimport MusicThread from \"..\/..\/components\/musicthread\"\n\nconst ThreadName = ({ data }) => (\n  <Layout>\n\t<SEO\n\t  title=\"\"\n\t  og=\"og.png\"\n\t  description=\", powered by musicthread.app.\"\n\t\/>\n\t<MusicThread\n\t  links={data.links}\n\t  title=\"\"\n\t  subtitle=\"\"\n\t><\/MusicThread>\n  <\/Layout>\n)\n\nexport async function getStaticProps() {\n  const res = await fetch(\n\t`https:\/\/musicthread.app\/api\/v0\/thread\/`\n  )\n  const data = await res.json()\n\n  return {\n\trevalidate: 60 * 60 * 6,\n\tprops: { data },\n  }\n}\n\nexport default ThreadName\n",
+      "name" : "MusicThread",
+      "trigger" : "mus"
     }
   ]
 }
