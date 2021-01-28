@@ -10,7 +10,7 @@ const HeavyRotation = ({ data }) => (
     <SEO
       title="Heavy Rotation"
       og="heavyrotationog.png"
-      description="${data.thread.description}, powered by musicthread.app."
+      description="`${data.thread.description}, powered by musicthread.app.`"
     />
     <MusicThread
       links={data.links}
