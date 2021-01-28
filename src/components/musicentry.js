@@ -12,6 +12,20 @@ const Entry = styled.div`
   }
 `
 
+const Details = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  align-self: stretch;
+
+  @media ${device.desktop} {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+`
+
 const Info = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,11 +34,17 @@ const Info = styled.div`
   align-self: stretch;
 
   max-width: 256px;
-  margin-top: 0.5rem;
 
   @media ${device.desktop} {
-    margin: 0 0 -0.17rem 0.5rem;
+    margin-bottom: -0.17rem;
   }
+`
+
+const Arrow = styled.div`
+  color: var(--bg-secondary);
+  font-size: var(--font-m);
+  opacity: 1;
+  transition-duration: 0.3s;
 `
 
 const Title = styled.p`
@@ -45,6 +65,11 @@ const ArtLink = styled.a`
   max-height: 256px;
   text-decoration: none;
   background-image: none;
+
+  &:hover + div .arrow {
+    opacity: 1;
+    color: var(--bg-primary);
+  }
 `
 
 const MusicEntry = props => (
@@ -52,10 +77,13 @@ const MusicEntry = props => (
     <ArtLink href={props.link} target="_blank" rel="noopener noreferrer" alt="">
       <Art src={props.src} width={256} height={256} alt="" />
     </ArtLink>
-    <Info>
-      <Title>{props.title}</Title>
-      <Artist>{props.artist}</Artist>
-    </Info>
+    <Details>
+      <Info>
+        <Title>{props.title}</Title>
+        <Artist>{props.artist}</Artist>
+      </Info>
+      <Arrow className="arrow">→</Arrow>
+    </Details>
   </Entry>
 )
 
