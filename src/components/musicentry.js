@@ -40,10 +40,9 @@ const Info = styled.div`
   }
 `
 
-const Arrow = styled.div`
-  color: var(--bg-secondary);
+const Arrow = styled.p`
   font-size: var(--font-m);
-  opacity: 1;
+  opacity: 0;
   transition-duration: 0.3s;
 `
 
@@ -68,7 +67,6 @@ const ArtLink = styled.a`
 
   &:hover + div .arrow {
     opacity: 1;
-    color: var(--bg-primary);
   }
 `
 
