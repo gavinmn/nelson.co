@@ -14,7 +14,7 @@ const TwentyOne = ({ data }) => (
 
 export async function getStaticProps() {
   const res = await fetch(
-    `https://musicthread.app/api/v0/thread/1nf2wkCDL7I16FO1Ono9nn5IbPo`
+    `https://musicthread.app/api/v0/thread/1mhhP6pYnnOic8X8SvzJxPsikRU`
   )
   const data = await res.json()
 
