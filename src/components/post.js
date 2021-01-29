@@ -37,7 +37,7 @@ const Subtitle = styled.p`
 const Post = props => (
   <FlexContainer>
     <TitleText>
-      <Link href={`posts/${props.slug}`}>
+      <Link href={`posts/${props.href}`}>
         <Title>{props.title}</Title>
       </Link>
       <Subtitle>{props.subtitle}</Subtitle>

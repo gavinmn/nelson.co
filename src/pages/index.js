@@ -10,7 +10,11 @@ import Card from "@/components/card"
 import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
+import PostContainer from "@/components/postcontainer"
 import Post from "@/components/post"
+
+import fs from "fs"
+import path from "path"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -30,7 +34,6 @@ const PostGrid = styled.div`
   grid-gap: 0.5rem;
   max-width: 816px;
 `
-
 const CardGrid = styled.div`
   display: grid;
   grid-template-columns: auto;
@@ -51,7 +54,7 @@ const Anchor = styled.h1`
   }
 `
 
-const IndexPage = props => {
+const IndexPage = ({ posts }) => {
   return (
     <Layout>
       <SEO />
@@ -65,13 +68,16 @@ const IndexPage = props => {
         </a>
 
         <SectionHeader section="Posts" />
+
         <PostGrid>
-          <Post
-            title="Blender Basics"
-            subtitle="A starting point for Blender beginners from a former beginner."
-            time="Published January 21, 2021"
-            slug="blenderbasics"
-          />
+          {posts.map(post => (
+            <Post
+              title="Blender Basics"
+              subtitle="A starting point for Blender beginners from a former beginner."
+              time="Published January 21, 2021"
+              href="blenderbasics"
+            />
+          ))}
         </PostGrid>
 
         <SectionHeader section="Projects" />
@@ -204,3 +210,30 @@ const IndexPage = props => {
 }
 
 export default IndexPage
+
+const root = process.cwd()
+
+export async function getStaticProps() {
+  const postsDirectory = path.join(root, "src/data")
+  const filenames = fs.readdirSync(postsDirectory)
+
+  const posts = filenames.map(filename => {
+    const filePath = path.join(postsDirectory, filename)
+    const fileContents = fs.readFileSync(filePath, "utf8")
+
+    // Generally you would parse/transform the contents
+    // For example you can transform markdown to HTML here
+
+    return {
+      filename,
+      content: fileContents,
+    }
+  })
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      posts,
+    },
+  }
+}
