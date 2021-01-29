@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "@/components/layout"
+import SEO from "@/components/seo"
 import Link from "next/link"
-import Wrapper from "../components/wrapper"
-import { device } from "../components/device"
+import Wrapper from "@/components/wrapper"
+import { device } from "@/components/device"
 
 const TextContainer = styled.div`
   margin-top: -1rem;

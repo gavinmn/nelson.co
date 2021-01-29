@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { device } from "../../components/device"
+import { device } from "@/components/device"
 
 const Cube = styled.svg`
   width: 80px;

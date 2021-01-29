@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Link from "next/link"
-import { device } from "../components/device"
+import { device } from "@/components/device"
 
 const FlexContainer = styled.div`
   display: flex;

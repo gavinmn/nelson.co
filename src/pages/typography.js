@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "next/image"
-import PostWrapper from "../components/postwrapper"
-import CustomImage from "../components/customimage"
-import { device } from "../components/device"
-import Caption from "../components/caption"
+import PostWrapper from "@/components/postwrapper"
+import CustomImage from "@/components/customimage"
+import { device } from "@/components/device"
+import Caption from "@/components/caption"
 
 const Typography = props => (
   <PostWrapper title="" subtitle="" time="">

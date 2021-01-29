@@ -2,11 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import { device } from "./device"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import Fade from "../components/fade"
-import Wrapper from "../components/wrapper"
-import Caption from "../components/caption"
+import SEO from "@/components/seo"
+import Layout from "@/components/layout"
+import Fade from "@/components/fade"
+import Wrapper from "@/components/wrapper"
+import Caption from "@/components/caption"
 
 const Container = styled.div`
   margin: 8rem 0 0rem 0;

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { device } from "../components/device"
+import { device } from "@/components/device"
 
 const StyledText = styled.p`
   font-size: var(--font-xs);

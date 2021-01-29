@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import Image from "next/image"
 
-import PostWrapper from "../components/postwrapper"
-import CustomImage from "../components/customimage"
-import Caption from "../components/caption"
-import { device } from "../components/device"
+import PostWrapper from "@/components/postwrapper"
+import CustomImage from "@/components/customimage"
+import Caption from "@/components/caption"
+import { device } from "@/components/device"
 
 const SingleVideoContainer = styled.div`
   margin: 2rem 0;

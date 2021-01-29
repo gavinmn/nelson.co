@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import Image from "next/image"
-import { device } from "../components/device"
+import { device } from "@/components/device"
 
 const CardBase = styled.div`
   display: flex;
