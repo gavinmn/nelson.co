@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import Fade from "../components/fade"
 import Wrapper from "../components/wrapper"
 import Caption from "../components/caption"
-import TextLink from "../components/textlink"
 
 const Container = styled.div`
   margin: 8rem 0 0rem 0;
@@ -34,16 +33,18 @@ const FeedbackTitle = styled.h3`
   margin-top: 0;
 `
 const Email = styled.a`
-
   color: var(--text-secondary);
+  background-image: none;
+  text-shadow: none;
   &:hover {
     color: var(--text-primary);
   }
 `
 
 const Twitter = styled.a`
-
   color: var(--text-secondary);
+  background-image: none;
+  text-shadow: none;
   &:hover {
     color: #1da1f2;
   }

@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Link from "next/link"
 import { device } from "../components/device"
-import TextLink from "../components/textlink"
 
 const TextContainer = styled.div`
   margin-top: -1rem;
@@ -38,46 +37,47 @@ const Colophon = props => (
         This website is designed and developed by Gavin Nelson in San Francisco,
         California. <br></br>
         <br></br>It is built using{" "}
-        <TextLink href="https://nova.app" target="_blank" rel="noopener noreferrer">
+        <a href="https://nova.app" target="_blank" rel="noopener noreferrer">
           Nova
-        </TextLink>{" "}
+        </a>{" "}
         by Panic, statically generated through{" "}
-        <TextLink href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
+        <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
           Next.js
-        </TextLink>, and deployed using{" "}
-        <TextLink href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+        </a>
+        , and deployed using{" "}
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
           Vercel
-        </TextLink>
+        </a>
         . It is designed in both{" "}
-        <TextLink
+        <a
           href="https://www.sketch.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Sketch
-        </TextLink>{" "}
+        </a>{" "}
         and{" "}
-        <TextLink
+        <a
           href="https://www.figma.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Figma
-        </TextLink>{" "}
+        </a>{" "}
         and the type is set in Söhne by{" "}
-        <TextLink href="https://klim.co.nz" target="_blank" rel="noopener noreferrer">
+        <a href="https://klim.co.nz" target="_blank" rel="noopener noreferrer">
           Klim Type Foundry
-        </TextLink>
+        </a>
         .<br></br>
         <br></br>
         The source code that powers it can be found on{" "}
-        <TextLink
+        <a
           href="https://github.com/gavinmn/nelson.co"
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
-        </TextLink>
+        </a>
         . The content on this website is copyrighted.
       </p>
     </TextContainer>

@@ -78,6 +78,7 @@ const ColTwo = styled.div`
 
 const StyledLink = styled.a`
   background-image: none;
+  text-shadow: none;
   font-size: var(--font-xs);
   color: var(--text-secondary);
   margin-bottom: 0.75rem;

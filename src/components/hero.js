@@ -73,6 +73,7 @@ const LinkContainer = styled.div`
 
 const Email = styled.a`
   background-image: none;
+  text-shadow: none;
   color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
@@ -81,6 +82,7 @@ const Email = styled.a`
 `
 const Dribbble = styled.a`
   background-image: none;
+  text-shadow: none;
   color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
@@ -94,6 +96,7 @@ const Dribbble = styled.a`
 
 const Twitter = styled.a`
   background-image: none;
+  text-shadow: none;
   color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {
@@ -106,6 +109,7 @@ const Twitter = styled.a`
 `
 const GitHub = styled.a`
   background-image: none;
+  text-shadow: none;
   color: var(--text-secondary);
   font-size: var(--font-xs);
   &:hover {

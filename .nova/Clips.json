@@ -14,6 +14,13 @@
       "content" : "<br><\/br><br><\/br>",
       "name" : "Line Break",
       "trigger" : "br"
+    },
+    {
+      "content" : "import PostWrapper from \"..\/..\/components\/postwrapper\"\nimport CustomImage from \"..\/..\/components\/customimage\"\n\n<!--<CustomImage size=\"small\" src=\"\/images\/\" width=\"444\" height=\"\" \/> -->\n\nexport default ({ children }) => (\n  <PostWrapper\n\ttitle=\"\"\n\tsubtitle=\"\"\n\ttime=\"Published\"\n\tog=\"og.png\"\n\tdescription=\"\"\n  >\n\t{children}\n  <\/PostWrapper>\n)\n",
+      "name" : "mdx",
+      "scope" : "editor",
+      "syntax" : "markdown",
+      "trigger" : "mdx"
     }
   ]
 }

@@ -55,12 +55,31 @@ p {
 a {
   font-size: var(--font-s);
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-weight: normal;
+
+  background-image: linear-gradient(
+    var(--text-underline),
+    var(--text-underline)
+  );
+
+  background-size: 100% 1px;
+  background-position: left 1.15em;
+  background-repeat: no-repeat;
+
+  text-shadow: 0.1em 0 var(--bg-primary-hex), -0.1em 0 var(--bg-primary-hex);
+
+  /* font-size: var(--font-s);
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: normal; */
 }
 a:hover {
-  color: var(--color-primary);
+  color: var(--text-secondary);
+  text-decoration: none;
   cursor: pointer;
+  /* color: var(--color-primary);
+  cursor: pointer; */
 }
 
 li {
@@ -88,7 +107,7 @@ code {
   color: var(--text-secondary);
   background-color: var(--bg-secondary);
   padding: 0.05rem 0.2rem 0.1rem 0.2rem;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 @media only screen and (min-width: 722px) {
