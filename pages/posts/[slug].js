@@ -9,6 +9,7 @@ const components = { MarkdownComponents }
 
 export default function Posts({ source, frontMatter }) {
   const content = hydrate(source, { components })
+  console.log(content)
   return (
     <PostWrapper
       title={frontMatter.title}
@@ -34,6 +35,7 @@ export async function getStaticProps({ params }) {
     scope: data,
     components,
   })
+
   return {
     props: {
       source: mdxSource,

@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Caption from "./caption"
 import CustomImage from "@/components/customimage"
-import ZText from "react-ztext"
+import Ztext from "react-ztext"
 import Cube from "@/components/posts/cube"
 import ZContainer from "@/components/posts/zcontainer"
 
@@ -27,7 +27,6 @@ const MarkdownComponents = {
   CustomImage,
   Cube,
   ZContainer,
-  ZText,
 
   a: CustomLink,
   h4: Caption,
