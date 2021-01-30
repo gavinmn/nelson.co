@@ -13,13 +13,12 @@ const components = { CustomImage, Ztext, Cube, ZContainer }
 import PostWrapper from "@/components/postwrapper"
 
 export default function Posts({ source, frontMatter }) {
-  console.log(frontMatter)
   const content = hydrate(source, { components })
   return (
     <PostWrapper
       title={frontMatter.title}
       og={frontMatter.og}
-      description={frontMatter.description}
+      description={frontMatter.subtitle}
       time={frontMatter.time}
     >
       {content}

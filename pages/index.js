@@ -53,7 +53,6 @@ const Anchor = styled.h1`
 `
 
 const IndexPage = ({ posts }) => {
-  console.log(posts)
   return (
     <Layout>
       <SEO />
