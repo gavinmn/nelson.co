@@ -52,8 +52,8 @@ const Anchor = styled.h1`
   }
 `
 
-const IndexPage = ({ allPostsData }) => {
-  console.log(allPostsData)
+const IndexPage = ({ posts }) => {
+  console.log(posts)
   return (
     <Layout>
       <SEO />
@@ -210,3 +210,12 @@ const IndexPage = ({ allPostsData }) => {
 }
 
 export default IndexPage
+
+export async function getStaticProps() {
+  const posts = getSortedPosts()
+  return {
+    props: {
+      posts,
+    },
+  }
+}
