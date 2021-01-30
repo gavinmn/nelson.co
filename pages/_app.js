@@ -1,12 +1,12 @@
-import * as React from "react"
-import "../styles/fonts.css"
-import { MDXProvider } from "@mdx-js/react"
-import MarkdownComponents from "@/components/markdowncomponents"
+import "@/styles/fonts.css"
 
-export default function MyApp({ Component, pageProps }) {
+import { GlobalStyle } from "@/components/globalstyle"
+
+export default function App({ Component, pageProps }) {
   return (
-    <MDXProvider components={MarkdownComponents}>
+    <>
+      <GlobalStyle />
       <Component {...pageProps} />
-    </MDXProvider>
+    </>
   )
 }

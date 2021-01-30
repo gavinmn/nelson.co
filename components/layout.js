@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { GlobalStyle } from "./globalstyle"
 import styled from "styled-components"
 import { device } from "./device"
 import Link from "next/link"
@@ -90,10 +89,8 @@ const StyledLink = styled.a`
 const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyle />
       <Header />
       <main>{children}</main>
-
       <FooterContainer>
         <Wrapper size={"large"}>
           <LayoutFlex>
