@@ -6,7 +6,8 @@ import Ztext from "react-ztext"
 import Cube from "@/components/posts/cube"
 
 import styled from "styled-components"
-import Test from "@/components/test/test"
+
+import TestComponent from "@/components/test/testcomponent"
 
 const CustomLink = props => {
   const href = props.href
@@ -23,16 +24,12 @@ const CustomLink = props => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />
 }
 
-const HeadingFour = styled.p`
-  font-size: ${props => props.theme.fontSmall};
-`
-
 const MarkdownComponents = {
   Image,
   CustomImage,
   Ztext,
+  TestComponent,
   a: CustomLink,
-  h4: Test,
 }
 
 export default MarkdownComponents
