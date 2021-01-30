@@ -13,8 +13,18 @@ const components = { CustomImage, Ztext, Cube, ZContainer }
 import PostWrapper from "@/components/postwrapper"
 
 export default function Posts({ source, frontMatter }) {
+  console.log(frontMatter)
   const content = hydrate(source, { components })
-  return <PostWrapper>{content}</PostWrapper>
+  return (
+    <PostWrapper
+      title={frontMatter.title}
+      og={frontMatter.og}
+      description={frontMatter.description}
+      time={frontMatter.time}
+    >
+      {content}
+    </PostWrapper>
+  )
 }
 export async function getStaticPaths() {
   const paths = getAllPostSlugs()

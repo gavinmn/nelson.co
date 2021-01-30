@@ -5,6 +5,14 @@ import styled from "styled-components"
 import PostWrapper from "@/components/postwrapper"
 import CustomImage from "@/components/customimage"
 import { device } from "@/components/device"
+import Caption from "@/components/caption"
+
+const Subtitle = styled.h2`
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  font-weight: normal;
+  margin: 0;
+`
 
 const SingleVideoContainer = styled.div`
   margin: 2rem 0;
@@ -35,6 +43,11 @@ const expertsPage = props => (
     og="og.png"
     description="Product and Visual Design"
   >
+    <h1>Expert Profiles</h1>
+    <Subtitle>Product and Visual Design</Subtitle>
+    <Caption>
+      <i>Summer 2018</i>
+    </Caption>
     <CustomImage
       size="full"
       src="/images/expert/headerimage.png"

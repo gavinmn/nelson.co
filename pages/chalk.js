@@ -7,6 +7,13 @@ import CustomImage from "@/components/customimage"
 import Caption from "@/components/caption"
 import { device } from "@/components/device"
 
+const Subtitle = styled.h2`
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+  font-weight: normal;
+  margin: 0;
+`
+
 const SingleVideoContainer = styled.div`
   margin: 2rem 0;
   display: grid;
@@ -88,13 +95,17 @@ const chalkPage = props => (
     og="og.png"
     description="Interaction and Visual Design"
   >
+    <h1>Chalk</h1>
+    <Subtitle>Interaction and Visual Design</Subtitle>
+    <Caption>
+      <i>Summer 2019</i>
+    </Caption>
     <CustomImage
       size="full"
       src="/images/chalk/headerimage.png"
       width="816"
       height="400"
     />
-
     <h2>Project</h2>
 
     <p>

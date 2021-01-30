@@ -16,13 +16,6 @@ const Container = styled.div`
   }
 `
 
-const Subtitle = styled.h2`
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  font-weight: normal;
-  margin: 0;
-`
-
 const Feedback = styled.div`
   margin-top: 4rem;
   padding: 0.5rem 1rem;
@@ -58,11 +51,6 @@ const PostWrapper = props => {
         <Fade>
           <Container>
             <Wrapper size="small">
-              <h1>{props.title}</h1>
-              <Subtitle>{props.subtitle}</Subtitle>
-              <Caption>
-                <i>{props.time}</i>
-              </Caption>
               {props.children}
               <Feedback>
                 <FeedbackTitle>Feedback</FeedbackTitle>
