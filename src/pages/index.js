@@ -54,8 +54,6 @@ const Anchor = styled.h1`
 `
 
 const IndexPage = ({ posts }, slug) => {
-  console.log(posts)
-
   return (
     <Layout>
       <SEO />
@@ -75,7 +73,7 @@ const IndexPage = ({ posts }, slug) => {
             <Post
               key={key}
               title={data.title}
-              subtitle={data.description}
+              subtitle={data.subtitle}
               time={data.time}
               href={slug}
             />
