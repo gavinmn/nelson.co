@@ -10,11 +10,10 @@ import Card from "@/components/card"
 import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
-import PostContainer from "@/components/postcontainer"
 import Post from "@/components/post"
 
 import fs from "fs"
-import path from "path"
+import matter from "gray-matter"
 
 const HeroContainer = styled.div`
   margin-top: -1rem;
@@ -55,6 +54,8 @@ const Anchor = styled.h1`
 `
 
 const IndexPage = ({ posts }) => {
+  console.log(posts)
+
   return (
     <Layout>
       <SEO />
@@ -70,12 +71,12 @@ const IndexPage = ({ posts }) => {
         <SectionHeader section="Posts" />
 
         <PostGrid>
-          {posts.map(post => (
+          {posts.map(({ frontmatter: { title, description } }) => (
             <Post
-              title="Blender Basics"
+              title={posts.title}
               subtitle="A starting point for Blender beginners from a former beginner."
               time="Published January 21, 2021"
-              href="blenderbasics"
+              href="test"
             />
           ))}
         </PostGrid>
@@ -211,26 +212,26 @@ const IndexPage = ({ posts }) => {
 
 export default IndexPage
 
-const root = process.cwd()
-
 export async function getStaticProps() {
-  const postsDirectory = path.join(root, "src/data")
-  const filenames = fs.readdirSync(postsDirectory)
+  const files = fs.readdirSync(`${process.cwd()}/src/data/posts`)
 
-  const posts = filenames.map(filename => {
-    const filePath = path.join(postsDirectory, filename)
-    const fileContents = fs.readFileSync(filePath, "utf8")
+  const posts = files.map(filename => {
+    const markdownWithMetadata = fs
+      .readFileSync(`src/data/posts/${filename}`)
+      .toString()
 
-    // Generally you would parse/transform the contents
-    // For example you can transform markdown to HTML here
+    const { data } = matter(markdownWithMetadata)
+
+    const frontmatter = {
+      data,
+    }
 
     return {
-      filename,
-      content: fileContents,
+      slug: filename.replace(".md", ""),
+      frontmatter,
     }
   })
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
+
   return {
     props: {
       posts,
