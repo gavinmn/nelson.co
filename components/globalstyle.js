@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 	
 	html {
 		scroll-behavior: smooth;
+		
 	}
 
 	:root {
@@ -140,4 +141,6 @@ export const GlobalStyle = createGlobalStyle`
 			font-size: 32px;
 		  }
 	  }
+	  
+		  
 `

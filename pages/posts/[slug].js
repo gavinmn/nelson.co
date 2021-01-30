@@ -2,20 +2,26 @@ import matter from "gray-matter"
 import renderToString from "next-mdx-remote/render-to-string"
 import hydrate from "next-mdx-remote/hydrate"
 import { getAllPostSlugs, getPostdata } from "../../lib/posts"
-import { MDXProvider } from "@mdx-js/react"
+import Ztext from "react-ztext"
+
+import MarkdownComponents from "@/components/markdowncomponents"
+import { ThemeProvider } from "styled-components"
+import Theme from "@/styles/theme"
 
 import PostWrapper from "@/components/postwrapper"
 
-import MarkdownComponents from "@/components/markdowncomponents"
-const components = { MarkdownComponents }
+const ZContainer = props => <div className="z-container">{props.children}</div>
+const Cube = props => <div className="cube">{props.children}</div>
 
-const provider = {
-  component: MDXProvider,
-}
+const components = { MarkdownComponents, ZContainer, Ztext, Cube }
 
 export default function Posts({ source, frontMatter }) {
-  const content = hydrate(source, { components, provider })
-  console.log(provider)
+  const content = hydrate(source, {
+    components,
+    provider: {
+      component: props => <ThemeProvider {...props} theme={Theme} />,
+    },
+  })
 
   return (
     <PostWrapper
@@ -41,7 +47,9 @@ export async function getStaticProps({ params }) {
 
   const mdxSource = await renderToString(content, {
     components,
-    provider,
+    provider: {
+      component: props => <ThemeProvider {...props} theme={Theme} />,
+    },
   })
 
   return {
