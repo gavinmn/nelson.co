@@ -50,8 +50,7 @@ const Twitter = styled.a`
   }
 `
 
-const PostWrapper = (props, { frontmatter }) => {
-  console.log(frontmatter)
+const PostWrapper = props => {
   return (
     <Layout>
       <SEO title={props.title} og={props.og} description={props.description} />

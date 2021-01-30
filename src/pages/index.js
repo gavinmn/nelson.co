@@ -53,7 +53,7 @@ const Anchor = styled.h1`
   }
 `
 
-const IndexPage = ({ posts }) => {
+const IndexPage = ({ posts }, slug) => {
   console.log(posts)
 
   return (
@@ -71,12 +71,13 @@ const IndexPage = ({ posts }) => {
         <SectionHeader section="Posts" />
 
         <PostGrid>
-          {posts.map(({ frontmatter: { title, description } }) => (
+          {posts.map(({ frontmatter: { data }, slug }, key) => (
             <Post
-              title={posts.title}
-              subtitle="A starting point for Blender beginners from a former beginner."
-              time="Published January 21, 2021"
-              href="test"
+              key={key}
+              title={data.title}
+              subtitle={data.description}
+              time={data.time}
+              href={slug}
             />
           ))}
         </PostGrid>
@@ -227,7 +228,7 @@ export async function getStaticProps() {
     }
 
     return {
-      slug: filename.replace(".md", ""),
+      slug: filename.replace(".mdx", ""),
       frontmatter,
     }
   })
