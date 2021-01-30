@@ -9,7 +9,7 @@ module.exports = withMDX({
     domains: ["img.musicthread.app"],
   },
   webpack: (config, { isServer }) => {
-    config.resolve.alias["@"] = path.resolve("./src")
+    config.resolve.alias["@"] = path.resolve("./")
 
     return config
   },
