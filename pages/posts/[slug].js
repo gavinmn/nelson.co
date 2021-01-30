@@ -3,12 +3,17 @@ import renderToString from "next-mdx-remote/render-to-string"
 import hydrate from "next-mdx-remote/hydrate"
 import { getAllPostSlugs, getPostdata } from "../../lib/posts"
 
-// const components = { MyBackground, MyButton }
+import CustomImage from "@/components/customimage"
+import Ztext from "react-ztext"
+import Cube from "@/components/posts/cube"
+import ZContainer from "@/components/posts/zcontainer"
+
+const components = { CustomImage, Ztext, Cube, ZContainer }
 
 import PostWrapper from "@/components/postwrapper"
 
 export default function Posts({ source, frontMatter }) {
-  const content = hydrate(source)
+  const content = hydrate(source, { components })
   return <PostWrapper>{content}</PostWrapper>
 }
 export async function getStaticPaths() {
@@ -23,6 +28,7 @@ export async function getStaticProps({ params }) {
   const { data, content } = matter(postContent)
   const mdxSource = await renderToString(content, {
     scope: data,
+    components,
   })
   return {
     props: {

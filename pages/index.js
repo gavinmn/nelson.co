@@ -10,7 +10,7 @@ import Card from "@/components/card"
 import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
-import Post from "@/components/post"
+import PostPreview from "@/components/postpreview"
 
 import { getSortedPosts } from "../lib/posts"
 
@@ -70,7 +70,7 @@ const IndexPage = ({ posts }) => {
 
         <PostGrid>
           {posts.map(({ frontmatter: { data }, slug }, key) => (
-            <Post
+            <PostPreview
               key={key}
               title={data.title}
               subtitle={data.subtitle}
