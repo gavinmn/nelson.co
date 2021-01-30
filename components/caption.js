@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { device } from "@/components/device"
 
-const StyledText = styled.p`
+const Caption = styled.p`
   font-size: var(--font-xs);
   line-height: var(--lh-xs);
   font-weight: normal;
@@ -19,7 +19,5 @@ const StyledText = styled.p`
     color: var(--text-secondary);
   }
 `
-
-const Caption = props => <StyledText>{props.children}</StyledText>
 
 export default Caption
