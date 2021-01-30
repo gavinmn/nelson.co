@@ -2,15 +2,10 @@ import matter from "gray-matter"
 import renderToString from "next-mdx-remote/render-to-string"
 import hydrate from "next-mdx-remote/hydrate"
 import { getAllPostSlugs, getPostdata } from "../../lib/posts"
-
-import CustomImage from "@/components/customimage"
-import Ztext from "react-ztext"
-import Cube from "@/components/posts/cube"
-import ZContainer from "@/components/posts/zcontainer"
-
-const components = { CustomImage, Ztext, Cube, ZContainer }
-
 import PostWrapper from "@/components/postwrapper"
+
+import MarkdownComponents from "@/components/markdowncomponents"
+const components = { MarkdownComponents }
 
 export default function Posts({ source, frontMatter }) {
   const content = hydrate(source, { components })
