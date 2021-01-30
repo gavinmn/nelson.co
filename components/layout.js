@@ -91,7 +91,6 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-
       <FooterContainer>
         <Wrapper size={"large"}>
           <LayoutFlex>
