@@ -132,17 +132,12 @@ const Header = props => {
           <Link href="/" passhref>
             <a
               className={highlightAbout ? "about-link-highlight" : "about-link"}
-              shouldHighlightAbout={highlightAbout}
             >
               About
             </a>
           </Link>
           <Link href="/#work" passhref>
-            <a
-              className={highlightWork ? "work-link-highlight" : "work-link"}
-              stripHash
-              shouldHighlightWork={highlightWork}
-            >
+            <a className={highlightWork ? "work-link-highlight" : "work-link"}>
               Work
             </a>
           </Link>

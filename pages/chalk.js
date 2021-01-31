@@ -15,7 +15,7 @@ const chalkPage = props => (
     description="Interaction and Visual Design"
   >
     <style jsx>{`
-      .subtilte {
+      .subtitle {
         font-size: var(--font-xs);
         color: var(--text-secondary);
         font-weight: normal;
