@@ -1,39 +1,9 @@
 import React from "react"
-import Image from "next/image"
-import styled from "styled-components"
 
 import PostWrapper from "@/components/postwrapper"
 import CustomImage from "@/components/customimage"
 import { device } from "@/components/device"
 import Caption from "@/components/caption"
-
-const Subtitle = styled.h2`
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  font-weight: normal;
-  margin: 0;
-`
-
-const SingleVideoContainer = styled.div`
-  margin: 2rem 0;
-  display: grid;
-  grid-template-columns: auto;
-  justify-items: center;
-  align-items: center;
-
-  @media ${device.desktop} {
-    margin: 1rem auto;
-  }
-`
-const SingleVideo = styled.video`
-  max-width: 375px;
-  max-width: 100%;
-
-  @media ${device.desktop} {
-    width: 100%;
-    max-width: 816px;
-  }
-`
 
 const expertsPage = props => (
   <PostWrapper
@@ -43,13 +13,46 @@ const expertsPage = props => (
     og="og.png"
     description="Product and Visual Design"
   >
+    <style jsx>{`
+      .subtitle {
+        font-size: var(--font-xs);
+        color: var(--text-secondary);
+        font-weight: normal;
+        margin: 0;
+      }
+
+      .single-video-container {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .single-video {
+        max-width: 375px;
+        max-width: 100%;
+      }
+
+      @media ${device.desktop} {
+        .single-video-container {
+          margin: 1rem auto;
+        }
+
+        .single-video {
+          width: 100%;
+          max-width: 816px;
+        }
+      }
+    `}</style>
+
     <h1>Expert Profiles</h1>
-    <Subtitle>Product and Visual Design</Subtitle>
+    <h2 className="subtitle">Product and Visual Design</h2>
     <Caption>
       <i>Summer 2018</i>
     </Caption>
     <CustomImage
-      size="full"
+      size="large"
       src="/images/expert/headerimage.png"
       width="816"
       height="400"
@@ -64,7 +67,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/projectimage.png"
       width="444"
       height="222"
@@ -78,7 +81,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/teamimage.png"
       width="444"
       height="344"
@@ -100,7 +103,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/problemimage.png"
       width="444"
       height="290"
@@ -120,7 +123,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/goalimage.png"
       width="444"
       height="326"
@@ -137,7 +140,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/stakeholderimage.png"
       width="444"
       height="242"
@@ -158,7 +161,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="full"
+      size="large"
       src="/images/expert/solutionimage1.png"
       width="816"
       height="994"
@@ -170,7 +173,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/solutionimage2.png"
       width="444"
       height="126"
@@ -182,7 +185,7 @@ const expertsPage = props => (
       editable by using the same backend editing that the rest of our site uses.
     </p>
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/solutionimage3.png"
       width="444"
       height="406"
@@ -201,11 +204,18 @@ const expertsPage = props => (
       sections below.
     </p>
 
-    <SingleVideoContainer>
-      <SingleVideo width="816" playsInline autoPlay muted loop>
+    <div className="single-video-container">
+      <video
+        className="single-video"
+        width="816"
+        playsInline
+        autoPlay
+        muted
+        loop
+      >
         <source src="/images/expert/togglemovie.mp4" type="video/mp4" />
-      </SingleVideo>
-    </SingleVideoContainer>
+      </video>
+    </div>
 
     <p>
       The bio section was the only consistent piece of information that the
@@ -223,7 +233,7 @@ const expertsPage = props => (
       Achievements, depending upon the expert.{" "}
     </p>
     <CustomImage
-      size="full"
+      size="large"
       src="/images/expert/solutionimage4.png"
       width="816"
       height="384"
@@ -262,7 +272,7 @@ const expertsPage = props => (
     </p>
 
     <CustomImage
-      size="full"
+      size="large"
       src="/images/expert/contextimage1.png"
       width="816"
       height="320"
@@ -276,11 +286,18 @@ const expertsPage = props => (
       able to illustrate more fleshed out ideas.{" "}
     </p>
 
-    <SingleVideoContainer>
-      <SingleVideo width="320" playsInline autoPlay muted loop>
+    <div className="single-video-container">
+      <video
+        className="single-video"
+        width="320"
+        playsInline
+        autoPlay
+        muted
+        loop
+      >
         <source src="/images/expert/prototypemovie.mp4" type="video/mp4" />
-      </SingleVideo>
-    </SingleVideoContainer>
+      </video>
+    </div>
 
     <h2>Development</h2>
     <p>
@@ -290,7 +307,7 @@ const expertsPage = props => (
       engineering team to have the pages built.
     </p>
     <CustomImage
-      size="half"
+      size="small"
       src="/images/expert/devimage.png"
       width="444"
       height="190"

@@ -1,36 +1,38 @@
 import React from "react"
-import styled from "styled-components"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
-import Link from "next/link"
 import { device } from "@/components/device"
-
-const TextContainer = styled.div`
-  margin-top: -1rem;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: start;
-  justify-content: center;
-
-  max-width: 624px;
-  margin: 0 auto;
-  padding: 0 5% 0 5%;
-
-  @media ${device.desktop} {
-    margin-top: 1rem;
-  }
-`
 
 const Colophon = props => (
   <Layout>
+    <style jsx>{`
+      .text-container {
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: start;
+        justify-content: center;
+
+        max-width: 624px;
+        margin: 0 auto;
+        padding: 0 5% 0 5%;
+      }
+
+      @media ${device.desktop} {
+        .text-container {
+          margin-top: 1rem;
+        }
+      }
+    `}</style>
+
     <SEO
       title="Colophon"
       og="colophonog.png"
       description="The making of nelson.co"
     />
 
-    <TextContainer>
+    <div className="text-container">
       <h1>Colophon</h1>
 
       <p>
@@ -80,7 +82,7 @@ const Colophon = props => (
         </a>
         . The content on this website is copyrighted.
       </p>
-    </TextContainer>
+    </div>
   </Layout>
 )
 
