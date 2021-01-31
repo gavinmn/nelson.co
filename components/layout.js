@@ -3,15 +3,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { device } from "./device"
 import Link from "next/link"
-
+import Wrapper from "@/components/wrapper"
 import Header from "./header"
-
-const Wrapper = styled.div`
-  max-width: 816px;
-  margin: 0 auto;
-  padding: 0 5% 0 5%;
-  overflow: hidden;
-`
 
 const FooterContainer = styled.div`
   margin-top: 4rem;

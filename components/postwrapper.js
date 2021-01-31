@@ -44,7 +44,9 @@ const PostWrapper = props => {
               }
 
               @media ${device.desktop} {
-                margin: 4rem 0 0rem 0;
+                .container {
+                  margin: 4rem 0 0rem 0;
+                }
               }
             `}</style>
             <Wrapper size="small">
