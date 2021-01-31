@@ -1,49 +1,48 @@
-import React from "react"
-import styled from "styled-components"
 import Link from "next/link"
-import { device } from "@/components/device"
 import Caption from "@/components/caption"
 
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`
-
-const TitleText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: none;
-  align-self: stretch;
-`
-const Title = styled.h2`
-  color: var(--text-secondary);
-  margin: 0;
-
-  &:hover {
-    color: var(--text-primary);
-    cursor: pointer;
-  }
-`
-
-const Subtitle = styled.p`
-  margin: 0;
-  flex: none;
-  align-self: stretch;
-  flex-grow: 0;
-`
-
 const PostPreview = props => (
-  <FlexContainer>
-    <TitleText>
+  <div className="container">
+    <style jsx>{`
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: none;
+        align-self: stretch;
+      }
+
+      .title {
+        color: var(--text-secondary);
+        margin: 0;
+      }
+      .title:hover {
+        color: var(--text-primary);
+        cursor: pointer;
+      }
+
+      .subtitle {
+        margin: 0;
+        flex: none;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+    `}</style>
+
+    <div className="text">
       <Link as={`posts/${props.href}`} href="/posts/[slug]">
-        <Title>{props.title}</Title>
+        <h2 className="title">{props.title}</h2>
       </Link>
-      <Subtitle>{props.subtitle}</Subtitle>
-    </TitleText>
+      <p className="subtitle">{props.subtitle}</p>
+    </div>
     <Caption>{props.time}</Caption>
-  </FlexContainer>
+  </div>
 )
 
 export default PostPreview

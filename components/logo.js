@@ -1,30 +1,34 @@
-import React from "react"
-import styled from "styled-components"
 import Ztext from "react-ztext"
-
-const StyledSVG = styled.svg`
-  width: 160px;
-  height: 160px;
-
-  @media only screen and (min-width: 722px) {
-    width: 196px;
-    height: 196px;
-  }
-`
-const StyledContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-
-  @media only screen and (min-width: 722px) {
-    justify-content: start;
-  }
-`
+import { device } from "./device"
 
 const Logo = props => (
-  <StyledContainer>
+  <div className="container">
+    <style jsx>{`
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .svg {
+        width: 160px;
+        height: 160px;
+      }
+
+      @media ${device.desktop} {
+        .conatiner {
+          justify-content: start;
+        }
+
+        .svg {
+          width: 196px;
+          height: 196px;
+        }
+      }
+    `}</style>
+
     <Ztext
       depth=".9rem"
       direction="both"
@@ -35,7 +39,7 @@ const Logo = props => (
       layers={15}
       perspective="500px"
     >
-      <StyledSVG viewBox="0 0 210 190" version="1.1">
+      <svg className="svg" viewBox="0 0 210 190" version="1.1">
         <path
           d="M154.503 0.034373C153.399 -0.00375831 152.5 0.895252 152.5 1.99982V188C152.5 189.104 153.399 190.003 154.503 189.965C185.056 188.91 209.5 163.809 209.5 133V56.9998C209.5 26.1902 185.056 1.08972 154.503 0.034373Z"
           fill="var(--logo-primary)"
@@ -52,9 +56,9 @@ const Logo = props => (
           d="M2.5 133C1.39543 133 0.496417 133.899 0.534548 135.003C1.56692 164.891 25.6091 188.933 55.4966 189.965C56.6005 190.003 57.5 189.104 57.5 188V135C57.5 133.895 56.6046 133 55.5 133H2.5Z"
           fill="var(--logo-primary)"
         />
-      </StyledSVG>
+      </svg>
     </Ztext>
-  </StyledContainer>
+  </div>
 )
 
 export default Logo
