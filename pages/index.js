@@ -1,73 +1,81 @@
 import React from "react"
-import styled from "styled-components"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import Hero from "@/components/hero"
-import Wrapper from "@/components/wrapper"
 import { device } from "@/components/device"
-import Image from "next/image"
 import Card from "@/components/card"
 import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
-
 import { getSortedPosts } from "../lib/posts"
-
-const HeroContainer = styled.div`
-  margin-top: -1rem;
-  display: grid;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-
-  @media ${device.desktop} {
-    margin-top: 1rem;
-  }
-`
-
-const PostGrid = styled.div`
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 0.5rem;
-  max-width: 816px;
-`
-const CardGrid = styled.div`
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 1rem;
-
-  @media ${device.desktop} {
-    grid-template-columns: 49.01960784% 49.01960784%;
-    grid-gap: 0.5rem;
-  }
-`
-
-const Anchor = styled.h1`
-  padding-top: 1rem;
-  margin-top: -1rem;
-  @media ${device.desktop} {
-    padding-top: 0.5rem;
-    margin-top: -0.5rem;
-  }
-`
 
 const IndexPage = ({ posts }) => {
   return (
     <Layout>
+      <style jsx>{`
+        .wrapper {
+          max-width: 816px;
+          padding: 0 5% 0 5%;
+          margin: 0 auto;
+        }
+
+        .hero-container {
+          margin-top: -1rem;
+          display: grid;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .post-grid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 0.5rem;
+          max-width: 816px;
+        }
+
+        .card-grid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 1rem;
+        }
+
+        .anchor {
+          padding-top: 1rem;
+          margin-top: -1rem;
+        }
+
+        @media ${device.desktop} {
+          .hero-container {
+            margin-top: 1rem;
+          }
+
+          .card-grid {
+            grid-template-columns: 49.01960784% 49.01960784%;
+            grid-gap: 0.5rem;
+          }
+
+          .anchor {
+            padding-top: 0.5rem;
+            margin-top: -0.5rem;
+          }
+        }
+      `}</style>
+
       <SEO />
-      <Wrapper size={"large"}>
-        <HeroContainer>
+      <div className="wrapper">
+        <div className="hero-container">
           <Hero />
-        </HeroContainer>
+        </div>
 
         <a aria-label="Work" id="work" href="/#work">
-          <Anchor></Anchor>
+          <h1 className="anchor"></h1>
         </a>
 
         <SectionHeader section="Posts" />
 
-        <PostGrid>
+        <div className="post-grid">
           {posts.map(({ frontmatter: { data }, slug }, key) => (
             <PostPreview
               key={key}
@@ -77,10 +85,10 @@ const IndexPage = ({ posts }) => {
               href={slug}
             />
           ))}
-        </PostGrid>
+        </div>
 
         <SectionHeader section="Projects" />
-        <CardGrid>
+        <div className="card-grid">
           <Card
             width="double"
             imageSrc="/images/index/montereyimage.png"
@@ -104,10 +112,10 @@ const IndexPage = ({ posts }) => {
           >
             <ButtonInternal link="/chalk" />
           </Card>
-        </CardGrid>
+        </div>
 
         <SectionHeader section="Icons" />
-        <CardGrid>
+        <div className="card-grdi">
           <Card
             width="single"
             imageSrc="/images/index/claquette.png"
@@ -202,8 +210,8 @@ const IndexPage = ({ posts }) => {
             subtitle="Icon Design"
             time="Summer 2020"
           ></Card>
-        </CardGrid>
-      </Wrapper>
+        </div>
+      </div>
     </Layout>
   )
 }
