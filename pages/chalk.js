@@ -238,10 +238,10 @@ const chalkPage = props => (
     </p>
 
     <div className="dual-video-container">
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/listenmode.mp4" type="video/mp4" />
       </video>
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/talkmode.mp4" type="video/mp4" />
       </video>
     </div>
@@ -255,10 +255,10 @@ const chalkPage = props => (
     </p>
 
     <div className="dual-video-container">
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/avatarswipe.mp4" type="video/mp4" />
       </video>
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/colorchange.mp4" type="video/mp4" />
       </video>
     </div>
@@ -310,16 +310,16 @@ const chalkPage = props => (
     </p>
 
     <div className="quad-video-container">
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/swipe1.mp4" type="video/mp4" />
       </video>
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/swipe2.mp4" type="video/mp4" />
       </video>
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/volumeslider.mp4" type="video/mp4" />
       </video>
-      <video className="mult-video" playsInline autoPlay muted loop>
+      <video className="multi-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/actionbutton.mp4" type="video/mp4" />
       </video>
     </div>
