@@ -1,146 +1,137 @@
-import { createGlobalStyle } from "styled-components"
-export const GlobalStyle = createGlobalStyle`
-	
-	* {
-		 margin:0;
-		  padding:0;
-		  -webkit-font-smoothing: antialiased;
-	}
-	
-	html {
-		scroll-behavior: smooth;
-		
-	}
+function GlobalStyle(props) {
+  return (
+    <div className="page-layout">
+      {props.children}
+      <style jsx global>{`
+        * {
+          margin: 0;
+          padding: 0;
+          -webkit-font-smoothing: antialiased;
+        }
 
-	:root {
-		--bg-primary-hex: #ffffff;
-		--bg-primary-rgba: rgba(255, 255, 255, .8);
-		
-		--bg-secondary: #F1F5F8;
-		
-		--text-primary: #232E3E;
-		--text-secondary: #517095;
-		--text-underline: rgba(94, 136, 186, 0.6);;
-		
-		// used for button hover states and logo
-		--color-primary: #232E3E;
-		--logo-primary: #232E3E;
+        html {
+          scroll-behavior: smooth;
+        }
 
-		--color-chalk: #006EF0;
-		--color-chalk-secondary: #F1F8FF;
+        :root {
+          --bg-primary-hex: #ffffff;
+          --bg-primary-rgba: rgba(255, 255, 255, 0.8);
 
-		--color-experts: #22722D;
-		--color-experts-secondary: #F1FBF3;
-		
-		--github-text: #24292E;
-		
-		--font-xs: 14px;
-		--font-s: 16px;
-		--font-m: 18px;
-		--font-l: 26px;
-		
-		// --lh-xs: 20px;
-		// --lh-s: 24px;
-		// --lh-m: 26px;
-		// --lh-l: 32px;
-	
-		@media only screen and (min-width: 722px) { 
-			--font-xs: 16px;
-			--font-s: 18px;
-			--font-m: 20px;
-			--font-l: 28px;
-			
-			// --lh-xs: 24px;
-			// --lh-s: 26px;
-			// --lh-m: 28px;
-			// --lh-l: 36px;
-		}
-	
-		
+          --bg-secondary: #f1f5f8;
 
-		@media(prefers-color-scheme: dark) {
-			
-			--bg-primary-hex: #212831;
-			--bg-primary-rgba: rgba(33,40,49,0.8);
-			
-			--bg-secondary: #1A2028;
+          --text-primary: #232e3e;
+          --text-secondary: #517095;
+          --text-underline: rgba(94, 136, 186, 0.6);
 
-			--text-primary: #F1F5F8;
-			--text-secondary: #7A91AE;
-			--text-underline: #7A91AE;
-			
-			
-			// used for button hover states and logo
-			--color-primary: #F1F5F8;
-			--logo-primary: #F1F5F8;
-			
-			
-			--color-chalk: #1A83FF;
-			--color-chalk-secondary: #1A212D;
+          --color-primary: #232e3e;
+          --logo-primary: #232e3e;
 
-			--color-experts: #1E992F;
-			--color-experts-secondary: #1A2620;
+          --color-chalk: #006ef0;
+          --color-chalk-secondary: #f1f8ff;
 
-			--github-text: #ffffff;
-		}
-	}
+          --color-experts: #22722d;
+          --color-experts-secondary: #f1fbf3;
 
-	body {
-		  background-color: var(--bg-primary-hex);
-		  font-family: 'Sohne', -apple-system, BlinkMacSystemFont, sans-serif;
-		  color: var(--text-primary);
-		  overflow-y: scroll;
-		  overflow-x: auto;
-		  -webkit-overflow-scrolling: touch;
-	}
+          --github-text: #24292e;
 
-	body.dark {
-		background-color: var(--bg-primary-hex);
-		color: var(--text-primary);
-	}
+          --font-xs: 14px;
+          --font-s: 16px;
+          --font-m: 18px;
+          --font-l: 26px;
+        }
 
-	html, body {
-		width: 100%;
-		height: 100%
-	}
+        @media only screen and (min-width: 722px) {
+          :root {
+            --font-xs: 16px;
+            --font-s: 18px;
+            --font-m: 20px;
+            --font-l: 28px;
+          }
+        }
 
-	html {
-		font-size: 16px;
-		  -webkit-overflow-scrolling: touch;
-		  -webkit-font-smoothing: antialiased;
-		  text-rendering: optimizeLegibility;
-		  line-height: 1.46;
-	}
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --bg-primary-hex: #212831;
+            --bg-primary-rgba: rgba(33, 40, 49, 0.8);
 
-	footer {
-		  margin-bottom: 2rem;
-		  font-size: var(--font-xs);
-		  color: var(--text-secondary);
-	}
-	
-	@media only screen and (min-width: 722px) { 
-	 	footer {
-			 margin-bottom: 1rem;
-		}	
-	}
+            --bg-secondary: #1a2028;
 
-	img {
-		  max-width: 100%;
-		  height:auto;
-	}
-	
+            --text-primary: #f1f5f8;
+            --text-secondary: #7a91ae;
+            --text-underline: #7a91ae;
 
-	::selection {
-		color: var(--bg-primary-hex);
-		  background: var(--text-primary);
-		  text-shadow: none;
-	}
+            --color-primary: #f1f5f8;
+            --logo-primary: #f1f5f8;
 
-	@media only screen and (min-width: 722px) {
-		  html {
-			font-size: 32px;
-		  }
-	  }
-	  
-		  
-`
+            --color-chalk: #1a83ff;
+            --color-chalk-secondary: #1a212d;
+
+            --color-experts: #1e992f;
+            --color-experts-secondary: #1a2620;
+
+            --github-text: #ffffff;
+          }
+        }
+
+        body {
+          background-color: var(--bg-primary-hex);
+          font-family: "Sohne", -apple-system, BlinkMacSystemFont, sans-serif;
+          color: var(--text-primary);
+          overflow-y: scroll;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        body.dark {
+          background-color: var(--bg-primary-hex);
+          color: var(--text-primary);
+        }
+
+        html,
+        body {
+          width: 100%;
+          height: 100%;
+        }
+
+        html {
+          font-size: 16px;
+          -webkit-overflow-scrolling: touch;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          line-height: 1.46;
+        }
+
+        footer {
+          margin-bottom: 2rem;
+          font-size: var(--font-xs);
+          color: var(--text-secondary);
+        }
+
+        @media only screen and (min-width: 722px) {
+          footer {
+            margin-bottom: 1rem;
+          }
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        ::selection {
+          color: var(--bg-primary-hex);
+          background: var(--text-primary);
+          text-shadow: none;
+        }
+
+        @media only screen and (min-width: 722px) {
+          html {
+            font-size: 32px;
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+
+export default GlobalStyle
