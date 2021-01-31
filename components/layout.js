@@ -1,144 +1,147 @@
-import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
 import { device } from "./device"
 import Link from "next/link"
 import Header from "./header"
-
-const FooterContainer = styled.div`
-  margin-top: 4rem;
-  padding-top: 2rem;
-  background-color: var(--bg-secondary);
-
-  @media ${device.desktop} {
-    padding-top: 1rem;
-    margin-top: 2rem;
-  }
-`
-
-const LayoutFlex = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`
-
-const TopFlex = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: stretch;
-`
-
-const BottomFlex = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 36px;
-`
-
-const LeftFlex = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  @media ${device.desktop} {
-    flex-direction: row;
-  }
-`
-
-const RightFlex = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-`
-const ColOne = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @media ${device.desktop} {
-    margin-right: 64px;
-  }
-`
-
-const ColTwo = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`
-
-const StyledLink = styled.a`
-  background-image: none;
-  text-shadow: none;
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
-  &:hover {
-    color: var(--text-primary);
-  }
-`
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
       <main>{children}</main>
-      <FooterContainer>
-        <div className="wrapper-large">
-          <style jsx>{`
-            .wrapper-large {
-              max-width: 816px;
-              padding: 0 5% 0 5%;
-              margin: 0 auto;
+      <div className="footer-container">
+        <style jsx>{`
+          .wrapper-large {
+            max-width: 816px;
+            padding: 0 5% 0 5%;
+            margin: 0 auto;
+          }
+
+          .footer-container {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            background-color: var(--bg-secondary);
+          }
+
+          .layout-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .top-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-self: stretch;
+          }
+
+          .bottom-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 36px;
+          }
+
+          .left-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          
+          .right-flex {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-end; 
+          }
+          
+          .col-one, .col-two {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;  
+          }
+          
+          .link {
+           background-image: none;
+           text-shadow: none;
+           font-size: var(--font-xs);
+           color: var(--text-secondary);
+           margin-bottom: 0.75rem;
+            
+          }
+          
+          .link:hover {
+              color: var(--text-primary);
+             
+          }
+        
+          
+            @media ${device.desktop} {
+              .footer-container {
+                padding-top: 1rem;
+                margin-top: 2rem;
+              }
+
+              .left-flex {
+                flex-direction: row;
+              }
+              
+              .col-one {
+               margin-right: 64px; 
+              }
             }
-          `}</style>
-          <LayoutFlex>
-            <TopFlex>
-              <LeftFlex>
-                <ColOne>
+          }
+        `}</style>
+        <div className="wrapper-large">
+          <div className="layout-flex">
+            <div className="top-flex">
+              <div className="left-flex">
+                <div className="col-one">
                   <Link href="/" passhref>
-                    <StyledLink>About</StyledLink>
+                    <a className="link">About</a>
                   </Link>
 
                   <Link href="/#work" passhref>
-                    <StyledLink>Work</StyledLink>
+                    <a className="link">Work</a>
                   </Link>
-                </ColOne>
-                <ColTwo>
-                  <StyledLink
+                </div>
+                <div className="col-two">
+                  <a
+                    className="link"
                     href="mailto:gavin@nelson.co"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Email
-                  </StyledLink>
-                  <StyledLink
+                  </a>
+                  <a
+                    className="link"
                     href="https://twitter.com/Gavmn"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Twitter
-                  </StyledLink>
-                </ColTwo>
-              </LeftFlex>
-              <RightFlex>
+                  </a>
+                </div>
+              </div>
+              <div className="right-flex">
                 {/* <Link href="" passhref>
-                  <StyledLink>Music Thread</StyledLink>
+                  <a className="link">Music Thread</a>
                 </Link>
                 <Link href="" passhref>
-                  <StyledLink>Photos</StyledLink>
+                  <a className="link">Photos</a>
                 </Link> */}
-              </RightFlex>
-            </TopFlex>
-            <BottomFlex>
+              </div>
+            </div>
+            <div className="bottom-flex">
               <Link href="/colophon" passhref>
-                <StyledLink>Colophon</StyledLink>
+                <a className="link">Colophon</a>
               </Link>
               <footer>© {new Date().getFullYear()} Gavin Nelson</footer>
-            </BottomFlex>
-          </LayoutFlex>
+            </div>
+          </div>
         </div>
-      </FooterContainer>
+      </div>
     </>
   )
 }

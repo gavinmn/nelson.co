@@ -1,73 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 import Link from "next/link"
-import styled from "styled-components"
-import Wrapper from "./wrapper"
 import { device } from "./device"
-
-const StyledHeader = styled.div`
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: ${props => (props.scrolled ? ".5rem 0" : "1rem 0")};
-  background-color: ${props =>
-    props.darkBackground ? "" : "var(--bg-primary-rgba)"};
-  backdrop-filter: ${props => (props.scrolled ? "blur(6px)" : "")};
-  z-index: ${props => (props.scrolled ? "10" : "1")};
-  transition: padding 0.4s ease-in-out;
-
-  @media ${device.desktop} {
-    padding: ${props => (props.scrolled ? ".25rem 0" : ".5rem 0")};
-  }
-`
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-`
-
-const AboutLink = styled.a`
-  background-image: none;
-  text-shadow: none;
-  margin-left: 1.5rem;
-  color: ${props =>
-    props.shouldHighlightAbout
-      ? "var(--color-primary)"
-      : "var(--text-secondary)"};
-  &:hover {
-    cursor: pointer;
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-`
-const WorkLink = styled.a`
-  background-image: none;
-  text-shadow: none;
-  color: ${props =>
-    props.shouldHighlightWork
-      ? "var(--color-primary)"
-      : "var(--text-secondary)"};
-  margin-left: 1.5rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
-
-  &:hover {
-    cursor: pointer;
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-`
-const Name = styled.a`
-  background-image: none;
-  margin-right: auto;
-  margin-left: 0;
-  color: var(--text-primary);
-  &:hover {
-    cursor: pointer;
-    color: var(--color-primary);
-    text-decoration: none;
-  }
-`
 
 const Header = props => {
   const [hasScrolled, setScroll] = useState(false)
@@ -98,23 +32,123 @@ const Header = props => {
   }, [router.pathname])
 
   return (
-    <StyledHeader scrolled={hasScrolled}>
-      <Wrapper size={"large"}>
-        <Container>
+    <div className={hasScrolled ? "header-scrolled" : "header"}>
+      <style jsx>{`
+        .header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          padding: 1rem 0;
+          background-color: var(--bg-primary-rgba);
+          backdrop-filter: ;
+          z-index: 1;
+          transition: padding 0.4s ease-in-out;
+        }
+
+        .header-scrolled {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          padding: 0.5rem 0;
+          background-color: var(--bg-primary-rgba);
+          backdrop-filter: blur(6px);
+          z-index: 10;
+          transition: padding 0.4s ease-in-out;
+        }
+
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+
+        .wrapper {
+          max-width: 816px;
+          padding: 0 5% 0 5%;
+          margin: 0 auto;
+        }
+
+        .about-link,
+        .work-link {
+          background-image: none;
+          text-shadow: none;
+          margin-left: 1.5rem;
+          color: var(--text-secondary);
+        }
+
+        .about-link-highlight,
+        .work-link-highlight {
+          background-image: none;
+          text-shadow: none;
+          margin-left: 1.5rem;
+          color: var(--color-primary);
+        }
+
+        .about-link:hover,
+        .work-link:hover {
+          cursor: pointer;
+          color: var(--color-primary);
+          text-decoration: none;
+        }
+
+        .about-link-highlight:hover,
+        .work-link-highlight:hover {
+          cursor: pointer;
+          color: var(--color-primary);
+          text-decoration: none;
+        }
+
+        .name {
+          background-image: none;
+          margin-right: auto;
+          margin-left: 0;
+          color: var(--text-primary);
+        }
+
+        .name:hover {
+          cursor: pointer;
+          color: var(--color-primary);
+          text-decoration: none;
+        }
+
+        @media ${device.desktop} {
+          .header {
+            padding: 0.5rem 0;
+            transition: padding 0.4s ease-in-out;
+          }
+
+          .header-scrolled {
+            padding: 0.25rem 0;
+            transition: padding 0.4s ease-in-out;
+          }
+        }
+      `}</style>
+
+      <div className="wrapper">
+        <div className="container">
           <Link href="/" passhref>
-            <Name>Gavin Nelson</Name>
+            <a className="name">Gavin Nelson</a>
           </Link>
           <Link href="/" passhref>
-            <AboutLink shouldHighlightAbout={highlightAbout}>About</AboutLink>
+            <a
+              className={highlightAbout ? "about-link-highlight" : "about-link"}
+              shouldHighlightAbout={highlightAbout}
+            >
+              About
+            </a>
           </Link>
           <Link href="/#work" passhref>
-            <WorkLink stripHash shouldHighlightWork={highlightWork}>
+            <a
+              className={highlightWork ? "work-link-highlight" : "work-link"}
+              stripHash
+              shouldHighlightWork={highlightWork}
+            >
               Work
-            </WorkLink>
+            </a>
           </Link>
-        </Container>
-      </Wrapper>
-    </StyledHeader>
+        </div>
+      </div>
+    </div>
   )
 }
 

@@ -1,17 +1,23 @@
-import styled from "styled-components"
-import { keyframes } from "styled-components"
+const Fade = props => (
+  <div className="fade">
+    <style jsx>{`
+   
+   .fade {
+     animation: fadeIn .6s ease-out;
+   }
+   
+   @keyframes fadeIn {
+     from {
+       opacity: 0;
+     }
 
-const fadeIn = keyframes`
-  	from {
-      	opacity: 0;
-  	}
-  	to {
-  		opacity: 1;
-  	}
-`
-
-const Fade = styled.div`
-  animation: ${fadeIn} 0.6s ease-out;
-`
+     to {
+      opacity: 1;
+     }
+   
+   `}</style>
+    {props.children}
+  </div>
+)
 
 export default Fade

@@ -1,10 +1,7 @@
-import React from "react"
 import { device } from "./device"
-
 import SEO from "@/components/seo"
 import Layout from "@/components/layout"
 import Fade from "@/components/fade"
-import Wrapper from "@/components/wrapper"
 
 const PostWrapper = props => {
   return (
