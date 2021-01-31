@@ -115,7 +115,7 @@ const IndexPage = ({ posts }) => {
         </div>
 
         <SectionHeader section="Icons" />
-        <div className="card-grdi">
+        <div className="card-grid">
           <Card
             width="single"
             imageSrc="/images/index/claquette.png"
