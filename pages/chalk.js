@@ -104,7 +104,7 @@ const chalkPage = props => (
       <i>Summer 2019</i>
     </Caption>
     <CustomImage
-      size="full"
+      size="large"
       src="/images/chalk/headerimage.png"
       width="816"
       height="400"
@@ -290,7 +290,7 @@ const chalkPage = props => (
     </p>
 
     <CustomImage
-      size="full"
+      size="large"
       src="/images/chalk/sketchesimage.png"
       width="816"
       height="400"
@@ -360,13 +360,13 @@ const chalkPage = props => (
     </p>
 
     <CustomImage
-      size="full"
+      size="large"
       src="/images/chalk/finaliconsimage.png"
       width="816"
       height="238"
     />
     <CustomImage
-      size="full"
+      size="large"
       src="/images/chalk/finalimage.png"
       width="816"
       height="516"
