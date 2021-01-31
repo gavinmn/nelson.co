@@ -1,46 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 import { device } from "./device"
 
 import SEO from "@/components/seo"
 import Layout from "@/components/layout"
 import Fade from "@/components/fade"
 import Wrapper from "@/components/wrapper"
-import Caption from "@/components/caption"
-
-const Container = styled.div`
-  margin: 8rem 0 0rem 0;
-
-  @media ${device.desktop} {
-    margin: 4rem 0 0rem 0;
-  }
-`
-const Feedback = styled.div`
-  margin-top: 4rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--bg-secondary);
-  border-radius: 8px;
-`
-const FeedbackTitle = styled.h3`
-  margin-top: 0;
-`
-const Email = styled.a`
-  color: var(--text-secondary);
-  background-image: none;
-  text-shadow: none;
-  &:hover {
-    color: var(--text-primary);
-  }
-`
-
-const Twitter = styled.a`
-  color: var(--text-secondary);
-  background-image: none;
-  text-shadow: none;
-  &:hover {
-    color: #1da1f2;
-  }
-`
 
 const PostWrapper = props => {
   return (
@@ -48,34 +12,70 @@ const PostWrapper = props => {
       <SEO title={props.title} og={props.og} description={props.description} />
       <Wrapper size="large">
         <Fade>
-          <Container>
+          <div className="container">
+            <style jsx>{`
+              .container {
+                margin: 8rem 0 0rem 0;
+              }
+              .feedback {
+                margin-top: 4rem;
+                padding: 0.5rem 1rem;
+                background-color: var(--bg-secondary);
+                border-radius: 8px;
+              }
+
+              .feedback-title {
+                margin-top: 0;
+              }
+
+              .email,
+              .twitter {
+                color: var(--text-secondary);
+                background-image: none;
+                text-shadow: none;
+              }
+
+              .email:hover {
+                color: var(--text-primary);
+              }
+
+              .twitter:hover {
+                color: #1da1f2;
+              }
+
+              @media ${device.desktop} {
+                margin: 4rem 0 0rem 0;
+              }
+            `}</style>
             <Wrapper size="small">
               {props.children}
-              <Feedback>
-                <FeedbackTitle>Feedback</FeedbackTitle>
+              <div className="feedback">
+                <h3 className="feedback-title">Feedback</h3>
                 <p>
                   Do you have comments or questions about something I wrote?
                   Send them my way on{" "}
-                  <Twitter
+                  <a
+                    className="twitter"
                     href="https://twitter.com/Gavmn"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Twitter
-                  </Twitter>{" "}
+                  </a>{" "}
                   or over{" "}
-                  <Email
+                  <a
+                    className="email"
                     href="mailto:gavin@nelson.co"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     email
-                  </Email>
+                  </a>
                   .
                 </p>
-              </Feedback>
+              </div>
             </Wrapper>
-          </Container>
+          </div>
         </Fade>
       </Wrapper>
     </Layout>

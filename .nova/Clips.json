@@ -16,6 +16,11 @@
       "scope" : "editor",
       "syntax" : "markdown",
       "trigger" : "mdx"
+    },
+    {
+      "content" : "<style jsx>{`$0`}<\/style>",
+      "name" : "style-jsx",
+      "trigger" : "style"
     }
   ]
 }
