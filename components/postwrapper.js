@@ -15,7 +15,6 @@ const Container = styled.div`
     margin: 4rem 0 0rem 0;
   }
 `
-
 const Feedback = styled.div`
   margin-top: 4rem;
   padding: 0.5rem 1rem;
