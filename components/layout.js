@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { device } from "./device"
 import Link from "next/link"
-import Wrapper from "@/components/wrapper"
 import Header from "./header"
 
 const FooterContainer = styled.div`
@@ -85,7 +84,14 @@ const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <FooterContainer>
-        <Wrapper size={"large"}>
+        <div className="wrapper-large">
+          <style jsx>{`
+            .wrapper-large {
+              max-width: 816px;
+              padding: 0 5% 0 5%;
+              margin: 0 auto;
+            }
+          `}</style>
           <LayoutFlex>
             <TopFlex>
               <LeftFlex>
@@ -131,7 +137,7 @@ const Layout = ({ children }) => {
               <footer>© {new Date().getFullYear()} Gavin Nelson</footer>
             </BottomFlex>
           </LayoutFlex>
-        </Wrapper>
+        </div>
       </FooterContainer>
     </>
   )

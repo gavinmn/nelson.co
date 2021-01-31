@@ -1,91 +1,10 @@
 import React from "react"
-import styled from "styled-components"
 import Image from "next/image"
 
 import PostWrapper from "@/components/postwrapper"
 import CustomImage from "@/components/customimage"
 import Caption from "@/components/caption"
 import { device } from "@/components/device"
-
-const Subtitle = styled.h2`
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  font-weight: normal;
-  margin: 0;
-`
-
-const SingleVideoContainer = styled.div`
-  margin: 2rem 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-items: center;
-  align-items: center;
-
-  @media ${device.desktop} {
-    margin: 1rem auto;
-  }
-`
-
-const PhoneBezelContainer = styled.div`
-  width: 100%;
-  max-width: 432px;
-  pointer-events: none;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 2;
-`
-
-const SingleVideo = styled.video`
-  width: 86.80555556%;
-  max-width: 375px;
-  grid-column: 1;
-  grid-row: 1;
-`
-
-const LinkContainer = styled.div`
-  text-align: center;
-  margin-bottom: 1rem;
-`
-
-const DualVideoContainer = styled.div`
-  grid-template-columns: auto auto;
-  margin: 2rem 0;
-  display: grid;
-  max-width: 816px;
-  grid-gap: 16px;
-  background-color: var(--color-chalk-secondary);
-  border-radius: 16px;
-  padding: 16px;
-
-  @media ${device.desktop} {
-    margin: 1rem auto;
-  }
-`
-
-const MultiVideo = styled.video`
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-`
-
-const QuadVideoContainer = styled.div`
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  margin: 2rem 0;
-  display: grid;
-  max-width: 816px;
-  grid-gap: 16px;
-  background-color: var(--color-chalk-secondary);
-  border-radius: 16px;
-  padding: 16px;
-
-  @media ${device.desktop} {
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    margin: 1rem auto;
-  }
-`
 
 const chalkPage = props => (
   <PostWrapper
@@ -95,8 +14,92 @@ const chalkPage = props => (
     og="og.png"
     description="Interaction and Visual Design"
   >
+    <style jsx>{`
+      .subtilte {
+        font-size: var(--font-xs);
+        color: var(--text-secondary);
+        font-weight: normal;
+        margin: 0;
+      }
+
+      .single-video-container {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .phone-bezel-container {
+        width: 100%;
+        max-width: 432px;
+        pointer-events: none;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+      }
+
+      .single-video {
+        width: 86.80555556%;
+        max-width: 375px;
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .link-container {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .dual-video-container {
+        grid-template-columns: auto auto;
+        margin: 2rem 0;
+        display: grid;
+        max-width: 816px;
+        grid-gap: 16px;
+        background-color: var(--color-chalk-secondary);
+        border-radius: 16px;
+        padding: 16px;
+      }
+
+      .multi-video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .quad-video-container {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin: 2rem 0;
+        display: grid;
+        max-width: 816px;
+        grid-gap: 16px;
+        background-color: var(--color-chalk-secondary);
+        border-radius: 16px;
+        padding: 16px;
+      }
+
+      @media ${device.desktop} {
+        .single-video-container {
+          margin: 1rem auto;
+        }
+
+        .dual-video-container {
+          margin: 1rem auto;
+        }
+
+        .quad-video-container {
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: auto;
+          margin: 1rem auto;
+        }
+      }
+    `}</style>
+
     <h1>Chalk</h1>
-    <Subtitle>Interaction and Visual Design</Subtitle>
+    <h2 className="subtitle">Interaction and Visual Design</h2>
     <Caption>
       <i>Summer 2019</i>
     </Caption>
@@ -202,39 +205,46 @@ const chalkPage = props => (
       as a method of accessing the modes of communication.
     </p>
 
-    <SingleVideoContainer>
-      <PhoneBezelContainer>
+    <div className="single-video-container">
+      <div className="phone-bezel-container">
         <Image
           src="/images/chalk/iphonebezel.png"
           alt=""
           width={432}
           height={864}
         />
-      </PhoneBezelContainer>
-      <SingleVideo width="375" playsInline autoPlay muted loop>
+      </div>
+      <video
+        className="single-video"
+        width="375"
+        playsInline
+        autoPlay
+        muted
+        loop
+      >
         <source src="/images/chalk/chalkflow.mp4" type="video/mp4" />
-      </SingleVideo>
-    </SingleVideoContainer>
+      </video>
+    </div>
 
-    <LinkContainer>
+    <div className="link-container">
       <a href="https://www.sketch.com/s/302c35c6-30ae-47dc-a561-ac47d7d7e144/a/DOVAlW/play">
         View Interactive Prototype
       </a>
-    </LinkContainer>
+    </div>
     <p>
       When a new mode is entered, a contextual button would appear next to the
       action button to let the user control settings specific to the current
       mode such as anchoring time in listen mode and muting in talk mode.
     </p>
 
-    <DualVideoContainer>
-      <MultiVideo playsInline autoPlay muted loop>
+    <div className="dual-video-container">
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/listenmode.mp4" type="video/mp4" />
-      </MultiVideo>
-      <MultiVideo playsInline autoPlay muted loop>
+      </video>
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/talkmode.mp4" type="video/mp4" />
-      </MultiVideo>
-    </DualVideoContainer>
+      </video>
+    </div>
 
     <p>
       Other data driven details of the reworked UI/UX include rings around the
@@ -244,14 +254,14 @@ const chalkPage = props => (
       standards.
     </p>
 
-    <DualVideoContainer>
-      <MultiVideo playsInline autoPlay muted loop>
+    <div className="dual-video-container">
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/avatarswipe.mp4" type="video/mp4" />
-      </MultiVideo>
-      <MultiVideo playsInline autoPlay muted loop>
+      </video>
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/colorchange.mp4" type="video/mp4" />
-      </MultiVideo>
-    </DualVideoContainer>
+      </video>
+    </div>
 
     <p>
       My design decisions were arrived at largely through qualitative user
@@ -299,20 +309,20 @@ const chalkPage = props => (
       ideas to stakeholders.
     </p>
 
-    <QuadVideoContainer>
-      <MultiVideo playsInline autoPlay muted loop>
+    <div className="quad-video-container">
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/swipe1.mp4" type="video/mp4" />
-      </MultiVideo>
-      <MultiVideo playsInline autoPlay muted loop>
+      </video>
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/swipe2.mp4" type="video/mp4" />
-      </MultiVideo>
-      <MultiVideo playsInline autoPlay muted loop>
+      </video>
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/volumeslider.mp4" type="video/mp4" />
-      </MultiVideo>
-      <MultiVideo playsInline autoPlay muted loop>
+      </video>
+      <video className="mult-video" playsInline autoPlay muted loop>
         <source src="/images/chalk/actionbutton.mp4" type="video/mp4" />
-      </MultiVideo>
-    </QuadVideoContainer>
+      </video>
+    </div>
 
     <p>
       User testing these prototypes brought some important learnings to the

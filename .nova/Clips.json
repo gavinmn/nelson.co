@@ -21,6 +21,11 @@
       "content" : "<style jsx>{`$0`}<\/style>",
       "name" : "style-jsx",
       "trigger" : "style"
+    },
+    {
+      "content" : "className=\"$0\"",
+      "name" : "className",
+      "trigger" : "class"
     }
   ]
 }
