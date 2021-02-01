@@ -4,10 +4,7 @@ import { device } from "./device"
 
 const Hero = props => {
   return (
-    
-
-      <div className="hero-container">
-
+    <div className="hero-container">
       <style jsx>{`
         .hero-container {
           display: grid;
@@ -94,53 +91,51 @@ const Hero = props => {
           }
         }
       `}</style>
-        <div className="styled-logo-container">
-          <Logo />
-        </div>
-        <p className="hero-text">
-          Gavin Nelson is a <strong>product & visual designer </strong>
-          in the San Francisco Bay Area. He creates intuitive and clean
-          human-centered design solutions with great attention to detail.
-          <br></br>
-          <br></br>He currently works at Fitbod, and previously worked at
-          wikiHow.
-        </p>
-        <div className="link-container">
-          <a
-            className="email"
-            href="mailto:gavin@nelson.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Email
-          </a>
-          <a
-            className="twitter"
-            href="https://twitter.com/Gavmn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
-          <a
-            className="dribbble"
-            href="https://dribbble.com/Gavin/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dribbble
-          </a>
-          <a
-            className="github"
-            href="https://github.com/gavinmn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
+      <div className="styled-logo-container">
+        <Logo />
       </div>
-
+      <p className="hero-text">
+        Gavin Nelson is a <strong>product & visual designer </strong>
+        in the San Francisco Bay Area. He creates intuitive and clean
+        human-centered design solutions with great attention to detail.
+        <br></br>
+        <br></br>He currently works at Fitbod, and previously worked at wikiHow.
+      </p>
+      <div className="link-container">
+        <a
+          className="email"
+          href="mailto:gavin@nelson.co"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Email
+        </a>
+        <a
+          className="twitter"
+          href="https://twitter.com/Gavmn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
+        <a
+          className="dribbble"
+          href="https://dribbble.com/Gavin/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Dribbble
+        </a>
+        <a
+          className="github"
+          href="https://github.com/gavinmn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
   )
 }
 
