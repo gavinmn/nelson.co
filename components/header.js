@@ -4,7 +4,7 @@ import Link from "next/link"
 import { device } from "./device"
 
 const Header = props => {
-  const [hasScrolled, setScroll] = useState()
+  const [hasScrolled, setScroll] = useState(false)
   const [highlightWork, setHighlightWork] = useState()
   const [highlightAbout, setHighlightAbout] = useState()
 
@@ -31,14 +31,12 @@ const Header = props => {
     }
   }, [router.pathname])
 
-  console.log(highlightAbout)
+  console.log(highlightWork)
 
   return (
     <div className="header">
       <style jsx>{`
         .header {
-          padding: ${hasScrolled ? "0.5rem 0" : "1rem 0"};
-          backdrop-filter: ${hasScrolled ? "blur(6px)" : ""};
           z-index: ${hasScrolled ? "10" : "1"};
         }
       `}</style>
@@ -47,10 +45,9 @@ const Header = props => {
           position: fixed;
           top: 0;
           width: 100%;
-        
+          padding: .5rem 0;
           background-color: var(--bg-primary-rgba);
-        
-          transition: padding 0.4s ease-in-out;
+          backdrop-filter: blur(8px);
         }
 
         .header-scrolled {
@@ -121,7 +118,7 @@ const Header = props => {
 
         @media ${device.desktop} {
           .header {
-            padding: 0.5rem 0;
+            padding: 0.25rem 0;
             transition: padding 0.4s ease-in-out;
           }
 
