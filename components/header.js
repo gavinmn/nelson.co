@@ -4,22 +4,20 @@ import Link from "next/link"
 import { device } from "./device"
 
 const Header = props => {
-  const [highlightWork, setHighlightWork] = useState()
-  const [highlightAbout, setHighlightAbout] = useState()
+  let highlightWork = false
+  let highlightAbout = true
 
   const router = useRouter()
 
-  useEffect(() => {
-    if (router.pathname !== "/") {
-      setHighlightAbout(false)
-      setHighlightWork(true)
-    } else {
-      setHighlightAbout(true)
-      setHighlightWork(false)
-    }
-  }, [router.pathname])
+  if (router.pathname !== "/") {
+    highlightAbout = false
+    highlightWork = true
+  } else {
+    highlightAbout = true
+    highlightWork = false
+  }
 
-  console.log(highlightWork)
+  console.log(router.pathname)
 
   return (
     <div className="header">
