@@ -1,59 +1,32 @@
-import React, { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 import Link from "next/link"
 import { device } from "./device"
 
-const Header = props => {
-  const [hasScrolled, setScroll] = useState(false)
-  const [highlightWork, setHighlightWork] = useState(false)
-  const [highlightAbout, setHighlightAbout] = useState(true)
-
-  if (typeof window !== `undefined`) {
-    window.addEventListener("scroll", () => {
-      const scrollCheck = window.pageYOffset
-      if (scrollCheck > 64) {
-        setScroll(true)
-      } else {
-        setScroll(false)
-      }
-    })
-  }
+const Header = () => {
+  let highlightWork = false
+  let highlightAbout = true
 
   const router = useRouter()
 
-  useEffect(() => {
-    if (router.pathname !== "/") {
-      setHighlightAbout(false)
-      setHighlightWork(true)
-    } else {
-      setHighlightAbout(true)
-      setHighlightWork(false)
-    }
-  }, [router.pathname])
+  if (router.pathname !== "/") {
+    highlightAbout = false
+    highlightWork = true
+  } else {
+    highlightAbout = true
+    highlightWork = false
+  }
 
   return (
-    <div className={hasScrolled ? "header-scrolled" : "header"}>
+    <div className="header">
       <style jsx>{`
         .header {
           position: fixed;
           top: 0;
           width: 100%;
-          padding: 1rem 0;
+          padding: 0.55rem 0;
           background-color: var(--bg-primary-rgba);
-          backdrop-filter: ;
-          z-index: 1;
-          transition: padding 0.4s ease-in-out;
-        }
-
-        .header-scrolled {
-          position: fixed;
-          top: 0;
-          width: 100%;
-          padding: 0.5rem 0;
-          background-color: var(--bg-primary-rgba);
-          backdrop-filter: blur(6px);
+          backdrop-filter: blur(8px);
           z-index: 10;
-          transition: padding 0.4s ease-in-out;
         }
 
         .container {
@@ -113,13 +86,7 @@ const Header = props => {
 
         @media ${device.desktop} {
           .header {
-            padding: 0.5rem 0;
-            transition: padding 0.4s ease-in-out;
-          }
-
-          .header-scrolled {
-            padding: 0.25rem 0;
-            transition: padding 0.4s ease-in-out;
+            padding: 0.35rem 0;
           }
         }
       `}</style>
