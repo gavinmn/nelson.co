@@ -1,7 +1,7 @@
 import { device } from "./device"
 import SEO from "@/components/seo"
 import Layout from "@/components/layout"
-import Fade from "@/components/fade"
+
 
 const PostWrapper = props => {
   return (
@@ -56,7 +56,7 @@ const PostWrapper = props => {
       `}</style>
       <SEO title={props.title} og={props.og} description={props.description} />
       <div className="wrapper-large">
-        <Fade>
+
           <div className="container">
             <div className="wrapper-small">
               {props.children}
@@ -87,7 +87,7 @@ const PostWrapper = props => {
               </div>
             </div>
           </div>
-        </Fade>
+
       </div>
     </Layout>
   )
