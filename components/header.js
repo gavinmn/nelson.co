@@ -4,9 +4,9 @@ import Link from "next/link"
 import { device } from "./device"
 
 const Header = props => {
-  const [hasScrolled, setScroll] = useState(false)
-  const [highlightWork, setHighlightWork] = useState(false)
-  const [highlightAbout, setHighlightAbout] = useState(true)
+  const [hasScrolled, setScroll] = useState()
+  const [highlightWork, setHighlightWork] = useState()
+  const [highlightAbout, setHighlightAbout] = useState()
 
   if (typeof window !== `undefined`) {
     window.addEventListener("scroll", () => {
@@ -30,6 +30,8 @@ const Header = props => {
       setHighlightWork(false)
     }
   }, [router.pathname])
+
+  console.log(highlightAbout)
 
   return (
     <div className={hasScrolled ? "header-scrolled" : "header"}>
