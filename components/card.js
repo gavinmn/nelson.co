@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { device } from "@/components/device"
 
 const Card = props => {
-  const [doubleWidth, setDoubleWidth] = useState(false)
+  let doubleWidth = false
 
-  useEffect(() => {
-    if (props.width == "double") {
-      setDoubleWidth(true)
-    } else {
-      setDoubleWidth(false)
-    }
-  }, [props.width])
+  if (props.width == "double") {
+    doubleWidth = true
+  } else {
+    doubleWidth = false
+  }
 
   return (
     <div

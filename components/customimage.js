@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { device } from "./device"
 
 const CustomImage = props => {
-  const [full, setFull] = useState(false)
+  let full = false
 
-  useEffect(() => {
-    if (props.size == "large") {
-      setFull(true)
-    } else {
-      setFull(false)
-    }
-  }, [props.size])
+  if (props.size == "large") {
+    full = true
+  } else {
+    full = false
+  }
 
   return (
     <div className={full ? "large" : "small"} width={props.size}>

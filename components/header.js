@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 import Link from "next/link"
 import { device } from "./device"
 
-const Header = props => {
+const Header = () => {
   let highlightWork = false
   let highlightAbout = true
 
@@ -16,8 +15,6 @@ const Header = props => {
     highlightAbout = true
     highlightWork = false
   }
-
-  console.log(router.pathname)
 
   return (
     <div className="header">
