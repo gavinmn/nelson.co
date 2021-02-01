@@ -34,16 +34,22 @@ const Header = props => {
   console.log(highlightAbout)
 
   return (
-    <div className={hasScrolled ? "header-scrolled" : "header"}>
+    <div className="header">
+      <style jsx>{`
+        .header {
+          padding: ${hasScrolled ? "0.5rem 0" : "1rem 0"};
+          backdrop-filter: ${hasScrolled ? "blur(6px)" : ""};
+          z-index: ${hasScrolled ? "10" : "1"};
+        }
+      `}</style>
       <style jsx>{`
         .header {
           position: fixed;
           top: 0;
           width: 100%;
-          padding: 1rem 0;
+        
           background-color: var(--bg-primary-rgba);
-          backdrop-filter: ;
-          z-index: 1;
+        
           transition: padding 0.4s ease-in-out;
         }
 
@@ -51,10 +57,10 @@ const Header = props => {
           position: fixed;
           top: 0;
           width: 100%;
-          padding: 0.5rem 0;
+          padding: 
           background-color: var(--bg-primary-rgba);
-          backdrop-filter: blur(6px);
-          z-index: 10;
+          backdrop-filter: 
+          z-index: 
           transition: padding 0.4s ease-in-out;
         }
 
