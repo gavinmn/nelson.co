@@ -1,69 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import Image from "next/image"
 import { device } from "./device"
-
-import Wrapper from "./wrapper"
 import Caption from "./caption"
 import MusicEntry from "./musicentry"
-
-const Container = styled.div`
-  margin: 8rem auto;
-  max-width: 338px;
-
-  @media ${device.desktop} {
-    margin: 4rem 0 0 0;
-    max-width: 624px;
-  }
-`
-const MusicThreadLink = styled.a`
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  &:hover {
-    color: var(--text-primary);
-  }
-`
-
-const Timeline = styled.div`
-  margin-top: 2rem;
-`
-
-const MonthContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
-
-  @media ${device.desktop} {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-`
-
-const Line = styled.div`
-  background-color: var(--bg-secondary);
-  width: 4px;
-  align-self: stretch;
-
-  margin-top: -1.5rem;
-  @media ${device.desktop} {
-    margin-top: -0.75rem;
-  }
-`
-const MusicContainer = styled.div`
-  display: grid;
-  grid-gap: 2rem;
-  margin: 0 auto;
-  @media ${device.desktop} {
-    margin: 0 0 0 1rem;
-    grid-gap: 1rem;
-  }
-`
-
-const Month = styled.p`
-  font-style: italic;
-`
 
 const MusicThread = props => {
   const monthNames = [
@@ -99,25 +36,102 @@ const MusicThread = props => {
   const dateKeys = Object.keys(formattedData)
 
   return (
-    <Wrapper size="large">
-      <Wrapper size="small">
-        <Container>
+    <div className="wrapper-large">
+      <style jsx>{`
+        .wrapper-large {
+          max-width: 816px;
+          padding: 0 5% 0 5%;
+          margin: 0 auto;
+        }
+
+        .wrapper-small {
+          max-width: 624px;
+          padding: 0;
+          margin: 0 auto;
+        }
+
+        .container {
+          margin: 8rem auto;
+          max-width: 338px;
+        }
+
+        .thread-link {
+          font-size: var(--font-xs);
+          color: var(--text-secondary);
+        }
+
+        .thread-link:hover {
+          color: var(--text-primary);
+        }
+
+        .timeline {
+          margin-top: 2rem;
+        }
+
+        .month-container {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          margin-bottom: 4rem;
+          margin-top: 2rem;
+        }
+
+        .line {
+          background-color: var(--bg-secondary);
+          width: 4px;
+          align-self: stretch;
+          margin-top: -1.5rem;
+        }
+
+        .music-container {
+          display: grid;
+          grid-gap: 2rem;
+          margin: 0 auto;
+        }
+
+        .month {
+          font-style: italic;
+        }
+
+        @media ${device.desktop} {
+          .container {
+            margin: 4rem 0 0 0;
+            max-width: 624px;
+          }
+
+          .month-container {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+          }
+
+          .line {
+            margin-top: -0.75rem;
+          }
+
+          .music-container {
+            margin: 0 0 0 1rem;
+            grid-gap: 1rem;
+          }
+        }
+      `}</style>
+      <div className="wrapper-small">
+        <div className="container">
           <h1>{props.title}</h1>
 
           <Caption>
             {props.subtitle}, powered by{" "}
-            <MusicThreadLink href="https://musicthread.app/">
+            <a className="thread-link" href="https://musicthread.app/">
               MusicThread
-            </MusicThreadLink>
+            </a>
           </Caption>
-          <Timeline>
+          <div className="timeline" s>
             {dateKeys.map((entry, key) => {
               return (
                 <>
-                  <Month>{entry}</Month>
-                  <MonthContainer>
-                    <Line />
-                    <MusicContainer>
+                  <p className="month">{entry}</p>
+                  <div className="month-container">
+                    <div className="line" />
+                    <div className="music-container">
                       {formattedData[entry].map((data, key) => {
                         return (
                           <MusicEntry
@@ -129,15 +143,15 @@ const MusicThread = props => {
                           />
                         )
                       })}
-                    </MusicContainer>
-                  </MonthContainer>
+                    </div>
+                  </div>
                 </>
               )
             })}
-          </Timeline>
-        </Container>
-      </Wrapper>
-    </Wrapper>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
