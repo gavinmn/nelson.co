@@ -8,8 +8,16 @@ module.exports = withMDX({
   images: {
     domains: ["img.musicthread.app"],
   },
-  webpack: (config, { isServer }) => {
+  webpack: (config, { dev, isServer }) => {
     config.resolve.alias["@"] = path.resolve("./")
+
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: "preact/compat",
+        "react-dom/test-utils": "preact/test-utils",
+        "react-dom": "preact/compat",
+      })
+    }
 
     return config
   },
