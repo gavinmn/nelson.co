@@ -1,10 +1,13 @@
 import Logo from "./logo"
-import Fade from "./fade"
+
 import { device } from "./device"
 
 const Hero = props => {
   return (
-    <Fade>
+    
+
+      <div className="hero-container">
+
       <style jsx>{`
         .hero-container {
           display: grid;
@@ -91,8 +94,6 @@ const Hero = props => {
           }
         }
       `}</style>
-
-      <div className="hero-container">
         <div className="styled-logo-container">
           <Logo />
         </div>
@@ -139,7 +140,7 @@ const Hero = props => {
           </a>
         </div>
       </div>
-    </Fade>
+
   )
 }
 

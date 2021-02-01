@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import { device } from "@/components/device"
-import Fade from "@/components/fade"
+
 
 const Colophon = props => (
   <Layout>
@@ -32,7 +32,7 @@ const Colophon = props => (
       og="colophonog.png"
       description="The making of nelson.co"
     />
-    <Fade>
+
       <div className="text-container">
         <h1>Colophon</h1>
 
@@ -96,7 +96,7 @@ const Colophon = props => (
           . The content on this website is copyrighted.
         </p>
       </div>
-    </Fade>
+
   </Layout>
 )
 
