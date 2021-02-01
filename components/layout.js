@@ -142,12 +142,12 @@ const Layout = ({ children }) => {
                   </div>
                 </div>
                 <div className="right-flex">
-                  {/* <Link href="" passhref>
-                  <a className="link">Music Thread</a>
-                </Link>
-                <Link href="" passhref>
-                  <a className="link">Photos</a>
-                </Link> */}
+                  <Link href="/musicthread/heavy-rotation" passhref>
+                    <a className="link">♪ Heavy Rotation</a>
+                  </Link>
+                  <Link href="/musicthread/2021-favorites" passhref>
+                    <a className="link">♪ 2021 Favorites</a>
+                  </Link>
                 </div>
               </div>
               <div className="bottom-flex">

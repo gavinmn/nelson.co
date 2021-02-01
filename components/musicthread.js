@@ -93,6 +93,11 @@ const MusicThread = props => {
           font-style: italic;
         }
 
+        .number {
+          color: var(--text-secondary);
+          font-size: var(--font-xs);
+        }
+
         @media ${device.desktop} {
           .container {
             margin: 4rem 0 0 0;
