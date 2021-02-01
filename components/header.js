@@ -4,20 +4,8 @@ import Link from "next/link"
 import { device } from "./device"
 
 const Header = props => {
-  const [hasScrolled, setScroll] = useState(false)
   const [highlightWork, setHighlightWork] = useState()
   const [highlightAbout, setHighlightAbout] = useState()
-
-  if (typeof window !== `undefined`) {
-    window.addEventListener("scroll", () => {
-      const scrollCheck = window.pageYOffset
-      if (scrollCheck > 64) {
-        setScroll(true)
-      } else {
-        setScroll(false)
-      }
-    })
-  }
 
   const router = useRouter()
 
@@ -37,28 +25,13 @@ const Header = props => {
     <div className="header">
       <style jsx>{`
         .header {
-          z-index: ${hasScrolled ? "10" : "1"};
-        }
-      `}</style>
-      <style jsx>{`
-        .header {
           position: fixed;
           top: 0;
           width: 100%;
-          padding: .5rem 0;
+          padding: 0.55rem 0;
           background-color: var(--bg-primary-rgba);
           backdrop-filter: blur(8px);
-        }
-
-        .header-scrolled {
-          position: fixed;
-          top: 0;
-          width: 100%;
-          padding: 
-          background-color: var(--bg-primary-rgba);
-          backdrop-filter: 
-          z-index: 
-          transition: padding 0.4s ease-in-out;
+          z-index: 10;
         }
 
         .container {
@@ -118,13 +91,7 @@ const Header = props => {
 
         @media ${device.desktop} {
           .header {
-            padding: 0.25rem 0;
-            transition: padding 0.4s ease-in-out;
-          }
-
-          .header-scrolled {
-            padding: 0.25rem 0;
-            transition: padding 0.4s ease-in-out;
+            padding: 0.35rem 0;
           }
         }
       `}</style>
