@@ -117,6 +117,17 @@ const IndexPage = ({ posts }) => {
         <SectionHeader section="Icons" />
         <div className="card-grid">
           <Card
+            width="double"
+            imageSrc="/images/index/github.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Github G1 Chip"
+            subtitle="Icon Design"
+            time="Winter 2020/2021"
+          >
+            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
+          </Card>
+          <Card
             width="single"
             imageSrc="/images/index/claquette.png"
             imageWidth="816"
