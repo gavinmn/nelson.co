@@ -121,7 +121,7 @@ const IndexPage = ({ posts }) => {
             imageSrc="/images/index/github.png"
             imageWidth="816"
             imageHeight="294"
-            title="Github G1 Chip"
+            title="GitHub G1 Chip"
             subtitle="Icon Design"
             time="Winter 2020/2021"
           >
