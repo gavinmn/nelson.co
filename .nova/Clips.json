@@ -1,0 +1,42 @@
+{
+  "clips" : [
+    {
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport Image from \"next\/image\"\nimport PostWrapper from \"@\/components\/postwrapper\"\nimport Caption from \"@\/components\/caption\"\nimport CustomImage from \"@\/components\/customimage\"\nimport { device } from \"@\/components\/device\"\n\n\nconst ARTICLENAME = props => (\n  <PostWrapper\n\ttitle=\"Title\"\n\tsubtitle=\"Subtitle\"\n\ttime=\"Time\"\n  >\n\t<CustomImage\n\t  size=\"full\"\n\t  src=\"\/images\/\"\n\t  width=\"816\"\n\t  height=\"294\"\n\t\/>\n\n  <\/PostWrapper>\n)\n\nexport default ARTICLENAME\n",
+      "name" : "Post Base",
+      "trigger" : "po"
+    },
+    {
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport { device } from \"@\/components\/device\"\n\nconst Component = props => (\n <div><\/div>\n)\n\nexport default Component\n",
+      "name" : "Component",
+      "trigger" : "com"
+    },
+    {
+<<<<<<< HEAD
+      "content" : "<br><\/br><br><\/br>",
+      "name" : "Line Break",
+      "trigger" : "br"
+    },
+    {
+      "content" : "import React from \"react\"\nimport styled from \"styled-components\"\nimport { device } from \"..\/..\/components\/device\"\nimport Layout from \"..\/..\/components\/layout\"\nimport SEO from \"..\/..\/components\/seo\"\nimport MusicThread from \"..\/..\/components\/musicthread\"\n\nconst ThreadName = ({ data }) => (\n  <Layout>\n\t<SEO\n\t  title=\"\"\n\t  og=\"og.png\"\n\t  description=\", powered by musicthread.app.\"\n\t\/>\n\t<MusicThread\n\t  links={data.links}\n\t  title=\"\"\n\t  subtitle=\"\"\n\t><\/MusicThread>\n  <\/Layout>\n)\n\nexport async function getStaticProps() {\n  const res = await fetch(\n\t`https:\/\/musicthread.app\/api\/v0\/thread\/`\n  )\n  const data = await res.json()\n\n  return {\n\trevalidate: 60 * 60 * 6,\n\tprops: { data },\n  }\n}\n\nexport default ThreadName\n",
+      "name" : "MusicThread",
+      "trigger" : "mus"
+=======
+      "content" : "import PostWrapper from \"@\/components\/postwrapper\"\n\n\nexport default ({ children }) => (\n  <PostWrapper\n\ttitle=\"\"\n\tsubtitle=\"\"\n\ttime=\"Published\"\n\tog=\"og.png\"\n\tdescription=\"\"\n  >\n\t{children}\n  <\/PostWrapper>\n)\n",
+      "name" : "mdx",
+      "scope" : "editor",
+      "syntax" : "markdown",
+      "trigger" : "mdx"
+    },
+    {
+      "content" : "<style jsx>{`$0`}<\/style>",
+      "name" : "style-jsx",
+      "trigger" : "style"
+    },
+    {
+      "content" : "className=\"$0\"",
+      "name" : "className",
+      "trigger" : "class"
+>>>>>>> main
+    }
+  ]
+}
