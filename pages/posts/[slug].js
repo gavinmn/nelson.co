@@ -10,6 +10,8 @@ import Ztext from "react-ztext"
 import CustomImage from "@/components/customimage"
 import Caption from "@/components/caption"
 import CustomLink from "@/components/posts/customlink"
+import HorizontalRule from "@/components/horizontalrule"
+import Break from "@/components/break"
 
 import ZContainer from "@/components/posts/zcontainer"
 import Cube from "@/components/posts/cube"
@@ -17,6 +19,8 @@ import Cube from "@/components/posts/cube"
 const components = {
   a: CustomLink,
   h4: Caption,
+  hr: HorizontalRule,
+  br: Break,
   Image,
   CustomImage,
   ZContainer,
