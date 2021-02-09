@@ -11,10 +11,11 @@ const HorizontalRule = props => (
       }
       .dots {
         color: var(--text-secondary);
+        font-size: var(--font-s);
         opacity: 0.4;
       }
     `}</style>
-    <p className="dots">• • • •</p>
+    <div className="dots">• • • •</div>
   </div>
 )
 
