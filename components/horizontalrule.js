@@ -10,7 +10,8 @@ const HorizontalRule = props => (
         margin: 0.75rem 0;
       }
       .dots {
-        color: var(--text-underline);
+        color: var(--text-secondary);
+        opacity: 0.4;
       }
     `}</style>
     <p className="dots">• • • •</p>
