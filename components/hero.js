@@ -14,7 +14,7 @@ const Hero = props => {
         }
 
         .styled-logo-container {
-          justify-self: start;
+          justify-self: center;
         }
 
         .hero-text {
@@ -54,6 +54,9 @@ const Hero = props => {
         @media only screen and (min-width: 445px) {
           .link-container {
             justify-content: start;
+          }
+          .styled-logo-container {
+            justify-self: start;
           }
 
           .dribbble,
