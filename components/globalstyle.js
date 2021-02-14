@@ -19,12 +19,12 @@ function GlobalStyle(props) {
 
           --bg-secondary: #f1f5f8;
 
-          --text-primary: #232e3e;
-          --text-secondary: #517095;
+          --text-primary: #1f2e42;
+          --text-secondary: #4a6f9c;
           --text-underline: rgba(94, 136, 186, 0.6);
 
-          --color-primary: #232e3e;
-          --logo-primary: #232e3e;
+          --color-primary: #1f2e42;
+          --logo-primary: #1f2e42;
 
           --color-chalk: #006ef0;
           --color-chalk-secondary: #f1f8ff;
@@ -51,17 +51,17 @@ function GlobalStyle(props) {
 
         @media (prefers-color-scheme: dark) {
           :root {
-            --bg-primary-hex: #212831;
-            --bg-primary-rgba: rgba(33, 40, 49, 0.8);
+            --bg-primary-hex: #1d2735;
+            --bg-primary-rgba: rgba(29, 39, 53, 0.8);
 
-            --bg-secondary: #1a2028;
+            --bg-secondary: #17202b;
 
-            --text-primary: #f1f5f8;
-            --text-secondary: #7a91ae;
+            --text-primary: #eef2f7;
+            --text-secondary: #7690b2;
             --text-underline: #7a91ae;
 
-            --color-primary: #f1f5f8;
-            --logo-primary: #f1f5f8;
+            --color-primary: #eef2f7;
+            --logo-primary: #eef2f7;
 
             --color-chalk: #1a83ff;
             --color-chalk-secondary: #1a212d;
