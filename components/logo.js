@@ -13,8 +13,8 @@ const Logo = props => (
       }
 
       .svg {
-        width: 160px;
-        height: 160px;
+        width: 80px;
+        height: 80px;
       }
 
       @media ${device.desktop} {
@@ -23,14 +23,12 @@ const Logo = props => (
         }
 
         .svg {
-          width: 196px;
-          height: 196px;
         }
       }
     `}</style>
 
     <Ztext
-      depth=".9rem"
+      depth=".4rem"
       direction="both"
       event="pointer"
       eventRotation="18deg"

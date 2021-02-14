@@ -15,7 +15,7 @@ const IndexPage = ({ posts }) => {
     <Layout>
       <style jsx>{`
         .wrapper {
-          max-width: 816px;
+          max-width: 656px;
           padding: 0 5% 0 5%;
           margin: 0 auto;
         }

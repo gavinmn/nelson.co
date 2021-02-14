@@ -14,12 +14,11 @@ const Hero = props => {
         }
 
         .styled-logo-container {
-          justify-self: center;
+          justify-self: start;
         }
 
         .hero-text {
-          margin-top: 2rem;
-          max-width: 506px;
+          max-width: 480px;
         }
 
         .link-container {
@@ -27,8 +26,7 @@ const Hero = props => {
           flex-direction: row;
           max-width: 100%;
           justify-content: space-between;
-          margin-top: 1rem;
-          grid-row: 3;
+          margin-top: 0.5rem;
         }
 
         .email,
@@ -67,27 +65,21 @@ const Hero = props => {
 
         @media ${device.desktop} {
           .hero-container {
-            grid-template-columns: [left] 38% [right] auto;
+            grid-template-columns: auto;
             grid-template-rows: [1] auto [2] auto [end];
             max-width: 816px;
           }
 
           .styled-logo-container {
-            margin-right: 32px;
           }
 
           .hero-text {
-            font-size: var(--font-m);
-            line-height: 28px;
             margin-top: 0;
             justify-self: end;
-            max-width: 506px;
+            max-width: 522px;
           }
 
           .link-container {
-            margin-top: 0;
-            grid-row: 2;
-            grid-column: right;
           }
         }
       `}</style>
