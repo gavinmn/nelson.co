@@ -98,7 +98,7 @@ function GlobalStyle(props) {
           -webkit-overflow-scrolling: touch;
           -webkit-font-smoothing: antialiased;
           text-rendering: optimizeLegibility;
-          line-height: 1.46;
+          line-height: 1.6;
         }
 
         footer {

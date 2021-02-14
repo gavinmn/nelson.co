@@ -77,7 +77,7 @@ const Hero = props => {
           }
 
           .hero-text {
-            font-size: var(--font-m);
+            font-size: var(--font-s);
             line-height: 28px;
             margin-top: 0;
             justify-self: end;
