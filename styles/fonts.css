@@ -28,7 +28,7 @@
 h1 {
   font-size: var(--font-l);
   line-height: var(--lh-l);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 h2 {
@@ -114,7 +114,7 @@ code {
   h1 {
     font-size: var(--font-l);
     line-height: var(--lh-l);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.125rem;
   }
 
   h2 {

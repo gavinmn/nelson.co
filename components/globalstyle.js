@@ -37,7 +37,7 @@ function GlobalStyle(props) {
           --font-xs: 14px;
           --font-s: 16px;
           --font-m: 18px;
-          --font-l: 26px;
+          --font-l: 22px;
         }
 
         @media only screen and (min-width: 722px) {
@@ -45,7 +45,7 @@ function GlobalStyle(props) {
             --font-xs: 16px;
             --font-s: 18px;
             --font-m: 20px;
-            --font-l: 28px;
+            --font-l: 24px;
           }
         }
 

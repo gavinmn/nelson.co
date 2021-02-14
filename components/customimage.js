@@ -16,7 +16,7 @@ const CustomImage = props => {
         .large {
           width: 100%;
           margin: 2rem auto;
-          max-width: 816px;
+          max-width: 656px;
         }
 
         .small {
@@ -37,7 +37,7 @@ const CustomImage = props => {
         @media only screen and (min-width: 848px) {
           .large {
             width: 200%;
-            margin: 1rem -3rem;
+            margin: 1rem -1.25rem;
           }
           .small {
             width: ;
