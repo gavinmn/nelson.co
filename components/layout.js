@@ -142,6 +142,7 @@ const Layout = ({ children }) => {
                       href="https://www.are.na/gavin-nelson/index"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="are.na"
                     >
                       <svg
                         width="21"
