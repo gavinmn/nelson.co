@@ -6,7 +6,7 @@
   "author": "Gavin Nelson <gavin@nelson.co>",
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.0.6",
+    "@next/mdx": "^10.0.7",
     "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
     "next": "^10.0.6",
