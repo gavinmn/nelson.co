@@ -1,5 +1,5 @@
 import Logo from "./logo"
-
+import Break from "@/components/break"
 import { device } from "./device"
 
 const Hero = props => {
@@ -15,6 +15,7 @@ const Hero = props => {
 
         .styled-logo-container {
           justify-self: center;
+          margin-top: -0.5rem;
         }
 
         .hero-text {
@@ -55,9 +56,6 @@ const Hero = props => {
           .link-container {
             justify-content: start;
           }
-          .styled-logo-container {
-            justify-self: start;
-          }
 
           .dribbble,
           .twitter,
@@ -68,34 +66,38 @@ const Hero = props => {
 
         @media ${device.desktop} {
           .hero-container {
-            grid-template-columns: auto;
+            grid-template-columns: 18% auto auto;
             grid-template-rows: [1] auto [2] auto [end];
-            max-width: 816px;
           }
 
           .styled-logo-container {
+            justify-self: start;
           }
 
           .hero-text {
             margin-top: 0;
             justify-self: end;
-            max-width: 522px;
+            max-width: 624px;
+            justify-self: end;
           }
 
           .link-container {
+            grid-column: 2;
           }
         }
       `}</style>
       <div className="styled-logo-container">
         <Logo />
       </div>
-      <p className="hero-text">
-        Gavin Nelson is a <strong>product & visual designer </strong>
-        in the San Francisco Bay Area. He creates intuitive and clean
-        human-centered design solutions with great attention to detail.
-        <br></br>
-        <br></br>He currently works at Fitbod, and previously worked at wikiHow.
-      </p>
+      <div className="hero-text">
+        <p>
+          Gavin Nelson is a <strong>product & visual designer </strong>
+          in the San Francisco Bay Area. He creates intuitive and clean
+          human-centered design solutions with great attention to detail.
+        </p>
+        <Break />
+        <p>He currently works at Fitbod, and previously worked at wikiHow.</p>
+      </div>
       <div className="link-container">
         <a
           className="email"

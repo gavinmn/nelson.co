@@ -13,8 +13,8 @@ const Logo = props => (
       }
 
       .svg {
-        width: 80px;
-        height: 80px;
+        width: 74px;
+        height: 74px;
       }
 
       @media ${device.desktop} {
