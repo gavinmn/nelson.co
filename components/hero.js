@@ -14,12 +14,13 @@ const Hero = props => {
         }
 
         .styled-logo-container {
-          justify-self: center;
+          justify-self: start;
           margin-top: -0.5rem;
         }
 
         .hero-text {
           max-width: 480px;
+          margin-top: 2rem;
         }
 
         .link-container {
