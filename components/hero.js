@@ -63,26 +63,19 @@ const Hero = props => {
             margin-left: 1.5rem;
           }
         }
-
         @media ${device.desktop} {
           .hero-container {
-            grid-template-columns: 18% auto auto;
+            grid-template-columns: auto;
             grid-template-rows: [1] auto [2] auto [end];
           }
 
+          .hero-text {
+            margin-top: 1rem;
+            max-width: 538px;
+            justify-self: end;
+          }
           .styled-logo-container {
             justify-self: start;
-          }
-
-          .hero-text {
-            margin-top: 0;
-            justify-self: end;
-            max-width: 624px;
-            justify-self: end;
-          }
-
-          .link-container {
-            grid-column: 2;
           }
         }
       `}</style>
