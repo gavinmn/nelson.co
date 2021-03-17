@@ -2629,10 +2629,10 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-ztext@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-ztext/-/react-ztext-1.0.1.tgz#48b13386ba73262923f04867b61ef0428732a16a"
-  integrity sha512-/6lqjCYe8MYdYP8nCHq9PmKWigLb4UMR6gsgdFMtPLESybk75VjPo5EnLatpakiNeKvisHSw5IXo8RYa4Gx8wg==
+react-ztext@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-ztext/-/react-ztext-1.0.2.tgz#37badb094594f0b84effe7b3622262f44c3cc896"
+  integrity sha512-GAvrVcq4Xo1wQb4EkIE9pumjdb4y639a2EruewenXzeR7hbbCjjaiZgkwEdxPl3rm8FO+fA/A0aAMC9pp/L+Rw==
 
 react@^17.0.1:
   version "17.0.1"
