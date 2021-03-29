@@ -118,6 +118,17 @@ const IndexPage = ({ posts }) => {
         <div className="card-grid">
           <Card
             width="double"
+            imageSrc="/images/index/stocketa.png"
+            imageWidth="816"
+            imageHeight="294"
+            title="Stocketa"
+            subtitle="Icon Design"
+            time="Spring 2021"
+          >
+            <ButtonExternal link="https://stocketa.com" />
+          </Card>
+          <Card
+            width="double"
             imageSrc="/images/index/github.png"
             imageWidth="816"
             imageHeight="294"
