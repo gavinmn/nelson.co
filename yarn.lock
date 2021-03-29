@@ -1142,10 +1142,10 @@
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-10.1.0.tgz#9e5d68aa944b12c07c150f1e145f2620cab46f7d"
   integrity sha512-RYmy87ob97vHQPlm+btXJkoti6WhDkI4dAn2oGOsAN0INmX1o2vb0FAOUhoXy3NG/4u09N+AG6eN9bk/qWHKbA==
 
-"@next/mdx@^10.0.9":
-  version "10.0.9"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.0.9.tgz#9363f6f9fb172ea2d905864202113578cafa8741"
-  integrity sha512-1jl8qefWRTUv9bfwV62UKFuy61vqDxRjMrf0ANQ8in23HfIeCeZJJ8Tqa5n/T5TvVfTupQkilOc0yc0TvFQ5gQ==
+"@next/mdx@^10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.1.1.tgz#12964101e763ac51888f363a427a248f5229d92c"
+  integrity sha512-jfDU5Ur9bT9O0vhDai4V0I15bK2dVtqEQLv3lHG7EMKYb99H9ZaW1encOL/8TW600Wuk1aJBxUYfqaDYnUyIww==
 
 "@next/polyfill-module@10.1.0":
   version "10.1.0"
