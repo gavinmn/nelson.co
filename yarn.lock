@@ -1132,30 +1132,30 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.6.22.tgz#219dfd89ae5b97a8801f015323ffa4b62f45718b"
   integrity sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==
 
-"@next/env@10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@next/env/-/env-10.1.0.tgz#ed4d041517c2242129328e75726bfaf25e118011"
-  integrity sha512-cNpSuU0G+Hn0ZGg07HDwKswdR1cwkMgUXX8hFniKm5EC7/2CEANUh7r9BnSBLI39BaPUp+13uJbSHSXixX2QJw==
+"@next/env@10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-10.1.1.tgz#e9ac6b62041af3ddbba40e8f291908ef1a90cabc"
+  integrity sha512-r994/vTWGIah1VKHwidCqk619SK+UETgRagOtJO22PwAf9hZciJtzt75RzVyhaiW+2OOKzz4gx9PgKRYVsbTwQ==
 
-"@next/eslint-plugin-next@10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-10.1.0.tgz#9e5d68aa944b12c07c150f1e145f2620cab46f7d"
-  integrity sha512-RYmy87ob97vHQPlm+btXJkoti6WhDkI4dAn2oGOsAN0INmX1o2vb0FAOUhoXy3NG/4u09N+AG6eN9bk/qWHKbA==
+"@next/eslint-plugin-next@10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-10.1.1.tgz#35cf0668958ebe3fd2344e8acbcd8fd6ebfb9758"
+  integrity sha512-yM1FoUg1lEUk2m669SmokWO/9nFfLfPIUJI3TRwoc/+3lJEm2LDs14yU0WdBdpN1Uo1Qhf8YQUkl9eZW84183w==
 
 "@next/mdx@^10.0.9":
   version "10.0.9"
   resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-10.0.9.tgz#9363f6f9fb172ea2d905864202113578cafa8741"
   integrity sha512-1jl8qefWRTUv9bfwV62UKFuy61vqDxRjMrf0ANQ8in23HfIeCeZJJ8Tqa5n/T5TvVfTupQkilOc0yc0TvFQ5gQ==
 
-"@next/polyfill-module@10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@next/polyfill-module/-/polyfill-module-10.1.0.tgz#960a50503f872d7ab7e1c69cd7b72501a4118da2"
-  integrity sha512-1YOnzoMVJSAjZ8qwMw+QhrY+z9vP6HEZeGq2HnrKkrTz9gHlksoFYX7uvtStJqhyIFReSbOL5gc5XsFjv3p2Cg==
+"@next/polyfill-module@10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-module/-/polyfill-module-10.1.1.tgz#e094b9cf1e35fc452dd66226f5f4f0ede0c88947"
+  integrity sha512-CTFawTPp0J0nH7jb+uS8AkUVqFBkD2GC9EIonrKCb+YeGEYgZhX7wfQj74KlI83ubZ92r+lWdtcDyAT6lNSjrg==
 
-"@next/react-dev-overlay@10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-10.1.0.tgz#537ff940e76bd72f39d4f2211cfd387e6dcf0911"
-  integrity sha512-wA9o0TA74W9B1GClQ2+uXCp8mAvOg8fQ1ziz37xi/9E2mh3OzMEoE7erqv4Z/LmkJoOI4DzKWz5c0hp6pvjhhw==
+"@next/react-dev-overlay@10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-10.1.1.tgz#5bbc271d2ce9485ebee28653bc792c8dad33bd79"
+  integrity sha512-1beApmxIXsmn+8aFNxv5mYMgRPbrYZlIggpKyHmcINbpZPTOGv+No6S+NGsBF4qUMxRlVGvBSk4ebzdCG2xTgw==
   dependencies:
     "@babel/code-frame" "7.12.11"
     anser "1.4.9"
@@ -1169,10 +1169,10 @@
     stacktrace-parser "0.1.10"
     strip-ansi "6.0.0"
 
-"@next/react-refresh-utils@10.1.0":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.1.0.tgz#987fd5ad9a5b8197fe4f692ea8c81b5010517407"
-  integrity sha512-0A2K8zKbOg/QFvFKhqxoQwP3OniWErS9vc5fuWuqA00eN9U1QWGRutSXbOmLhDJDs3d4F4ldvfnH8YWB18AfBg==
+"@next/react-refresh-utils@10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.1.1.tgz#c4db27a207919f03a25ad5253f54b919421619ce"
+  integrity sha512-Ey4AR+BwEYW55dejMh06wvGhZmC+5OpY4ekwYX6Ipwk+K5jecDvbrZQCYvh4iPKNq9JV7o+D3+QuFtYaDjkXmw==
 
 "@opentelemetry/api@0.14.0":
   version "0.14.0"
@@ -3019,20 +3019,20 @@ next-themes@^0.0.14:
   resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.0.14.tgz#2b9861990bc453149e23d8e6ef1a25a119e36675"
   integrity sha512-x09OaM+wg3SIlEjOv8B21aw/E36jxTtfW3Dm/DPwMsSMluGt7twe1LigA6nc+mXP1u0qu9MxBaIrPPH6UTiKnA==
 
-next@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/next/-/next-10.1.0.tgz#e751c0865aadb79d2164a88c98727194dc8f9529"
-  integrity sha512-244psansNKBCsDQvRS1HoZzpSB3ZhdkW21Db5wWNc7WCZwyXxGgEGpgzq3LV63NtEFzq1VIHDvISUi7u9fv/PQ==
+next@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/next/-/next-10.1.1.tgz#ed0a983a7ac9ab3c9216a0b73e55bb07be8bbe0f"
+  integrity sha512-ZqnbOnlsatUb04twx2kfmQWGe1bSdePjK27X64H7T27zhUdRiOWe0H1uVV7KdFgjT8dXYA20QkPG1g9Id+2Mgw==
   dependencies:
     "@babel/core" "7.12.10"
     "@babel/eslint-parser" "7.13.4"
     "@babel/runtime" "7.12.5"
     "@hapi/accept" "5.0.1"
-    "@next/env" "10.1.0"
-    "@next/eslint-plugin-next" "10.1.0"
-    "@next/polyfill-module" "10.1.0"
-    "@next/react-dev-overlay" "10.1.0"
-    "@next/react-refresh-utils" "10.1.0"
+    "@next/env" "10.1.1"
+    "@next/eslint-plugin-next" "10.1.1"
+    "@next/polyfill-module" "10.1.1"
+    "@next/react-dev-overlay" "10.1.1"
+    "@next/react-refresh-utils" "10.1.1"
     "@opentelemetry/api" "0.14.0"
     assert "2.0.0"
     ast-types "0.13.2"
