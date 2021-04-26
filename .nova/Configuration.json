@@ -2,6 +2,7 @@
   "editor.default_syntax" : "jsx",
   "index.enabled" : true,
   "workspace.art_style" : 1,
-  "workspace.color" : 9,
+  "workspace.color" : 8,
+  "workspace.name" : "nelson.co",
   "workspace.preview_server_port" : 1001
 }
