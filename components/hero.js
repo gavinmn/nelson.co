@@ -86,11 +86,14 @@ const Hero = props => {
       <div className="hero-text">
         <p>
           Gavin Nelson is a <strong>product & visual designer </strong>
-          in the San Francisco Bay Area. He creates intuitive and clean
-          human-centered design solutions with great attention to detail.
+          who creates intuitive and clean human-centered design solutions with
+          great attention to detail.
         </p>
         <Break />
-        <p>He currently works at Fitbod, and previously worked at wikiHow.</p>
+        <p>
+          He currently works at GitHub, and previously worked at Fitbod and
+          wikiHow.
+        </p>
       </div>
       <div className="link-container">
         <a

@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: date-fns
+    versions:
+    - 2.18.0
+    - 2.20.0
+    - 2.21.0
+  - dependency-name: "@next/mdx"
+    versions:
+    - 10.1.0
+  - dependency-name: next-themes
+    versions:
+    - 0.0.11
+    - 0.0.13
