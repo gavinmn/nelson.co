@@ -7,7 +7,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.0",
-    "date-fns": "^2.21.2",
+    "date-fns": "^2.21.3",
     "gray-matter": "^4.0.3",
     "next": "^10.2.0",
     "next-mdx-remote": "^2.1.4",
