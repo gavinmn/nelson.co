@@ -24,7 +24,7 @@ function GlobalStyle(props) {
           --accent-200: rgba(108, 137, 172, 1);
           --accent-300: rgba(74, 111, 156, 1);
           --accent-400: rgba(31, 46, 66, 1);
-          --acent-300: rgba(118, 144, 178, 1);
+          --accent-300: rgba(118, 144, 178, 1);
           --accent-200: rgba(101, 133, 174, 1);
           --accent-100: rgba(81, 117, 164, 1);
           --accent-400: rgba(139, 162, 193, 1);
