@@ -23,7 +23,7 @@ const NotFoundPage = props => (
 
       .here-link {
         color: var(--text-secondary);
-        font-size: var(--font-s);
+        font-size: var(--body);
       }
       .here-link:hover {
         text-decoration: underline;

@@ -24,7 +24,7 @@ const Header = () => {
           top: 0;
           width: 100%;
           padding: 0.55rem 0;
-          background-color: var(--bg-primary-rgba);
+          background-color: var(--primary-100);
           backdrop-filter: blur(8px);
           z-index: 10;
         }

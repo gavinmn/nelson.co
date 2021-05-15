@@ -5,7 +5,7 @@ const Caption = props => {
     <p>
       {props.children}
       <style jsx>{`
-        font-size: var(--font-xs);
+        font-size: var(--small);
         line-height: var(--lh-xs);
         font-weight: normal;
         font-style: italic;
@@ -13,7 +13,7 @@ const Caption = props => {
         color: var(--text-secondary);
 
         @media ${device.desktop} {
-          font-size: var(--font-xs);
+          font-size: var(--small);
           line-height: var(--lh-xs);
           font-weight: normal;
           font-style: italic;

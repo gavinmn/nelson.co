@@ -38,7 +38,7 @@ const Hero = props => {
           background-image: none;
           text-shadow: none;
           color: var(--text-secondary);
-          font-size: var(--font-xs);
+          font-size: var(--small);
         }
         .email:hover {
           color: var(--text-primary);

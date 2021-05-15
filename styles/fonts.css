@@ -26,20 +26,20 @@
 }
 
 h1 {
-  font-size: var(--font-l);
+  font-size: var(--h1);
   line-height: var(--lh-l);
   margin-bottom: 0.25rem;
 }
 
 h2 {
-  font-size: var(--font-m);
+  font-size: var(--h2);
   line-height: var(--lh-m);
   font-weight: bold;
   margin: 1.25rem 0 0.5rem 0;
 }
 
 h3 {
-  font-size: var(--font-s);
+  font-size: var(--body);
   line-height: var(--lh-s);
   font-style: italic;
   font-weight: normal;
@@ -48,12 +48,12 @@ h3 {
 }
 
 p {
-  font-size: var(--font-s);
+  font-size: var(--body);
   line-height: var(--lh-s);
 }
 
 a {
-  font-size: var(--font-s);
+  font-size: var(--body);
   text-decoration: none;
   color: var(--text-primary);
   font-weight: normal;
@@ -69,7 +69,7 @@ a {
 
   text-shadow: 0.1em 0 var(--bg-primary-hex), -0.1em 0 var(--bg-primary-hex);
 
-  /* font-size: var(--font-s);
+  /* font-size: var(--body);
   text-decoration: none;
   color: var(--text-secondary);
   font-weight: normal; */
@@ -83,13 +83,13 @@ a:hover {
 }
 
 li {
-  font-size: var(--font-s);
+  font-size: var(--body);
   line-height: var(--lh-s);
   margin: 0.5rem 0;
 }
 
 li::marker {
-  font-size: var(--font-s);
+  font-size: var(--body);
   color: var(--text-secondary);
 }
 
@@ -103,7 +103,7 @@ ul {
 
 code {
   font-family: ui-monospace, monospace;
-  font-size: var(--font-xs);
+  font-size: var(--small);
   color: var(--text-secondary);
   background-color: var(--bg-secondary);
   padding: 0.05rem 0.1rem 0.1rem 0.1rem;
@@ -112,20 +112,20 @@ code {
 
 @media only screen and (min-width: 722px) {
   h1 {
-    font-size: var(--font-l);
+    font-size: var(--h1);
     line-height: var(--lh-l);
     margin-bottom: 0.125rem;
   }
 
   h2 {
-    font-size: var(--font-m);
+    font-size: var(--h2);
     line-height: var(--lh-m);
     font-weight: bold;
     margin: 0.75rem 0 0.25rem 0;
   }
 
   h3 {
-    font-size: var(--font-s);
+    font-size: var(--body);
     line-height: var(--lh-s);
     font-style: italic;
     font-weight: normal;
@@ -134,7 +134,7 @@ code {
   }
 
   p {
-    font-size: var(--font-s);
+    font-size: var(--body);
     line-height: var(--lh-s);
   }
 

@@ -74,7 +74,7 @@ const Layout = ({ children }) => {
           .link {
             background-image: none;
             text-shadow: none;
-            font-size: var(--font-xs);
+            font-size: var(--small);
             color: var(--text-secondary);
             margin-bottom: 0.75rem;
           }
@@ -137,7 +137,6 @@ const Layout = ({ children }) => {
                     >
                       Twitter
                     </a>
-                    
                   </div>
                 </div>
                 <div className="right-flex">

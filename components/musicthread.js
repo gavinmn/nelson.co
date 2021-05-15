@@ -56,7 +56,7 @@ const MusicThread = props => {
         }
 
         .thread-link {
-          font-size: var(--font-xs);
+          font-size: var(--small);
           color: var(--text-secondary);
         }
 
@@ -95,7 +95,7 @@ const MusicThread = props => {
 
         .number {
           color: var(--text-secondary);
-          font-size: var(--font-xs);
+          font-size: var(--small);
         }
 
         @media ${device.desktop} {

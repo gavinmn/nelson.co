@@ -14,8 +14,33 @@ function GlobalStyle(props) {
         }
 
         :root {
-          --bg-primary-hex: #ffffff;
-          --bg-primary-rgba: rgba(255, 255, 255, 0.8);
+          --body: 15px;
+          --small: 14px;
+          --h1: 24px;
+          --h2: 20px;
+          --h3: 16px;
+
+          --accent-100: rgba(144, 164, 187, 1);
+          --accent-200: rgba(108, 137, 172, 1);
+          --accent-300: rgba(74, 111, 156, 1);
+          --accent-400: rgba(31, 46, 66, 1);
+          --acent-300: rgba(118, 144, 178, 1);
+          --accent-200: rgba(101, 133, 174, 1);
+          --accent-100: rgba(81, 117, 164, 1);
+          --accent-400: rgba(139, 162, 193, 1);
+
+          --primary-100: rgba(255, 255, 255, 1);
+          --primary-200: rgba(241, 245, 248, 1);
+          --primary-300: rgba(222, 232, 242, 1);
+          --primary-400: rgba(204, 219, 235, 1);
+          --primary-100: rgba(29, 39, 53, 1);
+          --primary-200: rgba(23, 32, 43, 1);
+          --primary-300: rgba(14, 22, 32, 1);
+          --primary-400: rgba(5, 12, 20, 1);
+
+           {
+            /* --bg-primary-hex: #ffffff;
+          --primary-100: rgba(255, 255, 255, 0.8);
 
           --bg-secondary: #f1f5f8;
 
@@ -32,27 +57,22 @@ function GlobalStyle(props) {
           --color-experts: #22722d;
           --color-experts-secondary: #f1fbf3;
 
-          --github-text: #24292e;
-
-          --font-xs: 14px;
-          --font-s: 16px;
-          --font-m: 18px;
-          --font-l: 22px;
+          --github-text: #24292e; */
+          }
         }
 
         @media only screen and (min-width: 722px) {
           :root {
-            --font-xs: 16px;
-            --font-s: 18px;
-            --font-m: 20px;
-            --font-l: 24px;
+            --h1: 30px;
+            --h2: 22px;
+            --h3: 18px;
           }
         }
 
         @media (prefers-color-scheme: dark) {
           :root {
             --bg-primary-hex: #1d2735;
-            --bg-primary-rgba: rgba(29, 39, 53, 0.8);
+            --primary-100: rgba(29, 39, 53, 0.8);
 
             --bg-secondary: #17202b;
 
@@ -103,7 +123,7 @@ function GlobalStyle(props) {
 
         footer {
           margin-bottom: 2rem;
-          font-size: var(--font-xs);
+          font-size: var(--small);
           color: var(--text-secondary);
         }
 

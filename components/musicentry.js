@@ -28,7 +28,7 @@ const MusicEntry = props => (
       }
 
       .arrow {
-        font-size: var(--font-m);
+        font-size: var(--h2);
         opacity: 0;
         transition-duration: 0.3s;
       }
