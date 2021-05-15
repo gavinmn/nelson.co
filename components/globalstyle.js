@@ -20,7 +20,8 @@ function GlobalStyle(props) {
           --h2: 20px;
           --h3: 16px;
 
-          --accent-100: rgba(144, 164, 187, 1);
+           {
+            /* --accent-100: rgba(144, 164, 187, 1);
           --accent-200: rgba(108, 137, 172, 1);
           --accent-300: rgba(74, 111, 156, 1);
           --accent-400: rgba(31, 46, 66, 1);
@@ -36,10 +37,10 @@ function GlobalStyle(props) {
           --primary-100: rgba(29, 39, 53, 1);
           --primary-200: rgba(23, 32, 43, 1);
           --primary-300: rgba(14, 22, 32, 1);
-          --primary-400: rgba(5, 12, 20, 1);
+          --primary-400: rgba(5, 12, 20, 1); */
+          }
 
-           {
-            /* --bg-primary-hex: #ffffff;
+          --bg-primary-hex: #ffffff;
           --primary-100: rgba(255, 255, 255, 0.8);
 
           --bg-secondary: #f1f5f8;
@@ -57,8 +58,7 @@ function GlobalStyle(props) {
           --color-experts: #22722d;
           --color-experts-secondary: #f1fbf3;
 
-          --github-text: #24292e; */
-          }
+          --github-text: #24292e;
         }
 
         @media only screen and (min-width: 722px) {
