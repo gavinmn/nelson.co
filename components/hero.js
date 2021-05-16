@@ -19,8 +19,12 @@ const Hero = props => {
         }
 
         .hero-text {
-          max-width: 480px;
+          max-width: 412px;
           margin-top: 2rem;
+        }
+
+        .hero-text > p {
+          font-size: 16px;
         }
 
         .link-container {
@@ -72,7 +76,7 @@ const Hero = props => {
 
           .hero-text {
             margin-top: 1rem;
-            max-width: 538px;
+            max-width: 496px;
             justify-self: end;
           }
           .styled-logo-container {
