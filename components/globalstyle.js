@@ -14,15 +14,6 @@ function GlobalStyle(props) {
         }
 
         :root {
-          --sp-1: 0.25rem;
-          --sp-2: 0.5rem;
-          --sp-3: 0.75rem;
-          --sp-4: 1rem;
-          --sp-5: 1.25rem;
-          --sp-6: 1.5rem;
-          --sp-7: 1.75rem;
-          --sp-8: 2rem;
-
           --body: 15px;
           --small: 14px;
           --h1: 24px;
