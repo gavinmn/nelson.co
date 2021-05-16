@@ -24,11 +24,15 @@ const Header = () => {
           top: 0;
           width: 100%;
           padding: 0.55rem 0;
-          background-color: var(--primary-100);
+          background-color: rgba(255, 255, 255, 0.9);
           backdrop-filter: blur(8px);
           z-index: 10;
         }
-
+        @media (prefers-color-scheme: dark) {
+          .header {
+            background-color: rgba(29, 39, 53, 0.9);
+          }
+        }
         .container {
           display: flex;
           flex-direction: row;
