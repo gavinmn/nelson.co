@@ -15,23 +15,23 @@ const ButtonExternal = props => (
         justify-content: center;
         align-items: center;
         padding: 8px 20px;
-        background-color: var(--bg-primary-hex);
+        background-color: var(--primary-100);
         border-radius: 4px;
       }
 
       .button:hover {
         cursor: pointer;
         text-decoration: none;
-        background-color: var(--text-secondary);
+        background-color: var(--text-accent);
       }
       .button:hover > p {
-        color: var(--bg-primary-hex);
+        color: var(--primary-100);
       }
 
       .arrow {
         font-size: 20px;
         font-weight: bold;
-        color: var(--text-secondary);
+        color: var(--text-accent);
       }
     `}</style>
     <p className="arrow">→</p>

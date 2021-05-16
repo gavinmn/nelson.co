@@ -16,7 +16,7 @@ const expertsPage = props => (
     <style jsx>{`
       .subtitle {
         font-size: var(--small);
-        color: var(--text-secondary);
+        color: var(--text-accent);
         font-weight: normal;
         margin: 0;
       }

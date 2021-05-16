@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
           .footer-container {
             margin-top: 4rem;
             padding-top: 2rem;
-            background-color: var(--bg-secondary);
+            background-color: var(--primary-200);
             flex-shrink: 0;
           }
 
@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
             background-image: none;
             text-shadow: none;
             font-size: var(--small);
-            color: var(--text-secondary);
+            color: var(--text-accent);
             margin-bottom: 0.75rem;
           }
 

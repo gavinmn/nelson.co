@@ -21,7 +21,7 @@ const Card = props => {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        background-color: var(--bg-secondary);
+        background-color: var(--primary-200);
         border-radius: 8px;
         max-width: 100%;
         padding-bottom: 8px; 
@@ -37,7 +37,7 @@ const Card = props => {
        align-self: stretch;
        flex-grow: 0;
        box-shadow: 0px 4px 0px var(--primary-100);
-       background-color: var(--bg-secondary); 
+       background-color: var(--primary-200); 
       }
       
       .bottom {
@@ -62,7 +62,7 @@ const Card = props => {
       .subtext {
        font-size: var(--small);
        line-height: var(--lh-xs);
-       color: var(--text-secondary); 
+       color: var(--text-accent); 
       }
       
       .header {

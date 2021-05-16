@@ -10,7 +10,7 @@ const Caption = props => {
         font-weight: normal;
         font-style: italic;
         margin-bottom: 1rem;
-        color: var(--text-secondary);
+        color: var(--text-accent);
 
         @media ${device.desktop} {
           font-size: var(--small);
@@ -18,7 +18,7 @@ const Caption = props => {
           font-weight: normal;
           font-style: italic;
           margin-bottom: 0.5rem;
-          color: var(--text-secondary);
+          color: var(--text-accent);
         }
       `}</style>
     </p>

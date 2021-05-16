@@ -46,7 +46,7 @@ const Header = () => {
           background-image: none;
           text-shadow: none;
           margin-left: 1.5rem;
-          color: var(--text-secondary);
+          color: var(--text-accent);
         }
 
         .about-link-highlight,
@@ -54,20 +54,20 @@ const Header = () => {
           background-image: none;
           text-shadow: none;
           margin-left: 1.5rem;
-          color: var(--color-primary);
+          color: var(--text-primary);
         }
 
         .about-link:hover,
         .work-link:hover {
           cursor: pointer;
-          color: var(--color-primary);
+          color: var(--text-primary);
           text-decoration: none;
         }
 
         .about-link-highlight:hover,
         .work-link-highlight:hover {
           cursor: pointer;
-          color: var(--color-primary);
+          color: var(--text-primary);
           text-decoration: none;
         }
 
@@ -80,7 +80,7 @@ const Header = () => {
 
         .name:hover {
           cursor: pointer;
-          color: var(--color-primary);
+          color: var(--text-primary);
           text-decoration: none;
         }
 

@@ -37,7 +37,7 @@ const Hero = props => {
         .github {
           background-image: none;
           text-shadow: none;
-          color: var(--text-secondary);
+          color: var(--text-accent);
           font-size: var(--small);
         }
         .email:hover {

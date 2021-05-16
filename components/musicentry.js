@@ -38,7 +38,7 @@ const MusicEntry = props => (
       }
 
       .artist {
-        color: var(--text-secondary);
+        color: var(--text-accent);
         align-self: stretch;
       }
 
