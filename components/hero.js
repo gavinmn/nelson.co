@@ -32,7 +32,7 @@ const Hero = props => {
           flex-direction: row;
           max-width: 100%;
           justify-content: space-between;
-          margin-top: 0.5rem;
+          margin-top: 1rem;
         }
 
         .email,
@@ -81,6 +81,10 @@ const Hero = props => {
           }
           .styled-logo-container {
             justify-self: start;
+          }
+
+          .link-container {
+            margin-top: 0.5rem;
           }
         }
       `}</style>
