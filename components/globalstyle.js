@@ -16,6 +16,7 @@ function GlobalStyle(props) {
         :root {
           --body: 15px;
           --small: 14px;
+          --large: 16px;
           --h1: 24px;
           --h2: 20px;
           --h3: 16px;
