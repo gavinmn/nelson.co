@@ -56,8 +56,8 @@ const MusicThread = props => {
         }
 
         .thread-link {
-          font-size: var(--font-xs);
-          color: var(--text-secondary);
+          font-size: var(--small);
+          color: var(--text-accent);
         }
 
         .thread-link:hover {
@@ -77,7 +77,7 @@ const MusicThread = props => {
         }
 
         .line {
-          background-color: var(--bg-secondary);
+          background-color: var(--primary-200);
           width: 4px;
           align-self: stretch;
           margin-top: -1.5rem;
@@ -94,8 +94,8 @@ const MusicThread = props => {
         }
 
         .number {
-          color: var(--text-secondary);
-          font-size: var(--font-xs);
+          color: var(--text-accent);
+          font-size: var(--small);
         }
 
         @media ${device.desktop} {

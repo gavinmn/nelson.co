@@ -19,8 +19,12 @@ const Hero = props => {
         }
 
         .hero-text {
-          max-width: 480px;
+          max-width: 412px;
           margin-top: 2rem;
+        }
+
+        .hero-text > p {
+          font-size: 16px;
         }
 
         .link-container {
@@ -37,8 +41,8 @@ const Hero = props => {
         .github {
           background-image: none;
           text-shadow: none;
-          color: var(--text-secondary);
-          font-size: var(--font-xs);
+          color: var(--text-accent);
+          font-size: var(--small);
         }
         .email:hover {
           color: var(--text-primary);
@@ -72,7 +76,7 @@ const Hero = props => {
 
           .hero-text {
             margin-top: 1rem;
-            max-width: 538px;
+            max-width: 496px;
             justify-self: end;
           }
           .styled-logo-container {

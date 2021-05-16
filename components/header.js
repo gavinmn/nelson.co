@@ -24,11 +24,15 @@ const Header = () => {
           top: 0;
           width: 100%;
           padding: 0.55rem 0;
-          background-color: var(--bg-primary-rgba);
+          background-color: rgba(255, 255, 255, 0.9);
           backdrop-filter: blur(8px);
           z-index: 10;
         }
-
+        @media (prefers-color-scheme: dark) {
+          .header {
+            background-color: rgba(29, 39, 53, 0.9);
+          }
+        }
         .container {
           display: flex;
           flex-direction: row;
@@ -46,7 +50,7 @@ const Header = () => {
           background-image: none;
           text-shadow: none;
           margin-left: 1.5rem;
-          color: var(--text-secondary);
+          color: var(--text-accent);
         }
 
         .about-link-highlight,
@@ -54,20 +58,20 @@ const Header = () => {
           background-image: none;
           text-shadow: none;
           margin-left: 1.5rem;
-          color: var(--color-primary);
+          color: var(--text-primary);
         }
 
         .about-link:hover,
         .work-link:hover {
           cursor: pointer;
-          color: var(--color-primary);
+          color: var(--text-primary);
           text-decoration: none;
         }
 
         .about-link-highlight:hover,
         .work-link-highlight:hover {
           cursor: pointer;
-          color: var(--color-primary);
+          color: var(--text-primary);
           text-decoration: none;
         }
 
@@ -80,7 +84,7 @@ const Header = () => {
 
         .name:hover {
           cursor: pointer;
-          color: var(--color-primary);
+          color: var(--text-primary);
           text-decoration: none;
         }
 

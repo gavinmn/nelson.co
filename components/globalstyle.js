@@ -14,17 +14,24 @@ function GlobalStyle(props) {
         }
 
         :root {
-          --bg-primary-hex: #ffffff;
-          --bg-primary-rgba: rgba(255, 255, 255, 0.8);
+          --body: 15px;
+          --small: 14px;
+          --h1: 24px;
+          --h2: 20px;
+          --h3: 16px;
 
-          --bg-secondary: #f1f5f8;
+          --primary-100: rgba(255, 255, 255, 1);
+          --primary-200: rgba(241, 245, 248, 1);
+          --primary-300: rgba(222, 232, 242, 1);
+          --primary-400: rgba(204, 219, 235, 1);
 
-          --text-primary: #1f2e42;
-          --text-secondary: #4a6f9c;
-          --text-underline: rgba(94, 136, 186, 0.6);
+          --accent-100: rgba(144, 164, 187, 1);
+          --accent-200: rgba(108, 137, 172, 1);
+          --accent-300: rgba(74, 111, 156, 1);
+          --accent-400: rgba(31, 46, 66, 1);
 
-          --color-primary: #1f2e42;
-          --logo-primary: #1f2e42;
+          --text-primary: rgba(31, 46, 66, 1);
+          --text-accent: var(--accent-400);
 
           --color-chalk: #006ef0;
           --color-chalk-secondary: #f1f8ff;
@@ -33,35 +40,21 @@ function GlobalStyle(props) {
           --color-experts-secondary: #f1fbf3;
 
           --github-text: #24292e;
-
-          --font-xs: 14px;
-          --font-s: 16px;
-          --font-m: 18px;
-          --font-l: 22px;
-        }
-
-        @media only screen and (min-width: 722px) {
-          :root {
-            --font-xs: 16px;
-            --font-s: 18px;
-            --font-m: 20px;
-            --font-l: 24px;
-          }
         }
 
         @media (prefers-color-scheme: dark) {
           :root {
-            --bg-primary-hex: #1d2735;
-            --bg-primary-rgba: rgba(29, 39, 53, 0.8);
+            --primary-100: rgba(29, 39, 53, 1);
+            --primary-200: rgba(23, 32, 43, 1);
+            --primary-300: rgba(14, 22, 32, 1);
+            --primary-400: rgba(5, 12, 20, 1);
 
-            --bg-secondary: #17202b;
+            --accent-100: rgba(81, 117, 164, 1);
+            --accent-200: rgba(101, 133, 174, 1);
+            --accent-300: rgba(118, 144, 178, 1);
+            --accent-400: rgba(139, 162, 193, 1);
 
-            --text-primary: #eef2f7;
-            --text-secondary: #7690b2;
-            --text-underline: #7a91ae;
-
-            --color-primary: #eef2f7;
-            --logo-primary: #eef2f7;
+            --text-primary: rgba(255, 255, 255, 1);
 
             --color-chalk: #1a83ff;
             --color-chalk-secondary: #1a212d;
@@ -73,8 +66,16 @@ function GlobalStyle(props) {
           }
         }
 
+        @media only screen and (min-width: 722px) {
+          :root {
+            --h1: 30px;
+            --h2: 22px;
+            --h3: 18px;
+          }
+        }
+
         body {
-          background-color: var(--bg-primary-hex);
+          background-color: var(--primary-100);
           font-family: "Sohne", -apple-system, BlinkMacSystemFont, sans-serif;
           color: var(--text-primary);
           overflow-y: scroll;
@@ -83,7 +84,7 @@ function GlobalStyle(props) {
         }
 
         body.dark {
-          background-color: var(--bg-primary-hex);
+          background-color: var(--primary-100);
           color: var(--text-primary);
         }
 
@@ -98,13 +99,13 @@ function GlobalStyle(props) {
           -webkit-overflow-scrolling: touch;
           -webkit-font-smoothing: antialiased;
           text-rendering: optimizeLegibility;
-          line-height: 1.6;
+          line-height: 1.5;
         }
 
         footer {
           margin-bottom: 2rem;
-          font-size: var(--font-xs);
-          color: var(--text-secondary);
+          font-size: var(--small);
+          color: var(--text-accent);
         }
 
         @media only screen and (min-width: 722px) {
@@ -119,7 +120,7 @@ function GlobalStyle(props) {
         }
 
         ::selection {
-          color: var(--bg-primary-hex);
+          color: var(--primary-100);
           background: var(--text-primary);
           text-shadow: none;
         }

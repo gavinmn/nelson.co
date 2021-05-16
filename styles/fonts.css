@@ -26,71 +26,50 @@
 }
 
 h1 {
-  font-size: var(--font-l);
-  line-height: var(--lh-l);
+  font-size: var(--h1);
   margin-bottom: 0.25rem;
 }
 
 h2 {
-  font-size: var(--font-m);
-  line-height: var(--lh-m);
+  font-size: var(--h2);
   font-weight: bold;
   margin: 1.25rem 0 0.5rem 0;
 }
 
 h3 {
-  font-size: var(--font-s);
-  line-height: var(--lh-s);
+  font-size: var(--body);
   font-style: italic;
   font-weight: normal;
   margin: 1.25rem 0 0.5rem 0;
-  color: var(--text-secondary);
+  color: var(--text-accent);
 }
 
 p {
-  font-size: var(--font-s);
-  line-height: var(--lh-s);
+  font-size: var(--body);
 }
 
 a {
-  font-size: var(--font-s);
+  font-size: var(--body);
+  color: var(--text-accent);
   text-decoration: none;
-  color: var(--text-primary);
   font-weight: normal;
-
-  background-image: linear-gradient(
-    var(--text-underline),
-    var(--text-underline)
-  );
-
-  background-size: 100% 1px;
-  background-position: left 1.15em;
-  background-repeat: no-repeat;
-
-  text-shadow: 0.1em 0 var(--bg-primary-hex), -0.1em 0 var(--bg-primary-hex);
-
-  /* font-size: var(--font-s);
-  text-decoration: none;
-  color: var(--text-secondary);
-  font-weight: normal; */
 }
+
 a:hover {
-  color: var(--text-secondary);
-  text-decoration: none;
+  color: var(--text-primary);
   cursor: pointer;
-  /* color: var(--color-primary);
-  cursor: pointer; */
+  text-decoration: none;
 }
 
 li {
-  font-size: var(--font-s);
+  font-size: var(--body);
   line-height: var(--lh-s);
   margin: 0.5rem 0;
 }
 
 li::marker {
-  font-size: var(--font-s);
-  color: var(--text-secondary);
+  font-size: var(--body);
+  color: var(--text-accent);
 }
 
 ul > li {
@@ -103,38 +82,38 @@ ul {
 
 code {
   font-family: ui-monospace, monospace;
-  font-size: var(--font-xs);
-  color: var(--text-secondary);
-  background-color: var(--bg-secondary);
+  font-size: var(--small);
+  color: var(--text-accent);
+  background-color: var(--primary-200);
   padding: 0.05rem 0.1rem 0.1rem 0.1rem;
   border-radius: 2px;
 }
 
 @media only screen and (min-width: 722px) {
   h1 {
-    font-size: var(--font-l);
+    font-size: var(--h1);
     line-height: var(--lh-l);
     margin-bottom: 0.125rem;
   }
 
   h2 {
-    font-size: var(--font-m);
+    font-size: var(--h2);
     line-height: var(--lh-m);
     font-weight: bold;
     margin: 0.75rem 0 0.25rem 0;
   }
 
   h3 {
-    font-size: var(--font-s);
+    font-size: var(--body);
     line-height: var(--lh-s);
     font-style: italic;
     font-weight: normal;
     margin: 0.75rem 0 0.25rem 0;
-    color: var(--text-secondary);
+    color: var(--text-accent);
   }
 
   p {
-    font-size: var(--font-s);
+    font-size: var(--body);
     line-height: var(--lh-s);
   }
 

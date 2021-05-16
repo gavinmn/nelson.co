@@ -13,7 +13,7 @@ const PostWrapper = props => {
         }
 
         .wrapper-small {
-          max-width: 576px;
+          max-width: 496px;
           padding: 0;
           margin: 0 auto;
         }
@@ -24,7 +24,7 @@ const PostWrapper = props => {
         .feedback {
           margin-top: 4rem;
           padding: 0.5rem 1rem;
-          background-color: var(--bg-secondary);
+          background-color: var(--primary-200);
           border-radius: 8px;
         }
 
@@ -34,7 +34,7 @@ const PostWrapper = props => {
 
         .email,
         .twitter {
-          color: var(--text-secondary);
+          color: var(--text-accent);
           background-image: none;
           text-shadow: none;
         }

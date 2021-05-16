@@ -19,7 +19,7 @@ const PostPreview = props => (
       }
 
       .title {
-        color: var(--text-secondary);
+        color: var(--text-accent);
         margin: 0;
       }
       .title:hover {
