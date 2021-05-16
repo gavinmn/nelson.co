@@ -31,7 +31,7 @@ function GlobalStyle(props) {
           --accent-400: rgba(31, 46, 66, 1);
 
           --text-primary: rgba(31, 46, 66, 1);
-          --text-accent: var(--accent-300);
+          --text-accent: var(--accent-400);
 
           --color-chalk: #006ef0;
           --color-chalk-secondary: #f1f8ff;
