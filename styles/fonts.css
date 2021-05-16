@@ -27,20 +27,17 @@
 
 h1 {
   font-size: var(--h1);
-  line-height: var(--lh-l);
   margin-bottom: 0.25rem;
 }
 
 h2 {
   font-size: var(--h2);
-  line-height: var(--lh-m);
   font-weight: bold;
   margin: 1.25rem 0 0.5rem 0;
 }
 
 h3 {
   font-size: var(--body);
-  line-height: var(--lh-s);
   font-style: italic;
   font-weight: normal;
   margin: 1.25rem 0 0.5rem 0;
@@ -49,37 +46,19 @@ h3 {
 
 p {
   font-size: var(--body);
-  line-height: var(--lh-s);
 }
 
 a {
   font-size: var(--body);
+  color: var(--text-accent);
   text-decoration: none;
-  color: var(--text-primary);
   font-weight: normal;
-
-  background-image: linear-gradient(
-    var(--text-underline),
-    var(--text-underline)
-  );
-
-  background-size: 100% 1px;
-  background-position: left 1.15em;
-  background-repeat: no-repeat;
-
-  text-shadow: 0.1em 0 var(--primary-100), -0.1em 0 var(--primary-100);
-
-  /* font-size: var(--body);
-  text-decoration: none;
-  color: var(--text-accent);
-  font-weight: normal; */
 }
+
 a:hover {
-  color: var(--text-accent);
-  text-decoration: none;
+  color: var(--text-primary);
   cursor: pointer;
-  /* color: var(--text-primary);
-  cursor: pointer; */
+  text-decoration: none;
 }
 
 li {
