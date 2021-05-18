@@ -1,6 +1,8 @@
 import matter from "gray-matter"
-import renderToString from "next-mdx-remote/render-to-string"
-import hydrate from "next-mdx-remote/hydrate"
+
+import { serialize } from "next-mdx-remote/serialize"
+
+import { MDXRemote } from "next-mdx-remote"
 import { getAllPostSlugs, getPostdata } from "../../lib/posts"
 import PostWrapper from "@/components/postwrapper"
 
@@ -29,10 +31,6 @@ const components = {
 }
 
 export default function Posts({ source, frontMatter }) {
-  const content = hydrate(source, {
-    components,
-  })
-
   return (
     <PostWrapper
       title={frontMatter.title}
@@ -40,7 +38,7 @@ export default function Posts({ source, frontMatter }) {
       description={frontMatter.subtitle}
       time={frontMatter.time}
     >
-      {content}
+      <MDXRemote {...source} components={components} />
     </PostWrapper>
   )
 }
@@ -55,9 +53,7 @@ export async function getStaticProps({ params }) {
   const postContent = await getPostdata(params.slug)
   const { data, content } = matter(postContent)
 
-  const mdxSource = await renderToString(content, {
-    components,
-  })
+  const mdxSource = await serialize(content)
 
   return {
     props: {

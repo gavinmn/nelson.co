@@ -10,7 +10,7 @@
     "date-fns": "^2.21.3",
     "gray-matter": "^4.0.3",
     "next": "^10.2.0",
-    "next-mdx-remote": "^2.1.4",
+    "next-mdx-remote": "^3.0.2",
     "next-themes": "^0.0.14",
     "preact": "^10.5.13",
     "react": "^17.0.2",
