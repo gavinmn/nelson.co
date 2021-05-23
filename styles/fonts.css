@@ -9,15 +9,6 @@
 
 @font-face {
   font-family: "Sohne";
-  src: url(/fonts/soehne-web-buch-kursiv.woff2) format("woff2");
-
-  font-weight: normal;
-  font-style: italic;
-  font-display: optional;
-}
-
-@font-face {
-  font-family: "Sohne";
   src: url(/fonts/soehne-web-dreiviertelfett.woff2) format("woff2");
 
   font-weight: bold;
@@ -38,7 +29,6 @@ h2 {
 
 h3 {
   font-size: var(--body);
-  font-style: italic;
   font-weight: normal;
   margin: 1.25rem 0 0.5rem 0;
   color: var(--text-accent);
@@ -106,7 +96,6 @@ code {
   h3 {
     font-size: var(--body);
     line-height: var(--lh-s);
-    font-style: italic;
     font-weight: normal;
     margin: 0.75rem 0 0.25rem 0;
     color: var(--text-accent);

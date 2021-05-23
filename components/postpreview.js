@@ -20,6 +20,10 @@ const PostPreview = props => (
 
       .title {
         color: var(--text-accent);
+         {
+          /* font-size: var(--large); */
+        }
+        font-weight: bold;
         margin: 0;
       }
       .title:hover {
@@ -33,6 +37,11 @@ const PostPreview = props => (
         align-self: stretch;
         flex-grow: 0;
       }
+
+      .caption {
+        font-size: var(--small);
+        color: var(--text-accent);
+      }
     `}</style>
 
     <div className="text">
@@ -41,7 +50,7 @@ const PostPreview = props => (
       </Link>
       <p className="subtitle">{props.subtitle}</p>
     </div>
-    <Caption>{props.time}</Caption>
+    <p className="caption">{props.time}</p>
   </div>
 )
 

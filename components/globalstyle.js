@@ -15,10 +15,10 @@ function GlobalStyle(props) {
 
         :root {
           --body: 15px;
-          --small: 14px;
+          --small: 13px;
           --large: 16px;
-          --h1: 24px;
-          --h2: 20px;
+          --h1: 20px;
+          --h2: 18px;
           --h3: 16px;
 
           --primary-100: rgba(255, 255, 255, 1);
@@ -70,8 +70,8 @@ function GlobalStyle(props) {
 
         @media only screen and (min-width: 722px) {
           :root {
-            --h1: 30px;
-            --h2: 22px;
+            --h1: 24px;
+            --h2: 20px;
             --h3: 18px;
           }
         }
