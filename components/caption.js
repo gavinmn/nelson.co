@@ -8,7 +8,6 @@ const Caption = props => {
         font-size: var(--small);
         line-height: var(--lh-xs);
         font-weight: normal;
-        font-style: italic;
         margin-bottom: 1rem;
         color: var(--text-accent);
 
@@ -16,7 +15,6 @@ const Caption = props => {
           font-size: var(--small);
           line-height: var(--lh-xs);
           font-weight: normal;
-          font-style: italic;
           margin-bottom: 0.5rem;
           color: var(--text-accent);
         }
