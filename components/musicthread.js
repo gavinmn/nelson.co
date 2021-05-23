@@ -78,7 +78,7 @@ const MusicThread = props => {
 
         .line {
           background-color: var(--primary-200);
-          width: 4px;
+          width: 2px;
           align-self: stretch;
           margin-top: -1.5rem;
         }
@@ -90,7 +90,6 @@ const MusicThread = props => {
         }
 
         .month {
-          font-style: italic;
         }
 
         .number {
