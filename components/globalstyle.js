@@ -34,6 +34,12 @@ function GlobalStyle(props) {
           --text-primary: rgba(31, 46, 66, 1);
           --text-accent: var(--accent-300);
 
+          --button-fill: var(--primary-100);
+          --button-border: var(--primary-300);
+          --button-hover: #f8fafc;
+          --button-arrow-hover: var(--accent-400);
+          --button-shadow: 0px 1px 0px 0px rgba(0, 39, 78, 0.04);
+
           --color-chalk: #006ef0;
           --color-chalk-secondary: #f1f8ff;
 
@@ -57,6 +63,12 @@ function GlobalStyle(props) {
 
             --text-primary: rgba(255, 255, 255, 1);
             --text-accent: var(--accent-400);
+
+            --button-fill: #222e3f;
+            --button-border: #2b3a4f;
+            --button-hover: #1f2938;
+            --button-arrow-hover: var(--accent-300);
+            --button-shadow: 0px 1px 0px 0px hsla(210, 98%, 8%, 0.12);
 
             --color-chalk: #1a83ff;
             --color-chalk-secondary: #1a212d;
