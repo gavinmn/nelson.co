@@ -198,9 +198,14 @@ const IndexPage = ({ posts }) => {
         .post-grid {
           display: grid;
           grid-template-columns: auto;
-          grid-gap: 1rem;
+          grid-gap: 0.5rem;
           max-width: 816px;
-          padding: 0px 1rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+          .post-grid {
+            grid-gap: 0.25rem;
+          }
         }
 
         .card-grid {
@@ -224,10 +229,6 @@ const IndexPage = ({ posts }) => {
             grid-template-columns: 49.01960784% 49.01960784%;
             grid-column-gap: 0.5rem;
             grid-row-gap: 1rem;
-          }
-
-          .post-grid {
-            padding: 0px 0.5rem;
           }
 
           .anchor {
