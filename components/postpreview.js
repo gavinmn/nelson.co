@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Caption from "@/components/caption"
 
 const PostPreview = props => (
   <div className="container">
@@ -7,48 +6,29 @@ const PostPreview = props => (
       .container {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex: none;
-        align-self: stretch;
       }
 
       .title {
-        color: var(--text-accent);
-
-        font-weight: bold;
+        color: var(--text-primary);
         margin: 0;
+        margin-bottom: 0.125rem;
       }
       .title:hover {
-        color: var(--text-primary);
+        color: var(--text-accent);
         cursor: pointer;
       }
 
-      .subtitle {
-        margin: 0;
-        flex: none;
-        align-self: stretch;
-        flex-grow: 0;
-      }
-
-      .caption {
+      .date {
         font-size: var(--small);
+        margin-right: 1rem;
         color: var(--text-accent);
       }
     `}</style>
 
-    <div className="text">
-      <Link as={`posts/${props.href}`} href="/posts/[slug]">
-        <h2 className="title">{props.title}</h2>
-      </Link>
-      <p className="subtitle">{props.subtitle}</p>
-    </div>
-    <p className="caption">{props.time}</p>
+    <Link as={`posts/${props.href}`} href="/posts/[slug]">
+      <h3 className="title">{props.title}</h3>
+    </Link>
+    <p className="date">{props.date}</p>
   </div>
 )
 

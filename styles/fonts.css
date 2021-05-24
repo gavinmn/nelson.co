@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--body);
+  font-size: var(--h3);
   font-weight: normal;
   margin: 1.25rem 0 0.5rem 0;
   color: var(--text-accent);
@@ -53,7 +53,7 @@ a:hover {
 
 li {
   font-size: var(--body);
-  line-height: var(--lh-s);
+
   margin: 0.5rem 0;
 }
 
@@ -82,20 +82,20 @@ code {
 @media only screen and (min-width: 722px) {
   h1 {
     font-size: var(--h1);
-    line-height: var(--lh-l);
+
     margin-bottom: 0.125rem;
   }
 
   h2 {
     font-size: var(--h2);
-    line-height: var(--lh-m);
+
     font-weight: bold;
     margin: 0.75rem 0 0.25rem 0;
   }
 
   h3 {
-    font-size: var(--body);
-    line-height: var(--lh-s);
+    font-size: var(--h3);
+
     font-weight: normal;
     margin: 0.75rem 0 0.25rem 0;
     color: var(--text-accent);
@@ -103,7 +103,6 @@ code {
 
   p {
     font-size: var(--body);
-    line-height: var(--lh-s);
   }
 
   li {

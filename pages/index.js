@@ -30,8 +30,7 @@ const IndexPage = ({ posts }) => {
             <PostPreview
               key={key}
               title={data.title}
-              subtitle={data.subtitle}
-              time={data.time}
+              date={data.date}
               href={slug}
             />
           ))}
@@ -201,6 +200,7 @@ const IndexPage = ({ posts }) => {
           grid-template-columns: auto;
           grid-gap: 1rem;
           max-width: 816px;
+          padding: 0px 1rem;
         }
 
         .card-grid {
@@ -224,6 +224,10 @@ const IndexPage = ({ posts }) => {
             grid-template-columns: 49.01960784% 49.01960784%;
             grid-column-gap: 0.5rem;
             grid-row-gap: 1rem;
+          }
+
+          .post-grid {
+            padding: 0px 0.5rem;
           }
 
           .anchor {
