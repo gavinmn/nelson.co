@@ -26,7 +26,7 @@ const Card = props => {
       </div>
       <div className="bottom">
         <div className="text">
-          <h2 className="header">{props.title}</h2>
+          <h3 className="header">{props.title}</h3>
           <p className="subtext">{props.subtitle}</p>
         </div>
         {props.children}
@@ -76,11 +76,13 @@ const Card = props => {
       }
       
       .subtext {
-       color: var(--text-accent); 
+       color: var(--text-accent);
+       font-size: var(--small);
       }
       
       .header {
-       margin: 0; 
+       margin: 0;
+       color: var(--text-primary);
       }
       
       @media ${device.desktop} {

@@ -5,13 +5,13 @@ const PostPreview = props => (
     <style jsx>{`
       .container {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
       }
 
       .title {
         color: var(--text-primary);
         margin: 0;
+        margin-bottom: 0.125rem;
       }
       .title:hover {
         color: var(--text-accent);
@@ -19,15 +19,16 @@ const PostPreview = props => (
       }
 
       .date {
-        flex-grow: 0;
         font-size: var(--small);
+        margin-right: 1rem;
+        color: var(--text-accent);
       }
     `}</style>
 
-    <p className="date">{props.date}</p>
     <Link as={`posts/${props.href}`} href="/posts/[slug]">
       <h3 className="title">{props.title}</h3>
     </Link>
+    <p className="date">{props.date}</p>
   </div>
 )
 

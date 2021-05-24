@@ -9,11 +9,13 @@ const SectionHeader = props => (
         justify-content: space-between;
         align-items: flex-end;
         margin: 4rem 0 1rem 0;
+        padding: 0px 1rem;
       }
 
       @media ${device.desktop} {
         .container {
           margin: 2rem 0 0.5rem 0;
+          padding: 0px 0.5rem;
         }
       }
     `}</style>
