@@ -20,9 +20,7 @@ const PostPreview = props => (
 
       .title {
         color: var(--text-accent);
-         {
-          /* font-size: var(--large); */
-        }
+
         font-weight: bold;
         margin: 0;
       }
