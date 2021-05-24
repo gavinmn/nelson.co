@@ -80,8 +80,7 @@ const IndexPage = ({ posts }) => {
             <PostPreview
               key={key}
               title={data.title}
-              subtitle={data.subtitle}
-              time={data.time}
+              date={data.date}
               href={slug}
             />
           ))}
