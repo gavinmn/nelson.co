@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Caption from "@/components/caption"
 
 const PostPreview = props => (
   <div className="container">

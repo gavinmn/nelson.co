@@ -13,56 +13,6 @@ import { getSortedPosts } from "../lib/posts"
 const IndexPage = ({ posts }) => {
   return (
     <Layout>
-      <style jsx>{`
-        .wrapper {
-          max-width: 656px;
-          padding: 0 5% 0 5%;
-          margin: 0 auto;
-        }
-
-        .hero-container {
-          margin-top: -1rem;
-          display: grid;
-          height: 100vh;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .post-grid {
-          display: grid;
-          grid-template-columns: auto;
-          grid-gap: 0.5rem;
-          max-width: 816px;
-        }
-
-        .card-grid {
-          display: grid;
-          grid-template-columns: auto;
-          grid-gap: 1rem;
-        }
-
-        .anchor {
-          padding-top: 1rem;
-          margin-top: -1rem;
-        }
-
-        @media ${device.desktop} {
-          .hero-container {
-            margin-top: 1rem;
-          }
-
-          .card-grid {
-            grid-template-columns: 49.01960784% 49.01960784%;
-            grid-gap: 0.5rem;
-          }
-
-          .anchor {
-            padding-top: 0.5rem;
-            margin-top: -0.5rem;
-          }
-        }
-      `}</style>
-
       <SEO />
       <div className="wrapper">
         <div className="hero-container">
@@ -95,7 +45,6 @@ const IndexPage = ({ posts }) => {
             imageHeight="294"
             title="Monterey"
             subtitle="Icon Design"
-            time="Summer 2020"
           >
             <ButtonExternal link="https://gumroad.com/l/dvctd" />
           </Card>
@@ -107,7 +56,6 @@ const IndexPage = ({ posts }) => {
             imageHeight="294"
             title="Chalk"
             subtitle="Interaction and Visual Design"
-            time="Summer 2019"
           >
             <ButtonInternal link="/chalk" />
           </Card>
@@ -121,8 +69,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Craft"
-            subtitle="Icon Design"
-            time="Spring 2021"
+            subtitle="2021"
           >
             <ButtonExternal link="https://www.craft.do" />
           </Card>
@@ -132,8 +79,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Stocketa"
-            subtitle="Icon Design"
-            time="Spring 2021"
+            subtitle="2021"
           >
             <ButtonExternal link="https://stocketa.com" />
           </Card>
@@ -143,8 +89,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="GitHub G1 Chip"
-            subtitle="Icon Design"
-            time="Winter 2020/2021"
+            subtitle="2021"
           >
             <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
           </Card>
@@ -154,8 +99,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Claquette"
-            subtitle="Icon Design"
-            time="Fall 2020"
+            subtitle="2020"
           >
             <ButtonExternal link="https://www.peakstep.com/claquette/" />
           </Card>
@@ -166,8 +110,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Mosaic"
-            subtitle="Icon Design"
-            time="Fall 2020"
+            subtitle="2020"
           >
             <ButtonExternal link="https://mosaic.rcopstein.com" />
           </Card>
@@ -178,8 +121,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Autooth"
-            subtitle="Icon Design"
-            time="Fall 2020"
+            subtitle="2020"
           >
             <ButtonExternal link="https://app.airport.community/app/recGP4zZQMV3WB9LZ" />
           </Card>
@@ -190,8 +132,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Apollo Reddit"
-            subtitle="Icon Design"
-            time="Fall 2020"
+            subtitle="2020"
           ></Card>
 
           <Card
@@ -200,8 +141,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Slack"
-            subtitle="Icon Design"
-            time="Winter 2020"
+            subtitle="2020"
           ></Card>
 
           <Card
@@ -210,8 +150,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Instagram"
-            subtitle="Icon Design"
-            time="Winter 2020"
+            subtitle="2020"
           ></Card>
 
           <Card
@@ -220,8 +159,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Xcode"
-            subtitle="Icon Design"
-            time="Summer 2020"
+            subtitle="2020"
           ></Card>
 
           <Card
@@ -230,8 +168,7 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Notes"
-            subtitle="Icon Design"
-            time="Summer 2020"
+            subtitle="2020"
           ></Card>
           <Card
             width="single"
@@ -239,11 +176,61 @@ const IndexPage = ({ posts }) => {
             imageWidth="816"
             imageHeight="294"
             title="Blender"
-            subtitle="Icon Design"
-            time="Summer 2020"
+            subtitle="2020"
           ></Card>
         </div>
       </div>
+      <style jsx>{`
+        .wrapper {
+          max-width: 656px;
+          padding: 0 5% 0 5%;
+          margin: 0 auto;
+        }
+
+        .hero-container {
+          margin-top: -1rem;
+          display: grid;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .post-grid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 1rem;
+          max-width: 816px;
+        }
+
+        .card-grid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-column-gap: 1rem;
+          grid-row-gap: 2rem;
+        }
+
+        .anchor {
+          padding-top: 1rem;
+          margin-top: -1rem;
+        }
+
+        @media ${device.desktop} {
+          .hero-container {
+            margin-top: 1rem;
+          }
+
+          .card-grid {
+            grid-template-columns: 49.01960784% 49.01960784%;
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 1rem;
+          }
+
+          .anchor {
+            padding-top: 0.5rem;
+            margin-top: -0.5rem;
+          }
+        }
+      `}</style>
     </Layout>
   )
 }

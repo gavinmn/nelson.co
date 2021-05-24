@@ -15,14 +15,28 @@ const Card = props => {
       className={doubleWidth ? "card-base-wide" : "card-base"}
       width={props.width}
     >
+      <div className="image-container">
+        <Image
+          src={props.imageSrc}
+          alt=""
+          width={`${props.imageWidth}`}
+          height={`${props.imageHeight}`}
+          layout="fixed"
+        />
+      </div>
+      <div className="bottom">
+        <div className="text">
+          <h2 className="header">{props.title}</h2>
+          <p className="subtext">{props.subtitle}</p>
+        </div>
+        {props.children}
+      </div>
       <style jsx>{`
       
       .card-base, .card-base-wide {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        background-color: var(--primary-200);
-        border-radius: 8px;
         max-width: 100%;
         padding-bottom: 8px; 
         overflow: hidden;
@@ -36,6 +50,8 @@ const Card = props => {
        align-items: center;
        align-self: stretch;
        flex-grow: 0;
+       border-radius: 4px;
+       overflow: hidden;
        box-shadow: 0px 4px 0px var(--primary-100);
        background-color: var(--primary-200); 
       }
@@ -60,8 +76,6 @@ const Card = props => {
       }
       
       .subtext {
-       font-size: var(--small);
-       line-height: var(--lh-xs);
        color: var(--text-accent); 
       }
       
@@ -86,25 +100,6 @@ const Card = props => {
       }    
     
     `}</style>
-      <div className="image-container">
-        <Image
-          src={props.imageSrc}
-          alt=""
-          width={`${props.imageWidth}`}
-          height={`${props.imageHeight}`}
-          layout="fixed"
-        />
-      </div>
-      <div className="bottom">
-        <div className="text">
-          <h2 className="header">{props.title}</h2>
-          <p className="subtext">{props.subtitle}</p>
-          <p className="subtext">
-            <i>{props.time}</i>
-          </p>
-        </div>
-        {props.children}
-      </div>
     </div>
   )
 }
