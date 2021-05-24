@@ -36,7 +36,7 @@ function GlobalStyle(props) {
 
           --button-fill: var(--primary-100);
           --button-border: var(--primary-300);
-          --button-hover: #fcfcfd;
+          --button-hover: #f8fafc;
           --button-arrow-hover: var(--accent-400);
           --button-shadow: 0px 1px 0px 0px rgba(0, 39, 78, 0.04);
 

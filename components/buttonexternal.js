@@ -34,6 +34,8 @@ const ButtonExternal = props => (
         background-color: var(--button-fill);
         border: 1px solid var(--button-border);
         box-shadow: var(--button-shadow);
+
+        transition: 300ms ease-in-out;
       }
 
       .button:hover {
@@ -42,6 +44,9 @@ const ButtonExternal = props => (
         background-color: var(--button-hover);
       }
 
+      .button > svg > path {
+        transition: 300ms ease-in-out;
+      }
       .button:hover > svg > path {
         fill: var(--button-arrow-hover);
       }
