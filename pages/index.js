@@ -10,8 +10,6 @@ import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
 import { getSortedPosts } from "../lib/posts"
 
-import Tool from "@/components/tool"
-
 const IndexPage = ({ posts }) => {
   return (
     <Layout>

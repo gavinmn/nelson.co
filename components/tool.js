@@ -21,11 +21,13 @@ const Tool = props => (
           flex-direction: row;
           align-items: center;
           padding: 1rem;
+          margin: 2rem -1rem;
           border-radius: 4px;
         }
         @media only screen and (min-width: 768px) {
           .container {
             padding: 0.5rem;
+            margin: 1rem -0.5rem;
           }
         }
 

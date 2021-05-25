@@ -18,6 +18,8 @@ import Break from "@/components/break"
 import ZContainer from "@/components/posts/zcontainer"
 import Cube from "@/components/posts/cube"
 
+import Tool from "@/components/tool"
+
 const components = {
   a: CustomLink,
   h4: Caption,
@@ -28,6 +30,7 @@ const components = {
   ZContainer,
   Ztext,
   Cube,
+  Tool,
 }
 
 export default function Posts({ source, frontMatter }) {
