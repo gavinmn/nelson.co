@@ -5,54 +5,6 @@ import Layout from "@/components/layout"
 const PostWrapper = props => {
   return (
     <Layout>
-      <style jsx>{`
-        .wrapper-large {
-          max-width: 656px;
-          padding: 0 5% 0 5%;
-          margin: 0 auto;
-        }
-
-        .wrapper-small {
-          max-width: 496px;
-          padding: 0;
-          margin: 0 auto;
-        }
-
-        .container {
-          margin: 8rem 0 0rem 0;
-        }
-        .feedback {
-          margin-top: 4rem;
-          padding: 0.5rem 1rem;
-          background-color: var(--primary-200);
-          border-radius: 8px;
-        }
-
-        .feedback-title {
-          margin-top: 0;
-        }
-
-        .email,
-        .twitter {
-          color: var(--text-accent);
-          background-image: none;
-          text-shadow: none;
-        }
-
-        .email:hover {
-          color: var(--text-primary);
-        }
-
-        .twitter:hover {
-          color: #1da1f2;
-        }
-
-        @media ${device.desktop} {
-          .container {
-            margin: 4rem 0 0rem 0;
-          }
-        }
-      `}</style>
       <SEO title={props.title} og={props.og} description={props.description} />
       <div className="wrapper-large">
         <div className="container">
@@ -86,6 +38,54 @@ const PostWrapper = props => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .wrapper-large {
+          max-width: 656px;
+          padding: 0 5% 0 5%;
+          margin: 0 auto;
+        }
+
+        .wrapper-small {
+          max-width: 496px;
+          padding: 0;
+          margin: 0 auto;
+        }
+
+        .container {
+          margin: 8rem 0 0rem 0;
+        }
+        .feedback {
+          margin-top: 4rem;
+          padding: 0.5rem 1rem;
+          background-color: var(--primary-200);
+          border-radius: 4px;
+        }
+
+        .feedback-title {
+          margin-top: 0;
+        }
+
+        .email,
+        .twitter {
+          color: var(--text-accent);
+          background-image: none;
+          text-shadow: none;
+        }
+
+        .email:hover {
+          color: var(--text-primary);
+        }
+
+        .twitter:hover {
+          color: #1da1f2;
+        }
+
+        @media ${device.desktop} {
+          .container {
+            margin: 4rem 0 0rem 0;
+          }
+        }
+      `}</style>
     </Layout>
   )
 }
