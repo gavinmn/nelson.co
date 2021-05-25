@@ -10,6 +10,8 @@ import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
 import { getSortedPosts } from "../lib/posts"
 
+import Tool from "@/components/tool"
+
 const IndexPage = ({ posts }) => {
   return (
     <Layout>
@@ -23,6 +25,7 @@ const IndexPage = ({ posts }) => {
           <h1 className="anchor"></h1>
         </a>
 
+        <Tool />
         <SectionHeader section="Posts" />
 
         <div className="post-grid">
