@@ -19,7 +19,7 @@ const Tool = props => (
         .container {
           display: flex;
           flex-direction: row;
-          align-items: center;
+          align-items: flex-start;
           padding: 1rem;
           margin: 2rem -1rem;
           border-radius: 4px;
@@ -28,6 +28,7 @@ const Tool = props => (
           .container {
             padding: 0.5rem;
             margin: 1rem -0.5rem;
+            align-items: center;
           }
         }
 
@@ -35,10 +36,15 @@ const Tool = props => (
           background-color: var(--button-hover);
         }
         .icon {
-          margin-right: 0.5rem;
+          margin-right: 1rem;
           border-radius: 4px;
           overflow: hidden;
           flex-shrink: 0;
+        }
+        @media only screen and (min-width: 768px) {
+          .icon {
+            margin-right: 0.5rem;
+          }
         }
 
         .name {
