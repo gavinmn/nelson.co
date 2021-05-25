@@ -1,20 +1,26 @@
 import Link from "next/link"
+import Image from "next/image"
 
-const Tool = () => (
-  <Link href="/">
+const Tool = props => (
+  <Link href={props.link} passHref>
     <a className="container">
-      <div className="icon"></div>
+      <div className="icon">
+        <Image
+          src={`/images/tools/${props.image}`}
+          width="80px"
+          height="80px"
+        ></Image>
+      </div>
       <div className="text-container">
-        <p className="name">App Name</p>
-        <p className="description">
-          Description of what I use it for and maybe why I like it.
-        </p>
+        <p className="name">{props.name}</p>
+        <p className="description">{props.description}</p>
       </div>
       <style jsx>{`
         .container {
           display: flex;
           flex-direction: row;
           align-items: center;
+          padding: 1rem;
           border-radius: 4px;
         }
         @media only screen and (min-width: 768px) {
@@ -26,13 +32,11 @@ const Tool = () => (
         .container:hover {
           background-color: var(--button-hover);
         }
-
         .icon {
-          height: 96px;
-          width: 96px;
           margin-right: 0.5rem;
           border-radius: 4px;
-          background-color: var(--primary-200);
+          overflow: hidden;
+          flex-shrink: 0;
         }
 
         .name {

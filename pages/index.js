@@ -25,7 +25,6 @@ const IndexPage = ({ posts }) => {
           <h1 className="anchor"></h1>
         </a>
 
-        <Tool />
         <SectionHeader section="Posts" />
 
         <div className="post-grid">
