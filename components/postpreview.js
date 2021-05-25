@@ -10,7 +10,7 @@ const PostPreview = props => (
           display: flex;
           flex-direction: column;
           padding: 1rem;
-
+          border-radius: 4px;
           transition: background-color 250ms ease-in-out;
         }
 
@@ -22,7 +22,6 @@ const PostPreview = props => (
 
         .container:hover {
           background-color: var(--button-hover);
-          border-radius: 4px;
         }
 
         .title {
