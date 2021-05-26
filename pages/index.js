@@ -15,6 +15,11 @@ import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
 const IndexPage = ({ posts }) => {
+  const orderedPosts = posts.sort(
+    (a, b) =>
+      Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
+  )
+  console.log(orderedPosts)
   return (
     <Layout>
       <SEO />
@@ -30,7 +35,7 @@ const IndexPage = ({ posts }) => {
         <SectionHeader section="Posts" />
 
         <div className="post-grid">
-          {posts.map((post, key) => {
+          {orderedPosts.map((post, key) => {
             return (
               <PostPreview
                 key={key}
@@ -252,10 +257,9 @@ export default IndexPage
 export function getStaticProps() {
   const posts = postFilePaths.map(filePath => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
-    const { content, data } = matter(source)
+    const { data } = matter(source)
 
     return {
-      content,
       data,
       filePath,
     }
