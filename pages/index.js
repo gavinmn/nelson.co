@@ -8,9 +8,18 @@ import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
-import { getSortedPosts } from "../lib/posts"
+
+import fs from "fs"
+import matter from "gray-matter"
+import path from "path"
+import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
 const IndexPage = ({ posts }) => {
+  const orderedPosts = posts.sort(
+    (a, b) =>
+      Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
+  )
+
   return (
     <Layout>
       <SEO />
@@ -26,14 +35,16 @@ const IndexPage = ({ posts }) => {
         <SectionHeader section="Posts" />
 
         <div className="post-grid">
-          {posts.map(({ frontmatter: { data }, slug }, key) => (
-            <PostPreview
-              key={key}
-              title={data.title}
-              date={data.date}
-              href={slug}
-            />
-          ))}
+          {orderedPosts.map((post, key) => {
+            return (
+              <PostPreview
+                key={key}
+                title={post.data.title}
+                date={post.data.date}
+                href={`${post.filePath.replace(/\.mdx?$/, "")}`}
+              />
+            )
+          })}
         </div>
 
         <SectionHeader section="Projects" />
@@ -243,11 +254,16 @@ const IndexPage = ({ posts }) => {
 
 export default IndexPage
 
-export async function getStaticProps() {
-  const posts = getSortedPosts()
-  return {
-    props: {
-      posts,
-    },
-  }
+export function getStaticProps() {
+  const posts = postFilePaths.map(filePath => {
+    const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
+    const { data } = matter(source)
+
+    return {
+      data,
+      filePath,
+    }
+  })
+
+  return { props: { posts } }
 }

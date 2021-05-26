@@ -7,14 +7,6 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/soehne-web-buch-kursiv.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-
-          <link
-            rel="preload"
             href="/fonts/soehne-web-buch.woff2"
             as="font"
             type="font/woff2"
