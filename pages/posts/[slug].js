@@ -77,7 +77,6 @@ export const getStaticPaths = async () => {
     .map(path => path.replace(/\.mdx?$/, ""))
     // Map the path into the static paths object required by Next.js
     .map(slug => ({ params: { slug } }))
-    .sort((post1, post2) => (post1.date > post2.date ? 1 : -1))
 
   return {
     paths,

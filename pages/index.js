@@ -19,7 +19,7 @@ const IndexPage = ({ posts }) => {
     (a, b) =>
       Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
   )
-  console.log(orderedPosts)
+
   return (
     <Layout>
       <SEO />
