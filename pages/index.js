@@ -8,7 +8,7 @@ import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
-import { getAllPosts } from "../lib/posts"
+import { getSortedPosts } from "../lib/posts"
 
 const IndexPage = ({ posts }) => {
   return (
@@ -26,16 +26,14 @@ const IndexPage = ({ posts }) => {
         <SectionHeader section="Posts" />
 
         <div className="post-grid">
-          {posts.map((post, key) => {
-            return (
-              <PostPreview
-                key={key}
-                title={post.title}
-                date={post.date}
-                href={post.slug}
-              />
-            )
-          })}
+          {posts.map(({ frontmatter: { data }, slug }, key) => (
+            <PostPreview
+              key={key}
+              title={data.title}
+              date={data.date}
+              href={slug}
+            />
+          ))}
         </div>
 
         <SectionHeader section="Projects" />
@@ -246,16 +244,10 @@ const IndexPage = ({ posts }) => {
 export default IndexPage
 
 export async function getStaticProps() {
-  const posts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ])
-
+  const posts = getSortedPosts()
   return {
-    props: { posts },
+    props: {
+      posts,
+    },
   }
 }

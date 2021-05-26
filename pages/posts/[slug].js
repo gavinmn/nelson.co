@@ -3,9 +3,7 @@ import matter from "gray-matter"
 import { serialize } from "next-mdx-remote/serialize"
 
 import { MDXRemote } from "next-mdx-remote"
-
-import { getPostBySlug, getAllPosts } from "../../lib/posts"
-
+import { getAllPostSlugs, getPostdata } from "../../lib/posts"
 import PostWrapper from "@/components/postwrapper"
 
 import Image from "next/image"
@@ -48,14 +46,14 @@ export default function Posts({ source, frontMatter }) {
   )
 }
 export async function getStaticPaths() {
-  const paths = getPostBySlug()
+  const paths = getAllPostSlugs()
   return {
     paths,
     fallback: false,
   }
 }
 export async function getStaticProps({ params }) {
-  const postContent = await getAllPosts(params.slug)
+  const postContent = await getPostdata(params.slug)
   const { data, content } = matter(postContent)
 
   const mdxSource = await serialize(content)
