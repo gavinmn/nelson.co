@@ -12,7 +12,10 @@ const Tool = props => (
         ></Image>
       </div>
       <div className="text-container">
-        <p className="name">{props.name}</p>
+        <div className="title-container">
+          <p className="name">{props.name}</p>
+          <p className="arrow">→</p>
+        </div>
         <p className="description">{props.description}</p>
       </div>
       <style jsx>{`
@@ -20,8 +23,8 @@ const Tool = props => (
           display: flex;
           flex-direction: row;
           align-items: flex-start;
-          padding: 1rem;
-          margin: 2rem -1rem;
+          padding: 1rem 0;
+
           border-radius: 4px;
           transition: background-color 150ms ease-in-out;
         }
@@ -33,17 +36,41 @@ const Tool = props => (
           }
         }
 
-        .container:hover {
-          background-color: var(--button-hover);
-        }
         .icon {
           margin-right: 1rem;
           overflow: hidden;
           flex-shrink: 0;
         }
+
+        .title-container {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .arrow {
+          font-size: var(--body);
+          font-weight: bold;
+          color: var(--accent-100);
+          margin-left: 0.25rem;
+          opacity: 0;
+          transition-duration: 0.3s;
+        }
+
+        .container:hover > div > div > .arrow {
+          opacity: 1;
+          margin-left: 0.5rem;
+        }
+
         @media only screen and (min-width: 768px) {
           .icon {
             margin-right: 0.75rem;
+          }
+
+          .arrow {
+            margin-left: 0.125rem;
+          }
+          .container:hover > div > div > .arrow {
+            margin-left: 0.25rem;
           }
         }
 
