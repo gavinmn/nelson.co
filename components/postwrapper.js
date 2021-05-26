@@ -5,7 +5,7 @@ import Layout from "@/components/layout"
 const PostWrapper = props => {
   return (
     <Layout>
-      <SEO title={props.title} og={props.og} description={props.description} />
+      <SEO title={props.title} og={props.og} description={props.subtitle} />
       <div className="wrapper-large">
         <div className="container">
           <div className="wrapper-small">
