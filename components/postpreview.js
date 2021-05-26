@@ -11,7 +11,7 @@ const PostPreview = props => (
           flex-direction: column;
           padding: 1rem;
           border-radius: 4px;
-          transition: background-color 250ms ease-in-out;
+          transition: background-color 150ms ease-in-out;
         }
 
         @media only screen and (min-width: 768px) {

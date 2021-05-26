@@ -23,6 +23,7 @@ const Tool = props => (
           padding: 1rem;
           margin: 2rem -1rem;
           border-radius: 4px;
+          transition: background-color 150ms ease-in-out;
         }
         @media only screen and (min-width: 768px) {
           .container {
@@ -37,13 +38,12 @@ const Tool = props => (
         }
         .icon {
           margin-right: 1rem;
-          border-radius: 4px;
           overflow: hidden;
           flex-shrink: 0;
         }
         @media only screen and (min-width: 768px) {
           .icon {
-            margin-right: 0.5rem;
+            margin-right: 0.75rem;
           }
         }
 
