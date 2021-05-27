@@ -46,7 +46,7 @@ const PostWrapper = props => {
         }
 
         .wrapper-small {
-          max-width: 496px;
+          max-width: 576px;
           padding: 0;
           margin: 0 auto;
         }

@@ -24,7 +24,7 @@ const Hero = props => {
         }
 
         .hero-text > p {
-          font-size: var(--large);
+          font-size: var(--body);
         }
 
         .link-container {
