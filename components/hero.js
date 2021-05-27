@@ -49,9 +49,11 @@ const Hero = props => {
         }
         .dribbble:hover {
           color: #ea4c89;
+          background-color: rgba(234, 76, 137, 0.1);
         }
         .twitter:hover {
           color: #1da1f2;
+          background-color: rgba(29, 161, 242, 0.1);
         }
         .github:hover {
           color: var(--github-text);

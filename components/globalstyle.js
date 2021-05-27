@@ -32,6 +32,7 @@ function GlobalStyle(props) {
 
           --text-primary: rgba(31, 46, 66, 1);
           --text-accent: var(--accent-300);
+          --text-accent-bg: rgba(74, 111, 156, 0.1);
 
           --button-fill: var(--primary-100);
           --button-border: var(--primary-300);
@@ -62,6 +63,7 @@ function GlobalStyle(props) {
 
             --text-primary: rgba(255, 255, 255, 1);
             --text-accent: var(--accent-400);
+            --text-accent-bg: rgba(118, 144, 178, 0.25);
 
             --button-fill: #222e3f;
             --button-border: #2b3a4f;
