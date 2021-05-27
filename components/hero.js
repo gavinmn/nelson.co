@@ -43,10 +43,9 @@ const Hero = props => {
           text-shadow: none;
           color: var(--text-accent);
           font-size: var(--small);
+          transition: all 200ms ease-in-out;
         }
-        .email:hover {
-          color: var(--text-primary);
-        }
+
         .dribbble:hover {
           color: #ea4c89;
           background-color: rgba(234, 76, 137, 0.1);
@@ -57,6 +56,7 @@ const Hero = props => {
         }
         .github:hover {
           color: var(--github-text);
+          background-color: rgba(36, 41, 46, 0.1);
         }
 
         @media only screen and (min-width: 445px) {

@@ -43,13 +43,11 @@ a {
   color: var(--text-accent);
   text-decoration: none;
   font-weight: normal;
-  transition: background-color 150ms ease-in-out;
-  transition: color 150ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 a:hover {
   background-color: var(--text-accent-bg);
-  color: var(--text-primary);
   cursor: pointer;
   text-decoration: none;
 }

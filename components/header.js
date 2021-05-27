@@ -64,7 +64,7 @@ const Header = () => {
         .about-link:hover,
         .work-link:hover {
           cursor: pointer;
-          color: var(--text-primary);
+
           text-decoration: none;
         }
 
