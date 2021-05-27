@@ -28,10 +28,13 @@ const Tool = props => (
         flex-direction: row;
         align-items: flex-start;
         padding: 1rem 0;
-
         border-radius: 4px;
-        transition: background-color 150ms ease-in-out;
       }
+
+      .container:hover {
+        background-color: transparent;
+      }
+
       @media only screen and (min-width: 768px) {
         .container {
           padding: 0.5rem;
