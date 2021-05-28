@@ -23,8 +23,8 @@ const Highlights = ({ highlights, books }) => {
               }
               return (
                 <>
-                  <a href={url}>
-                    <h2 className="title">{title}</h2>
+                  <a href={url} className="title">
+                    {title}
                   </a>
                   <p className="author">{author}</p>
                 </>
@@ -48,6 +48,11 @@ const Highlights = ({ highlights, books }) => {
 
         .container {
           margin: 8rem 0 0rem 0;
+        }
+
+        .title {
+          display: inline-block;
+          font-size: var(--h3);
         }
 
         .author {
