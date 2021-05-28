@@ -27,11 +27,12 @@ function GlobalStyle(props) {
 
           --accent-100: rgba(144, 164, 187, 1);
           --accent-200: rgba(108, 137, 172, 1);
-          --accent-300: rgba(74, 111, 156, 1);
+          --accent-300: rgba(17, 82, 159, 1);
           --accent-400: rgba(31, 46, 66, 1);
 
           --text-primary: rgba(31, 46, 66, 1);
           --text-accent: var(--accent-300);
+          --text-accent-bg: rgba(0, 90, 201, 0.1);
 
           --button-fill: var(--primary-100);
           --button-border: var(--primary-300);
@@ -58,10 +59,11 @@ function GlobalStyle(props) {
             --accent-100: rgba(81, 117, 164, 1);
             --accent-200: rgba(101, 133, 174, 1);
             --accent-300: rgba(118, 144, 178, 1);
-            --accent-400: rgba(139, 162, 193, 1);
+            --accent-400: rgba(147, 181, 227, 1);
 
             --text-primary: rgba(255, 255, 255, 1);
             --text-accent: var(--accent-400);
+            --text-accent-bg: rgba(61, 133, 228, 0.2);
 
             --button-fill: #222e3f;
             --button-border: #2b3a4f;

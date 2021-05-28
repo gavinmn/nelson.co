@@ -47,9 +47,6 @@ const ButtonExternal = props => (
       .button > svg > path {
         transition: 300ms ease-in-out;
       }
-      .button:hover > svg > path {
-        fill: var(--button-arrow-hover);
-      }
 
       .arrow {
         font-size: 20px;
