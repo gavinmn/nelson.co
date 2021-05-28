@@ -11,8 +11,24 @@ const Highlights = ({ highlights, books }) => {
       <div className="wrapper-large">
         <div className="container">
           <div className="wrapper-small">
-            {highlights.results.map((item, highlight) => {
-              return <p>{highlights.results[highlight].text}</p>
+            {books.results.map((item, book) => {
+              const title = books.results[book].title
+              const author = books.results[book].author
+              const bookID = books.results[book].id
+              var url = ""
+              if (books.results[book].source_url != null) {
+                url = books.results[book].source_url
+              } else {
+                url = ""
+              }
+              return (
+                <>
+                  <a href={url}>
+                    <h2 className="title">{title}</h2>
+                  </a>
+                  <p className="author">{author}</p>
+                </>
+              )
             })}
           </div>
         </div>
@@ -32,6 +48,10 @@ const Highlights = ({ highlights, books }) => {
 
         .container {
           margin: 8rem 0 0rem 0;
+        }
+
+        .author {
+          font-size: var(--small);
         }
 
         @media ${device.desktop} {
