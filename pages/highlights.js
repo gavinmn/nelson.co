@@ -3,8 +3,6 @@ import SEO from "@/components/seo"
 import { device } from "@/components/device"
 
 const Highlights = ({ highlights, books }) => {
-  console.log(highlights)
-  console.log(books)
   return (
     <Layout>
       <SEO />
@@ -15,23 +13,38 @@ const Highlights = ({ highlights, books }) => {
               const title = books.results[book].title
               const author = books.results[book].author
               const bookID = books.results[book].id
+              {
+                /* track number of highlights from one book */
+              }
+              var highlightNum = []
+
               var url = ""
               if (books.results[book].source_url != null) {
                 url = books.results[book].source_url
 
                 return (
                   <>
+                    <a href={url} className="title">
+                      {title}
+                    </a>
+                    <p className="author">{author}</p>
                     {highlights.results.map((item, highlight) => {
                       const highlightSource =
                         highlights.results[highlight].book_id
                       const highlightText = highlights.results[highlight].text
-                      if (highlightSource == bookID) {
+                      if (
+                        highlightSource == bookID &&
+                        highlightNum.length <= 1
+                      ) {
+                        {
+                          /* when we add a highlight we add the id to our array and only return data if the array is < 2 books*/
+                        }
+
+                        highlightNum.push(bookID)
+                        console.log(highlightNum)
+
                         return (
                           <>
-                            <a href={url} className="title">
-                              {title}
-                            </a>
-                            <p className="author">{author}</p>
                             <p className="highlight">{highlightText}</p>
                           </>
                         )
@@ -45,15 +58,24 @@ const Highlights = ({ highlights, books }) => {
                 url = ""
                 return (
                   <>
+                    <p className="title">{title}</p>
+                    <p className="author">{author}</p>
                     {highlights.results.map((item, highlight) => {
                       const highlightSource =
                         highlights.results[highlight].book_id
                       const highlightText = highlights.results[highlight].text
-                      if (highlightSource == bookID) {
+                      if (
+                        highlightSource == bookID &&
+                        highlightNum.length <= 1
+                      ) {
+                        {
+                          /* when we add a highlight we add the id to our array and only return data if the array is < 2 books*/
+                        }
+
+                        highlightNum.push(bookID)
+
                         return (
                           <>
-                            <p className="title">{title}</p>
-                            <p className="author">{author}</p>
                             <p className="highlight">{highlightText}</p>
                           </>
                         )
@@ -86,10 +108,10 @@ const Highlights = ({ highlights, books }) => {
         .title {
           display: inline-block;
           font-size: var(--h3);
+          font-weight: bold;
         }
 
         .author {
-          font-size: var(--small);
           color: var(--accent-100);
           margin-bottom: 0.25rem;
         }
