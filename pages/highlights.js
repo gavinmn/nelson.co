@@ -18,31 +18,50 @@ const Highlights = ({ highlights, books }) => {
               var url = ""
               if (books.results[book].source_url != null) {
                 url = books.results[book].source_url
+
+                return (
+                  <>
+                    {highlights.results.map((item, highlight) => {
+                      const highlightSource =
+                        highlights.results[highlight].book_id
+                      const highlightText = highlights.results[highlight].text
+                      if (highlightSource == bookID) {
+                        return (
+                          <>
+                            <a href={url} className="title">
+                              {title}
+                            </a>
+                            <p className="author">{author}</p>
+                            <p className="highlight">{highlightText}</p>
+                          </>
+                        )
+                      } else {
+                        return
+                      }
+                    })}
+                  </>
+                )
               } else {
                 url = ""
+                return (
+                  <>
+                    {highlights.results.map((item, highlight) => {
+                      const highlightSource =
+                        highlights.results[highlight].book_id
+                      const highlightText = highlights.results[highlight].text
+                      if (highlightSource == bookID) {
+                        return (
+                          <>
+                            <p className="title">{title}</p>
+                            <p className="author">{author}</p>
+                            <p className="highlight">{highlightText}</p>
+                          </>
+                        )
+                      }
+                    })}
+                  </>
+                )
               }
-              return (
-                <>
-                  {highlights.results.map((item, highlight) => {
-                    const highlightSource =
-                      highlights.results[highlight].book_id
-                    const highlightText = highlights.results[highlight].text
-                    if (highlightSource == bookID) {
-                      return (
-                        <>
-                          <a href={url} className="title">
-                            {title}
-                          </a>
-                          <p className="author">{author}</p>
-                          <p>{highlightText}</p>
-                        </>
-                      )
-                    } else {
-                      return
-                    }
-                  })}
-                </>
-              )
             })}
           </div>
         </div>
@@ -71,6 +90,12 @@ const Highlights = ({ highlights, books }) => {
 
         .author {
           font-size: var(--small);
+          color: var(--accent-100);
+          margin-bottom: 0.25rem;
+        }
+
+        .highlight {
+          margin-bottom: 1rem;
         }
 
         @media ${device.desktop} {
