@@ -59,6 +59,12 @@ const Hero = props => {
           background-color: rgba(36, 41, 46, 0.1);
         }
 
+        @media (prefers-color-scheme: dark) {
+          .github:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+
         @media only screen and (min-width: 445px) {
           .link-container {
             justify-content: start;
