@@ -29,6 +29,9 @@ const Highlights = ({ highlights, books }) => {
                         highlights.results[highlight].book_id
                       const highlightText = highlights.results[highlight].text
 
+                      const highlightTime =
+                        highlights.results[highlight].highlighted_at
+
                       if (highlightSource == bookID && numHighlights < 3) {
                         numHighlights++
                         return (
@@ -74,7 +77,7 @@ const Highlights = ({ highlights, books }) => {
         }
 
         .highlight {
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
         }
 
         @media ${device.desktop} {
