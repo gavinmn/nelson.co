@@ -3,6 +3,8 @@ import SEO from "@/components/seo"
 import { device } from "@/components/device"
 
 const Highlights = ({ highlights, books }) => {
+  // console.log(books)
+  // console.log(highlights)
   return (
     <Layout>
       <SEO />
@@ -10,52 +12,14 @@ const Highlights = ({ highlights, books }) => {
         <div className="container">
           <div className="wrapper-small">
             {books.results.map((item, book) => {
+              const category = books.results[book].category
               const title = books.results[book].title
               const author = books.results[book].author
               const bookID = books.results[book].id
-              {
-                /* track number of highlights from one book */
-              }
-              var highlightNum = []
 
-              var url = ""
-              if (books.results[book].source_url != null) {
-                url = books.results[book].source_url
+              var numHighlights = 0
 
-                return (
-                  <>
-                    <a href={url} className="title">
-                      {title}
-                    </a>
-                    <p className="author">{author}</p>
-                    {highlights.results.map((item, highlight) => {
-                      const highlightSource =
-                        highlights.results[highlight].book_id
-                      const highlightText = highlights.results[highlight].text
-                      if (
-                        highlightSource == bookID &&
-                        highlightNum.length <= 1
-                      ) {
-                        {
-                          /* when we add a highlight we add the id to our array and only return data if the array is < 2 books*/
-                        }
-
-                        highlightNum.push(bookID)
-                        console.log(highlightNum)
-
-                        return (
-                          <>
-                            <p className="highlight">{highlightText}</p>
-                          </>
-                        )
-                      } else {
-                        return
-                      }
-                    })}
-                  </>
-                )
-              } else {
-                url = ""
+              if (category != "tweets") {
                 return (
                   <>
                     <p className="title">{title}</p>
@@ -64,16 +28,9 @@ const Highlights = ({ highlights, books }) => {
                       const highlightSource =
                         highlights.results[highlight].book_id
                       const highlightText = highlights.results[highlight].text
-                      if (
-                        highlightSource == bookID &&
-                        highlightNum.length <= 1
-                      ) {
-                        {
-                          /* when we add a highlight we add the id to our array and only return data if the array is < 2 books*/
-                        }
 
-                        highlightNum.push(bookID)
-
+                      if (highlightSource == bookID && numHighlights < 3) {
+                        numHighlights++
                         return (
                           <>
                             <p className="highlight">{highlightText}</p>
@@ -138,7 +95,7 @@ export async function getStaticProps() {
   }
 
   const highlightsResponse = await fetch(
-    `https://readwise.io/api/v2/highlights/`,
+    `https://readwise.io/api/v2/highlights/?page_size=1000`,
     headers
   )
   const highlights = await highlightsResponse.json()
