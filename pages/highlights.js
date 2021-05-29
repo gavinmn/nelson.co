@@ -55,7 +55,7 @@ const Highlights = ({ highlights, books }) => {
 
                         const dateStamp = `${
                           monthNames[date.getMonth()]
-                        } ${date.getDay()}, ${date.getFullYear()}`
+                        } ${date.getDate()}, ${date.getFullYear()}`
 
                         return (
                           <>
