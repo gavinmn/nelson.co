@@ -5,6 +5,22 @@ import { device } from "@/components/device"
 const Highlights = ({ highlights, books }) => {
   // console.log(books)
   // console.log(highlights)
+
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+
   return (
     <Layout>
       <SEO />
@@ -34,9 +50,17 @@ const Highlights = ({ highlights, books }) => {
 
                       if (highlightSource == bookID && numHighlights < 3) {
                         numHighlights++
+
+                        const date = new Date(highlightTime)
+
+                        const dateStamp = `${
+                          monthNames[date.getMonth()]
+                        } ${date.getDay()}, ${date.getFullYear()}`
+
                         return (
                           <>
                             <p className="highlight">{highlightText}</p>
+                            <p className="date">{dateStamp}</p>
                           </>
                         )
                       }
@@ -77,6 +101,11 @@ const Highlights = ({ highlights, books }) => {
         }
 
         .highlight {
+        }
+
+        .date {
+          font-size: var(--small);
+          color: var(--accent-100);
           margin-bottom: 1.5rem;
         }
 
