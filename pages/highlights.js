@@ -5,8 +5,8 @@ import SEO from "@/components/seo"
 import { device } from "@/components/device"
 
 const Highlights = ({ highlights, books }) => {
-  console.log(books)
-  console.log(highlights)
+  // console.log(books)
+  // console.log(highlights)
 
   const monthNames = [
     "January",
@@ -30,70 +30,62 @@ const Highlights = ({ highlights, books }) => {
         <div className="container">
           <div className="wrapper-small">
             {books.results.map((item, book) => {
-              const category = books.results[book].category
               const title = books.results[book].title
               const author = books.results[book].author
               const bookID = books.results[book].id
               const sourceLink = books.results[book].source_url
+              const highlightTime = books.results[book].last_highlight_at
+
+              const date = new Date(highlightTime)
+
+              const dateStamp = `${
+                monthNames[date.getMonth()]
+              } ${date.getDate()}, ${date.getFullYear()}`
 
               var numHighlights = 0
               var firstHighlight = true
 
               return (
                 <>
-                  <div className="source-container">
-                    <a className="title" href={sourceLink}>
-                      {title}
-                    </a>
-                    <p className="author">{author}</p>
+                  <div className="collapse-container">
+                    <div className="line" />
 
-                    {highlights.results.map((item, highlight) => {
-                      const highlightSource =
-                        highlights.results[highlight].book_id
-                      const highlightText = highlights.results[highlight].text
+                    <div className="content-container">
+                      <div className="metadata">
+                        <a className="title" href={sourceLink}>
+                          {title}
+                        </a>
+                        <p className="author">{author}</p>
+                        <p className="date">{dateStamp}</p>
+                      </div>
 
-                      const highlightTime =
-                        highlights.results[highlight].highlighted_at
+                      <div className="source-container">
+                        {highlights.results.map((item, highlight) => {
+                          const highlightSource =
+                            highlights.results[highlight].book_id
+                          const highlightText =
+                            highlights.results[highlight].text
 
-                      if (highlightSource == bookID && numHighlights < 8) {
-                        numHighlights++
+                          if (highlightSource == bookID && numHighlights < 8) {
+                            numHighlights++
 
-                        if (numHighlights > 1) {
-                          firstHighlight = false
-                        }
+                            if (numHighlights > 1) {
+                              firstHighlight = false
+                            }
 
-                        const date = new Date(highlightTime)
+                            return (
+                              <>
+                                <Link href={`#`}>
+                                  <></>
+                                </Link>
 
-                        const dateStamp = `${
-                          monthNames[date.getMonth()]
-                        } ${date.getDate()}, ${date.getFullYear()}`
-
-                        return (
-                          <>
-                            <Link href={`#`}>
-                              <></>
-                            </Link>
-                            <a
-                              className={`${
-                                firstHighlight ? "title hidden" : "title"
-                              }`}
-                              href={sourceLink}
-                            >
-                              {title}
-                            </a>
-                            <p
-                              className={`${
-                                firstHighlight ? "author hidden" : "author"
-                              }`}
-                            >
-                              {author}
-                            </p>
-                            <p className="highlight">{highlightText}</p>
-                            <p className="date">{dateStamp}</p>
-                          </>
-                        )
-                      }
-                    })}
+                                <p className="highlight">{highlightText}</p>
+                              </>
+                            )
+                          }
+                        })}
+                      </div>
+                    </div>
                   </div>
                 </>
               )
@@ -118,14 +110,28 @@ const Highlights = ({ highlights, books }) => {
           margin: 8rem 0 0rem 0;
         }
 
+        .collapse-container {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 1rem;
+        }
+
+        .metadata {
+          display: flex;
+          flex-direction: column;
+        }
+
         .source-container {
+          display: flex;
+          flex-direction: column;
         }
 
         .line {
           background-color: var(--primary-200);
           width: 2px;
           align-self: stretch;
-          margin-top: -1.5rem;
+          margin-right: 0.5rem;
+          flex-shrink: 0;
         }
 
         .title {
@@ -136,7 +142,12 @@ const Highlights = ({ highlights, books }) => {
 
         .author {
           color: var(--accent-100);
-          margin-bottom: 0.25rem;
+        }
+
+        .date {
+          font-size: var(--small);
+          color: var(--accent-100);
+          margin-bottom: 0.5rem;
         }
 
         .title.hidden,
@@ -145,11 +156,6 @@ const Highlights = ({ highlights, books }) => {
         }
 
         .highlight {
-        }
-
-        .date {
-          font-size: var(--small);
-          color: var(--accent-100);
           margin-bottom: 1.5rem;
         }
 
