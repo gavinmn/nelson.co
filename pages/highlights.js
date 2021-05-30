@@ -1,14 +1,10 @@
-import Link from "next/link"
-
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import { device } from "@/components/device"
 
 import ReadwiseMetadata from "@/components/readwiseMetadata.js"
-import ReadwiseHighlight from "@/components/readwiseHighlight.js"
 
 const Highlights = ({ books, highlights }) => {
-  console.log(highlights)
   return (
     <Layout>
       <SEO />
@@ -20,22 +16,12 @@ const Highlights = ({ books, highlights }) => {
 
               return (
                 <>
-                  <ReadwiseMetadata book={bookItem}>
-                    {highlights.results.map((item, highlight) => {
-                      const highlightBookID =
-                        highlights.results[highlight].book_id
-                      const bookID = books.results[book].id
-
-                      if (highlightBookID == bookID) {
-                        const highlightItem = highlights.results[highlight]
-                        return (
-                          <ReadwiseHighlight
-                            highlight={highlightItem}
-                          ></ReadwiseHighlight>
-                        )
-                      }
-                    })}
-                  </ReadwiseMetadata>
+                  <ReadwiseMetadata
+                    key={book}
+                    item={item}
+                    book={bookItem}
+                    highlights={highlights}
+                  />
                 </>
               )
             })}

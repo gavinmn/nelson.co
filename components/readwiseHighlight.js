@@ -30,47 +30,7 @@ const ReadwiseHighlight = ({ highlight }) => {
       </svg>
 
       <p className="highlight">{text}</p>
-      <style jsx>{`
-        .highlight-container {
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          margin-left: -2rem;
-        }
-
-        .highlight-container:hover > .link-icon {
-          visibility: visible;
-        }
-
-        .highlight-container:last-of-type > p {
-          margin-bottom: 0;
-        }
-
-        .link-icon {
-          flex-shrink: 0;
-          margin-right: 1rem;
-          margin-top: 0.15rem;
-          visibility: hidden;
-        }
-
-        .link-icon:hover {
-          cursor: pointer;
-        }
-
-        .highlight {
-          margin-bottom: 1.5rem;
-        }
-
-        @media ${device.desktop} {
-          .highlight-container {
-            margin-left: -1rem;
-          }
-
-          .link-icon {
-            margin-right: 0.5rem;
-          }
-        }
-      `}</style>
+      <style jsx>{``}</style>
     </div>
   )
 }
