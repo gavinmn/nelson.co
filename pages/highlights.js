@@ -44,7 +44,6 @@ const Highlights = ({ highlights, books }) => {
               } ${date.getDate()}, ${date.getFullYear()}`
 
               var numHighlights = 0
-              var firstHighlight = true
 
               return (
                 <>
@@ -52,13 +51,28 @@ const Highlights = ({ highlights, books }) => {
                     <div className="line" />
 
                     <div className="content-container">
-                      <div className="metadata">
-                        <a className="title" href={sourceLink}>
-                          {title}
-                        </a>
-                        <p className="author">{author}</p>
-                        <p className="date">{`Read ${dateStamp}`}</p>
-                        <p className="highlights-num">{`${highlightsNum} highlights`}</p>
+                      <div className="chevron-container">
+                        <svg
+                          className="chevron"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.1315 4H3.86852C3.06982 4 2.59343 4.89015 3.03647 5.5547L7.16795 11.7519C7.56377 12.3457 8.43623 12.3457 8.83205 11.7519L12.9635 5.5547C13.4066 4.89015 12.9302 4 12.1315 4Z"
+                            fill="var(--text-primary)"
+                          />
+                        </svg>
+                        <div className="metadata">
+                          <a className="title" href={sourceLink}>
+                            {title}
+                          </a>
+                          <p className="author">{author}</p>
+                          <p className="date">{`Read ${dateStamp}`}</p>
+                          <p className="highlights-num">{`${highlightsNum} highlights`}</p>
+                        </div>
                       </div>
 
                       <div className="source-container">
@@ -71,13 +85,12 @@ const Highlights = ({ highlights, books }) => {
                           if (highlightSource == bookID && numHighlights < 8) {
                             numHighlights++
 
-                            if (numHighlights > 1) {
-                              firstHighlight = false
-                            }
-
                             return (
                               <div className="highlight-container">
                                 <svg
+                                  onClick={() => {
+                                    console.log("test")
+                                  }}
                                   className="link-icon"
                                   width="16"
                                   height="16"
@@ -136,6 +149,26 @@ const Highlights = ({ highlights, books }) => {
           margin-bottom: 1rem;
         }
 
+        .chevron-container {
+          display: flex;
+          flex-direction: row;
+          margin-left: -1.56rem;
+        }
+
+        .chevron {
+          margin-right: 0.56rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+          .chevron-container {
+            margin-left: -1.28rem;
+          }
+
+          .chevron {
+            margin-right: 0.77rem;
+          }
+        }
+
         .metadata {
           display: flex;
           flex-direction: column;
@@ -190,6 +223,10 @@ const Highlights = ({ highlights, books }) => {
           margin-right: 0.52rem;
           margin-top: 0.15rem;
           visibility: hidden;
+        }
+
+        .link-icon:hover {
+          cursor: pointer;
         }
 
         .highlight {
