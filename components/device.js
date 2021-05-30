@@ -1,5 +1,5 @@
 const sizes = {
-  desktop: 722,
+  desktop: 768,
 }
 
 export const device = {
