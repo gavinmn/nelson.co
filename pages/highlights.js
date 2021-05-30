@@ -47,35 +47,35 @@ const Highlights = ({ highlights, books }) => {
 
               return (
                 <>
-                  <div className="collapse-container">
-                    <div className="line" />
+                  <div className="item-container">
+                    <div className="chevron-line-container">
+                      <svg
+                        className="chevron"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.1315 4H3.86852C3.06982 4 2.59343 4.89015 3.03647 5.5547L7.16795 11.7519C7.56377 12.3457 8.43623 12.3457 8.83205 11.7519L12.9635 5.5547C13.4066 4.89015 12.9302 4 12.1315 4Z"
+                          fill="var(--text-primary)"
+                        />
+                      </svg>
+                      <div className="line" />
+                    </div>
 
                     <div className="content-container">
-                      <div className="chevron-container">
-                        <svg
-                          className="chevron"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12.1315 4H3.86852C3.06982 4 2.59343 4.89015 3.03647 5.5547L7.16795 11.7519C7.56377 12.3457 8.43623 12.3457 8.83205 11.7519L12.9635 5.5547C13.4066 4.89015 12.9302 4 12.1315 4Z"
-                            fill="var(--text-primary)"
-                          />
-                        </svg>
-                        <div className="metadata">
-                          <a className="title" href={sourceLink}>
-                            {title}
-                          </a>
-                          <p className="author">{author}</p>
-                          <p className="date">{`Read ${dateStamp}`}</p>
-                          <p className="highlights-num">{`${highlightsNum} highlights`}</p>
-                        </div>
+                      <div className="metadata">
+                        <a className="title" href={sourceLink}>
+                          {title}
+                        </a>
+                        <p className="author">{author}</p>
+                        <p className="date">{`Read ${dateStamp}`}</p>
+                        <p className="highlights-num">{`${highlightsNum} highlights`}</p>
                       </div>
 
-                      <div className="source-container">
+                      <div className="highlights-container">
                         {highlights.results.map((item, highlight) => {
                           const highlightSource =
                             highlights.results[highlight].book_id
@@ -143,29 +143,25 @@ const Highlights = ({ highlights, books }) => {
           margin: 8rem 0 0rem 0;
         }
 
-        .collapse-container {
+        .item-container {
           display: flex;
           flex-direction: row;
           margin-bottom: 1rem;
         }
 
-        .chevron-container {
+        .chevron-line-container {
           display: flex;
-          flex-direction: row;
-          margin-left: -1.56rem;
-        }
-
-        .chevron {
-          margin-right: 0.56rem;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          flex-shrink: 0;
+          margin-right: 1rem;
+          padding-top: 0.25rem;
         }
 
         @media only screen and (min-width: 768px) {
-          .chevron-container {
-            margin-left: -1.28rem;
-          }
-
-          .chevron {
-            margin-right: 0.77rem;
+          .chevron-line-container {
+            margin-right: 0.5rem;
           }
         }
 
@@ -174,7 +170,7 @@ const Highlights = ({ highlights, books }) => {
           flex-direction: column;
         }
 
-        .source-container {
+        .highlights-container {
           display: flex;
           flex-direction: column;
         }
@@ -182,9 +178,7 @@ const Highlights = ({ highlights, books }) => {
         .line {
           background-color: var(--primary-200);
           width: 2px;
-          align-self: stretch;
-          margin-right: 1rem;
-          flex-shrink: 0;
+          height: 100%;
         }
 
         .title {
@@ -211,7 +205,7 @@ const Highlights = ({ highlights, books }) => {
           display: flex;
           flex-direction: row;
           align-items: flex-start;
-          margin-left: -1.53rem;
+          margin-left: -2rem;
         }
 
         .highlight-container:hover > .link-icon {
@@ -220,7 +214,7 @@ const Highlights = ({ highlights, books }) => {
 
         .link-icon {
           flex-shrink: 0;
-          margin-right: 0.52rem;
+          margin-right: 1rem;
           margin-top: 0.15rem;
           visibility: hidden;
         }
@@ -239,11 +233,11 @@ const Highlights = ({ highlights, books }) => {
           }
 
           .highlight-container {
-            margin-left: -1.26rem;
+            margin-left: -1rem;
           }
 
           .link-icon {
-            margin-right: 0.75rem;
+            margin-right: 0.5rem;
           }
         }
       `}</style>
