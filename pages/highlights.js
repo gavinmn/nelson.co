@@ -8,6 +8,7 @@ import ReadwiseMetadata from "@/components/readwiseMetadata.js"
 import ReadwiseHighlight from "@/components/readwiseHighlight.js"
 
 const Highlights = ({ books, highlights }) => {
+  console.log(highlights)
   return (
     <Layout>
       <SEO />
@@ -15,11 +16,28 @@ const Highlights = ({ books, highlights }) => {
         <div className="container">
           <div className="wrapper-small">
             {books.results.map((item, book) => {
-              const bookitem = books.results[book]
-              {
-                /* console.log(books.results[book]) */
-              }
-              return <ReadwiseMetadata book={bookitem}></ReadwiseMetadata>
+              const bookItem = books.results[book]
+
+              return (
+                <>
+                  <ReadwiseMetadata book={bookItem}>
+                    {highlights.results.map((item, highlight) => {
+                      const highlightBookID =
+                        highlights.results[highlight].book_id
+                      const bookID = books.results[book].id
+
+                      if (highlightBookID == bookID) {
+                        const highlightItem = highlights.results[highlight]
+                        return (
+                          <ReadwiseHighlight
+                            highlight={highlightItem}
+                          ></ReadwiseHighlight>
+                        )
+                      }
+                    })}
+                  </ReadwiseMetadata>
+                </>
+              )
             })}
           </div>
         </div>
@@ -41,8 +59,7 @@ const Highlights = ({ books, highlights }) => {
           margin: 8rem 0 0rem 0;
         }
 
-        
-
+      
         .highlights-container {
           display: flex;
           flex-direction: column;

@@ -1,4 +1,7 @@
-const ReadwiseHighlight = () => {
+import { device } from "@/components/device"
+
+const ReadwiseHighlight = ({ highlight }) => {
+  const text = highlight.text
   return (
     <div className="highlight-container">
       <svg
@@ -26,7 +29,7 @@ const ReadwiseHighlight = () => {
         />
       </svg>
 
-      <p className="highlight">{highlightText}</p>
+      <p className="highlight">{text}</p>
       <style jsx>{`
         .highlight-container {
           display: flex;
