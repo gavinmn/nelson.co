@@ -2,7 +2,7 @@ import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import { device } from "@/components/device"
 
-import ReadwiseMetadata from "@/components/readwiseMetadata.js"
+import Readwisedata from "@/components/readwisedata.js"
 
 const Highlights = ({ books, highlights }) => {
   return (
@@ -16,7 +16,7 @@ const Highlights = ({ books, highlights }) => {
 
               return (
                 <>
-                  <ReadwiseMetadata
+                  <Readwisedata
                     key={book}
                     item={item}
                     book={bookItem}

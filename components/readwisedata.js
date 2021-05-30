@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { device } from "@/components/device"
 
-const ReadwiseMetadata = ({ book, highlights }) => {
+const Readwisedata = ({ book, highlights }) => {
   const [open, setOpen] = useState(false)
 
   const title = book.title
@@ -11,13 +11,12 @@ const ReadwiseMetadata = ({ book, highlights }) => {
   const highlightsNum = book.num_highlights
 
   return (
-    <div className="item-container">
+    <div className={`${open ? "item-container" : "item-container closed"}`}>
       <div className="chevron-line-container">
         <svg
           className={`${open ? "chevron" : "chevron rotated"}`}
           onClick={() => {
             setOpen(!open)
-            console.log(open)
           }}
           width="16"
           height="16"
@@ -91,6 +90,10 @@ const ReadwiseMetadata = ({ book, highlights }) => {
           margin-bottom: 1rem;
         }
 
+        .item-container.closed {
+          margin-bottom: 0.5rem;
+        }
+
         .chevron-line-container {
           display: flex;
           flex-direction: column;
@@ -104,6 +107,7 @@ const ReadwiseMetadata = ({ book, highlights }) => {
         .chevron {
           margin-bottom: 0.5rem;
           flex-shrink: 0;
+          transition: all 200ms ease-in-out;
         }
 
         .chevron:hover {
@@ -206,4 +210,4 @@ const ReadwiseMetadata = ({ book, highlights }) => {
   )
 }
 
-export default ReadwiseMetadata
+export default Readwisedata
