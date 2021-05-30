@@ -11,6 +11,13 @@ const Highlights = ({ books, highlights }) => {
       <div className="wrapper-large">
         <div className="container">
           <div className="wrapper-small">
+            <div className="header-container">
+              <h1>Highlights</h1>
+              <p>
+                A feed of passages I've highlighted from articles across the
+                web.
+              </p>
+            </div>
             {books.results.map((item, book) => {
               const bookItem = books.results[book]
 
@@ -45,7 +52,11 @@ const Highlights = ({ books, highlights }) => {
           margin: 8rem 0 0rem 0;
         }
 
-      
+        .header-container {
+          margin-bottom: 2rem;
+        }
+
+              
         .highlights-container {
           display: flex;
           flex-direction: column;
