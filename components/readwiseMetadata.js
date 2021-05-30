@@ -39,7 +39,7 @@ const ReadwiseMetadata = ({ book, highlights }) => {
             {title}
           </a>
           <p className="author">{author}</p>
-          <p className="date">{`Read ${dateStamp}`}</p>
+
           <p className="highlights-num">{`${highlightsNum} highlights`}</p>
         </div>
         {highlights.results.map((item, highlight) => {
