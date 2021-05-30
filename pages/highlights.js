@@ -51,6 +51,9 @@ const Highlights = ({ highlights, books }) => {
                     <div className="chevron-line-container">
                       <svg
                         className="chevron"
+                        onClick={() => {
+                          console.log("test")
+                        }}
                         width="16"
                         height="16"
                         viewBox="0 0 16 16"
@@ -75,7 +78,13 @@ const Highlights = ({ highlights, books }) => {
                         <p className="highlights-num">{`${highlightsNum} highlights`}</p>
                       </div>
 
-                      <div className="highlights-container">
+                      <div
+                        className={`${
+                          open
+                            ? "highlights-container"
+                            : "highlights-container closed"
+                        }`}
+                      >
                         {highlights.results.map((item, highlight) => {
                           const highlightSource =
                             highlights.results[highlight].book_id
@@ -159,7 +168,23 @@ const Highlights = ({ highlights, books }) => {
           padding-top: 0.25rem;
         }
 
+        .chevron {
+          margin-bottom: 0.5rem;
+          flex-shrink: 0;
+        }
+
+        .chevron:hover {
+          cursor: pointer;
+        }
+
+        .chevron.rotated {
+          transform: rotate(90deg);
+        }
+
         @media only screen and (min-width: 768px) {
+          .chevron {
+            margin-bottom: 0.25rem;
+          }
           .chevron-line-container {
             margin-right: 0.5rem;
           }
@@ -168,11 +193,16 @@ const Highlights = ({ highlights, books }) => {
         .metadata {
           display: flex;
           flex-direction: column;
+          margin-bottom: 0.5rem;
         }
 
         .highlights-container {
           display: flex;
           flex-direction: column;
+        }
+
+        .highlights-container.closed {
+          display: none;
         }
 
         .line {
@@ -198,7 +228,6 @@ const Highlights = ({ highlights, books }) => {
         .highlights-num {
           font-size: var(--small);
           color: var(--accent-100);
-          margin-bottom: 0.5rem;
         }
 
         .highlight-container {
@@ -210,6 +239,10 @@ const Highlights = ({ highlights, books }) => {
 
         .highlight-container:hover > .link-icon {
           visibility: visible;
+        }
+
+        .highlight-container:last-of-type > p {
+          margin-bottom: 0;
         }
 
         .link-icon {
