@@ -2,35 +2,13 @@ import { useState } from "react"
 import { device } from "@/components/device"
 
 const ReadwiseMetadata = ({ book, highlights }) => {
-  const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ]
-
   const [open, setOpen] = useState(false)
 
   const title = book.title
   const author = book.author
   const bookID = book.id
   const sourceLink = book.source_url
-  const highlightTime = book.last_highlight_at
   const highlightsNum = book.num_highlights
-
-  const date = new Date(highlightTime)
-
-  const dateStamp = `${
-    monthNames[date.getMonth()]
-  } ${date.getDate()}, ${date.getFullYear()}`
 
   return (
     <div className="item-container">
@@ -57,7 +35,7 @@ const ReadwiseMetadata = ({ book, highlights }) => {
 
       <div className="content-container">
         <div className="metadata">
-          <a className="title" href={sourceLink}>
+          <a className="title" href={sourceLink} rel="noopener noreferrer">
             {title}
           </a>
           <p className="author">{author}</p>
