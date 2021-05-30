@@ -35,6 +35,7 @@ const Highlights = ({ highlights, books }) => {
               const bookID = books.results[book].id
               const sourceLink = books.results[book].source_url
               const highlightTime = books.results[book].last_highlight_at
+              const highlightsNum = books.results[book].num_highlights
 
               const date = new Date(highlightTime)
 
@@ -56,7 +57,8 @@ const Highlights = ({ highlights, books }) => {
                           {title}
                         </a>
                         <p className="author">{author}</p>
-                        <p className="date">{dateStamp}</p>
+                        <p className="date">{`Read ${dateStamp}`}</p>
+                        <p className="highlights-num">{`${highlightsNum} highlights`}</p>
                       </div>
 
                       <div className="source-container">
@@ -74,13 +76,10 @@ const Highlights = ({ highlights, books }) => {
                             }
 
                             return (
-                              <>
-                                <Link href={`#`}>
-                                  <></>
-                                </Link>
-
+                              <div className="highlight-container">
+                                <div className="bullet">•</div>
                                 <p className="highlight">{highlightText}</p>
-                              </>
+                              </div>
                             )
                           }
                         })}
@@ -130,7 +129,7 @@ const Highlights = ({ highlights, books }) => {
           background-color: var(--primary-200);
           width: 2px;
           align-self: stretch;
-          margin-right: 0.5rem;
+          margin-right: 1rem;
           flex-shrink: 0;
         }
 
@@ -141,10 +140,15 @@ const Highlights = ({ highlights, books }) => {
         }
 
         .author {
-          color: var(--accent-100);
         }
 
         .date {
+          display: none;
+          font-size: var(--small);
+          color: var(--accent-100);
+        }
+
+        .highlights-num {
           font-size: var(--small);
           color: var(--accent-100);
           margin-bottom: 0.5rem;
@@ -153,6 +157,19 @@ const Highlights = ({ highlights, books }) => {
         .title.hidden,
         .author.hidden {
           display: none;
+        }
+
+        .highlight-container {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-left: -1.26rem;
+        }
+
+        .bullet {
+          font-size: var(--body);
+          color: var(--accent-100);
+          margin-right: 0.85rem;
         }
 
         .highlight {
