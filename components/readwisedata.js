@@ -241,6 +241,12 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           visibility: hidden;
         }
 
+        @media (hover: none) {
+          .anchor-container {
+            visibility: visible;
+          }
+        }
+
         .anchor-container:hover {
           background-color: transparent;
           cursor: pointer;
