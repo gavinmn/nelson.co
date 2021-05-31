@@ -184,7 +184,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           display: flex;
           flex-direction: row;
           align-items: flex-start;
-          margin-left: -2rem;
+          margin-left: -2.125rem;
           opacity: 1;
           height: auto;
         }
@@ -204,7 +204,8 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
 
         .link-icon {
           flex-shrink: 0;
-          margin-right: 1rem;
+          padding: 0.125rem;
+          margin-right: 0.875rem;
           margin-top: 0.15rem;
           visibility: hidden;
         }
@@ -220,11 +221,11 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
 
         @media ${device.desktop} {
           .highlight-container {
-            margin-left: -1rem;
+            margin-left: -1.125rem;
           }
 
           .link-icon {
-            margin-right: 0.5rem;
+            margin-right: 0.375rem;
           }
         }
       `}</style>
