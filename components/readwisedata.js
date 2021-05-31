@@ -18,6 +18,10 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
   const author = book.author
   const sourceLink = book.source_url
   const highlightsNum = book.num_highlights
+  var singleHighlight = false
+  if (highlightsNum == 1) {
+    singleHighlight = true
+  }
 
   return (
     <div className={`${open ? "item-container" : "item-container closed"}`}>
@@ -49,7 +53,11 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           </a>
           <p className="author">{author}</p>
 
-          <p className="highlights-num">{`${highlightsNum} highlights`}</p>
+          <p className="highlights-num">{`${
+            singleHighlight
+              ? `${highlightsNum} highlight`
+              : `${highlightsNum} highlights`
+          }`}</p>
         </div>
         {highlights.map((item, highlight) => {
           const highlightID = highlightIDs[highlight]
@@ -131,6 +139,10 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           cursor: pointer;
         }
 
+        .chevron:hover > path {
+          fill: var(--accent-200);
+        }
+
         .chevron.rotated {
           transform: rotate(-90deg);
         }
@@ -163,9 +175,6 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
         .title {
           font-size: var(--h3);
           font-weight: bold;
-        }
-
-        .author {
         }
 
         .date {
