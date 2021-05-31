@@ -126,7 +126,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
         }
 
         .item-container.closed {
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
         }
 
         @media only screen and (min-width: 768px) {
