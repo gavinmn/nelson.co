@@ -1,3 +1,4 @@
+import { useRouter } from "next/router"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import { device } from "@/components/device"
@@ -5,6 +6,9 @@ import { device } from "@/components/device"
 import Readwisedata from "@/components/readwisedata.js"
 
 const Highlights = ({ books, highlights }) => {
+  const router = useRouter()
+  const pathName = router.asPath
+
   return (
     <Layout>
       <SEO />
@@ -20,14 +24,31 @@ const Highlights = ({ books, highlights }) => {
             </div>
             {books.results.map((item, book) => {
               const bookItem = books.results[book]
+              const bookID = books.results[book].id
+              const bookHighlights = []
+              const bookHighlightIDs = []
 
               return (
                 <>
+                  {highlights.results.map((item, highlight) => {
+                    const highlightBookID =
+                      highlights.results[highlight].book_id
+                    const highlightID = highlights.results[highlight].id
+
+                    const highlightText = highlights.results[highlight].text
+
+                    if (highlightBookID == bookID) {
+                      bookHighlights.push(highlightText)
+                      bookHighlightIDs.push(highlightID)
+                    }
+                  })}
+
                   <Readwisedata
                     key={book}
-                    item={item}
                     book={bookItem}
-                    highlights={highlights}
+                    highlights={bookHighlights}
+                    highlightIDs={bookHighlightIDs}
+                    path={pathName}
                   />
                 </>
               )

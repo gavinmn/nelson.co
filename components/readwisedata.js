@@ -1,9 +1,24 @@
 import { useState } from "react"
+
 import Link from "next/link"
 import { device } from "@/components/device"
 
-const Readwisedata = ({ book, highlights }) => {
+const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
   const [open, setOpen] = useState(false)
+
+  const pathID = path.split("#")[1]
+
+  if (highlightIDs.toString().includes(pathID)) {
+    console.log("yes")
+  } else {
+    console.log("no")
+  }
+
+  // if (highlightIDs.includes(pathID)) {
+  //   console.log("yes")
+  // } else {
+  //   console.log("no")
+  // }
 
   const title = book.title
   const author = book.author
@@ -43,9 +58,10 @@ const Readwisedata = ({ book, highlights }) => {
 
           <p className="highlights-num">{`${highlightsNum} highlights`}</p>
         </div>
-        {highlights.results.map((item, highlight) => {
+        {/* {highlights.results.map((item, highlight) => {
           const highlightBookID = highlights.results[highlight].book_id
           const highlightID = highlights.results[highlight].id
+          const pathID = path.split("#")[1]
 
           if (highlightBookID == bookID) {
             const text = highlights.results[highlight].text
@@ -88,17 +104,23 @@ const Readwisedata = ({ book, highlights }) => {
               </div>
             )
           }
-        })}
+        })} */}
       </div>
       <style jsx>{`
         .item-container {
           display: flex;
           flex-direction: row;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
 
         .item-container.closed {
           margin-bottom: 0.5rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+          .item-container {
+            margin-bottom: 1rem;
+          }
         }
 
         .chevron-line-container {
@@ -174,9 +196,13 @@ const Readwisedata = ({ book, highlights }) => {
           flex-direction: row;
           align-items: flex-start;
           margin-left: -2rem;
+          opacity: 1;
+          height: auto;
         }
 
         .highlight-container.closed {
+          opacity: 0;
+          height: 0;
         }
 
         .highlight-container:hover > .link-icon {
