@@ -14,8 +14,7 @@ const Highlights = ({ books, highlights }) => {
       <SEO
         title="Highlights"
         og="highlightsog.png"
-        description="A feed of passages I've highlighted from articles across the
-                web."
+        description="A feed of passages I've highlighted from articles across the web."
       />
       <div className="wrapper-large">
         <div className="container">
