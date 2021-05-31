@@ -11,7 +11,12 @@ const Highlights = ({ books, highlights }) => {
 
   return (
     <Layout>
-      <SEO />
+      <SEO
+        title="Highlights"
+        og="highlightsog.png"
+        description="A feed of passages I've highlighted from articles across the
+                web."
+      />
       <div className="wrapper-large">
         <div className="container">
           <div className="wrapper-small">
