@@ -131,7 +131,7 @@ export async function getStaticProps() {
   const highlights = await highlightsResponse.json()
 
   return {
-    revalidate: 60 * 60 * 6,
+    revalidate: 60 * 60 * 2,
     props: { books, highlights },
   }
 }
