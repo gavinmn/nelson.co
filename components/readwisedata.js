@@ -5,12 +5,16 @@ import { device } from "@/components/device"
 
 const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
   const [open, setOpen] = useState(false)
+  const [shouldHighlight, setShouldHighlight] = useState(false)
+
+  var individualHighlight = false
 
   const pathID = path.split("#")[1]
 
   useEffect(() => {
     if (highlightIDs.toString().includes(pathID)) {
       setOpen(true)
+      setShouldHighlight(true)
     }
   }, [])
 
@@ -63,6 +67,12 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           const highlightID = highlightIDs[highlight]
           const text = highlights[highlight]
 
+          if (pathID == highlightID && shouldHighlight == true) {
+            individualHighlight = true
+          } else {
+            individualHighlight = false
+          }
+
           return (
             <div
               className={`${
@@ -95,7 +105,13 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
                 </a>
               </Link>
 
-              <p id={highlightID} name={highlightID} className="highlight">
+              <p
+                id={highlightID}
+                name={highlightID}
+                className={`${
+                  individualHighlight ? "highlight highlighted" : "highlight"
+                }`}
+              >
                 {text}
               </p>
             </div>
@@ -236,6 +252,10 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
         .highlight {
           margin-bottom: 1.5rem;
           scroll-margin-top: 4em;
+        }
+
+        .highlight.highlighted {
+          background-color: var(--primary-200);
         }
 
         @media ${device.desktop} {
