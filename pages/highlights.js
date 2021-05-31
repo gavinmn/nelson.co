@@ -79,6 +79,13 @@ const Highlights = ({ books, highlights }) => {
 
         .header-container {
           margin-bottom: 2rem;
+          margin-left: 2rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+          .header-container {
+            margin-left: 1rem;
+          }
         }
 
               
