@@ -200,6 +200,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
         .highlight-container.closed {
           opacity: 0;
           height: 0;
+          overflow: hidden;
         }
 
         .highlight-container:hover > .anchor-container {
