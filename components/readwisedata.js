@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import Link from "next/link"
 import { device } from "@/components/device"
@@ -8,9 +8,11 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
 
   const pathID = path.split("#")[1]
 
-  if (highlightIDs.toString().includes(pathID)) {
-    setOpen(true)
-  }
+  useEffect(() => {
+    if (highlightIDs.toString().includes(pathID)) {
+      setOpen(true)
+    }
+  }, [])
 
   const title = book.title
   const author = book.author
