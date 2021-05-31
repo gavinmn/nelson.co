@@ -224,6 +224,11 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
             margin-left: -1.125rem;
           }
 
+          .highlight {
+            margin-bottom: 0.75rem;
+            scroll-margin-top: 4em;
+          }
+
           .link-icon {
             margin-right: 0.375rem;
           }
