@@ -110,12 +110,15 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
         }
 
         .item-container.closed {
-          margin-bottom: 0.5rem;
+          margin-bottom: 1rem;
         }
 
         @media only screen and (min-width: 768px) {
           .item-container {
             margin-bottom: 1rem;
+          }
+          .item-container.closed {
+            margin-bottom: 0.5rem;
           }
         }
 
@@ -217,7 +220,6 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           flex-shrink: 0;
           padding: 0.125rem;
           margin-right: 0.875rem;
-          margin-top: 0.15rem;
 
           transition: all 0ms linear;
           visibility: hidden;

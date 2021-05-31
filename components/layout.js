@@ -74,7 +74,6 @@ const Layout = ({ children }) => {
           .link {
             background-image: none;
             text-shadow: none;
-            font-size: var(--small);
             color: var(--text-accent);
             margin-bottom: 0.75rem;
           }
