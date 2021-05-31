@@ -81,7 +81,8 @@ const Readwisedata = ({ book, highlights }) => {
                     />
                   </svg>
                 </Link>
-                <p name={highlightID} className="highlight">
+
+                <p id={highlightID} name={highlightID} className="highlight">
                   {text}
                 </p>
               </div>
@@ -176,7 +177,6 @@ const Readwisedata = ({ book, highlights }) => {
         }
 
         .highlight-container.closed {
-          display: none;
         }
 
         .highlight-container:hover > .link-icon {
