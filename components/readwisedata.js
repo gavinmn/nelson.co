@@ -52,7 +52,12 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
 
       <div className="content-container">
         <div className="metadata">
-          <a className="title" href={sourceLink} rel="noopener noreferrer">
+          <a
+            className="title"
+            href={sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {title}
           </a>
           <p className="author">{author}</p>
