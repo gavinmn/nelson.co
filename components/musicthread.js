@@ -56,12 +56,7 @@ const MusicThread = props => {
         }
 
         .thread-link {
-          font-size: var(--small);
           color: var(--text-accent);
-        }
-
-        .thread-link:hover {
-          color: var(--text-primary);
         }
 
         .timeline {
@@ -122,12 +117,12 @@ const MusicThread = props => {
         <div className="container">
           <h1>{props.title}</h1>
 
-          <Caption>
+          <p>
             {props.subtitle}, powered by{" "}
             <a className="thread-link" href="https://musicthread.app/">
               MusicThread
             </a>
-          </Caption>
+          </p>
           <div className="timeline" s>
             {dateKeys.map((entry, key) => {
               return (

@@ -25,7 +25,7 @@ function GlobalStyle(props) {
           --primary-300: rgba(222, 232, 242, 1);
           --primary-400: rgba(204, 219, 235, 1);
 
-          --accent-100: rgba(144, 164, 187, 1);
+          --accent-100: rgb(141, 178, 219);
           --accent-200: rgba(108, 137, 172, 1);
           --accent-300: rgba(17, 82, 159, 1);
           --accent-400: rgba(31, 46, 66, 1);
@@ -81,7 +81,7 @@ function GlobalStyle(props) {
           }
         }
 
-        @media only screen and (min-width: 722px) {
+        @media only screen and (min-width: 768px) {
           :root {
             --h1: 24px;
             --h2: 20px;
@@ -123,7 +123,7 @@ function GlobalStyle(props) {
           color: var(--text-accent);
         }
 
-        @media only screen and (min-width: 722px) {
+        @media only screen and (min-width: 768px) {
           footer {
             margin-bottom: 1rem;
           }
@@ -140,7 +140,7 @@ function GlobalStyle(props) {
           text-shadow: none;
         }
 
-        @media only screen and (min-width: 722px) {
+        @media only screen and (min-width: 768px) {
           html {
             font-size: 32px;
           }
