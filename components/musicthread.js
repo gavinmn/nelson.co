@@ -126,7 +126,7 @@ const MusicThread = props => {
           <div className="timeline" s>
             {dateKeys.map((entry, key) => {
               return (
-                <>
+                <div key={key}>
                   <p className="month">{entry}</p>
                   <div className="month-container">
                     <div className="line" />
@@ -144,7 +144,7 @@ const MusicThread = props => {
                       })}
                     </div>
                   </div>
-                </>
+                </div>
               )
             })}
           </div>
