@@ -4,6 +4,7 @@ const ButtonExternal = props => (
     href={props.link}
     target="_blank"
     rel="noopener noreferrer"
+    alt=""
   >
     <svg
       className="arrow"

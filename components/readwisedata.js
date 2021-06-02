@@ -56,6 +56,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
             <a
               className="title"
               href={sourceLink}
+              alt=""
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,7 +87,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
                 }`}
               >
                 <Link href={`/highlights#${highlightID}`} passhref>
-                  <a className="anchor-container">
+                  <a className="anchor-container" alt="">
                     <svg
                       className="link-icon"
                       width="16"

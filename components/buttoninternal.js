@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const ButtonInternal = props => (
   <Link href={props.link} passhref>
-    <a className="button">
+    <a className="button" alt="">
       <svg
         className="arrow"
         width="15"
