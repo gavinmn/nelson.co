@@ -62,9 +62,21 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
             >
               {title}
             </a>
-            <p className="author">{author}</p>
+            <p
+              className="author"
+              onClick={() => {
+                setOpen(!open)
+              }}
+            >
+              {author}
+            </p>
 
-            <p className="highlights-num">{`${
+            <p
+              className="highlights-num"
+              onClick={() => {
+                setOpen(!open)
+              }}
+            >{`${
               singleHighlight
                 ? `${highlightsNum} highlight`
                 : `${highlightsNum} highlights`
@@ -186,6 +198,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
             display: flex;
             flex-direction: column;
             margin-bottom: 0.5rem;
+            cursor: pointer;
           }
 
           .line {
