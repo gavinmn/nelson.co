@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 const PostPreview = props => (
-  <Link as={`posts/${props.href}`} href="/posts/[slug]">
+  <Link as={`posts/${props.href}`} href="posts/[slug]">
     <a className="container">
       <h3 className="title">{props.title}</h3>
       <p className="date">{props.date}</p>
