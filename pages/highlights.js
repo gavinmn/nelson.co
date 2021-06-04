@@ -50,7 +50,7 @@ const Highlights = ({ books, highlights }) => {
                   <Readwisedata
                     key={book}
                     book={bookItem}
-                    highlights={bookHighlights}
+                    highlights={bookHighlights.reverse()}
                     highlightIDs={bookHighlightIDs}
                     path={pathName}
                   />

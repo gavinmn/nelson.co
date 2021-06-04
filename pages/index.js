@@ -27,7 +27,6 @@ const IndexPage = ({ posts }) => {
         <div className="hero-container">
           <Hero />
         </div>
-
         <a aria-label="Work" id="work" href="/#work">
           <h1 className="anchor"></h1>
         </a>
