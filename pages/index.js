@@ -8,6 +8,7 @@ import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
 import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
+import Project from "@/components/project"
 
 import fs from "fs"
 import matter from "gray-matter"
@@ -47,6 +48,18 @@ const IndexPage = ({ posts }) => {
         </div>
 
         <SectionHeader section="Projects" />
+        <div className="project-grid">
+          <Project
+            title="Highlights"
+            description="A feed of passages I've highlighted from articles across the web."
+            href="/highlights"
+          />
+          <Project
+            title="Heavy Rotation"
+            description="A collection of what I've been listening to recently."
+            href="/musicthread/heavy-rotation"
+          />
+        </div>
         <div className="card-grid">
           <Card
             width="double"
@@ -194,16 +207,26 @@ const IndexPage = ({ posts }) => {
           justify-content: center;
         }
 
-        .post-grid {
+        .post-grid,
+        .project-grid {
           display: grid;
           grid-template-columns: auto;
           grid-gap: 0.5rem;
           max-width: 816px;
         }
 
+        .project-grid {
+          margin-bottom: 2rem;
+        }
+
         @media only screen and (min-width: 768px) {
-          .post-grid {
+          .post-grid,
+          .project-grid {
             grid-gap: 0.25rem;
+          }
+
+          .project-grid {
+            margin-bottom: 1rem;
           }
         }
 
