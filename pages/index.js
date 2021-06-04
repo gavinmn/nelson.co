@@ -59,17 +59,6 @@ const IndexPage = ({ posts }) => {
           >
             <ButtonExternal link="https://gumroad.com/l/dvctd" />
           </Card>
-
-          <Card
-            width="double"
-            imageSrc="/images/index/chalkimage.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Chalk"
-            subtitle="Interaction and Visual Design"
-          >
-            <ButtonInternal link="/chalk" />
-          </Card>
         </div>
 
         <SectionHeader section="Icons" />
