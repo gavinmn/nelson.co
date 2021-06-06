@@ -26,7 +26,8 @@
   "license": "",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn rss && next build",
+    "rss": "node lib/rss",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,md,mdx}\""
   }
