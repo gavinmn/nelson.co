@@ -9,12 +9,12 @@
             <link>https://nelson.co</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 06 Jun 2021 16:54:27 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Jun 2021 16:58:58 GMT</lastBuildDate>
         <atom:link href="https://nelson.co/feed.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[Blender Basics]]></title>
-            <description><![CDATA[A starting point for Blender beginners from a former beginner. <a href={url}> Full post →</a>]]></description>
+            <description><![CDATA[A starting point for Blender beginners from a former beginner. <a href="https://nelson.co/posts/blenderbasics"> <strong>Full post →</strong></a>]]></description>
             <link>https://nelson.co/posts/blenderbasics</link>
             <guid isPermaLink="true">https://nelson.co/posts/blenderbasics</guid>
             <dc:creator><![CDATA[Gavin Nelson]]></dc:creator>
@@ -22,7 +22,7 @@
         </item>
         <item>
             <title><![CDATA[Digital Tools]]></title>
-            <description><![CDATA[A collection of the digital tools I use on a near daily basis. <a href={url}> Full post →</a>]]></description>
+            <description><![CDATA[A collection of the digital tools I use on a near daily basis. <a href="https://nelson.co/posts/digital-tools"> <strong>Full post →</strong></a>]]></description>
             <link>https://nelson.co/posts/digital-tools</link>
             <guid isPermaLink="true">https://nelson.co/posts/digital-tools</guid>
             <dc:creator><![CDATA[Gavin Nelson]]></dc:creator>
@@ -30,7 +30,7 @@
         </item>
         <item>
             <title><![CDATA[Get Things Done]]></title>
-            <description><![CDATA[A minimal Getting Things Done framework for Things. <a href={url}> Full post →</a>]]></description>
+            <description><![CDATA[A minimal Getting Things Done framework for Things. <a href="https://nelson.co/posts/get-things-done"> <strong>Full post →</strong></a>]]></description>
             <link>https://nelson.co/posts/get-things-done</link>
             <guid isPermaLink="true">https://nelson.co/posts/get-things-done</guid>
             <dc:creator><![CDATA[Gavin Nelson]]></dc:creator>
