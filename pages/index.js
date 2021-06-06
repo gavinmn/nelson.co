@@ -16,6 +16,8 @@ import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
 const IndexPage = ({ posts }) => {
+  console.log(posts)
+
   const orderedPosts = posts.sort(
     (a, b) =>
       Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
