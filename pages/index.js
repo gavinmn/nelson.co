@@ -15,6 +15,8 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+const RSS = require("rss")
+
 const IndexPage = ({ posts }) => {
   console.log(posts)
 
@@ -277,6 +279,32 @@ export function getStaticProps() {
       filePath,
     }
   })
+
+  const feed = new RSS({
+    title: "Gavin Nelson",
+    site_url: "https://nelson.co",
+    feed_url: "https://nelson.co/feed.xml",
+    image_url: "https://nelson.co/images/meta/og.png",
+    language: "en",
+  })
+
+  posts.forEach(post => {
+    const url = `https://nelson.co/posts/${post.filePath.replace(
+      /\.mdx?$/,
+      ""
+    )}`
+
+    feed.item({
+      title: post.data.title,
+      description: post.data.subtitle,
+      date: new Date(post.data.date),
+      author: "Gavin nelson",
+      url: url,
+    })
+  })
+
+  const rss = feed.xml({ indent: true })
+  fs.writeFileSync("./public/feed.xml", rss)
 
   return { props: { posts } }
 }
