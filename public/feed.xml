@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Gavin Nelson]]></title>
+        <description><![CDATA[Gavin Nelson]]></description>
+        <link>https://nelson.co</link>
+        <image>
+            <url>https://nelson.co/images/meta/og.png</url>
+            <title>Gavin Nelson</title>
+            <link>https://nelson.co</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 06 Jun 2021 22:47:39 GMT</lastBuildDate>
+        <atom:link href="https://nelson.co/feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Blender Basics]]></title>
+            <description><![CDATA[A starting point for Blender beginners from a former beginner. <a href="https://nelson.co/posts/blenderbasics"> <strong>Full post →</strong></a>]]></description>
+            <link>https://nelson.co/posts/blenderbasics</link>
+            <guid isPermaLink="true">https://nelson.co/posts/blenderbasics</guid>
+            <dc:creator><![CDATA[Gavin Nelson]]></dc:creator>
+            <pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Digital Tools]]></title>
+            <description><![CDATA[A collection of the digital tools I use on a near daily basis. <a href="https://nelson.co/posts/digital-tools"> <strong>Full post →</strong></a>]]></description>
+            <link>https://nelson.co/posts/digital-tools</link>
+            <guid isPermaLink="true">https://nelson.co/posts/digital-tools</guid>
+            <dc:creator><![CDATA[Gavin Nelson]]></dc:creator>
+            <pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Get Things Done]]></title>
+            <description><![CDATA[A minimal Getting Things Done framework for Things. <a href="https://nelson.co/posts/get-things-done"> <strong>Full post →</strong></a>]]></description>
+            <link>https://nelson.co/posts/get-things-done</link>
+            <guid isPermaLink="true">https://nelson.co/posts/get-things-done</guid>
+            <dc:creator><![CDATA[Gavin Nelson]]></dc:creator>
+            <pubDate>Wed, 10 Feb 2021 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

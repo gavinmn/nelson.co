@@ -86,6 +86,13 @@ export default function SEO({
         data-domain="nelson.co"
         src="https://plausible.io/js/plausible.outbound-links.js"
       ></script>
+
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="RSS Feed for nelson.co"
+        href="/feed.xml"
+      />
     </Head>
   )
 }

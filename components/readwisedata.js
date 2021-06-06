@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { device } from "@/components/device"
 
-const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
+const Readwisedata = ({ book, highlights, highlightIDs, bookID, path }) => {
   const [open, setOpen] = useState(false)
   const [shouldHighlight, setShouldHighlight] = useState(false)
 
@@ -12,12 +12,13 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
   const pathID = path.split("#")[1]
 
   useEffect(() => {
-    if (highlightIDs.toString().includes(pathID)) {
+    if (highlightIDs.toString().includes(pathID) || bookID == pathID) {
       setOpen(true)
       setShouldHighlight(true)
     }
   }, [])
 
+  const id = book.id
   const title = book.title
   const author = book.author
   const sourceLink = book.source_url
@@ -54,6 +55,8 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
         <div className="content-container">
           <div className="metadata">
             <a
+              id={id}
+              name={id}
               className="title"
               href={sourceLink}
               alt=""
@@ -215,6 +218,7 @@ const Readwisedata = ({ book, highlights, highlightIDs, path }) => {
           .title {
             font-size: var(--h3);
             font-weight: bold;
+            scroll-margin-top: 8em;
           }
 
           .date {

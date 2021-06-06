@@ -268,6 +268,7 @@ export default IndexPage
 export function getStaticProps() {
   const posts = postFilePaths.map(filePath => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
+
     const { data } = matter(source)
 
     return {
