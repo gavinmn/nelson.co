@@ -118,6 +118,14 @@ const Layout = ({ children }) => {
                     <Link href="/#work" passhref>
                       <a className="link">Work</a>
                     </Link>
+                    <a
+                      className="link"
+                      href="https://nelson.co/feed.xml"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      RSS
+                    </a>
                   </div>
                   <div className="col-two">
                     <a

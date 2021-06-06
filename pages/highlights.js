@@ -25,6 +25,15 @@ const Highlights = ({ books, highlights }) => {
                 A feed of passages I've highlighted from articles across the
                 web.
               </p>
+
+              <a
+                className="rss"
+                href="https://nelson.co/highlightsfeed.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Subscribe via RSS
+              </a>
             </div>
             {books.results.map((item, book) => {
               const bookItem = books.results[book]
@@ -81,6 +90,9 @@ const Highlights = ({ books, highlights }) => {
         .header-container {
           margin-bottom: 2rem;
           margin-left: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
 
         @media only screen and (min-width: 768px) {
