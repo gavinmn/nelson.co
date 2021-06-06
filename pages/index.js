@@ -15,7 +15,7 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
-const RSS = require("rss")
+import RSS from "rss"
 
 const IndexPage = ({ posts }) => {
   console.log(posts)
