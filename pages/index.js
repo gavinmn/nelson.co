@@ -272,11 +272,13 @@ export default IndexPage
 export function getStaticProps() {
   const posts = postFilePaths.map(filePath => {
     const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
-    const { data } = matter(source)
+
+    const { content, data } = matter(source)
 
     return {
       data,
       filePath,
+      content,
     }
   })
 
@@ -296,7 +298,7 @@ export function getStaticProps() {
 
     feed.item({
       title: post.data.title,
-      description: post.data.subtitle,
+      description: post.content,
       date: new Date(post.data.date),
       author: "Gavin nelson",
       url: url,
