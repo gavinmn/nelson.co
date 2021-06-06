@@ -52,6 +52,7 @@ const Highlights = ({ books, highlights }) => {
                     book={bookItem}
                     highlights={bookHighlights.reverse()}
                     highlightIDs={bookHighlightIDs}
+                    bookID={bookID}
                     path={pathName}
                   />
                 </>
