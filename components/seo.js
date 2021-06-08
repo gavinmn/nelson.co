@@ -31,6 +31,8 @@ export default function SEO({
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
 
+      <meta name="theme-color" content="var(--primary-100)" />
+
       <link
         href="https://nelson.co/images/meta/apple-touch-icon-180x180.png"
         rel="apple-touch-icon"
