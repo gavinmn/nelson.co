@@ -23,7 +23,7 @@
     "rss": "^1.2.2"
   },
   "devDependencies": {
-    "prettier": "2.3.0"
+    "prettier": "2.3.1"
   },
   "keywords": [],
   "license": "",
