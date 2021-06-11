@@ -1,9 +1,12 @@
+const fs = require("fs")
 import { useRouter } from "next/router"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import { device } from "@/components/device"
 
 import Readwisedata from "@/components/readwisedata.js"
+
+import { highlightsRequest } from "../lib/rss"
 
 const Highlights = ({ books, highlights }) => {
   const router = useRouter()
@@ -142,6 +145,10 @@ export async function getStaticProps() {
     headers
   )
   const highlights = await highlightsResponse.json()
+
+  //build highlights RSS
+  const highlightsRss = await highlightsRequest()
+  fs.writeFileSync("./public/highlightsfeed.xml", highlightsRss)
 
   return {
     revalidate: 60 * 60 * 2,
