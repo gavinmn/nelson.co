@@ -1,5 +1,4 @@
 const fs = require("fs")
-const RSS = require("rss")
 import { useRouter } from "next/router"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
@@ -144,47 +143,6 @@ export async function getStaticProps() {
     headers
   )
   const highlights = await highlightsResponse.json()
-
-  //create highlights feed
-  const highlightsFeed = new RSS({
-    title: "Gavin Nelson's Highlights",
-    site_url: "https://nelson.co/highlights",
-    feed_url: "https://nelson.co/highlightsfeed.xml",
-    image_url: "https://nelson.co/images/meta/highlightsog.png",
-    language: "en",
-  })
-
-  highlights.results.forEach(article => {
-    const numHighlights = article.num_highlights
-    const source = article.source_url
-    const sourceAuthor = article.author
-
-    var highlightText = ""
-
-    if (numHighlights == 1) {
-      highlightText = "highlight"
-    } else {
-      highlightText = "highlights"
-    }
-
-    const articleID = article.id
-
-    const description = `<a href="https://nelson.co/highlights#${articleID}"> <strong>Read ${numHighlights} ${highlightText} →</strong> <br></br><br></br> <a href="${source}">Original article </a> from ${sourceAuthor}`
-
-    if (numHighlights != 0) {
-      highlightsFeed.item({
-        title: article.title,
-        description: description,
-        date: new Date(article.last_highlight_at),
-        author: "Gavin Nelson",
-        url: `https://nelson.co/highlights#${articleID}`,
-      })
-    }
-  })
-
-  const highlightsRss = highlightsFeed.xml({ indent: true })
-
-  fs.writeFileSync("./public/highlightsfeed.xml", highlightsRss)
 
   return {
     revalidate: 60 * 60 * 2,
