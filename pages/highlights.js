@@ -148,6 +148,7 @@ export async function getStaticProps() {
 
   //build highlights RSS
   const highlightsRss = await highlightsRequest()
+
   fs.writeFileSync("./public/highlightsfeed.xml", highlightsRss)
 
   return {
