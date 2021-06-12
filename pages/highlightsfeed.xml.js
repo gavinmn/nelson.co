@@ -43,7 +43,7 @@ const createHighlightsFeed = articles => {
 
 const HighlightsFeed = () => {}
 
-export const getServerSideProps = ({ res }) => {
+export async function getServerSideProps({ res }) {
   const headers = {
     headers: { Authorization: `TOKEN ${process.env.READWISE_TOKEN}` },
   }
