@@ -17,13 +17,15 @@ const Card = props => {
     >
       <div className="image-container">
         <Image
-          src={props.imageSrc}
+          src={props.src}
           alt=""
-          width={`${props.imageWidth}`}
-          height={`${props.imageHeight}`}
+          width={816}
+          heigh={294}
           layout="fixed"
+          placeholder="blur"
         />
       </div>
+
       <div className="bottom">
         <div className="text">
           <h3 className="header">{props.title}</h3>
@@ -41,20 +43,17 @@ const Card = props => {
         padding-bottom: 8px; 
         overflow: hidden;
       }
-      
+
       .image-container {
        height: 294px;
        display: flex;
        flex-direction: column;
-       justify-content: space-between;
        align-items: center;
        align-self: stretch;
-       flex-grow: 0;
        border-radius: 4px;
        overflow: hidden;
-       box-shadow: 0px 4px 0px var(--primary-100);
-       background-color: var(--primary-200); 
       }
+
       
       .bottom {
        display: flex;

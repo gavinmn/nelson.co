@@ -15,6 +15,20 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import apollo from "../public/images/index/apollo.png"
+import autooth from "../public/images/index/autooth.png"
+import blender from "../public/images/index/blender.png"
+import claquette from "../public/images/index/claquette.png"
+import craft from "../public/images/index/craft.png"
+import github from "../public/images/index/github.png"
+import instagram from "../public/images/index/instagram.png"
+import montereyImage from "../public/images/index/montereyimage.png"
+import mosaic from "../public/images/index/mosaic.png"
+import notes from "../public/images/index/notes.png"
+import slack from "../public/images/index/slack.png"
+import stocketa from "../public/images/index/stocketa.png"
+import xcode from "../public/images/index/xcode.png"
+
 const IndexPage = ({ posts }) => {
   const orderedPosts = posts.sort(
     (a, b) =>
@@ -63,9 +77,7 @@ const IndexPage = ({ posts }) => {
         <div className="card-grid">
           <Card
             width="double"
-            imageSrc="/images/index/montereyimage.png"
-            imageWidth="816"
-            imageHeight="294"
+            src={montereyImage}
             title="Monterey"
             subtitle="Icon Design"
           >
@@ -75,31 +87,15 @@ const IndexPage = ({ posts }) => {
 
         <SectionHeader section="Icons" />
         <div className="card-grid">
-          <Card
-            width="double"
-            imageSrc="/images/index/craft.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Craft"
-            subtitle="2021"
-          >
+          <Card width="double" src={craft} title="Craft" subtitle="2021">
             <ButtonExternal link="https://www.craft.do" />
           </Card>
-          <Card
-            width="single"
-            imageSrc="/images/index/stocketa.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Stocketa"
-            subtitle="2021"
-          >
+          <Card width="single" src={stocketa} title="Stocketa" subtitle="2021">
             <ButtonExternal link="https://stocketa.com" />
           </Card>
           <Card
             width="single"
-            imageSrc="/images/index/github.png"
-            imageWidth="816"
-            imageHeight="294"
+            src={github}
             title="GitHub G1 Chip"
             subtitle="2021"
           >
@@ -107,86 +103,43 @@ const IndexPage = ({ posts }) => {
           </Card>
           <Card
             width="single"
-            imageSrc="/images/index/claquette.png"
-            imageWidth="816"
-            imageHeight="294"
+            src={claquette}
             title="Claquette"
             subtitle="2020"
           >
             <ButtonExternal link="https://www.peakstep.com/claquette/" />
           </Card>
 
-          <Card
-            width="single"
-            imageSrc="/images/index/mosaic.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Mosaic"
-            subtitle="2020"
-          >
+          <Card width="single" src={mosaic} title="Mosaic" subtitle="2020">
             <ButtonExternal link="https://mosaic.rcopstein.com" />
           </Card>
 
-          <Card
-            width="single"
-            imageSrc="/images/index/autooth.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Autooth"
-            subtitle="2020"
-          >
+          <Card width="single" src={autooth} title="Autooth" subtitle="2020">
             <ButtonExternal link="https://app.airport.community/app/recGP4zZQMV3WB9LZ" />
           </Card>
 
           <Card
             width="single"
-            imageSrc="/images/index/apollo.png"
-            imageWidth="816"
-            imageHeight="294"
+            src={apollo}
             title="Apollo Reddit"
             subtitle="2020"
           ></Card>
 
-          <Card
-            width="double"
-            imageSrc="/images/index/slack.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Slack"
-            subtitle="2020"
-          ></Card>
+          <Card width="double" src={slack} title="Slack" subtitle="2020"></Card>
 
           <Card
             width="single"
-            imageSrc="/images/index/instagram.png"
-            imageWidth="816"
-            imageHeight="294"
+            src={instagram}
             title="Instagram"
             subtitle="2020"
           ></Card>
 
-          <Card
-            width="single"
-            imageSrc="/images/index/xcode.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Xcode"
-            subtitle="2020"
-          ></Card>
+          <Card width="single" src={xcode} title="Xcode" subtitle="2020"></Card>
 
+          <Card width="single" src={notes} title="Notes" subtitle="2020"></Card>
           <Card
             width="single"
-            imageSrc="/images/index/notes.png"
-            imageWidth="816"
-            imageHeight="294"
-            title="Notes"
-            subtitle="2020"
-          ></Card>
-          <Card
-            width="single"
-            imageSrc="/images/index/blender.png"
-            imageWidth="816"
-            imageHeight="294"
+            src={blender}
             title="Blender"
             subtitle="2020"
           ></Card>
