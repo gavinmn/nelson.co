@@ -101,7 +101,7 @@ const Hero = props => {
       </div>
       <div className="hero-text">
         <p>
-          Gavin Nelson is a <strong>product & visual designer </strong>
+          Gavin Nelson is a <strong>product & icon designer </strong>
           who creates intuitive and clean human-centered design solutions with
           great attention to detail.
         </p>
