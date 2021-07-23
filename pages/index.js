@@ -21,12 +21,14 @@ import blender from "../public/images/index/blender.png"
 import claquette from "../public/images/index/claquette.png"
 import craft from "../public/images/index/craft.png"
 import github from "../public/images/index/github.png"
+import githubearlybird from "../public/images/index/githubearlybird.png"
 import instagram from "../public/images/index/instagram.png"
 import montereyImage from "../public/images/index/montereyimage.png"
 import mosaic from "../public/images/index/mosaic.png"
 import notes from "../public/images/index/notes.png"
 import slack from "../public/images/index/slack.png"
 import stocketa from "../public/images/index/stocketa.png"
+import reflect from "../public/images/index/reflect.png"
 import xcode from "../public/images/index/xcode.png"
 
 const IndexPage = ({ posts }) => {
@@ -87,11 +89,22 @@ const IndexPage = ({ posts }) => {
 
         <SectionHeader section="Icons" />
         <div className="card-grid">
-          <Card width="double" src={craft} title="Craft" subtitle="2021">
-            <ButtonExternal link="https://www.craft.do" />
+          <Card
+            width="double"
+            src={githubearlybird}
+            title="GitHub Early Bird"
+            subtitle="2021"
+          >
+            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
+          </Card>
+          <Card width="single" src={reflect} title="Reflect" subtitle="2021">
+            <ButtonExternal link="https://reflect.app" />
           </Card>
           <Card width="single" src={stocketa} title="Stocketa" subtitle="2021">
             <ButtonExternal link="https://stocketa.com" />
+          </Card>
+          <Card width="single" src={craft} title="Craft" subtitle="2021">
+            <ButtonExternal link="https://www.craft.do" />
           </Card>
           <Card
             width="single"
