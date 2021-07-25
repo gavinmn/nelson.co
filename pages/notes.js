@@ -1,13 +1,14 @@
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
-import PostPreview from "@/components/postpreview"
+import Note from "@/components/note"
 
 import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
-import { notesFilePaths, NOTES_PATH } from "../../lib/mdxUtils"
+import { notesFilePaths, NOTES_PATH } from "../lib/mdxUtils"
 
 const Notes = ({ notes }) => {
+  console.log(notes)
   const orderedNotes = notes.sort(
     (a, b) =>
       Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
@@ -21,7 +22,7 @@ const Notes = ({ notes }) => {
             <div className="notes-grid">
               {orderedNotes.map((note, key) => {
                 return (
-                  <PostPreview
+                  <Note
                     key={key}
                     title={note.data.title}
                     date={note.data.date}
