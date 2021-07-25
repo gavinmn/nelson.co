@@ -5,29 +5,44 @@ import PostPreview from "@/components/postpreview"
 import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
-import { postFilePaths, POSTS_PATH } from "../../lib/mdxUtils"
+import { notesFilePaths, NOTES_PATH } from "../../lib/mdxUtils"
 
-const Notes = ({ posts }) => {
-  const orderedPosts = posts.sort(
+const Notes = ({ notes }) => {
+  const orderedNotes = notes.sort(
     (a, b) =>
       Number(new Date(b.data.modified)) - Number(new Date(a.data.modified))
   )
   return (
     <Layout>
-      <div>
-        <div className="post-grid">
-          {orderedPosts.map((post, key) => {
-            return (
-              <PostPreview
-                key={key}
-                title={post.data.title}
-                date={post.data.date}
-                href={`${post.filePath.replace(/\.mdx?$/, "")}`}
-              />
-            )
-          })}
+      <SEO />
+      <div className="container">
+        <div className="wrapper">
+          <div>
+            <div className="notes-grid">
+              {orderedNotes.map((note, key) => {
+                return (
+                  <PostPreview
+                    key={key}
+                    title={note.data.title}
+                    date={note.data.date}
+                    href={`${note.filePath.replace(/\.mdx?$/, "")}`}
+                  />
+                )
+              })}
+            </div>
+          </div>
         </div>
       </div>
+      <style jsx>{`
+        .container {
+          margin: 4rem 0 0rem 0;
+        }
+        .wrapper {
+          max-width: 656px;
+          padding: 0 5% 0 5%;
+          margin: 0 auto;
+        }
+      `}</style>
     </Layout>
   )
 }
@@ -35,8 +50,8 @@ const Notes = ({ posts }) => {
 export default Notes
 
 export function getStaticProps() {
-  const posts = postFilePaths.map(filePath => {
-    const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
+  const notes = notesFilePaths.map(filePath => {
+    const source = fs.readFileSync(path.join(NOTES_PATH, filePath))
 
     const { data } = matter(source)
 
@@ -46,5 +61,5 @@ export function getStaticProps() {
     }
   })
 
-  return { props: { posts } }
+  return { props: { notes } }
 }
