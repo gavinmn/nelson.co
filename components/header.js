@@ -15,6 +15,7 @@ const Header = () => {
     highlightAbout = true
     highlightWork = false
   }
+  console.log(highlightAbout)
 
   return (
     <div className="header">
@@ -50,7 +51,7 @@ const Header = () => {
           background-image: none;
           text-shadow: none;
           margin-left: 1.5rem;
-          color: var(--text-accent);
+          color: var(--text-primary);
         }
 
         .about-link-highlight,
@@ -58,7 +59,7 @@ const Header = () => {
           background-image: none;
           text-shadow: none;
           margin-left: 1.5rem;
-          color: var(--text-primary);
+          color: var(--text-accent);
         }
 
         .about-link:hover,
