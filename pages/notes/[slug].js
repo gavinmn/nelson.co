@@ -12,12 +12,14 @@ import Image from "next/image"
 
 import CustomImage from "@/components/customimage"
 import Caption from "@/components/caption"
+import Customp from "@/components/customp"
 import CustomLink from "@/components/posts/customlink"
 import HorizontalRule from "@/components/horizontalrule"
 import Break from "@/components/break"
 
 const components = {
   a: CustomLink,
+  p: Customp,
   h4: Caption,
   hr: HorizontalRule,
   br: Break,
