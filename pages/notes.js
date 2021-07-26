@@ -9,6 +9,7 @@ const Notes = ({ notes }) => {
         og="notesog.png"
         description="A digital garden, currently being planted."
       />
+
       <div className="container">
         <div className="wrapper">
           <div className="preview">
