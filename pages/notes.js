@@ -7,7 +7,7 @@ const Notes = ({ notes }) => {
       <SEO
         title={"Gavin's notes"}
         og={"notesog.png"}
-        description={"A digital garden, currently being planted"}
+        description={"A digital garden, currently being planted."}
       />
       <div className="container">
         <div className="wrapper">
