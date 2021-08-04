@@ -22,6 +22,7 @@ import claquette from "../public/images/index/claquette.png"
 import craft from "../public/images/index/craft.png"
 import github from "../public/images/index/github.png"
 import githubearlybird from "../public/images/index/githubearlybird.png"
+import hyperspace from "../public/images/index/hyperspace.png"
 import instagram from "../public/images/index/instagram.png"
 import montereyImage from "../public/images/index/montereyimage.png"
 import mosaic from "../public/images/index/mosaic.png"
@@ -89,6 +90,14 @@ const IndexPage = ({ posts }) => {
 
         <SectionHeader section="Icons" />
         <div className="card-grid">
+          <Card
+            width="double"
+            src={hyperspace}
+            title="GitHub Hyperspace"
+            subtitle="2021"
+          >
+            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
+          </Card>
           <Card
             width="double"
             src={githubearlybird}
