@@ -6,6 +6,7 @@ import { device } from "@/components/device"
 import Card from "@/components/card"
 import ButtonInternal from "@/components/buttoninternal"
 import ButtonExternal from "@/components/buttonexternal"
+import ButtonDownload from "@/components/buttondownload"
 import SectionHeader from "@/components/sectionheader"
 import PostPreview from "@/components/postpreview"
 import Project from "@/components/project"
@@ -27,6 +28,7 @@ import instagram from "../public/images/index/instagram.png"
 import montereyImage from "../public/images/index/montereyimage.png"
 import mosaic from "../public/images/index/mosaic.png"
 import notes from "../public/images/index/notes.png"
+import obsidian from "../public/images/index/obsidian.png"
 import slack from "../public/images/index/slack.png"
 import stocketa from "../public/images/index/stocketa.png"
 import reflect from "../public/images/index/reflect.png"
@@ -88,10 +90,16 @@ const IndexPage = ({ posts }) => {
           </Card>
         </div>
 
+        <a aria-label="Icons" id="icons" className="anchor" href="/#icons">
+          <h1></h1>
+        </a>
         <SectionHeader section="Icons" />
         <div className="card-grid">
+          <Card width="double" src={obsidian} title="Obsidian" subtitle="2021">
+            <ButtonDownload link="/downloads/obsidian-icon-gavin-nelson.zip" />
+          </Card>
           <Card
-            width="double"
+            width="single"
             src={hyperspace}
             title="GitHub Hyperspace"
             subtitle="2021"
@@ -99,7 +107,7 @@ const IndexPage = ({ posts }) => {
             <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
           </Card>
           <Card
-            width="double"
+            width="single"
             src={githubearlybird}
             title="GitHub Early Bird"
             subtitle="2021"
