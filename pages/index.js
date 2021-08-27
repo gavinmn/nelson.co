@@ -90,6 +90,9 @@ const IndexPage = ({ posts }) => {
           </Card>
         </div>
 
+        <a aria-label="Icons" id="icons" className="anchor" href="/#icons">
+          <h1></h1>
+        </a>
         <SectionHeader section="Icons" />
         <div className="card-grid">
           <Card width="double" src={obsidian} title="Obsidian" subtitle="2021">
