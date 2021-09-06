@@ -6,5 +6,15 @@
       "destination": "https://gumroad.com/l/dvctd",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/my-notes/",
+      "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes"
+    },
+    {
+      "source": "/my-notes/:path*",
+      "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes:path*"
+    }
   ]
 }
