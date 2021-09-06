@@ -9,7 +9,7 @@
   ],
   "rewrites": [
     {
-      "source": "/notes/",
+      "source": "/notes",
       "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes"
     },
     {
