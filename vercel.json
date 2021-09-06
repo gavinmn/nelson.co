@@ -9,11 +9,11 @@
   ],
   "rewrites": [
     {
-      "source": "/my-notes/",
+      "source": "/notes/",
       "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes"
     },
     {
-      "source": "/my-notes/:path*",
+      "source": "/notes/:path*",
       "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes:path*"
     }
   ]
