@@ -14,7 +14,7 @@
     "next": "^11.1.2",
     "next-mdx-remote": "^3.0.4",
     "next-themes": "^0.0.15",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.2",
     "preact": "^10.5.14",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -23,7 +23,7 @@
     "rss": "^1.2.2"
   },
   "devDependencies": {
-    "prettier": "2.3.2"
+    "prettier": "2.4.0"
   },
   "keywords": [],
   "license": "",
