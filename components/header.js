@@ -113,6 +113,9 @@ const Header = () => {
               Work
             </a>
           </Link>
+          <Link href="/notes" passhref>
+            <a className={"work-link"}>Notes</a>
+          </Link>
         </div>
       </div>
     </div>
