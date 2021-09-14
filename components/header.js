@@ -31,7 +31,7 @@ const Header = () => {
         }
         @media (prefers-color-scheme: dark) {
           .header {
-            background-color: rgba(29, 39, 53, 0.9);
+            background-color: hsla(224, 33%, 16%, 0.9);
           }
         }
         .container {
