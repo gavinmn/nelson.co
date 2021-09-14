@@ -20,62 +20,50 @@ function GlobalStyle(props) {
           --h2: 18px;
           --h3: 16px;
 
-          --primary-100: rgba(255, 255, 255, 1);
-          --primary-200: rgba(241, 245, 248, 1);
-          --primary-300: rgba(222, 232, 242, 1);
-          --primary-400: rgba(204, 219, 235, 1);
+          --primary-100: hsla(0, 0%, 100%, 1);
+          --primary-200: hsla(224, 33.3%, 95.9%, 1);
+          --primary-300: hsla(224, 43.5%, 91%, 1);
+          --primary-400: hsla(224, 43.7%, 86.1%, 1);
 
-          --accent-100: rgb(141, 178, 219);
-          --accent-200: rgba(108, 137, 172, 1);
-          --accent-300: rgba(17, 82, 159, 1);
-          --accent-400: rgba(31, 46, 66, 1);
+          --accent-100: hsla(224, 24%, 64.9%, 1);
+          --accent-200: hsla(224, 27.8%, 54.9%, 1);
+          --accent-300: hsla(224, 35.7%, 45.1%, 1);
+          --accent-400: hsla(224, 36.1%, 19%, 1);
 
-          --text-primary: rgba(31, 46, 66, 1);
+          --text-primary: hsla(224, 36.1%, 19%, 1);
           --text-accent: var(--accent-300);
-          --text-accent-bg: rgba(0, 90, 201, 0.1);
+          --text-accent-bg: hsla(224, 50.7%, 45.1%, 0.1);
 
           --button-fill: var(--primary-100);
           --button-border: var(--primary-300);
-          --button-hover: #f8fafc;
+          --button-hover: hsl(224, 40%, 98%);
           --button-arrow-hover: var(--accent-400);
           --button-shadow: 0px 1px 0px 0px rgba(0, 39, 78, 0.04);
-
-          --color-chalk: #006ef0;
-          --color-chalk-secondary: #f1f8ff;
-
-          --color-experts: #22722d;
-          --color-experts-secondary: #f1fbf3;
 
           --github-text: #24292e;
         }
 
         @media (prefers-color-scheme: dark) {
           :root {
-            --primary-100: rgba(29, 39, 53, 1);
-            --primary-200: rgba(23, 32, 43, 1);
-            --primary-300: rgba(14, 22, 32, 1);
-            --primary-400: rgba(5, 12, 20, 1);
+            --primary-100: hsla(224, 33%, 16%, 1);
+            --primary-200: hsla(224, 30.3%, 12.9%, 1);
+            --primary-300: hsla(224, 39.1%, 9%, 1);
+            --primary-400: hsla(224, 60%, 4.9%, 1);
 
-            --accent-100: rgba(81, 117, 164, 1);
-            --accent-200: rgba(101, 133, 174, 1);
-            --accent-300: rgba(118, 144, 178, 1);
-            --accent-400: rgba(147, 181, 227, 1);
+            --accent-100: hsla(224, 33.9%, 48%, 1);
+            --accent-200: hsla(224, 31.1%, 53.9%, 1);
+            --accent-300: hsla(224, 28%, 58%, 1);
+            --accent-400: hsla(224, 30.3%, 65.1%, 1);
 
             --text-primary: rgba(255, 255, 255, 1);
             --text-accent: var(--accent-400);
-            --text-accent-bg: rgba(61, 133, 228, 0.2);
+            --text-accent-bg: hsla(224, 50.3%, 65.1%, 0.1);
 
-            --button-fill: #222e3f;
-            --button-border: #2b3a4f;
-            --button-hover: #1f2938;
+            --button-fill: hsl(224, 30%, 19%);
+            --button-border: hsl(224, 30%, 24%);
+            --button-hover: hsl(224, 29%, 19%);
             --button-arrow-hover: var(--accent-300);
-            --button-shadow: 0px 1px 0px 0px hsla(210, 98%, 8%, 0.12);
-
-            --color-chalk: #1a83ff;
-            --color-chalk-secondary: #1a212d;
-
-            --color-experts: #1e992f;
-            --color-experts-secondary: #1a2620;
+            --button-shadow: 0px 1px 0px 0px hsla(224, 98%, 8%, 0.12);
 
             --github-text: #ffffff;
           }
