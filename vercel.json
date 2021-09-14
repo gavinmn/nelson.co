@@ -14,7 +14,7 @@
     },
     {
       "source": "/notes/:path*",
-      "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes:/path*"
+      "destination": "https://publish.obsidian.md/serve?url=nelson.co/notes/:path*"
     }
   ]
 }
