@@ -32,6 +32,7 @@ import obsidian from "../public/images/index/obsidian.png"
 import slack from "../public/images/index/slack.png"
 import stocketa from "../public/images/index/stocketa.png"
 import reflect from "../public/images/index/reflect.png"
+import vscode from "../public/images/index/vscode.png"
 import xcode from "../public/images/index/xcode.png"
 
 const IndexPage = ({ posts }) => {
@@ -95,6 +96,9 @@ const IndexPage = ({ posts }) => {
         </a>
         <SectionHeader section="Icons" />
         <div className="card-grid">
+          <Card width="double" src={vscode} title="VS Code" subtitle="2021">
+            <ButtonDownload link="https://gnelson.gumroad.com/l/vscode" />
+          </Card>
           <Card width="double" src={obsidian} title="Obsidian" subtitle="2021">
             <ButtonDownload link="/downloads/obsidian-icon-gavin-nelson.zip" />
           </Card>
