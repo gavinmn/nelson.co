@@ -26,6 +26,9 @@ module.exports = {
       "container-large": "612px",
       "container-small": "92%",
     },
+    maxHeight: {
+      image: "200px",
+    },
   },
   variants: {
     extend: {},

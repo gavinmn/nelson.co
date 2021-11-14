@@ -15,6 +15,8 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import holo from "../public/images/index/holo.png"
+
 const IndexPage = ({ posts }) => {
   const orderedPosts = posts.sort(
     (a, b) =>
@@ -24,7 +26,7 @@ const IndexPage = ({ posts }) => {
   return (
     <Layout>
       <SEO />
-      <div className="grid gap-16 mt-16 auto-rows-auto md:mt-64">
+      <div className="grid gap-16 mt-16 auto-rows-auto md:mt-32 md:mb-32">
         <Hero />
         <Section title="Connect">
           <div className="flex flex-row justify-between sm:justify-start align-center">
@@ -111,7 +113,10 @@ const IndexPage = ({ posts }) => {
           />
         </Section>
         <Section title="Select Icons">
-          <Icon />
+          <div className="flex flex-row justify-between ">
+            <Icon src={holo} title="Holo" subtitle="GitHub" />
+            <Icon src={holo} title="Holo" subtitle="GitHub" />
+          </div>
         </Section>
       </div>
     </Layout>
