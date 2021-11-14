@@ -126,6 +126,26 @@ const IndexPage = ({ posts }) => {
             />
           </Section>
           <Section title="Select Icons">
+            <p className="mb-4">
+              If you'd like to work with me on an icon, please{" "}
+              <a
+                href="mailto:gavin@nelson.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                get in touch
+              </a>
+              . <br />
+              For behind the scenes process posts,{" "}
+              <a
+                href="mailto:gavin@nelson.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                follow along on Twitter
+              </a>
+              .
+            </p>
             <div className="grid grid-cols-2 gap-4 grid-row-auto">
               <Icon src={holo} title="Holo" subtitle="GitHub" width="400" />
               <Icon
