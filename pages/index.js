@@ -2,13 +2,10 @@ import React from "react"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import Hero from "@/components/hero"
+import Section from "@/components/section"
+import Arena from "@/components/svg/arena"
+import Post from "@/components/post"
 import { device } from "@/components/device"
-import Card from "@/components/card"
-import ButtonExternal from "@/components/buttonexternal"
-import ButtonDownload from "@/components/buttondownload"
-import SectionHeader from "@/components/sectionheader"
-import PostPreview from "@/components/postpreview"
-import Project from "@/components/project"
 
 import fs from "fs"
 import matter from "gray-matter"
@@ -44,10 +41,60 @@ const IndexPage = ({ posts }) => {
   return (
     <Layout>
       <SEO />
-      <Hero />
-      <a aria-label="Work" id="work" href="/#work">
-        <h1 className="anchor"></h1>
-      </a>
+      <div className="grid gap-16 mt-16 auto-rows-auto md:mt-64">
+        <Hero />
+        <Section title="Connect">
+          <div className="flex flex-row align-center;">
+            <a
+              className="mr-8 text-tertiary"
+              href="mailto:gavin@nelson.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email
+            </a>
+            <a
+              className="mr-8 text-tertiary"
+              href="https://twitter.com/Gavmn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+            <a
+              className="mr-8 text-tertiary"
+              href="https://github.com/gavinmn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="mr-8 text-tertiary"
+              href="https://dribbble.com/Gavin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dribbble
+            </a>
+            <Arena />
+          </div>
+        </Section>
+        <Section title="Posts">
+          {orderedPosts.map((post, key) => {
+            return (
+              <div className="mb-2">
+                <Post
+                  key={key}
+                  title={post.data.title}
+                  date={post.data.date}
+                  href={`${post.filePath.replace(/\.mdx?$/, "")}`}
+                />
+              </div>
+            )
+          })}
+        </Section>
+      </div>
 
       {/* <SectionHeader section="Posts" />
 
@@ -176,7 +223,7 @@ const IndexPage = ({ posts }) => {
           title="Blender"
           subtitle="2020"
         ></Card> */}
-      <style jsx>{`
+      {/* <style jsx>{`
         .wrapper {
           max-width: 656px;
           padding: 0 5% 0 5%;
@@ -242,7 +289,7 @@ const IndexPage = ({ posts }) => {
             margin-top: -0.5rem;
           }
         }
-      `}</style>
+      `}</style>*/}
     </Layout>
   )
 }

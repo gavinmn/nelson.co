@@ -4,16 +4,23 @@
 
 @layer base {
   body {
-    @apply bg-background dark:bg-background-dark;
-    @apply text-primary dark:text-primary-dark;
-    @apply font-sans;
+    @apply font-sans bg-background text-primary;
   }
 
   h1 {
     @apply font-medium;
   }
   h2 {
-    @apply text-secondary dark:text-secondary-dark;
-    @apply font-medium;
+    @apply font-medium text-tertiary;
+  }
+  p {
+    @apply text-secondary;
+  }
+
+  a {
+    @apply underline transition duration-300 ease-in-out text-secondary;
+  }
+  a:hover {
+    @apply text-primary;
   }
 }
