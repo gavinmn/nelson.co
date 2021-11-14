@@ -12,6 +12,9 @@ module.exports = {
     fontFamily: {
       sans: ["Sohne", "sans-serif"],
     },
+    maxWidth: {
+      container: "612px",
+    },
   },
   variants: {
     extend: {},
