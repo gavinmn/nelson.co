@@ -11,7 +11,7 @@ const Icon = props => (
       src={props.src}
     />
     <div className="flex flex-col mt-2">
-      <div className="flex flex-row">
+      <div className="flex flex-row -mb-1">
         <p>{props.title}</p>
       </div>
       <p className="text-tertiary">{props.subtitle}</p>

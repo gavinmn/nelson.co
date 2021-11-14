@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans bg-background text-primary selection:bg-yellow-400 selection:text-primary;
+    @apply font-sans bg-background text-primary selection:bg-selection selection:text-primary;
   }
 
   h1 {

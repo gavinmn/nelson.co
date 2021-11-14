@@ -8,6 +8,7 @@ module.exports = {
         primary: "hsl(0, 0%, 100%)",
         secondary: "hsl(0, 0%, 100%)",
         background: "hsl(224, 25%, 12%)",
+        selection: "#FFAB7F",
       },
       textColor: {
         primary: "hsl(0, 0%, 100%)",

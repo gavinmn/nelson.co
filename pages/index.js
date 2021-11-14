@@ -17,6 +17,17 @@ import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 import holo from "../public/images/index/holo.png"
 import vscode from "../public/images/index/vscode.png"
 import things from "../public/images/index/things.png"
+import g1 from "../public/images/index/g1.png"
+import obsidian from "../public/images/index/obsidian.png"
+import craft from "../public/images/index/craft.png"
+import camo from "../public/images/index/camo.png"
+import reflect from "../public/images/index/reflect.png"
+import stocketa from "../public/images/index/stocketa.png"
+import apollo from "../public/images/index/apollo.png"
+import xcode from "../public/images/index/xcode.png"
+import claquette from "../public/images/index/claquette.png"
+import slack from "../public/images/index/slack.png"
+import github from "../public/images/index/github.png"
 
 const IndexPage = ({ posts }) => {
   const orderedPosts = posts.sort(
@@ -131,6 +142,58 @@ const IndexPage = ({ posts }) => {
                   width="800"
                 />
               </div>
+              <Icon src={g1} title="G1 Chip" subtitle="GitHub" width="400" />{" "}
+              <Icon src={camo} title="Camo" subtitle="Reincubate" width="400" />
+              <div className="col-span-2">
+                <Icon
+                  src={craft}
+                  title="Craft"
+                  subtitle="Craft Docs"
+                  width="800"
+                />
+              </div>
+              <Icon
+                src={obsidian}
+                title="Obsidian"
+                subtitle="Personal"
+                width="400"
+              />
+              <Icon
+                src={reflect}
+                title="Reflect"
+                subtitle="Reflect Notes"
+                width="400"
+              />
+              <div className="col-span-2">
+                <Icon
+                  src={claquette}
+                  title="Claquette"
+                  subtitle="Peak Step"
+                  width="800"
+                />
+              </div>
+              <Icon
+                src={stocketa}
+                title="Stocketa"
+                subtitle="Stocketa"
+                width="400"
+              />
+              <Icon
+                src={apollo}
+                title="N.E.L.S.O.N."
+                subtitle="Apollo Reddit"
+                width="400"
+              />
+              <div className="col-span-2">
+                <Icon
+                  src={github}
+                  title="Early Bird & Hyperspace"
+                  subtitle="GitHub"
+                  width="800"
+                />
+              </div>
+              <Icon src={xcode} title="Xcode" subtitle="Personal" width="400" />
+              <Icon src={slack} title="Slack" subtitle="Personal" width="400" />
             </div>
           </Section>
         </div>
