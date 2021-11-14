@@ -15,7 +15,8 @@ module.exports = {
         tertiary: "hsl(224, 25%, 56%)",
       },
       gridTemplateColumns: {
-        uneven: "20% 80%",
+        "20-80": "20% 80%",
+        "118-auto": "118px auto",
       },
     },
     fontFamily: {

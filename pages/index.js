@@ -46,9 +46,9 @@ const IndexPage = ({ posts }) => {
       <div className="grid gap-16 mt-16 auto-rows-auto md:mt-64">
         <Hero />
         <Section title="Connect">
-          <div className="flex flex-row align-center;">
+          <div className="flex flex-row justify-between sm:justify-start align-center">
             <a
-              className="mr-8 text-tertiary"
+              className="sm:mr-8 text-tertiary"
               href="mailto:gavin@nelson.co"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +56,7 @@ const IndexPage = ({ posts }) => {
               Email
             </a>
             <a
-              className="mr-8 text-tertiary"
+              className="sm:mr-8 text-tertiary"
               href="https://twitter.com/Gavmn"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +64,7 @@ const IndexPage = ({ posts }) => {
               Twitter
             </a>
             <a
-              className="mr-8 text-tertiary"
+              className="sm:mr-8 text-tertiary"
               href="https://github.com/gavinmn"
               target="_blank"
               rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const IndexPage = ({ posts }) => {
               GitHub
             </a>
             <a
-              className="mr-8 text-tertiary"
+              className="sm:mr-8 text-tertiary"
               href="https://dribbble.com/Gavin/"
               target="_blank"
               rel="noopener noreferrer"
@@ -131,44 +131,7 @@ const IndexPage = ({ posts }) => {
         <Section title="Icons"></Section>
       </div>
 
-      {/* <SectionHeader section="Posts" />
-
-      <div className="post-grid">
-        {orderedPosts.map((post, key) => {
-          return (
-            <PostPreview
-              key={key}
-              title={post.data.title}
-              date={post.data.date}
-              href={`${post.filePath.replace(/\.mdx?$/, "")}`}
-            />
-          )
-        })}
-      </div>
-
-      <SectionHeader section="Projects" />
-      <div className="project-grid">
-        <Project
-          title="Highlights"
-          description="A feed of passages I've highlighted from articles across the web."
-          href="/highlights"
-        />
-        <Project
-          title="Heavy Rotation"
-          description="A collection of what I've been listening to recently."
-          href="/musicthread/heavy-rotation"
-        />
-      </div>
-      <div className="card-grid">
-        <Card
-          width="double"
-          src={montereyImage}
-          title="Monterey"
-          subtitle="Icon Design"
-        >
-          <ButtonExternal link="https://gumroad.com/l/dvctd" />
-        </Card>
-      </div>
+      {/* 
 
       <a aria-label="Icons" id="icons" className="anchor" href="/#icons">
         <h1></h1>
