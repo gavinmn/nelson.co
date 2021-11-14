@@ -1,10 +1,11 @@
-import React from "react"
+import Link from "next/link"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import Hero from "@/components/hero"
 import Section from "@/components/section"
 import Arena from "@/components/svg/arena"
 import Post from "@/components/post"
+import Arrow from "@/components/svg/arrow"
 import { device } from "@/components/device"
 
 import fs from "fs"
@@ -79,6 +80,18 @@ const IndexPage = ({ posts }) => {
             </a>
             <Arena />
           </div>
+        </Section>
+        <Section title="Notes">
+          <Link href="/notes" passhref>
+            <a
+              className=" text-tertiary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Wander the garden
+              <Arrow />
+            </a>
+          </Link>
         </Section>
         <Section title="Posts">
           {orderedPosts.map((post, key) => {
