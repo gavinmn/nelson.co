@@ -1,21 +1,21 @@
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "media",
+  darkMode: "false",
   theme: {
     extend: {
       colors: {
-        primary: "hsl(224, 10%, 10%)",
-        secondary: "hsl(224, 10%, 46%)",
-        "primary-dark": "hsl(0, 0%, 100%)",
-        background: "hsl(0, 0%, 100%)",
-        "background-dark": "hsl(224, 25%, 12%)",
+        primary: "hsl(0, 0%, 100%)",
+        secondary: "hsl(0, 0%, 100%)",
+        background: "hsl(224, 25%, 12%)",
       },
       textColor: {
-        primary: "hsl(224, 10%, 10%)",
-        secondary: "hsl(224, 10%, 46%)",
-        "primary-dark": "hsl(0, 0%, 100%)",
-        "secondary-dark": "hsl(224, 25%, 46%)",
+        primary: "hsl(0, 0%, 100%)",
+        secondary: "hsl(224, 25%, 80%)",
+        tertiary: "hsl(224, 25%, 56%)",
+      },
+      gridTemplateColumns: {
+        uneven: "20% 80%",
       },
     },
     fontFamily: {
@@ -29,5 +29,15 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const extendUnderline = {
+        ".underline": {
+          textDecoration: "underline",
+          "text-decoration-color": "hsl(224, 25%, 26%)",
+        },
+      }
+      addUtilities(extendUnderline)
+    },
+  ],
 }
