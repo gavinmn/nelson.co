@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background dark:bg-background-dark;
+    @apply text-primary dark:text-primary-dark;
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply font-medium;
+  }
+  h2 {
+    @apply text-secondary dark:text-secondary-dark;
+    @apply font-medium;
+  }
+}
