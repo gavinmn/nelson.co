@@ -6,7 +6,7 @@ import Header from "./header"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="container">
         <style jsx>{`
           .container {
@@ -105,7 +105,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
 
-        <div className="footer-container">
+        {/* <div className="footer-container">
           <div className="wrapper-large">
             <div className="layout-flex">
               <div className="top-flex">
@@ -186,7 +186,7 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </>
   )

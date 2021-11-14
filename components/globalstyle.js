@@ -14,13 +14,14 @@ function GlobalStyle(props) {
         }
 
         :root {
+          --h1: 16px;
           --body: 16px;
-          --small: 14px;
-          --h1: 20px;
-          --h2: 18px;
-          --h3: 16px;
 
-          --primary-100: hsla(0, 0%, 100%, 1);
+          --color-900: hsla(224, 10%, 10%, 1);
+          --color-300: hsla(224, 10%, 46%, 1);
+
+           {
+            /* --primary-100: hsla(0, 0%, 100%, 1);
           --primary-200: hsla(224, 33.3%, 95.9%, 1);
           --primary-300: hsla(224, 43.5%, 91%, 1);
           --primary-400: hsla(224, 43.7%, 86.1%, 1);
@@ -40,10 +41,12 @@ function GlobalStyle(props) {
           --button-arrow-hover: var(--accent-400);
           --button-shadow: 0px 1px 0px 0px rgba(0, 39, 78, 0.04);
 
-          --github-text: #24292e;
+          --github-text: #24292e; */
+          }
         }
 
-        @media (prefers-color-scheme: dark) {
+         {
+          /* @media (prefers-color-scheme: dark) {
           :root {
             --primary-100: hsla(224, 33%, 16%, 1);
             --primary-200: hsla(224, 30.3%, 12.9%, 1);
@@ -67,13 +70,12 @@ function GlobalStyle(props) {
 
             --github-text: #ffffff;
           }
+        } */
         }
 
         @media only screen and (min-width: 768px) {
           :root {
-            --h1: 24px;
-            --h2: 20px;
-            --h3: 18px;
+            --h1: 16px;
           }
         }
 

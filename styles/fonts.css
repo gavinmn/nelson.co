@@ -1,116 +1,15 @@
 @font-face {
   font-family: "Sohne";
-  src: url(/fonts/soehne-web-buch.woff2) format("woff2");
-
-  font-weight: normal;
+  src: url(/fonts/sohne-buch.woff2) format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: optional;
 }
 
 @font-face {
   font-family: "Sohne";
-  src: url(/fonts/soehne-web-dreiviertelfett.woff2) format("woff2");
-
-  font-weight: bold;
+  src: url(/fonts/sohne-kraftig.woff) format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: optional;
-}
-
-h1 {
-  font-size: var(--h1);
-  margin-bottom: 0.25rem;
-}
-
-h2 {
-  font-size: var(--h2);
-  font-weight: bold;
-  margin: 1.25rem 0 0.5rem 0;
-}
-
-h3 {
-  font-size: var(--h3);
-  font-weight: normal;
-  margin: 1.25rem 0 0.5rem 0;
-  color: var(--text-accent);
-}
-
-p {
-  font-size: var(--body);
-}
-
-a {
-  font-size: var(--body);
-  color: var(--text-accent);
-  text-decoration: none;
-  font-weight: normal;
-  transition: all 200ms ease-in-out;
-}
-
-a:hover {
-  background-color: var(--text-accent-bg);
-  cursor: pointer;
-  text-decoration: none;
-}
-
-li {
-  font-size: var(--body);
-
-  margin: 0.5rem 0;
-}
-
-li::marker {
-  font-size: var(--body);
-  color: var(--text-accent);
-}
-
-ul > li {
-  margin-left: 1.5rem;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-code {
-  font-family: ui-monospace, monospace;
-  font-size: var(--small);
-  color: var(--text-accent);
-  background-color: var(--primary-200);
-  padding: 0.05rem 0.1rem 0.1rem 0.1rem;
-  border-radius: 2px;
-}
-
-@media only screen and (min-width: 722px) {
-  h1 {
-    font-size: var(--h1);
-
-    margin-bottom: 0.125rem;
-  }
-
-  h2 {
-    font-size: var(--h2);
-
-    font-weight: bold;
-    margin: 0.75rem 0 0.25rem 0;
-  }
-
-  h3 {
-    font-size: var(--h3);
-
-    font-weight: normal;
-    margin: 0.75rem 0 0.25rem 0;
-    color: var(--text-accent);
-  }
-
-  p {
-    font-size: var(--body);
-  }
-
-  li {
-    margin: 0.25rem 0;
-  }
-
-  ul > li {
-    margin-left: 0.75rem;
-  }
 }
