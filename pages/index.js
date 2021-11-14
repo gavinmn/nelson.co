@@ -6,6 +6,7 @@ import Section from "@/components/section"
 import Arena from "@/components/svg/arena"
 import Post from "@/components/post"
 import Arrow from "@/components/svg/arrow"
+import Project from "@/components/project"
 import { device } from "@/components/device"
 
 import fs from "fs"
@@ -88,8 +89,7 @@ const IndexPage = ({ posts }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Wander the garden
-              <Arrow />
+              Wander the garden →
             </a>
           </Link>
         </Section>
@@ -107,6 +107,28 @@ const IndexPage = ({ posts }) => {
             )
           })}
         </Section>
+        <Section title="Projects">
+          <div className="mb-4">
+            <Project
+              link="/highlights"
+              title="Highlights"
+              description="A feed of passages I’ve highlighted from articles across the web"
+            />
+          </div>
+          <div className="mb-4">
+            <Project
+              link="/musicthread/heavy-rotation"
+              title="Heavy Rotation"
+              description="A collection of what I've been listening to recently"
+            />
+          </div>
+          <Project
+            link="https://gumroad.com/l/dvctd"
+            title="Monterey"
+            description="A macOS and iOS icon them"
+          />
+        </Section>
+        <Section title="Icons"></Section>
       </div>
 
       {/* <SectionHeader section="Posts" />
