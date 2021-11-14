@@ -5,15 +5,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "hsl(224, 10 10)",
-        secondary: "hsl(224, 10 46)",
+        primary: "hsl(224, 10%, 10%)",
+        secondary: "hsl(224, 10%, 46%)",
+      },
+      textColor: {
+        primary: "hsl(224, 10%, 10%)",
+        secondary: "hsl(224, 10%, 46%)",
       },
     },
     fontFamily: {
       sans: ["Sohne", "sans-serif"],
     },
     maxWidth: {
-      container: "612px",
+      "container-large": "612px",
+      "container-small": "92%",
     },
   },
   variants: {
