@@ -79,9 +79,9 @@ const IndexPage = ({ posts }) => {
             </div>
           </Section>
           <Section title="Notes">
-            <Link href="/notes" passhref className="inline">
+            <Link href="/notes" passhref>
               <a
-                className=" text-tertiary hover:mr-2"
+                className=" text-tertiary group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -147,12 +147,20 @@ const IndexPage = ({ posts }) => {
               .
             </p>
             <div className="grid grid-cols-2 gap-4 grid-row-auto">
-              <Icon src={holo} title="Holo" subtitle="GitHub" width="400" />
+              <Icon
+                src={holo}
+                title="Holo"
+                subtitle="GitHub"
+                width="400"
+                link="https://github.com/mobile"
+              />
               <Icon
                 src={vscode}
                 title="VS Code"
                 subtitle="Personal"
                 width="400"
+                arrow="download"
+                link="https://gnelson.gumroad.com/l/vscode"
               />
               <div className="col-span-2">
                 <Icon
@@ -160,16 +168,31 @@ const IndexPage = ({ posts }) => {
                   title="Things"
                   subtitle="Personal"
                   width="800"
+                  arrow="download"
+                  link="https://gnelson.gumroad.com/l/things-icon"
                 />
               </div>
-              <Icon src={g1} title="G1 Chip" subtitle="GitHub" width="400" />{" "}
-              <Icon src={camo} title="Camo" subtitle="Reincubate" width="400" />
+              <Icon
+                src={g1}
+                title="G1 Chip"
+                subtitle="GitHub"
+                width="400"
+                link="https://github.com/mobile"
+              />
+              <Icon
+                src={camo}
+                title="Camo"
+                subtitle="Reincubate"
+                width="400"
+                link="https://reincubate.com/camo/"
+              />
               <div className="col-span-2">
                 <Icon
                   src={craft}
                   title="Craft"
                   subtitle="Craft Docs"
                   width="800"
+                  link="https://www.craft.do"
                 />
               </div>
               <Icon
@@ -177,12 +200,15 @@ const IndexPage = ({ posts }) => {
                 title="Obsidian"
                 subtitle="Personal"
                 width="400"
+                arrow="download"
+                link="https://gnelson.gumroad.com/l/obsidian2"
               />
               <Icon
                 src={reflect}
                 title="Reflect"
                 subtitle="Reflect Notes"
                 width="400"
+                link="https://reflect.app"
               />
               <div className="col-span-2">
                 <Icon
@@ -190,6 +216,7 @@ const IndexPage = ({ posts }) => {
                   title="Claquette"
                   subtitle="Peak Step"
                   width="800"
+                  link="https://www.peakstep.com/claquette/"
                 />
               </div>
               <Icon
@@ -197,12 +224,14 @@ const IndexPage = ({ posts }) => {
                 title="Stocketa"
                 subtitle="Stocketa"
                 width="400"
+                link="https://stocketa.com"
               />
               <Icon
                 src={apollo}
                 title="N.E.L.S.O.N."
                 subtitle="Apollo Reddit"
                 width="400"
+                link="https://apolloapp.io"
               />
               <div className="col-span-2">
                 <Icon
@@ -210,10 +239,23 @@ const IndexPage = ({ posts }) => {
                   title="Early Bird & Hyperspace"
                   subtitle="GitHub"
                   width="800"
+                  link="https://github.com/mobile"
                 />
               </div>
-              <Icon src={xcode} title="Xcode" subtitle="Personal" width="400" />
-              <Icon src={slack} title="Slack" subtitle="Personal" width="400" />
+              <Icon
+                src={xcode}
+                title="Xcode"
+                subtitle="Personal"
+                width="400"
+                arrow="none"
+              />
+              <Icon
+                src={slack}
+                title="Slack"
+                subtitle="Personal"
+                width="400"
+                arrow="none"
+              />
             </div>
           </Section>
         </div>
