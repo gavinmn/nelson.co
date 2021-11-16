@@ -8,6 +8,9 @@ const Layout = ({ children }) => {
     <main>
       <div className="mx-auto max-w-container-small md:max-w-container-large">
         {children}
+        <div className="mb-8">
+          <p>{new Date().getFullYear()} Gavin Nelson</p>
+        </div>
       </div>
     </main>
   )

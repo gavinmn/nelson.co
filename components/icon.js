@@ -25,34 +25,41 @@ const Icon = props => {
         height={400}
         src={props.src}
       />
-      <div className="flex flex-col mt-2">
-        <div className="flex flex-row items-center -mb-1">
-          <a
-            className={
-              noArrow ? "no-underline hover:text-secondary" : "underline"
-            }
-            href={props.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.title}
-            <div
-              className={
-                noArrow ? "hidden" : downloadArrow ? "hidden" : "inline"
-              }
-            >
-              <ArrowRight />
-            </div>
-            <div
-              className={
-                noArrow ? "hidden" : downloadArrow ? "inline" : "hidden"
-              }
-            >
-              <ArrowDown />
-            </div>
-          </a>
-        </div>
+      <div className="flex flex-row items-center mt-2">
+        <a
+          className={
+            noArrow ? "no-underline hover:text-secondary" : "underline"
+          }
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {props.title}
+        </a>
+        <span className="mx-2 opacity-40 text-tertiary">•</span>
         <p className="text-tertiary">{props.subtitle}</p>
+        <div
+          className={
+            noArrow
+              ? "hidden"
+              : downloadArrow
+              ? "hidden"
+              : "flex flex-row items-center"
+          }
+        >
+          <ArrowRight />
+        </div>
+        <div
+          className={
+            noArrow
+              ? "hidden"
+              : downloadArrow
+              ? "flex flex-row items-center"
+              : "hidden"
+          }
+        >
+          <ArrowDown />
+        </div>
       </div>
     </div>
   )
