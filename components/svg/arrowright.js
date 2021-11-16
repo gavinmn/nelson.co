@@ -1,6 +1,6 @@
 const ArrowRight = () => (
   <svg
-    className="inline ml-2"
+    className="inline ml-2 "
     width="11"
     height="8"
     viewBox="0 0 11 8"
