@@ -79,9 +79,9 @@ const IndexPage = ({ posts }) => {
             </div>
           </Section>
           <Section title="Notes">
-            <Link href="/notes" passhref>
+            <Link href="/notes" passhref className="inline">
               <a
-                className=" text-tertiary"
+                className=" text-tertiary hover:mr-2"
                 target="_blank"
                 rel="noopener noreferrer"
               >

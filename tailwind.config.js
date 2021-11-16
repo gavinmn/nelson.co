@@ -8,6 +8,7 @@ module.exports = {
         primary: "hsl(0, 0%, 100%)",
         secondary: "hsl(0, 0%, 100%)",
         background: "hsl(224, 25%, 12%)",
+        // background: "#f7f7f7",
         selection: "#FFAB7F",
       },
       textColor: {
@@ -16,7 +17,7 @@ module.exports = {
         tertiary: "hsl(224, 25%, 56%)",
       },
       gridTemplateColumns: {
-        "20-80": "20% 80%",
+        "20-80": "60% 40%",
         "118-auto": "118px auto",
       },
     },

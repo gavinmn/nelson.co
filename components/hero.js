@@ -5,7 +5,7 @@ const Hero = props => {
     <div className="grid auto-rows-auto gap-y-8">
       <Logo />
       <div>
-        <h1 className="font-medium ">Gavin Nelson</h1>
+        <h1>Gavin Nelson</h1>
         <h2>Product & Icon Designer</h2>
       </div>
       <p>

@@ -1,4 +1,7 @@
 import Image from "next/image"
+import ArrowDown from "@/components/svg/arrowdown.js"
+import ArrowRight from "@/components/svg/arrowright.js"
+
 const Icon = props => (
   <div className="flex flex-col">
     <Image
@@ -11,8 +14,11 @@ const Icon = props => (
       src={props.src}
     />
     <div className="flex flex-col mt-2">
-      <div className="flex flex-row -mb-1">
-        <p>{props.title}</p>
+      <div className="flex flex-row items-center -mb-1">
+        <a className="group">
+          {props.title}
+          <ArrowRight />
+        </a>
       </div>
       <p className="text-tertiary">{props.subtitle}</p>
     </div>
