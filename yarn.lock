@@ -440,10 +440,10 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.0.3.tgz#e676b4d1454d8b6be433a348e99f2b8276ab6cd7"
   integrity sha512-QcdlpcwIH9dYcVlNAU+gXaqHA/omskbRlb+R3vN7LlB2EgLt+9WQwbokcHOsNyt4pI7kDM67W4tr9l7dWnlGdQ==
 
-"@next/mdx@^12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.0.1.tgz#fa71dbb4fdb9307fb13e461766c11d8bf3f3f4cf"
-  integrity sha512-hF8l6/CYdcPUSkoBwK3HES5oKchSFMjxEqNPI4z4puhw8gfl/3LsxsI0LpcKT3LoZLhkNuiCMbNyzHnXszVWUA==
+"@next/mdx@^12.0.4":
+  version "12.0.4"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-12.0.4.tgz#8c3e74ba1fd8322f3a883e36718b5f00109f5041"
+  integrity sha512-WsiuZkzhECLp91ZGErhPKzASsFSRwcoHATOeZZvrkyjXiBodem/M3qFev6GPe9g2Ejw5Kt2DdbwUlkELDpz8aw==
 
 "@next/polyfill-module@12.0.3":
   version "12.0.3"
