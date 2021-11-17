@@ -1,21 +1,20 @@
 import Image from "next/image"
 import ArrowDown from "@/components/svg/arrowdown.js"
-import ArrowRight from "@/components/svg/arrowright.js"
 
 const Icon = props => {
   let downloadArrow = false
-  let noArrow = false
+  let noLink = false
 
-  if (props.arrow === "download") {
+  if (props.download === true) {
     downloadArrow = true
   }
 
-  if (props.arrow === "none") {
-    noArrow = true
+  if (props.link === undefined) {
+    noLink = true
   }
 
   return (
-    <div className="flex flex-col items-start max-w-full overflow-hidden">
+    <div className="flex flex-col items-stretch max-w-full overflow-hidden">
       <div className="flex flex-col items-center self-stretch overflow-hidden rounded-sm h-100">
         <Image
           alt=""
@@ -27,41 +26,29 @@ const Icon = props => {
           src={props.src}
         />
       </div>
-      <div className="flex flex-row items-center mt-2">
+      <div className="flex flex-row items-center justify-between mt-2">
+        <div className="flex flex-row items-center">
+          <a
+            className={
+              noLink ? "no-underline hover:text-secondary" : "underline"
+            }
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {props.title}
+          </a>
+          <span className="mx-2 opacity-40 text-tertiary">•</span>
+          <p className="text-tertiary">{props.subtitle}</p>
+        </div>
         <a
-          className={
-            noArrow ? "no-underline hover:text-secondary" : "underline"
-          }
           href={props.link}
           target="_blank"
           rel="noopener noreferrer"
-        >
-          {props.title}
-        </a>
-        <span className="mx-2 opacity-40 text-tertiary">•</span>
-        <p className="text-tertiary">{props.subtitle}</p>
-        <div
-          className={
-            noArrow
-              ? "hidden"
-              : downloadArrow
-              ? "hidden"
-              : "flex flex-row items-center"
-          }
-        >
-          <ArrowRight />
-        </div>
-        <div
-          className={
-            noArrow
-              ? "hidden"
-              : downloadArrow
-              ? "flex flex-row items-center"
-              : "hidden"
-          }
+          className={downloadArrow ? "flex flex-row items-center" : "hidden"}
         >
           <ArrowDown />
-        </div>
+        </a>
       </div>
     </div>
   )

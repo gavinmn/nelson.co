@@ -127,9 +127,10 @@ const IndexPage = ({ posts }) => {
             />
           </Section>
           <Section title="Select Icons">
-            <p className="mb-4">
+            <p className="mb-4 text-tertiary">
               If you'd like to work with me on an icon, please{" "}
               <a
+                className="text-tertiary"
                 href="mailto:gavin@nelson.co"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -139,6 +140,7 @@ const IndexPage = ({ posts }) => {
               . <br />
               For behind the scenes process posts,{" "}
               <a
+                className="text-tertiary"
                 href="mailto:gavin@nelson.co"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -147,7 +149,7 @@ const IndexPage = ({ posts }) => {
               </a>
               .
             </p>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
               <Icon
                 src={holo}
                 title="Holo"
@@ -159,7 +161,7 @@ const IndexPage = ({ posts }) => {
                 title="VS Code"
                 subtitle="Personal"
                 width="400"
-                arrow="download"
+                download={true}
                 link="https://gnelson.gumroad.com/l/vscode"
               />
               <div className="max-w-full sm:col-span-2">
@@ -168,7 +170,7 @@ const IndexPage = ({ posts }) => {
                   title="Things"
                   subtitle="Personal"
                   width="800"
-                  arrow="download"
+                  download={true}
                   link="https://gnelson.gumroad.com/l/things-icon"
                 />
               </div>
@@ -200,7 +202,7 @@ const IndexPage = ({ posts }) => {
                 title="Obsidian"
                 subtitle="Personal"
                 width="400"
-                arrow="download"
+                download={true}
                 link="https://gnelson.gumroad.com/l/obsidian2"
               />
               <Icon
@@ -250,20 +252,8 @@ const IndexPage = ({ posts }) => {
                 link="https://apolloapp.io"
               />
 
-              <Icon
-                src={xcode}
-                title="Xcode"
-                subtitle="Personal"
-                width="400"
-                arrow="none"
-              />
-              <Icon
-                src={slack}
-                title="Slack"
-                subtitle="Personal"
-                width="400"
-                arrow="none"
-              />
+              <Icon src={xcode} title="Xcode" subtitle="Personal" width="400" />
+              <Icon src={slack} title="Slack" subtitle="Personal" width="400" />
             </div>
           </Section>
         </div>
