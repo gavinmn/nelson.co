@@ -27,7 +27,8 @@ import apollo from "../public/images/index/apollo.png"
 import xcode from "../public/images/index/xcode.png"
 import claquette from "../public/images/index/claquette.png"
 import slack from "../public/images/index/slack.png"
-import github from "../public/images/index/github.png"
+import hyperspace from "../public/images/index/hyperspace.png"
+import earlybird from "../public/images/index/earlybird.png"
 
 const IndexPage = ({ posts }) => {
   const orderedPosts = posts.sort(
@@ -39,7 +40,7 @@ const IndexPage = ({ posts }) => {
     <>
       <Layout>
         <SEO />
-        <div className="grid gap-16 my-16 md:my-32 auto-rows-auto ">
+        <div className="grid max-w-full gap-16 my-16 md:my-32 auto-rows-auto">
           <Hero />
           <Section title="Connect">
             <div className="flex flex-row justify-between sm:justify-start align-center">
@@ -146,7 +147,7 @@ const IndexPage = ({ posts }) => {
               </a>
               .
             </p>
-            <div className="grid gap-4 sm:grid-cols-2 grid-rows-auto">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <Icon
                 src={holo}
                 title="Holo"
@@ -161,7 +162,7 @@ const IndexPage = ({ posts }) => {
                 arrow="download"
                 link="https://gnelson.gumroad.com/l/vscode"
               />
-              <div className="sm:col-span-2">
+              <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={things}
                   title="Things"
@@ -185,7 +186,7 @@ const IndexPage = ({ posts }) => {
                 width="400"
                 link="https://reincubate.com/camo/"
               />
-              <div className="sm:col-span-2">
+              <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={craft}
                   title="Craft"
@@ -203,13 +204,14 @@ const IndexPage = ({ posts }) => {
                 link="https://gnelson.gumroad.com/l/obsidian2"
               />
               <Icon
-                src={reflect}
-                title="Reflect"
-                subtitle="Reflect Notes"
-                width="400"
-                link="https://reflect.app"
+                src={earlybird}
+                title="Earlybird"
+                subtitle="GitHub"
+                width="800"
+                link="https://github.com/mobile"
               />
-              <div className="sm:col-span-2 ">
+
+              <div className="max-w-full sm:col-span-2 ">
                 <Icon
                   src={claquette}
                   title="Claquette"
@@ -226,21 +228,28 @@ const IndexPage = ({ posts }) => {
                 link="https://stocketa.com"
               />
               <Icon
+                src={reflect}
+                title="Reflect"
+                subtitle="Reflect Notes"
+                width="400"
+                link="https://reflect.app"
+              />
+
+              <Icon
+                src={hyperspace}
+                title="Hyperspace"
+                subtitle="GitHub"
+                width="800"
+                link="https://github.com/mobile"
+              />
+              <Icon
                 src={apollo}
                 title="N.E.L.S.O.N."
                 subtitle="Apollo Reddit"
                 width="400"
                 link="https://apolloapp.io"
               />
-              <div className="sm:col-span-2">
-                <Icon
-                  src={github}
-                  title="Early Bird & Hyperspace"
-                  subtitle="GitHub"
-                  width="800"
-                  link="https://github.com/mobile"
-                />
-              </div>
+
               <Icon
                 src={xcode}
                 title="Xcode"
