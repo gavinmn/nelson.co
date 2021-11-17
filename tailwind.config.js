@@ -19,7 +19,6 @@ module.exports = {
       gridTemplateColumns: {
         "20-80": "60% 40%",
         "118-auto": "118px auto",
-        "auto-auto": "auto auto",
       },
       height: {
         400: "400px",
