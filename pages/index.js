@@ -43,7 +43,7 @@ const IndexPage = ({ posts }) => {
         <div className="grid max-w-full gap-16 my-16 md:my-32 auto-rows-auto">
           <Hero />
           <Section title="Connect">
-            <div className="flex flex-row justify-between sm:justify-start align-center">
+            <div className="flex flex-row self-stretch justify-between sm:justify-start ">
               <a
                 className="sm:mr-8 text-tertiary"
                 href="mailto:gavin@nelson.co"
