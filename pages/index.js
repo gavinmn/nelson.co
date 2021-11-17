@@ -39,7 +39,7 @@ const IndexPage = ({ posts }) => {
     <>
       <Layout>
         <SEO />
-        <div className="grid gap-16 mt-16 auto-rows-auto md:mt-32 md:mb-32">
+        <div className="grid gap-16 my-16 md:my-32 auto-rows-auto ">
           <Hero />
           <Section title="Connect">
             <div className="flex flex-row justify-between sm:justify-start align-center">
@@ -146,12 +146,11 @@ const IndexPage = ({ posts }) => {
               </a>
               .
             </p>
-            <div className="grid grid-cols-2 gap-4 grid-row-auto">
+            <div className="grid gap-4 sm:grid-cols-2 grid-rows-auto">
               <Icon
                 src={holo}
                 title="Holo"
                 subtitle="GitHub"
-                width="400"
                 link="https://github.com/mobile"
               />
               <Icon
@@ -162,7 +161,7 @@ const IndexPage = ({ posts }) => {
                 arrow="download"
                 link="https://gnelson.gumroad.com/l/vscode"
               />
-              <div className="col-span-2">
+              <div className="sm:col-span-2">
                 <Icon
                   src={things}
                   title="Things"
@@ -186,7 +185,7 @@ const IndexPage = ({ posts }) => {
                 width="400"
                 link="https://reincubate.com/camo/"
               />
-              <div className="col-span-2">
+              <div className="sm:col-span-2">
                 <Icon
                   src={craft}
                   title="Craft"
@@ -210,7 +209,7 @@ const IndexPage = ({ posts }) => {
                 width="400"
                 link="https://reflect.app"
               />
-              <div className="col-span-2">
+              <div className="sm:col-span-2 ">
                 <Icon
                   src={claquette}
                   title="Claquette"
@@ -233,7 +232,7 @@ const IndexPage = ({ posts }) => {
                 width="400"
                 link="https://apolloapp.io"
               />
-              <div className="col-span-2">
+              <div className="sm:col-span-2">
                 <Icon
                   src={github}
                   title="Early Bird & Hyperspace"

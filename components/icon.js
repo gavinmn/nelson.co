@@ -16,15 +16,17 @@ const Icon = props => {
 
   return (
     <div className="flex flex-col">
-      <Image
-        className="overflow-hidden rounded-sm"
-        alt=""
-        quality="100"
-        placeholder="blur"
-        width={`${props.width}`}
-        height={400}
-        src={props.src}
-      />
+      <div className="flex items-center self-stretch overflow-hidden rounded-sm flex-column h-400">
+        <Image
+          alt=""
+          quality="100"
+          placeholder="blur"
+          width={800}
+          height={400}
+          layout="fixed"
+          src={props.src}
+        />
+      </div>
       <div className="flex flex-row items-center mt-2">
         <a
           className={
