@@ -1,15 +1,17 @@
-import PropTypes from "prop-types"
-import { device } from "@/components/device"
 import Link from "next/link"
-import Header from "./header"
 
 const Layout = ({ children }) => {
   return (
     <main>
       <div className="mx-auto max-w-container-small md:max-w-container-large">
         {children}
-        <div className="mb-8">
-          <p>{new Date().getFullYear()} Gavin Nelson</p>
+        <div className="flex flex-row justify-between mb-8 ">
+          <p className="text-sm text-tertiary">
+            © {new Date().getFullYear()} Gavin Nelson
+          </p>
+          <Link href="/colophon" passhref>
+            <a className="text-sm text-tertiary">Colophon</a>
+          </Link>
         </div>
       </div>
     </main>
