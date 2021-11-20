@@ -9,9 +9,17 @@ const Layout = ({ children }) => {
           <p className="text-sm text-tertiary">
             © {new Date().getFullYear()} Gavin Nelson
           </p>
-          <Link href="/colophon" passhref>
-            <a className="text-sm text-tertiary">Colophon</a>
-          </Link>
+          <div className="flex flex-row">
+            <a
+              href="https://nelson.co/feed.xml"
+              className="mr-4 text-sm text-tertiary"
+            >
+              RSS
+            </a>
+            <Link href="/colophon" passhref>
+              <a className="text-sm text-tertiary">Colophon</a>
+            </Link>
+          </div>
         </div>
       </div>
     </main>
