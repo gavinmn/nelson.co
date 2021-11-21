@@ -11,7 +11,7 @@ const Header = props => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-start">
       <Link href="/" passhref>
         <a className="mb-4">
           <Logo />
