@@ -15,7 +15,7 @@ export const CustomLink = props => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />
 }
 
-export const Br = () => <div className="h-1"></div>
+export const Br = () => <div className="h-4"></div>
 
 export const HorizontalRule = () => (
   <div className="flex flex-row content-center justify-center my-3">

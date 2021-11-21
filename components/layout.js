@@ -1,9 +1,12 @@
 import Link from "next/link"
 
+import Header from "./header"
+
 const Layout = ({ children }) => {
   return (
     <main>
-      <div className="mx-auto max-w-container-small md:max-w-container-large">
+      <div className="mx-auto my-16 max-w-container-small md:max-w-container-large md:my-32">
+        <Header />
         {children}
         <div className="flex flex-row justify-between mb-8 ">
           <p className="text-sm text-tertiary">

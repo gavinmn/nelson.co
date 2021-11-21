@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
-import Hero from "@/components/hero"
+import Header from "@/components/header"
 import Section from "@/components/section"
 import { ArrowRight, Arena } from "../components/svg"
 import Post from "@/components/post"
@@ -40,8 +40,14 @@ const IndexPage = ({ posts }) => {
     <>
       <Layout>
         <SEO />
-        <div className="grid max-w-full gap-16 my-16 md:my-32 auto-rows-auto">
-          <Hero />
+        <div className="grid max-w-full gap-16 auto-rows-auto">
+          <div>
+            <p className="mt-4">
+              I'm currently shaping the mobile apps at GitHub and crafting
+              beautiful app icons for companies and individuals. I focus on fit
+              and finish to solve problems and create seamless experiences.
+            </p>
+          </div>
           <Section title="Connect">
             <div className="flex flex-row self-stretch justify-between sm:justify-start ">
               <a

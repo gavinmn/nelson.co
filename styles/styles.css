@@ -8,11 +8,16 @@
   }
 
   h1 {
-    @apply font-medium;
+    @apply text-lg font-medium;
   }
   h2 {
+    @apply font-medium;
+  }
+
+  h3 {
     @apply font-medium text-tertiary;
   }
+
   p {
     @apply text-secondary;
   }

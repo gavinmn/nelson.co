@@ -1,7 +1,6 @@
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import Link from "next/link"
-import { device } from "@/components/device"
 
 const NotFoundPage = props => (
   <Layout>
@@ -27,12 +26,6 @@ const NotFoundPage = props => (
       }
       .here-link:hover {
         text-decoration: underline;
-      }
-
-      @media ${device.desktop} {
-        .text-container {
-          margin-top: 1rem;
-        }
       }
     `}</style>
     <SEO title="404: Not found " />
