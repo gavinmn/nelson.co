@@ -8,7 +8,7 @@
   }
 
   h1 {
-    @apply text-lg font-medium;
+    @apply font-medium;
   }
   h2 {
     @apply font-medium;
