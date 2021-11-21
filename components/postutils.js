@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const CustomLink = props => {
+export const CustomLink = props => {
   const href = props.href
   const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"))
 
@@ -15,4 +15,10 @@ const CustomLink = props => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />
 }
 
-export default CustomLink
+export const Br = () => <div className="h-1"></div>
+
+export const HorizontalRule = () => (
+  <div className="flex flex-row content-center justify-center my-3">
+    <p className="text-tertiary opacity-40">• • • •</p>
+  </div>
+)

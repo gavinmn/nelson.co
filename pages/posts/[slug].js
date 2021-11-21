@@ -10,19 +10,14 @@ import SEO from "@/components/seo"
 import Layout from "@/components/layout"
 import Image from "next/image"
 import CustomImage from "@/components/customimage"
-import Caption from "@/components/caption"
-import CustomLink from "@/components/customlink"
-import HorizontalRule from "@/components/horizontalrule"
-import Break from "@/components/break"
-
+import { Br, HorizontalRule, CustomLink } from "@/components/postutils"
 import Tool from "@/components/tool"
 
 const components = {
-  a: CustomLink,
-  h4: Caption,
-  hr: HorizontalRule,
-  br: Break,
   Image,
+  a: CustomLink,
+  hr: HorizontalRule,
+  br: Br,
   CustomImage,
   Tool,
 }
