@@ -21,6 +21,6 @@
     @apply underline transition duration-300 ease-in-out text-secondary;
   }
   a:hover {
-    @apply text-primary;
+    @apply underline transition duration-300 ease-in-out text-primary;
   }
 }
