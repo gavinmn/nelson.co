@@ -30,9 +30,11 @@ module.exports = {
     maxWidth: {
       "container-large": "612px",
       "container-small": "92%",
+      256: "256px",
     },
     maxHeight: {
       image: "200px",
+      256: "256px",
     },
   },
   variants: {
