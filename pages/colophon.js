@@ -1,38 +1,16 @@
 import React from "react"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
-import { device } from "@/components/device"
 
 const Colophon = props => (
   <Layout>
-    <style jsx>{`
-      .text-container {
-        margin-top: -1rem;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        align-items: start;
-        justify-content: center;
-
-        max-width: 624px;
-        margin: 0 auto;
-        padding: 0 5% 0 5%;
-      }
-
-      @media ${device.desktop} {
-        .text-container {
-          margin-top: 1rem;
-        }
-      }
-    `}</style>
-
     <SEO
       title="Colophon"
       og="colophonog.png"
       description="The making of nelson.co"
     />
 
-    <div className="flex flex-col items-start justify-center h-screen">
+    <div className="flex flex-col items-start justify-center h-screen -mt-16 md:-mt-32">
       <h1 className="mb-4">Colophon</h1>
 
       <p className="mb-4">
