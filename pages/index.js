@@ -7,6 +7,7 @@ import Arena from "@/components/svg/arena"
 import Post from "@/components/post"
 import ArrowRight from "@/components/svg/arrowright"
 import Project from "@/components/project"
+import { DoubleProject, ExternalProject } from "../components/project"
 import Icon from "@/components/icon"
 
 import fs from "fs"
@@ -114,13 +115,15 @@ const IndexPage = ({ posts }) => {
               />
             </div>
             <div className="mb-4">
-              <Project
-                link="/musicthread/heavy-rotation"
-                title="Heavy Rotation"
+              <DoubleProject
+                link1="/musicthread/heavy-rotation"
+                link2="/musicthread/2021-favorites"
+                title1="Heavy Rotation"
+                title2="2021 Favoirtes"
                 description="A collection of what I've been listening to recently"
               />
             </div>
-            <Project
+            <ExternalProject
               link="https://gumroad.com/l/dvctd"
               title="Monterey"
               description="A macOS and iOS icon theme"
