@@ -253,7 +253,14 @@ const IndexPage = ({ posts }) => {
               />
 
               <Icon src={xcode} title="Xcode" subtitle="Personal" width="400" />
-              <Icon src={slack} title="Slack" subtitle="Personal" width="400" />
+              <Icon
+                src={slack}
+                title="Slack"
+                subtitle="Personal"
+                width="400"
+                link="https://gnelson.gumroad.com/l/slack-icon"
+                download={true}
+              />
             </div>
           </Section>
         </div>
