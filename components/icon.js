@@ -1,5 +1,5 @@
 import Image from "next/image"
-import ArrowDown from "@/components/svg/arrowdown.js"
+import { ArrowDown } from "@/components/svg.js"
 
 const Icon = props => {
   let downloadArrow = false
