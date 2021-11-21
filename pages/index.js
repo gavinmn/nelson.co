@@ -3,7 +3,7 @@ import Layout from "@/components/layout"
 import SEO from "@/components/seo"
 import Header from "@/components/header"
 import Section from "@/components/section"
-import { ArrowRight, Arena } from "../components/svg"
+import { ArrowRight, Arena, ArrowExternal } from "../components/svg"
 import Post from "@/components/post"
 import Project from "@/components/project"
 import { DoubleProject, ExternalProject } from "../components/project"
@@ -93,7 +93,7 @@ const IndexPage = ({ posts }) => {
                 rel="noopener noreferrer"
               >
                 Wander the garden
-                <ArrowRight />
+                <ArrowExternal />
               </a>
             </Link>
           </Section>

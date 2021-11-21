@@ -28,4 +28,12 @@
   a:hover {
     @apply underline transition duration-300 ease-in-out text-primary;
   }
+
+  ul {
+    @apply my-2 ml-4 list-disc list-inside text-secondary;
+  }
+
+  code {
+    @apply px-1 py-0.5 bg-code rounded-sm text-sm;
+  }
 }

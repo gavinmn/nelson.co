@@ -28,7 +28,9 @@ export default function Posts({ source, frontMatter }) {
         og={frontMatter.og}
         description={frontMatter.description}
       />
-      <MDXRemote {...source} components={components} />
+      <div className="mb-4">
+        <MDXRemote {...source} components={components} />
+      </div>
     </Layout>
   )
 }
