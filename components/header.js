@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-import Logo from "@/components/logo"
+import { Logo } from "./svg"
 
 const Header = props => {
   const router = useRouter()
