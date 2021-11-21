@@ -9,7 +9,6 @@ import { postFilePaths, POSTS_PATH } from "../../lib/mdxUtils"
 import PostWrapper from "@/components/postwrapper"
 
 import Image from "next/image"
-import Ztext from "react-ztext"
 
 import CustomImage from "@/components/customimage"
 import Caption from "@/components/caption"
@@ -29,9 +28,6 @@ const components = {
   br: Break,
   Image,
   CustomImage,
-  ZContainer,
-  Ztext,
-  Cube,
   Tool,
 }
 
