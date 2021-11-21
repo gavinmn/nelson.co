@@ -34,23 +34,20 @@ const MusicThread = props => {
   const dateKeys = Object.keys(formattedData)
 
   return (
-    <div className="wrapper-large">
+    <>
       <h1>{props.title}</h1>
-
-      <p>
+      <p className="mt-4">
         {props.subtitle}, powered by{" "}
-        <a className="thread-link" href="https://musicthread.app/">
-          MusicThread
-        </a>
+        <a href="https://musicthread.app/">MusicThread</a>
       </p>
-      <div className="mt-2">
+      <div className="mt-8">
         {dateKeys.map((entry, key) => {
           return (
-            <div key={key}>
-              <p>{entry}</p>
-              <div className="flex flex-row items-end mt-8 mb-16 md:mt-4 md:mb-2">
-                <div className="self-stretch -mt-6 md:-mt-3" />
-                <div className="grid gap-8 mx-auto my-0">
+            <div className="" key={key}>
+              <h2>{entry}</h2>
+              <div className="flex flex-row items-end mt-4 mb-8">
+                <div className="self-stretch w-0.5  bg-code md:-mt-3" />
+                <div className="grid gap-8 ml-4 ">
                   {formattedData[entry].map((data, key) => {
                     return (
                       <MusicEntry
@@ -68,7 +65,7 @@ const MusicThread = props => {
           )
         })}
       </div>
-    </div>
+    </>
   )
 }
 

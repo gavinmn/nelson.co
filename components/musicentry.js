@@ -1,27 +1,29 @@
 import Image from "next/image"
-
+import { ArrowExternal } from "./svg"
 const MusicEntry = props => (
   <div className="flex flex-col items-start md:flex-row">
-    <a
-      className="m-w-256 m-h-256"
-      href={props.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      alt="album artwork"
-      aria-label="album artwork"
-    >
-      <Image
-        className="rounded-sm"
-        src={props.src}
-        width={256}
-        height={256}
-        alt=""
-      />
-    </a>
+    <Image
+      className="rounded-sm"
+      src={props.src}
+      width={256}
+      height={256}
+      alt=""
+    />
+
     <div className="flex flex-row self-stretch justify-between mt-2 md:flex-col-reverse md:mt-0 md:ml-2">
-      <div className="flex flex-col items-start self-stretch justify-end m-w-256">
-        <p className="self-stretch">{props.title}</p>
-        <p className="self-stretch">{props.artist}</p>
+      <div className="flex flex-col items-start self-stretch justify-end max-w-256">
+        <a
+          className="max-w-full md:max-w-256 md:max-h-256"
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          alt="album artwork"
+          aria-label="album artwork"
+        >
+          {props.title}
+          <ArrowExternal />
+        </a>
+        <p className="self-stretch text-tertiary">{props.artist}</p>
       </div>
     </div>
   </div>
