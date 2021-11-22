@@ -81,6 +81,24 @@ export const ArrowDown = () => (
   </svg>
 )
 
+export const Chevron = () => (
+  <svg
+    width="12"
+    height="12"
+    viewBox="0 0 12 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M3.75 1.5L8.25 6L3.75 10.5002"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="stroke-current text-tertiary"
+    />
+  </svg>
+)
+
 export const Arena = () => (
   <a
     className="self-center text-tertiary opacity-80 group"

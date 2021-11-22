@@ -36,7 +36,7 @@ const MusicThread = props => {
   return (
     <>
       <h1>{props.title}</h1>
-      <p className="mt-4">
+      <p>
         {props.subtitle}, powered by{" "}
         <a href="https://musicthread.app/">MusicThread</a>
       </p>
