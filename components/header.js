@@ -2,7 +2,7 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { Logo } from "./svg"
 
-const Header = props => {
+const Header = () => {
   const router = useRouter()
 
   let justLogo = false
