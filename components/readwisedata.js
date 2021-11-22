@@ -148,11 +148,13 @@ const Readwisedata = ({ book, highlights, highlightIDs, bookID, path }) => {
                     </svg>
                   </a>
                 </Link>
-                <div className="self-stretch flex-shrink-0 w-0.5 mr-4 ml-2 bg-code" />
+                <div className="self-stretch flex-shrink-0 w-0.5 mr-4 ml-2 bg-bg-code dark:bg-darkCode" />
                 <p
                   id={highlightID}
                   name={highlightID}
-                  className={`${individualHighlight ? "bg-code" : " "}`}
+                  className={`${
+                    individualHighlight ? "bg-bg-code dark:bg-darkCode" : " "
+                  }`}
                 >
                   {text}
                 </p>

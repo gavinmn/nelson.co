@@ -23,10 +23,10 @@
   }
 
   a {
-    @apply underline transition duration-300 ease-in-out text-secondary dark:text-darkSecondary;
+    @apply underline transition duration-300 ease-in-out dark:underline-dark text-secondary dark:text-darkSecondary;
   }
   a:hover {
-    @apply underline transition duration-300 ease-in-out text-primary dark:text-darkPrimary;
+    @apply underline transition duration-300 ease-in-out dark:underline-dark text-primary dark:text-darkPrimary;
   }
 
   ul {
@@ -34,6 +34,19 @@
   }
 
   code {
-    @apply px-1 py-0.5 bg-code rounded-sm text-sm;
+    @apply px-1 py-0.5 bg-code dark:bg-darkCode rounded-sm text-sm;
+  }
+}
+
+@layer utilities {
+  .underline {
+    textdecoration: underline;
+    text-decoration-color: hsl(20, 15%, 66%);
+  }
+  @variants dark {
+    .underline-dark {
+      textdecoration: underline;
+      text-decoration-color: hsl(224, 25%, 46%);
+    }
   }
 }

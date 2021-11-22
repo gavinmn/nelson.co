@@ -5,15 +5,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(224, 0%, 97%)",
+        background: "hsl(20, 8%, 97%)",
         darkBackground: "hsl(224, 25%, 12%)",
-        code: "hsl(224, 25%, 8%)",
+        code: "hsl(20, 8%, 92%)",
+        darkCode: "hsl(224, 25%, 8%)",
         selection: "#FFAB7F",
       },
       textColor: {
-        primary: "hsl(224, 25%, 12%)",
-        secondary: "hsl(224, 21%, 30%)",
-        tertiary: "hsl(224, 25%, 46%)",
+        primary: "hsl(20, 50%, 12%)",
+        secondary: "hsl(20, 21%, 30%)",
+        tertiary: "hsl(20, 15%, 46%)",
         darkTertiary: "hsl(224, 25%, 56%)",
         darkPrimary: "hsl(0, 0%, 100%)",
         darkSecondary: "hsl(224, 25%, 80%)",
@@ -43,14 +44,14 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    function ({ addUtilities }) {
-      const extendUnderline = {
-        ".underline": {
-          textDecoration: "underline",
-          "text-decoration-color": "hsl(224, 25%, 46%)",
-        },
-      }
-      addUtilities(extendUnderline)
-    },
+    // function ({ addUtilities }) {
+    //   const extendUnderline = {
+    //     ".underline": {
+    //       textDecoration: "underline",
+    //       "text-decoration-color": "hsl(224, 25%, 46%)",
+    //     },
+    //   }
+    //   addUtilities(extendUnderline)
+    // },
   ],
 }
