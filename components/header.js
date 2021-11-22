@@ -1,8 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { Logo } from "./svg"
-import Box from "./threeDMesh"
-import { Canvas, useFrame } from "@react-three/fiber"
 
 const Header = () => {
   const router = useRouter()
@@ -14,13 +12,6 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-start">
-      <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Box position={[-1.2, 0, 0]} />
-        <Box position={[1.2, 0, 0]} />
-      </Canvas>
-
       <Link href="/" passhref>
         <a className="mb-4">
           <Logo />
