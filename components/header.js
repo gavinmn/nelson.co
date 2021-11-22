@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { Logo } from "./svg"
+import Example from "./webgl"
 
 const Header = () => {
   const router = useRouter()
@@ -12,6 +13,7 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-start">
+      <Example />
       <Link href="/" passhref>
         <a className="mb-4">
           <Logo />
