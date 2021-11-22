@@ -11,7 +11,7 @@ const Tool = props => (
       {props.name}
       <ArrowExternal />
     </a>
-    <p className="text-tertiary">{props.description}</p>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
   </div>
 )
 

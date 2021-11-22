@@ -30,7 +30,9 @@ const Icon = props => {
         <div className="flex flex-row items-center">
           <a
             className={
-              noLink ? "no-underline hover:text-secondary" : "underline"
+              noLink
+                ? "no-underline hover:text-secondary dark:text-darkSecondary"
+                : "underline"
             }
             href={props.link}
             target="_blank"
@@ -38,8 +40,12 @@ const Icon = props => {
           >
             {props.title}
           </a>
-          <span className="mx-2 opacity-40 text-tertiary">•</span>
-          <p className="text-tertiary">{props.subtitle}</p>
+          <span className="mx-2 opacity-40 text-tertiary dark:text-darkTertiary">
+            •
+          </span>
+          <p className="text-tertiary dark:text-darkTertiary">
+            {props.subtitle}
+          </p>
         </div>
         <a
           href={props.link}

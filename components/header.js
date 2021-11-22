@@ -19,7 +19,9 @@ const Header = props => {
       </Link>
       <div className={justLogo ? "hidden" : ""}>
         <h1 className="text-base">Gavin Nelson</h1>
-        <h2 className="text-tertiary">Product & Icon Designer</h2>
+        <h2 className="text-tertiary dark:text-darkTertiary">
+          Product & Icon Designer
+        </h2>
       </div>
     </div>
   )

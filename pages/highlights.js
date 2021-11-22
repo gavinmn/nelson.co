@@ -19,7 +19,7 @@ const Highlights = ({ books, highlights }) => {
         <h1>Highlights</h1>
         <p>A feed of passages I've highlighted from articles across the web.</p>
         <a
-          className="text-tertiary"
+          className="text-tertiary dark:text-darkTertiary"
           href="https://nelson.co/highlightsfeed.xml"
           target="_blank"
           rel="noopener noreferrer"

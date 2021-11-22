@@ -23,7 +23,9 @@ const MusicEntry = props => (
           {props.title}
           <ArrowExternal />
         </a>
-        <p className="self-stretch text-tertiary">{props.artist}</p>
+        <p className="self-stretch text-tertiary dark:text-darkTertiary">
+          {props.artist}
+        </p>
       </div>
     </div>
   </div>

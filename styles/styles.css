@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans bg-background text-primary selection:bg-selection selection:text-primary;
+    @apply font-sans bg-background dark:bg-darkBackground text-primary dark:text-darkPrimary selection:bg-selection selection:text-primary;
   }
 
   h1 {
@@ -15,22 +15,22 @@
   }
 
   h3 {
-    @apply font-medium text-tertiary;
+    @apply font-medium text-tertiary dark:text-darkTertiary;
   }
 
   p {
-    @apply text-secondary;
+    @apply text-secondary dark:text-darkSecondary;
   }
 
   a {
-    @apply underline transition duration-300 ease-in-out text-secondary;
+    @apply underline transition duration-300 ease-in-out text-secondary dark:text-darkSecondary;
   }
   a:hover {
-    @apply underline transition duration-300 ease-in-out text-primary;
+    @apply underline transition duration-300 ease-in-out text-primary dark:text-darkPrimary;
   }
 
   ul {
-    @apply my-2 ml-4 list-disc list-inside text-secondary;
+    @apply my-2 ml-4 list-disc list-inside text-secondary dark:text-darkSecondary;
   }
 
   code {

@@ -5,7 +5,7 @@ const Project = props => (
     <Link href={props.link} passHref>
       <a>{props.title}</a>
     </Link>
-    <p className="text-tertiary">{props.description}</p>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
   </div>
 )
 
@@ -14,7 +14,7 @@ export default Project
 export const ExternalProject = props => (
   <div className="flex flex-col items-start">
     <a href={props.link}>{props.title}</a>
-    <p className="text-tertiary">{props.description}</p>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
   </div>
 )
 
@@ -29,6 +29,6 @@ export const DoubleProject = props => (
         <a className="inline">{props.title2}</a>
       </Link>
     </div>
-    <p className="text-tertiary">{props.description}</p>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
   </div>
 )

@@ -1,9 +1,8 @@
 import Link from "next/link"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
-import Header from "@/components/header"
 import Section from "@/components/section"
-import { ArrowRight, Arena, ArrowExternal } from "../components/svg"
+import { Arena, ArrowExternal } from "../components/svg"
 import Post from "@/components/post"
 import Project from "@/components/project"
 import { DoubleProject, ExternalProject } from "../components/project"
@@ -51,7 +50,7 @@ const IndexPage = ({ posts }) => {
           <Section title="Connect">
             <div className="flex flex-row self-stretch justify-between sm:justify-start ">
               <a
-                className="sm:mr-8 text-tertiary"
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="mailto:gavin@nelson.co"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +58,7 @@ const IndexPage = ({ posts }) => {
                 Email
               </a>
               <a
-                className="sm:mr-8 text-tertiary"
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://twitter.com/Gavmn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -67,7 +66,7 @@ const IndexPage = ({ posts }) => {
                 Twitter
               </a>
               <a
-                className="sm:mr-8 text-tertiary"
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://github.com/gavinmn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -75,7 +74,7 @@ const IndexPage = ({ posts }) => {
                 GitHub
               </a>
               <a
-                className="sm:mr-8 text-tertiary"
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://dribbble.com/Gavin/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +87,7 @@ const IndexPage = ({ posts }) => {
           <Section title="Notes">
             <Link href="/notes" passhref>
               <a
-                className=" text-tertiary group"
+                className=" text-tertiary dark:text-darkTertiary group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -135,10 +134,10 @@ const IndexPage = ({ posts }) => {
             />
           </Section>
           <Section title="Select Icons">
-            <p className="mb-4 text-tertiary">
+            <p className="mb-4 text-tertiary dark:text-darkTertiary">
               If you'd like to work with me on an icon, please{" "}
               <a
-                className="text-tertiary"
+                className="text-tertiary dark:text-darkTertiary"
                 href="mailto:gavin@nelson.co"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -148,7 +147,7 @@ const IndexPage = ({ posts }) => {
               . <br />
               For behind the scenes process posts,{" "}
               <a
-                className="text-tertiary"
+                className="text-tertiary dark:text-darkTertiary"
                 href="mailto:gavin@nelson.co"
                 target="_blank"
                 rel="noopener noreferrer"
