@@ -7,6 +7,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^12.0.1",
+    "@react-three/fiber": "^7.0.19",
     "autoprefixer": "^10.4.0",
     "date-fns": "^2.25.0",
     "dotenv": "^10.0.0",
@@ -23,7 +24,8 @@
     "react-helmet": "^6.1.0",
     "react-ztext": "^1.0.3",
     "rss": "^1.2.2",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "three": "^0.134.0"
   },
   "devDependencies": {
     "prettier": "2.4.1"
