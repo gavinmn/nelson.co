@@ -5,20 +5,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(20, 8%, 97%)",
+        background: "hsl(0, 0%, 97%)",
         darkBackground: "hsl(224, 25%, 12%)",
-        code: "hsl(20, 8%, 92%)",
+        code: "hsl(0, 0%, 93%)",
         darkCode: "hsl(224, 25%, 8%)",
         selection: "#FFAB7F",
       },
       textColor: {
-        primary: "hsl(20, 50%, 12%)",
-        secondary: "hsl(20, 21%, 30%)",
-        tertiary: "hsl(20, 15%, 46%)",
+        primary: "hsl(0, 0%, 5%)",
+        secondary: "hsl(0, 0%, 23%)",
+        tertiary: "hsl(224, 6%, 44%)",
         darkTertiary: "hsl(224, 25%, 56%)",
         darkPrimary: "hsl(0, 0%, 100%)",
         darkSecondary: "hsl(224, 25%, 80%)",
-        svg: "hsl(20, 8%, 97%)",
+        svg: "hsl(0, 0%, 97%)",
         darkSVG: "hsl(224, 25%, 12%)",
       },
       gridTemplateColumns: {
@@ -39,25 +39,22 @@ module.exports = {
         400: "400px",
       },
       animation: {
-        gradient: "gradient 16s ease infinite",
+        gradient: "gradient 8s linear infinite ",
       },
       keyframes: {
         gradient: {
           "0%, 100%": {
             "background-size": "200% 200%",
-            "background-position": "top center",
+            "background-position": "100% 0%",
           },
           "25%": {
-            "background-size": "200% 200%",
-            "background-position": "right center",
+            "background-position": "100% 100%",
           },
           "50%": {
-            "background-size": "200% 200%",
-            "background-position": "bottom center",
+            "background-position": "0% 100%",
           },
           "75%": {
-            "background-size": "200% 200%",
-            "background-position": "left center",
+            "background-position": "0% 0%",
           },
         },
       },
@@ -79,15 +76,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    // function ({ addUtilities }) {
-    //   const extendUnderline = {
-    //     ".underline": {
-    //       textDecoration: "underline",
-    //       "text-decoration-color": "hsl(224, 25%, 46%)",
-    //     },
-    //   }
-    //   addUtilities(extendUnderline)
-    // },
-  ],
+  plugins: [],
 }

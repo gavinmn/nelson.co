@@ -46,7 +46,7 @@ const MusicThread = props => {
             <div className="" key={key}>
               <h2>{entry}</h2>
               <div className="flex flex-row items-end mt-4 mb-8">
-                <div className="self-stretch w-0.5  bg-bg-code dark:bg-darkCode md:-mt-3" />
+                <div className="self-stretch w-0.5  bg-code dark:bg-darkCode md:-mt-3" />
                 <div className="grid gap-8 ml-4 ">
                   {formattedData[entry].map((data, key) => {
                     return (
