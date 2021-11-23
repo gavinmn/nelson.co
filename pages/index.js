@@ -41,7 +41,7 @@ const IndexPage = ({ posts }) => {
         <SEO />
         <div className="grid max-w-full gap-16 auto-rows-auto">
           <div>
-            <p className="mt-4">
+            <p className="mt-8 md:mt-4">
               I'm currently shaping the mobile apps at GitHub and crafting
               beautiful app icons for companies and individuals. I focus on fit
               and finish to solve problems and create seamless experiences.
