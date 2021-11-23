@@ -12,10 +12,10 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-start">
-      <div className="grid items-center mb-2 grid-cols-auto grid-rows-auto justify-items-center">
+      <div className="grid items-center mb-4 grid-cols-auto grid-rows-auto justify-items-center">
         <div className=" col-1 row-1">
           <div className="w-8 h-8 overflow-hidden">
-            <div className="w-16 h-16 gradient animate-gradient" />
+            <div className="w-16 h-16 gradient dark:gradient-dark animate-gradient" />
           </div>
         </div>
         <div className="z-10 col-1 row-1">

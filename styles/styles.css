@@ -40,30 +40,27 @@
 
 @layer utilities {
   .gradient {
-    background: linear-gradient(
-        226.32deg,
-        rgba(255, 255, 255, 0) -0.76%,
-        rgba(255, 255, 255, 0.17011) 38.79%,
-        rgba(255, 255, 255, 0.123232) 55.9%,
-        rgba(255, 255, 255, 0) 100%
+    background: radial-gradient(
+        81.25% 82.18% at 98.48% 0%,
+        rgba(230, 0, 235, 0.8) 0%,
+        rgba(177, 23, 231, 0) 100%
       ),
       radial-gradient(
-        100% 106.35% at 100% 0%,
-        rgba(255, 255, 255, 0) 50.94%,
-        #8cffff 64.74%,
-        #eae6c4 70.84%,
-        #f8c4c4 87.18%,
-        #ffcefa 100%
+        68.18% 72.51% at 0% 100%,
+        rgba(0, 122, 235, 0.8) 0%,
+        rgba(23, 44, 231, 0) 100%
       ),
       radial-gradient(
-        100% 106.35% at 100% 0%,
-        #aed1fc 0%,
-        #eae6c4 18.45%,
-        #eac4e6 33.8%,
-        #c4dffd 41.98%,
-        #ffffff 60.68%
+        66.67% 70.9% at 0% 0%,
+        rgba(235, 0, 0, 0.664) 0%,
+        rgba(231, 23, 23, 0) 100%
       ),
-      #ffffff;
+      radial-gradient(
+        90.91% 96.68% at 100% 100%,
+        rgba(103, 0, 235, 0.8) 0%,
+        rgba(177, 23, 231, 0) 100%
+      ),
+      linear-gradient(180deg, #111737 0%, #071487 100%);
   }
 
   .underline {
@@ -72,6 +69,30 @@
   }
   @variants dark {
     .gradient-dark {
+      background: linear-gradient(
+          226.32deg,
+          rgba(255, 255, 255, 0) -0.76%,
+          rgba(255, 255, 255, 0.17011) 38.79%,
+          rgba(255, 255, 255, 0.123232) 55.9%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        radial-gradient(
+          100% 106.35% at 100% 0%,
+          rgba(255, 255, 255, 0) 50.94%,
+          #8cffff 64.74%,
+          #eae6c4 70.84%,
+          #f8c4c4 87.18%,
+          #ffcefa 100%
+        ),
+        radial-gradient(
+          100% 106.35% at 100% 0%,
+          #aed1fc 0%,
+          #eae6c4 18.45%,
+          #eac4e6 33.8%,
+          #c4dffd 41.98%,
+          #ffffff 60.68%
+        ),
+        #ffffff;
     }
 
     .underline-dark {
