@@ -38,6 +38,29 @@ module.exports = {
       height: {
         400: "400px",
       },
+      animation: {
+        gradient: "gradient 16s ease infinite",
+      },
+      keyframes: {
+        gradient: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "top center",
+          },
+          "25%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "bottom center",
+          },
+          "75%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+        },
+      },
     },
 
     fontFamily: {

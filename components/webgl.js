@@ -4,14 +4,14 @@ import { Surface } from "gl-react-dom"
 
 // in gl-react you need to statically define "shaders":
 const shaders = Shaders.create({
-  helloGL: {
+  logoGL: {
     // This is our first fragment shader in GLSL language (OpenGL Shading Language)
     // (GLSL code gets compiled and run on the GPU)
     frag: GLSL`	
 precision highp float;
 varying vec2 uv;
 void main() {
-  gl_FragColor = vec4(uv.x, uv.y, 0.5, 1.0);
+  gl_FragColor = vec4(uv.x, uv.y, 1.0, 1.0);
 }
 `,
     // the main() function is called FOR EACH PIXELS
@@ -21,11 +21,11 @@ void main() {
   },
 })
 
-export default class Example extends Component {
+export default class LogoShader extends Component {
   render() {
     return (
-      <Surface width={32} height={32}>
-        <Node shader={shaders.helloGL} />
+      <Surface width={200} height={200}>
+        <Node shader={shaders.logoGL} />
       </Surface>
     )
     // Surface creates the canvas, an area of pixels where you can draw.
