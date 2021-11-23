@@ -7,7 +7,7 @@ const shaders = Shaders.create({
   helloGL: {
     // This is our first fragment shader in GLSL language (OpenGL Shading Language)
     // (GLSL code gets compiled and run on the GPU)
-    frag: GLSL`
+    frag: GLSL`	
 precision highp float;
 varying vec2 uv;
 void main() {
@@ -24,7 +24,7 @@ void main() {
 export default class Example extends Component {
   render() {
     return (
-      <Surface width={300} height={300}>
+      <Surface width={32} height={32}>
         <Node shader={shaders.helloGL} />
       </Surface>
     )

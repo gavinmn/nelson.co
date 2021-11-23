@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-import { Logo } from "./svg"
+import { LogoInverted } from "./svg"
 import Example from "./webgl"
 
 const Header = () => {
@@ -13,12 +13,18 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-start">
-      <Example />
-      <Link href="/" passhref>
-        <a className="mb-4">
-          <Logo />
-        </a>
-      </Link>
+      <div className="grid items-center grid-cols-auto grid-rows-auto justify-items-center">
+        <div className="mt-1.5 col-1 row-1">
+          <Example />
+        </div>
+        <div className="z-10 col-1 row-1">
+          <Link href="/" passhref>
+            <a className="mb-4 ">
+              <LogoInverted />
+            </a>
+          </Link>
+        </div>
+      </div>
       <div className={justLogo ? "hidden" : ""}>
         <h1 className="text-base">Gavin Nelson</h1>
         <h2 className="text-tertiary dark:text-darkTertiary">

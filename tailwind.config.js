@@ -18,15 +18,28 @@ module.exports = {
         darkTertiary: "hsl(224, 25%, 56%)",
         darkPrimary: "hsl(0, 0%, 100%)",
         darkSecondary: "hsl(224, 25%, 80%)",
+        svg: "hsl(20, 8%, 97%)",
+        darkSVG: "hsl(224, 25%, 12%)",
       },
       gridTemplateColumns: {
         "20-80": "60% 40%",
         "118-auto": "118px auto",
+        auto: "auto",
+      },
+      gridColumn: {
+        1: "1",
+      },
+      gridRow: {
+        1: "1",
+      },
+      gridTemplateRows: {
+        auto: "auto",
       },
       height: {
         400: "400px",
       },
     },
+
     fontFamily: {
       sans: ["Sohne", "sans-serif"],
     },
