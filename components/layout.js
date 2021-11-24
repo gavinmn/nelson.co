@@ -1,5 +1,4 @@
 import Link from "next/link"
-
 import Header from "./header"
 
 const Layout = ({ children }) => {

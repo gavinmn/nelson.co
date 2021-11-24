@@ -39,32 +39,18 @@ module.exports = {
         400: "400px",
       },
       animation: {
-        gradient: "gradient 2s linear infinite ",
+        enter: "enter 1s ease-out",
       },
       keyframes: {
-        gradient: {
-          "100%": {
-            "background-position": "100% 100%",
+        enter: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-4px)",
           },
-          // "0%": {
-          //   "background-size": "150% 150%",
-          //   "background-position": "100% 0%",
-          //   // transform: "rotate(0deg)",
-          // },
-          // "25%": {
-          //   "background-position": "100% 100%",
-          // },
-          // "50%": {
-          //   "background-position": "0% 100%",
-          // },
-          // "75%": {
-          //   "background-position": "0% 0%",
-          // },
-          // "100%": {
-          //   "background-size": "150% 150%",
-          //   "background-position": "100% 0%",
-          //   // transform: "rotate(360deg)",
-          // },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
         },
       },
     },

@@ -42,7 +42,7 @@ const Canvas = props => {
     }
   }, [draw])
 
-  return <canvas width="32px" height="32px" ref={canvasRef} {...props} />
+  return <canvas width="32" height="32" ref={canvasRef} {...props} />
 }
 
 export default Canvas
