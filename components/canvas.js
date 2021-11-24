@@ -1,43 +1,31 @@
+// most code from https://codepen.io/tmrDevelops/pen/vOPZBv and https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
+
 import React, { useRef, useEffect } from "react"
 
 const Canvas = props => {
   const canvasRef = useRef(null)
 
   const draw = (context, x, y, r, g, b) => {
-    context.fillStyle = `rgb(${r}, ${g}, ${b})`
-    context.fillRect(x, y, 10, 10)
+    context.fillStyle = `rgb(0, ${g}, ${b})`
+    context.fillRect(x, y, 32, 32)
   }
 
   useEffect(() => {
     const canvas = canvasRef.current
     const context = canvas.getContext("2d")
-    // let frameCount = 0
-    let animationFrameId
     let x = 0
     let y = 0
     let time = 0
+    let animationFrameId = null
 
     const R = function (x, y, time) {
-      return Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + time))
+      return Math.floor(20 + 64 * Math.cos((x * x + y * y) / 300 + time))
     }
     const G = function (x, y, time) {
-      return Math.floor(
-        192 +
-          64 *
-            Math.sin(
-              (x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 300
-            )
-      )
+      return Math.floor(130 + 64 * Math.cos((x * x - y * y) / 200 + time))
     }
     const B = function (x, y, time) {
-      return Math.floor(
-        192 +
-          64 *
-            Math.sin(
-              5 * Math.sin(time / 9) +
-                ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100
-            )
-      )
+      return Math.floor(255 + 64 * Math.cos((x * x + y * y) / 300 + time))
     }
     const render = () => {
       for (x = 0; x <= 30; x++) {
@@ -45,11 +33,13 @@ const Canvas = props => {
           draw(context, x, y, R(x, y, time), G(x, y, time), B(x, y, time))
         }
       }
-      time = time + 0.03
-      //   frameCount++
-      window.requestAnimationFrame(render)
+      time = time + 0.02
+      animationFrameId = window.requestAnimationFrame(render)
     }
     render()
+    return () => {
+      window.cancelAnimationFrame(animationFrameId)
+    }
   }, [draw])
 
   return <canvas width="32px" height="32px" ref={canvasRef} {...props} />
