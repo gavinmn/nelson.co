@@ -43,8 +43,8 @@ const IndexPage = ({ posts }) => {
           <div>
             <p className="mt-8 md:mt-4">
               I'm currently shaping the mobile apps at GitHub and crafting
-              beautiful app icons for companies and individuals. I focus on fit
-              and finish to solve problems and create seamless experiences.
+              beautiful app icons for clients. I focus on fit and finish to
+              solve problems and create seamless experiences.
             </p>
           </div>
           <Section title="Connect">
@@ -144,8 +144,7 @@ const IndexPage = ({ posts }) => {
               >
                 get in touch
               </a>
-              . <br />
-              For behind the scenes process posts,{" "}
+              . For behind the scenes process posts,{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
                 href="mailto:gavin@nelson.co"
