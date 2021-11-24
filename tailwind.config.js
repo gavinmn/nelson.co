@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(0, 0%, 97%)",
+        background: "hsl(0, 0%, 96%)",
         darkBackground: "hsl(224, 25%, 12%)",
         code: "hsl(0, 0%, 93%)",
         darkCode: "hsl(224, 25%, 8%)",
@@ -14,11 +14,11 @@ module.exports = {
       textColor: {
         primary: "hsl(0, 0%, 5%)",
         secondary: "hsl(0, 0%, 23%)",
-        tertiary: "hsl(224, 6%, 44%)",
+        tertiary: "hsl(224, 6%, 48%)",
         darkTertiary: "hsl(224, 25%, 56%)",
         darkPrimary: "hsl(0, 0%, 100%)",
         darkSecondary: "hsl(224, 25%, 80%)",
-        svg: "hsl(0, 0%, 97%)",
+        svg: "hsl(0, 0%, 96%)",
         darkSVG: "hsl(224, 25%, 12%)",
       },
       gridTemplateColumns: {
@@ -39,23 +39,32 @@ module.exports = {
         400: "400px",
       },
       animation: {
-        gradient: "gradient 8s linear infinite ",
+        gradient: "gradient 2s linear infinite ",
       },
       keyframes: {
         gradient: {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            "background-position": "100% 0%",
-          },
-          "25%": {
+          "100%": {
             "background-position": "100% 100%",
           },
-          "50%": {
-            "background-position": "0% 100%",
-          },
-          "75%": {
-            "background-position": "0% 0%",
-          },
+          // "0%": {
+          //   "background-size": "150% 150%",
+          //   "background-position": "100% 0%",
+          //   // transform: "rotate(0deg)",
+          // },
+          // "25%": {
+          //   "background-position": "100% 100%",
+          // },
+          // "50%": {
+          //   "background-position": "0% 100%",
+          // },
+          // "75%": {
+          //   "background-position": "0% 0%",
+          // },
+          // "100%": {
+          //   "background-size": "150% 150%",
+          //   "background-position": "100% 0%",
+          //   // transform: "rotate(360deg)",
+          // },
         },
       },
     },
