@@ -1079,6 +1079,7 @@ data-uri-to-buffer@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-4.0.0.tgz#b5db46aea50f6176428ac05b73be39a57701a64b"
   integrity sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==
+
 date-fns@^2.26.0:
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.26.0.tgz#fa45305543c392c4f914e50775fd2a4461e60fbd"
@@ -1961,7 +1962,6 @@ nanoid@^3.1.23:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.25.tgz#09ca32747c0e543f0e1814b7d3793477f9c8e152"
   integrity sha512-rdwtIXaXCLFAQbnfqDRnI6jaRHp9fTcYBjtFKE8eezcZ7LuLjhUaQGNeMXf1HmRoCH32CLz6XwX0TtxEOS/A3Q==
 
-
 next-mdx-remote@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/next-mdx-remote/-/next-mdx-remote-3.0.8.tgz#ea2e7f9f3c99a0ce8167976c547e621d5930e1e0"
@@ -2250,10 +2250,10 @@ postcss@8.2.15:
     nanoid "^3.1.23"
     source-map "^0.6.1"
 
-preact@^10.6.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.6.0.tgz#803e59c8670fb56f26e0a2a262fbaeafbfaa944e"
-  integrity sha512-5gpdQkPsfl8ycSQSLSZxSvkifZ9FM4Zqc1OSToSpgygvgmXjcj6Q5jNRt86ote8dn0RkdOaKv9UAZTU7a6wP+g==
+preact@^10.6.1:
+  version "10.6.1"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.6.1.tgz#e14de611b65aea5e656249d19582c457fb0aa255"
+  integrity sha512-ydCg+ISIq70vqiThvNWStZWLRjR9U2awP/JAmGdWUKm9+Tyuy+MqVdAIyEByeIspAVtD4GWC/SJtxO8XD4knVA==
 
 prettier@2.4.1:
   version "2.4.1"
