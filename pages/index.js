@@ -48,7 +48,7 @@ const IndexPage = ({ posts }) => {
               you'd like to work with me on an icon, please{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
-                href="mailto:gavin@nelson.co"
+                href="mailto:gavin@nelson.co?subject=App icon inquiry&body=[Please include some details about your project including timeline and budget]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -148,7 +148,7 @@ const IndexPage = ({ posts }) => {
               For behind the scenes process posts,{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
-                href="mailto:gavin@nelson.co"
+                href="https://twitter.com/Gavmn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
