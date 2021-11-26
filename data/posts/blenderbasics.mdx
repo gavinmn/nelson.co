@@ -8,41 +8,29 @@ modified: "2021-02-02"
 
 # Blender Basics
 
-#### Updated February 2021
+### Updated February 2021
 
-<ZContainer>
-  <Ztext
-    depth="5rem"
-    direction="both"
-    event="pointer"
-    eventRotation="40deg"
-    eventDirection="default"
-    fade={false}
-    layers={120}
-    perspective="500px"
-  >
-    <Cube>
-      <rect width="192" height="192" fill="var(--text-primary)" />
-    </Cube>
-  </Ztext>
-</ZContainer>
+<br />
 
-Blender is a powerful, [open source](https://github.com/blender) 3D creation tool.
-While the comprehensive [docs](https://docs.blender.org/manual/en/latest/) are wonderful,
-figuring out where to begin can be a challenge if you are new to the software. This
-page is intended to be an ongoing list of Blender wrangling tips that I find valuable,
-written from the perspective of someone who already sifted through the noise as a
-beginner.
+Blender is a powerful, [open source](https://github.com/blender) 3D creation tool. While the comprehensive [docs](https://docs.blender.org/manual/en/latest/) are wonderful, figuring out where to begin can be a challenge if you are new to the software. This page is intended to be an ongoing list of Blender wrangling tips that I find valuable, written from the perspective of someone who already sifted through the noise as a beginner.
+
+<br />
 
 ## General
 
-#### My base file configuration
+<br />
+
+### My base file configuration
 
 - Render with a transparent background by toggling `Transparent` in Properties panel → Render Properties tab → Film → Transparent.
 - Access global contrast settings in Properties panel → Render Properties tab → Color Management → Look dropdown. I find bumping up the contrast to `Medium High Contrast` is a good starting point.
 - Hover over a corner of an editor section and your cursor will display as a +. Click and drag to split the section into two and select the dropdown icon in the upper left of any section to choose the editor type. Blender's UI is customizable to your liking.
 
+<br />
+
 ## Keyboard Shortcuts
+
+<br />
 
 ### General
 
@@ -59,6 +47,8 @@ beginner.
 - `right click` on a menu option to add it to your `quick favorites`.
   - `q` brings up a list of your quick favorites.
 
+<br />
+
 ### Transform Keys
 
 - `g` for grab - move selected objects or points within the 3D space.
@@ -66,6 +56,8 @@ beginner.
 - `s` for scale - scale selected objects larger (mouse away from origin) or smaller (mouse towards origin).
 - Holding `shift` while performing a transform will allow for fine adjustments.
 - In Edit mode, with vertices selected, double pressing `g` will slide vertices along the connected edge.
+
+<br />
 
 ### Axis Keys
 
@@ -75,6 +67,8 @@ beginner.
 - `shift + axis key` locks a previously selected transform key transform to the other two axes. Ex. `g → shift + z` will allow moving the selected object on only the x and y axes.
 - Double pressing an axis key locks the axis of transform to the objects normal rather than the world axis. Ex. `s → x → x` will scale the selected object on _the object's_ x axis, rather than the world's x axis.
 
+<br />
+
 ### Pie Menus
 
 Pie menus are circular UI selection menus that appear on a keypress at the cursor. Moving the cursor away from the menu's origin will select the designated menu item. Getting used to using these and forming muscle memory will speed up your workflow significantly.
@@ -82,7 +76,11 @@ Pie menus are circular UI selection menus that appear on a keypress at the curso
 - `~` invokes the viewpoint pie menu. Use this to change your view to the camera, selected object, or any orthographic direction.
 - `z` invokes the viewport shading pie menu. Use this to change your viewport shading between wireframe, solid, material preview, and rendered.
 
+<br />
+
 ## Modeling
+
+<br />
 
 ### General
 
@@ -93,13 +91,15 @@ Pie menus are circular UI selection menus that appear on a keypress at the curso
 - `set origin` (easily accessed through the spacebar quick search) will allow you to change the transform origin of an object.
 - `control + r` in Edit mode will allow you to create a loop cut. This is a _very_ helpful tool to use when you are trying to manipulate meshes and need some extra vertices to work with.
 
+<br />
+
 ### Modifier Properties
 
 All Modifier Properties are found in the Modifier Properties tab of the Properties panel. Below are the general modifiers that I find most helpful for basic modeling. Experiment by applying them to default meshes to learn the ins and outs of each modifier.
 
 <br></br>
 
-#### Note - clicking apply after selecting a modifier is a destructive action. Often you do not need to apply modifiers and can work non-destructively.
+### Note - clicking apply after selecting a modifier is a destructive action. Often you do not need to apply modifiers and can work non-destructively.
 
 - `Bevel` - used to bevel edges of the selected object.
   - Bevel Limit Method - a helpful tool to limit what edges are beveled. `Angle` is useful to limit beveling to only sharp edges (defined by a degree input). `Weight` will let you bevel only selected edges by weight. Weight is assigned to edges in edit mode in the transform panel under "Edge Data."
@@ -109,12 +109,16 @@ All Modifier Properties are found in the Modifier Properties tab of the Properti
 - `Mirror` - used to mirror a copy of a mesh over a selected object and axis. Use this to easily create symmetrical meshes.
 - If you have previously explored design tools like [Sketch](https://www.sketch.com) and [Figma](https://www.figma.com), you may have used the Boolean Operation tool. Blender has a similar `Boolean` operation modifier, but I would recommend trying to avoid it when you are first starting. It has a tendency to create messy geometry in your meshes and screw things up when used in combo with a Subdivision modifier.
 
+<br />
+
 ## Shading
 
 Open up a `Shader Editor` editor to use Blender's node based shading. Node editors can get complicated fast. To keep it simple, stick with the `Principled BDSF` shader that is added when you create a new material.
 
 - The best way to learn shading is to experiment with all the sliders in the `Principled BDSF` node.
   - The primary values I find myself editing are Base Color, Metallic, and Roughness.
+
+<br />
 
 ## Concluding Thoughts
 

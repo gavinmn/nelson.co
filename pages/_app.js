@@ -1,13 +1,10 @@
 import "@/styles/fonts.css"
-
-import GlobalStyle from "@/components/globalstyle"
+import "@/styles/styles.css"
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle>
-        <Component {...pageProps} />
-      </GlobalStyle>
+      <Component {...pageProps} />
     </>
   )
 }

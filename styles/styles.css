@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-background dark:bg-darkBackground text-primary dark:text-darkPrimary selection:bg-selection selection:text-primary;
+  }
+
+  h1 {
+    @apply font-medium;
+  }
+  h2 {
+    @apply font-medium;
+  }
+
+  h3 {
+    @apply font-medium text-tertiary dark:text-darkTertiary;
+  }
+
+  p {
+    @apply text-secondary dark:text-darkSecondary;
+  }
+
+  a {
+    @apply underline transition duration-300 ease-in-out dark:underline-dark text-secondary dark:text-darkSecondary;
+  }
+  a:hover {
+    @apply underline transition duration-300 ease-in-out dark:underline-dark text-primary dark:text-darkPrimary;
+  }
+
+  ul {
+    @apply my-2 ml-4 list-disc list-inside text-secondary dark:text-darkSecondary;
+  }
+
+  code {
+    @apply px-1 py-0.5 bg-code dark:bg-darkCode rounded-sm text-sm;
+  }
+}
+
+@layer utilities {
+  
+  .underline {
+    textdecoration: underline;
+    text-decoration-color: hsl(224, 6%, 54%);
+  }
+  @variants dark {
+    
+    .underline-dark {
+      textdecoration: underline;
+      text-decoration-color: hsl(224, 25%, 46%);
+    }
+  }
+}

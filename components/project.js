@@ -1,43 +1,34 @@
 import Link from "next/link"
 
 const Project = props => (
-  <Link href={props.href}>
-    <a className="container">
-      <h3 className="title">{props.title}</h3>
-      <p className="description">{props.description}</p>
-
-      <style jsx>{`
-        .container {
-          display: flex;
-          flex-direction: column;
-          padding: 1rem;
-          border-radius: 4px;
-          transition: background-color 150ms ease-in-out;
-          grid-column: 1 / span 2;
-        }
-
-        @media only screen and (min-width: 768px) {
-          .container {
-            padding: 0.5rem;
-          }
-        }
-
-        .container:hover {
-          background-color: var(--button-hover);
-        }
-
-        .title {
-          color: var(--text-primary);
-          margin: 0;
-        }
-
-        .date {
-          font-size: var(--small);
-          color: var(--text-accent);
-        }
-      `}</style>
-    </a>
-  </Link>
+  <div className="flex flex-col items-start">
+    <Link href={props.link} passHref>
+      <a>{props.title}</a>
+    </Link>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
+  </div>
 )
 
 export default Project
+
+export const ExternalProject = props => (
+  <div className="flex flex-col items-start">
+    <a href={props.link}>{props.title}</a>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
+  </div>
+)
+
+export const DoubleProject = props => (
+  <div className="flex flex-col items-start">
+    <div>
+      <Link href={props.link1} passHref className="inline">
+        <a className="inline">{props.title1}</a>
+      </Link>
+      <p className="inline"> & </p>
+      <Link href={props.link2} passHref className="inline">
+        <a className="inline">{props.title2}</a>
+      </Link>
+    </div>
+    <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
+  </div>
+)

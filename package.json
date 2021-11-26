@@ -6,6 +6,8 @@
   "author": "Gavin Nelson <gavin@nelson.co>",
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
+    "autoprefixer": "^10.4.0",
+    "cross-env": "^7.0.3",
     "@next/mdx": "^12.0.4",
     "date-fns": "^2.26.0",
     "dotenv": "^10.0.0",
@@ -13,14 +15,14 @@
     "markdown": "^0.5.0",
     "next": "^12.0.4",
     "next-mdx-remote": "^3.0.8",
+    "postcss": "^8.3.11",
     "next-themes": "^0.0.15",
-    "node-fetch": "^3.1.0",
     "preact": "^10.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "react-ztext": "^1.0.3",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "prettier": "2.4.1"

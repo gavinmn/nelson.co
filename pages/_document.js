@@ -21,7 +21,6 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          <link rel="dns-prefetch" href="https://gumroad.com/l/dvctd" />
           <link rel="preconnect" href="https://vitals.vercel-insights.com" />
         </Head>
 

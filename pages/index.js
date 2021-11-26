@@ -1,42 +1,33 @@
-import React from "react"
+import Link from "next/link"
 import Layout from "@/components/layout"
 import SEO from "@/components/seo"
-import Hero from "@/components/hero"
-import { device } from "@/components/device"
-import Card from "@/components/card"
-import ButtonInternal from "@/components/buttoninternal"
-import ButtonExternal from "@/components/buttonexternal"
-import ButtonDownload from "@/components/buttondownload"
-import SectionHeader from "@/components/sectionheader"
-import PostPreview from "@/components/postpreview"
+import Section from "@/components/section"
+import { Arena, ArrowExternal } from "../components/svg"
+import Post from "@/components/post"
 import Project from "@/components/project"
+import { DoubleProject, ExternalProject } from "../components/project"
+import Icon from "@/components/icon"
 
 import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
-import apollo from "../public/images/index/apollo.png"
-import autooth from "../public/images/index/autooth.png"
-import blender from "../public/images/index/blender.png"
-import claquette from "../public/images/index/claquette.png"
-import craft from "../public/images/index/craft.png"
-import github from "../public/images/index/github.png"
-import githubearlybird from "../public/images/index/githubearlybird.png"
-import githubholo from "../public/images/index/githubholo.png"
-import githubzen from "../public/images/index/githubzen.png"
-import hyperspace from "../public/images/index/hyperspace.png"
-import instagram from "../public/images/index/instagram.png"
-import montereyImage from "../public/images/index/montereyimage.png"
-import mosaic from "../public/images/index/mosaic.png"
-import notes from "../public/images/index/notes.png"
-import obsidian from "../public/images/index/obsidian.png"
-import slack from "../public/images/index/slack.png"
-import stocketa from "../public/images/index/stocketa.png"
-import things from "../public/images/index/things.png"
-import reflect from "../public/images/index/reflect.png"
+import holo from "../public/images/index/holo.png"
 import vscode from "../public/images/index/vscode.png"
+import things from "../public/images/index/things.png"
+import g1 from "../public/images/index/g1.png"
+import obsidian from "../public/images/index/obsidian.png"
+import craft from "../public/images/index/craft.png"
+import camo from "../public/images/index/camo.png"
+import reflect from "../public/images/index/reflect.png"
+import stocketa from "../public/images/index/stocketa.png"
+import apollo from "../public/images/index/apollo.png"
 import xcode from "../public/images/index/xcode.png"
+import claquette from "../public/images/index/claquette.png"
+import slack from "../public/images/index/slack.png"
+import hyperspace from "../public/images/index/hyperspace.png"
+import earlybird from "../public/images/index/earlybird.png"
 
 const IndexPage = ({ posts }) => {
   const orderedPosts = posts.sort(
@@ -45,218 +36,243 @@ const IndexPage = ({ posts }) => {
   )
 
   return (
-    <Layout>
-      <SEO />
-      <div className="wrapper">
-        <div className="hero-container">
-          <Hero />
-        </div>
-        <a aria-label="Work" id="work" href="/#work">
-          <h1 className="anchor"></h1>
-        </a>
-
-        <SectionHeader section="Posts" />
-
-        <div className="post-grid">
-          {orderedPosts.map((post, key) => {
-            return (
-              <PostPreview
-                key={key}
-                title={post.data.title}
-                date={post.data.date}
-                href={`${post.filePath.replace(/\.mdx?$/, "")}`}
+    <>
+      <Layout>
+        <SEO />
+        <div className="grid max-w-full gap-16 auto-rows-auto">
+          <div>
+            <p className="mt-8 md:mt-4">
+              I'm currently shaping the mobile apps at GitHub and crafting
+              beautiful app icons for a wide variety of clients. I focus on fit
+              and finish to solve problems and create seamless experiences. If
+              you'd like to work with me on an icon, please{" "}
+              <a
+                className="text-tertiary dark:text-darkTertiary"
+                href="mailto:gavin@nelson.co?subject=App icon inquiry&body=[Please include some details about your project including timeline and budget]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                get in touch
+              </a>
+              .
+            </p>
+          </div>
+          <Section title="Connect">
+            <div className="flex flex-row self-stretch justify-between sm:justify-start ">
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="mailto:gavin@nelson.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://twitter.com/Gavmn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://github.com/gavinmn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://dribbble.com/Gavin/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Dribbble
+              </a>
+              <Arena />
+            </div>
+          </Section>
+          <Section title="Notes">
+            <Link href="/notes" passhref>
+              <a
+                className=" text-tertiary dark:text-darkTertiary group"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wander the garden
+                <ArrowExternal />
+              </a>
+            </Link>
+          </Section>
+          <Section title="Posts">
+            {orderedPosts.map((post, key) => {
+              return (
+                <div className="mb-2">
+                  <Post
+                    key={key}
+                    title={post.data.title}
+                    date={post.data.date}
+                    href={`${post.filePath.replace(/\.mdx?$/, "")}`}
+                  />
+                </div>
+              )
+            })}
+          </Section>
+          <Section title="Projects">
+            <div className="mb-4">
+              <Project
+                link="/highlights"
+                title="Highlights"
+                description="A feed of passages I’ve highlighted from articles across the web"
               />
-            )
-          })}
+            </div>
+            <div className="mb-4">
+              <DoubleProject
+                link1="/musicthread/heavy-rotation"
+                link2="/musicthread/2021-favorites"
+                title1="Heavy Rotation"
+                title2="2021 Favoirtes"
+                description="A collection of what I've been listening to recently"
+              />
+            </div>
+            <ExternalProject
+              link="https://gumroad.com/l/dvctd"
+              title="Monterey"
+              description="A macOS and iOS icon theme"
+            />
+          </Section>
+          <Section title="Select Icons">
+            <p className="mb-4 text-tertiary dark:text-darkTertiary">
+              For behind the scenes process posts,{" "}
+              <a
+                className="text-tertiary dark:text-darkTertiary"
+                href="https://twitter.com/Gavmn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                follow along on Twitter
+              </a>
+              .
+            </p>
+            <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+              <Icon
+                src={holo}
+                title="Holo"
+                subtitle="GitHub"
+                link="https://github.com/mobile"
+              />
+              <Icon
+                src={vscode}
+                title="VS Code"
+                subtitle="Personal"
+                width="400"
+                download={true}
+                link="https://gnelson.gumroad.com/l/vscode"
+              />
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={things}
+                  title="Things"
+                  subtitle="Personal"
+                  width="800"
+                  download={true}
+                  link="https://gnelson.gumroad.com/l/things-icon"
+                />
+              </div>
+              <Icon
+                src={g1}
+                title="G1 Chip"
+                subtitle="GitHub"
+                width="400"
+                link="https://github.com/mobile"
+              />
+              <Icon
+                src={camo}
+                title="Camo"
+                subtitle="Reincubate"
+                width="400"
+                link="https://reincubate.com/camo/"
+              />
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={craft}
+                  title="Craft"
+                  subtitle="Craft Docs"
+                  width="800"
+                  link="https://www.craft.do"
+                />
+              </div>
+              <Icon
+                src={obsidian}
+                title="Obsidian"
+                subtitle="Personal"
+                width="400"
+                download={true}
+                link="https://gnelson.gumroad.com/l/obsidian2"
+              />
+              <Icon
+                src={earlybird}
+                title="Earlybird"
+                subtitle="GitHub"
+                width="800"
+                link="https://github.com/mobile"
+              />
+
+              <div className="max-w-full sm:col-span-2 ">
+                <Icon
+                  src={claquette}
+                  title="Claquette"
+                  subtitle="Peak Step"
+                  width="800"
+                  link="https://www.peakstep.com/claquette/"
+                />
+              </div>
+              <Icon
+                src={stocketa}
+                title="Stocketa"
+                subtitle="Stocketa"
+                width="400"
+                link="https://stocketa.com"
+              />
+              <Icon
+                src={reflect}
+                title="Reflect"
+                subtitle="Reflect Notes"
+                width="400"
+                link="https://reflect.app"
+              />
+
+              <Icon
+                src={hyperspace}
+                title="Hyperspace"
+                subtitle="GitHub"
+                width="800"
+                link="https://github.com/mobile"
+              />
+              <Icon
+                src={apollo}
+                title="N.E.L.S.O.N."
+                subtitle="Apollo Reddit"
+                width="400"
+                link="https://apolloapp.io"
+              />
+
+              <Icon src={xcode} title="Xcode" subtitle="Personal" width="400" />
+              <Icon
+                src={slack}
+                title="Slack"
+                subtitle="Personal"
+                width="400"
+                link="https://gnelson.gumroad.com/l/slack-icon"
+                download={true}
+              />
+            </div>
+          </Section>
         </div>
-
-        <SectionHeader section="Projects" />
-        <div className="project-grid">
-          <Project
-            title="Highlights"
-            description="A feed of passages I've highlighted from articles across the web."
-            href="/highlights"
-          />
-          <Project
-            title="Heavy Rotation"
-            description="A collection of what I've been listening to recently."
-            href="/musicthread/heavy-rotation"
-          />
-        </div>
-        <div className="card-grid">
-          <Card
-            width="double"
-            src={montereyImage}
-            title="Monterey"
-            subtitle="Icon Design"
-          >
-            <ButtonExternal link="https://gumroad.com/l/dvctd" />
-          </Card>
-        </div>
-
-        <a aria-label="Icons" id="icons" className="anchor" href="/#icons">
-          <h1></h1>
-        </a>
-        <SectionHeader section="Icons" />
-        <div className="card-grid">
-          <Card
-            width="single"
-            src={githubzen}
-            title="GitHub Universe 2021"
-            subtitle="2021"
-          >
-            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
-          </Card>
-          <Card
-            width="single"
-            src={githubholo}
-            title="GitHub Holo"
-            subtitle="2021"
-          >
-            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
-          </Card>
-          <Card width="double" src={things} title="Things" subtitle="2021">
-            <ButtonDownload link="https://gnelson.gumroad.com/l/things-icon" />
-          </Card>
-          <Card width="single" src={vscode} title="VS Code" subtitle="2021">
-            <ButtonDownload link="https://gnelson.gumroad.com/l/vscode" />
-          </Card>
-          <Card width="single" src={obsidian} title="Obsidian" subtitle="2021">
-            <ButtonDownload link="/downloads/obsidian-icon-gavin-nelson.zip" />
-          </Card>
-          <Card
-            width="single"
-            src={hyperspace}
-            title="GitHub Hyperspace"
-            subtitle="2021"
-          >
-            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
-          </Card>
-          <Card
-            width="single"
-            src={githubearlybird}
-            title="GitHub Early Bird"
-            subtitle="2021"
-          >
-            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
-          </Card>
-          <Card width="single" src={reflect} title="Reflect" subtitle="2021">
-            <ButtonExternal link="https://reflect.app" />
-          </Card>
-          <Card width="single" src={stocketa} title="Stocketa" subtitle="2021">
-            <ButtonExternal link="https://stocketa.com" />
-          </Card>
-          <Card width="single" src={craft} title="Craft" subtitle="2021">
-            <ButtonExternal link="https://www.craft.do" />
-          </Card>
-          <Card
-            width="single"
-            src={github}
-            title="GitHub G1 Chip"
-            subtitle="2021"
-          >
-            <ButtonExternal link="https://apps.apple.com/app/github/id1477376905?ls=1" />
-          </Card>
-          <Card
-            width="single"
-            src={claquette}
-            title="Claquette"
-            subtitle="2020"
-          >
-            <ButtonExternal link="https://www.peakstep.com/claquette/" />
-          </Card>
-
-          <Card
-            width="single"
-            src={apollo}
-            title="Apollo Reddit"
-            subtitle="2020"
-          ></Card>
-          <Card width="double" src={slack} title="Slack" subtitle="2020"></Card>
-          <Card
-            width="single"
-            src={instagram}
-            title="Instagram"
-            subtitle="2020"
-          ></Card>
-          <Card width="single" src={xcode} title="Xcode" subtitle="2020"></Card>
-          <Card width="single" src={notes} title="Notes" subtitle="2020"></Card>
-          <Card
-            width="single"
-            src={blender}
-            title="Blender"
-            subtitle="2020"
-          ></Card>
-        </div>
-      </div>
-      <style jsx>{`
-        .wrapper {
-          max-width: 656px;
-          padding: 0 5% 0 5%;
-          margin: 0 auto;
-        }
-
-        .hero-container {
-          margin-top: -1rem;
-          display: grid;
-          height: 100vh;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .post-grid,
-        .project-grid {
-          display: grid;
-          grid-template-columns: auto;
-          grid-gap: 0.5rem;
-          max-width: 816px;
-        }
-
-        .project-grid {
-          margin-bottom: 2rem;
-        }
-
-        @media only screen and (min-width: 768px) {
-          .post-grid,
-          .project-grid {
-            grid-gap: 0.25rem;
-          }
-
-          .project-grid {
-            margin-bottom: 1rem;
-          }
-        }
-
-        .card-grid {
-          display: grid;
-          grid-template-columns: auto;
-          grid-column-gap: 1rem;
-          grid-row-gap: 2rem;
-        }
-
-        .anchor {
-          padding-top: 1rem;
-          margin-top: -1rem;
-        }
-
-        @media ${device.desktop} {
-          .hero-container {
-            margin-top: 1rem;
-          }
-
-          .card-grid {
-            grid-template-columns: 49.01960784% 49.01960784%;
-            grid-column-gap: 0.5rem;
-            grid-row-gap: 1rem;
-          }
-
-          .anchor {
-            padding-top: 0.5rem;
-            margin-top: -0.5rem;
-          }
-        }
-      `}</style>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 

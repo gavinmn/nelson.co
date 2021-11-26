@@ -6,45 +6,32 @@ import fs from "fs"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../../lib/mdxUtils"
 
-import PostWrapper from "@/components/postwrapper"
-
+import SEO from "@/components/seo"
+import Layout from "@/components/layout"
 import Image from "next/image"
-import Ztext from "react-ztext"
-
-import CustomImage from "@/components/customimage"
-import Caption from "@/components/caption"
-import CustomLink from "@/components/posts/customlink"
-import HorizontalRule from "@/components/horizontalrule"
-import Break from "@/components/break"
-
-import ZContainer from "@/components/posts/zcontainer"
-import Cube from "@/components/posts/cube"
-
+import { Br, HorizontalRule, CustomLink } from "@/components/postutils"
 import Tool from "@/components/tool"
 
 const components = {
-  a: CustomLink,
-  h4: Caption,
-  hr: HorizontalRule,
-  br: Break,
   Image,
-  CustomImage,
-  ZContainer,
-  Ztext,
-  Cube,
+  a: CustomLink,
+  hr: HorizontalRule,
+  br: Br,
   Tool,
 }
 
 export default function Posts({ source, frontMatter }) {
   return (
-    <PostWrapper
-      title={frontMatter.title}
-      og={frontMatter.og}
-      description={frontMatter.subtitle}
-      time={frontMatter.time}
-    >
-      <MDXRemote {...source} components={components} />
-    </PostWrapper>
+    <Layout>
+      <SEO
+        title={frontMatter.title}
+        og={frontMatter.og}
+        description={frontMatter.description}
+      />
+      <div className="mb-4">
+        <MDXRemote {...source} components={components} />
+      </div>
+    </Layout>
   )
 }
 
