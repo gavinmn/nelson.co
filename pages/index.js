@@ -43,8 +43,18 @@ const IndexPage = ({ posts }) => {
           <div>
             <p className="mt-8 md:mt-4">
               I'm currently shaping the mobile apps at GitHub and crafting
-              beautiful app icons for companies and individuals. I focus on fit
-              and finish to solve problems and create seamless experiences.
+              beautiful app icons for a wide variety of clients. I focus on fit
+              and finish to solve problems and create seamless experiences. If
+              you'd like to work with me on an icon, please{" "}
+              <a
+                className="text-tertiary dark:text-darkTertiary"
+                href="mailto:gavin@nelson.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                get in touch
+              </a>
+              .
             </p>
           </div>
           <Section title="Connect">
@@ -135,16 +145,6 @@ const IndexPage = ({ posts }) => {
           </Section>
           <Section title="Select Icons">
             <p className="mb-4 text-tertiary dark:text-darkTertiary">
-              If you'd like to work with me on an icon, please{" "}
-              <a
-                className="text-tertiary dark:text-darkTertiary"
-                href="mailto:gavin@nelson.co"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                get in touch
-              </a>
-              . <br />
               For behind the scenes process posts,{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
