@@ -42,10 +42,10 @@ const IndexPage = ({ posts }) => {
         <div className="grid max-w-full gap-16 auto-rows-auto">
           <div>
             <p className="mt-8 md:mt-4">
-              I'm currently shaping the mobile apps at GitHub and crafting
-              beautiful app icons for a wide variety of clients. I focus on fit
-              and finish to solve problems and create seamless experiences. If
-              you'd like to work with me on an icon, please{" "}
+              I'm currently shaping the mobile apps at GitHub and crafting app
+              icons for a wide variety of clients. I focus on fit and finish to
+              solve problems and create seamless experiences. If you'd like to
+              work with me on an icon, please{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
                 href="mailto:gavin@nelson.co?subject=App icon inquiry&body=[Please include some details about your project including timeline and budget]"
