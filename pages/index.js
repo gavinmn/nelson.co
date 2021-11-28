@@ -133,7 +133,7 @@ const IndexPage = ({ posts }) => {
                 link1="/musicthread/heavy-rotation"
                 link2="/musicthread/2021-favorites"
                 title1="Heavy Rotation"
-                title2="2021 Favoirtes"
+                title2="2021 Favorites"
                 description="A collection of what I've been listening to recently"
               />
             </div>
