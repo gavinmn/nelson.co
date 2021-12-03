@@ -47,7 +47,7 @@
   @variants dark {
     
     .underline-dark {
-      textdecoration: underline;
+      text-decoration: underline;
       text-decoration-color: hsl(224, 25%, 46%);
     }
   }
