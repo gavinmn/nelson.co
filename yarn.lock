@@ -2585,10 +2585,10 @@ preact@^10.6.2:
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.6.2.tgz#c849f91df9ad36bfa64d1a5d5880977f767c69e5"
   integrity sha512-ppDjurt75nSxyikpyali+uKwRl8CK9N6ntOPovGIEGQagjMLVzEgVqFEsUUyUrqyE9Ch90KE0jmFc9q2QcPLBA==
 
-prettier@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+prettier@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 pretty-hrtime@^1.0.3:
   version "1.0.3"
