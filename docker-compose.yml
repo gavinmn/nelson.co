@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+ website:
+  container_name: website
+  build: .
+  ports: 
+    - "3000:3000"
+  networks:
+      - fullstack
+  restart: on-failure
+networks:
+  fullstack:
+    driver: bridge

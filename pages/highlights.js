@@ -27,7 +27,7 @@ const Highlights = ({ books, highlights }) => {
           Subscribe via RSS
         </a>
       </div>
-      {books.results.map((item, book) => {
+      {books?.results && books.results.map((item, book) => {
         const bookItem = books.results[book]
         const bookID = books.results[book].id
         const bookHighlights = []
@@ -35,7 +35,7 @@ const Highlights = ({ books, highlights }) => {
 
         return (
           <>
-            {highlights.results.map((item, highlight) => {
+            {highlights?.results && highlights.results.map((item, highlight) => {
               const highlightBookID = highlights.results[highlight].book_id
               const highlightID = highlights.results[highlight].id
 
