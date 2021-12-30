@@ -6,7 +6,7 @@
   "author": "Gavin Nelson <gavin@nelson.co>",
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.1",
     "cross-env": "^7.0.3",
     "@next/mdx": "^12.0.7",
     "date-fns": "^2.27.0",
