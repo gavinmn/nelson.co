@@ -131,9 +131,11 @@ const IndexPage = ({ posts }) => {
             <div className="mb-4">
               <DoubleProject
                 link1="/musicthread/heavy-rotation"
-                link2="/musicthread/2021-favorites"
+                link2="/musicthread/2022-favorites"
+                link3="/musicthread/2021-favorites"
                 title1="Heavy Rotation"
-                title2="2021 Favorites"
+                title2="2022 Favorites"
+                title3="2021 Favorites"
                 description="A collection of what I've been listening to recently"
               />
             </div>

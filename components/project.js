@@ -24,9 +24,13 @@ export const DoubleProject = props => (
       <Link href={props.link1} passHref className="inline">
         <a className="inline">{props.title1}</a>
       </Link>
-      <p className="inline"> & </p>
+      <p className="inline"> • </p>
       <Link href={props.link2} passHref className="inline">
         <a className="inline">{props.title2}</a>
+      </Link>
+      <p className="inline"> • </p>
+      <Link href={props.link3} passHref className="inline">
+        <a className="inline">{props.title3}</a>
       </Link>
     </div>
     <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
