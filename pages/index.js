@@ -101,7 +101,7 @@ const IndexPage = ({ posts }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Wander the garden
+                Explore
                 <ArrowExternal />
               </a>
             </Link>
