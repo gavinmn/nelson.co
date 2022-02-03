@@ -91,7 +91,7 @@ const IndexPage = ({ posts }) => {
               >
                 Dribbble
               </a>
-              <Arena />
+              {/* <Arena /> */}
             </div>
           </Section>
           <Section title="Notes">
