@@ -13,6 +13,8 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import ruby from "../public/images/index/ruby.png"
+import obsidianpersonal from "../public/images/index/obsidianpersonal.png"
 import holo from "../public/images/index/holo.png"
 import vscode from "../public/images/index/vscode.png"
 import things from "../public/images/index/things.png"
@@ -157,6 +159,17 @@ const IndexPage = ({ posts }) => {
               .
             </p>
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+              <Icon
+                src={ruby}
+                title="Ruby"
+                subtitle="GitHub"
+                link="https://github.com/mobile"
+              />
+              <Icon
+                src={obsidianpersonal}
+                title="Obsidian"
+                subtitle="Personal"
+              />
               <Icon
                 src={holo}
                 title="Holo"
