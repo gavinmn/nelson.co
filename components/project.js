@@ -18,15 +18,20 @@ export const ExternalProject = props => (
   </div>
 )
 
-export const DoubleProject = props => (
+export const MultiProject = props => (
   <div className="flex flex-col items-start">
     <div>
+{/*       this could be a map function instead */}
       <Link href={props.link1} passHref className="inline">
         <a className="inline">{props.title1}</a>
       </Link>
-      <p className="inline"> & </p>
+      <p className="inline mx-3"> • </p>
       <Link href={props.link2} passHref className="inline">
         <a className="inline">{props.title2}</a>
+      </Link>
+      <p className="inline mx-3"> • </p>
+      <Link href={props.link3} passHref className="inline">
+        <a className="inline">{props.title3}</a>
       </Link>
     </div>
     <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
