@@ -13,6 +13,7 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import linear from "../public/images/index/linear.png"
 import ruby from "../public/images/index/ruby.png"
 import obsidianpersonal from "../public/images/index/obsidianpersonal.png"
 import holo from "../public/images/index/holo.png"
@@ -161,6 +162,15 @@ const IndexPage = ({ posts }) => {
               .
             </p>
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={linear}
+                  title="Linear"
+                  subtitle="Linear"
+                  width="800"
+                  link="https://linear.app"
+                />
+              </div>
               <Icon
                 src={ruby}
                 title="Ruby"
