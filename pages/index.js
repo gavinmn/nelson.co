@@ -17,6 +17,7 @@ import linear from "../public/images/index/linear.png"
 import ruby from "../public/images/index/ruby.png"
 import obsidianpersonal from "../public/images/index/obsidianpersonal.png"
 import holo from "../public/images/index/holo.png"
+import zoom from "../public/images/index/zoom.png"
 import vscode from "../public/images/index/vscode.png"
 import things from "../public/images/index/things.png"
 import g1 from "../public/images/index/g1.png"
@@ -181,6 +182,8 @@ const IndexPage = ({ posts }) => {
                 src={obsidianpersonal}
                 title="Obsidian"
                 subtitle="Personal"
+                download={true}
+                link="https://gnelson.gumroad.com/l/obsidian-3"
               />
               <Icon
                 src={holo}
@@ -189,13 +192,23 @@ const IndexPage = ({ posts }) => {
                 link="https://github.com/mobile"
               />
               <Icon
-                src={vscode}
-                title="VS Code"
+                src={zoom}
+                title="Zoom"
                 subtitle="Personal"
                 width="400"
                 download={true}
+                link="https://gnelson.gumroad.com/l/zoom-icon"
+                />
+                <div className="max-w-full sm:col-span-2">
+              <Icon
+                src={vscode}
+                title="VS Code"
+                subtitle="Personal"
+                width="800"
+                download={true}
                 link="https://gnelson.gumroad.com/l/vscode"
               />
+              </div>
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={things}
