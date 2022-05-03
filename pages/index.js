@@ -14,6 +14,7 @@ import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
 import linear from "../public/images/index/linear.png"
+import readwise from "../public/images/index/readwise.png"
 import ruby from "../public/images/index/ruby.png"
 import obsidianpersonal from "../public/images/index/obsidianpersonal.png"
 import holo from "../public/images/index/holo.png"
@@ -173,18 +174,26 @@ const IndexPage = ({ posts }) => {
                 />
               </div>
               <Icon
+                src={readwise}
+                title="Readwise"
+                subtitle="Readwise"
+                link="http://readwise.io"
+              />
+              <Icon
                 src={ruby}
                 title="Ruby"
                 subtitle="GitHub"
                 link="https://github.com/mobile"
               />
-              <Icon
-                src={obsidianpersonal}
-                title="Obsidian"
-                subtitle="Personal"
-                download={true}
-                link="https://gnelson.gumroad.com/l/obsidian-3"
-              />
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={obsidianpersonal}
+                  title="Obsidian"
+                  subtitle="Personal"
+                  download={true}
+                  link="https://gnelson.gumroad.com/l/obsidian-3"
+                />
+              </div>
               <Icon
                 src={holo}
                 title="Holo"
@@ -198,16 +207,16 @@ const IndexPage = ({ posts }) => {
                 width="400"
                 download={true}
                 link="https://gnelson.gumroad.com/l/zoom-icon"
-                />
-                <div className="max-w-full sm:col-span-2">
-              <Icon
-                src={vscode}
-                title="VS Code"
-                subtitle="Personal"
-                width="800"
-                download={true}
-                link="https://gnelson.gumroad.com/l/vscode"
               />
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={vscode}
+                  title="VS Code"
+                  subtitle="Personal"
+                  width="800"
+                  download={true}
+                  link="https://gnelson.gumroad.com/l/vscode"
+                />
               </div>
               <div className="max-w-full sm:col-span-2">
                 <Icon
