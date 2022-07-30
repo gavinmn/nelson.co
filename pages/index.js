@@ -127,13 +127,13 @@ const IndexPage = ({ posts }) => {
             })}
           </Section>
           <Section title="Projects">
-            {/* <div className="mb-4">
+            <div className="mb-4">
               <Project
                 link="/highlights"
                 title="Highlights"
                 description="A feed of passages I’ve highlighted from articles across the web"
               />
-            </div> */}
+            </div>
             <div className="mb-4">
               <MultiProject
                 link1="/musicthread/heavy-rotation"
