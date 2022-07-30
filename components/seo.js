@@ -80,12 +80,12 @@ export default function SEO({
         sizes="48x48"
         type="image/png"
       />
-      {/* <script
+      <script
         async
         defer
         data-domain="nelson.co"
         src="https://plausible.io/js/plausible.outbound-links.js"
-      ></script> */}
+      ></script>
 
       <link
         rel="alternate"
