@@ -273,9 +273,11 @@
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.0.2.tgz#5fbd7b4146175ae406edfb4a38b62de8c880c09d"
 
-"@next/mdx@^12.3.0":
-  version "12.3.2"
-  resolved "https://registry.npmjs.org/@next/mdx/-/mdx-12.3.2.tgz"
+"@next/mdx@^13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.0.2.tgz#60febdab4ccd4ece87ba99694befe146f0e1307e"
+  dependencies:
+    source-map "^0.7.0"
 
 "@next/swc-android-arm-eabi@13.0.2":
   version "13.0.2"
@@ -1951,6 +1953,10 @@ source-map-js@^1.0.2:
 source-map@^0.5.0:
   version "0.5.7"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
+
+source-map@^0.7.0:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.4.tgz#a9bbe705c9d8846f4e08ff6765acf0f1b0898656"
 
 space-separated-tokens@^1.0.0:
   version "1.1.5"
