@@ -8,7 +8,7 @@ import { postFilePaths, POSTS_PATH } from "../../lib/mdxUtils"
 
 import SEO from "@/components/seo"
 import Layout from "@/components/layout"
-import Image from "next/image"
+import Image from "next/legacy/image";
 import { Br, HorizontalRule, CustomLink } from "@/components/postutils"
 import Tool from "@/components/tool"
 

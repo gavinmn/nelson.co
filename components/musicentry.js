@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image";
 import { ArrowExternal } from "./svg"
 const MusicEntry = props => (
   <div className="flex flex-col items-start md:flex-row">
