@@ -13,6 +13,7 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import diffraction from "../public/images/index/diffraction.png"
 import onepw from "../public/images/index/onepw.png"
 import replace from "../public/images/index/replace.png"
 import linear from "../public/images/index/linear.png"
@@ -169,13 +170,27 @@ const IndexPage = ({ posts }) => {
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
               <div className="max-w-full sm:col-span-2">
                 <Icon
-                  src={onepw}
-                  title="1Password"
-                  subtitle="1Password"
+                  src={diffraction}
+                  title="Diffraction"
+                  subtitle="GitHub"
                   width="800"
-                  link="https://apps.apple.com/us/app/1password-8-password-manager/id1511601750"
+                  link="https://github.com/mobile"
                 />
               </div>
+              <Icon
+                src={onepw}
+                title="1Password"
+                subtitle="1Password"
+                width="800"
+                link="https://apps.apple.com/us/app/1password-8-password-manager/id1511601750"
+              />
+              <Icon
+                src={linear}
+                title="Linear"
+                subtitle="Linear"
+                width="800"
+                link="https://linear.app"
+              />
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={replace}
@@ -183,15 +198,6 @@ const IndexPage = ({ posts }) => {
                   subtitle="GitHub"
                   width="800"
                   link="https://github.com/mobile"
-                />
-              </div>
-              <div className="max-w-full sm:col-span-2">
-                <Icon
-                  src={linear}
-                  title="Linear"
-                  subtitle="Linear"
-                  width="800"
-                  link="https://linear.app"
                 />
               </div>
               <Icon
