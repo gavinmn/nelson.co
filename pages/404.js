@@ -10,7 +10,7 @@ const NotFoundPage = () => (
       <p>
         This is not the page you are looking for. <br></br>Why don't you go{" "}
         <Link href="/" className="here-link">
-          <a>here.</a>
+          here.
         </Link>
       </p>
     </div>

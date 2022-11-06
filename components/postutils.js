@@ -6,10 +6,10 @@ export const CustomLink = props => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a {...props} />
-      </Link>
-    )
+      (<Link href={href} {...props}>
+
+      </Link>)
+    );
   }
 
   return <a target="_blank" rel="noopener noreferrer" {...props} />
