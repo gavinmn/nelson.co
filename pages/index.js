@@ -103,15 +103,15 @@ const IndexPage = ({ posts }) => {
             </div>
           </Section>
           <Section title="Notes">
-            <Link href="/notes" passhref>
-              <a
-                className=" text-tertiary dark:text-darkTertiary group"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explore
-                <ArrowExternal />
-              </a>
+            <Link
+              href="/notes"
+              passhref
+              className=" text-tertiary dark:text-darkTertiary group"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore
+              <ArrowExternal />
             </Link>
           </Section>
           <Section title="Posts">
