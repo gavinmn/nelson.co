@@ -3,7 +3,7 @@ import Link from "next/link"
 const Project = props => (
   <div className="flex flex-col items-start">
     <Link href={props.link} passHref>
-      <a>{props.title}</a>
+      {props.title}
     </Link>
     <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>
   </div>
@@ -23,15 +23,15 @@ export const MultiProject = props => (
     <div>
 {/*       this could be a map function instead */}
       <Link href={props.link1} passHref className="inline">
-        <a className="inline">{props.title1}</a>
+        {props.title1}
       </Link>
       <p className="inline mx-3"> • </p>
       <Link href={props.link2} passHref className="inline">
-        <a className="inline">{props.title2}</a>
+        {props.title2}
       </Link>
       <p className="inline mx-3"> • </p>
       <Link href={props.link3} passHref className="inline">
-        <a className="inline">{props.title3}</a>
+        {props.title3}
       </Link>
     </div>
     <p className="text-tertiary dark:text-darkTertiary">{props.description}</p>

@@ -102,18 +102,18 @@ const IndexPage = ({ posts }) => {
               {/* <Arena /> */}
             </div>
           </Section>
-          <Section title="Notes">
-            <Link href="/notes" passhref>
-              <a
-                className=" text-tertiary dark:text-darkTertiary group"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explore
-                <ArrowExternal />
-              </a>
+          {/* <Section title="Notes" className="flex flex-row">
+            <Link
+              href="/notes"
+              className=" text-tertiary dark:text-darkTertiary group"
+              target="_blank"
+              rel="noopener noreferrer"
+              legacyBehavior
+            >
+              Explore
             </Link>
-          </Section>
+            <ArrowExternal />
+          </Section> */}
           <Section title="Posts">
             {orderedPosts.map((post, key) => {
               return (

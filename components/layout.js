@@ -18,15 +18,18 @@ const Layout = ({ children }) => {
             >
               RSS
             </a>
-            <Link href="/colophon" passhref>
-              <a className="text-sm text-tertiary dark:text-darkTertiary">
+            <Link
+              href="/colophon"
+              passhref
+              className="text-sm text-tertiary dark:text-darkTertiary">
+              
                 Colophon
-              </a>
+              
             </Link>
           </div>
         </div>
       </div>
     </main>
-  )
+  );
 }
 export default Layout
