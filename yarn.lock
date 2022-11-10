@@ -1422,9 +1422,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
 
-tailwindcss@^3.2.0:
-  version "3.2.2"
-  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.2.tgz"
+tailwindcss@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.3.tgz#c5ee3cb95dae7a80592d43a460d277915c7b2938"
   dependencies:
     arg "^5.0.2"
     chokidar "^3.5.3"
