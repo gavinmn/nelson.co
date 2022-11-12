@@ -237,10 +237,10 @@
   resolved "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
-"@vercel/analytics@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.npmjs.org/@vercel/analytics/-/analytics-0.1.3.tgz"
-  integrity sha512-zJuEwzvi0bBmWrMrj9jvyMS+X6iUdW3m/y5P7aOLwJQKHsJyfpdINo/4Rv+wxubz3gl4nRqIQdtOFCe1P1ErXQ==
+"@vercel/analytics@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-0.1.4.tgz#86481995ec5520b349befddaf5b8b22203023871"
+  integrity sha512-6xI1kozfgigwmDTQCrtj+m0yQnzhLGa/l0yE8BjTbUQ2vF9b88CEXF3dXjZl48ESfjssCur3FkK3jOwZm4emrw==
 
 abbrev@1:
   version "1.1.1"
