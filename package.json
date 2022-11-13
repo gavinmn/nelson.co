@@ -6,8 +6,8 @@
   "author": "Gavin Nelson <gavin@nelson.co>",
   "dependencies": {
     "@mdx-js/loader": "^2.1.5",
-    "@next/mdx": "^13.0.2",
-    "@vercel/analytics": "^0.1.3",
+    "@next/mdx": "^13.0.3",
+    "@vercel/analytics": "^0.1.4",
     "autoprefixer": "^10.4.11",
     "cross-env": "^7.0.3",
     "date-fns": "^2.29.3",
@@ -15,15 +15,15 @@
     "gray-matter": "^4.0.3",
     "markdown": "^0.5.0",
     "next": "^13.0.3",
-    "next-mdx-remote": "^4.1.0",
+    "next-mdx-remote": "^4.2.0",
     "next-themes": "^0.2.1",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.19",
     "preact": "^10.10.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "rss": "^1.2.2",
-    "tailwindcss": "^3.2.0"
+    "tailwindcss": "^3.2.3"
   },
   "devDependencies": {
     "prettier": "2.7.1"
