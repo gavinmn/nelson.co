@@ -21,15 +21,19 @@ const Layout = ({ children }) => {
             <Link
               href="/colophon"
               passhref
-              className="text-sm text-tertiary dark:text-darkTertiary">
-              
-                Colophon
-              
+              className="text-sm text-tertiary dark:text-darkTertiary"
+            >
+              Colophon
             </Link>
+            <div className="hidden">
+              <a rel="me" href="https://mastodon.design/@gn">
+                Mastodon
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </main>
-  );
+  )
 }
 export default Layout
