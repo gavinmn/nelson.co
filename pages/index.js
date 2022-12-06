@@ -13,6 +13,8 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import copilot from "../public/images/index/copilot.png"
+import mattericon from "../public/images/index/matter.png"
 import diffraction from "../public/images/index/diffraction.png"
 import onepw from "../public/images/index/onepw.png"
 import replace from "../public/images/index/replace.png"
@@ -166,8 +168,21 @@ const IndexPage = ({ posts }) => {
               </a>
               .
             </p>
-
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+              <Icon
+                src={copilot}
+                title="Copilot macOS"
+                subtitle="Copilot"
+                width="800"
+                link="https://copilot.money/"
+              />
+              <Icon
+                src={mattericon}
+                title="Matter"
+                subtitle="Matter"
+                width="800"
+                link="https://getmatter.app/"
+              />
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={diffraction}
