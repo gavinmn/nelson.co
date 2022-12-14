@@ -13,6 +13,8 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import xdesign from "../public/images/index/xdesign.png"
+import emulsion from "../public/images/index/emulsion.png"
 import copilot from "../public/images/index/copilot.png"
 import mattericon from "../public/images/index/matter.png"
 import diffraction from "../public/images/index/diffraction.png"
@@ -169,6 +171,22 @@ const IndexPage = ({ posts }) => {
               .
             </p>
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+            <div className="max-w-full sm:col-span-2">
+              <Icon
+                src={xdesign}
+                title="Xdesign"
+                subtitle="Diagram"
+                width="800"
+                link="https://diagram.com/"
+              />
+            </div>
+            <Icon
+              src={emulsion}
+              title="Emulsion"
+              subtitle="Eff"
+              width="800"
+              link="https://eff.co/"
+            />
               <Icon
                 src={copilot}
                 title="Copilot macOS"
@@ -183,7 +201,7 @@ const IndexPage = ({ posts }) => {
                 width="800"
                 link="https://getmatter.app/"
               />
-              <div className="max-w-full sm:col-span-2">
+              
                 <Icon
                   src={diffraction}
                   title="Diffraction"
@@ -191,7 +209,7 @@ const IndexPage = ({ posts }) => {
                   width="800"
                   link="https://github.com/mobile"
                 />
-              </div>
+              
               <Icon
                 src={onepw}
                 title="1Password"
