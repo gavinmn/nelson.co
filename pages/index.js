@@ -81,6 +81,14 @@ const IndexPage = ({ posts }) => {
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://mastodon.design/@gn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mastodon
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://twitter.com/Gavmn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -171,22 +179,22 @@ const IndexPage = ({ posts }) => {
               .
             </p>
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
-            <div className="max-w-full sm:col-span-2">
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={xdesign}
+                  title="Xdesign"
+                  subtitle="Diagram"
+                  width="800"
+                  link="https://diagram.com/"
+                />
+              </div>
               <Icon
-                src={xdesign}
-                title="Xdesign"
-                subtitle="Diagram"
+                src={emulsion}
+                title="Emulsion"
+                subtitle="Eff"
                 width="800"
-                link="https://diagram.com/"
+                link="https://eff.co/"
               />
-            </div>
-            <Icon
-              src={emulsion}
-              title="Emulsion"
-              subtitle="Eff"
-              width="800"
-              link="https://eff.co/"
-            />
               <Icon
                 src={copilot}
                 title="Copilot macOS"
@@ -201,15 +209,15 @@ const IndexPage = ({ posts }) => {
                 width="800"
                 link="https://getmatter.app/"
               />
-              
-                <Icon
-                  src={diffraction}
-                  title="Diffraction"
-                  subtitle="GitHub"
-                  width="800"
-                  link="https://github.com/mobile"
-                />
-              
+
+              <Icon
+                src={diffraction}
+                title="Diffraction"
+                subtitle="GitHub"
+                width="800"
+                link="https://github.com/mobile"
+              />
+
               <Icon
                 src={onepw}
                 title="1Password"
