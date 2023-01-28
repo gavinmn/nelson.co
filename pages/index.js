@@ -14,6 +14,7 @@ import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
 import xdesign from "../public/images/index/xdesign.png"
+import neonnights from "../public/images/index/neonnights.png"
 import emulsion from "../public/images/index/emulsion.png"
 import copilot from "../public/images/index/copilot.png"
 import mattericon from "../public/images/index/matter.png"
@@ -186,6 +187,15 @@ const IndexPage = ({ posts }) => {
                   subtitle="Diagram"
                   width="800"
                   link="https://diagram.com/"
+                />
+              </div>
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={neonnights}
+                  title="Neon Nights"
+                  subtitle="GitHub"
+                  width="800"
+                  link="https://github.com/mobile"
                 />
               </div>
               <Icon
