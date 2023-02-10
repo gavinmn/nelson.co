@@ -18,7 +18,7 @@
     "next-mdx-remote": "^4.2.0",
     "next-themes": "^0.2.1",
     "postcss": "^8.4.19",
-    "preact": "^10.10.5",
+    "preact": "^10.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
