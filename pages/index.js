@@ -13,6 +13,7 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import flighty from "../public/images/index/flighty.png"
 import xdesign from "../public/images/index/xdesign.png"
 import neonnights from "../public/images/index/neonnights.png"
 import emulsion from "../public/images/index/emulsion.png"
@@ -182,6 +183,15 @@ const IndexPage = ({ posts }) => {
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
               <div className="max-w-full sm:col-span-2">
                 <Icon
+                  src={flighty}
+                  title="Nighty"
+                  subtitle="Flighty"
+                  width="800"
+                  link="https://www.flightyapp.com/"
+                />
+              </div>
+              <div className="max-w-full sm:col-span-2">
+                <Icon
                   src={xdesign}
                   title="Xdesign"
                   subtitle="Diagram"
@@ -189,6 +199,20 @@ const IndexPage = ({ posts }) => {
                   link="https://diagram.com/"
                 />
               </div>
+              <Icon
+                src={onepw}
+                title="1Password"
+                subtitle="1Password"
+                width="800"
+                link="https://apps.apple.com/us/app/1password-8-password-manager/id1511601750"
+              />
+              <Icon
+                src={linear}
+                title="Linear"
+                subtitle="Linear"
+                width="800"
+                link="https://linear.app"
+              />
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={neonnights}
@@ -228,20 +252,6 @@ const IndexPage = ({ posts }) => {
                 link="https://github.com/mobile"
               />
 
-              <Icon
-                src={onepw}
-                title="1Password"
-                subtitle="1Password"
-                width="800"
-                link="https://apps.apple.com/us/app/1password-8-password-manager/id1511601750"
-              />
-              <Icon
-                src={linear}
-                title="Linear"
-                subtitle="Linear"
-                width="800"
-                link="https://linear.app"
-              />
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={replace}
