@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Gavin Nelson <gavin@nelson.co>",
   "dependencies": {
-    "@mdx-js/loader": "^2.1.5",
+    "@mdx-js/loader": "^2.3.0",
     "@next/mdx": "^13.0.3",
     "@vercel/analytics": "^0.1.4",
     "autoprefixer": "^10.4.11",
