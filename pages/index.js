@@ -13,7 +13,9 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import flighty from "../public/images/index/flighty.png"
 import xdesign from "../public/images/index/xdesign.png"
+import neonnights from "../public/images/index/neonnights.png"
 import emulsion from "../public/images/index/emulsion.png"
 import copilot from "../public/images/index/copilot.png"
 import mattericon from "../public/images/index/matter.png"
@@ -81,6 +83,14 @@ const IndexPage = ({ posts }) => {
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://mastodon.design/@gn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mastodon
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://twitter.com/Gavmn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -103,7 +113,7 @@ const IndexPage = ({ posts }) => {
               >
                 Dribbble
               </a>
-              {/* <Arena /> */}
+              <Arena />
             </div>
           </Section>
           {/* <Section title="Notes" className="flex flex-row">
@@ -171,45 +181,24 @@ const IndexPage = ({ posts }) => {
               .
             </p>
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
-            <div className="max-w-full sm:col-span-2">
-              <Icon
-                src={xdesign}
-                title="Xdesign"
-                subtitle="Diagram"
-                width="800"
-                link="https://diagram.com/"
-              />
-            </div>
-            <Icon
-              src={emulsion}
-              title="Emulsion"
-              subtitle="Eff"
-              width="800"
-              link="https://eff.co/"
-            />
-              <Icon
-                src={copilot}
-                title="Copilot macOS"
-                subtitle="Copilot"
-                width="800"
-                link="https://copilot.money/"
-              />
-              <Icon
-                src={mattericon}
-                title="Matter"
-                subtitle="Matter"
-                width="800"
-                link="https://getmatter.app/"
-              />
-              
+              <div className="max-w-full sm:col-span-2">
                 <Icon
-                  src={diffraction}
-                  title="Diffraction"
-                  subtitle="GitHub"
+                  src={flighty}
+                  title="Nighty"
+                  subtitle="Flighty"
                   width="800"
-                  link="https://github.com/mobile"
+                  link="https://www.flightyapp.com/"
                 />
-              
+              </div>
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={xdesign}
+                  title="Xdesign"
+                  subtitle="Diagram"
+                  width="800"
+                  link="https://diagram.com/"
+                />
+              </div>
               <Icon
                 src={onepw}
                 title="1Password"
@@ -224,6 +213,45 @@ const IndexPage = ({ posts }) => {
                 width="800"
                 link="https://linear.app"
               />
+              <div className="max-w-full sm:col-span-2">
+                <Icon
+                  src={neonnights}
+                  title="Neon Nights"
+                  subtitle="GitHub"
+                  width="800"
+                  link="https://github.com/mobile"
+                />
+              </div>
+              <Icon
+                src={emulsion}
+                title="Emulsion"
+                subtitle="Eff"
+                width="800"
+                link="https://eff.co/"
+              />
+              <Icon
+                src={copilot}
+                title="Copilot macOS"
+                subtitle="Copilot"
+                width="800"
+                link="https://copilot.money/"
+              />
+              <Icon
+                src={mattericon}
+                title="Matter"
+                subtitle="Matter"
+                width="800"
+                link="https://getmatter.app/"
+              />
+
+              <Icon
+                src={diffraction}
+                title="Diffraction"
+                subtitle="GitHub"
+                width="800"
+                link="https://github.com/mobile"
+              />
+
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={replace}

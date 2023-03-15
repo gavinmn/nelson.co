@@ -25,11 +25,11 @@ export const MultiProject = props => (
       <Link href={props.link1} passHref className="inline">
         {props.title1}
       </Link>
-      <p className="inline mx-3"> • </p>
+      <p className="inline mx-3"> · </p>
       <Link href={props.link2} passHref className="inline">
         {props.title2}
       </Link>
-      <p className="inline mx-3"> • </p>
+      <p className="inline mx-3"> · </p>
       <Link href={props.link3} passHref className="inline">
         {props.title3}
       </Link>

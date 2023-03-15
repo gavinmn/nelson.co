@@ -117,8 +117,8 @@ export const Chevron = () => (
 
 export const Arena = () => (
   <a
-    className="self-center text-tertiary dark:text-darkTertiary opacity-80 group"
-    href="https://www.are.na/gavin-nelson/all?sort=RANDOM"
+    className="self-center text-tertiary dark:text-darkTertiary opacity-80 group "
+    href="https://www.are.na/gavin-nelson/notes-on-taste"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="are.na"

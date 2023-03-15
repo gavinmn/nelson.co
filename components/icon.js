@@ -41,7 +41,7 @@ const Icon = props => {
             {props.title}
           </a>
           <span className="mx-2 opacity-40 text-tertiary dark:text-darkTertiary">
-            •
+            ·
           </span>
           <p className="text-tertiary dark:text-darkTertiary">
             {props.subtitle}
