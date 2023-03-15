@@ -4,6 +4,7 @@ import SEO from "@/components/seo"
 import Section from "@/components/section"
 import { Arena, ArrowExternal } from "../components/svg"
 import Post from "@/components/post"
+import { Feature } from "../components/post"
 import Project from "@/components/project"
 import { MultiProject, ExternalProject } from "../components/project"
 import Icon from "@/components/icon"
@@ -141,6 +142,22 @@ const IndexPage = ({ posts }) => {
                 </div>
               )
             })}
+          </Section>
+          <Section title="Features">
+            <div className="mb-2">
+              <Feature
+                title={"Interview with Gavin Nelson, product and icon designer"}
+                date={"March 2023"}
+                href={"https://manual.withcompound.com/chapters/interview-with-gavin-nelson-product-and-icon-designer"}
+              />
+            </div>
+            <div className="mb-2">
+              <Feature
+                title={"Made with Sketch: How Gavin Nelson puts the icon in iconic"}
+                date={"May 2022"}
+                href={"https://www.sketch.com/blog/gavin-nelson-icon-design/"}
+              />
+            </div>
           </Section>
           <Section title="Projects">
             <div className="mb-4">
