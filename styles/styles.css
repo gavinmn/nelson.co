@@ -40,11 +40,9 @@
 
 @layer utilities {
   .underline {
-    text-decoration-color: hsl(224, 6%, 54%);
+    text-decoration-color: hsl(224, 12%, 88%);
   }
-  @layer dark {
-    .underline-dark {
-      text-decoration-color: hsl(224, 25%, 46%);
-    }
+  .underline-dark {
+    text-decoration-color: hsl(224, 25%, 26%);
   }
 }
