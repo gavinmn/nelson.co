@@ -32,7 +32,7 @@ const Icon = props => {
             className={
               noLink
                 ? "no-underline hover:text-secondary dark:text-darkSecondary"
-                : "underline"
+                : "underline dark:underline-dark"
             }
             href={props.link}
             target="_blank"
