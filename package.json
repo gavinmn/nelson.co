@@ -7,7 +7,7 @@
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
     "@next/mdx": "^13.2.4",
-    "@vercel/analytics": "^0.1.4",
+    "@vercel/analytics": "^1.0.0",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
     "date-fns": "^2.29.3",
