@@ -6,7 +6,7 @@
   "author": "Gavin Nelson <gavin@nelson.co>",
   "dependencies": {
     "@mdx-js/loader": "^2.3.0",
-    "@next/mdx": "^13.2.4",
+    "@next/mdx": "^13.3.1",
     "@vercel/analytics": "^0.1.4",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
