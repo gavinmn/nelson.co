@@ -84,19 +84,19 @@ const IndexPage = ({ posts }) => {
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
-                href="https://mastodon.design/@gn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Mastodon
-              </a>
-              <a
-                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://twitter.com/Gavmn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://mastodon.design/@gn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mastodon
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
@@ -175,6 +175,13 @@ const IndexPage = ({ posts }) => {
             </div>
           </Section>
           <Section title="Features">
+          <div className="mb-2">
+            <Feature
+              title={"Workspaces #341"}
+              date={"August 2023"}
+              href={"https://www.workspaces.xyz/p/341-gavin-nelson"}
+            />
+          </div>
             <div className="mb-2">
               <Feature
                 title={"Interview with Gavin Nelson, product and icon designer"}
@@ -225,15 +232,12 @@ const IndexPage = ({ posts }) => {
               />
             </div>
             <div className="mb-4">
-              <MultiProject
-                link1="/musicthread/heavy-rotation"
-                link2="/musicthread/2022-favorites"
-                link3="/musicthread/2021-favorites"
-                title1="Heavy Rotation"
-                title2="2022 Favorites"
-                title3="2021 Favorites"
-                description="A collection of what I've been listening to recently"
-              />
+            <Project
+              link="/musicthread/heavy-rotation"
+              title="Heavy Rotation"
+              description="A collection of what I've been listening to recently"
+            />
+              
             </div>
             <ExternalProject
               link="https://gumroad.com/l/dvctd"
