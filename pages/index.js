@@ -132,17 +132,17 @@ const IndexPage = ({ posts }) => {
           <Section title="Work">
             <div className="mb-2">
               <Feature
-                title={"Merge queues for GitHub Mobile"}
-                date={"Coming soon"}
+                title={"Code Search for GitHub Mobile"}
+                date={"Oct 2023"}
                 href={
-                  "https://github.blog/changelog/2023-02-08-pull-request-merge-queue-public-beta/"
+                  "https://github.blog/changelog/2023-10-10-navigate-code-on-the-go/"
                 }
               />
             </div>
             <div className="mb-2">
               <Feature
                 title={"Mobile code editing and pull requests"}
-                date={"March 2023"}
+                date={"Mar 2023"}
                 href={
                   "https://github.blog/2023-03-07-file-editing-on-github-mobile-keeps-leveling-up/"
                 }
@@ -160,7 +160,7 @@ const IndexPage = ({ posts }) => {
             <div className="mb-2">
               <Feature
                 title={"GitHub Activity Feed"}
-                date={"June 2022"}
+                date={"Jun 2022"}
                 href={
                   "https://github.blog/changelog/2022-06-21-browse-the-activity-feed-on-github-mobile/"
                 }
@@ -178,14 +178,14 @@ const IndexPage = ({ posts }) => {
           <div className="mb-2">
             <Feature
               title={"Workspaces #341"}
-              date={"August 2023"}
+              date={"Aug 2023"}
               href={"https://www.workspaces.xyz/p/341-gavin-nelson"}
             />
           </div>
             <div className="mb-2">
               <Feature
                 title={"Interview with Gavin Nelson, product and icon designer"}
-                date={"March 2023"}
+                date={"Mar 2023"}
                 href={
                   "https://manual.withcompound.com/chapters/interview-with-gavin-nelson-product-and-icon-designer"
                 }
@@ -203,7 +203,7 @@ const IndexPage = ({ posts }) => {
             <div className="mb-2">
               <Feature
                 title={"Workspaces #136"}
-                date={"March 2022"}
+                date={"Mar 2022"}
                 href={"https://www.workspaces.xyz/p/136-gavin-nelson"}
               />
             </div>
@@ -236,8 +236,7 @@ const IndexPage = ({ posts }) => {
               link="/musicthread/heavy-rotation"
               title="Heavy Rotation"
               description="A collection of what I've been listening to recently"
-            />
-              
+            /> 
             </div>
             <ExternalProject
               link="https://gumroad.com/l/dvctd"
