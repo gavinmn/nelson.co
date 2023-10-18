@@ -14,6 +14,12 @@ import matter from "gray-matter"
 import path from "path"
 import { postFilePaths, POSTS_PATH } from "../lib/mdxUtils"
 
+import leaf from "../public/images/index/leaf.png"
+import startup from "../public/images/index/startup.png"
+import gametrack from "../public/images/index/gametrack.png"
+import suptho from "../public/images/index/suptho.png"
+import stops from "../public/images/index/stops.png"
+import family from "../public/images/index/family.png"
 import flighty from "../public/images/index/flighty.png"
 import xdesign from "../public/images/index/xdesign.png"
 import neonnights from "../public/images/index/neonnights.png"
@@ -257,7 +263,78 @@ const IndexPage = ({ posts }) => {
               </a>
               .
             </p>
+            
             <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+            <div className="max-w-full sm:col-span-2">
+            <Icon
+              src={family}
+              title="Family Wallet"
+              subtitle="Family"
+              width="800"
+              link="https://family.co"
+            />
+            </div>
+            <Icon
+              src={onepw}
+              title="1Password"
+              subtitle="1Password"
+              width="800"
+              link="https://apps.apple.com/us/app/1password-8-password-manager/id1511601750"
+            />
+            <Icon
+              src={linear}
+              title="Linear"
+              subtitle="Linear"
+              width="800"
+              link="https://linear.app"
+            />
+            <div className="max-w-full sm:col-span-2">
+            <Icon
+              src={startup}
+              title="Startup"
+              subtitle="Jordan Singer"
+              width="800"
+              link="https://usestartup.com"
+            />
+            </div>
+            <Icon
+              src={stops}
+              title="Stops"
+              subtitle="Eff Corp"
+              width="800"
+              link="https://apps.apple.com/us/app/stops/id1663636345"
+            />
+            <Icon
+              src={suptho}
+              title="Suptho"
+              subtitle="Suptho"
+              width="800"
+              link="https://www.suptho.co"
+            />
+            <div className="max-w-full sm:col-span-2">
+              <Icon
+                src={xdesign}
+                title="Xdesign"
+                subtitle="Diagram"
+                width="800"
+                link="https://diagram.com/"
+              />
+            </div>
+            <Icon
+              src={gametrack}
+              title="Gametrack"
+              subtitle="Gametraack"
+              width="800"
+              link="https://gametrack.app"
+            />
+            <Icon
+              src={leaf}
+              title="Leaf"
+              subtitle="GitHub"
+              width="800"
+              link="https://github.com/mobile"
+            />
+          
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={flighty}
@@ -267,29 +344,8 @@ const IndexPage = ({ posts }) => {
                   link="https://www.flightyapp.com/"
                 />
               </div>
-              <div className="max-w-full sm:col-span-2">
-                <Icon
-                  src={xdesign}
-                  title="Xdesign"
-                  subtitle="Diagram"
-                  width="800"
-                  link="https://diagram.com/"
-                />
-              </div>
-              <Icon
-                src={onepw}
-                title="1Password"
-                subtitle="1Password"
-                width="800"
-                link="https://apps.apple.com/us/app/1password-8-password-manager/id1511601750"
-              />
-              <Icon
-                src={linear}
-                title="Linear"
-                subtitle="Linear"
-                width="800"
-                link="https://linear.app"
-              />
+              
+              
               <div className="max-w-full sm:col-span-2">
                 <Icon
                   src={neonnights}
