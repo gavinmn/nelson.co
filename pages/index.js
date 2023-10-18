@@ -358,7 +358,7 @@ const IndexPage = ({ posts }) => {
               <Icon
                 src={emulsion}
                 title="Emulsion"
-                subtitle="Eff"
+                subtitle="Eff Corp"
                 width="800"
                 link="https://eff.co/"
               />
