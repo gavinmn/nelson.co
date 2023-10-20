@@ -98,20 +98,28 @@ const IndexPage = ({ posts }) => {
               </a>
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
+                href="https://www.threads.net/@gavinmnelson"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Threads
+              </a>
+              <a
+                className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://mastodon.design/@gn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Mastodon
               </a>
-              <a
+              {/* <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://github.com/gavinmn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
-              </a>
+              </a> */}
               <a
                 className="sm:mr-8 text-tertiary dark:text-darkTertiary"
                 href="https://dribbble.com/Gavin/"
@@ -120,7 +128,7 @@ const IndexPage = ({ posts }) => {
               >
                 Dribbble
               </a>
-              <Arena />
+              {/* <Arena /> */}
             </div>
           </Section>
           {/* <Section title="Notes" className="flex flex-row">
