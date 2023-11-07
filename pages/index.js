@@ -64,8 +64,7 @@ const IndexPage = ({ posts }) => {
           <div>
             <p className="mt-8 md:mt-4">
               I'm currently shaping the mobile apps at GitHub and crafting app
-              icons for a wide variety of clients. I focus on fit and finish to
-              solve problems and create seamless experiences. If you'd like to
+              icons for a wide variety of clients. I focus on a high level of craftsmanship to create seamless experiences that solve problems. If you'd like to
               work with me on an icon, please{" "}
               <a
                 className="text-tertiary dark:text-darkTertiary"
