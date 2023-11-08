@@ -143,6 +143,15 @@ const IndexPage = ({ posts }) => {
             <ArrowExternal />
           </Section> */}
           <Section title="Work">
+          <div className="mb-2">
+            <Feature
+              title={"Copilot Chat for GitHub Mobile"}
+              date={"Coming soon"}
+              href={
+                "https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/"
+              }
+            />
+          </div>
             <div className="mb-2">
               <Feature
                 title={"Code Search for GitHub Mobile"}
