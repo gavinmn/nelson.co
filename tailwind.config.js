@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(0, 0%, 100%)",
+        // background: "hsl(0, 0%, 100%)",
+        background: "hsl(0, 0%, 98%)",
         darkBackground: "hsl(224, 25%, 12%)",
         code: "hsl(0, 0%, 93%)",
         darkCode: "hsl(224, 25%, 8%)",
