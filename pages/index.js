@@ -190,7 +190,7 @@ const IndexPage = ({ posts }) => {
             </div>
             <div className="mb-2">
               <Feature
-                title={"Shortcuts"}
+                title={"GitHub Navigation Shortcuts"}
                 date={"Jan 2022"}
                 href={"https://twitter.com/github/status/1481732836751204354"}
               />
