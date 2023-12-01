@@ -199,6 +199,13 @@ const IndexPage = ({ posts }) => {
           <Section title="Features">
           <div className="mb-2">
             <Feature
+              title={"App Icon Book"}
+              date={"Coming soon"}
+              href={"https://www.appiconbook.com"}
+            />
+          </div>
+          <div className="mb-2">
+            <Feature
               title={"Workspaces #341"}
               date={"Aug 2023"}
               href={"https://www.workspaces.xyz/p/341-gavin-nelson"}
